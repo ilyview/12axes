@@ -3039,5 +3039,103 @@
     "religions": [
       "protestant"
     ]
+  },
+  {
+    "id": "pine-tree-party",
+    "name": "Pine Tree Party",
+    "category": "Movimento",
+    "description": "Movimento ecofascista e antigovernamental fundado por Mike Ma em 2017, mistura supremacia branca, ambientalismo radical e aceleração militante; adota a bandeira do pinheiro e o lema 'An Appeal to Heaven'.",
+    "logoPath": "/parties/logos/pine-tree-party.png",
+    "logoSourceName": "Wikimedia Commons / Wikipédia",
+    "logoSourceUrl": "https://en.wikipedia.org/wiki/Mike_Ma",
+    "logoNote": "Bandeira do Pine Tree Party derivada da Pine Tree Flag, em formato quadrado 1:1.",
+    "countryId": "estados-unidos",
+    "historical": false,
+    "period": "",
+    "religions": []
+  },
+  {
+    "id": "order-of-sigma",
+    "name": "Ordem do Sigma",
+    "category": "Partido",
+    "description": "Partido governante de Sigmatopia, fundado pelo Sigma Lord. A filiação exige aprovação por 3 sigma lords locais e uma prova de mentalidade.",
+    "logoPath": "/parties/logos/order-of-sigma.png",
+    "logoSourceName": "Sigmatopia",
+    "logoSourceUrl": "https://12axes.com.br/parties/logos/order-of-sigma.png",
+    "logoNote": "",
+    "countryId": "sigmatopia",
+    "historical": false,
+    "period": "presente",
+    "religions": []
+  },
+  {
+    "id": "vibe-workers-collective",
+    "name": "Coletivo dos Trabalhadores da Vibe",
+    "category": "Partido",
+    "description": "Partido único da República Unbothered. As reuniões são opcionais e a agenda é 'ver o que a vibe mandar'.",
+    "logoPath": "/parties/logos/vibe-workers-collective.png",
+    "logoSourceName": "Unbothered Republic",
+    "logoSourceUrl": "https://12axes.com.br/parties/logos/vibe-workers-collective.png",
+    "logoNote": "",
+    "countryId": "republica-unbothered",
+    "historical": false,
+    "period": "presente",
+    "religions": []
+  },
+  {
+    "id": "corporate-citizens-united",
+    "name": "Cidadãos Corporativos Unidos",
+    "category": "Partido",
+    "description": "Partido governante de Corporatia. Os membros são empresas. As cotas de filiação substituem os impostos.",
+    "logoPath": "/parties/logos/corporate-citizens-united.png",
+    "logoSourceName": "Corporatia Inc.",
+    "logoSourceUrl": "https://12axes.com.br/parties/logos/corporate-citizens-united.png",
+    "logoNote": "",
+    "countryId": "corporatia",
+    "historical": false,
+    "period": "presente",
+    "religions": []
+  },
+  {
+    "id": "elder-council-party",
+    "name": "Conselho dos Anciãos",
+    "category": "Partido",
+    "description": "O único partido de Senium. A filiação é automática aos 75 anos. Abaixo dessa idade, não é permitido votar.",
+    "logoPath": "/parties/logos/elder-council-party.png",
+    "logoSourceName": "Senium",
+    "logoSourceUrl": "https://12axes.com.br/parties/logos/elder-council-party.png",
+    "logoNote": "",
+    "countryId": "senium",
+    "historical": false,
+    "period": "presente",
+    "religions": ["other"]
+  },
+  {
+    "id": "lorekeepers-guild",
+    "name": "Guilda dos Lorekeepers",
+    "category": "Partido",
+    "description": "Partido governante do Grande Arquivo. A entrada exige a memorização de pelo menos 500 tomos.",
+    "logoPath": "/parties/logos/lorekeepers-guild.png",
+    "logoSourceName": "The Grand Archive",
+    "logoSourceUrl": "https://12axes.com.br/parties/logos/lorekeepers-guild.png",
+    "logoNote": "",
+    "countryId": "grand-archive",
+    "historical": false,
+    "period": "presente",
+    "religions": []
+  },
+  {
+    "id": "db-partei-neu",
+    "name": "DB Partei Neu",
+    "category": "Partido",
+    "description": "O partido governante do DB-Staat Mk. II. Idêntico ao DB-Partei original, mas com novas desculpas para os atrasos.",
+    "logoPath": "/parties/logos/db-partei-neu.png",
+    "logoSourceName": "DB-Staat II",
+    "logoSourceUrl": "https://12axes.com.br/parties/logos/db-partei-neu.png",
+    "logoNote": "",
+    "countryId": "db-staat-2",
+    "historical": false,
+    "period": "presente",
+    "religions": []
   }
 ]

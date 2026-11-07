@@ -4941,5 +4941,71 @@
     "flagSourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Mozambique_(1975%E2%80%931983).svg",
     "flagNote": "Bandeira da República Popular de Moçambique (1975–1983), usada na maior parte do período.",
     "religions": []
+  },
+  {
+    "id": "sigmatopia",
+    "name": "Sigmatopia",
+    "category": "Feudalismo Sigma",
+    "description": "Nação-ilha fundada pelo Sigma Lord após rejeitar todas as formas existentes de governo por as considerar demasiado beta. A hierarquia é determinada pela mentalidade sigma. Não há constituição — há apenas a vibe dominante.",
+    "flagPath": "/countries/flags/sigmatopia.png",
+    "historical": false,
+    "period": "",
+    "vector": null,
+    "religions": []
+  },
+  {
+    "id": "republica-unbothered",
+    "name": "República Unbothered",
+    "category": "Vibe Comunismo",
+    "description": "República fundada sobre o princípio de que ninguém deve ser perturbado. Os meios de produção são coletivos mas o trabalho é opcional se a tua vibe não estiver alinhada com ele. Capital: Chillhaven.",
+    "flagPath": "/countries/flags/republica-unbothered.png",
+    "historical": false,
+    "period": "",
+    "vector": null,
+    "religions": []
+  },
+  {
+    "id": "corporatia",
+    "name": "Corporatia",
+    "category": "Corpianismo",
+    "description": "Estado fundado pela fusão das 12 maiores corporações do mundo. O parlamento é o conselho de administração. Os cidadãos são accionistas. A constituição é o relatório anual.",
+    "flagPath": "/countries/flags/corporatia.png",
+    "historical": false,
+    "period": "",
+    "vector": null,
+    "religions": []
+  },
+  {
+    "id": "senium",
+    "name": "República Antiga de Senium",
+    "category": "Cronocracia",
+    "description": "República governada exclusivamente pelos mais velhos. O direito de voto começa aos 75. A constituição foi escrita em 1952 e nunca foi alterada porque o Conselho considera emendas 'precipitadas'.",
+    "flagPath": "/countries/flags/senium.png",
+    "historical": false,
+    "period": "",
+    "vector": null,
+    "religions": ["other"]
+  },
+  {
+    "id": "grand-archive",
+    "name": "O Grande Arquivo",
+    "category": "Lore Goblinismo",
+    "description": "Estado-biblioteca fundado pelos Lorekeepers após declararem que o resto do mundo estava a gerir mal o conhecimento. A electricidade é permitida apenas para iluminar manuscritos. A indústria é proibida.",
+    "flagPath": "/countries/flags/grand-archive.png",
+    "historical": false,
+    "period": "",
+    "vector": null,
+    "religions": []
+  },
+  {
+    "id": "db-staat-2",
+    "name": "DB-Staat II",
+    "category": "DB-Fascismo",
+    "description": "Sucessor oficial do DB-Staat original, fundado após o colapso do primeiro quando o comboio que transportava a constituição chegou com 4 horas de atraso. Os comboios continuam atrasados. O Estado garante que a próxima partida está mesmo a chegar.",
+    "flagPath": "/countries/flags/db-staat-2.png",
+    "historical": false,
+    "period": "",
+    "vector": null,
+    "religions": []
   }
 ]

@@ -857,7 +857,7 @@
     "id": "ecofascismo",
     "name": "Eco-Fascism",
     "category": "Third Position",
-    "description": "Current that joins radical ecology, authoritarianism and organic nationalism, defending population control, environmental preservation imposed by the state and the subordination of individual liberties to the survival of the national community.",
+    "description": "Current that joins radical ecology, authoritarianism and white nationalism, associated with Mike Ma and the Pine Tree Party: it defends industrial collapse, population control and nature preservation imposed by an authoritarian order.",
     "phrase": "I want an organic national community in harmony with the land, putting environmental preservation and the survival of the people above individual liberties."
   },
   {
@@ -1929,5 +1929,61 @@
     "category": "Center",
     "description": "Eighteenth-century European intellectual movement that champions reason, science and tolerance against superstition and absolutism, with natural rights, separation of powers, education and progress as the basis of society.",
     "phrase": "I want a society guided by reason, science and tolerance, with natural rights, separated powers and the law placed above throne and altar."
+  },
+  {
+    "id": "ecologia-social",
+    "name": "Social Ecology",
+    "category": "Left",
+    "description": "Current founded by Murray Bookchin that explains the ecological crisis through social domination and proposes autonomous municipalities, direct democracy, and a cooperative economy in confederations, influencing Rojava's democratic confederalism.",
+    "phrase": "I want a society of autonomous municipalities and direct assemblies that overcomes hierarchy and organizes the economy in cooperatives and ecological confederations."
+  },
+  {
+    "id": "ligma-feudalismo",
+    "name": "Ligma Feudalism",
+    "category": "Third Position",
+    "description": "A political system in which sigma males replace the hereditary aristocracy. Social hierarchy is determined exclusively by sigma mindset, physical performance, and emotional resilience. The Sigma Lord governs without a state — natural dominance is the only law.",
+    "phrase": "I want a society where sigmas rule, betas obey, and the state is replaced by the natural hierarchy of sigma mindset."
+  },
+  {
+    "id": "vibe-comunismo",
+    "name": "Vibe Communism",
+    "category": "Radical Left",
+    "description": "A political system in which the means of production are collectively owned, but the state's only obligation is to ensure everyone can vibe without disturbance. Foreign policy is defined by the vibe — wars are banned for being anti-vibe.",
+    "phrase": "I want a society where collective ownership exists so that everyone can be unbothered and the vibes flow freely to all."
+  },
+  {
+    "id": "corpianismo",
+    "name": "Corpianism",
+    "category": "Right",
+    "description": "A political system in which corporations are recognised as full citizens. Over time, corporations vote, elect other corporations, and eventually a corporation becomes president. The state is a subsidiary of the market.",
+    "phrase": "I want a society where corporations are people, the market is the government, and the CEO-President leads the nation with spreadsheet efficiency."
+  },
+  {
+    "id": "cronocracia",
+    "name": "Chronocracy",
+    "category": "Third Position",
+    "description": "A political system in which power is exercised exclusively by the eldest. The more years one has lived, the more votes one holds. The Council of Elders governs with accumulated wisdom and deep suspicion of anything invented after 1987.",
+    "phrase": "I want a society governed by the eldest, where experience is the only criterion for power and the young learn to be quiet and wait their turn."
+  },
+  {
+    "id": "lore-goblinismo",
+    "name": "Lore Goblinism",
+    "category": "Third Position",
+    "description": "A political system in which scribes, lorekeepers, and guardians of ancient knowledge constitute the ruling class. Industry is banned for corrupting the lore. Wealth is measured in tomes. The Grand Lorekeeper holds supreme power.",
+    "phrase": "I want a society governed by the guardians of lore, where ancient knowledge is sacred, industry is heresy, and every library is a temple."
+  },
+  {
+    "id": "db-fascismo",
+    "name": "DB-Fascism",
+    "category": "Far-Right",
+    "description": "Railway fascism of DB-Staat: the Fahrplan is the constitution, citizenship is restricted to Familienangehörige and the trains are still late. The state officially acknowledges that delays are inevitable but promises the next departure will be on time.",
+    "phrase": "I want a state governed by the Fahrplan, where punctuality is the law, trains arrive when they arrive, and Dennis Becker assures you the next one is definitely coming."
+  },
+  {
+    "id": "hatred",
+    "name": "Hatred",
+    "category": "Third Position",
+    "description": "The ideology of absolute refusal: it proposes no programme, order, or future, only the negation of every question and every political promise. Its only consensus is saying no to everything, and its only project is contempt.",
+    "phrase": "I want a society that says no to every question, where total refusal is the only programme and contempt is the only politics."
   }
 ]

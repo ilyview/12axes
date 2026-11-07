@@ -88,9 +88,16 @@ export function submitResults(
 // que agora é do Relatório completo.
 const SHARED_RESULT_VERSION = 3;
 
-export function fetchSharedResult(leftPercents: number[], religion: string | null = null): Promise<QuizResult> {
+export function fetchSharedResult(
+  leftPercents: number[],
+  religion: string | null = null,
+  hatredEgg = false
+): Promise<QuizResult> {
   const religionParam = religion ? `&religion=${encodeURIComponent(religion)}` : '';
-  return request<QuizResult>(`/api/results/by-axes?v=${leftPercents.join(',')}&lang=${LANG}${religionParam}&rv=${SHARED_RESULT_VERSION}`);
+  const eggParam = hatredEgg ? '&egg=hatred' : '';
+  return request<QuizResult>(
+    `/api/results/by-axes?v=${leftPercents.join(',')}&lang=${LANG}${religionParam}${eggParam}&rv=${SHARED_RESULT_VERSION}`
+  );
 }
 
 

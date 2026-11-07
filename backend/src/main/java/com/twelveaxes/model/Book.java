@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.Map;
 
 /**
- * Livro de referencia de uma personalidade (um por personalidade).
+ * Livro de referencia de uma personalidade (pode haver mais de um por personalidade).
  *
  * @param title titulo por idioma ("pt", "en")
  * @param url link direto de afiliado por idioma; vazio cai numa busca na Amazon
@@ -14,6 +14,7 @@ public record Book(
         String personalityId,
         Map<String, String> title,
         Integer year,
-        Map<String, String> url
+        Map<String, String> url,
+        String coverPath
 ) {
 }

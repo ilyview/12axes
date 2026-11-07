@@ -60,7 +60,9 @@ public class AxisOutlierService {
     }
 
     private List<AxisOutlier> computeRanking(List<AxisResult> axisResults, String lang) {
-        List<IdeologyProfile> profiles = List.copyOf(dataService.getIdeologyProfiles().values());
+        List<IdeologyProfile> profiles = dataService.getIdeologyProfiles().values().stream()
+                .filter(profile -> !QuizDataService.isEasterEgg(profile.ideologyId()))
+                .toList();
         if (profiles.isEmpty()) {
             return List.of();
         }

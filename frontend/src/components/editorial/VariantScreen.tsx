@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { t } from '../../i18n';
 import type { QuizVariant } from '../../types/quiz';
 import { QUIZ_FORMATS } from './formats';
 import { ArrowIcon, ClockIcon } from './primitives';
+import { GOATISM_STORAGE_KEY } from '../../utils/goatism';
 
 interface VariantScreenProps {
   error: string | null;
@@ -9,6 +11,20 @@ interface VariantScreenProps {
 }
 
 export function VariantScreen({ error, onStart }: VariantScreenProps) {
+  const [goatMode, setGoatMode] = useState(
+    () => localStorage.getItem(GOATISM_STORAGE_KEY) === 'true'
+  );
+
+  const toggleGoatMode = () => {
+    const next = !goatMode;
+    setGoatMode(next);
+    if (next) {
+      localStorage.setItem(GOATISM_STORAGE_KEY, 'true');
+    } else {
+      localStorage.removeItem(GOATISM_STORAGE_KEY);
+    }
+  };
+
   return (
     <section className="ed e-fmt" aria-labelledby="variant-title">
       <div className="e-wrap">
@@ -62,6 +78,32 @@ export function VariantScreen({ error, onStart }: VariantScreenProps) {
         </ul>
         {error && <p className="inline-error" role="alert">{error}</p>}
       </div>
+
+      <button
+        type="button"
+        onClick={toggleGoatMode}
+        aria-label=""
+        title=""
+        style={{
+          position: 'fixed',
+          bottom: '14px',
+          right: '14px',
+          background: 'none',
+          border: 'none',
+          fontSize: '20px',
+          lineHeight: 1,
+          padding: '6px',
+          cursor: 'pointer',
+          opacity: goatMode ? 0.95 : 0.15,
+          transition: 'opacity 0.3s ease, transform 0.2s ease, filter 0.3s ease',
+          transform: goatMode ? 'scale(1.3)' : 'scale(1)',
+          filter: goatMode ? 'drop-shadow(0 0 5px #3a9c3a)' : 'none',
+          zIndex: 9999,
+          userSelect: 'none',
+        }}
+      >
+        🌿
+      </button>
     </section>
   );
 }

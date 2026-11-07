@@ -56,6 +56,14 @@ describe('link curto do resultado', () => {
     expect(parseShortResult(`?v=${[...VALUES.slice(0, 11), 101].join('-')}`)).toBeNull();
     expect(parseShortResult(`?v=${[...VALUES.slice(0, 11), 'x'].join('-')}`)).toBeNull();
   });
+
+  it('leva e lê a marca do easter egg', () => {
+    expect(shortResultQuery(VALUES, null, 'pt')).not.toContain('e=1');
+    const query = shortResultQuery(VALUES, null, 'pt', true);
+    expect(query).toContain('&e=1');
+    expect(parseShortResult(`?${query}`)?.egg).toBe(true);
+    expect(parseShortResult(`?${query.replace('e=1', 'egg=hatred')}`)?.egg).toBe(true);
+  });
 });
 
 describe('QR code do cartão', () => {

@@ -1,14 +1,18 @@
 package com.twelveaxes.controller;
 
 import com.twelveaxes.exception.ResourceNotFoundException;
+import com.twelveaxes.model.AnswerValue;
 import com.twelveaxes.model.AxisResult;
 import com.twelveaxes.model.Country;
 import com.twelveaxes.model.Ideology;
+import com.twelveaxes.model.IdeologyMatch;
 import com.twelveaxes.model.Party;
 import com.twelveaxes.model.Personality;
+import com.twelveaxes.model.PersonalityMatch;
 import com.twelveaxes.model.QuizPayload;
 import com.twelveaxes.model.QuizResult;
 import com.twelveaxes.model.ResultRequest;
+import com.twelveaxes.model.SubmittedAnswer;
 import com.twelveaxes.service.AxisOutlierService;
 import com.twelveaxes.service.AxisTensionService;
 import com.twelveaxes.service.AxisValuesParser;
@@ -107,7 +111,8 @@ public class QuizController {
             @RequestParam(defaultValue = QuizDataService.LANG_PT) String lang,
             @RequestParam(required = false) String religion
     ) {
-        return buildResult(scoringService.score(request, lang), lang, ReligionFilter.normalize(religion));
+        boolean hatredEgg = isHatredEasterEgg(request.answers());
+        return buildResult(scoringService.score(request, lang), lang, ReligionFilter.normalize(religion), hatredEgg);
     }
 
     // Resultado compartilhável: reconstrói matches a partir do vetor de eixos
@@ -117,27 +122,54 @@ public class QuizController {
     public QuizResult resultsByAxes(
             @RequestParam("v") String values,
             @RequestParam(defaultValue = QuizDataService.LANG_PT) String lang,
-            @RequestParam(required = false) String religion
+            @RequestParam(required = false) String religion,
+            @RequestParam(required = false) String egg
     ) {
         return buildResult(scoringService.scoreFromLeftPercents(AxisValuesParser.parse(values), lang), lang,
-                ReligionFilter.normalize(religion));
+                ReligionFilter.normalize(religion), QuizDataService.HATRED_EASTER_EGG_ID.equalsIgnoreCase(egg));
     }
 
-    private QuizResult buildResult(List<AxisResult> axes, String lang, String religion) {
-        return resultCache.get(resultKey(axes, lang, religion), () -> computeResult(axes, lang, religion));
+    private QuizResult buildResult(List<AxisResult> axes, String lang, String religion, boolean hatredEgg) {
+        return resultCache.get(resultKey(axes, lang, religion, hatredEgg),
+                () -> computeResult(axes, lang, religion, hatredEgg));
     }
 
     // O resultado depende so dos 12 percentuais (o resto vem do idioma), entao eles formam a chave.
-    private static String resultKey(List<AxisResult> axes, String lang, String religion) {
-        StringBuilder key = new StringBuilder(lang).append('|').append(religion).append('|').append('|');
+    private static String resultKey(List<AxisResult> axes, String lang, String religion, boolean hatredEgg) {
+        StringBuilder key = new StringBuilder(lang).append('|').append(religion).append('|').append(hatredEgg).append('|');
         axes.forEach(axis -> key.append(axis.leftPercent()).append(','));
         return key.toString();
     }
 
-    private QuizResult computeResult(List<AxisResult> axes, String lang, String religion) {
-        var matches = matcherService.findMatches(axes, lang, religion);
-        var personalityMatches = personalityMatcherService.findMatches(axes, lang, religion);
-        var topPersonality = personalityMatches.getFirst();
+    private QuizResult computeResult(List<AxisResult> axes, String lang, String religion, boolean hatredEgg) {
+        List<IdeologyMatch> matches = matcherService.findMatches(axes, lang, religion);
+        List<PersonalityMatch> personalityMatches = personalityMatcherService.findMatches(axes, lang, religion);
+        PersonalityMatch topPersonality = personalityMatches.getFirst();
+        if (hatredEgg) {
+            IdeologyMatch hatred = matcherService.findEasterEggMatch(
+                    QuizDataService.HATRED_EASTER_EGG_ID, axes, lang);
+            if (hatred != null) {
+                List<IdeologyMatch> combined = new java.util.ArrayList<>();
+                combined.add(hatred);
+                matches.stream()
+                        .filter(match -> !match.ideologyId().equals(hatred.ideologyId()))
+                        .limit(3)
+                        .forEach(combined::add);
+                matches = combined;
+            }
+            PersonalityMatch hatredPersonality = personalityMatcherService.findEasterEggMatch(
+                    QuizDataService.HATRED_EASTER_EGG_ID, axes, lang);
+            if (hatredPersonality != null) {
+                List<PersonalityMatch> combined = new java.util.ArrayList<>();
+                combined.add(hatredPersonality);
+                personalityMatches.stream()
+                        .filter(match -> !match.personalityId().equals(hatredPersonality.personalityId()))
+                        .limit(7)
+                        .forEach(combined::add);
+                personalityMatches = combined;
+                topPersonality = hatredPersonality;
+            }
+        }
         // A personalidade mais compativel de cada area e conteudo do Relatorio Completo: aqui so alimenta a escolha dos livros.
         var categoryBestMatches = personalityMatcherService.findBestPerCategory(axes, lang, religion);
         var topCountry = countryMatcherService.findTopMatch(axes, lang, religion);
@@ -179,6 +211,12 @@ public class QuizController {
                 partyMatcherService.findBottomMatches(axes, lang, religion),
                 politicalValuesService.resolve(axes, lang)
         );
+    }
+
+    private static boolean isHatredEasterEgg(List<SubmittedAnswer> answers) {
+        return answers != null
+                && !answers.isEmpty()
+                && answers.stream().allMatch(answer -> answer.answer() == AnswerValue.STRONGLY_DISAGREE);
     }
 
     @GetMapping("/api/ideologies")

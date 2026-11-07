@@ -53,7 +53,9 @@ public class AxisTensionService {
         Map<String, Double> user = new LinkedHashMap<>();
         axisResults.forEach(result -> user.put(result.axisId(), result.leftPercent()));
 
-        List<IdeologyProfile> profiles = List.copyOf(dataService.getIdeologyProfiles().values());
+        List<IdeologyProfile> profiles = dataService.getIdeologyProfiles().values().stream()
+                .filter(profile -> !QuizDataService.isEasterEgg(profile.ideologyId()))
+                .toList();
         List<Axis> axes = dataService.getAxes(normalizedLang);
         if (profiles.isEmpty() || axes.isEmpty()) {
             return null;

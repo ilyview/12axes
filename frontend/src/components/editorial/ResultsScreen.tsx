@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useMemo, useState, type CSSProperties } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 import { createPortal } from 'react-dom';
 import { LANG, t } from '../../i18n';
 import type { Axis, AxisResult, PremiumReport, QuizPayload, QuizResult } from '../../types/quiz';
@@ -24,16 +24,20 @@ import { computeCompass } from '../../utils/politicalCompass';
 import { PARTIES_ENABLED } from '../../utils/partyLogos';
 import type { SavedAnswers } from '../../utils/quizProgress';
 import type { Religion } from '../../utils/religion';
-import { PaywallModal } from '../results/PaywallModal';
+import { MatchInsightProvider } from '../results/MatchInsight';
+import { PaywallModal, type PaywallSource } from '../results/PaywallModal';
 import { UnlockCelebration } from '../results/UnlockCelebration';
 import { PaywallSection } from '../results/PaywallSection';
 import { PreviewSwitch } from '../results/PreviewSwitch';
 import { usePremiumAccess } from '../results/usePremiumAccess';
+import { LockIcon } from '../results/LockIcon';
+import { SectionShareButton, type ShareKind } from '../results/SectionShareButton';
 import { CsvIcon, DownloadIcon, Ring, ShareImageIcon } from './primitives';
 import { track } from '../../utils/analytics';
 import { pdfButtonAction } from '../../utils/pdfAccess';
 import { paywallEnabled, paywallMode, salesOpen } from '../../utils/paywallFlag';
 import { downloadRankingXlsx } from '../../utils/rankingXlsx';
+import { applyGoatMode } from '../../utils/goatism';
 
 // Modo de desenvolvimento local do Relatório Completo: abre sem pagamento (o backend também precisa de PREMIUM_DEV_OPEN).
 // Fica fora do build de produção porque a variável só existe em frontend/.env.local.
@@ -41,8 +45,8 @@ const PREMIUM_DEV_OPEN = import.meta.env.VITE_PREMIUM_DEV_OPEN === 'true';
 // Compra do Relatório completo (Mercado Pago): VITE_PAYWALL_ENABLED = true (todos), preview (só navegadores marcados com ?paywall=1),
 // paused (vendas pausadas: só quem já pagou vê o relatório) ou
 // desligada (padrão). Ver utils/paywallFlag.
-// Cada idioma tem o seu interruptor: VITE_PAYWALL_ENABLED (português, reais) e VITE_PAYWALL_EN_ENABLED (inglês, dólar, pela Paddle).
-const PAYWALL_MODE = paywallMode(LANG === 'en' ? import.meta.env.VITE_PAYWALL_EN_ENABLED : import.meta.env.VITE_PAYWALL_ENABLED);
+// Dois interruptores: VITE_PAYWALL_ENABLED (português, reais) e VITE_PAYWALL_EN_ENABLED (qualquer outro idioma, dólar, pela Paddle).
+const PAYWALL_MODE = paywallMode(LANG === 'pt' ? import.meta.env.VITE_PAYWALL_ENABLED : import.meta.env.VITE_PAYWALL_EN_ENABLED);
 const PremiumReportSection = lazy(() => import('../results/premium/PremiumReportSection'));
 
 interface ResultsScreenProps {
@@ -61,7 +65,9 @@ interface ResultsScreenProps {
 }
 
 export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, error, onShare, religion, onEditAnswers, premiumAnswers }: ResultsScreenProps) {
-  const top = result.topMatch;
+  const effectiveResult = useMemo(() => applyGoatMode(result), [result]);
+
+  const top = effectiveResult.topMatch;
   const PAYWALL_ENABLED = useMemo(
     () =>
       paywallEnabled({
@@ -98,8 +104,50 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
   const politicalValues = result.politicalValues ?? [];
   const compass = computeCompass(axisResults);
   const [printingPdf, setPrintingPdf] = useState(false);
+  // Cartão de compartilhamento de uma seção (países, personalidades, partidos ou valores e bússola). O módulo do cartão (e o
+  // html-to-image) só carrega no clique.
+  const [sharingKind, setSharingKind] = useState<ShareKind | null>(null);
+  const [shareError, setShareError] = useState<{ kind: ShareKind; message: string } | null>(null);
+  const shareSection = async (kind: ShareKind) => {
+    if (sharingKind) return;
+    setSharingKind(kind);
+    setShareError(null);
+    track('share_section', { section: kind });
+    try {
+      const sharedReligion = religion ?? null;
+      if (kind === 'countries') await (await import('../../utils/countriesShareCard')).exportCountriesShare(result, sharedReligion);
+      else if (kind === 'personalities') await (await import('../../utils/personalitiesShareCard')).exportPersonalitiesShare(result, sharedReligion);
+      else if (kind === 'parties') await (await import('../../utils/partiesShareCard')).exportPartiesShare(result, sharedReligion);
+      else if (kind === 'compass') await (await import('../../utils/compassShareCard')).exportCompassShare(result, axes, sharedReligion);
+      else if (premiumReport) {
+        // As seções do relatório pago usam o relatório que já está carregado na página.
+        if (kind === 'government') await (await import('../../utils/governmentShareCard')).exportGovernmentShare(result, premiumReport, sharedReligion);
+        else if (kind === 'timeline') await (await import('../../utils/timelineShareCard')).exportTimelineShare(result, premiumReport, sharedReligion);
+        else await (await import('../../utils/livingShareCard')).exportLivingShare(result, premiumReport, sharedReligion);
+      }
+    } catch {
+      setShareError({ kind, message: t.errImage });
+    } finally {
+      setSharingKind(null);
+    }
+  };
+  const shareButton = (kind: ShareKind) => (
+    <SectionShareButton
+      kind={kind}
+      sharing={sharingKind === kind}
+      error={shareError?.kind === kind ? shareError.message : null}
+      onShare={() => void shareSection(kind)}
+    />
+  );
   // Identidade do resultado para o relatório pago: os 12 valores, na ordem dos eixos.
   const premiumVector = useMemo(() => result.axes.map((axis) => axis.leftPercent), [result]);
+  // Resultado visto: uma vez por resultado (quem fez o teste agora ou abriu um link). Junto com quiz_start e quiz_complete mostra
+  // onde o funil perde gente antes do convite.
+  const vectorKey = premiumVector.join(',');
+  useEffect(() => {
+    track('result_view', { entry: quiz ? 'quiz' : 'link', category: top.category });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [vectorKey]);
   // O relatório pago, quando carregado: de lá vêm a aba "Área de atuação" e o ranking da planilha.
   const [premiumReport, setPremiumReport] = useState<PremiumReport | null>(null);
   // Só em desenvolvimento (PREMIUM_DEV_OPEN): alterna entre a página paga e a grátis (com o convite), para ajustar o layout
@@ -115,13 +163,21 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
     ? { ...realAccess, state: realAccess.state.status === 'locked' ? realAccess.state : { status: 'locked' as const, problem: null, busy: false } }
     : realAccess;
   const [paywallOpen, setPaywallOpen] = useState(false);
+  // De onde veio a abertura do modal e quando, para o modal_close dizer a origem e quanto tempo a pessoa ficou.
+  const paywallOpened = useRef<{ source: PaywallSource; at: number }>({ source: 'section_final', at: 0 });
   // Comemoração na volta do pagamento. Para ver sem pagar: em desenvolvimento (npm run dev, ou o backend com PREMIUM_DEV_OPEN), abrir o resultado com ?celebrate=1.
   const [celebrationClosed, setCelebrationClosed] = useState(false);
   const devCelebrate = (import.meta.env.DEV || PREMIUM_DEV_OPEN) && new URLSearchParams(window.location.search).get('celebrate') === '1';
   const celebrating = (access.justPaid || devCelebrate) && !celebrationClosed;
-  const openPaywall = (source: 'section' | 'areas' | 'pdf') => {
+  const openPaywall = (source: PaywallSource) => {
     track('paywall_view', { source });
+    paywallOpened.current = { source, at: Date.now() };
     setPaywallOpen(true);
+  };
+  const closePaywall = () => {
+    const { source, at } = paywallOpened.current;
+    track('modal_close', { source, seconds_open: Math.round((Date.now() - at) / 1000) });
+    setPaywallOpen(false);
   };
   const premiumToken = access.state.status === 'unlocked' ? access.state.token : null;
   const hasPremium = (PREMIUM_DEV_OPEN && !previewAsFree) || premiumToken !== null;
@@ -178,8 +234,9 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
       <button className="e-btn e-btn-primary" type="button" onClick={onShare} disabled={isSharing}>
         {isSharing ? t.generatingPng : t.saveOrShare} <ShareImageIcon />
       </button>
-      <button className="e-btn e-btn-ghost" type="button" onClick={handlePdf} disabled={printingPdf || (hasPremium && !shownReport)}>
-        {printingPdf ? t.generatingPdf : t.downloadPdf} <DownloadIcon />
+      <button className="e-btn e-btn-ghost e-btn-wrap" type="button" onClick={handlePdf} disabled={printingPdf || (hasPremium && !shownReport)}>
+        {printingPdf ? t.generatingPdf : SALES_OPEN || hasPremium ? t.downloadPdfFull : t.downloadPdf}{' '}
+        {SALES_OPEN && !hasPremium ? <LockIcon className="e-btn-lock" /> : <DownloadIcon />}
       </button>
       {shownReport && (
         <button className="e-btn e-btn-ghost" type="button" onClick={() => void downloadRankingXlsx(shownReport.ranking, LANG, top.category)}>
@@ -189,7 +246,7 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
     </div>
   );
 
-  return (
+  const screen = (
     <main className="ed e-res" id="resultados" style={catStyle(top.category) as CSSProperties}>
       <div className="e-wrap e-res-grid">
         <div className="e-res-main">
@@ -223,16 +280,18 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
           <SignatureSection unusual={result.mostUnusualAxis} common={result.mostCommonAxis} tension={result.axisTension} axes={axes} results={axisResults} />
 
           <CountriesSection
-            current={result.topCountryMatch}
+            current={effectiveResult.topCountryMatch}
             historical={result.topHistoricalCountryMatch}
             dimensions={result.countryDimensionMatches}
             distant={result.bottomCountryMatches}
             axes={axes}
             results={axisResults}
+            footer={shareButton('countries')}
           />
 
           <PersonalitiesSection
-            top={result.topPersonalityMatch}
+            footer={shareButton('personalities')}
+            top={effectiveResult.topPersonalityMatch}
             dimensions={result.dimensionMatches}
             distant={result.bottomPersonalityMatches}
             axes={axes}
@@ -240,7 +299,7 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
           />
 
           <AreasSection
-            generalMatches={result.personalityMatches}
+            generalMatches={effectiveResult.personalityMatches}
             areaMatches={shownReport?.personalitiesByArea ?? []}
             axes={axes}
             results={axisResults}
@@ -251,13 +310,14 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
           <BooksSection books={result.bookRecommendations} />
 
           {/* Cartão do resultado e as ações (compartilhar, PDF, planilha): logo depois dos livros. */}
-          <SharePreviewSection result={result} quiz={quiz} axes={axes} religion={religion} isSharing={isSharing} onShare={onShare} />
+          <SharePreviewSection result={effectiveResult} quiz={quiz} axes={axes} religion={religion} isSharing={isSharing} onShare={onShare} />
 
           {actions}
           {error && <p className="inline-error" role="alert">{error}</p>}
 
           {showParties && (
             <PartiesSection
+              footer={shareButton('parties')}
               current={result.topPartyMatch}
               historical={result.topHistoricalPartyMatch}
               top={result.topPartyMatches ?? []}
@@ -268,11 +328,18 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
             />
           )}
 
-          <PoliticalValuesSection values={politicalValues} category={top.category} religion={religion} />
+          <PoliticalValuesSection values={politicalValues} category={top.category} religion={religion} footer={shareButton('compass')} />
 
           <IdeologiesSection others={result.matches.slice(1, 4)} distant={result.bottomIdeologyMatch} />
 
-          {compass && <PoliticalCompassSection position={compass} category={top.category} moralAxis={axes.find((axis) => axis.id === 'moral')} />}
+          {compass && (
+            <PoliticalCompassSection
+              position={compass}
+              category={top.category}
+              moralAxis={axes.find((axis) => axis.id === 'moral')}
+              footer={shareButton('compass')}
+            />
+          )}
 
           {hasPremium ? (
             <Suspense fallback={null}>
@@ -289,17 +356,25 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
                   if (report) track('premium_report_view');
                 }}
                 onDenied={access.revoke}
+                shareButton={shareButton}
               />
             </Suspense>
           ) : (
-            SALES_OPEN && <PaywallSection access={access} onOpen={() => openPaywall('section')} />
+            SALES_OPEN && <PaywallSection access={access} onOpen={openPaywall} result={result} axes={axes} results={axisResults} religion={religion ?? null} />
           )}
 
           {hasPremium && actions}
 
           {celebrating && <UnlockCelebration name={top.name} category={top.category} token={premiumToken ?? (devCelebrate ? 'token-de-teste' : null)} onClose={() => setCelebrationClosed(true)} />}
 
-          {paywallOpen && !hasPremium && SALES_OPEN && <PaywallModal access={access} category={top.category} onClose={() => setPaywallOpen(false)} />}
+          {paywallOpen && !hasPremium && SALES_OPEN && (
+            <PaywallModal
+              access={access}
+              category={top.category}
+              source={paywallOpened.current.source}
+              onClose={closePaywall}
+            />
+          )}
 
           {PREMIUM_DEV_OPEN && <PreviewSwitch value={preview} onChange={setPreview} />}
 
@@ -310,20 +385,20 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
             results={axisResults}
             religion={religion}
             userCategory={top.category}
-            closest={result.topPersonalityMatch}
+            closest={effectiveResult.topPersonalityMatch}
             farthest={result.bottomPersonalityMatches?.[0] ?? null}
           />
         </div>
 
         <aside className="e-side" aria-label={t.resultsSummaryAria}>
-          <ResultsNav premiumLocked={!hasPremium} premiumTarget={hasPremium ? 'premium-eixos' : SALES_OPEN ? 'relatorio-completo' : null} hasBooks={(result.bookRecommendations?.length ?? 0) > 0} hasCompass={compass !== null} hasParties={showParties} hasValues={politicalValues.length > 0} />
+          <ResultsNav premium={hasPremium} premiumTarget={SALES_OPEN ? 'relatorio-completo' : null} hasBooks={(result.bookRecommendations?.length ?? 0) > 0} hasCompass={compass !== null} hasParties={showParties} hasValues={politicalValues.length > 0} />
         </aside>
       </div>
       {printingPdf && pdfButtonAction(SALES_OPEN, hasPremium) === 'print' &&
         createPortal(
           <div className="rp-root" aria-hidden="true">
             <PdfReport
-              result={result}
+              result={effectiveResult}
               axes={axes}
               axisResults={axisResults}
               answeredCount={quiz ? quiz.questions.length : null}
@@ -334,5 +409,14 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
           document.body
         )}
     </main>
+  );
+
+  // No relatório pago, as fichas de personalidades, países e partidos mostram o que aproxima e afasta o usuário de cada um.
+  return hasPremium ? (
+    <MatchInsightProvider axes={axes} results={axisResults}>
+      {screen}
+    </MatchInsightProvider>
+  ) : (
+    screen
   );
 }

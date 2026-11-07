@@ -1,11 +1,36 @@
-import { useState, type CSSProperties } from 'react';
+import { useEffect, useState, type CSSProperties, type ReactNode } from 'react';
+import { LANG, t } from '../../../i18n';
 import { Portrait } from '../PersonalitiesSection';
 import type { GovernmentSeat } from '../../../types/quiz';
+import { buildSeatRole, type RoleTexts } from '../../../utils/governmentRoleText';
 import { catStyle } from '../../../utils/ideologyColors';
+import { useUserAxes } from '../MatchInsight';
 import { ProfileSheet } from '../ProfileSheet';
 import { P } from './premiumText';
 
-type SeatKey = GovernmentSeat['seatKey'];
+export type SeatKey = GovernmentSeat['seatKey'];
+
+// O texto de cada cargo em cada espectro (72 por idioma) vem de um arquivo à parte, baixado só por quem abre o governo ideal.
+const ROLE_FILES: Record<string, () => Promise<{ default: RoleTexts }>> = {
+  pt: () => import('./governmentRoles.pt.json'),
+  en: () => import('./governmentRoles.en.json'),
+  es: () => import('./governmentRoles.es.json')
+};
+
+export function useRoleTexts(): RoleTexts | null {
+  const [texts, setTexts] = useState<RoleTexts | null>(null);
+  useEffect(() => {
+    let alive = true;
+    ROLE_FILES[LANG]().then(
+      (module) => alive && setTexts(module.default),
+      () => alive && setTexts(null)
+    );
+    return () => {
+      alive = false;
+    };
+  }, []);
+  return texts;
+}
 
 // Em volta da mesa, no sentido horário a partir do topo: o líder na cabeceira e o vice logo à direita dele.
 export const ORDER: SeatKey[] = ['lider', 'vice', 'economia', 'educacao', 'estrategia', 'filosofia', 'social', 'industria', 'cultura'];
@@ -40,35 +65,64 @@ function Chair({ x, y, degrees }: { x: number; y: number; degrees: number }) {
   );
 }
 
+/** Onde cada rosto fica em volta da mesa, como as variáveis de posição do CSS (`--x`, `--y`). */
+export const seatPosition = (face: { x: number; y: number }): CSSProperties => ({ '--x': face.x.toFixed(1), '--y': face.y.toFixed(1) }) as CSSProperties;
+
+/**
+ * A mesa redonda com as nove cadeiras. Cada cadeira recebe o rosto de `seat` (ou nada), e `children` entra por cima da cena (o
+ * convite da compra põe ali o botão que abre o pagamento). Compartilhada pelo relatório e pelo convite, para os dois terem o mesmo desenho.
+ */
+export function GovernmentScene({
+  category,
+  seat,
+  children
+}: {
+  category: string;
+  seat: (key: SeatKey, face: { x: number; y: number }, side: string) => ReactNode;
+  children?: ReactNode;
+}) {
+  return (
+    <div className="e-gov" style={catStyle(category) as CSSProperties}>
+      <svg className="e-gov-scene" viewBox="0 0 1000 680" aria-hidden="true">
+        <circle className="e-gov-table-edge" cx={CENTER.x} cy={CENTER.y} r={TABLE_R} />
+        <circle className="e-gov-table-top" cx={CENTER.x} cy={CENTER.y} r={TABLE_R - 7} />
+        <circle className="e-gov-table-ring" cx={CENTER.x} cy={CENTER.y} r={TABLE_R - 44} />
+        {ORDER.map((key, index) => {
+          const { chair, degrees } = place(index);
+          return <Chair key={key} x={chair.x} y={chair.y} degrees={degrees} />;
+        })}
+      </svg>
+      {ORDER.map((key, index) => {
+        const { face, side } = place(index);
+        return seat(key, face, side);
+      })}
+      {children}
+    </div>
+  );
+}
+
 /** O governo ideal numa mesa redonda: o rosto de cada um ao lado da sua cadeira, com o nome e o cargo por fora; clicar no rosto abre a ficha de quem é. */
-export function GovernmentPanel({ seats, category }: { seats: GovernmentSeat[]; category: string }) {
+export function GovernmentPanel({ seats, category, footer }: { seats: GovernmentSeat[]; category: string; footer?: ReactNode }) {
   const [open, setOpen] = useState<SeatKey | null>(null);
   const byKey = new Map(seats.map((seat) => [seat.seatKey, seat]));
   const openSeat = open ? byKey.get(open) : undefined;
+  const roles = useRoleTexts();
+  const user = useUserAxes();
 
   return (
     <section className="e-panel e-prem" id="premium-governo" data-reveal>
       <h2>{P.governmentTitle}</h2>
-      <div className="e-gov" style={catStyle(category) as CSSProperties}>
-        <svg className="e-gov-scene" viewBox="0 0 1000 680" aria-hidden="true">
-          <circle className="e-gov-table-edge" cx={CENTER.x} cy={CENTER.y} r={TABLE_R} />
-          <circle className="e-gov-table-top" cx={CENTER.x} cy={CENTER.y} r={TABLE_R - 7} />
-          <circle className="e-gov-table-ring" cx={CENTER.x} cy={CENTER.y} r={TABLE_R - 44} />
-          {ORDER.map((key, index) => {
-            const { chair, degrees } = place(index);
-            return <Chair key={key} x={chair.x} y={chair.y} degrees={degrees} />;
-          })}
-        </svg>
-        {ORDER.map((key, index) => {
+      <GovernmentScene
+        category={category}
+        seat={(key, face, side) => {
           const seat = byKey.get(key);
           if (!seat) return null;
-          const { face, side } = place(index);
           return (
             <button
               key={key}
               type="button"
               className={`e-gov-seat e-gov-${side}`}
-              style={{ '--x': face.x.toFixed(1), '--y': face.y.toFixed(1) } as CSSProperties}
+              style={seatPosition(face)}
               aria-haspopup="dialog"
               onClick={() => setOpen(key)}
             >
@@ -79,8 +133,8 @@ export function GovernmentPanel({ seats, category }: { seats: GovernmentSeat[]; 
               </span>
             </button>
           );
-        })}
-      </div>
+        }}
+      />
 
       {/* No celular os nomes não cabem em volta da mesa: lista com o cargo e o nome. */}
       <ul className="e-gov-mlist">
@@ -92,14 +146,49 @@ export function GovernmentPanel({ seats, category }: { seats: GovernmentSeat[]; 
               <button type="button" aria-haspopup="dialog" onClick={() => setOpen(key)}>
                 <Portrait match={seat.holder} className="e-gov-mface" />
                 <span>
-                  <small>{P.seats[key]}</small>
                   <b>{seat.holder.name}</b>
+                  <small>{P.seats[key]}</small>
                 </span>
               </button>
             </li>
           );
         })}
       </ul>
+
+      {roles && user && (
+        <div className="e-gov-roles">
+          <h3>{P.governmentRolesTitle}</h3>
+          <p className="e-gov-roles-lead">{P.governmentRolesLead}</p>
+          <ol>
+            {ORDER.map((key) => {
+              const seat = byKey.get(key);
+              const role = seat && buildSeatRole(roles[key], user.axes, user.results, seat.holder.name, P.roleSubject);
+              if (!seat || !role) return null;
+              return (
+                <li key={key}>
+                  <Portrait match={seat.holder} className="e-gov-rface" />
+                  <div>
+                    <p className="e-gov-rhead">
+                      <strong>{P.seats[key]}</strong> · {seat.holder.name}
+                    </p>
+                    <p>{role.intro}</p>
+                    {role.lines.map((line) => (
+                      <p key={line.axisId} className="e-gov-rline">
+                        {P.roleAxis[line.axisId]} {line.text}
+                      </p>
+                    ))}
+                    <p className="e-gov-rwhy">
+                      {P.governmentWhy(t.personalityCategories[seat.category as keyof typeof t.personalityCategories] ?? seat.category, Math.round(seat.holder.compatibility))}
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      )}
+
+      {footer}
 
       {open && openSeat && (
         <ProfileSheet
@@ -109,6 +198,7 @@ export function GovernmentPanel({ seats, category }: { seats: GovernmentSeat[]; 
           name={openSeat.holder.name}
           caption={[openSeat.holder.role, openSeat.holder.lifespan].filter(Boolean).join(' · ')}
           description={openSeat.holder.description}
+          vector={openSeat.holder.vector}
           style={catStyle(category) as CSSProperties}
           onClose={() => setOpen(null)}
         />

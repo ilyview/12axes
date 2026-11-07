@@ -15,7 +15,7 @@ interface PartyAsset {
 const publicFile = (path: string) => fileURLToPath(new URL(`../public/${path.replace(/^\/+/, '')}`, import.meta.url));
 
 describe('party logo assets', () => {
-  it('has a public PNG for every party logoPath', () => {
+  it('has a public asset for every party logoPath', () => {
     const missing = (parties as PartyAsset[])
       .filter((party) => !existsSync(publicFile(party.logoPath)))
       .map((party) => `${party.id}: ${party.logoPath}`);
@@ -26,7 +26,15 @@ describe('party logo assets', () => {
   it('keeps every logo square (1:1)', () => {
     const notSquare = (parties as PartyAsset[])
       .filter((party) => {
-        const png = readFileSync(publicFile(party.logoPath));
+        const path = publicFile(party.logoPath);
+        if (party.logoPath.endsWith('.svg')) {
+          const svg = readFileSync(path, 'utf8');
+          const match = svg.match(/viewBox="([^"]+)"/);
+          if (!match) return true;
+          const [, , width, height] = match[1].split(/\s+/).map(Number);
+          return width !== height;
+        }
+        const png = readFileSync(path);
         const width = png.readUInt32BE(16);
         const height = png.readUInt32BE(20);
         return width !== height;

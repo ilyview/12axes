@@ -1918,5 +1918,41 @@
     "name": "Samora Machel's Mozambique",
     "category": "African Marxism-Leninism",
     "description": "Under Samora Machel and Frelimo, Mozambique became a one-party Marxist-Leninist state after independence: nationalisations, communal villages, literacy and free healthcare, an alliance with the USSR and a civil war against Renamo."
+  },
+  {
+    "id": "sigmatopia",
+    "name": "Sigmatopia",
+    "category": "Sigma Feudalism",
+    "description": "An island nation founded by the Sigma Lord after rejecting all existing forms of government as too beta. Hierarchy is determined by sigma mindset. There is no constitution — only the dominant vibe."
+  },
+  {
+    "id": "republica-unbothered",
+    "name": "The Unbothered Republic",
+    "category": "Vibe Communism",
+    "description": "A republic founded on the principle that nobody should be disturbed. The means of production are collective but work is optional if your vibe isn't aligned with it. Capital: Chillhaven."
+  },
+  {
+    "id": "corporatia",
+    "name": "Corporatia",
+    "category": "Corpianism",
+    "description": "A state founded by the merger of the world's 12 largest corporations. Parliament is the board of directors. Citizens are shareholders. The constitution is the annual report."
+  },
+  {
+    "id": "senium",
+    "name": "The Ancient Republic of Senium",
+    "category": "Chronocracy",
+    "description": "A republic governed exclusively by the eldest. Voting rights begin at 75. The constitution was written in 1952 and has never been amended because the Council considers amendments 'hasty'."
+  },
+  {
+    "id": "grand-archive",
+    "name": "The Grand Archive",
+    "category": "Lore Goblinism",
+    "description": "A library-state founded by the Lorekeepers after declaring the rest of the world was mismanaging knowledge. Electricity is permitted only to illuminate manuscripts. Industry is banned."
+  },
+  {
+    "id": "db-staat-2",
+    "name": "DB-Staat II",
+    "category": "DB-Fascism",
+    "description": "Official successor to the original DB-Staat, founded after the first collapsed when the train carrying the constitution arrived 4 hours late. The trains are still late. The state assures you the next departure is definitely coming."
   }
 ]

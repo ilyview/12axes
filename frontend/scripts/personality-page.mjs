@@ -8,6 +8,7 @@ import { AREA_LABELS, catalogHead, initials } from './personalities-index.mjs';
 import { dimensionMatches, rank, religionVisibility } from './profile-match.mjs';
 import { AXIS_EXPLANATIONS } from './app-strings.mjs';
 import { poleSprite, poleUse, profileReligion, religionPoleUse } from './pole-icons.mjs';
+import { ES } from './locales/es.mjs';
 
 const STR = {
   pt: {
@@ -103,6 +104,7 @@ const STR = {
     footer: 'Independent political quiz · 12axes.vercel.app · © 2026. All rights reserved'
   }
 };
+STR.es = { ...STR.en, ...ES.personalityPage };
 
 const ARR = '<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
 const pct = (x) => Math.round(x);
@@ -166,6 +168,7 @@ const AXIS_INFO = {
   pt: { aria: (label) => `O que significa o eixo ${label}?`, close: 'Fechar' },
   en: { aria: (label) => `What does the ${label} axis mean?`, close: 'Close' }
 };
+AXIS_INFO.es = { ...AXIS_INFO.en, ...ES.axisInfo };
 
 // Barras dos 12 eixos, iguais às da tela de resultados (AxesSection.tsx):
 // ícones de polo preenchidos, cinza quando equilibrado e helper "?" que abre
@@ -583,6 +586,7 @@ a.match:hover,a.dim-row:hover,a.near:hover,.ocard:hover,a.far-row:hover,a.distan
 /* ideologia: hero com referências e frase */
 .ihero{display:grid;grid-template-columns:1fr 320px;padding:0;overflow:hidden;border-top:6px solid var(--cat)}
 .ih-txt{padding:40px 36px}
+.ih-img{width:72px;height:72px;object-fit:contain;border-radius:16px;background:var(--cat-bg);padding:8px;margin-bottom:14px}
 .ihero h1{font-size:clamp(40px,5.6vw,68px);letter-spacing:-.04em;line-height:1.02;margin:14px 0;color:var(--cat)}
 .ihero .lead{font-size:16.5px;max-width:620px}
 .ih-refs{background:var(--cat-bg);padding:24px;display:flex;flex-direction:column;justify-content:center;gap:12px}

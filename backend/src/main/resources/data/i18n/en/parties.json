@@ -1216,5 +1216,47 @@
     "name": "Federalist Party",
     "category": "Party",
     "description": "The party of Alexander Hamilton and John Adams, it dominated the US government until 1801: it defended a strong central state, a national bank, commerce and industry, closeness to Britain and the Alien and Sedition Acts, against Jefferson."
+  },
+  {
+    "id": "pine-tree-party",
+    "name": "Pine Tree Party",
+    "category": "Movement",
+    "description": "Anti-government ecofascist movement founded by Mike Ma in 2017, mixing white supremacy, radical environmentalism and militant accelerationism; it adopted the pine tree flag and the motto 'An Appeal to Heaven'."
+  },
+  {
+    "id": "order-of-sigma",
+    "name": "Order of the Sigma",
+    "category": "Party",
+    "description": "The ruling party of Sigmatopia, founded by the Sigma Lord. Membership requires approval by 3 local sigma lords and a mindset evaluation."
+  },
+  {
+    "id": "vibe-workers-collective",
+    "name": "Vibe Workers' Collective",
+    "category": "Party",
+    "description": "The sole party of the Unbothered Republic. Meetings are optional and the agenda is 'see what the vibe says'."
+  },
+  {
+    "id": "corporate-citizens-united",
+    "name": "Corporate Citizens United",
+    "category": "Party",
+    "description": "The ruling party of Corporatia. Members are companies. Membership fees replace taxes."
+  },
+  {
+    "id": "elder-council-party",
+    "name": "The Council of Elders",
+    "category": "Party",
+    "description": "The only party in Senium. Membership is automatic at 75. Below that age, voting is not permitted."
+  },
+  {
+    "id": "lorekeepers-guild",
+    "name": "The Lorekeepers' Guild",
+    "category": "Party",
+    "description": "The ruling party of the Grand Archive. Entry requires memorisation of at least 500 tomes."
+  },
+  {
+    "id": "db-partei-neu",
+    "name": "DB Partei Neu",
+    "category": "Party",
+    "description": "The ruling party of DB-Staat Mk. II. Identical to the original DB-Partei but with new excuses for delays."
   }
 ]

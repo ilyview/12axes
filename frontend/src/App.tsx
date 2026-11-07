@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { pickReplacement, replacementCandidates, selectAllQuestionsBalanced, selectAndBalanceQuestions } from './utils/quizSelection';
 import { HOME_AXES } from './data/homeAxes';
 import type { ExampleResult } from './data/exampleResult';
-import { t } from './i18n';
+import { LANG, t } from './i18n';
 import { fetchQuiz, fetchSharedResult, submitResults } from './services/quizApi';
 import type { AnswerValue, ArchetypeQuestion, QuizPayload, QuizResult, QuizVariant } from './types/quiz';
 import { HomeScreen } from './components/editorial/HomeScreen';
@@ -14,6 +14,7 @@ import { useQuizTheme } from './hooks/useQuizTheme';
 import { QuizThemeToggle } from './components/QuizThemeToggle';
 import { loadLastResult, saveLastResult, type LastResult } from './utils/lastResult';
 import { parseShortResult, SHORT_RESULT_PATH } from './utils/shortLinks';
+import { track } from './utils/analytics';
 import type { AnswerSet } from './utils/editAnswers';
 import { CHRISTIAN_DENOMINATIONS, parseReligion, type Religion } from './utils/religion';
 import { PEOPLE_COMPARE_PATH, RESULT_URL_KEYS } from './utils/peopleCompare';
@@ -28,6 +29,7 @@ import {
 } from './utils/quizProgress';
 import { InfoSheet } from './components/results/InfoSheet';
 import { RELIGION_ICONS, RELIGION_QUESTION_ICON } from './data/religionIcons';
+import { applyGoatMode } from './utils/goatism';
 
 type Screen = 'home' | 'variant' | 'quiz' | 'archetype' | 'results';
 
@@ -58,11 +60,11 @@ const FULL_MODE =
 
 const INITIAL_VARIANT: QuizVariant = FULL_MODE ? 'extreme' : 'short';
 
-// /compare e /en/compare (comparação entre perfis do catálogo) são uma página à parte, carregada sob
+// /compare, /en/compare e /es/compare (comparação entre perfis do catálogo) são uma página à parte, carregada sob
 // demanda: o catálogo inteiro só é baixado por quem abre essa rota.
 const COMPARE_MODE =
   typeof window !== 'undefined' &&
-  ['/compare', '/en/compare'].includes(window.location.pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/');
+  ['/compare', '/en/compare', '/es/compare'].includes(window.location.pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/');
 
 // /compare/people: duas pessoas pelo link do resultado de cada uma (vetores na própria URL).
 const COMPARE_PEOPLE_MODE =
@@ -112,11 +114,27 @@ const SHARED_RELIGION: Religion | null =
     ? parseReligion(new URLSearchParams(window.location.search).get('religion') ?? new URLSearchParams(window.location.search).get('r'))
     : null;
 
+function parseSharedEgg(): boolean {
+  if (typeof window === 'undefined') {
+    return false;
+  }
+  const path = window.location.pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/';
+  if (path === SHORT_RESULT_PATH) {
+    return parseShortResult(window.location.search)?.egg ?? false;
+  }
+  return path === '/results' && new URLSearchParams(window.location.search).get('egg') === 'hatred';
+}
+
+// O easter egg Hatred não cabe nos 12 percentuais: o marcador evita que reload e link compartilhado percam o resultado.
+const SHARED_EGG = parseSharedEgg();
+
 function sharedResultUrl(result: QuizResult, religion: Religion | null = null): string {
   const query = result.axes
     .map((axis, index) => `${AXIS_URL_KEYS[index] ?? `x${index}`}=${axis.leftPercent}`)
     .join('&');
-  return `/results?${query}${religion ? `&religion=${religion}` : ''}`;
+  const egg = result.topMatch.ideologyId === 'hatred' ? '&egg=hatred' : '';
+  // O idioma vai na URL: um reload ou a volta do pagamento não dependem do que está salvo no navegador.
+  return `/results?${query}${religion ? `&religion=${religion}` : ''}${egg}${LANG === 'pt' ? '' : `&lang=${LANG}`}`;
 }
 
 // Últimas perguntas do bloco de arquétipos: religião e, só para quem escolhe cristianismo, a vertente
@@ -287,7 +305,7 @@ function MainApp() {
 
   useEffect(() => {
     if (SHARED_RESULT_VALUES) {
-      fetchSharedResult(SHARED_RESULT_VALUES, SHARED_RELIGION)
+      fetchSharedResult(SHARED_RESULT_VALUES, SHARED_RELIGION, SHARED_EGG)
         .then((sharedResult) => {
           setResult(sharedResult);
           setIsSharedView(true);
@@ -476,6 +494,7 @@ function MainApp() {
       poolRef.current = nextQuiz;
       setQuiz(buildQuizForVariant(nextQuiz, variant));
       setScreen('quiz');
+      track('quiz_start', { variant });
     } catch (err) {
       const msg = err instanceof Error ? err.message : '';
       setError(msg && msg !== 'Failed to fetch' ? msg : t.errLoadQuiz);
@@ -719,7 +738,7 @@ function MainApp() {
 
   // O botão "Editar respostas" só existe para quem fez o teste neste navegador e está vendo o próprio resultado.
   const editableAnswers =
-    result && lastResult?.answers && sharedResultUrl(result, religion) === lastResult.url ? lastResult.answers : null;
+    result && lastResult?.answers && sharedResultUrl(result, religion).replace(/&lang=\w+$/, '') === lastResult.url.replace(/&lang=\w+$/, '') ? lastResult.answers : null;
 
   async function openEditAnswers() {
     if (!editableAnswers) {
@@ -816,6 +835,7 @@ function MainApp() {
         archetypeChoices: archetype
       });
       setScreen('results');
+      track('quiz_complete', { variant: quiz.variant ?? selectedVariant });
     } catch (err) {
       setError(err instanceof Error ? err.message : t.errCalc);
     } finally {
@@ -830,9 +850,10 @@ function MainApp() {
     setIsSharing(true);
     setError(null);
     try {
+      const effectiveResult = applyGoatMode(result);
       // O módulo do cartão (e o html-to-image) só carrega neste clique.
       const { createSharePng, exportQuizFor } = await import('./utils/shareImage');
-      const dataUrl = await createSharePng(result, exportQuizFor(quiz, homeAxes, selectedVariant), religion);
+      const dataUrl = await createSharePng(effectiveResult, exportQuizFor(quiz, homeAxes, selectedVariant), religion);
 
       downloadDataUrl(
         dataUrl,
@@ -841,7 +862,7 @@ function MainApp() {
       // Libera o botão antes da folha de compartilhamento: se ela ficar aberta ou
       // nunca resolver, o botão não pode ficar preso em "gerando".
       setIsSharing(false);
-      await tryNativeShare(dataUrl, result);
+      await tryNativeShare(dataUrl, effectiveResult);
     } catch (err) {
       setError(err instanceof Error ? err.message : t.errImage);
     } finally {

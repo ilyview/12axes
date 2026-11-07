@@ -42,6 +42,18 @@ public class PersonalityMatcherService {
                 .toList();
     }
 
+    // Busca direta para o easter egg: o perfil fica fora dos rankings normais.
+    public PersonalityMatch findEasterEggMatch(String personalityId, List<AxisResult> axisResults, String lang) {
+        String normalizedLang = QuizDataService.normalizeLang(lang);
+        Personality personality = dataService.getPersonalityById(personalityId, normalizedLang);
+        if (personality == null) {
+            return null;
+        }
+        Map<String, Double> userVector = profileMatchScorer.userVectorFor(axisResults);
+        PersonalityCandidate candidate = toCandidate(personality, userVector);
+        return toMatch(new PersonalityCandidate(candidate.personality(), candidate.compatibility(), 100.0));
+    }
+
     public PersonalityMatch findTopMatch(List<AxisResult> axisResults) {
         return findTopMatch(axisResults, QuizDataService.LANG_PT);
     }
@@ -127,6 +139,7 @@ public class PersonalityMatcherService {
         Comparator<PersonalityCandidate> byName = Comparator.comparing(candidate -> candidate.personality().name());
 
         List<PersonalityCandidate> candidates = dataService.getPersonalities(QuizDataService.normalizeLang(lang)).stream()
+                .filter(personality -> !QuizDataService.isEasterEgg(personality.id()))
                 .map(personality -> toCandidate(personality, userVector))
                 .toList();
         List<Double> catalogScores = candidates.stream()

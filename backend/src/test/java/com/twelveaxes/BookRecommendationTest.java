@@ -44,7 +44,11 @@ class BookRecommendationTest {
     private PersonalityMatcherService personalityMatcherService;
 
     private QuizResult result(String lang) throws Exception {
-        String body = mockMvc.perform(get("/api/results/by-axes").param("v", LEFT_LIBERTARIAN_VECTOR).param("lang", lang))
+        return result(lang, LEFT_LIBERTARIAN_VECTOR);
+    }
+
+    private QuizResult result(String lang, String vector) throws Exception {
+        String body = mockMvc.perform(get("/api/results/by-axes").param("v", vector).param("lang", lang))
                 .andExpect(status().isOk())
                 .andReturn().getResponse().getContentAsString(StandardCharsets.UTF_8);
         return objectMapper.readValue(body, QuizResult.class);
@@ -63,12 +67,26 @@ class BookRecommendationTest {
         assertThat(result.bookRecommendations()).isNotEmpty().hasSizeLessThanOrEqualTo(3);
         assertThat(result.bookRecommendations())
                 .isSortedAccordingTo((a, b) -> Double.compare(b.compatibility(), a.compatibility()));
-        assertThat(result.bookRecommendations()).extracting(BookRecommendation::personalityId)
-                .doesNotHaveDuplicates()
-                .allSatisfy(id -> {
-                    assertThat(pool).contains(id);
-                    assertThat(dataService.getBooks()).containsKey(id);
-                });
+        assertThat(result.bookRecommendations()).doesNotHaveDuplicates();
+        assertThat(result.bookRecommendations()).allSatisfy(book -> {
+            assertThat(pool).contains(book.personalityId());
+            assertThat(dataService.getBooks()).containsKey(book.personalityId());
+        });
+    }
+
+    @Test
+    void recommendsMikeMaBooksAndImagesForHisVector() throws Exception {
+        QuizResult result = result("pt", "75.6,16.4,54.1,93.6,75.5,68.6,57.9,51.6,91.1,59.9,20.2,11.1");
+
+        assertThat(result.topPersonalityMatch().personalityId()).isEqualTo("mike-ma");
+        assertThat(result.topMatch().ideologyId()).isEqualTo("ecofascismo");
+        assertThat(result.topMatch().imagePath()).isEqualTo("/ideologies/images/ecofascismo.png");
+        assertThat(result.topPartyMatch().partyId()).isEqualTo("pine-tree-party");
+        assertThat(result.topPartyMatch().logoPath()).isEqualTo("/parties/logos/pine-tree-party.png");
+        assertThat(result.bookRecommendations()).extracting(BookRecommendation::title)
+                .contains("Harassment Architecture", "Gothic Violence");
+        assertThat(result.bookRecommendations()).extracting(BookRecommendation::coverPath)
+                .contains("/books/covers/harassment-architecture.jpg", "/books/covers/gothic-violence.jpg");
     }
 
     @Test
@@ -83,6 +101,33 @@ class BookRecommendationTest {
     void usesUsStoreAndTagInEnglish() throws Exception {
         assertThat(result("en").bookRecommendations()).allSatisfy(book ->
                 assertThat(book.url()).startsWith("https://www.amazon.com/").contains("tag=12axes0d-20"));
+    }
+
+    @Test
+    void spanishShowsTheSpanishTitleButSearchesTheUsStoreWithTheEnglishTitle() throws Exception {
+        var recommendations = result("es").bookRecommendations();
+        assertThat(recommendations).isNotEmpty().allSatisfy(book -> {
+            var stored = dataService.getBooks().get(book.personalityId()).stream()
+                    .filter(candidate -> {
+                        String spanish = candidate.title().get("es");
+                        String shown = spanish == null || spanish.isBlank() ? candidate.title().get("en") : spanish;
+                        return book.title().equals(shown);
+                    })
+                    .findFirst()
+                    .orElseThrow(() -> new AssertionError("book not found: " + book.title()));
+            String spanish = stored.title().get("es");
+            assertThat(book.title()).isEqualTo(spanish == null || spanish.isBlank() ? stored.title().get("en") : spanish);
+            assertThat(book.url()).startsWith("https://www.amazon.com/").contains("tag=12axes0d-20");
+            if (spanish != null && !spanish.equals(stored.title().get("en"))) {
+                assertThat(java.net.URLDecoder.decode(book.url(), StandardCharsets.UTF_8)).contains(stored.title().get("en"));
+            }
+        });
+    }
+
+    @Test
+    void everyBookHasASpanishTitle() {
+        assertThat(dataService.getBooks().values().stream().flatMap(List::stream))
+                .allSatisfy(book -> assertThat(book.title().get("es")).as(book.personalityId()).isNotBlank());
     }
 
     @Test

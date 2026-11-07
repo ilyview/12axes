@@ -131,6 +131,7 @@ export interface IdeologyMatch {
   longDescription: string;
   phrase: string;
   compatibility: number;
+  imagePath?: string;
 }
 
 export interface CountryMatch {
@@ -196,6 +197,7 @@ export interface BookRecommendation {
   year?: number;
   url: string;
   compatibility: number;
+  coverPath?: string | null;
 }
 
 export interface AxisOutlier {
@@ -345,6 +347,9 @@ export interface AxisAnalysis {
   level: 'equilibrado' | 'inclinado' | 'forte' | 'muito_forte';
   /** Texto fixo daquela inclinação; nulo enquanto não houver texto. */
   text: string | null;
+  /** Por que quem tem essa tendência costuma ser elogiado e criticado; nulo no equilibrado. */
+  pros: string | null;
+  cons: string | null;
   impacts: AnswerImpact[];
   ideologyLeftPercent: number | null;
   personalityLeftPercent: number | null;
@@ -367,6 +372,18 @@ export interface Disagreement {
   /** Categoria (espectro político) da ideologia mais próxima deste perfil: a cor dele na tela. */
   ideologyCategory: string;
   axes: AxisDivergence[];
+}
+
+/** O comecinho do relatório pago, para o convite da compra: só o que o convite mostra; o resto fica atrás do token. */
+export interface ReportPreview {
+  /** O eixo mais forte, só com o início do texto e sem as respostas. */
+  analysis: AxisAnalysis;
+  /** Ideologia, personalidade e país mais compatíveis (só nome e cor; `axes` vem vazio). */
+  profiles: Disagreement[];
+  /** Só o líder e o vice-líder do governo ideal. */
+  government: GovernmentSeat[];
+  /** Só a primeira era (Antiguidade), com os perfis da lista (`entries` vazio e `compatibility` 0). */
+  timeline: TimelineEra[];
 }
 
 export interface GovernmentSeat {

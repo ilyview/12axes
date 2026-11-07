@@ -14,6 +14,7 @@ import {
 } from './personality-page.mjs';
 import { poleSprite } from './pole-icons.mjs';
 import { compatibility, dimensionMatches, rank, religionVisibility } from './profile-match.mjs';
+import { ES } from './locales/es.mjs';
 
 const STR = {
   pt: {
@@ -125,6 +126,7 @@ const STR = {
     footer: 'Independent political quiz · 12axes.vercel.app · © 2026. All rights reserved'
   }
 };
+STR.es = { ...STR.en, ...ES.ideologyPage };
 
 const ARR = '<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
 const pct = (x) => Math.round(x);
@@ -144,6 +146,9 @@ export function ideologyPage(L, ideology, ctx) {
   const countryHref = (c) => `${prefix}/countries/${c.id}`;
   const countryCaption = (c) => (c.historical && c.period ? c.period : c.category);
   const tags = (list) => list.filter(Boolean).map((x) => `<span class="tag tag-neutral">${esc(x)}</span>`).join('');
+  const emblem = ideology.imagePath
+    ? `<img class="ih-img" src="${esc(ideology.imagePath)}" alt="${esc(name)}" width="72" height="72" loading="lazy" decoding="async">`
+    : '';
 
   const refPerson = L.personalityById.get(ideology.personalityId);
   const refCountry = L.countryById.get(ideology.countryId);
@@ -279,6 +284,7 @@ ${siteHeader({ L, basePath, current: 'ideologies', webView: `/tree/ideologies?id
   <p class="crumbs"><a href="${home}">${esc(L.s.home)}</a> / <a href="${prefix}/ideologies">${esc(L.s.navIdeologies)}</a> / <span aria-current="page">${esc(name)}</span></p>
   <article class="panel ihero">
     <div class="ih-txt">
+      ${emblem}
       <div class="match-tags"><span class="tag tag-solid">${esc(ideology.category)}</span><span class="tag tag-neutral">${esc(t.kind)}</span></div>
       <h1>${esc(name)}</h1>
       <p class="lead">${esc(ideology.description)}</p>

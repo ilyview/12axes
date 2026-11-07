@@ -55,7 +55,7 @@ export function parseResultLink(raw: string): ResultLinkParse {
   // Link curto do QR do cartão (/r?v=70-80-…&r=c): os 12 valores num só parâmetro.
   if (missing.length === RESULT_URL_KEYS.length && byKey.has('v')) {
     const short = parseShortResult(query);
-    if (short) return { ok: true, ...short };
+    if (short) return { ok: true, values: short.values, religion: short.religion };
     return { ok: false, problem: { kind: 'invalid', keys: ['v'] } };
   }
   if (missing.length > 0) return { ok: false, problem: { kind: 'missing', keys: missing } };

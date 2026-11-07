@@ -22,7 +22,7 @@ export function BooksSection({ books }: { books?: BookRecommendation[] }) {
       </header>
       <ul className="e-read-grid">
         {books.map((book, index) => (
-          <li className={index === 0 ? 'e-read-card e-read-top' : 'e-read-card'} key={book.personalityId}>
+          <li className={index === 0 ? 'e-read-card e-read-top' : 'e-read-card'} key={`${book.personalityId}-${book.title}`}>
             <div className="e-read-meta">
               <span className="e-read-rank">{String(index + 1).padStart(2, '0')}</span>
               <span className="e-read-pct">{t.booksWhy(Math.round(book.compatibility))}</span>
@@ -40,10 +40,19 @@ export function BooksSection({ books }: { books?: BookRecommendation[] }) {
               </div>
             </div>
             <div className="e-read-book">
-              <svg className="e-read-ico" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2" />
-                <path d="M4 19a2 2 0 0 1 2-2h13" />
-              </svg>
+              {book.coverPath ? (
+                <SafeImg
+                  className="e-read-cover"
+                  src={book.coverPath}
+                  alt={book.title}
+                  fallback={book.title}
+                />
+              ) : (
+                <svg className="e-read-ico" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2" />
+                  <path d="M4 19a2 2 0 0 1 2-2h13" />
+                </svg>
+              )}
               <div>
                 <h3>{book.title}</h3>
                 {book.year ? <span className="e-read-year">{formatYear(book.year)}</span> : null}

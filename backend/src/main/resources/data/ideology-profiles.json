@@ -2059,18 +2059,18 @@
   {
     "ideologyId": "ecofascismo",
     "vector": {
-      "estrutura": 52.5,
-      "representacao": 13.8,
-      "poder": 75.0,
-      "imigracao": 95.0,
-      "diplomacia": 70.0,
-      "intervencao": 45.0,
-      "economia": 57.5,
-      "controle": 75.0,
-      "comercio": 91.2,
-      "religiao": 41.2,
-      "moral": 20.0,
-      "tecnologia": 11.2
+      "estrutura": 54.2,
+      "representacao": 16.4,
+      "poder": 72.0,
+      "imigracao": 93.6,
+      "diplomacia": 75.5,
+      "intervencao": 44.8,
+      "economia": 24.4,
+      "controle": 24.2,
+      "comercio": 87.5,
+      "religiao": 59.9,
+      "moral": 20.2,
+      "tecnologia": 11.1
     }
   },
   {
@@ -4672,6 +4672,142 @@
       "religiao": 81.0,
       "moral": 68.1,
       "tecnologia": 76.0
+    }
+  },
+  {
+    "ideologyId": "ecologia-social",
+    "vector": {
+      "estrutura": 75.0,
+      "representacao": 85.0,
+      "poder": 30.0,
+      "imigracao": 18.0,
+      "diplomacia": 38.0,
+      "intervencao": 72.0,
+      "economia": 80.0,
+      "controle": 70.0,
+      "comercio": 60.0,
+      "religiao": 80.0,
+      "moral": 75.0,
+      "tecnologia": 28.0
+    }
+  },
+  {
+    "ideologyId": "db-fascismo",
+    "vector": {
+      "estrutura": 10.0,
+      "representacao": 8.0,
+      "poder": 88.0,
+      "imigracao": 92.0,
+      "diplomacia": 65.0,
+      "intervencao": 12.0,
+      "economia": 85.0,
+      "controle": 90.0,
+      "comercio": 82.0,
+      "religiao": 72.0,
+      "moral": 18.0,
+      "tecnologia": 85.0
+    }
+  },
+  {
+    "ideologyId": "ligma-feudalismo",
+    "vector": {
+      "estrutura": 20,
+      "representacao": 15,
+      "poder": 60,
+      "imigracao": 70,
+      "diplomacia": 75,
+      "intervencao": 20,
+      "economia": 15,
+      "controle": 10,
+      "comercio": 25,
+      "religiao": 50,
+      "moral": 15,
+      "tecnologia": 60
+    }
+  },
+  {
+    "ideologyId": "vibe-comunismo",
+    "vector": {
+      "estrutura": 85,
+      "representacao": 80,
+      "poder": 25,
+      "imigracao": 20,
+      "diplomacia": 20,
+      "intervencao": 80,
+      "economia": 90,
+      "controle": 65,
+      "comercio": 55,
+      "religiao": 75,
+      "moral": 85,
+      "tecnologia": 55
+    }
+  },
+  {
+    "ideologyId": "corpianismo",
+    "vector": {
+      "estrutura": 15,
+      "representacao": 20,
+      "poder": 40,
+      "imigracao": 30,
+      "diplomacia": 50,
+      "intervencao": 30,
+      "economia": 5,
+      "controle": 5,
+      "comercio": 5,
+      "religiao": 60,
+      "moral": 50,
+      "tecnologia": 85
+    }
+  },
+  {
+    "ideologyId": "cronocracia",
+    "vector": {
+      "estrutura": 25,
+      "representacao": 30,
+      "poder": 70,
+      "imigracao": 60,
+      "diplomacia": 40,
+      "intervencao": 35,
+      "economia": 60,
+      "controle": 55,
+      "comercio": 65,
+      "religiao": 30,
+      "moral": 20,
+      "tecnologia": 25
+    }
+  },
+  {
+    "ideologyId": "lore-goblinismo",
+    "vector": {
+      "estrutura": 60,
+      "representacao": 55,
+      "poder": 45,
+      "imigracao": 40,
+      "diplomacia": 30,
+      "intervencao": 60,
+      "economia": 70,
+      "controle": 50,
+      "comercio": 70,
+      "religiao": 50,
+      "moral": 60,
+      "tecnologia": 20
+    }
+  },
+  {
+    "ideologyId": "hatred",
+    "vector": {
+      "estrutura": 50,
+      "representacao": 50,
+      "poder": 50,
+      "imigracao": 50,
+      "diplomacia": 50,
+      "intervencao": 50,
+      "economia": 50,
+      "controle": 50,
+      "comercio": 50,
+      "religiao": 50,
+      "moral": 50,
+      "tecnologia": 50
     }
   }
 ]

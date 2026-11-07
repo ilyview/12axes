@@ -35,6 +35,23 @@ public class IdeologyMatcherService {
         return findRankedMatches(axisResults, lang, religion);
     }
 
+    // Busca direta para o easter egg: o perfil fica fora dos rankings normais.
+    public IdeologyMatch findEasterEggMatch(String ideologyId, List<AxisResult> axisResults, String lang) {
+        String normalizedLang = QuizDataService.normalizeLang(lang);
+        Ideology ideology = dataService.getIdeologyById(ideologyId, normalizedLang);
+        if (ideology == null) {
+            return null;
+        }
+        Map<String, Double> userVector = profileMatchScorer.userVectorFor(axisResults);
+        IdeologyCandidate candidate = toCandidate(ideology, userVector);
+        return toMatch(new IdeologyCandidate(
+                candidate.ideology(),
+                candidate.targetVector(),
+                candidate.compatibility(),
+                100.0
+        ), normalizedLang);
+    }
+
     public IdeologyMatch findBottomMatch(List<AxisResult> axisResults, String lang) {
         return findBottomMatch(axisResults, lang, null);
     }
@@ -85,6 +102,7 @@ public class IdeologyMatcherService {
 
     private List<IdeologyCandidate> computeRanking(Map<String, Double> userVector, String normalizedLang, String religion) {
         List<IdeologyCandidate> candidates = dataService.getIdeologies(normalizedLang).stream()
+                .filter(ideology -> !QuizDataService.isEasterEgg(ideology.id()))
                 .map(ideology -> toCandidate(ideology, userVector))
                 .toList();
         List<Double> catalogScores = candidates.stream()
@@ -133,7 +151,8 @@ public class IdeologyMatcherService {
                 longDescription,
                 ideology.phrase(),
                 candidate.compatibility(),
-                candidate.compatibilityPercentile()
+                candidate.compatibilityPercentile(),
+                ideology.imagePath()
         );
     }
 
@@ -159,13 +178,16 @@ public class IdeologyMatcherService {
     }
 
     private String longDescription(String rawDescription, String lang) {
-        boolean en = QuizDataService.LANG_EN.equals(lang);
+        boolean en = !QuizDataService.LANG_PT.equals(lang);
+        boolean es = QuizDataService.LANG_ES.equals(lang);
         DescriptionParts parts = splitDescription(cleanDescription(rawDescription));
         StringBuilder description = new StringBuilder(parts.summary());
         if (!parts.summary().endsWith(".")) {
             description.append(".");
         }
-        description.append(en
+        description.append(es
+                ? " La compatibilidad indica cuán cerca están tus respuestas de este perfil."
+                : en
                 ? " Compatibility indicates how close your answers are to this profile."
                 : " A compatibilidade indica proximidade entre suas respostas e esse perfil.");
         if (!parts.isEmpty()) {

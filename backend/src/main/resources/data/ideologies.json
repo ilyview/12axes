@@ -1579,12 +1579,13 @@
     "id": "ecofascismo",
     "name": "Ecofascismo",
     "category": "Terceira Posição",
-    "description": "Corrente que une ecologia radical, autoritarismo e nacionalismo orgânico, defendendo controle populacional, preservação ambiental imposta pelo Estado e subordinação das liberdades individuais à sobrevivência da comunidade nacional.",
+    "description": "Corrente que une ecologia radical, autoritarismo e nacionalismo branco, associada a Mike Ma e ao Pine Tree Party: defende colapso industrial, controle populacional e preservação da natureza imposta por uma ordem autoritária.",
     "phrase": "Quero uma comunidade nacional orgânica em harmonia com a terra, que ponha a preservação ambiental e a sobrevivência do povo acima das liberdades individuais.",
     "vector": null,
-    "countryId": "imperio-alemao",
-    "personalityId": "martin-heidegger",
-    "religions": []
+    "countryId": "estados-unidos",
+    "personalityId": "mike-ma",
+    "religions": [],
+    "imagePath": "/ideologies/images/ecofascismo.png"
   },
   {
     "id": "comunismo-agrario",
@@ -3517,6 +3518,94 @@
     "phrase": "Quero uma sociedade guiada pela razão, ciência e tolerância, com direitos naturais, poderes separados e a lei acima do trono e do altar.",
     "countryId": "franca",
     "personalityId": "voltaire",
+    "religions": []
+  },
+  {
+    "id": "ecologia-social",
+    "name": "Ecologia Social",
+    "category": "Esquerda",
+    "description": "Corrente fundada por Murray Bookchin que explica a crise ecológica pela dominação social e propõe municípios autônomos, democracia direta e economia cooperativa em confederações, influenciando o confederalismo democrático de Rojava.",
+    "phrase": "Quero uma sociedade de municípios autônomos e assembleias diretas, que supere a hierarquia social e organize a economia em cooperativas e confederações ecológicas.",
+    "vector": null,
+    "countryId": "estados-unidos",
+    "personalityId": "bookchin",
+    "religions": []
+  },
+  {
+    "id": "ligma-feudalismo",
+    "name": "Ligma Feudalismo",
+    "category": "Terceira Posição",
+    "description": "Sistema político em que os machos sigma substituem a aristocracia hereditária. A hierarquia social é determinada exclusivamente pela mentalidade sigma, pelo desempenho físico e pela resiliência emocional. O Sigma Lord governa sem Estado — a dominância natural é a única lei.",
+    "phrase": "Quero uma sociedade onde os sigma governam, os beta obedecem e o Estado é substituído pela hierarquia natural da mentalidade sigma.",
+    "vector": null,
+    "countryId": "sigmatopia",
+    "personalityId": "sigma-lord",
+    "religions": []
+  },
+  {
+    "id": "vibe-comunismo",
+    "name": "Vibe Comunismo",
+    "category": "Esquerda Radical",
+    "description": "Sistema político em que os meios de produção são coletivamente possuídos, mas a única obrigação do Estado é garantir que todos possam vibrar sem perturbação. A política exterior é definida pela vibe — guerras são proibidas por serem anti-vibe.",
+    "phrase": "Quero uma sociedade onde a propriedade coletiva existe para que todos possam ser incomodados e as vibes fluam livremente para todos.",
+    "vector": null,
+    "countryId": "republica-unbothered",
+    "personalityId": "vibemaster-general",
+    "religions": []
+  },
+  {
+    "id": "corpianismo",
+    "name": "Corpianismo",
+    "category": "Direita",
+    "description": "Sistema político em que as corporações são reconhecidas como cidadãos plenos. Com o tempo, as corporações passam a votar, eleger outras corporações e eventualmente uma corporação torna-se presidente. O Estado é uma subsidiária do mercado.",
+    "phrase": "Quero uma sociedade onde as corporações são pessoas, o mercado é o governo e o CEO-Presidente lidera a nação com eficiência de spreadsheet.",
+    "vector": null,
+    "countryId": "corporatia",
+    "personalityId": "ceo-president",
+    "religions": []
+  },
+  {
+    "id": "cronocracia",
+    "name": "Cronocracia",
+    "category": "Terceira Posição",
+    "description": "Sistema político em que o poder é exercido exclusivamente pelos mais velhos. Quanto mais anos se tem, mais votos se detém. O Conselho dos Anciãos governa com sabedoria acumulada e suspeita profunda de qualquer coisa inventada depois de 1987.",
+    "phrase": "Quero uma sociedade governada pelos mais velhos, onde a experiência é o único critério de poder e o jovem aprende a calar-se e a esperar.",
+    "vector": null,
+    "countryId": "senium",
+    "personalityId": "grand-elder",
+    "religions": ["other"]
+  },
+  {
+    "id": "lore-goblinismo",
+    "name": "Lore Goblinismo",
+    "category": "Terceira Posição",
+    "description": "Sistema político em que escribas, lorekeepers e guardiões do conhecimento antigo constituem a classe governante. A indústria é proibida por corromper o lore. A riqueza é medida em tomos. O Grão-Lorekeeper detém o poder supremo.",
+    "phrase": "Quero uma sociedade governada pelos guardiões do lore, onde o conhecimento antigo é sagrado, a indústria é heresia e cada biblioteca é um templo.",
+    "vector": null,
+    "countryId": "grand-archive",
+    "personalityId": "grand-lorekeeper",
+    "religions": []
+  },
+  {
+    "id": "db-fascismo",
+    "name": "DB-Fascismo",
+    "category": "Extrema Direita",
+    "description": "Fascismo ferroviário do DB-Staat: o Fahrplan é a constituição, a cidadania é restrita a Familienangehörige e os comboios continuam atrasados. O Estado reconhece oficialmente que os atrasos são inevitáveis mas promete que a próxima partida estará a horas.",
+    "phrase": "Quero um Estado governado pelo Fahrplan, onde a pontualidade é lei, os comboios chegam quando chegam e Dennis Becker promete a próxima.",
+    "vector": null,
+    "countryId": "db-staat-2",
+    "personalityId": "dennis-becker",
+    "religions": []
+  },
+  {
+    "id": "hatred",
+    "name": "Hatred",
+    "category": "Terceira Posição",
+    "description": "Ideologia da recusa absoluta: não propõe programa, ordem ou futuro, apenas a negação de cada pergunta e de cada promessa política. O único consenso é dizer não a tudo, e o único projeto é o desprezo.",
+    "phrase": "Quero uma sociedade que diga não a todas as perguntas, onde a recusa total é o único programa e o desprezo é a única política.",
+    "vector": null,
+    "countryId": null,
+    "personalityId": "hatred",
     "religions": []
   }
 ]

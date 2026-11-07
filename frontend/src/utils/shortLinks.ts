@@ -1,3 +1,4 @@
+import type { Lang } from '../i18n';
 import { parseReligion, type Religion } from './religion';
 
 /** Origem pública do site: o QR do cartão aponta para ela, não para o endereço de onde a pessoa gerou a imagem. */
@@ -33,26 +34,37 @@ function compact(value: number): string {
   return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
 }
 
-export function shortResultQuery(values: number[], religion: Religion | null, lang: 'pt' | 'en'): string {
+export function shortResultQuery(values: number[], religion: Religion | null, lang: Lang, hatredEgg = false): string {
   const parts = [`v=${values.map(compact).join('-')}`];
   if (religion) parts.push(`r=${RELIGION_CODES[religion]}`);
-  if (lang === 'en') parts.push('l=en');
+  if (lang !== 'pt') parts.push(`l=${lang}`);
+  if (hatredEgg) parts.push('e=1');
   return parts.join('&');
 }
 
 /** Link curto de um resultado, para o QR code do cartão de compartilhamento. */
-export function shortResultUrl(values: number[], religion: Religion | null, lang: 'pt' | 'en', origin = PUBLIC_ORIGIN): string {
-  return `${origin}${SHORT_RESULT_PATH}?${shortResultQuery(values, religion, lang)}`;
+export function shortResultUrl(
+  values: number[],
+  religion: Religion | null,
+  lang: Lang,
+  hatredEgg = false,
+  origin = PUBLIC_ORIGIN
+): string {
+  return `${origin}${SHORT_RESULT_PATH}?${shortResultQuery(values, religion, lang, hatredEgg)}`;
 }
 
 /** Lê /r?v=…&r=…: null quando não traz os 12 valores válidos (0 a 100). */
-export function parseShortResult(search: string): { values: number[]; religion: Religion | null } | null {
+export function parseShortResult(search: string): { values: number[]; religion: Religion | null; egg: boolean } | null {
   const params = new URLSearchParams(search);
   const raw = params.get('v');
   if (!raw) return null;
   const values = raw.split(/[-,]/).map((part) => Number(part));
   if (values.length !== AXIS_COUNT || values.some((value) => !Number.isFinite(value) || value < 0 || value > 100)) return null;
-  return { values, religion: parseReligionCode(params.get('r') ?? params.get('religion')) };
+  return {
+    values,
+    religion: parseReligionCode(params.get('r') ?? params.get('religion')),
+    egg: params.get('e') === '1' || params.get('egg') === 'hatred'
+  };
 }
 
 /**
@@ -63,7 +75,7 @@ export function compactCompareUrl(
   names: [string, string],
   values: [number[], number[]],
   religions: [string | null, string | null],
-  lang: 'pt' | 'en',
+  lang: Lang,
   origin = PUBLIC_ORIGIN
 ): string {
   // Inteiros: meio ponto a menos de precisão no QR, em troca de um link bem mais curto (e um QR mais fácil de ler).
@@ -75,7 +87,7 @@ export function compactCompareUrl(
     `bn=${encodeURIComponent(names[1])}`,
     `b=${list(values[1])}`,
     ...(religions[1] ? [`rb=${religions[1]}`] : []),
-    ...(lang === 'en' ? ['lang=en'] : [])
+    ...(lang !== 'pt' ? [`lang=${lang}`] : [])
   ];
   return `${origin}/compare/people?${parts.join('&')}`;
 }

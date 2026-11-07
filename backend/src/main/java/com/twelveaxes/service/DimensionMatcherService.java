@@ -128,6 +128,7 @@ public class DimensionMatcherService {
         Map<String, Double> userVector = profileMatchScorer.userVectorFor(axisResults);
         List<Personality> personalities = dataService.getPersonalities(QuizDataService.normalizeLang(lang)).stream()
                 .filter(personality -> !excludedIds.contains(personality.id()))
+                .filter(personality -> !QuizDataService.isEasterEgg(personality.id()))
                 .filter(personality -> categories.contains(personality.category()))
                 .filter(personality -> ReligionFilter.allows(personality.religions(), religion))
                 .toList();

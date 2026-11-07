@@ -5438,5 +5438,107 @@
       "moral": 33.3,
       "tecnologia": 73.7
     }
+  },
+  {
+    "countryId": "sigmatopia",
+    "vector": {
+      "estrutura": 20,
+      "representacao": 15,
+      "poder": 60,
+      "imigracao": 70,
+      "diplomacia": 75,
+      "intervencao": 20,
+      "economia": 15,
+      "controle": 10,
+      "comercio": 25,
+      "religiao": 50,
+      "moral": 15,
+      "tecnologia": 60
+    }
+  },
+  {
+    "countryId": "republica-unbothered",
+    "vector": {
+      "estrutura": 85,
+      "representacao": 80,
+      "poder": 25,
+      "imigracao": 20,
+      "diplomacia": 20,
+      "intervencao": 80,
+      "economia": 90,
+      "controle": 65,
+      "comercio": 55,
+      "religiao": 75,
+      "moral": 85,
+      "tecnologia": 55
+    }
+  },
+  {
+    "countryId": "corporatia",
+    "vector": {
+      "estrutura": 15,
+      "representacao": 20,
+      "poder": 40,
+      "imigracao": 30,
+      "diplomacia": 50,
+      "intervencao": 30,
+      "economia": 5,
+      "controle": 5,
+      "comercio": 5,
+      "religiao": 60,
+      "moral": 50,
+      "tecnologia": 85
+    }
+  },
+  {
+    "countryId": "senium",
+    "vector": {
+      "estrutura": 25,
+      "representacao": 30,
+      "poder": 70,
+      "imigracao": 60,
+      "diplomacia": 40,
+      "intervencao": 35,
+      "economia": 60,
+      "controle": 55,
+      "comercio": 65,
+      "religiao": 30,
+      "moral": 20,
+      "tecnologia": 25
+    }
+  },
+  {
+    "countryId": "grand-archive",
+    "vector": {
+      "estrutura": 60,
+      "representacao": 55,
+      "poder": 45,
+      "imigracao": 40,
+      "diplomacia": 30,
+      "intervencao": 60,
+      "economia": 70,
+      "controle": 50,
+      "comercio": 70,
+      "religiao": 50,
+      "moral": 60,
+      "tecnologia": 20
+    }
+  },
+  {
+    "countryId": "db-staat-2",
+    "vector": {
+      "estrutura": 12,
+      "representacao": 10,
+      "poder": 85,
+      "imigracao": 90,
+      "diplomacia": 60,
+      "intervencao": 10,
+      "economia": 88,
+      "controle": 85,
+      "comercio": 85,
+      "religiao": 70,
+      "moral": 20,
+      "tecnologia": 70
+    }
   }
 ]

@@ -1,8 +1,8 @@
 {
   "_comment": "Estado unico da auditoria pergunta-a-pergunta (240 perguntas / 12 eixos). Um objeto por catalogo. Veja README.md para o processo completo.",
-  "lastUpdated": "2026-11-04T14:13:04Z",
+  "lastUpdated": "2026-11-06T16:34:51Z",
   "personality": {
-    "totalProfiles": 676,
+    "totalProfiles": 726,
     "pending": [],
     "done": [
       "lenin",
@@ -680,9 +680,59 @@
       "eduardo-campos",
       "arnold-schwarzenegger",
       "tancredo-neves",
-      "jorginho-mello"
+      "jorginho-mello",
+      "chico-mendes",
+      "miguel-arraes",
+      "rafael-fonteles",
+      "luis-montenegro",
+      "rob-jetten",
+      "andrej-babis",
+      "robert-fico",
+      "alexander-stubb",
+      "sebastien-lecornu",
+      "john-healey",
+      "edouard-philippe",
+      "klemens-von-metternich",
+      "jean-monnet",
+      "mario-draghi",
+      "antonio-costa",
+      "andre-ventura",
+      "mario-soares",
+      "alvaro-cunhal",
+      "clement-attlee",
+      "david-cameron",
+      "felipe-gonzalez",
+      "jose-maria-aznar",
+      "jose-luis-rodriguez-zapatero",
+      "mariano-rajoy",
+      "adolfo-suarez",
+      "mauricio-macri",
+      "alberto-fernandez",
+      "raul-alfonsin",
+      "jorge-rafael-videla",
+      "willy-brandt",
+      "nicolas-sarkozy",
+      "goh-keng-swee",
+      "delfim-netto",
+      "sergei-korolev",
+      "zhou-enlai",
+      "zhu-rongji",
+      "paul-volcker",
+      "domingo-cavallo",
+      "michael-jackson",
+      "bob-dylan",
+      "victor-jara",
+      "muhammad-ali",
+      "diego-maradona",
+      "george-weah",
+      "charlie-chaplin",
+      "john-lennon",
+      "ludwig-van-beethoven",
+      "socrates-brasileiro",
+      "pedro-alliana",
+      "mike-ma"
     ],
-    "lastUpdated": "2026-11-04T14:13:04Z",
+    "lastUpdated": "2026-11-06T13:54:09Z",
     "audited": 509,
     "unanswered": 0
   },
@@ -1296,9 +1346,9 @@
       "polonia-socialista"
     ]
   },
-  "totalProfiles": 1189,
+  "totalProfiles": 1196,
   "party": {
-    "totalProfiles": 203,
+    "totalProfiles": 204,
     "pending": [],
     "done": [
       "nsdap",
@@ -1503,7 +1553,8 @@
       "forza-italia",
       "avante",
       "refah-partisi",
-      "partido-federalista-eua"
+      "partido-federalista-eua",
+      "pine-tree-party"
     ]
   }
 }

@@ -12,6 +12,7 @@ public record Ideology(
         String countryId,
         String personalityId,
         Map<String, Double> vector,
-        List<String> religions
+        List<String> religions,
+        String imagePath
 ) {
 }

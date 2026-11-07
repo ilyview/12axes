@@ -16,7 +16,8 @@ export type IdeologyColorKey =
   | 'ext-direita'
   | 'terceira'
   | 'libertario'
-  | 'anarquismo';
+  | 'anarquismo'
+  | 'raw';
 
 const PALETTE: Record<IdeologyColorKey, IdeologyColor> = {
   'esq-radical': { key: 'esq-radical', base: '#830214', bg: '#ECD5D8' },
@@ -26,13 +27,21 @@ const PALETTE: Record<IdeologyColorKey, IdeologyColor> = {
   'ext-direita': { key: 'ext-direita', base: '#001743', bg: '#D5DAE6' },
   terceira: { key: 'terceira', base: '#4B2A63', bg: '#E2D5EC' },
   libertario: { key: 'libertario', base: '#946201', bg: '#F0E4C8' },
-  anarquismo: { key: 'anarquismo', base: '#2B2B2B', bg: '#E2DFD8' }
+  anarquismo: { key: 'anarquismo', base: '#2B2B2B', bg: '#E2DFD8' },
+  raw: { key: 'raw', base: '#b03070', bg: '#F7D6E8' },
 };
 
-// Nomes de categoria vindos da API (PT e EN) e ids do espectro da home.
+// Nomes de categoria vindos da API (PT, EN e ES) e ids do espectro da home.
 const ALIASES: Record<string, IdeologyColorKey> = {
   'esquerda radical': 'esq-radical',
   'radical left': 'esq-radical',
+  'izquierda radical': 'esq-radical',
+  izquierda: 'esquerda',
+  derecha: 'direita',
+  'extrema derecha': 'ext-direita',
+  'tercera posición': 'terceira',
+  libertario: 'libertario',
+  anarquista: 'anarquismo',
   'left-radical': 'esq-radical',
   esquerda: 'esquerda',
   left: 'esquerda',
@@ -49,8 +58,8 @@ const ALIASES: Record<string, IdeologyColorKey> = {
   libertário: 'libertario',
   libertarian: 'libertario',
   anarquismo: 'anarquismo',
-  anarquista: 'anarquismo',
-  anarchist: 'anarquismo'
+  anarchist: 'anarquismo',
+  raw: 'raw',
 };
 
 export const SPECTRUM_ORDER: IdeologyColor[] = [
@@ -61,7 +70,8 @@ export const SPECTRUM_ORDER: IdeologyColor[] = [
   PALETTE['ext-direita'],
   PALETTE.terceira,
   PALETTE.libertario,
-  PALETTE.anarquismo
+  PALETTE.anarquismo,
+  PALETTE.raw,
 ];
 
 /** Cor de uma categoria pela chave interna (sem passar pelos nomes vindos da API). */

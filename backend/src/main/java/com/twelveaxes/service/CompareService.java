@@ -79,9 +79,13 @@ public class CompareService {
 
     private List<CompareItem> buildCatalog(String lang) {
         List<CompareItem> items = new ArrayList<>();
-        dataService.getPersonalities(lang).forEach(personality -> items.add(personalityItem(personality)));
+        dataService.getPersonalities(lang).stream()
+                .filter(personality -> !QuizDataService.isEasterEgg(personality.id()))
+                .forEach(personality -> items.add(personalityItem(personality)));
         dataService.getCountries(lang).forEach(country -> items.add(countryItem(country)));
-        dataService.getIdeologies(lang).forEach(ideology -> items.add(ideologyItem(ideology)));
+        dataService.getIdeologies(lang).stream()
+                .filter(ideology -> !QuizDataService.isEasterEgg(ideology.id()))
+                .forEach(ideology -> items.add(ideologyItem(ideology)));
         dataService.getParties(lang).forEach(party -> items.add(partyItem(party)));
         return List.copyOf(items);
     }

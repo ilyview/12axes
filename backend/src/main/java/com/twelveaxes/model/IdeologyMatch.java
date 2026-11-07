@@ -8,6 +8,7 @@ public record IdeologyMatch(
         String longDescription,
         String phrase,
         double compatibility,
-        double compatibilityPercentile
+        double compatibilityPercentile,
+        String imagePath
 ) {
 }

@@ -6,6 +6,7 @@ import { siteHeader } from './site-header.mjs';
 import { iconLinks } from './cdn.mjs';
 import { poleSprite, poleUse } from './pole-icons.mjs';
 import { buildCardPoles, renderFilterButton, renderFilterDrawer, renderClientFilterScript, FILTERS_CSS } from './catalogue-filters.mjs';
+import { ES } from './locales/es.mjs';
 
 // Mesma paleta de frontend/src/utils/ideologyColors.ts, na ordem do espectro.
 export const SPECTRUM = [
@@ -22,6 +23,13 @@ export const SPECTRUM = [
 export const CATEGORY_KEY = {
   'esquerda radical': 'esq-radical',
   'radical left': 'esq-radical',
+  'izquierda radical': 'esq-radical',
+  izquierda: 'esquerda',
+  derecha: 'direita',
+  'extrema derecha': 'ext-direita',
+  'tercera posición': 'terceira',
+  libertario: 'libertario',
+  anarquista: 'anarquismo',
   esquerda: 'esquerda',
   left: 'esquerda',
   'esquerda tecnossocialista pós-capitalista': 'esquerda',
@@ -116,6 +124,7 @@ const STR = {
     }
   }
 };
+STR.es = { ...STR.en, ...ES.ideologiesIndex };
 
 export const ARROW = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
 
@@ -187,7 +196,10 @@ export function ideologiesIndexPage(L, { locale, site, gaSnippet, escapeHtml, pr
           (i) => {
             const vec = profiles.get(i.id);
             const poles = buildCardPoles(L.axes, vec);
-            return `<li class="ic" data-text="${escapeHtml(`${i.name} ${i.description}`.toLowerCase())}" data-poles="${escapeHtml(poles)}"><a href="${prefix}/ideologies/${i.id}"><h3>${escapeHtml(i.name)}</h3><p>${escapeHtml(i.description)}</p><span class="ic-foot">${dna(L.axes, vec, escapeHtml)}<span class="go">${escapeHtml(t.viewProfile)} ${ARROW}</span></span></a></li>`;
+            const emblem = i.imagePath
+              ? `<img class="ic-img" src="${escapeHtml(i.imagePath)}" alt="${escapeHtml(i.name)}" width="44" height="44" loading="lazy" decoding="async">`
+              : '';
+            return `<li class="ic" data-text="${escapeHtml(`${i.name} ${i.description}`.toLowerCase())}" data-poles="${escapeHtml(poles)}"><a href="${prefix}/ideologies/${i.id}">${emblem}<h3>${escapeHtml(i.name)}</h3><p>${escapeHtml(i.description)}</p><span class="ic-foot">${dna(L.axes, vec, escapeHtml)}<span class="go">${escapeHtml(t.viewProfile)} ${ARROW}</span></span></a></li>`;
           }
         )
         .join('');
@@ -215,11 +227,12 @@ export function ideologiesIndexPage(L, { locale, site, gaSnippet, escapeHtml, pr
     <meta name="theme-color" content="#F4F1E8" />
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
-    <meta name="copyright" content="${L.s.htmlLang === 'pt-BR' ? '© 2026 12 Axes. Todos os direitos reservados' : '© 2026 12 Axes. All rights reserved'}" />
+    <meta name="copyright" content="${{ pt: '© 2026 12 Axes. Todos os direitos reservados', en: '© 2026 12 Axes. All rights reserved', es: '© 2026 12 Axes. Todos los derechos reservados' }[L.locale]}" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="${url}" />
     <link rel="alternate" hreflang="pt-BR" href="${site}${basePath}" />
     <link rel="alternate" hreflang="en" href="${site}/en${basePath}" />
+    <link rel="alternate" hreflang="es" href="${site}/es${basePath}" />
     <link rel="alternate" hreflang="x-default" href="${site}/en${basePath}" />
     ${iconLinks()}
     <meta property="og:type" content="website" />
@@ -358,6 +371,7 @@ main{padding-bottom:40px}
 .ic a{height:100%;display:flex;flex-direction:column;gap:8px;text-decoration:none;background:var(--sup);border:1px solid var(--borda);border-radius:20px;padding:20px 20px 16px;position:relative;overflow:hidden;transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
 .ic a::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c);opacity:.85}
 .ic a:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--c) 45%,var(--borda));box-shadow:0 12px 28px rgba(16,16,16,.07)}
+.ic-img{width:44px;height:44px;object-fit:contain;border-radius:12px;flex:none;background:color-mix(in srgb,var(--c) 10%,var(--sup));padding:4px}
 .ic h3{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.015em;line-height:1.25}
 .ic p{font-size:14px;color:var(--suave);line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;flex:1}
 .ic-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:6px;padding-top:12px;border-top:1px solid var(--borda)}

@@ -2,6 +2,7 @@ import { useState, type CSSProperties } from 'react';
 import { t } from '../../i18n';
 import type { IdeologyMatch } from '../../types/quiz';
 import { localCatStyle, resolveIdeologyColor } from '../../utils/ideologyColors';
+import { SafeImg } from '../editorial/primitives';
 
 interface IdeologiesSectionProps {
   others: IdeologyMatch[];
@@ -29,6 +30,14 @@ export function IdeologiesSection({ others, distant }: IdeologiesSectionProps) {
               style={localCatStyle(match.category) as CSSProperties}
               aria-hidden={hidden}
             >
+              {match.imagePath ? (
+                <SafeImg
+                  className="e-ocard-img"
+                  src={match.imagePath}
+                  alt={match.name}
+                  fallback={match.name.slice(0, 1)}
+                />
+              ) : null}
               <span className="e-tag e-osolid">{match.category}</span>
               <h3 className={match.name.length >= 18 ? 'e-long-name' : undefined}>{match.name}</h3>
               <div className="e-ocard-more">

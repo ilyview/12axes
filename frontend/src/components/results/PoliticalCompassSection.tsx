@@ -16,7 +16,8 @@ const VIVID: Record<IdeologyColorKey, { saturation: number; lightness: number; h
   centro: { saturation: 10, lightness: 80 },
   direita: { saturation: 90, lightness: 77 },
   anarquismo: { saturation: 0, lightness: 72 },
-  libertario: { saturation: 90, lightness: 68, hue: 47 }
+  libertario: { saturation: 90, lightness: 68, hue: 47 },
+  raw: { saturation: 70, lightness: 72 }
 };
 // Cores dos polos do eixo `moral` (rosa e marrom em axes.json); estas são só o plano B se o eixo faltar.
 const FALLBACK_PROGRESSIVE = '#D23E84';
@@ -149,6 +150,8 @@ interface PoliticalCompassSectionProps {
   category: string;
   /** Eixo `moral` (Progressista × Tradicionalista): suas cores nas pontas pintam a barra, o "X" e o grifo. */
   moralAxis?: Axis;
+  /** O que aparece embaixo da seção (o botão de compartilhar o cartão de valores e bússola). */
+  footer?: ReactNode;
 }
 
 /** Valores derivados da bússola (cores, frase e barra), compartilhados com o relatório em PDF. */
@@ -256,7 +259,7 @@ export function SocialStrip({ cells, markers }: { cells: string[]; markers: Comp
   );
 }
 
-export function PoliticalCompassSection({ position, category, moralAxis }: PoliticalCompassSectionProps) {
+export function PoliticalCompassSection({ position, category, moralAxis, footer }: PoliticalCompassSectionProps) {
   const { right, authoritarian, traditional } = position;
   const [isInfoOpen, setIsInfoOpen] = useState(false);
   const { spectrum, centerSideKey, centerLabel, markerColor, social, stripCells, socialColor, noteHint, region } = compassView(
@@ -324,6 +327,8 @@ export function PoliticalCompassSection({ position, category, moralAxis }: Polit
           <span>{t.compassNote.hints[noteHint]}</span>
         </aside>
       )}
+
+      {footer}
 
       {isInfoOpen && (
         <InfoSheet titleId="compass-info-title" className="e-compass-sheet" onClose={() => setIsInfoOpen(false)}>

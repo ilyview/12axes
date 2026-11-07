@@ -1,20 +1,31 @@
-// Dicionário de UI PT/EN. O idioma é resolvido uma vez por carga de página
+// Dicionário de UI (PT, EN e ES; o que faltar em ES usa o EN). O idioma é resolvido uma vez por carga de página
 // (?lang → localStorage → navigator) e trocar de idioma recarrega a página,
 // para que quiz e resultados sejam rebuscados já no idioma novo.
 import type { PersonalityCategory, ProfileDimension } from '../types/quiz';
 
-export type Lang = 'pt' | 'en';
+export type Lang = 'pt' | 'en' | 'es';
+
+/** Prefixo das rotas do idioma: vazio em português, /en e /es nos demais. */
+export function langPrefix(lang: Lang): string {
+  return lang === 'pt' ? '' : `/${lang}`;
+}
+
+/** Locale de datas e números (Intl). */
+export const INTL_LOCALE: Record<Lang, string> = { pt: 'pt-BR', en: 'en-US', es: 'es' };
+
+const isLang = (value: string | null): value is Lang => value === 'pt' || value === 'en' || value === 'es';
 
 const STORAGE_KEY = '12axes-lang';
 
-// Idioma forçado pelo caminho: /en sempre inglês, /br sempre português,
+// Idioma forçado pelo caminho: /en sempre inglês, /es sempre espanhol, /br sempre português,
 // independente do aparelho ou da preferência salva. A comparação segue o catálogo:
-// /compare em português e /en/compare em inglês.
+// /compare em português, /en/compare em inglês e /es/compare em espanhol.
 const normalizePath = (pathname: string): string => pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/';
 
 export function langForcedByPath(pathname: string): Lang | null {
   const path = normalizePath(pathname);
   if (path === '/en' || path === '/en/compare') return 'en';
+  if (path === '/es' || path === '/es/compare') return 'es';
   if (path === '/br' || path === '/compare') return 'pt';
   return null;
 }
@@ -22,8 +33,8 @@ export function langForcedByPath(pathname: string): Lang | null {
 /** Caminho equivalente no outro idioma, para o toggle; null quando o idioma não vem do caminho. */
 export function langSwitchPath(pathname: string, lang: Lang): string | null {
   const path = normalizePath(pathname);
-  if (path === '/compare' || path === '/en/compare') return lang === 'en' ? '/en/compare' : '/compare';
-  if (path === '/en' || path === '/br') return lang === 'en' ? '/en' : '/br';
+  if (path === '/compare' || path === '/en/compare' || path === '/es/compare') return `${langPrefix(lang)}/compare`;
+  if (path === '/en' || path === '/es' || path === '/br') return lang === 'pt' ? '/br' : `/${lang}`;
   return null;
 }
 
@@ -38,15 +49,17 @@ export function resolveLang(): Lang {
   // No link curto de resultado (/r, do QR code) o idioma vai como "l" para o link ficar menor.
   const query = new URLSearchParams(window.location.search);
   const fromUrl = query.get('lang') ?? (normalizePath(window.location.pathname) === '/r' ? query.get('l') : null);
-  if (fromUrl === 'pt' || fromUrl === 'en') {
+  if (isLang(fromUrl)) {
     window.localStorage.setItem(STORAGE_KEY, fromUrl);
     return fromUrl;
   }
   const stored = window.localStorage.getItem(STORAGE_KEY);
-  if (stored === 'pt' || stored === 'en') {
+  if (isLang(stored)) {
     return stored;
   }
-  return navigator.language?.toLowerCase().startsWith('pt') ? 'pt' : 'en';
+  const browser = navigator.language?.toLowerCase() ?? '';
+  if (browser.startsWith('pt')) return 'pt';
+  return browser.startsWith('es') ? 'es' : 'en';
 }
 
 export const LANG: Lang = resolveLang();
@@ -55,7 +68,7 @@ export function setLang(lang: Lang) {
   window.localStorage.setItem(STORAGE_KEY, lang);
   const url = new URL(window.location.href);
   url.searchParams.delete('lang');
-  // Em /en, /br e na comparação a URL é o que define o idioma, então o toggle troca de rota
+  // Em /en, /es, /br e na comparação a URL é o que define o idioma, então o toggle troca de rota
   // (na comparação, mantendo os perfis escolhidos na query).
   const switched = langSwitchPath(url.pathname, lang);
   if (switched) url.pathname = switched;
@@ -157,6 +170,21 @@ export interface Strings {
   personalityInfoAria: (name: string) => string;
   closenessTitle: string;
   closenessYou: string;
+  /** O que aproxima e afasta o usuário de uma personalidade, país ou partido (só no relatório pago). */
+  insight: {
+    closeTitle: (name: string) => string;
+    closeNone: (name: string) => string;
+    closeAxis: (axis: string, phrase: string, youPct: number, otherPct: number, name: string, gap: number) => string;
+    apartTitle: string;
+    apartNone: (name: string) => string;
+    apartAxis: (axis: string, you: string, other: string, name: string, gap: number) => string;
+    /** A maior diferença entre os dois é pequena: não é um afastamento de verdade. */
+    apartTiny: (axis: string, name: string, gap: number) => string;
+    /** Mesmo lado, intensidades diferentes: só aparece onde a maior diferença não troca de lado. */
+    apartSame: (axis: string, phrase: string, youPct: number, otherPct: number, name: string, gap: number) => string;
+    balanced: string;
+    poles: Record<string, { left: string; right: string }>;
+  };
   compareEyebrow: string;
   compareTitle: string;
   compareLead: string;
@@ -336,6 +364,12 @@ export interface Strings {
   otherMatches: string;
   navOnThisPage: string;
   resultsNavReport: string;
+  resultsNavPremiumGroup: string;
+  resultsNavAxisByAxis: string;
+  resultsNavDisagree: string;
+  resultsNavGovernment: string;
+  resultsNavTimeline: string;
+  resultsNavLiving: string;
   resultsNavAxes: string;
   resultsNavSignature: string;
   resultsNavCountries: string;
@@ -360,7 +394,7 @@ export interface Strings {
   compassSocialValues: string;
   compassCenterLeft: string;
   compassCenterRight: string;
-  compassSpectrumLabels: Record<'esq-radical' | 'esquerda' | 'centro' | 'direita' | 'ext-direita' | 'terceira' | 'libertario' | 'anarquismo', string>;
+  compassSpectrumLabels: Record<'esq-radical' | 'esquerda' | 'centro' | 'direita' | 'ext-direita' | 'terceira' | 'libertario' | 'anarquismo' | 'raw', string>;
   compassSocialLabels: Record<'veryProgressive' | 'progressive' | 'moderate' | 'traditional' | 'veryTraditional', string>;
   compassInfo: {
     aria: string;
@@ -412,6 +446,19 @@ export interface Strings {
   paywallModalTag: string;
   paywallModalTitle: string;
   paywallModalLead: string;
+  paywallPdfTitle: string;
+  paywallPdfLead: string;
+  paywallOnce: string;
+  /** O texto do botão por cima de cada parte desfocada: um por seção do convite. */
+  paywallBlockCta: { axes: string; disagree: string; government: string; timeline: string; countries: string };
+  paywallTeaser: {
+    axisTag: string;
+    disagreeWith: (name: string) => string;
+    seats: string[];
+    eras: string[];
+    topCountry: string;
+  };
+  paywallInstant: string;
   paywallIncludesTitle: string;
   paywallIncludes: { lead: string; text: string }[];
   paywallPayWith: string;
@@ -475,6 +522,7 @@ export interface Strings {
   sharePreviewAlt: string;
   sharePreviewLoading: string;
   downloadPdf: string;
+  downloadPdfFull: string;
   generatingPdf: string;
   report: {
     fileName: string;
@@ -499,6 +547,41 @@ export interface Strings {
     ctaTitle: string;
   };
   shareFilePrefix: string;
+  shareCountriesFilePrefix: string;
+  shareCountriesTitle: string;
+  shareCountriesMessage: (country: string, percent: number) => string;
+  shareCountriesCta: string;
+  sharePersonalitiesCta: string;
+  sharePartiesCta: string;
+  shareCompassCta: string;
+  shareGovernmentCta: string;
+  shareTimelineCta: string;
+  shareLivingCta: string;
+  shareIdealGovernment: string;
+  shareTimeline: string;
+  shareLiving: string;
+  shareBestEra: string;
+  shareGovernmentFilePrefix: string;
+  shareGovernmentTitle: string;
+  shareGovernmentMessage: (leader: string) => string;
+  shareTimelineFilePrefix: string;
+  shareTimelineTitle: string;
+  shareTimelineMessage: (era: string) => string;
+  shareLivingFilePrefix: string;
+  shareLivingTitle: string;
+  shareLivingMessage: (country: string, percent: number) => string;
+  shareNearbyPersonalities: string;
+  shareNearbyParties: string;
+  shareValuesCompass: string;
+  sharePersonalitiesFilePrefix: string;
+  sharePersonalitiesTitle: string;
+  sharePersonalitiesMessage: (name: string, percent: number) => string;
+  sharePartiesFilePrefix: string;
+  sharePartiesTitle: string;
+  sharePartiesMessage: (name: string, percent: number) => string;
+  shareCompassFilePrefix: string;
+  shareCompassTitle: string;
+  shareCompassMessage: (ideology: string) => string;
   shareMessage: (
     ideology: string,
     ideologyPct: number,
@@ -571,4 +654,13 @@ export interface Strings {
 
 // Só o dicionário do idioma da página é baixado (trocar de idioma recarrega a página, então o outro vem nessa hora).
 // O await no topo do módulo garante que `t` já exista para quem o importa, inclusive no escopo de módulo.
-export const t: Strings = LANG === 'en' ? (await import('./en')).en : (await import('./pt')).pt;
+async function loadStrings(): Promise<Strings> {
+  if (LANG === 'pt') return (await import('./pt')).pt;
+  const { en } = await import('./en');
+  if (LANG === 'en') return en;
+  // Chave nova ainda sem tradução em espanhol aparece em inglês: nada quebra.
+  const [{ es }, { mergeStrings }] = await Promise.all([import('./es'), import('./mergeStrings')]);
+  return mergeStrings<Strings>(en, es);
+}
+
+export const t: Strings = await loadStrings();

@@ -12,6 +12,7 @@ public record BookRecommendation(
         String title,
         Integer year,
         String url,
-        double compatibility
+        double compatibility,
+        String coverPath
 ) {
 }
