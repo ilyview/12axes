@@ -50,6 +50,7 @@ public class PremiumController {
     private final Clock clock;
     private final boolean paymentsEnabled;
     private final boolean devOpen;
+    private final boolean openAll;
 
     public PremiumController(
             PremiumReportService premiumReportService,
@@ -58,7 +59,8 @@ public class PremiumController {
             RefundChecker refundChecker,
             Clock clock,
             @Value("${app.payments.enabled:false}") boolean paymentsEnabled,
-            @Value("${app.premium.dev-open:false}") boolean devOpen
+            @Value("${app.premium.dev-open:false}") boolean devOpen,
+            @Value("${PREMIUM_OPEN_ALL:false}") boolean openAll
     ) {
         this.premiumReportService = premiumReportService;
         this.scoringService = scoringService;
@@ -67,6 +69,7 @@ public class PremiumController {
         this.clock = clock;
         this.paymentsEnabled = paymentsEnabled;
         this.devOpen = devOpen;
+        this.openAll = openAll;
     }
 
     @PostConstruct
@@ -85,7 +88,7 @@ public class PremiumController {
             HttpServletRequest http
     ) {
         // Modo local: so quem chama do proprio computador, mesmo que a variavel seja esquecida ligada em producao.
-        boolean local = devOpen && isLoopback(http.getRemoteAddr());
+        boolean local = openAll || (devOpen && isLoopback(http.getRemoteAddr()));
         if (!local && !paymentsEnabled) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
