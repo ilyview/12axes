@@ -1216,5 +1216,47 @@
     "name": "Partito Federalista",
     "description": "Il partito di Alexander Hamilton e John Adams, dominò il governo USA fino al 1801: difendeva uno Stato centrale forte, una banca nazionale, commercio e industria, la vicinanza alla Gran Bretagna e gli Alien and Sedition Acts, contro Jefferson.",
     "category": "Partito"
+  },
+  {
+    "id": "pine-tree-party",
+    "name": "Pine Tree Party",
+    "description": "Movimento ecofascista antigovernativo fondato da Mike Ma nel 2017, che mescola suprematismo bianco, ambientalismo radicale e accelerazionismo militante; adottò la bandiera del pino e il motto 'An Appeal to Heaven'.",
+    "category": "Movimento"
+  },
+  {
+    "id": "order-of-sigma",
+    "name": "Ordine del Sigma",
+    "description": "Partito di governo di Sigmatopia, fondato dal Signore Sigma. L'iscrizione richiede l'approvazione di 3 signori sigma locali e una valutazione della mentalità.",
+    "category": "Partito"
+  },
+  {
+    "id": "vibe-workers-collective",
+    "name": "Collettivo dei lavoratori vibe",
+    "description": "L'unico partito della Repubblica Unbothered. Le riunioni sono facoltative e l'ordine del giorno è 'vedere cosa dice la vibe'.",
+    "category": "Partito"
+  },
+  {
+    "id": "corporate-citizens-united",
+    "name": "Corporate Citizens United",
+    "description": "Partito di governo di Corporatia. Gli iscritti sono aziende. Le quote associative sostituiscono le tasse.",
+    "category": "Partito"
+  },
+  {
+    "id": "elder-council-party",
+    "name": "Il Consiglio degli Anziani",
+    "description": "L'unico partito di Senium. L'iscrizione è automatica a 75 anni. Sotto quell'età il voto non è consentito.",
+    "category": "Partito"
+  },
+  {
+    "id": "lorekeepers-guild",
+    "name": "La Gilda dei Custodi del Lore",
+    "description": "Partito di governo del Grande Archivio. Per entrare occorre aver memorizzato almeno 500 tomi.",
+    "category": "Partito"
+  },
+  {
+    "id": "db-partei-neu",
+    "name": "DB Partei Neu",
+    "description": "Partito di governo del DB-Staat Mk. II. Identico all'originale DB-Partei, ma con nuove scuse per i ritardi.",
+    "category": "Partito"
   }
 ]

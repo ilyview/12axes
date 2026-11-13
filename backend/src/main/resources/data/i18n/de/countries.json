@@ -1918,5 +1918,41 @@
     "name": "Samora Machels Mosambik",
     "description": "Unter Samora Machel und der Frelimo wurde Mosambik nach der Unabhängigkeit ein marxistisch-leninistischer Einparteienstaat: Verstaatlichungen, Gemeinschaftsdörfer, Alphabetisierung und kostenlose Gesundheitsversorgung, ein Bündnis mit der UdSSR und ein Bürgerkrieg gegen die Renamo.",
     "category": "Afrikanischer Marxismus-Leninismus"
+  },
+  {
+    "id": "sigmatopia",
+    "name": "Sigmatopia",
+    "description": "Ein Inselstaat, gegründet vom Sigma-Lord, nachdem er alle bestehenden Regierungsformen als zu Beta verworfen hatte. Die Hierarchie wird durch das Sigma-Mindset bestimmt. Es gibt keine Verfassung – nur den dominanten Vibe.",
+    "category": "Sigma-Feudalismus"
+  },
+  {
+    "id": "republica-unbothered",
+    "name": "Die Unbothered-Republik",
+    "description": "Eine Republik, gegründet auf dem Prinzip, dass niemand gestört werden soll. Die Produktionsmittel sind kollektiv, aber Arbeit ist freiwillig, wenn dein Vibe nicht dazu passt. Hauptstadt: Chillhaven.",
+    "category": "Vibe-Kommunismus"
+  },
+  {
+    "id": "corporatia",
+    "name": "Corporatia",
+    "description": "Ein Staat, gegründet durch die Fusion der 12 größten Konzerne der Welt. Das Parlament ist der Vorstand. Die Bürger sind Aktionäre. Die Verfassung ist der Geschäftsbericht.",
+    "category": "Corpianismus"
+  },
+  {
+    "id": "senium",
+    "name": "Die Uralte Republik Senium",
+    "description": "Eine Republik, die ausschließlich von den Ältesten regiert wird. Das Wahlrecht beginnt mit 75. Die Verfassung wurde 1952 geschrieben und nie geändert, weil der Rat Änderungen für „voreilig“ hält.",
+    "category": "Chronokratie"
+  },
+  {
+    "id": "grand-archive",
+    "name": "Das Große Archiv",
+    "description": "Ein Bibliotheksstaat, gegründet von den Lorekeepern, nachdem sie erklärt hatten, der Rest der Welt gehe falsch mit Wissen um. Strom ist nur erlaubt, um Manuskripte zu beleuchten. Industrie ist verboten.",
+    "category": "Lore-Goblinismus"
+  },
+  {
+    "id": "db-staat-2",
+    "name": "DB-Staat II",
+    "description": "Offizieller Nachfolger des ursprünglichen DB-Staats, gegründet, nachdem der erste zusammengebrochen war, als der Zug mit der Verfassung 4 Stunden zu spät ankam. Die Züge sind weiterhin verspätet. Der Staat versichert dir, dass die nächste Abfahrt ganz sicher kommt.",
+    "category": "DB-Faschismus"
   }
 ]

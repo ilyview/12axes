@@ -856,7 +856,7 @@
   {
     "id": "ecofascismo",
     "name": "Ecofascismo",
-    "description": "Corrente che unisce ecologia radicale, autoritarismo e nazionalismo organico, difendendo il controllo della popolazione, la preservazione ambientale imposta dallo Stato e la subordinazione delle libertà individuali alla sopravvivenza della comunità nazionale.",
+    "description": "Corrente che unisce ecologia radicale, autoritarismo e nazionalismo bianco, associata a Mike Ma e al Pine Tree Party: difende il collasso industriale, il controllo della popolazione e una tutela della natura imposta da un ordine autoritario.",
     "phrase": "Voglio una comunità nazionale organica in armonia con la terra, che ponga la preservazione ambientale e la sopravvivenza del popolo sopra le libertà individuali.",
     "category": "Terza posizione"
   },
@@ -1923,5 +1923,61 @@
     "description": "Movimento intellettuale europeo del Settecento che difende ragione, scienza e tolleranza contro superstizione e assolutismo, con diritti naturali, separazione dei poteri, istruzione e progresso come fondamento della società.",
     "phrase": "Voglio una società guidata da ragione, scienza e tolleranza, con diritti naturali, poteri separati e la legge posta al di sopra di trono e altare.",
     "category": "Centro"
+  },
+  {
+    "id": "ecologia-social",
+    "name": "Ecologia sociale",
+    "description": "Corrente fondata da Murray Bookchin che spiega la crisi ecologica con la dominazione sociale e propone comuni autonome, democrazia diretta ed economia cooperativa in confederazioni, influenzando il confederalismo democratico del Rojava.",
+    "phrase": "Voglio una società di comuni autonome e assemblee dirette che superi la gerarchia e organizzi l'economia in cooperative e confederazioni ecologiche.",
+    "category": "Sinistra"
+  },
+  {
+    "id": "ligma-feudalismo",
+    "name": "Feudalesimo ligma",
+    "description": "Sistema politico in cui i maschi sigma sostituiscono l'aristocrazia ereditaria. La gerarchia sociale è determinata solo da mentalità sigma, prestazioni fisiche e resilienza emotiva. Il Signore Sigma governa senza Stato: il dominio naturale è l'unica legge.",
+    "phrase": "Voglio una società in cui comandano i sigma, i beta obbediscono e lo Stato è sostituito dalla gerarchia naturale della mentalità sigma.",
+    "category": "Terza posizione"
+  },
+  {
+    "id": "vibe-comunismo",
+    "name": "Comunismo vibe",
+    "description": "Sistema politico in cui i mezzi di produzione sono di proprietà collettiva, ma l'unico dovere dello Stato è garantire che tutti possano stare in vibe senza essere disturbati. La politica estera la decide la vibe: le guerre sono vietate perché anti-vibe.",
+    "phrase": "Voglio una società in cui la proprietà collettiva esista perché tutti possano stare tranquilli e le vibe scorrano libere per tutti.",
+    "category": "Sinistra radicale"
+  },
+  {
+    "id": "corpianismo",
+    "name": "Corpianismo",
+    "description": "Sistema politico in cui le corporazioni sono riconosciute come cittadini a pieno titolo. Col tempo votano, eleggono altre corporazioni e alla fine una corporazione diventa presidente. Lo Stato è una filiale del mercato.",
+    "phrase": "Voglio una società in cui le corporazioni sono persone, il mercato è il governo e il CEO-Presidente guida la nazione con l'efficienza di un foglio di calcolo.",
+    "category": "Destra"
+  },
+  {
+    "id": "cronocracia",
+    "name": "Cronocrazia",
+    "description": "Sistema politico in cui il potere è esercitato esclusivamente dai più anziani. Più anni si sono vissuti, più voti si hanno. Il Consiglio degli Anziani governa con la saggezza accumulata e un profondo sospetto verso tutto ciò che è stato inventato dopo il 1987.",
+    "phrase": "Voglio una società governata dai più anziani, dove l'esperienza è l'unico criterio di potere e i giovani imparano a stare zitti e ad aspettare il proprio turno.",
+    "category": "Terza posizione"
+  },
+  {
+    "id": "lore-goblinismo",
+    "name": "Lore Goblinismo",
+    "description": "Sistema politico in cui scribi, custodi del lore e guardiani del sapere antico formano la classe dirigente. L'industria è vietata perché corrompe il lore. La ricchezza si misura in tomi. Il Grande Custode del Lore detiene il potere supremo.",
+    "phrase": "Voglio una società governata dai custodi del lore, dove il sapere antico è sacro, l'industria è eresia e ogni biblioteca è un tempio.",
+    "category": "Terza posizione"
+  },
+  {
+    "id": "db-fascismo",
+    "name": "DB-Fascismo",
+    "description": "Fascismo ferroviario del DB-Staat: il Fahrplan è la costituzione, la cittadinanza è riservata ai Familienangehörige e i treni sono ancora in ritardo. Lo Stato riconosce ufficialmente che i ritardi sono inevitabili, ma promette che la prossima partenza sarà puntuale.",
+    "phrase": "Voglio uno Stato governato dal Fahrplan, dove la puntualità è legge, i treni arrivano quando arrivano e Dennis Becker ti assicura che il prossimo arriverà di sicuro.",
+    "category": "Estrema destra"
+  },
+  {
+    "id": "hatred",
+    "name": "Odio",
+    "description": "L'ideologia del rifiuto assoluto: non propone programma, ordine né futuro, solo la negazione di ogni domanda e di ogni promessa politica. Il suo unico consenso è dire no a tutto e il suo unico progetto è il disprezzo.",
+    "phrase": "Voglio una società che dice no a ogni domanda, dove il rifiuto totale è l'unico programma e il disprezzo è l'unica politica.",
+    "category": "Terza posizione"
   }
 ]

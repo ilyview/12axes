@@ -1,8 +1,8 @@
 {
   "_comment": "Estado unico da auditoria pergunta-a-pergunta (240 perguntas / 12 eixos). Um objeto por catalogo. Veja README.md para o processo completo.",
-  "lastUpdated": "2026-11-11T17:58:00Z",
+  "lastUpdated": "2026-11-13T16:02:03Z",
   "personality": {
-    "totalProfiles": 741,
+    "totalProfiles": 742,
     "pending": [],
     "done": [
       "lenin",
@@ -745,9 +745,10 @@
       "ralf-dahrendorf",
       "jurgen-habermas",
       "joseph-ratzinger",
-      "fritz-thyssen"
+      "fritz-thyssen",
+      "sero"
     ],
-    "lastUpdated": "2026-11-06T13:54:09Z",
+    "lastUpdated": "2026-11-13T16:02:03Z",
     "audited": 509,
     "unanswered": 0
   },

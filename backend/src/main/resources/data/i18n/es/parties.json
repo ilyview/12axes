@@ -1216,5 +1216,47 @@
     "name": "Partido Federalista",
     "description": "El partido de Alexander Hamilton y John Adams, dominó el gobierno de Estados Unidos hasta 1801: defendió un Estado central fuerte, un banco nacional, el comercio y la industria, la cercanía con Gran Bretaña y las leyes de Extranjeros y Sedición, contra Jefferson.",
     "category": "Partido"
+  },
+  {
+    "id": "pine-tree-party",
+    "name": "Pine Tree Party",
+    "description": "Movimiento ecofascista antigubernamental fundado por Mike Ma en 2017, que mezcla supremacismo blanco, ambientalismo radical y aceleracionismo militante; adoptó la bandera del pino y el lema \"An Appeal to Heaven\".",
+    "category": "Movimiento"
+  },
+  {
+    "id": "order-of-sigma",
+    "name": "Orden del Sigma",
+    "description": "Partido gobernante de Sigmatopía, fundado por el Señor Sigma. Para ingresar se necesita la aprobación de 3 señores sigma locales y una evaluación de mentalidad.",
+    "category": "Partido"
+  },
+  {
+    "id": "vibe-workers-collective",
+    "name": "Colectivo de Trabajadores Vibe",
+    "description": "El partido único de la República Despreocupada. Las reuniones son opcionales y el orden del día es \"ver qué dice la vibra\".",
+    "category": "Partido"
+  },
+  {
+    "id": "corporate-citizens-united",
+    "name": "Ciudadanos Corporativos Unidos",
+    "description": "El partido gobernante de Corporatia. Los miembros son empresas. Las cuotas de afiliación reemplazan a los impuestos.",
+    "category": "Partido"
+  },
+  {
+    "id": "elder-council-party",
+    "name": "El Consejo de Ancianos",
+    "description": "El único partido de Senium. La afiliación es automática a los 75 años. Por debajo de esa edad no se permite votar.",
+    "category": "Partido"
+  },
+  {
+    "id": "lorekeepers-guild",
+    "name": "El Gremio de los Lorekeepers",
+    "description": "El partido gobernante del Gran Archivo. Para entrar hay que memorizar al menos 500 tomos.",
+    "category": "Partido"
+  },
+  {
+    "id": "db-partei-neu",
+    "name": "DB Partei Neu",
+    "description": "El partido gobernante de DB-Staat Mk. II. Idéntico al DB-Partei original, pero con nuevas excusas para los retrasos.",
+    "category": "Partido"
   }
 ]

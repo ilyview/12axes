@@ -1918,5 +1918,41 @@
     "name": "Mozambico di Samora Machel",
     "description": "Sotto Samora Machel e il Frelimo, il Mozambico divenne dopo l'indipendenza uno Stato marxista-leninista a partito unico: nazionalizzazioni, villaggi comunali, alfabetizzazione e sanità gratuita, un'alleanza con l'URSS e una guerra civile contro la Renamo.",
     "category": "Marxismo-leninismo africano"
+  },
+  {
+    "id": "sigmatopia",
+    "name": "Sigmatopia",
+    "description": "Nazione insulare fondata dal Signore Sigma dopo aver rifiutato tutte le forme di governo esistenti perché troppo beta. La gerarchia è determinata dalla mentalità sigma. Non esiste una costituzione, solo la vibe dominante.",
+    "category": "Feudalesimo sigma"
+  },
+  {
+    "id": "republica-unbothered",
+    "name": "La Repubblica Unbothered",
+    "description": "Repubblica fondata sul principio che nessuno debba essere disturbato. I mezzi di produzione sono collettivi, ma il lavoro è facoltativo se la tua vibe non è allineata. Capitale: Chillhaven.",
+    "category": "Comunismo vibe"
+  },
+  {
+    "id": "corporatia",
+    "name": "Corporatia",
+    "description": "Stato nato dalla fusione delle 12 maggiori corporazioni del mondo. Il parlamento è il consiglio di amministrazione. I cittadini sono azionisti. La costituzione è il bilancio annuale.",
+    "category": "Corpianismo"
+  },
+  {
+    "id": "senium",
+    "name": "L'Antica Repubblica di Senium",
+    "description": "Repubblica governata esclusivamente dai più anziani. Il diritto di voto inizia a 75 anni. La costituzione fu scritta nel 1952 e non è mai stata modificata perché il Consiglio considera le modifiche 'affrettate'.",
+    "category": "Cronocrazia"
+  },
+  {
+    "id": "grand-archive",
+    "name": "Il Grande Archivio",
+    "description": "Stato-biblioteca fondato dai Custodi del Lore dopo aver dichiarato che il resto del mondo gestiva male il sapere. L'elettricità è permessa solo per illuminare i manoscritti. L'industria è vietata.",
+    "category": "Lore Goblinismo"
+  },
+  {
+    "id": "db-staat-2",
+    "name": "DB-Staat II",
+    "description": "Successore ufficiale del DB-Staat originale, fondato dopo il crollo del primo, quando il treno che portava la costituzione arrivò con 4 ore di ritardo. I treni sono ancora in ritardo. Lo Stato assicura che la prossima partenza arriverà di sicuro.",
+    "category": "DB-Fascismo"
   }
 ]

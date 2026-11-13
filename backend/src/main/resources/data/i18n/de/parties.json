@@ -1216,5 +1216,47 @@
     "name": "Föderalistische Partei",
     "description": "Partei von Alexander Hamilton und John Adams, die die US-Regierung bis 1801 beherrschte: Sie verteidigte einen starken Zentralstaat, eine Nationalbank, Handel und Industrie, Nähe zu Großbritannien und die Alien and Sedition Acts, gegen Jefferson.",
     "category": "Partei"
+  },
+  {
+    "id": "pine-tree-party",
+    "name": "Pine Tree Party",
+    "description": "Regierungsfeindliche ökofaschistische Bewegung, 2017 von Mike Ma gegründet, die weiße Vorherrschaft, radikalen Umweltschutz und militanten Akzelerationismus vermischt; sie übernahm die Kiefernflagge und das Motto „An Appeal to Heaven“.",
+    "category": "Bewegung"
+  },
+  {
+    "id": "order-of-sigma",
+    "name": "Orden des Sigma",
+    "description": "Die Regierungspartei von Sigmatopia, gegründet vom Sigma-Lord. Die Mitgliedschaft erfordert die Zustimmung von 3 lokalen Sigma-Lords und eine Mindset-Prüfung.",
+    "category": "Partei"
+  },
+  {
+    "id": "vibe-workers-collective",
+    "name": "Vibe-Arbeiterkollektiv",
+    "description": "Die einzige Partei der Unbothered-Republik. Sitzungen sind freiwillig, und die Tagesordnung lautet „mal sehen, was der Vibe sagt“.",
+    "category": "Partei"
+  },
+  {
+    "id": "corporate-citizens-united",
+    "name": "Corporate Citizens United",
+    "description": "Die Regierungspartei von Corporatia. Die Mitglieder sind Unternehmen. Mitgliedsbeiträge ersetzen Steuern.",
+    "category": "Partei"
+  },
+  {
+    "id": "elder-council-party",
+    "name": "Rat der Ältesten",
+    "description": "Die einzige Partei in Senium. Die Mitgliedschaft ist mit 75 automatisch. Unterhalb dieses Alters ist das Wählen nicht erlaubt.",
+    "category": "Partei"
+  },
+  {
+    "id": "lorekeepers-guild",
+    "name": "Gilde der Lorekeeper",
+    "description": "Die Regierungspartei des Großen Archivs. Der Eintritt erfordert das Auswendiglernen von mindestens 500 Folianten.",
+    "category": "Partei"
+  },
+  {
+    "id": "db-partei-neu",
+    "name": "DB Partei Neu",
+    "description": "Die Regierungspartei von DB-Staat Mk. II. Identisch mit der ursprünglichen DB-Partei, aber mit neuen Ausreden für Verspätungen.",
+    "category": "Partei"
   }
 ]

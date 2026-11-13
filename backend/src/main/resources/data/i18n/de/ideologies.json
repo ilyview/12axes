@@ -856,7 +856,7 @@
   {
     "id": "ecofascismo",
     "name": "Ökofaschismus",
-    "description": "Strömung, die radikale Ökologie, Autoritarismus und organischen Nationalismus verbindet und Bevölkerungskontrolle, staatlich verordneten Umweltschutz und die Unterordnung individueller Freiheiten unter das Überleben der nationalen Gemeinschaft verteidigt.",
+    "description": "Strömung, die radikale Ökologie, Autoritarismus und weißen Nationalismus verbindet, verbunden mit Mike Ma und der Pine Tree Party: Sie befürwortet industriellen Kollaps, Bevölkerungskontrolle und einen Naturschutz, der durch eine autoritäre Ordnung erzwungen wird.",
     "phrase": "Ich will eine organische nationale Gemeinschaft im Einklang mit dem Land, die Umweltschutz und das Überleben des Volkes über individuelle Freiheiten stellt.",
     "category": "Dritte Position"
   },
@@ -1923,5 +1923,61 @@
     "description": "Europäische Geistesbewegung des 18. Jahrhunderts, die Vernunft, Wissenschaft und Toleranz gegen Aberglauben und Absolutismus verteidigt, mit Naturrechten, Gewaltenteilung, Bildung und Fortschritt als Grundlage der Gesellschaft.",
     "phrase": "Ich will eine von Vernunft, Wissenschaft und Toleranz geleitete Gesellschaft, mit Naturrechten, getrennten Gewalten und dem Gesetz über Thron und Altar.",
     "category": "Mitte"
+  },
+  {
+    "id": "ecologia-social",
+    "name": "Soziale Ökologie",
+    "description": "Von Murray Bookchin begründete Strömung, die die ökologische Krise durch soziale Herrschaft erklärt und autonome Gemeinden, direkte Demokratie und eine genossenschaftliche Wirtschaft in Konföderationen vorschlägt; sie beeinflusste den demokratischen Konföderalismus in Rojava.",
+    "phrase": "Ich will eine Gesellschaft aus autonomen Gemeinden und direkten Versammlungen, die Hierarchie überwindet und die Wirtschaft in Genossenschaften und ökologischen Konföderationen organisiert.",
+    "category": "Linke"
+  },
+  {
+    "id": "ligma-feudalismo",
+    "name": "Ligma-Feudalismus",
+    "description": "Ein politisches System, in dem Sigma-Männer die erbliche Aristokratie ersetzen. Die soziale Hierarchie wird ausschließlich durch Sigma-Mindset, körperliche Leistung und emotionale Widerstandskraft bestimmt. Der Sigma-Lord regiert ohne Staat – natürliche Dominanz ist das einzige Gesetz.",
+    "phrase": "Ich will eine Gesellschaft, in der Sigmas herrschen, Betas gehorchen und der Staat durch die natürliche Hierarchie des Sigma-Mindsets ersetzt wird.",
+    "category": "Dritte Position"
+  },
+  {
+    "id": "vibe-comunismo",
+    "name": "Vibe-Kommunismus",
+    "description": "Ein politisches System, in dem die Produktionsmittel kollektiv besessen werden, die einzige Pflicht des Staates aber darin besteht, dafür zu sorgen, dass alle ungestört vibraten können. Die Außenpolitik richtet sich nach dem Vibe – Kriege sind verboten, weil sie anti-Vibe sind.",
+    "phrase": "Ich will eine Gesellschaft mit kollektivem Eigentum, in der alle unbehelligt bleiben und die Vibes frei für alle fließen.",
+    "category": "Radikale Linke"
+  },
+  {
+    "id": "corpianismo",
+    "name": "Corpianismus",
+    "description": "Ein politisches System, in dem Konzerne als vollwertige Bürger anerkannt werden. Mit der Zeit wählen Konzerne, wählen andere Konzerne, und schließlich wird ein Konzern Präsident. Der Staat ist eine Tochtergesellschaft des Marktes.",
+    "phrase": "Ich will eine Gesellschaft, in der Konzerne Menschen sind, der Markt die Regierung ist und der CEO-Präsident die Nation mit Tabellenkalkulations-Effizienz führt.",
+    "category": "Rechte"
+  },
+  {
+    "id": "cronocracia",
+    "name": "Chronokratie",
+    "description": "Ein politisches System, in dem die Macht ausschließlich von den Ältesten ausgeübt wird. Je mehr Jahre jemand gelebt hat, desto mehr Stimmen hat er. Der Rat der Ältesten regiert mit angesammelter Weisheit und tiefem Misstrauen gegenüber allem, was nach 1987 erfunden wurde.",
+    "phrase": "Ich will eine Gesellschaft, die von den Ältesten regiert wird, in der Erfahrung das einzige Kriterium für Macht ist und die Jungen lernen, still zu sein und zu warten, bis sie dran sind.",
+    "category": "Dritte Position"
+  },
+  {
+    "id": "lore-goblinismo",
+    "name": "Lore-Goblinismus",
+    "description": "Ein politisches System, in dem Schreiber, Wissensbewahrer und Hüter des uralten Wissens die herrschende Klasse bilden. Industrie ist verboten, weil sie die Überlieferung verdirbt. Reichtum wird in Folianten gemessen. Der Große Lorekeeper hält die höchste Macht.",
+    "phrase": "Ich will eine Gesellschaft, die von den Hütern der Überlieferung regiert wird, in der uraltes Wissen heilig ist, Industrie Ketzerei ist und jede Bibliothek ein Tempel.",
+    "category": "Dritte Position"
+  },
+  {
+    "id": "db-fascismo",
+    "name": "DB-Faschismus",
+    "description": "Eisenbahn-Faschismus des DB-Staats: Der Fahrplan ist die Verfassung, die Staatsbürgerschaft ist auf Familienangehörige beschränkt, und die Züge sind trotzdem verspätet. Der Staat räumt offiziell ein, dass Verspätungen unvermeidlich sind, verspricht aber, dass die nächste Abfahrt pünktlich ist.",
+    "phrase": "Ich will einen Staat, der vom Fahrplan regiert wird, in dem Pünktlichkeit Gesetz ist, Züge ankommen, wenn sie ankommen, und Dennis Becker dir versichert, dass der nächste ganz sicher kommt.",
+    "category": "Extreme Rechte"
+  },
+  {
+    "id": "hatred",
+    "name": "Hatred",
+    "description": "Die Ideologie der absoluten Verweigerung: Sie schlägt kein Programm, keine Ordnung und keine Zukunft vor, nur die Verneinung jeder Frage und jedes politischen Versprechens. Ihr einziger Konsens ist, zu allem Nein zu sagen, und ihr einziges Projekt ist Verachtung.",
+    "phrase": "Ich will eine Gesellschaft, die zu jeder Frage Nein sagt, in der die totale Verweigerung das einzige Programm und Verachtung die einzige Politik ist.",
+    "category": "Dritte Position"
   }
 ]

@@ -4280,7 +4280,7 @@
     },
     "ecofascismo": {
       "name": "2f9b95374a39",
-      "description": "f9ff5c11c29b",
+      "description": "77553e446db7",
       "phrase": "0052da7dcbed"
     },
     "comunismo-agrario": {
@@ -5042,6 +5042,46 @@
       "name": "38f256035a4e",
       "description": "499882546091",
       "phrase": "11c7ddc68387"
+    },
+    "ecologia-social": {
+      "name": "d7986583f540",
+      "description": "b84a5716e8ff",
+      "phrase": "3946aa358858"
+    },
+    "ligma-feudalismo": {
+      "name": "2e51ac47df9b",
+      "description": "b473a6dbef9d",
+      "phrase": "038201ddf934"
+    },
+    "vibe-comunismo": {
+      "name": "caf6949dbf6c",
+      "description": "2d992398bb54",
+      "phrase": "35ed23c8e1b1"
+    },
+    "corpianismo": {
+      "name": "70614e935f58",
+      "description": "513757ba8a6d",
+      "phrase": "d785cdfa0e7b"
+    },
+    "cronocracia": {
+      "name": "797b698506f6",
+      "description": "995ef5ee8b21",
+      "phrase": "69bc09443453"
+    },
+    "lore-goblinismo": {
+      "name": "b80404759cbf",
+      "description": "6e67d67335fe",
+      "phrase": "146261b8b848"
+    },
+    "db-fascismo": {
+      "name": "9e7c3b690123",
+      "description": "509cb4150862",
+      "phrase": "3bbde2f472aa"
+    },
+    "hatred": {
+      "name": "bb378b71e8d0",
+      "description": "3760bd600b79",
+      "phrase": "3723b0a2460d"
     }
   },
   "countries": {
@@ -6324,6 +6364,30 @@
     "mocambique-de-samora-machel": {
       "name": "60d48a6a04ee",
       "description": "f0a8da55f2b2"
+    },
+    "sigmatopia": {
+      "name": "cc82fdb9c400",
+      "description": "b60ee2be6003"
+    },
+    "republica-unbothered": {
+      "name": "421f54d202c9",
+      "description": "fe49a514892c"
+    },
+    "corporatia": {
+      "name": "1ea411c14072",
+      "description": "1d47e06d9267"
+    },
+    "senium": {
+      "name": "4074daf417c7",
+      "description": "a564c8712afa"
+    },
+    "grand-archive": {
+      "name": "463cea5b2e79",
+      "description": "9067761c7c4a"
+    },
+    "db-staat-2": {
+      "name": "941a9c7b19f9",
+      "description": "2f4265d04c57"
     }
   },
   "parties": {
@@ -7138,6 +7202,34 @@
     "partido-federalista-eua": {
       "name": "fd6c314315f1",
       "description": "112c9a26fc90"
+    },
+    "pine-tree-party": {
+      "name": "2f4e828a9866",
+      "description": "4973c68b303b"
+    },
+    "order-of-sigma": {
+      "name": "04838090acf8",
+      "description": "cd1a7973fb7a"
+    },
+    "vibe-workers-collective": {
+      "name": "2d2834f3dd3d",
+      "description": "2c7f9e9e2413"
+    },
+    "corporate-citizens-united": {
+      "name": "7aedf6dfd3d0",
+      "description": "74b49cf397e5"
+    },
+    "elder-council-party": {
+      "name": "09400b8f1939",
+      "description": "63094d893d38"
+    },
+    "lorekeepers-guild": {
+      "name": "8e9059a1153c",
+      "description": "c302affdba2e"
+    },
+    "db-partei-neu": {
+      "name": "e7146985fc5a",
+      "description": "99e954d81829"
     }
   },
   "personalities": {
@@ -11192,6 +11284,52 @@
       "role": "0a01b1d36e11",
       "lifespan": "87e246e5cc5d",
       "description": "af0b33e4848d"
+    },
+    "mike-ma": {
+      "name": "368f3b0262c5",
+      "role": "a4d1a317fb33",
+      "description": "bbd08ad5c59f"
+    },
+    "dennis-becker": {
+      "name": "8b22538caeb0",
+      "role": "a1e680519f96",
+      "description": "fbe8d4e59aa8"
+    },
+    "sigma-lord": {
+      "name": "9e0647a6e2b7",
+      "role": "7efa64d46fa1",
+      "description": "08d050ff4111"
+    },
+    "vibemaster-general": {
+      "name": "ecdb3e9d5dac",
+      "role": "7bbdafa945a9",
+      "description": "e67aa731dae6"
+    },
+    "ceo-president": {
+      "name": "e8e3d8632e41",
+      "role": "abcd81814a5a",
+      "description": "491f7d96b9a5"
+    },
+    "grand-elder": {
+      "name": "54aaceb13e3a",
+      "role": "de47ca359916",
+      "description": "b1a01c44fb27"
+    },
+    "grand-lorekeeper": {
+      "name": "5a08731512a1",
+      "role": "7d5736d8d357",
+      "description": "5efa6ba5d216"
+    },
+    "hatred": {
+      "name": "bb378b71e8d0",
+      "role": "29fad57ad43e",
+      "description": "5c9ef26c658b"
+    },
+    "sero": {
+      "name": "f1d5629d91db",
+      "role": "d80e89887cad",
+      "lifespan": "982f597cb8a2",
+      "description": "cdaed46aaf2c"
     }
   }
 }

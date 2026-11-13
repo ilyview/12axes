@@ -1918,5 +1918,41 @@
     "name": "Mozambique de Samora Machel",
     "description": "Bajo Samora Machel y Frelimo, Mozambique se convirtió tras la independencia en un Estado marxista-leninista de partido único: nacionalizaciones, aldeas comunales, alfabetización y salud gratuita, alianza con la URSS y guerra civil contra la Renamo.",
     "category": "Marxismo-leninismo africano"
+  },
+  {
+    "id": "sigmatopia",
+    "name": "Sigmatopía",
+    "description": "Nación insular fundada por el Señor Sigma tras rechazar todas las formas de gobierno existentes por ser demasiado beta. La jerarquía se define por la mentalidad sigma. No hay constitución, solo la vibra dominante.",
+    "category": "Feudalismo Sigma"
+  },
+  {
+    "id": "republica-unbothered",
+    "name": "La República Despreocupada",
+    "description": "República fundada sobre el principio de que nadie debe ser molestado. Los medios de producción son colectivos, pero el trabajo es opcional si tu vibra no está alineada con él. Capital: Chillhaven.",
+    "category": "Comunismo Vibe"
+  },
+  {
+    "id": "corporatia",
+    "name": "Corporatia",
+    "description": "Estado fundado por la fusión de las 12 corporaciones más grandes del mundo. El Parlamento es el consejo de administración. Los ciudadanos son accionistas. La constitución es el informe anual.",
+    "category": "Corpianismo"
+  },
+  {
+    "id": "senium",
+    "name": "La Antigua República de Senium",
+    "description": "República gobernada exclusivamente por los más ancianos. El derecho al voto comienza a los 75 años. La constitución se escribió en 1952 y nunca se ha enmendado porque el Consejo considera las enmiendas \"precipitadas\".",
+    "category": "Cronocracia"
+  },
+  {
+    "id": "grand-archive",
+    "name": "El Gran Archivo",
+    "description": "Estado-biblioteca fundado por los Lorekeepers tras declarar que el resto del mundo gestionaba mal el conocimiento. La electricidad solo se permite para iluminar manuscritos. La industria está prohibida.",
+    "category": "Lore Goblinismo"
+  },
+  {
+    "id": "db-staat-2",
+    "name": "DB-Staat II",
+    "description": "Sucesor oficial del DB-Staat original, fundado tras el colapso del primero, cuando el tren que llevaba la constitución llegó 4 horas tarde. Los trenes siguen llegando tarde. El Estado te asegura que la próxima salida sí viene.",
+    "category": "DB-Fascismo"
   }
 ]

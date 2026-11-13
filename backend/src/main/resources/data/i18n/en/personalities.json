@@ -4879,5 +4879,12 @@
     "name": "Hatred",
     "role": "Embodiment of total refusal",
     "description": "The person behind the Hatred ideology does not govern, promise, or explain: they only deny. Where others offer a programme, they offer a refusal; where others ask for hope, they answer with contempt. It is what remains when someone disagrees with everything."
+  },
+  {
+    "id": "sero",
+    "name": "Sero",
+    "role": "175-IQ roided giant",
+    "lifespan": "unknown–present",
+    "description": "Fictional character standing 210 cm, with 36-inch delts and a 175 IQ, an open steroid user. He preaches an aristocracy of body and mind: hierarchy by merit, total sovereignty over one's own body and human enhancement through chemistry and technology."
   }
 ]

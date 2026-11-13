@@ -10566,5 +10566,18 @@
     "imageSourceUrl": "https://www.rawpixel.com/",
     "imageNote": "Retrato via Rawpixel (2025).",
     "religions": []
+  },
+  {
+    "id": "sero",
+    "name": "Sero",
+    "role": "Gigante roider de QI 175",
+    "category": "intelectual",
+    "lifespan": "desconhecido–presente",
+    "description": "Personagem fictício de 2,10 m, deltoides de 36 polegadas e QI 175, usuário assumido de esteroides. Prega uma aristocracia de corpo e mente: hierarquia por mérito, soberania total sobre o próprio corpo e aprimoramento humano por química e tecnologia.",
+    "imagePath": "/personalities/portraits/sero.jpg",
+    "imageSourceName": "Arquivo fornecido pelo usuário",
+    "imageSourceUrl": "https://12axes.com.br/personalities/portraits/sero.jpg",
+    "imageNote": "Retrato de Sero fornecido para o catálogo.",
+    "religions": []
   }
 ]

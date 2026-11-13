@@ -12867,5 +12867,22 @@
       "moral": 50,
       "tecnologia": 50
     }
+  },
+  {
+    "personalityId": "sero",
+    "vector": {
+      "estrutura": 74.4,
+      "representacao": 34.0,
+      "poder": 15.0,
+      "imigracao": 40.0,
+      "diplomacia": 65.2,
+      "intervencao": 53.8,
+      "economia": 13.7,
+      "controle": 13.5,
+      "comercio": 18.4,
+      "religiao": 85.0,
+      "moral": 49.0,
+      "tecnologia": 90.1
+    }
   }
 ]

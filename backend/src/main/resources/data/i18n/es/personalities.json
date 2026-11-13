@@ -4799,5 +4799,60 @@
     "role": "Industrial, apoyó a Hitler",
     "lifespan": "1873–1951",
     "description": "Magnate alemán del acero (Vereinigte Stahlwerke) y católico devoto. Financió al NSDAP desde la década de 1920; rompió con Hitler en 1939 por la guerra y la persecución de la Iglesia, huyó, estuvo en campos de concentración y luego fue multado en la desnazificación."
+  },
+  {
+    "id": "mike-ma",
+    "name": "Mike Ma",
+    "role": "Escritor ecofascista",
+    "description": "Escritor estadounidense conocido como Mike Ma, defiende el ecofascismo y el colapso industrial, fundó el Pine Tree Party y escribió \"Harassment Architecture\" y \"Gothic Violence\"."
+  },
+  {
+    "id": "dennis-becker",
+    "name": "Dennis Becker",
+    "role": "Ministro del Fahrplan",
+    "description": "Burócrata de carrera y Ministro del Fahrplan de DB-Staat II. Anuncia horarios con total convicción, exige puntualidad a los pasajeros y culpa al clima, las vías y el siglo XX de cada retraso. Nunca perdió un tren: el tren lo pierde a él."
+  },
+  {
+    "id": "sigma-lord",
+    "name": "El Señor Sigma",
+    "role": "Fundador del Feudalismo Ligma",
+    "description": "Fundador del Feudalismo Ligma y Supremo Señor Sigma de Sigmatopía. Se negó a tener un trabajo convencional por ser demasiado beta. Gobierna por mentalidad, no por ley."
+  },
+  {
+    "id": "vibemaster-general",
+    "name": "El Vibemaster General",
+    "role": "Fundador del Comunismo Vibe",
+    "description": "Fundador de la República Despreocupada y primer Vibemaster General de la historia. Nunca lo han visto estresado. Nacionalizó todos los medios de producción una tarde y luego se fue a tomar el sol."
+  },
+  {
+    "id": "ceo-president",
+    "name": "CEO-Presidente",
+    "role": "Fundador del Corpianismo",
+    "description": "Primer CEO-Presidente de Corporatia. Fundó el Estado siendo director financiero de un holding que era dueño del holding que era dueño del gobierno. Gobierna con KPI trimestrales y reuniones de directorio obligatorias para todos los ciudadanos."
+  },
+  {
+    "id": "grand-elder",
+    "name": "El Gran Anciano",
+    "role": "Líder vitalicio del Consejo",
+    "description": "Presidente vitalicio del Consejo de Ancianos de Senium. Tiene 94 años y lo recuerda todo. Desconfía profundamente de los microondas. Gobierna con sabiduría acumulada y se niega a usar el correo electrónico."
+  },
+  {
+    "id": "grand-lorekeeper",
+    "name": "El Gran Lorekeeper",
+    "role": "Guardián supremo del Lore",
+    "description": "Guardián supremo del Lore y fundador del Gran Archivo. Nadie conoce su edad. Gobierna con el conocimiento acumulado en 47.000 tomos. Considera sospechosa la electricidad."
+  },
+  {
+    "id": "hatred",
+    "name": "Odio",
+    "role": "Encarnación del rechazo total",
+    "description": "La persona detrás de la ideología del Odio no gobierna, no promete ni explica: solo niega. Donde otros ofrecen un programa, ofrece un rechazo; donde otros piden esperanza, responde con desprecio. Es lo que queda cuando alguien discrepa de todo."
+  },
+  {
+    "id": "sero",
+    "name": "Sero",
+    "role": "Gigante anabolizado, CI 175",
+    "lifespan": "desconocido–presente",
+    "description": "Personaje ficticio de 210 cm, con deltoides de 36 pulgadas y un CI de 175, usuario declarado de esteroides. Predica una aristocracia del cuerpo y la mente: jerarquía por mérito, soberanía total sobre el propio cuerpo y mejora humana mediante química y tecnología."
   }
 ]
