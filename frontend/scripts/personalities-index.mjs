@@ -6,6 +6,9 @@ import { iconLinks } from './cdn.mjs';
 import { ARROW, IDEOLOGIES_CSS, dna, dnaLegend } from './ideologies-index.mjs';
 import { poleSprite } from './pole-icons.mjs';
 import { buildCardPoles, renderFilterButton, renderFilterDrawer, renderClientFilterScript } from './catalogue-filters.mjs';
+import { ES } from './locales/es.mjs';
+import { DE } from './locales/de.mjs';
+import { IT } from './locales/it.mjs';
 
 // Ordem das áreas no catálogo (a mesma do mockup de docs/).
 export const AREA_ORDER = ['politico', 'teorico', 'filosofo', 'economista', 'intelectual', 'ativista', 'religioso', 'empresario'];
@@ -32,6 +35,9 @@ export const AREA_LABELS = {
     ativista: 'Activism'
   }
 };
+AREA_LABELS.es = { ...AREA_LABELS.en, ...ES.areaLabels };
+AREA_LABELS.de = { ...AREA_LABELS.en, ...DE.areaLabels };
+AREA_LABELS.it = { ...AREA_LABELS.en, ...IT.areaLabels };
 
 const STR = {
   pt: {
@@ -111,6 +117,9 @@ const STR = {
     }
   }
 };
+STR.es = { ...STR.en, ...ES.personalitiesIndex };
+STR.de = { ...STR.en, ...DE.personalitiesIndex };
+STR.it = { ...STR.en, ...IT.personalitiesIndex };
 
 export function initials(name) {
   const words = name.replace(/[.,]/g, '').split(/\s+/).filter((w) => /^\p{Lu}/u.test(w));
@@ -129,11 +138,14 @@ export function catalogHead(L, { site, basePath, title, description, ogType, ogI
     <meta name="theme-color" content="#F4F1E8" />
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
-    <meta name="copyright" content="${L.s.htmlLang === 'pt-BR' ? '© 2026 12 Axes. Todos os direitos reservados' : '© 2026 12 Axes. All rights reserved'}" />
+    <meta name="copyright" content="${{ pt: '© 2026 12 Axes. Todos os direitos reservados', en: '© 2026 12 Axes. All rights reserved', es: '© 2026 12 Axes. Todos los derechos reservados', de: '© 2026 12 Axes. Alle Rechte vorbehalten', it: '© 2026 12 Axes. Tutti i diritti riservati' }[L.locale]}" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="${url}" />
     <link rel="alternate" hreflang="pt-BR" href="${site}${basePath}" />
     <link rel="alternate" hreflang="en" href="${site}/en${basePath}" />
+    <link rel="alternate" hreflang="es" href="${site}/es${basePath}" />
+    <link rel="alternate" hreflang="de" href="${site}/de${basePath}" />
+    <link rel="alternate" hreflang="it" href="${site}/it${basePath}" />
     <link rel="alternate" hreflang="x-default" href="${site}/en${basePath}" />
     ${iconLinks()}
     <meta property="og:type" content="${ogType}" />

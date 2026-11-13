@@ -7,6 +7,9 @@ import { AREA_LABELS, catalogHead, initials } from './personalities-index.mjs';
 import { PAGE_SCRIPT, axisRowsHtml, axisSheetHtml, distinctive, mbarHtml, spectrumOf } from './personality-page.mjs';
 import { poleSprite } from './pole-icons.mjs';
 import { dimensionMatches, rank, religionVisibility } from './profile-match.mjs';
+import { ES } from './locales/es.mjs';
+import { DE } from './locales/de.mjs';
+import { IT } from './locales/it.mjs';
 
 const STR = {
   pt: {
@@ -104,6 +107,9 @@ const STR = {
     footer: 'Independent political quiz · 12axes.vercel.app · © 2026. All rights reserved'
   }
 };
+STR.es = { ...STR.en, ...ES.partyPage };
+STR.de = { ...STR.en, ...DE.partyPage };
+STR.it = { ...STR.en, ...IT.partyPage };
 
 const ARR = '<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
 const pct = (x) => Math.round(x);

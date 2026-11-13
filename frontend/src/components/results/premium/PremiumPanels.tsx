@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
-import type { Axis, AxisResult, PremiumReport } from '../../../types/quiz';
+import type { Axis, AxisResult, PersonalityMatch, PremiumReport } from '../../../types/quiz';
 import { AxisAnalysisPanel } from './AxisAnalysisPanel';
 import { DisagreementPanel } from './DisagreementPanel';
-import { GovernmentPanel } from './GovernmentPanel';
+import { GovernmentPanel, type SeatKey } from './GovernmentPanel';
 import { TimelinePanel } from './TimelinePanel';
 import { TopCountriesPanel } from './TopListsPanel';
 
@@ -10,7 +10,15 @@ import { TopCountriesPanel } from './TopListsPanel';
  * As seções do Relatório completo, na ordem da página. A página e o PDF usam as MESMAS seções (o PDF as imprime com o
  * layout da tela), por isso a lista fica aqui e os dois a consomem.
  */
-export function premiumPanels(report: PremiumReport, axes: Axis[], results: Map<string, AxisResult>): { id: string; node: ReactNode }[] {
+export function premiumPanels(
+  report: PremiumReport,
+  axes: Axis[],
+  results: Map<string, AxisResult>,
+  /** O botão de compartilhar o cartão de cada seção que tem um (só na página; o PDF não passa nada). */
+  shareButton?: (kind: 'government' | 'timeline' | 'living') => ReactNode,
+  /** Troca de quem ocupa cada cargo do governo ideal (só na página; o PDF não passa nada). */
+  government?: { swaps: Record<string, string>; onSwap: (seatKey: SeatKey, personalityId: string | null, found?: PersonalityMatch, others?: Record<string, string>) => void }
+): { id: string; node: ReactNode }[] {
   return [
     {
       id: 'eixos',
@@ -42,10 +50,13 @@ export function premiumPanels(report: PremiumReport, axes: Axis[], results: Map<
         <GovernmentPanel
           seats={report.idealGovernment}
           category={report.disagreements.find((item) => item.kind === 'ideology')?.ideologyCategory ?? ''}
+          footer={shareButton?.('government')}
+          swaps={government?.swaps}
+          onSwap={government?.onSwap}
         />
       )
     },
-    { id: 'tempo', node: <TimelinePanel timeline={report.timeline} axes={axes} results={results} /> },
-    { id: 'paises', node: <TopCountriesPanel countries={report.topCountries} axes={axes} results={results} /> }
+    { id: 'tempo', node: <TimelinePanel timeline={report.timeline} axes={axes} results={results} footer={shareButton?.('timeline')} /> },
+    { id: 'paises', node: <TopCountriesPanel countries={report.topCountries} axes={axes} results={results} footer={shareButton?.('living')} /> }
   ];
 }

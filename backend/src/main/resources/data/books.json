@@ -3,7 +3,10 @@
     "personalityId": "lenin",
     "title": {
       "pt": "O Estado e a Revolução",
-      "en": "The State and Revolution"
+      "en": "The State and Revolution",
+      "es": "El Estado y la revolución",
+      "de": "Staat und Revolution",
+      "it": "Stato e rivoluzione"
     },
     "year": 1917,
     "url": {
@@ -15,7 +18,10 @@
     "personalityId": "stalin",
     "title": {
       "pt": "Fundamentos do Leninismo",
-      "en": "The Foundations of Leninism"
+      "en": "The Foundations of Leninism",
+      "es": "Fundamentos del leninismo",
+      "de": "Über die Grundlagen des Leninismus",
+      "it": "Principi del leninismo"
     },
     "year": 1924,
     "url": {
@@ -27,7 +33,10 @@
     "personalityId": "mao-zedong",
     "title": {
       "pt": "O Livro Vermelho",
-      "en": "Quotations from Chairman Mao Tse-tung"
+      "en": "Quotations from Chairman Mao Tse-tung",
+      "es": "Citas del presidente Mao Tse-tung",
+      "de": "Das Rote Buch: Zitate des Vorsitzenden Mao Tse-tung",
+      "it": "Citazioni del presidente Mao Tse-tung (Il libretto rosso)"
     },
     "year": 1964,
     "url": {
@@ -39,7 +48,10 @@
     "personalityId": "trotsky",
     "title": {
       "pt": "A Revolução Traída",
-      "en": "The Revolution Betrayed"
+      "en": "The Revolution Betrayed",
+      "es": "La revolución traicionada",
+      "de": "Verratene Revolution",
+      "it": "La rivoluzione tradita"
     },
     "year": 1936,
     "url": {
@@ -51,7 +63,10 @@
     "personalityId": "anton-pannekoek",
     "title": {
       "pt": "Conselhos Operários",
-      "en": "Workers' Councils"
+      "en": "Workers' Councils",
+      "es": "Los consejos obreros",
+      "de": "Arbeiterräte",
+      "it": "Consigli operai"
     },
     "year": 1946,
     "url": {
@@ -63,7 +78,10 @@
     "personalityId": "ferdinand-lassalle",
     "title": {
       "pt": "A Essência da Constituição",
-      "en": "On the Essence of Constitutions"
+      "en": "On the Essence of Constitutions",
+      "es": "¿Qué es una constitución?",
+      "de": "Über das Wesen der Verfassung",
+      "it": "L'essenza della costituzione"
     },
     "year": 1862,
     "url": {
@@ -75,7 +93,10 @@
     "personalityId": "garrett-hardin",
     "title": {
       "pt": "A Tragédia dos Comuns",
-      "en": "The Tragedy of the Commons"
+      "en": "The Tragedy of the Commons",
+      "es": "La tragedia de los comunes",
+      "de": "Die Tragödie der Allmende",
+      "it": "La tragedia dei beni comuni"
     },
     "year": 1968,
     "url": {
@@ -87,7 +108,10 @@
     "personalityId": "eduard-bernstein",
     "title": {
       "pt": "Socialismo Evolucionário",
-      "en": "Evolutionary Socialism"
+      "en": "Evolutionary Socialism",
+      "es": "Las premisas del socialismo y las tareas de la socialdemocracia",
+      "de": "Die Voraussetzungen des Sozialismus und die Aufgaben der Sozialdemokratie",
+      "it": "I presupposti del socialismo e i compiti della socialdemocrazia"
     },
     "year": 1899,
     "url": {
@@ -99,7 +123,10 @@
     "personalityId": "mussolini",
     "title": {
       "pt": "A Doutrina do Fascismo",
-      "en": "The Doctrine of Fascism"
+      "en": "The Doctrine of Fascism",
+      "es": "La doctrina del fascismo",
+      "de": "Die Lehre des Faschismus",
+      "it": "La dottrina del fascismo"
     },
     "year": 1932,
     "url": {
@@ -111,7 +138,10 @@
     "personalityId": "plinio-salgado",
     "title": {
       "pt": "Psicologia da Revolução",
-      "en": "Psychology of the Revolution"
+      "en": "Psychology of the Revolution",
+      "es": "Psicologia da Revolução",
+      "de": "Psychologie der Revolution",
+      "it": "Psicologia della rivoluzione"
     },
     "year": 1933,
     "url": {
@@ -123,7 +153,10 @@
     "personalityId": "lee-kuan-yew",
     "title": {
       "pt": "Do Terceiro Mundo ao Primeiro",
-      "en": "From Third World to First"
+      "en": "From Third World to First",
+      "es": "From Third World to First",
+      "de": "Vom Dritte-Welt-Land zur Ersten Welt",
+      "it": "Dal Terzo Mondo al Primo"
     },
     "year": 2000,
     "url": {
@@ -135,7 +168,10 @@
     "personalityId": "nick-land",
     "title": {
       "pt": "O Iluminismo Sombrio",
-      "en": "The Dark Enlightenment"
+      "en": "The Dark Enlightenment",
+      "es": "The Dark Enlightenment",
+      "de": "Die Dunkle Aufklärung",
+      "it": "L'illuminismo oscuro"
     },
     "year": 2012,
     "url": {
@@ -147,7 +183,10 @@
     "personalityId": "irving-kristol",
     "title": {
       "pt": "Neoconservadorismo: Autobiografia de uma Ideia",
-      "en": "Neoconservatism: The Autobiography of an Idea"
+      "en": "Neoconservatism: The Autobiography of an Idea",
+      "es": "Neoconservatism: The Autobiography of an Idea",
+      "de": "Neokonservatismus: Die Autobiographie einer Idee",
+      "it": "Neoconservatorismo: l'autobiografia di un'idea"
     },
     "year": 1995,
     "url": {
@@ -159,7 +198,10 @@
     "personalityId": "benjamin-disraeli",
     "title": {
       "pt": "Sybil, ou as Duas Nações",
-      "en": "Sybil, or The Two Nations"
+      "en": "Sybil, or The Two Nations",
+      "es": "Sybil o las dos naciones",
+      "de": "Sybil oder Die zwei Nationen",
+      "it": "Sybil, ovvero le due nazioni"
     },
     "year": 1845,
     "url": {
@@ -171,7 +213,10 @@
     "personalityId": "khomeini",
     "title": {
       "pt": "O Governo Islâmico",
-      "en": "Islamic Government"
+      "en": "Islamic Government",
+      "es": "El gobierno islámico",
+      "de": "Der islamische Staat",
+      "it": "Il governo islamico"
     },
     "year": 1970,
     "url": {
@@ -183,7 +228,10 @@
     "personalityId": "jabotinsky",
     "title": {
       "pt": "A Muralha de Ferro",
-      "en": "The Iron Wall"
+      "en": "The Iron Wall",
+      "es": "El muro de hierro",
+      "de": "Die eiserne Mauer",
+      "it": "Il muro di ferro"
     },
     "year": 1923,
     "url": {
@@ -195,7 +243,10 @@
     "personalityId": "curtis-yarvin",
     "title": {
       "pt": "Uma Introdução Gentil a Unqualified Reservations",
-      "en": "A Gentle Introduction to Unqualified Reservations"
+      "en": "A Gentle Introduction to Unqualified Reservations",
+      "es": "A Gentle Introduction to Unqualified Reservations",
+      "de": "Eine sanfte Einführung in Unqualified Reservations",
+      "it": "Una dolce introduzione a Unqualified Reservations"
     },
     "year": 2009,
     "url": {
@@ -207,7 +258,10 @@
     "personalityId": "frederico-ii-da-prussia",
     "title": {
       "pt": "O Anti-Maquiavel",
-      "en": "Anti-Machiavel"
+      "en": "Anti-Machiavel",
+      "es": "Antimaquiavelo",
+      "de": "Antimachiavell",
+      "it": "Anti-Machiavelli"
     },
     "year": 1740,
     "url": {
@@ -219,7 +273,10 @@
     "personalityId": "joseph-de-maistre",
     "title": {
       "pt": "Considerações sobre a França",
-      "en": "Considerations on France"
+      "en": "Considerations on France",
+      "es": "Consideraciones sobre Francia",
+      "de": "Betrachtungen über Frankreich",
+      "it": "Considerazioni sulla Francia"
     },
     "year": 1797,
     "url": {
@@ -231,7 +288,10 @@
     "personalityId": "aleksandr-dugin",
     "title": {
       "pt": "A Quarta Teoria Política",
-      "en": "The Fourth Political Theory"
+      "en": "The Fourth Political Theory",
+      "es": "La cuarta teoría política",
+      "de": "Die Vierte Politische Theorie",
+      "it": "La quarta teoria politica"
     },
     "year": 2009,
     "url": {
@@ -243,7 +303,10 @@
     "personalityId": "leon-kass",
     "title": {
       "pt": "Rumo a uma Ciência Mais Natural",
-      "en": "Toward a More Natural Science"
+      "en": "Toward a More Natural Science",
+      "es": "Toward a More Natural Science",
+      "de": "Hin zu einer natürlicheren Wissenschaft",
+      "it": "Verso una scienza più naturale"
     },
     "year": 1985,
     "url": {
@@ -255,7 +318,10 @@
     "personalityId": "william-f-buckley",
     "title": {
       "pt": "Deus e o Homem em Yale",
-      "en": "God and Man at Yale"
+      "en": "God and Man at Yale",
+      "es": "God and Man at Yale",
+      "de": "Gott und Mensch in Yale",
+      "it": "Dio e l'uomo a Yale"
     },
     "year": 1951,
     "url": {
@@ -267,7 +333,10 @@
     "personalityId": "cicero",
     "title": {
       "pt": "Da República",
-      "en": "On the Commonwealth"
+      "en": "On the Commonwealth",
+      "es": "Sobre la república",
+      "de": "Über den Staat",
+      "it": "Sulla repubblica"
     },
     "year": -51,
     "url": {
@@ -279,7 +348,10 @@
     "personalityId": "montesquieu",
     "title": {
       "pt": "O Espírito das Leis",
-      "en": "The Spirit of the Laws"
+      "en": "The Spirit of the Laws",
+      "es": "Del espíritu de las leyes",
+      "de": "Vom Geist der Gesetze",
+      "it": "Lo spirito delle leggi"
     },
     "year": 1748,
     "url": {
@@ -291,7 +363,10 @@
     "personalityId": "milton-friedman",
     "title": {
       "pt": "Capitalismo e Liberdade",
-      "en": "Capitalism and Freedom"
+      "en": "Capitalism and Freedom",
+      "es": "Capitalismo y libertad",
+      "de": "Kapitalismus und Freiheit",
+      "it": "Capitalismo e libertà"
     },
     "year": 1962,
     "url": {
@@ -303,7 +378,10 @@
     "personalityId": "ludwig-erhard",
     "title": {
       "pt": "Bem-Estar para Todos",
-      "en": "Prosperity Through Competition"
+      "en": "Prosperity Through Competition",
+      "es": "Bienestar para todos",
+      "de": "Wohlstand für alle",
+      "it": "Benessere per tutti"
     },
     "year": 1957,
     "url": {
@@ -315,7 +393,10 @@
     "personalityId": "gk-chesterton",
     "title": {
       "pt": "Ortodoxia",
-      "en": "Orthodoxy"
+      "en": "Orthodoxy",
+      "es": "Ortodoxia",
+      "de": "Orthodoxie",
+      "it": "Ortodossia"
     },
     "year": 1908,
     "url": {
@@ -327,7 +408,10 @@
     "personalityId": "henri-de-saint-simon",
     "title": {
       "pt": "O Novo Cristianismo",
-      "en": "New Christianity"
+      "en": "New Christianity",
+      "es": "El nuevo cristianismo",
+      "de": "Das neue Christentum",
+      "it": "Il nuovo cristianesimo"
     },
     "year": 1825,
     "url": {
@@ -339,7 +423,10 @@
     "personalityId": "michael-sandel",
     "title": {
       "pt": "Justiça: O que É Fazer a Coisa Certa",
-      "en": "Justice: What's the Right Thing to Do?"
+      "en": "Justice: What's the Right Thing to Do?",
+      "es": "Justicia: ¿hacemos lo que debemos?",
+      "de": "Gerechtigkeit: Was ist das Richtige zu tun?",
+      "it": "Giustizia: il nostro bene comune"
     },
     "year": 2009,
     "url": {
@@ -351,7 +438,10 @@
     "personalityId": "adrian-wooldridge",
     "title": {
       "pt": "A Aristocracia do Talento",
-      "en": "The Aristocracy of Talent"
+      "en": "The Aristocracy of Talent",
+      "es": "The Aristocracy of Talent",
+      "de": "Die Aristokratie der Begabung",
+      "it": "L'aristocrazia del talento"
     },
     "year": 2021,
     "url": {
@@ -363,7 +453,10 @@
     "personalityId": "john-stuart-mill",
     "title": {
       "pt": "Sobre a Liberdade",
-      "en": "On Liberty"
+      "en": "On Liberty",
+      "es": "Sobre la libertad",
+      "de": "Über die Freiheit",
+      "it": "Sulla libertà"
     },
     "year": 1859,
     "url": {
@@ -375,7 +468,10 @@
     "personalityId": "john-locke",
     "title": {
       "pt": "Segundo Tratado sobre o Governo",
-      "en": "Second Treatise of Government"
+      "en": "Second Treatise of Government",
+      "es": "Segundo tratado sobre el gobierno civil",
+      "de": "Zweite Abhandlung über die Regierung",
+      "it": "Secondo trattato sul governo"
     },
     "year": 1689,
     "url": {
@@ -387,7 +483,10 @@
     "personalityId": "robert-nozick",
     "title": {
       "pt": "Anarquia, Estado e Utopia",
-      "en": "Anarchy, State, and Utopia"
+      "en": "Anarchy, State, and Utopia",
+      "es": "Anarquía, Estado y utopía",
+      "de": "Anarchie, Staat, Utopia",
+      "it": "Anarchia, Stato e utopia"
     },
     "year": 1974,
     "url": {
@@ -399,7 +498,10 @@
     "personalityId": "al-gore",
     "title": {
       "pt": "Uma Verdade Inconveniente",
-      "en": "An Inconvenient Truth"
+      "en": "An Inconvenient Truth",
+      "es": "Una verdad incómoda",
+      "de": "Eine unbequeme Wahrheit",
+      "it": "Una scomoda verità"
     },
     "year": 2006,
     "url": {
@@ -411,7 +513,10 @@
     "personalityId": "beveridge",
     "title": {
       "pt": "Relatório Beveridge: Seguro Social e Serviços Afins",
-      "en": "Social Insurance and Allied Services"
+      "en": "Social Insurance and Allied Services",
+      "es": "Seguro social y servicios afines",
+      "de": "Sozialversicherung und verwandte Dienste",
+      "it": "Assicurazioni sociali e servizi collegati"
     },
     "year": 1942,
     "url": {
@@ -423,7 +528,10 @@
     "personalityId": "thomas-paine",
     "title": {
       "pt": "Senso Comum",
-      "en": "Common Sense"
+      "en": "Common Sense",
+      "es": "El sentido común",
+      "de": "Common Sense",
+      "it": "Senso comune"
     },
     "year": 1776,
     "url": {
@@ -435,7 +543,10 @@
     "personalityId": "edmund-burke",
     "title": {
       "pt": "Reflexões sobre a Revolução na França",
-      "en": "Reflections on the Revolution in France"
+      "en": "Reflections on the Revolution in France",
+      "es": "Reflexiones sobre la Revolución en Francia",
+      "de": "Betrachtungen über die Revolution in Frankreich",
+      "it": "Riflessioni sulla rivoluzione in Francia"
     },
     "year": 1790,
     "url": {
@@ -447,7 +558,10 @@
     "personalityId": "hayek",
     "title": {
       "pt": "O Caminho da Servidão",
-      "en": "The Road to Serfdom"
+      "en": "The Road to Serfdom",
+      "es": "Camino de servidumbre",
+      "de": "Der Weg zur Knechtschaft",
+      "it": "La via della schiavitù"
     },
     "year": 1944,
     "url": {
@@ -459,7 +573,10 @@
     "personalityId": "gustave-de-molinari",
     "title": {
       "pt": "A Produção da Segurança",
-      "en": "The Production of Security"
+      "en": "The Production of Security",
+      "es": "La producción de seguridad",
+      "de": "Die Produktion der Sicherheit",
+      "it": "La produzione della sicurezza"
     },
     "year": 1849,
     "url": {
@@ -471,7 +588,10 @@
     "personalityId": "henry-george",
     "title": {
       "pt": "Progresso e Pobreza",
-      "en": "Progress and Poverty"
+      "en": "Progress and Poverty",
+      "es": "Progreso y miseria",
+      "de": "Fortschritt und Armut",
+      "it": "Progresso e povertà"
     },
     "year": 1879,
     "url": {
@@ -483,7 +603,10 @@
     "personalityId": "charles-fourier",
     "title": {
       "pt": "A Teoria dos Quatro Movimentos",
-      "en": "The Theory of the Four Movements"
+      "en": "The Theory of the Four Movements",
+      "es": "Teoría de los cuatro movimientos",
+      "de": "Die Theorie der vier Bewegungen",
+      "it": "Teoria dei quattro movimenti"
     },
     "year": 1808,
     "url": {
@@ -495,7 +618,10 @@
     "personalityId": "nicolas-de-condorcet",
     "title": {
       "pt": "Esboço de um Quadro Histórico dos Progressos do Espírito Humano",
-      "en": "Sketch for a Historical Picture of the Progress of the Human Mind"
+      "en": "Sketch for a Historical Picture of the Progress of the Human Mind",
+      "es": "Bosquejo de un cuadro histórico de los progresos del espíritu humano",
+      "de": "Entwurf einer historischen Darstellung der Fortschritte des menschlichen Geistes",
+      "it": "Abbozzo di un quadro storico dei progressi dello spirito umano"
     },
     "year": 1795,
     "url": {
@@ -507,7 +633,10 @@
     "personalityId": "john-rawls",
     "title": {
       "pt": "Uma Teoria da Justiça",
-      "en": "A Theory of Justice"
+      "en": "A Theory of Justice",
+      "es": "Teoría de la justicia",
+      "de": "Eine Theorie der Gerechtigkeit",
+      "it": "Una teoria della giustizia"
     },
     "year": 1971,
     "url": {
@@ -519,7 +648,10 @@
     "personalityId": "aldo-leopold",
     "title": {
       "pt": "Um Almanaque de Sand County",
-      "en": "A Sand County Almanac"
+      "en": "A Sand County Almanac",
+      "es": "Un año en Sand County",
+      "de": "Ein Jahr in Sand County",
+      "it": "Almanacco di un mondo semplice"
     },
     "year": 1949,
     "url": {
@@ -531,7 +663,10 @@
     "personalityId": "theodore-roosevelt",
     "title": {
       "pt": "O Novo Nacionalismo",
-      "en": "The New Nationalism"
+      "en": "The New Nationalism",
+      "es": "The New Nationalism",
+      "de": "Der neue Nationalismus",
+      "it": "Il nuovo nazionalismo"
     },
     "year": 1910,
     "url": {
@@ -543,7 +678,10 @@
     "personalityId": "srnicek",
     "title": {
       "pt": "Inventar o Futuro",
-      "en": "Inventing the Future"
+      "en": "Inventing the Future",
+      "es": "Inventar el futuro",
+      "de": "Die Zukunft erfinden",
+      "it": "Inventare il futuro"
     },
     "year": 2015,
     "url": {
@@ -555,7 +693,10 @@
     "personalityId": "ray-kurzweil",
     "title": {
       "pt": "A Singularidade Está Próxima",
-      "en": "The Singularity Is Near"
+      "en": "The Singularity Is Near",
+      "es": "La singularidad está cerca",
+      "de": "Die Singularität ist nah",
+      "it": "La singolarità è vicina"
     },
     "year": 2005,
     "url": {
@@ -567,7 +708,10 @@
     "personalityId": "ernest-renan",
     "title": {
       "pt": "O que É uma Nação?",
-      "en": "What Is a Nation?"
+      "en": "What Is a Nation?",
+      "es": "¿Qué es una nación?",
+      "de": "Was ist eine Nation?",
+      "it": "Che cos'è una nazione?"
     },
     "year": 1882,
     "url": {
@@ -579,7 +723,10 @@
     "personalityId": "bakunin",
     "title": {
       "pt": "Estatismo e Anarquia",
-      "en": "Statism and Anarchy"
+      "en": "Statism and Anarchy",
+      "es": "Estatismo y anarquía",
+      "de": "Staatlichkeit und Anarchie",
+      "it": "Statualità e anarchia"
     },
     "year": 1873,
     "url": {
@@ -591,7 +738,10 @@
     "personalityId": "kropotkin",
     "title": {
       "pt": "A Conquista do Pão",
-      "en": "The Conquest of Bread"
+      "en": "The Conquest of Bread",
+      "es": "La conquista del pan",
+      "de": "Die Eroberung des Brotes",
+      "it": "La conquista del pane"
     },
     "year": 1892,
     "url": {
@@ -603,7 +753,10 @@
     "personalityId": "sorel",
     "title": {
       "pt": "Reflexões sobre a Violência",
-      "en": "Reflections on Violence"
+      "en": "Reflections on Violence",
+      "es": "Reflexiones sobre la violencia",
+      "de": "Über die Gewalt",
+      "it": "Riflessioni sulla violenza"
     },
     "year": 1908,
     "url": {
@@ -615,7 +768,10 @@
     "personalityId": "chomsky",
     "title": {
       "pt": "A Manipulação do Público",
-      "en": "Manufacturing Consent"
+      "en": "Manufacturing Consent",
+      "es": "Los guardianes de la libertad",
+      "de": "Die Konsensfabrik",
+      "it": "La fabbrica del consenso"
     },
     "year": 1988,
     "url": {
@@ -627,7 +783,10 @@
     "personalityId": "gramsci",
     "title": {
       "pt": "Cadernos do Cárcere",
-      "en": "Prison Notebooks"
+      "en": "Prison Notebooks",
+      "es": "Cuadernos de la cárcel",
+      "de": "Gefängnishefte",
+      "it": "Quaderni del carcere"
     },
     "year": 1948,
     "url": {
@@ -639,7 +798,10 @@
     "personalityId": "oskar-lange",
     "title": {
       "pt": "Sobre a Teoria Econômica do Socialismo",
-      "en": "On the Economic Theory of Socialism"
+      "en": "On the Economic Theory of Socialism",
+      "es": "Sobre la teoría económica del socialismo",
+      "de": "Über die ökonomische Theorie des Sozialismus",
+      "it": "Sulla teoria economica del socialismo"
     },
     "year": 1936,
     "url": {
@@ -651,7 +813,10 @@
     "personalityId": "proudhon",
     "title": {
       "pt": "O que É a Propriedade?",
-      "en": "What Is Property?"
+      "en": "What Is Property?",
+      "es": "¿Qué es la propiedad?",
+      "de": "Was ist das Eigentum?",
+      "it": "Che cos'è la proprietà?"
     },
     "year": 1840,
     "url": {
@@ -663,7 +828,10 @@
     "personalityId": "ocalan",
     "title": {
       "pt": "Confederalismo Democrático",
-      "en": "Democratic Confederalism"
+      "en": "Democratic Confederalism",
+      "es": "Confederalismo democrático",
+      "de": "Demokratischer Konföderalismus",
+      "it": "Confederalismo democratico"
     },
     "year": 2011,
     "url": {
@@ -675,7 +843,10 @@
     "personalityId": "benjamin-tucker",
     "title": {
       "pt": "Em Vez de um Livro",
-      "en": "Instead of a Book"
+      "en": "Instead of a Book",
+      "es": "Instead of a Book",
+      "de": "Anstelle eines Buches",
+      "it": "Invece di un libro"
     },
     "year": 1893,
     "url": {
@@ -687,7 +858,10 @@
     "personalityId": "bookchin",
     "title": {
       "pt": "A Ecologia da Liberdade",
-      "en": "The Ecology of Freedom"
+      "en": "The Ecology of Freedom",
+      "es": "La ecología de la libertad",
+      "de": "Die Ökologie der Freiheit",
+      "it": "L'ecologia della libertà"
     },
     "year": 1982,
     "url": {
@@ -699,7 +873,10 @@
     "personalityId": "maritain",
     "title": {
       "pt": "O Homem e o Estado",
-      "en": "Man and the State"
+      "en": "Man and the State",
+      "es": "El hombre y el Estado",
+      "de": "Der Mensch und der Staat",
+      "it": "L'uomo e lo Stato"
     },
     "year": 1951,
     "url": {
@@ -711,7 +888,10 @@
     "personalityId": "buber",
     "title": {
       "pt": "O Socialismo Utópico",
-      "en": "Paths in Utopia"
+      "en": "Paths in Utopia",
+      "es": "Caminos de utopía",
+      "de": "Pfade in Utopia",
+      "it": "Percorsi in utopia"
     },
     "year": 1946,
     "url": {
@@ -723,7 +903,10 @@
     "personalityId": "karl-marx",
     "title": {
       "pt": "O Capital",
-      "en": "Capital"
+      "en": "Capital",
+      "es": "El capital",
+      "de": "Das Kapital",
+      "it": "Il capitale"
     },
     "year": 1867,
     "url": {
@@ -735,7 +918,10 @@
     "personalityId": "rosselli",
     "title": {
       "pt": "Socialismo Liberal",
-      "en": "Liberal Socialism"
+      "en": "Liberal Socialism",
+      "es": "Socialismo liberal",
+      "de": "Liberaler Sozialismus",
+      "it": "Socialismo liberale"
     },
     "year": 1930,
     "url": {
@@ -747,7 +933,10 @@
     "personalityId": "orwell",
     "title": {
       "pt": "1984",
-      "en": "Nineteen Eighty-Four"
+      "en": "Nineteen Eighty-Four",
+      "es": "1984",
+      "de": "1984",
+      "it": "1984"
     },
     "year": 1949,
     "url": {
@@ -759,7 +948,10 @@
     "personalityId": "andre-gorz",
     "title": {
       "pt": "Adeus ao Proletariado",
-      "en": "Farewell to the Working Class"
+      "en": "Farewell to the Working Class",
+      "es": "Adiós al proletariado",
+      "de": "Abschied vom Proletariat",
+      "it": "Addio al proletariato"
     },
     "year": 1980,
     "url": {
@@ -771,7 +963,10 @@
     "personalityId": "arne-naess",
     "title": {
       "pt": "Ecologia, Comunidade e Estilo de Vida",
-      "en": "Ecology, Community and Lifestyle"
+      "en": "Ecology, Community and Lifestyle",
+      "es": "Ecology, Community and Lifestyle",
+      "de": "Ökologie, Gesellschaft und Lebensstil",
+      "it": "Ecologia, comunità e stile di vita"
     },
     "year": 1976,
     "url": {
@@ -783,7 +978,10 @@
     "personalityId": "daniel-guerin",
     "title": {
       "pt": "O Anarquismo: Da Doutrina à Ação",
-      "en": "Anarchism: From Theory to Practice"
+      "en": "Anarchism: From Theory to Practice",
+      "es": "El anarquismo: de la doctrina a la acción",
+      "de": "Anarchismus: Von der Lehre zur Praxis",
+      "it": "Anarchismo: dalla teoria alla pratica"
     },
     "year": 1965,
     "url": {
@@ -795,7 +993,10 @@
     "personalityId": "tolstoy",
     "title": {
       "pt": "O Reino de Deus Está em Vós",
-      "en": "The Kingdom of God Is Within You"
+      "en": "The Kingdom of God Is Within You",
+      "es": "El reino de Dios está en vosotros",
+      "de": "Das Reich Gottes ist in euch",
+      "it": "Il regno di Dio è in voi"
     },
     "year": 1894,
     "url": {
@@ -807,7 +1008,10 @@
     "personalityId": "thoreau",
     "title": {
       "pt": "A Desobediência Civil",
-      "en": "Civil Disobedience"
+      "en": "Civil Disobedience",
+      "es": "Desobediencia civil",
+      "de": "Ziviler Ungehorsam",
+      "it": "Disobbedienza civile"
     },
     "year": 1849,
     "url": {
@@ -819,7 +1023,10 @@
     "personalityId": "john-zerzan",
     "title": {
       "pt": "Futuro Primitivo",
-      "en": "Future Primitive"
+      "en": "Future Primitive",
+      "es": "Futuro primitivo",
+      "de": "Zukunft Urzeit",
+      "it": "Futuro primitivo"
     },
     "year": 1994,
     "url": {
@@ -831,7 +1038,10 @@
     "personalityId": "max-stirner",
     "title": {
       "pt": "O Único e a Sua Propriedade",
-      "en": "The Ego and Its Own"
+      "en": "The Ego and Its Own",
+      "es": "El único y su propiedad",
+      "de": "Der Einzige und sein Eigentum",
+      "it": "L'unico e la sua proprietà"
     },
     "year": 1844,
     "url": {
@@ -843,7 +1053,10 @@
     "personalityId": "rothbard",
     "title": {
       "pt": "A Ética da Liberdade",
-      "en": "The Ethics of Liberty"
+      "en": "The Ethics of Liberty",
+      "es": "La ética de la libertad",
+      "de": "Die Ethik der Freiheit",
+      "it": "L'etica della libertà"
     },
     "year": 1982,
     "url": {
@@ -855,7 +1068,10 @@
     "personalityId": "bastiat",
     "title": {
       "pt": "A Lei",
-      "en": "The Law"
+      "en": "The Law",
+      "es": "La ley",
+      "de": "Das Gesetz",
+      "it": "La legge"
     },
     "year": 1850,
     "url": {
@@ -867,7 +1083,10 @@
     "personalityId": "mises",
     "title": {
       "pt": "Ação Humana",
-      "en": "Human Action"
+      "en": "Human Action",
+      "es": "La acción humana",
+      "de": "Nationalökonomie: Theorie des Handelns und Wirtschaftens",
+      "it": "L'azione umana"
     },
     "year": 1949,
     "url": {
@@ -879,7 +1098,10 @@
     "personalityId": "ron-paul",
     "title": {
       "pt": "O Fim do Fed",
-      "en": "End the Fed"
+      "en": "End the Fed",
+      "es": "End the Fed",
+      "de": "Schafft die Fed ab",
+      "it": "Abolire la Fed"
     },
     "year": 2009,
     "url": {
@@ -891,7 +1113,10 @@
     "personalityId": "hoppe",
     "title": {
       "pt": "Democracia: O Deus que Falhou",
-      "en": "Democracy: The God That Failed"
+      "en": "Democracy: The God That Failed",
+      "es": "Monarquía, democracia y orden natural",
+      "de": "Demokratie: Der Gott, der keiner ist",
+      "it": "Democrazia: il dio che ha fallito"
     },
     "year": 2001,
     "url": {
@@ -903,7 +1128,10 @@
     "personalityId": "adam-smith",
     "title": {
       "pt": "A Riqueza das Nações",
-      "en": "The Wealth of Nations"
+      "en": "The Wealth of Nations",
+      "es": "La riqueza de las naciones",
+      "de": "Der Wohlstand der Nationen",
+      "it": "La ricchezza delle nazioni"
     },
     "year": 1776,
     "url": {
@@ -915,7 +1143,10 @@
     "personalityId": "leonard-peikoff",
     "title": {
       "pt": "Objetivismo: A Filosofia de Ayn Rand",
-      "en": "Objectivism: The Philosophy of Ayn Rand"
+      "en": "Objectivism: The Philosophy of Ayn Rand",
+      "es": "Objectivism: The Philosophy of Ayn Rand",
+      "de": "Objektivismus: Die Philosophie von Ayn Rand",
+      "it": "Oggettivismo: la filosofia di Ayn Rand"
     },
     "year": 1991,
     "url": {
@@ -927,7 +1158,10 @@
     "personalityId": "scruton",
     "title": {
       "pt": "Como Ser um Conservador",
-      "en": "How to Be a Conservative"
+      "en": "How to Be a Conservative",
+      "es": "Cómo ser conservador",
+      "de": "Wie man Konservativer sein kann",
+      "it": "Come essere un conservatore"
     },
     "year": 2014,
     "url": {
@@ -939,7 +1173,10 @@
     "personalityId": "friedrich-list",
     "title": {
       "pt": "Sistema Nacional de Economia Política",
-      "en": "The National System of Political Economy"
+      "en": "The National System of Political Economy",
+      "es": "Sistema nacional de economía política",
+      "de": "Das nationale System der politischen Ökonomie",
+      "it": "Il sistema nazionale di economia politica"
     },
     "year": 1841,
     "url": {
@@ -951,7 +1188,10 @@
     "personalityId": "konkin",
     "title": {
       "pt": "Novo Manifesto Libertário",
-      "en": "New Libertarian Manifesto"
+      "en": "New Libertarian Manifesto",
+      "es": "Nuevo manifiesto libertario",
+      "de": "Neues libertäres Manifest",
+      "it": "Nuovo manifesto libertario"
     },
     "year": 1980,
     "url": {
@@ -963,7 +1203,10 @@
     "personalityId": "javier-milei",
     "title": {
       "pt": "O Fim da Inflação",
-      "en": "El fin de la inflación"
+      "en": "El fin de la inflación",
+      "es": "El fin de la inflación",
+      "de": "Das Ende der Inflation",
+      "it": "La fine dell'inflazione"
     },
     "year": 2022,
     "url": {
@@ -975,7 +1218,10 @@
     "personalityId": "goldwater",
     "title": {
       "pt": "A Consciência de um Conservador",
-      "en": "The Conscience of a Conservative"
+      "en": "The Conscience of a Conservative",
+      "es": "The Conscience of a Conservative",
+      "de": "Das Gewissen eines Konservativen",
+      "it": "La coscienza di un conservatore"
     },
     "year": 1960,
     "url": {
@@ -987,7 +1233,10 @@
     "personalityId": "randolph-bourne",
     "title": {
       "pt": "A Guerra É a Saúde do Estado",
-      "en": "War Is the Health of the State"
+      "en": "War Is the Health of the State",
+      "es": "War Is the Health of the State",
+      "de": "Krieg ist die Gesundheit des Staates",
+      "it": "La guerra è la salute dello Stato"
     },
     "year": 1918,
     "url": {
@@ -999,7 +1248,10 @@
     "personalityId": "peter-maurin",
     "title": {
       "pt": "Ensaios Fáceis",
-      "en": "Easy Essays"
+      "en": "Easy Essays",
+      "es": "Easy Essays",
+      "de": "Einfache Essays",
+      "it": "Saggi semplici"
     },
     "year": 1936,
     "url": {
@@ -1011,7 +1263,10 @@
     "personalityId": "lysander-spooner",
     "title": {
       "pt": "Nenhuma Traição: A Constituição sem Autoridade",
-      "en": "No Treason: The Constitution of No Authority"
+      "en": "No Treason: The Constitution of No Authority",
+      "es": "No Treason: The Constitution of No Authority",
+      "de": "Kein Verrat: Die Verfassung ohne Autorität",
+      "it": "Nessun tradimento: la Costituzione senza autorità"
     },
     "year": 1867,
     "url": {
@@ -1023,7 +1278,10 @@
     "personalityId": "macron",
     "title": {
       "pt": "Revolução",
-      "en": "Revolution"
+      "en": "Revolution",
+      "es": "Révolution",
+      "de": "Revolution",
+      "it": "Rivoluzione"
     },
     "year": 2016,
     "url": {
@@ -1035,7 +1293,10 @@
     "personalityId": "comte",
     "title": {
       "pt": "Curso de Filosofia Positiva",
-      "en": "The Course in Positive Philosophy"
+      "en": "The Course in Positive Philosophy",
+      "es": "Curso de filosofía positiva",
+      "de": "Kurs der positiven Philosophie",
+      "it": "Corso di filosofia positiva"
     },
     "year": 1830,
     "url": {
@@ -1047,7 +1308,10 @@
     "personalityId": "leonardo-boff",
     "title": {
       "pt": "Igreja: Carisma e Poder",
-      "en": "Church: Charism and Power"
+      "en": "Church: Charism and Power",
+      "es": "Iglesia: carisma y poder",
+      "de": "Kirche: Charisma und Macht",
+      "it": "Chiesa: carisma e potere"
     },
     "year": 1981,
     "url": {
@@ -1059,7 +1323,10 @@
     "personalityId": "kissinger",
     "title": {
       "pt": "Diplomacia",
-      "en": "Diplomacy"
+      "en": "Diplomacy",
+      "es": "La diplomacia",
+      "de": "Die Vernunft der Nationen",
+      "it": "Diplomazia"
     },
     "year": 1994,
     "url": {
@@ -1071,7 +1338,10 @@
     "personalityId": "peter-thiel",
     "title": {
       "pt": "De Zero a Um",
-      "en": "Zero to One"
+      "en": "Zero to One",
+      "es": "De cero a uno",
+      "de": "Von Null auf Eins",
+      "it": "Da zero a uno"
     },
     "year": 2014,
     "url": {
@@ -1083,7 +1353,10 @@
     "personalityId": "marinetti",
     "title": {
       "pt": "Manifesto Futurista",
-      "en": "The Futurist Manifesto"
+      "en": "The Futurist Manifesto",
+      "es": "Manifiesto futurista",
+      "de": "Das futuristische Manifest",
+      "it": "Manifesto del futurismo"
     },
     "year": 1909,
     "url": {
@@ -1095,7 +1368,10 @@
     "personalityId": "donald-trump",
     "title": {
       "pt": "A Arte da Negociação",
-      "en": "The Art of the Deal"
+      "en": "The Art of the Deal",
+      "es": "El arte de la negociación",
+      "de": "The Art of the Deal: Die Kunst des Verhandelns",
+      "it": "L'arte di fare affari"
     },
     "year": 1987,
     "url": {
@@ -1107,7 +1383,10 @@
     "personalityId": "che-guevara",
     "title": {
       "pt": "A Guerra de Guerrilhas",
-      "en": "Guerrilla Warfare"
+      "en": "Guerrilla Warfare",
+      "es": "La guerra de guerrillas",
+      "de": "Der Guerillakrieg",
+      "it": "La guerra di guerriglia"
     },
     "year": 1960,
     "url": {
@@ -1119,7 +1398,10 @@
     "personalityId": "ho-chi-minh",
     "title": {
       "pt": "Caminho Revolucionário",
-      "en": "The Revolutionary Path"
+      "en": "The Revolutionary Path",
+      "es": "The Revolutionary Path",
+      "de": "Der revolutionäre Weg",
+      "it": "La via rivoluzionaria"
     },
     "year": 1927,
     "url": {
@@ -1131,7 +1413,10 @@
     "personalityId": "mahatma-gandhi",
     "title": {
       "pt": "Hind Swaraj: Autogoverno da Índia",
-      "en": "Hind Swaraj or Indian Home Rule"
+      "en": "Hind Swaraj or Indian Home Rule",
+      "es": "Hind Swaraj",
+      "de": "Hind Swaraj oder Indische Selbstregierung",
+      "it": "Hind Swaraj, ovvero l'autogoverno indiano"
     },
     "year": 1909,
     "url": {
@@ -1143,7 +1428,10 @@
     "personalityId": "br-ambedkar",
     "title": {
       "pt": "A Aniquilação das Castas",
-      "en": "Annihilation of Caste"
+      "en": "Annihilation of Caste",
+      "es": "Annihilation of Caste",
+      "de": "Die Vernichtung der Kasten",
+      "it": "L'annientamento delle caste"
     },
     "year": 1936,
     "url": {
@@ -1155,7 +1443,10 @@
     "personalityId": "frantz-fanon",
     "title": {
       "pt": "Os Condenados da Terra",
-      "en": "The Wretched of the Earth"
+      "en": "The Wretched of the Earth",
+      "es": "Los condenados de la tierra",
+      "de": "Die Verdammten dieser Erde",
+      "it": "I dannati della terra"
     },
     "year": 1961,
     "url": {
@@ -1167,7 +1458,10 @@
     "personalityId": "nelson-mandela",
     "title": {
       "pt": "Longa Caminhada até a Liberdade",
-      "en": "Long Walk to Freedom"
+      "en": "Long Walk to Freedom",
+      "es": "El largo camino hacia la libertad",
+      "de": "Der lange Weg zur Freiheit",
+      "it": "Lungo cammino verso la libertà"
     },
     "year": 1994,
     "url": {
@@ -1179,7 +1473,10 @@
     "personalityId": "malcolm-x",
     "title": {
       "pt": "A Autobiografia de Malcolm X",
-      "en": "The Autobiography of Malcolm X"
+      "en": "The Autobiography of Malcolm X",
+      "es": "Autobiografía de Malcolm X",
+      "de": "Die Autobiographie des Malcolm X",
+      "it": "Autobiografia di Malcolm X"
     },
     "year": 1965,
     "url": {
@@ -1191,7 +1488,10 @@
     "personalityId": "carl-schmitt",
     "title": {
       "pt": "O Conceito do Político",
-      "en": "The Concept of the Political"
+      "en": "The Concept of the Political",
+      "es": "El concepto de lo político",
+      "de": "Der Begriff des Politischen",
+      "it": "Il concetto di politico"
     },
     "year": 1932,
     "url": {
@@ -1203,7 +1503,10 @@
     "personalityId": "confucio",
     "title": {
       "pt": "Os Analectos",
-      "en": "The Analects"
+      "en": "The Analects",
+      "es": "Analectas",
+      "de": "Gespräche des Konfuzius",
+      "it": "Dialoghi"
     },
     "year": -475,
     "url": {
@@ -1215,7 +1518,10 @@
     "personalityId": "sun-yat-sen",
     "title": {
       "pt": "Os Três Princípios do Povo",
-      "en": "The Three Principles of the People"
+      "en": "The Three Principles of the People",
+      "es": "The Three Principles of the People",
+      "de": "Die Drei Prinzipien des Volkes",
+      "it": "I tre principi del popolo"
     },
     "year": 1924,
     "url": {
@@ -1227,7 +1533,10 @@
     "personalityId": "theodor-herzl",
     "title": {
       "pt": "O Estado Judeu",
-      "en": "The Jewish State"
+      "en": "The Jewish State",
+      "es": "El Estado judío",
+      "de": "Der Judenstaat",
+      "it": "Lo Stato ebraico"
     },
     "year": 1896,
     "url": {
@@ -1239,7 +1548,10 @@
     "personalityId": "simon-bolivar",
     "title": {
       "pt": "Carta da Jamaica",
-      "en": "The Jamaica Letter"
+      "en": "The Jamaica Letter",
+      "es": "Carta de Jamaica",
+      "de": "Der Brief aus Jamaika",
+      "it": "La lettera dalla Giamaica"
     },
     "year": 1815,
     "url": {
@@ -1251,7 +1563,10 @@
     "personalityId": "julius-evola",
     "title": {
       "pt": "Revolta contra o Mundo Moderno",
-      "en": "Revolt Against the Modern World"
+      "en": "Revolt Against the Modern World",
+      "es": "Rebelión contra el mundo moderno",
+      "de": "Revolte gegen die moderne Welt",
+      "it": "Rivolta contro il mondo moderno"
     },
     "year": 1934,
     "url": {
@@ -1263,7 +1578,10 @@
     "personalityId": "slavoj-zizek",
     "title": {
       "pt": "Primeiro como Tragédia, Depois como Farsa",
-      "en": "First as Tragedy, Then as Farce"
+      "en": "First as Tragedy, Then as Farce",
+      "es": "Primero como tragedia, después como farsa",
+      "de": "Zuerst als Tragödie, dann als Farce",
+      "it": "La prima volta come tragedia, la seconda come farsa"
     },
     "year": 2009,
     "url": {
@@ -1275,7 +1593,10 @@
     "personalityId": "isaiah-berlin",
     "title": {
       "pt": "Quatro Ensaios sobre a Liberdade",
-      "en": "Four Essays on Liberty"
+      "en": "Four Essays on Liberty",
+      "es": "Cuatro ensayos sobre la libertad",
+      "de": "Vier Abhandlungen über die Freiheit",
+      "it": "Quattro saggi sulla libertà"
     },
     "year": 1969,
     "url": {
@@ -1287,7 +1608,10 @@
     "personalityId": "jean-paul-sartre",
     "title": {
       "pt": "O Existencialismo É um Humanismo",
-      "en": "Existentialism Is a Humanism"
+      "en": "Existentialism Is a Humanism",
+      "es": "El existencialismo es un humanismo",
+      "de": "Ist der Existentialismus ein Humanismus?",
+      "it": "L'esistenzialismo è un umanismo"
     },
     "year": 1946,
     "url": {
@@ -1299,7 +1623,10 @@
     "personalityId": "fernando-henrique-cardoso",
     "title": {
       "pt": "Dependência e Desenvolvimento na América Latina",
-      "en": "Dependency and Development in Latin America"
+      "en": "Dependency and Development in Latin America",
+      "es": "Dependencia y desarrollo en América Latina",
+      "de": "Abhängigkeit und Entwicklung in Lateinamerika",
+      "it": "Dipendenza e sviluppo in America Latina"
     },
     "year": 1969,
     "url": {
@@ -1311,7 +1638,10 @@
     "personalityId": "ciro-gomes",
     "title": {
       "pt": "Projeto Nacional: O Dever da Esperança",
-      "en": "Projeto Nacional: O Dever da Esperança"
+      "en": "Projeto Nacional: O Dever da Esperança",
+      "es": "Projeto Nacional: O Dever da Esperança",
+      "de": "Nationales Projekt: Die Pflicht der Hoffnung",
+      "it": "Progetto nazionale: il dovere della speranza"
     },
     "year": 2020,
     "url": {
@@ -1323,7 +1653,10 @@
     "personalityId": "barack-obama",
     "title": {
       "pt": "A Audácia da Esperança",
-      "en": "The Audacity of Hope"
+      "en": "The Audacity of Hope",
+      "es": "La audacia de la esperanza",
+      "de": "Hoffnung wagen",
+      "it": "L'audacia della speranza"
     },
     "year": 2006,
     "url": {
@@ -1335,7 +1668,10 @@
     "personalityId": "fidel-castro",
     "title": {
       "pt": "A História Me Absolverá",
-      "en": "History Will Absolve Me"
+      "en": "History Will Absolve Me",
+      "es": "La historia me absolverá",
+      "de": "Die Geschichte wird mich freisprechen",
+      "it": "La storia mi assolverà"
     },
     "year": 1953,
     "url": {
@@ -1347,7 +1683,10 @@
     "personalityId": "john-f-kennedy",
     "title": {
       "pt": "Perfis de Coragem",
-      "en": "Profiles in Courage"
+      "en": "Profiles in Courage",
+      "es": "Profiles in Courage",
+      "de": "Mutige Menschen",
+      "it": "Profili del coraggio"
     },
     "year": 1956,
     "url": {
@@ -1359,7 +1698,10 @@
     "personalityId": "james-madison",
     "title": {
       "pt": "O Federalista",
-      "en": "The Federalist Papers"
+      "en": "The Federalist Papers",
+      "es": "El federalista",
+      "de": "Die Federalist Papers",
+      "it": "Il Federalista"
     },
     "year": 1788,
     "url": {
@@ -1371,7 +1713,10 @@
     "personalityId": "alexander-hamilton",
     "title": {
       "pt": "O Federalista",
-      "en": "The Federalist Papers"
+      "en": "The Federalist Papers",
+      "es": "El federalista",
+      "de": "Die Federalist Papers",
+      "it": "Il Federalista"
     },
     "year": 1788,
     "url": {
@@ -1383,7 +1728,10 @@
     "personalityId": "maximilien-robespierre",
     "title": {
       "pt": "Virtude e Terror",
-      "en": "Virtue and Terror"
+      "en": "Virtue and Terror",
+      "es": "Virtud y terror",
+      "de": "Tugend und Terror",
+      "it": "Virtù e terrore"
     },
     "year": 1794,
     "url": {
@@ -1395,7 +1743,10 @@
     "personalityId": "julio-cesar",
     "title": {
       "pt": "Comentários sobre a Guerra Gálica",
-      "en": "Commentaries on the Gallic War"
+      "en": "Commentaries on the Gallic War",
+      "es": "La guerra de las Galias",
+      "de": "Der Gallische Krieg",
+      "it": "La guerra gallica"
     },
     "year": -50,
     "url": {
@@ -1407,7 +1758,10 @@
     "personalityId": "jordan-peterson",
     "title": {
       "pt": "12 Regras para a Vida",
-      "en": "12 Rules for Life"
+      "en": "12 Rules for Life",
+      "es": "12 reglas para vivir",
+      "de": "12 Rules for Life",
+      "it": "12 regole per la vita"
     },
     "year": 2018,
     "url": {
@@ -1419,7 +1773,10 @@
     "personalityId": "aristoteles",
     "title": {
       "pt": "Política",
-      "en": "Politics"
+      "en": "Politics",
+      "es": "Política",
+      "de": "Politik",
+      "it": "Politica"
     },
     "year": -350,
     "url": {
@@ -1431,7 +1788,10 @@
     "personalityId": "platao",
     "title": {
       "pt": "A República",
-      "en": "The Republic"
+      "en": "The Republic",
+      "es": "La república",
+      "de": "Der Staat",
+      "it": "La Repubblica"
     },
     "year": -375,
     "url": {
@@ -1443,7 +1803,10 @@
     "personalityId": "foucault",
     "title": {
       "pt": "Vigiar e Punir",
-      "en": "Discipline and Punish"
+      "en": "Discipline and Punish",
+      "es": "Vigilar y castigar",
+      "de": "Überwachen und Strafen",
+      "it": "Sorvegliare e punire"
     },
     "year": 1975,
     "url": {
@@ -1455,7 +1818,10 @@
     "personalityId": "tocqueville",
     "title": {
       "pt": "A Democracia na América",
-      "en": "Democracy in America"
+      "en": "Democracy in America",
+      "es": "La democracia en América",
+      "de": "Über die Demokratie in Amerika",
+      "it": "La democrazia in America"
     },
     "year": 1835,
     "url": {
@@ -1467,7 +1833,10 @@
     "personalityId": "nietzsche",
     "title": {
       "pt": "Assim Falou Zaratustra",
-      "en": "Thus Spoke Zarathustra"
+      "en": "Thus Spoke Zarathustra",
+      "es": "Así habló Zaratustra",
+      "de": "Also sprach Zarathustra",
+      "it": "Così parlò Zarathustra"
     },
     "year": 1883,
     "url": {
@@ -1479,7 +1848,10 @@
     "personalityId": "rousseau",
     "title": {
       "pt": "O Contrato Social",
-      "en": "The Social Contract"
+      "en": "The Social Contract",
+      "es": "El contrato social",
+      "de": "Der Gesellschaftsvertrag",
+      "it": "Il contratto sociale"
     },
     "year": 1762,
     "url": {
@@ -1491,7 +1863,10 @@
     "personalityId": "hobbes",
     "title": {
       "pt": "Leviatã",
-      "en": "Leviathan"
+      "en": "Leviathan",
+      "es": "Leviatán",
+      "de": "Leviathan",
+      "it": "Leviatano"
     },
     "year": 1651,
     "url": {
@@ -1503,7 +1878,10 @@
     "personalityId": "maquiavel",
     "title": {
       "pt": "O Príncipe",
-      "en": "The Prince"
+      "en": "The Prince",
+      "es": "El príncipe",
+      "de": "Der Fürst",
+      "it": "Il Principe"
     },
     "year": 1532,
     "url": {
@@ -1515,7 +1893,10 @@
     "personalityId": "keynes",
     "title": {
       "pt": "Teoria Geral do Emprego, do Juro e da Moeda",
-      "en": "The General Theory of Employment, Interest and Money"
+      "en": "The General Theory of Employment, Interest and Money",
+      "es": "Teoría general de la ocupación, el interés y el dinero",
+      "de": "Allgemeine Theorie der Beschäftigung, des Zinses und des Geldes",
+      "it": "Teoria generale dell'occupazione, dell'interesse e della moneta"
     },
     "year": 1936,
     "url": {
@@ -1527,7 +1908,10 @@
     "personalityId": "peron",
     "title": {
       "pt": "A Comunidade Organizada",
-      "en": "The Organized Community"
+      "en": "The Organized Community",
+      "es": "La comunidad organizada",
+      "de": "Die organisierte Gemeinschaft",
+      "it": "La comunità organizzata"
     },
     "year": 1949,
     "url": {
@@ -1539,7 +1923,10 @@
     "personalityId": "satoshi-nakamoto",
     "title": {
       "pt": "Bitcoin: Um Sistema de Dinheiro Eletrônico Peer-to-Peer",
-      "en": "Bitcoin: A Peer-to-Peer Electronic Cash System"
+      "en": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+      "es": "Bitcoin: un sistema de efectivo electrónico usuario-a-usuario",
+      "de": "Bitcoin: Ein elektronisches Peer-to-Peer-Cash-System",
+      "it": "Bitcoin: un sistema di denaro elettronico peer-to-peer"
     },
     "year": 2008,
     "url": {
@@ -1551,7 +1938,10 @@
     "personalityId": "george-soros",
     "title": {
       "pt": "A Alquimia das Finanças",
-      "en": "The Alchemy of Finance"
+      "en": "The Alchemy of Finance",
+      "es": "La alquimia de las finanzas",
+      "de": "Die Alchemie der Finanzen",
+      "it": "L'alchimia della finanza"
     },
     "year": 1987,
     "url": {
@@ -1563,7 +1953,10 @@
     "personalityId": "bill-gates",
     "title": {
       "pt": "Como Evitar um Desastre Climático",
-      "en": "How to Avoid a Climate Disaster"
+      "en": "How to Avoid a Climate Disaster",
+      "es": "Cómo evitar un desastre climático",
+      "de": "Wie wir die Klimakatastrophe verhindern",
+      "it": "Come evitare un disastro climatico"
     },
     "year": 2021,
     "url": {
@@ -1575,7 +1968,10 @@
     "personalityId": "dalai-lama",
     "title": {
       "pt": "Uma Ética para o Novo Milênio",
-      "en": "Ethics for the New Millennium"
+      "en": "Ethics for the New Millennium",
+      "es": "El arte de vivir en el nuevo milenio",
+      "de": "Ethik für das neue Jahrtausend",
+      "it": "Etica per il nuovo millennio"
     },
     "year": 1999,
     "url": {
@@ -1587,7 +1983,10 @@
     "personalityId": "pentti-linkola",
     "title": {
       "pt": "A Vida Pode Prevalecer?",
-      "en": "Can Life Prevail?"
+      "en": "Can Life Prevail?",
+      "es": "Can Life Prevail?",
+      "de": "Kann das Leben siegen?",
+      "it": "La vita può prevalere?"
     },
     "year": 2004,
     "url": {
@@ -1599,7 +1998,10 @@
     "personalityId": "thomas-jefferson",
     "title": {
       "pt": "Notas sobre o Estado da Virgínia",
-      "en": "Notes on the State of Virginia"
+      "en": "Notes on the State of Virginia",
+      "es": "Notes on the State of Virginia",
+      "de": "Bemerkungen über den Staat Virginia",
+      "it": "Note sullo Stato della Virginia"
     },
     "year": 1785,
     "url": {
@@ -1611,7 +2013,10 @@
     "personalityId": "h-l-mencken",
     "title": {
       "pt": "Notas sobre a Democracia",
-      "en": "Notes on Democracy"
+      "en": "Notes on Democracy",
+      "es": "Notes on Democracy",
+      "de": "Anmerkungen zur Demokratie",
+      "it": "Note sulla democrazia"
     },
     "year": 1926,
     "url": {
@@ -1623,7 +2028,10 @@
     "personalityId": "marcus-garvey",
     "title": {
       "pt": "Filosofia e Opiniões de Marcus Garvey",
-      "en": "The Philosophy and Opinions of Marcus Garvey"
+      "en": "The Philosophy and Opinions of Marcus Garvey",
+      "es": "The Philosophy and Opinions of Marcus Garvey",
+      "de": "Die Philosophie und Ansichten des Marcus Garvey",
+      "it": "La filosofia e le opinioni di Marcus Garvey"
     },
     "year": 1923,
     "url": {
@@ -1635,7 +2043,10 @@
     "personalityId": "julius-nyerere",
     "title": {
       "pt": "Ujamaa: Ensaios sobre o Socialismo",
-      "en": "Ujamaa: Essays on Socialism"
+      "en": "Ujamaa: Essays on Socialism",
+      "es": "Ujamaa: Essays on Socialism",
+      "de": "Ujamaa: Essays über den Sozialismus",
+      "it": "Ujamaa: saggi sul socialismo"
     },
     "year": 1968,
     "url": {
@@ -1647,7 +2058,10 @@
     "personalityId": "papa-pio-ix",
     "title": {
       "pt": "Syllabus dos Erros",
-      "en": "Syllabus of Errors"
+      "en": "Syllabus of Errors",
+      "es": "Syllabus errorum",
+      "de": "Syllabus errorum",
+      "it": "Sillabo"
     },
     "year": 1864,
     "url": {
@@ -1659,7 +2073,10 @@
     "personalityId": "justiniano-i",
     "title": {
       "pt": "Institutas de Justiniano",
-      "en": "The Institutes of Justinian"
+      "en": "The Institutes of Justinian",
+      "es": "Instituciones de Justiniano",
+      "de": "Die Institutionen Justinians",
+      "it": "Le Istituzioni di Giustiniano"
     },
     "year": 533,
     "url": {
@@ -1671,7 +2088,10 @@
     "personalityId": "joao-calvino",
     "title": {
       "pt": "As Institutas da Religião Cristã",
-      "en": "Institutes of the Christian Religion"
+      "en": "Institutes of the Christian Religion",
+      "es": "Institución de la religión cristiana",
+      "de": "Unterricht in der christlichen Religion",
+      "it": "Istituzione della religione cristiana"
     },
     "year": 1536,
     "url": {
@@ -1683,7 +2103,10 @@
     "personalityId": "guillaume-faye",
     "title": {
       "pt": "Arqueofuturismo",
-      "en": "Archeofuturism"
+      "en": "Archeofuturism",
+      "es": "El arqueofuturismo",
+      "de": "Archäofuturismus",
+      "it": "Archeofuturismo"
     },
     "year": 1998,
     "url": {
@@ -1695,7 +2118,10 @@
     "personalityId": "jose-bonifacio",
     "title": {
       "pt": "Representação à Assembleia Constituinte sobre a Escravatura",
-      "en": "Memoir on Slavery"
+      "en": "Memoir on Slavery",
+      "es": "Representação à Assembleia Constituinte sobre a Escravatura",
+      "de": "Denkschrift über die Sklaverei",
+      "it": "Memoria sulla schiavitù"
     },
     "year": 1825,
     "url": {
@@ -1707,7 +2133,10 @@
     "personalityId": "winston-churchill",
     "title": {
       "pt": "A Segunda Guerra Mundial",
-      "en": "The Second World War"
+      "en": "The Second World War",
+      "es": "La Segunda Guerra Mundial",
+      "de": "Der Zweite Weltkrieg",
+      "it": "La seconda guerra mondiale"
     },
     "year": 1948,
     "url": {
@@ -1719,7 +2148,10 @@
     "personalityId": "woodrow-wilson",
     "title": {
       "pt": "A Nova Liberdade",
-      "en": "The New Freedom"
+      "en": "The New Freedom",
+      "es": "La nueva libertad",
+      "de": "Die neue Freiheit",
+      "it": "La nuova libertà"
     },
     "year": 1913,
     "url": {
@@ -1731,7 +2163,10 @@
     "personalityId": "ted-kaczynski",
     "title": {
       "pt": "A Sociedade Industrial e Seu Futuro",
-      "en": "Industrial Society and Its Future"
+      "en": "Industrial Society and Its Future",
+      "es": "La sociedad industrial y su futuro",
+      "de": "Die industrielle Gesellschaft und ihre Zukunft",
+      "it": "La società industriale e il suo futuro"
     },
     "year": 1995,
     "url": {
@@ -1743,7 +2178,10 @@
     "personalityId": "richard-nixon",
     "title": {
       "pt": "A Verdadeira Guerra",
-      "en": "The Real War"
+      "en": "The Real War",
+      "es": "La verdadera guerra",
+      "de": "Der wirkliche Krieg",
+      "it": "La vera guerra"
     },
     "year": 1980,
     "url": {
@@ -1755,7 +2193,10 @@
     "personalityId": "charles-de-gaulle",
     "title": {
       "pt": "O Fio da Espada",
-      "en": "The Edge of the Sword"
+      "en": "The Edge of the Sword",
+      "es": "El filo de la espada",
+      "de": "Die Schneide des Schwertes",
+      "it": "Il filo della spada"
     },
     "year": 1932,
     "url": {
@@ -1767,7 +2208,10 @@
     "personalityId": "rudolf-rocker",
     "title": {
       "pt": "Nacionalismo e Cultura",
-      "en": "Nationalism and Culture"
+      "en": "Nationalism and Culture",
+      "es": "Nacionalismo y cultura",
+      "de": "Nationalismus und Kultur",
+      "it": "Nazionalismo e cultura"
     },
     "year": 1937,
     "url": {
@@ -1779,7 +2223,10 @@
     "personalityId": "errico-malatesta",
     "title": {
       "pt": "Anarquia",
-      "en": "Anarchy"
+      "en": "Anarchy",
+      "es": "La anarquía",
+      "de": "Anarchie",
+      "it": "Anarchia"
     },
     "year": 1891,
     "url": {
@@ -1791,7 +2238,10 @@
     "personalityId": "sidney-webb",
     "title": {
       "pt": "História do Sindicalismo",
-      "en": "The History of Trade Unionism"
+      "en": "The History of Trade Unionism",
+      "es": "The History of Trade Unionism",
+      "de": "Die Geschichte des Trade-Unionismus",
+      "it": "Storia del sindacalismo"
     },
     "year": 1894,
     "url": {
@@ -1803,7 +2253,10 @@
     "personalityId": "papa-francisco",
     "title": {
       "pt": "Laudato Si'",
-      "en": "Laudato Si'"
+      "en": "Laudato Si'",
+      "es": "Laudato si'",
+      "de": "Laudato si'",
+      "it": "Laudato si'"
     },
     "year": 2015,
     "url": {
@@ -1815,7 +2268,10 @@
     "personalityId": "papa-leao-xiii",
     "title": {
       "pt": "Rerum Novarum",
-      "en": "Rerum Novarum"
+      "en": "Rerum Novarum",
+      "es": "Rerum novarum",
+      "de": "Rerum novarum",
+      "it": "Rerum novarum"
     },
     "year": 1891,
     "url": {
@@ -1827,7 +2283,10 @@
     "personalityId": "tomas-de-aquino",
     "title": {
       "pt": "Suma Teológica",
-      "en": "Summa Theologica"
+      "en": "Summa Theologica",
+      "es": "Suma teológica",
+      "de": "Summa theologica",
+      "it": "Summa Theologiae"
     },
     "year": 1274,
     "url": {
@@ -1839,7 +2298,10 @@
     "personalityId": "jd-vance",
     "title": {
       "pt": "Era uma Vez um Sonho",
-      "en": "Hillbilly Elegy"
+      "en": "Hillbilly Elegy",
+      "es": "Hillbilly, una elegía rural",
+      "de": "Hillbilly-Elegie",
+      "it": "Elegia americana"
     },
     "year": 2016,
     "url": {
@@ -1851,7 +2313,10 @@
     "personalityId": "howard-scott",
     "title": {
       "pt": "Introdução à Tecnocracia",
-      "en": "Introduction to Technocracy"
+      "en": "Introduction to Technocracy",
+      "es": "Introduction to Technocracy",
+      "de": "Einführung in die Technokratie",
+      "it": "Introduzione alla tecnocrazia"
     },
     "year": 1933,
     "url": {
@@ -1863,7 +2328,10 @@
     "personalityId": "james-lovelock",
     "title": {
       "pt": "Gaia: Um Novo Olhar sobre a Vida na Terra",
-      "en": "Gaia: A New Look at Life on Earth"
+      "en": "Gaia: A New Look at Life on Earth",
+      "es": "Gaia: una nueva visión de la vida sobre la Tierra",
+      "de": "Gaia: Eine neue Sicht des Lebens auf Erden",
+      "it": "Gaia: un nuovo sguardo alla vita sulla Terra"
     },
     "year": 1979,
     "url": {
@@ -1875,7 +2343,10 @@
     "personalityId": "benjamin-constant",
     "title": {
       "pt": "Da Liberdade dos Antigos Comparada à dos Modernos",
-      "en": "The Liberty of Ancients Compared with that of Moderns"
+      "en": "The Liberty of Ancients Compared with that of Moderns",
+      "es": "De la libertad de los antiguos comparada con la de los modernos",
+      "de": "Über die Freiheit der Alten im Vergleich zu der der Modernen",
+      "it": "La libertà degli antichi paragonata a quella dei moderni"
     },
     "year": 1819,
     "url": {
@@ -1887,7 +2358,10 @@
     "personalityId": "martin-luther-king-jr",
     "title": {
       "pt": "Por que Não Podemos Esperar",
-      "en": "Why We Can't Wait"
+      "en": "Why We Can't Wait",
+      "es": "Por qué no podemos esperar",
+      "de": "Warum wir nicht warten können",
+      "it": "Perché non possiamo aspettare"
     },
     "year": 1964,
     "url": {
@@ -1899,7 +2373,10 @@
     "personalityId": "martin-heidegger",
     "title": {
       "pt": "Ser e Tempo",
-      "en": "Being and Time"
+      "en": "Being and Time",
+      "es": "Ser y tiempo",
+      "de": "Sein und Zeit",
+      "it": "Essere e tempo"
     },
     "year": 1927,
     "url": {
@@ -1911,7 +2388,10 @@
     "personalityId": "hegel",
     "title": {
       "pt": "Princípios da Filosofia do Direito",
-      "en": "Elements of the Philosophy of Right"
+      "en": "Elements of the Philosophy of Right",
+      "es": "Principios de la filosofía del derecho",
+      "de": "Grundlinien der Philosophie des Rechts",
+      "it": "Lineamenti di filosofia del diritto"
     },
     "year": 1820,
     "url": {
@@ -1923,7 +2403,10 @@
     "personalityId": "marco-aurelio",
     "title": {
       "pt": "Meditações",
-      "en": "Meditations"
+      "en": "Meditations",
+      "es": "Meditaciones",
+      "de": "Selbstbetrachtungen",
+      "it": "Pensieri"
     },
     "year": 180,
     "url": {
@@ -1935,7 +2418,10 @@
     "personalityId": "agostinho-de-hipona",
     "title": {
       "pt": "A Cidade de Deus",
-      "en": "The City of God"
+      "en": "The City of God",
+      "es": "La ciudad de Dios",
+      "de": "Vom Gottesstaat",
+      "it": "La città di Dio"
     },
     "year": 426,
     "url": {
@@ -1947,7 +2433,10 @@
     "personalityId": "immanuel-kant",
     "title": {
       "pt": "À Paz Perpétua",
-      "en": "Perpetual Peace"
+      "en": "Perpetual Peace",
+      "es": "La paz perpetua",
+      "de": "Zum ewigen Frieden",
+      "it": "Per la pace perpetua"
     },
     "year": 1795,
     "url": {
@@ -1959,7 +2448,10 @@
     "personalityId": "david-ricardo",
     "title": {
       "pt": "Princípios de Economia Política e Tributação",
-      "en": "On the Principles of Political Economy and Taxation"
+      "en": "On the Principles of Political Economy and Taxation",
+      "es": "Principios de economía política y tributación",
+      "de": "Über die Grundsätze der politischen Ökonomie und der Besteuerung",
+      "it": "Principi di economia politica e dell'imposta"
     },
     "year": 1817,
     "url": {
@@ -1971,7 +2463,10 @@
     "personalityId": "joseph-schumpeter",
     "title": {
       "pt": "Capitalismo, Socialismo e Democracia",
-      "en": "Capitalism, Socialism and Democracy"
+      "en": "Capitalism, Socialism and Democracy",
+      "es": "Capitalismo, socialismo y democracia",
+      "de": "Kapitalismus, Sozialismus und Demokratie",
+      "it": "Capitalismo, socialismo e democrazia"
     },
     "year": 1942,
     "url": {
@@ -1983,7 +2478,10 @@
     "personalityId": "karl-polanyi",
     "title": {
       "pt": "A Grande Transformação",
-      "en": "The Great Transformation"
+      "en": "The Great Transformation",
+      "es": "La gran transformación",
+      "de": "The Great Transformation: Politische und ökonomische Ursprünge von Gesellschaften und Wirtschaftssystemen",
+      "it": "La grande trasformazione"
     },
     "year": 1944,
     "url": {
@@ -1995,7 +2493,10 @@
     "personalityId": "friedrich-engels",
     "title": {
       "pt": "A Origem da Família, da Propriedade Privada e do Estado",
-      "en": "The Origin of the Family, Private Property and the State"
+      "en": "The Origin of the Family, Private Property and the State",
+      "es": "El origen de la familia, la propiedad privada y el Estado",
+      "de": "Der Ursprung der Familie, des Privateigentums und des Staats",
+      "it": "L'origine della famiglia, della proprietà privata e dello Stato"
     },
     "year": 1884,
     "url": {
@@ -2007,7 +2508,10 @@
     "personalityId": "carl-menger",
     "title": {
       "pt": "Princípios de Economia Política",
-      "en": "Principles of Economics"
+      "en": "Principles of Economics",
+      "es": "Principios de economía política",
+      "de": "Grundsätze der Volkswirtschaftslehre",
+      "it": "Principi di economia"
     },
     "year": 1871,
     "url": {
@@ -2019,7 +2523,10 @@
     "personalityId": "henry-ford",
     "title": {
       "pt": "Minha Vida e Minha Obra",
-      "en": "My Life and Work"
+      "en": "My Life and Work",
+      "es": "Mi vida y mi obra",
+      "de": "Mein Leben und Werk",
+      "it": "La mia vita e la mia opera"
     },
     "year": 1922,
     "url": {
@@ -2031,7 +2538,10 @@
     "personalityId": "olavo-de-carvalho",
     "title": {
       "pt": "O Mínimo que Você Precisa Saber para Não Ser um Idiota",
-      "en": "O Mínimo que Você Precisa Saber para Não Ser um Idiota"
+      "en": "O Mínimo que Você Precisa Saber para Não Ser um Idiota",
+      "es": "O Mínimo que Você Precisa Saber para Não Ser um Idiota",
+      "de": "Das Mindeste, was man wissen muss, um kein Idiot zu sein",
+      "it": "Il minimo che devi sapere per non essere un idiota"
     },
     "year": 2013,
     "url": {
@@ -2043,7 +2553,10 @@
     "personalityId": "charlie-kirk",
     "title": {
       "pt": "A Doutrina MAGA",
-      "en": "The MAGA Doctrine"
+      "en": "The MAGA Doctrine",
+      "es": "The MAGA Doctrine",
+      "de": "Die MAGA-Doktrin",
+      "it": "La dottrina MAGA"
     },
     "year": 2020,
     "url": {
@@ -2055,7 +2568,10 @@
     "personalityId": "celso-furtado",
     "title": {
       "pt": "Formação Econômica do Brasil",
-      "en": "The Economic Growth of Brazil"
+      "en": "The Economic Growth of Brazil",
+      "es": "Formación económica del Brasil",
+      "de": "Die wirtschaftliche Entwicklung Brasiliens",
+      "it": "La crescita economica del Brasile"
     },
     "year": 1959,
     "url": {
@@ -2067,7 +2583,10 @@
     "personalityId": "martinho-lutero",
     "title": {
       "pt": "Da Liberdade Cristã",
-      "en": "On the Freedom of a Christian"
+      "en": "On the Freedom of a Christian",
+      "es": "La libertad del cristiano",
+      "de": "Von der Freiheit eines Christenmenschen",
+      "it": "Sulla libertà del cristiano"
     },
     "year": 1520,
     "url": {
@@ -2079,7 +2598,10 @@
     "personalityId": "roberto-campos",
     "title": {
       "pt": "A Lanterna na Popa",
-      "en": "A Lanterna na Popa"
+      "en": "A Lanterna na Popa",
+      "es": "A Lanterna na Popa",
+      "de": "Die Laterne am Heck",
+      "it": "La lanterna sulla poppa"
     },
     "year": 1994,
     "url": {
@@ -2091,7 +2613,10 @@
     "personalityId": "bresser-pereira",
     "title": {
       "pt": "Desenvolvimento e Crise no Brasil",
-      "en": "Development and Crisis in Brazil"
+      "en": "Development and Crisis in Brazil",
+      "es": "Desenvolvimento e Crise no Brasil",
+      "de": "Entwicklung und Krise in Brasilien",
+      "it": "Sviluppo e crisi in Brasile"
     },
     "year": 1968,
     "url": {
@@ -2103,7 +2628,10 @@
     "personalityId": "domenico-losurdo",
     "title": {
       "pt": "Contra-História do Liberalismo",
-      "en": "Liberalism: A Counter-History"
+      "en": "Liberalism: A Counter-History",
+      "es": "Contrahistoria del liberalismo",
+      "de": "Gegengeschichte des Liberalismus",
+      "it": "Il liberalismo: una controstoria"
     },
     "year": 2005,
     "url": {
@@ -2115,7 +2643,10 @@
     "personalityId": "espinosa",
     "title": {
       "pt": "Tratado Teológico-Político",
-      "en": "Theological-Political Treatise"
+      "en": "Theological-Political Treatise",
+      "es": "Tratado teológico-político",
+      "de": "Theologisch-politischer Traktat",
+      "it": "Trattato teologico-politico"
     },
     "year": 1670,
     "url": {
@@ -2127,7 +2658,10 @@
     "personalityId": "mikhail-gorbachev",
     "title": {
       "pt": "Perestroika",
-      "en": "Perestroika"
+      "en": "Perestroika",
+      "es": "Perestroika",
+      "de": "Perestroika",
+      "it": "Perestrojka"
     },
     "year": 1987,
     "url": {
@@ -2139,7 +2673,10 @@
     "personalityId": "max-weber",
     "title": {
       "pt": "A Ética Protestante e o Espírito do Capitalismo",
-      "en": "The Protestant Ethic and the Spirit of Capitalism"
+      "en": "The Protestant Ethic and the Spirit of Capitalism",
+      "es": "La ética protestante y el espíritu del capitalismo",
+      "de": "Die protestantische Ethik und der Geist des Kapitalismus",
+      "it": "L'etica protestante e lo spirito del capitalismo"
     },
     "year": 1905,
     "url": {
@@ -2151,7 +2688,10 @@
     "personalityId": "tony-blair",
     "title": {
       "pt": "A Terceira Via",
-      "en": "The Third Way"
+      "en": "The Third Way",
+      "es": "La tercera vía",
+      "de": "Der dritte Weg",
+      "it": "La terza via"
     },
     "year": 1998,
     "url": {
@@ -2163,7 +2703,10 @@
     "personalityId": "rui-barbosa",
     "title": {
       "pt": "Oração aos Moços",
-      "en": "Oração aos Moços"
+      "en": "Oração aos Moços",
+      "es": "Oração aos Moços",
+      "de": "Rede an die Jugend",
+      "it": "Orazione ai giovani"
     },
     "year": 1921,
     "url": {
@@ -2175,7 +2718,10 @@
     "personalityId": "carlos-lacerda",
     "title": {
       "pt": "Depoimento",
-      "en": "Depoimento"
+      "en": "Depoimento",
+      "es": "Depoimento",
+      "de": "Zeugenaussage",
+      "it": "Testimonianza"
     },
     "year": 1977,
     "url": {
@@ -2187,7 +2733,10 @@
     "personalityId": "alexandre-de-moraes",
     "title": {
       "pt": "Direito Constitucional",
-      "en": "Direito Constitucional"
+      "en": "Direito Constitucional",
+      "es": "Direito Constitucional",
+      "de": "Verfassungsrecht",
+      "it": "Diritto costituzionale"
     },
     "year": 1997,
     "url": {
@@ -2199,7 +2748,10 @@
     "personalityId": "voltaire",
     "title": {
       "pt": "Tratado sobre a Tolerância",
-      "en": "Treatise on Tolerance"
+      "en": "Treatise on Tolerance",
+      "es": "Tratado sobre la tolerancia",
+      "de": "Abhandlung über die Toleranz",
+      "it": "Trattato sulla tolleranza"
     },
     "year": 1763,
     "url": {
@@ -2211,7 +2763,10 @@
     "personalityId": "dostoievski",
     "title": {
       "pt": "Os Demônios",
-      "en": "Demons"
+      "en": "Demons",
+      "es": "Los demonios",
+      "de": "Böse Geister",
+      "it": "I demoni"
     },
     "year": 1872,
     "url": {
@@ -2223,7 +2778,10 @@
     "personalityId": "paulo-freire",
     "title": {
       "pt": "Pedagogia do Oprimido",
-      "en": "Pedagogy of the Oppressed"
+      "en": "Pedagogy of the Oppressed",
+      "es": "Pedagogía del oprimido",
+      "de": "Pädagogik der Unterdrückten",
+      "it": "Pedagogia degli oppressi"
     },
     "year": 1968,
     "url": {
@@ -2235,7 +2793,10 @@
     "personalityId": "john-c-calhoun",
     "title": {
       "pt": "Uma Disquisição sobre o Governo",
-      "en": "A Disquisition on Government"
+      "en": "A Disquisition on Government",
+      "es": "Disquisición sobre el gobierno",
+      "de": "Eine Abhandlung über die Regierung",
+      "it": "Una disquisizione sul governo"
     },
     "year": 1851,
     "url": {
@@ -2247,7 +2808,10 @@
     "personalityId": "jefferson-davis",
     "title": {
       "pt": "Ascensão e Queda do Governo Confederado",
-      "en": "The Rise and Fall of the Confederate Government"
+      "en": "The Rise and Fall of the Confederate Government",
+      "es": "The Rise and Fall of the Confederate Government",
+      "de": "Aufstieg und Fall der Regierung der Konföderierten",
+      "it": "Ascesa e caduta del governo confederato"
     },
     "year": 1881,
     "url": {
@@ -2259,7 +2823,10 @@
     "personalityId": "thomas-muntzer",
     "title": {
       "pt": "Sermão aos Príncipes",
-      "en": "Sermon to the Princes"
+      "en": "Sermon to the Princes",
+      "es": "Sermón a los príncipes",
+      "de": "Fürstenpredigt",
+      "it": "Predica ai principi"
     },
     "year": 1524,
     "url": {
@@ -2271,7 +2838,10 @@
     "personalityId": "getulio-vargas",
     "title": {
       "pt": "A Nova Política do Brasil",
-      "en": "A Nova Política do Brasil"
+      "en": "A Nova Política do Brasil",
+      "es": "A Nova Política do Brasil",
+      "de": "Die neue Politik Brasiliens",
+      "it": "La nuova politica del Brasile"
     },
     "year": 1938,
     "url": {
@@ -2283,7 +2853,10 @@
     "personalityId": "reza-pahlavi",
     "title": {
       "pt": "Winds of Change: The Future of Democracy in Iran",
-      "en": "Winds of Change: The Future of Democracy in Iran"
+      "en": "Winds of Change: The Future of Democracy in Iran",
+      "es": "Winds of Change: The Future of Democracy in Iran",
+      "de": "Winde des Wandels: Die Zukunft der Demokratie im Iran",
+      "it": "Venti di cambiamento: il futuro della democrazia in Iran"
     },
     "year": 2002,
     "url": {
@@ -2295,7 +2868,10 @@
     "personalityId": "mohammad-reza-pahlavi",
     "title": {
       "pt": "Answer to History",
-      "en": "Answer to History"
+      "en": "Answer to History",
+      "es": "Respuesta a la historia",
+      "de": "Antwort an die Geschichte",
+      "it": "Risposta alla storia"
     },
     "year": 1980,
     "url": {
@@ -2307,7 +2883,10 @@
     "personalityId": "gamal-abdel-nasser",
     "title": {
       "pt": "A Filosofia da Revolução",
-      "en": "The Philosophy of the Revolution"
+      "en": "The Philosophy of the Revolution",
+      "es": "La filosofía de la revolución",
+      "de": "Die Philosophie der Revolution",
+      "it": "La filosofia della rivoluzione"
     },
     "year": 1954,
     "url": {
@@ -2319,7 +2898,10 @@
     "personalityId": "ernst-junger",
     "title": {
       "pt": "O Trabalhador: Domínio e Figura",
-      "en": "The Worker: Dominion and Form"
+      "en": "The Worker: Dominion and Form",
+      "es": "El trabajador: dominio y figura",
+      "de": "Der Arbeiter: Herrschaft und Gestalt",
+      "it": "L'operaio: dominio e forma"
     },
     "year": 1932,
     "url": {
@@ -2331,7 +2913,10 @@
     "personalityId": "oswald-spengler",
     "title": {
       "pt": "Prussianismo e Socialismo",
-      "en": "Prussianism and Socialism"
+      "en": "Prussianism and Socialism",
+      "es": "Prusianismo y socialismo",
+      "de": "Preußentum und Sozialismus",
+      "it": "Prussianesimo e socialismo"
     },
     "year": 1919,
     "url": {
@@ -2343,7 +2928,10 @@
     "personalityId": "muhammad-abduh",
     "title": {
       "pt": "Risalat al-Tawhid",
-      "en": "The Theology of Unity"
+      "en": "The Theology of Unity",
+      "es": "Risalat al-Tawhid",
+      "de": "Die Theologie der Einheit",
+      "it": "La teologia dell'unità"
     },
     "year": 1897,
     "url": {
@@ -2355,7 +2943,10 @@
     "personalityId": "sayyid-qutb",
     "title": {
       "pt": "Justiça Social no Islã",
-      "en": "Social Justice in Islam"
+      "en": "Social Justice in Islam",
+      "es": "Social Justice in Islam",
+      "de": "Soziale Gerechtigkeit im Islam",
+      "it": "La giustizia sociale nell'Islam"
     },
     "year": 1949,
     "url": {
@@ -2367,7 +2958,10 @@
     "personalityId": "averroes",
     "title": {
       "pt": "Discurso Decisivo",
-      "en": "The Decisive Treatise"
+      "en": "The Decisive Treatise",
+      "es": "Discurso decisivo",
+      "de": "Die entscheidende Abhandlung",
+      "it": "Il trattato decisivo"
     },
     "year": 1179,
     "url": {
@@ -2379,7 +2973,10 @@
     "personalityId": "david-ben-gurion",
     "title": {
       "pt": "Rebirth and Destiny of Israel",
-      "en": "Rebirth and Destiny of Israel"
+      "en": "Rebirth and Destiny of Israel",
+      "es": "Rebirth and Destiny of Israel",
+      "de": "Wiedergeburt und Schicksal Israels",
+      "it": "Rinascita e destino di Israele"
     },
     "year": 1954,
     "url": {
@@ -2391,7 +2988,10 @@
     "personalityId": "albert-camus",
     "title": {
       "pt": "O Homem Revoltado",
-      "en": "The Rebel"
+      "en": "The Rebel",
+      "es": "El hombre rebelde",
+      "de": "Der Mensch in der Revolte",
+      "it": "L'uomo in rivolta"
     },
     "year": 1951,
     "url": {
@@ -2403,7 +3003,10 @@
     "personalityId": "abraham-isaac-kook",
     "title": {
       "pt": "Orot",
-      "en": "Orot"
+      "en": "Orot",
+      "es": "Orot",
+      "de": "Orot",
+      "it": "Orot"
     },
     "year": 1920,
     "url": {
@@ -2415,7 +3018,10 @@
     "personalityId": "auguste-blanqui",
     "title": {
       "pt": "Critique sociale",
-      "en": "Critique sociale"
+      "en": "Critique sociale",
+      "es": "Critique sociale",
+      "de": "Soziale Kritik",
+      "it": "Critique sociale"
     },
     "year": 1885,
     "url": {
@@ -2427,7 +3033,10 @@
     "personalityId": "mark-carney",
     "title": {
       "pt": "Value(s)",
-      "en": "Value(s)"
+      "en": "Value(s)",
+      "es": "Value(s)",
+      "de": "Value(s): Wie wir eine bessere Welt aufbauen",
+      "it": "Value(s)"
     },
     "year": 2021,
     "url": {
@@ -2439,7 +3048,10 @@
     "personalityId": "jimmy-carter",
     "title": {
       "pt": "Our Endangered Values",
-      "en": "Our Endangered Values"
+      "en": "Our Endangered Values",
+      "es": "Nuestros valores en peligro",
+      "de": "Unsere gefährdeten Werte",
+      "it": "I nostri valori in pericolo"
     },
     "year": 2005,
     "url": {
@@ -2451,7 +3063,10 @@
     "personalityId": "olaf-scholz",
     "title": {
       "pt": "Hoffnungsland",
-      "en": "Hoffnungsland"
+      "en": "Hoffnungsland",
+      "es": "Hoffnungsland",
+      "de": "Hoffnungsland",
+      "it": "Hoffnungsland"
     },
     "year": 2017,
     "url": {
@@ -2463,7 +3078,10 @@
     "personalityId": "boris-johnson",
     "title": {
       "pt": "Unleashed",
-      "en": "Unleashed"
+      "en": "Unleashed",
+      "es": "Unleashed",
+      "de": "Entfesselt",
+      "it": "Unleashed"
     },
     "year": 2024,
     "url": {
@@ -2475,7 +3093,10 @@
     "personalityId": "pedro-sanchez",
     "title": {
       "pt": "Manual de resistência",
-      "en": "Manual de resistencia"
+      "en": "Manual de resistencia",
+      "es": "Manual de resistencia",
+      "de": "Handbuch des Widerstands",
+      "it": "Manual de resistencia"
     },
     "year": 2019,
     "url": {
@@ -2487,7 +3108,10 @@
     "personalityId": "guilherme-ii-da-alemanha",
     "title": {
       "pt": "Ereignisse und Gestalten aus den Jahren 1878–1918",
-      "en": "The Kaiser's Memoirs"
+      "en": "The Kaiser's Memoirs",
+      "es": "The Kaiser's Memoirs",
+      "de": "Ereignisse und Gestalten aus den Jahren 1878–1918",
+      "it": "Le memorie del Kaiser"
     },
     "year": 1922,
     "url": {
@@ -2499,7 +3123,10 @@
     "personalityId": "desmond-tutu",
     "title": {
       "pt": "Sem perdão não há futuro",
-      "en": "No Future Without Forgiveness"
+      "en": "No Future Without Forgiveness",
+      "es": "No hay futuro sin perdón",
+      "de": "Keine Zukunft ohne Vergebung",
+      "it": "Non c'è futuro senza perdono"
     },
     "year": 1999,
     "url": {
@@ -2511,7 +3138,10 @@
     "personalityId": "russell-kirk",
     "title": {
       "pt": "A mentalidade conservadora: de Edmund Burke a T. S. Eliot",
-      "en": "The Conservative Mind: From Burke to Eliot"
+      "en": "The Conservative Mind: From Burke to Eliot",
+      "es": "La mentalidad conservadora",
+      "de": "Lebendiges Erbe: Der konservative Geist von Burke bis Eliot",
+      "it": "La mentalità conservatrice: da Burke a Eliot"
     },
     "year": 1953,
     "url": {
@@ -2523,7 +3153,10 @@
     "personalityId": "nikita-khrushchev",
     "title": {
       "pt": "Khrushchev Remembers",
-      "en": "Khrushchev Remembers"
+      "en": "Khrushchev Remembers",
+      "es": "Khrushchev Remembers",
+      "de": "Chruschtschow erinnert sich",
+      "it": "Krusciov ricorda"
     },
     "year": 1970,
     "url": {
@@ -2535,7 +3168,10 @@
     "personalityId": "sigmund-freud",
     "title": {
       "pt": "O mal-estar na civilização",
-      "en": "Civilization and Its Discontents"
+      "en": "Civilization and Its Discontents",
+      "es": "El malestar en la cultura",
+      "de": "Das Unbehagen in der Kultur",
+      "it": "Il disagio della civiltà"
     },
     "year": 1930,
     "url": {
@@ -2547,7 +3183,10 @@
     "personalityId": "jean-paul-marat",
     "title": {
       "pt": "As cadeias da escravidão",
-      "en": "The Chains of Slavery"
+      "en": "The Chains of Slavery",
+      "es": "Las cadenas de la esclavitud",
+      "de": "Die Ketten der Sklaverei",
+      "it": "Le catene della schiavitù"
     },
     "year": 1774,
     "url": {
@@ -2559,7 +3198,10 @@
     "personalityId": "grigory-zinoviev",
     "title": {
       "pt": "Leninismo: introdução ao estudo do leninismo",
-      "en": "Leninism: Introduction to the Study of Leninism"
+      "en": "Leninism: Introduction to the Study of Leninism",
+      "es": "Leninism: Introduction to the Study of Leninism",
+      "de": "Leninismus: Einführung in das Studium des Leninismus",
+      "it": "Il leninismo: introduzione allo studio del leninismo"
     },
     "year": 1925,
     "url": {
@@ -2571,7 +3213,10 @@
     "personalityId": "dante-alighieri",
     "title": {
       "pt": "Da Monarquia",
-      "en": "Monarchia"
+      "en": "Monarchia",
+      "es": "Monarquía",
+      "de": "Über die Monarchie",
+      "it": "Monarchia"
     },
     "year": 1313,
     "url": {
@@ -2583,7 +3228,10 @@
     "personalityId": "seneca",
     "title": {
       "pt": "Sobre a clemência",
-      "en": "On Clemency"
+      "en": "On Clemency",
+      "es": "Sobre la clemencia",
+      "de": "Über die Milde",
+      "it": "Sulla clemenza"
     },
     "year": 55,
     "url": {
@@ -2595,7 +3243,10 @@
     "personalityId": "oliver-cromwell",
     "title": {
       "pt": "Oliver Cromwell's Letters and Speeches",
-      "en": "Oliver Cromwell's Letters and Speeches"
+      "en": "Oliver Cromwell's Letters and Speeches",
+      "es": "Oliver Cromwell's Letters and Speeches",
+      "de": "Oliver Cromwells Briefe und Reden",
+      "it": "Lettere e discorsi di Oliver Cromwell"
     },
     "year": 1845,
     "url": {
@@ -2607,7 +3258,10 @@
     "personalityId": "fernando-haddad",
     "title": {
       "pt": "Capitalismo superindustrial: caminhos diversos, destino comum",
-      "en": "Capitalismo superindustrial: caminhos diversos, destino comum"
+      "en": "Capitalismo superindustrial: caminhos diversos, destino comum",
+      "es": "Capitalismo superindustrial: caminhos diversos, destino comum",
+      "de": "Superindustrieller Kapitalismus: Verschiedene Wege, gemeinsames Ziel",
+      "it": "Capitalismo superindustriale: percorsi diversi, destino comune"
     },
     "year": 2026,
     "url": {
@@ -2619,7 +3273,10 @@
     "personalityId": "luiz-felipe-ponde",
     "title": {
       "pt": "Guia politicamente incorreto da filosofia",
-      "en": "Guia politicamente incorreto da filosofia"
+      "en": "Guia politicamente incorreto da filosofia",
+      "es": "Guia politicamente incorreto da filosofia",
+      "de": "Politisch unkorrekter Leitfaden der Philosophie",
+      "it": "Guida politicamente scorretta alla filosofia"
     },
     "year": 2012,
     "url": {
@@ -2631,7 +3288,10 @@
     "personalityId": "mark-fisher",
     "title": {
       "pt": "Realismo capitalista: É mais fácil imaginar o fim do mundo do que o fim do capitalismo?",
-      "en": "Capitalist Realism: Is There No Alternative?"
+      "en": "Capitalist Realism: Is There No Alternative?",
+      "es": "Realismo capitalista: ¿no hay alternativa?",
+      "de": "Kapitalistischer Realismus: Ohne Alternative?",
+      "it": "Il realismo capitalista: non ci sono alternative?"
     },
     "year": 2009,
     "url": {
@@ -2643,7 +3303,10 @@
     "personalityId": "alex-williams",
     "title": {
       "pt": "Inventar o Futuro",
-      "en": "Inventing the Future"
+      "en": "Inventing the Future",
+      "es": "Inventar el futuro",
+      "de": "Die Zukunft erfinden",
+      "it": "Inventare il futuro"
     },
     "year": 2015,
     "url": {
@@ -2655,7 +3318,10 @@
     "personalityId": "enrico-berlinguer",
     "title": {
       "pt": "Austerità, occasione per trasformare l'Italia",
-      "en": "Austerità, occasione per trasformare l'Italia"
+      "en": "Austerità, occasione per trasformare l'Italia",
+      "es": "Austerità, occasione per trasformare l'Italia",
+      "de": "Austerität, Gelegenheit zur Erneuerung Italiens",
+      "it": "Austerità, occasione per trasformare l'Italia"
     },
     "year": 1977,
     "url": {
@@ -2667,7 +3333,10 @@
     "personalityId": "pier-paolo-pasolini",
     "title": {
       "pt": "Escritos Corsários",
-      "en": "Scritti corsari"
+      "en": "Scritti corsari",
+      "es": "Escritos corsarios",
+      "de": "Freibeuterschriften",
+      "it": "Scritti corsari"
     },
     "year": 1975,
     "url": {
@@ -2679,7 +3348,10 @@
     "personalityId": "per-albin-hansson",
     "title": {
       "pt": "Demokrati: tal och uppsatser",
-      "en": "Demokrati: tal och uppsatser"
+      "en": "Demokrati: tal och uppsatser",
+      "es": "Demokrati: tal och uppsatser",
+      "de": "Demokratie: Reden und Aufsätze",
+      "it": "Demokrati: tal och uppsatser"
     },
     "year": 1935,
     "url": {
@@ -2691,7 +3363,10 @@
     "personalityId": "kalevi-sorsa",
     "title": {
       "pt": "Kansanvallan kysymyksiä",
-      "en": "Kansanvallan kysymyksiä"
+      "en": "Kansanvallan kysymyksiä",
+      "es": "Kansanvallan kysymyksiä",
+      "de": "Fragen der Volksherrschaft",
+      "it": "Kansanvallan kysymyksiä"
     },
     "year": 1974,
     "url": {
@@ -2703,7 +3378,10 @@
     "personalityId": "tage-erlander",
     "title": {
       "pt": "Tage Erlander 1940–1949",
-      "en": "Tage Erlander 1940–1949"
+      "en": "Tage Erlander 1940–1949",
+      "es": "Tage Erlander 1940–1949",
+      "de": "Tage Erlander 1940–1949",
+      "it": "Tage Erlander 1940–1949"
     },
     "year": 1973,
     "url": {
@@ -2715,7 +3393,10 @@
     "personalityId": "einar-gerhardsen",
     "title": {
       "pt": "Tillitsmannen",
-      "en": "The Representative: A Handbook for Employee Representatives"
+      "en": "The Representative: A Handbook for Employee Representatives",
+      "es": "Tillitsmannen",
+      "de": "Der Vertrauensmann: Handbuch für Arbeitnehmervertreter",
+      "it": "Il rappresentante: manuale per i rappresentanti dei lavoratori"
     },
     "year": 1931,
     "url": {
@@ -2727,7 +3408,10 @@
     "personalityId": "gosta-rehn",
     "title": {
       "pt": "Full sysselsättning utan inflation: skrifter i urval",
-      "en": "Full sysselsättning utan inflation: skrifter i urval"
+      "en": "Full sysselsättning utan inflation: skrifter i urval",
+      "es": "Full sysselsättning utan inflation: skrifter i urval",
+      "de": "Vollbeschäftigung ohne Inflation: Ausgewählte Schriften",
+      "it": "Full sysselsättning utan inflation: skrifter i urval"
     },
     "year": 1988,
     "url": {
@@ -2739,7 +3423,10 @@
     "personalityId": "eduard-limonov",
     "title": {
       "pt": "Лимонов против Путина",
-      "en": "Лимонов против Путина"
+      "en": "Лимонов против Путина",
+      "es": "Лимонов против Путина",
+      "de": "Limonow gegen Putin",
+      "it": "Лимонов против Путина"
     },
     "year": 2005,
     "url": {
@@ -2751,7 +3438,10 @@
     "personalityId": "nicola-bombacci",
     "title": {
       "pt": "Per la costituzione dei Soviet",
-      "en": "Per la costituzione dei Soviet"
+      "en": "Per la costituzione dei Soviet",
+      "es": "Per la costituzione dei Soviet",
+      "de": "Für die Bildung der Sowjets",
+      "it": "Per la costituzione dei Soviet"
     },
     "year": 1920,
     "url": {
@@ -2763,7 +3453,10 @@
     "personalityId": "michel-aflaq",
     "title": {
       "pt": "Fi Sabil al-Ba'th",
-      "en": "Fi Sabil al-Ba'th"
+      "en": "Fi Sabil al-Ba'th",
+      "es": "Fi Sabil al-Ba'th",
+      "de": "Auf dem Weg der Baath-Partei",
+      "it": "Fi Sabil al-Ba'th"
     },
     "year": 1959,
     "url": {
@@ -2775,7 +3468,10 @@
     "personalityId": "ramiro-ledesma-ramos",
     "title": {
       "pt": "Discurso às juventudes da Espanha",
-      "en": "Discourse to the Youth of Spain"
+      "en": "Discourse to the Youth of Spain",
+      "es": "Discurso a las juventudes de España",
+      "de": "Rede an die Jugend Spaniens",
+      "it": "Discorso ai giovani di Spagna"
     },
     "year": 1935,
     "url": {
@@ -2787,7 +3483,10 @@
     "personalityId": "gabriele-dannunzio",
     "title": {
       "pt": "Carta do Carnaro",
-      "en": "Charter of Carnaro"
+      "en": "Charter of Carnaro",
+      "es": "Carta del Carnaro",
+      "de": "Charta von Carnaro",
+      "it": "Carta del Carnaro"
     },
     "year": 1920,
     "url": {
@@ -2799,7 +3498,10 @@
     "personalityId": "alain-de-benoist",
     "title": {
       "pt": "Nova Direita, Nova Cultura",
-      "en": "Seen from the Right"
+      "en": "Seen from the Right",
+      "es": "Seen from the Right",
+      "de": "Von rechts gesehen",
+      "it": "Visto da destra"
     },
     "year": 1977,
     "url": {
@@ -2811,7 +3513,10 @@
     "personalityId": "hugh-macdiarmid",
     "title": {
       "pt": "A Drunk Man Looks at the Thistle",
-      "en": "A Drunk Man Looks at the Thistle"
+      "en": "A Drunk Man Looks at the Thistle",
+      "es": "A Drunk Man Looks at the Thistle",
+      "de": "Ein betrunkener Mann betrachtet die Distel",
+      "it": "Un ubriaco guarda il cardo"
     },
     "year": 1926,
     "url": {
@@ -2823,7 +3528,10 @@
     "personalityId": "john-maclean",
     "title": {
       "pt": "The Irish Tragedy: Scotland's Disgrace",
-      "en": "The Irish Tragedy: Scotland's Disgrace"
+      "en": "The Irish Tragedy: Scotland's Disgrace",
+      "es": "The Irish Tragedy: Scotland's Disgrace",
+      "de": "Die irische Tragödie: Schottlands Schande",
+      "it": "La tragedia irlandese: la vergogna della Scozia"
     },
     "year": 1920,
     "url": {
@@ -2835,7 +3543,10 @@
     "personalityId": "james-connolly",
     "title": {
       "pt": "Labour in Irish History",
-      "en": "Labour in Irish History"
+      "en": "Labour in Irish History",
+      "es": "Labour in Irish History",
+      "de": "Arbeit in der irischen Geschichte",
+      "it": "Il lavoro nella storia irlandese"
     },
     "year": 1910,
     "url": {
@@ -2847,7 +3558,10 @@
     "personalityId": "thomas-carlyle",
     "title": {
       "pt": "Os Heróis: O Culto dos Heróis e o Heroico na História",
-      "en": "On Heroes, Hero-Worship, and the Heroic in History"
+      "en": "On Heroes, Hero-Worship, and the Heroic in History",
+      "es": "Los héroes",
+      "de": "Über Helden, Heldenverehrung und das Heldenhafte in der Geschichte",
+      "it": "Gli eroi, il culto degli eroi e l'eroico nella storia"
     },
     "year": 1841,
     "url": {
@@ -2859,7 +3573,10 @@
     "personalityId": "hans-adam-ii",
     "title": {
       "pt": "O Estado no Terceiro Milênio",
-      "en": "The State in the Third Millennium"
+      "en": "The State in the Third Millennium",
+      "es": "The State in the Third Millennium",
+      "de": "Der Staat im Dritten Jahrtausend",
+      "it": "Lo Stato nel terzo millennio"
     },
     "year": 2009,
     "url": {
@@ -2871,7 +3588,10 @@
     "personalityId": "dom-bertrand",
     "title": {
       "pt": "Psicose Ambientalista: Os Ecoterroristas Querem Acabar Com o Seu Negócio",
-      "en": "Environmentalist Psychosis: Ecoterrorists Want to End Your Business"
+      "en": "Environmentalist Psychosis: Ecoterrorists Want to End Your Business",
+      "es": "Psicose Ambientalista: Os Ecoterroristas Querem Acabar Com o Seu Negócio",
+      "de": "Umweltpsychose: Ökoterroristen wollen Ihr Geschäft zerstören",
+      "it": "Psicosi ambientalista: gli ecoterroristi vogliono distruggere la tua impresa"
     },
     "year": 2012,
     "url": {
@@ -2883,7 +3603,10 @@
     "personalityId": "giovanni-giolitti",
     "title": {
       "pt": "Memórias da Minha Vida",
-      "en": "Memoirs of My Life"
+      "en": "Memoirs of My Life",
+      "es": "Memorie della mia vita",
+      "de": "Erinnerungen aus meinem Leben",
+      "it": "Memorie della mia vita"
     },
     "year": 1922,
     "url": {
@@ -2895,7 +3618,10 @@
     "personalityId": "juan-bautista-alberdi",
     "title": {
       "pt": "Bases e Pontos de Partida para a Organização Política da República Argentina",
-      "en": "Bases and Starting Points for the Political Organization of the Argentine Republic"
+      "en": "Bases and Starting Points for the Political Organization of the Argentine Republic",
+      "es": "Bases y puntos de partida para la organización política de la República Argentina",
+      "de": "Grundlagen und Ausgangspunkte für die politische Organisation der Argentinischen Republik",
+      "it": "Basi e punti di partenza per l'organizzazione politica della Repubblica Argentina"
     },
     "year": 1852,
     "url": {
@@ -2907,7 +3633,10 @@
     "personalityId": "rupert-murdoch",
     "title": {
       "pt": "A Golden Age of Freedom",
-      "en": "A Golden Age of Freedom"
+      "en": "A Golden Age of Freedom",
+      "es": "A Golden Age of Freedom",
+      "de": "Ein goldenes Zeitalter der Freiheit",
+      "it": "Un'età dell'oro della libertà"
     },
     "year": 2008,
     "url": {
@@ -2919,7 +3648,10 @@
     "personalityId": "aldo-rebelo",
     "title": {
       "pt": "O Quinto Movimento: Propostas para uma Construção Inacabada",
-      "en": "The Fifth Movement: Proposals for an Unfinished Construction"
+      "en": "The Fifth Movement: Proposals for an Unfinished Construction",
+      "es": "O Quinto Movimento: Propostas para uma Construção Inacabada",
+      "de": "Die fünfte Bewegung: Vorschläge für ein unvollendetes Bauwerk",
+      "it": "Il quinto movimento: proposte per una costruzione incompiuta"
     },
     "year": 2021,
     "url": {
@@ -2931,7 +3663,10 @@
     "personalityId": "luiz-philippe-de-orleans-e-braganca",
     "title": {
       "pt": "Por que o Brasil é um País Atrasado?",
-      "en": "Why Brazil Is a Backward Country?"
+      "en": "Why Brazil Is a Backward Country?",
+      "es": "Por que o Brasil é um País Atrasado?",
+      "de": "Warum ist Brasilien ein rückständiges Land?",
+      "it": "Perché il Brasile è un paese arretrato?"
     },
     "year": 2017,
     "url": {
@@ -2943,7 +3678,10 @@
     "personalityId": "tucker-carlson",
     "title": {
       "pt": "Ship of Fools: How a Selfish Ruling Class Is Bringing America to the Brink of Revolution",
-      "en": "Ship of Fools: How a Selfish Ruling Class Is Bringing America to the Brink of Revolution"
+      "en": "Ship of Fools: How a Selfish Ruling Class Is Bringing America to the Brink of Revolution",
+      "es": "Ship of Fools: How a Selfish Ruling Class Is Bringing America to the Brink of Revolution",
+      "de": "Narrenschiff: Wie eine egoistische Herrscherklasse Amerika an den Rand der Revolution bringt",
+      "it": "La nave dei folli: come una classe dirigente egoista sta portando l'America sull'orlo della rivoluzione"
     },
     "year": 2018,
     "url": {
@@ -2955,7 +3693,10 @@
     "personalityId": "ben-shapiro",
     "title": {
       "pt": "O Lado Certo da História",
-      "en": "The Right Side of History: How Reason and Moral Purpose Made the West Great"
+      "en": "The Right Side of History: How Reason and Moral Purpose Made the West Great",
+      "es": "El lado correcto de la historia",
+      "de": "Die richtige Seite der Geschichte: Wie Vernunft und moralischer Anspruch den Westen groß machten",
+      "it": "Dalla parte giusta della storia: come ragione e scopo morale hanno reso grande l'Occidente"
     },
     "year": 2019,
     "url": {
@@ -2967,7 +3708,10 @@
     "personalityId": "glenn-greenwald",
     "title": {
       "pt": "Sem Lugar para se Esconder",
-      "en": "No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State"
+      "en": "No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State",
+      "es": "Sin un lugar donde esconderse",
+      "de": "Nirgendwo zu verbergen: Edward Snowden, die NSA und der US-Überwachungsstaat",
+      "it": "Sotto controllo: Edward Snowden, la NSA e lo Stato di sorveglianza USA"
     },
     "year": 2014,
     "url": {
@@ -2979,7 +3723,10 @@
     "personalityId": "eduardo-moreira",
     "title": {
       "pt": "Desigualdade & Caminhos para uma Sociedade Mais Justa",
-      "en": "Inequality & Pathways to a Fairer Society"
+      "en": "Inequality & Pathways to a Fairer Society",
+      "es": "Desigualdade & Caminhos para uma Sociedade Mais Justa",
+      "de": "Ungleichheit und Wege zu einer gerechteren Gesellschaft",
+      "it": "Disuguaglianza e percorsi verso una società più equa"
     },
     "year": 2019,
     "url": {
@@ -2991,7 +3738,10 @@
     "personalityId": "jones-manoel",
     "title": {
       "pt": "Revolução Africana: Uma Antologia do Pensamento Marxista",
-      "en": "African Revolution: An Anthology of Marxist Thought"
+      "en": "African Revolution: An Anthology of Marxist Thought",
+      "es": "Revolução Africana: Uma Antologia do Pensamento Marxista",
+      "de": "Afrikanische Revolution: Eine Anthologie marxistischen Denkens",
+      "it": "Rivoluzione africana: un'antologia di pensiero marxista"
     },
     "year": 2019,
     "url": {
@@ -3003,7 +3753,10 @@
     "personalityId": "alvaro-uribe",
     "title": {
       "pt": "Não Há Causa Perdida",
-      "en": "No Lost Causes"
+      "en": "No Lost Causes",
+      "es": "No hay causa perdida",
+      "de": "Keine verlorenen Sachen",
+      "it": "Nessuna causa persa"
     },
     "year": 2012,
     "url": {
@@ -3015,7 +3768,10 @@
     "personalityId": "shinzo-abe",
     "title": {
       "pt": "Rumo a uma Nação Bela",
-      "en": "Toward a Beautiful Country: My Vision for Japan"
+      "en": "Toward a Beautiful Country: My Vision for Japan",
+      "es": "Toward a Beautiful Country: My Vision for Japan",
+      "de": "Hin zu einem schönen Land: Meine Vision für Japan",
+      "it": "Verso un paese bellissimo: la mia visione per il Giappone"
     },
     "year": 2006,
     "url": {
@@ -3027,7 +3783,10 @@
     "personalityId": "jose-carlos-mariategui",
     "title": {
       "pt": "Sete Ensaios de Interpretação da Realidade Peruana",
-      "en": "Seven Interpretive Essays on Peruvian Reality"
+      "en": "Seven Interpretive Essays on Peruvian Reality",
+      "es": "7 ensayos de interpretación de la realidad peruana",
+      "de": "Sieben Essays zur Interpretation der peruanischen Wirklichkeit",
+      "it": "Sette saggi di interpretazione della realtà peruviana"
     },
     "year": 1928,
     "url": {
@@ -3039,7 +3798,10 @@
     "personalityId": "kwame-nkrumah",
     "title": {
       "pt": "Neocolonialismo, o último estágio do imperialismo",
-      "en": "Neo-Colonialism: The Last Stage of Imperialism"
+      "en": "Neo-Colonialism: The Last Stage of Imperialism",
+      "es": "Neocolonialismo, última etapa del imperialismo",
+      "de": "Neokolonialismus: Das letzte Stadium des Imperialismus",
+      "it": "Neocolonialismo: l'ultima fase dell'imperialismo"
     },
     "year": 1965,
     "url": {
@@ -3051,7 +3813,10 @@
     "personalityId": "amilcar-cabral",
     "title": {
       "pt": "A Arma da Teoria",
-      "en": "The Weapon of Theory"
+      "en": "The Weapon of Theory",
+      "es": "The Weapon of Theory",
+      "de": "Die Waffe der Theorie",
+      "it": "L'arma della teoria"
     },
     "year": 1966,
     "url": {
@@ -3063,7 +3828,10 @@
     "personalityId": "norodom-sihanouk",
     "title": {
       "pt": "My War with the CIA",
-      "en": "My War with the CIA"
+      "en": "My War with the CIA",
+      "es": "My War with the CIA",
+      "de": "Mein Krieg mit der CIA",
+      "it": "La mia guerra con la CIA"
     },
     "year": 1973,
     "url": {
@@ -3075,7 +3843,10 @@
     "personalityId": "abdullah-ii",
     "title": {
       "pt": "Our Last Best Chance: The Pursuit of Peace in a Time of Peril",
-      "en": "Our Last Best Chance: The Pursuit of Peace in a Time of Peril"
+      "en": "Our Last Best Chance: The Pursuit of Peace in a Time of Peril",
+      "es": "Nuestra última oportunidad",
+      "de": "Unsere letzte beste Chance: Das Streben nach Frieden in gefährlichen Zeiten",
+      "it": "La nostra ultima migliore occasione: la ricerca della pace in tempi di pericolo"
     },
     "year": 2011,
     "url": {
@@ -3087,7 +3858,10 @@
     "personalityId": "nasser-al-din-shah",
     "title": {
       "pt": "Diários de Viagem à Europa",
-      "en": "The Diary of H.M. The Shah of Persia"
+      "en": "The Diary of H.M. The Shah of Persia",
+      "es": "The Diary of H.M. The Shah of Persia",
+      "de": "Das Tagebuch Seiner Majestät des Schahs von Persien",
+      "it": "Il diario di Sua Maestà lo Scià di Persia"
     },
     "year": 1874,
     "url": {
@@ -3099,7 +3873,10 @@
     "personalityId": "conde-de-cavour",
     "title": {
       "pt": "Discursos Parlamentares e Escritos Políticos",
-      "en": "Parliamentary Speeches and Political Writings"
+      "en": "Parliamentary Speeches and Political Writings",
+      "es": "Parliamentary Speeches and Political Writings",
+      "de": "Parlamentsreden und politische Schriften",
+      "it": "Discorsi parlamentari e scritti politici"
     },
     "year": 1861,
     "url": {
@@ -3111,7 +3888,10 @@
     "personalityId": "leopoldo-i-da-toscana",
     "title": {
       "pt": "Código Leopoldino",
-      "en": "Leopoldine Code (Reform of Criminal Law in Tuscany)"
+      "en": "Leopoldine Code (Reform of Criminal Law in Tuscany)",
+      "es": "Leopoldine Code (Reform of Criminal Law in Tuscany)",
+      "de": "Leopoldinisches Gesetzbuch (Reform des Strafrechts in der Toskana)",
+      "it": "Codice Leopoldino (riforma del diritto penale in Toscana)"
     },
     "year": 1786,
     "url": {
@@ -3123,7 +3903,10 @@
     "personalityId": "luis-ii-da-baviera",
     "title": {
       "pt": "Diários Secretos e Correspondência Real",
-      "en": "Secret Diaries and Royal Correspondence"
+      "en": "Secret Diaries and Royal Correspondence",
+      "es": "Secret Diaries and Royal Correspondence",
+      "de": "Geheime Tagebücher und königliche Korrespondenz",
+      "it": "Diari segreti e corrispondenza reale"
     },
     "year": 1886,
     "url": {
@@ -3135,7 +3918,10 @@
     "personalityId": "frederico-augusto-i",
     "title": {
       "pt": "Decretos e Ordenações do Reino da Saxônia",
-      "en": "Decrees and Ordinances of the Kingdom of Saxony"
+      "en": "Decrees and Ordinances of the Kingdom of Saxony",
+      "es": "Decrees and Ordinances of the Kingdom of Saxony",
+      "de": "Dekrete und Verordnungen des Königreichs Sachsen",
+      "it": "Decreti e ordinanze del Regno di Sassonia"
     },
     "year": 1818,
     "url": {
@@ -3147,7 +3933,10 @@
     "personalityId": "ferdinando-i-das-duas-sicilias",
     "title": {
       "pt": "Proclamações Reais e Cartas ao Povo Napolitano",
-      "en": "Royal Proclamations and Letters to the Neapolitan People"
+      "en": "Royal Proclamations and Letters to the Neapolitan People",
+      "es": "Royal Proclamations and Letters to the Neapolitan People",
+      "de": "Königliche Proklamationen und Briefe an das neapolitanische Volk",
+      "it": "Proclami reali e lettere al popolo napoletano"
     },
     "year": 1821,
     "url": {
@@ -3159,7 +3948,10 @@
     "personalityId": "vitor-emanuel-iii",
     "title": {
       "pt": "Corpus Nummorum Italicorum",
-      "en": "Corpus Nummorum Italicorum"
+      "en": "Corpus Nummorum Italicorum",
+      "es": "Corpus Nummorum Italicorum",
+      "de": "Corpus Nummorum Italicorum",
+      "it": "Corpus Nummorum Italicorum"
     },
     "year": 1910,
     "url": {
@@ -3171,7 +3963,10 @@
     "personalityId": "cristiano-iv",
     "title": {
       "pt": "Cartas e Diários de Cristiano IV",
-      "en": "Letters and Journals of Christian IV"
+      "en": "Letters and Journals of Christian IV",
+      "es": "Letters and Journals of Christian IV",
+      "de": "Briefe und Tagebücher Christians IV.",
+      "it": "Lettere e diari di Cristiano IV"
     },
     "year": 1648,
     "url": {
@@ -3183,7 +3978,10 @@
     "personalityId": "jorge-i-da-gra-bretanha",
     "title": {
       "pt": "Cartas de Estado e Instruções Ministeriais",
-      "en": "State Letters and Ministerial Instructions"
+      "en": "State Letters and Ministerial Instructions",
+      "es": "State Letters and Ministerial Instructions",
+      "de": "Staatsbriefe und ministerielle Anweisungen",
+      "it": "Lettere di Stato e istruzioni ministeriali"
     },
     "year": 1727,
     "url": {
@@ -3195,7 +3993,10 @@
     "personalityId": "eleftherios-venizelos",
     "title": {
       "pt": "A Política Externa e o Futuro da Grécia",
-      "en": "The Foreign Policy and Future of Greece"
+      "en": "The Foreign Policy and Future of Greece",
+      "es": "The Foreign Policy and Future of Greece",
+      "de": "Die Außenpolitik und die Zukunft Griechenlands",
+      "it": "La politica estera e il futuro della Grecia"
     },
     "year": 1917,
     "url": {
@@ -3207,7 +4008,10 @@
     "personalityId": "sri-aurobindo",
     "title": {
       "pt": "A Vida Divina",
-      "en": "The Life Divine"
+      "en": "The Life Divine",
+      "es": "La vida divina",
+      "de": "Das göttliche Leben",
+      "it": "La vita divina"
     },
     "year": 1939,
     "url": {
@@ -3219,7 +4023,10 @@
     "personalityId": "chanakya",
     "title": {
       "pt": "Arthashastra",
-      "en": "Arthashastra"
+      "en": "Arthashastra",
+      "es": "Arthashastra",
+      "de": "Arthashastra",
+      "it": "Arthashastra"
     },
     "year": -300,
     "url": {
@@ -3231,7 +4038,10 @@
     "personalityId": "jawaharlal-nehru",
     "title": {
       "pt": "A Descoberta da Índia",
-      "en": "The Discovery of India"
+      "en": "The Discovery of India",
+      "es": "El descubrimiento de la India",
+      "de": "Entdeckung Indiens",
+      "it": "La scoperta dell'India"
     },
     "year": 1946,
     "url": {
@@ -3243,7 +4053,10 @@
     "personalityId": "vd-savarkar",
     "title": {
       "pt": "Hindutva: Quem É Hindu?",
-      "en": "Hindutva: Who Is a Hindu?"
+      "en": "Hindutva: Who Is a Hindu?",
+      "es": "Hindutva: Who Is a Hindu?",
+      "de": "Hindutva: Wer ist ein Hindu?",
+      "it": "Hindutva: chi è un indù?"
     },
     "year": 1923,
     "url": {
@@ -3255,7 +4068,10 @@
     "personalityId": "sukarno",
     "title": {
       "pt": "Indonesia Menggugat",
-      "en": "Indonesia Accuses!"
+      "en": "Indonesia Accuses!",
+      "es": "Indonesia Menggugat",
+      "de": "Indonesien klagt an!",
+      "it": "L'Indonesia accusa!"
     },
     "year": 1930,
     "url": {
@@ -3267,7 +4083,10 @@
     "personalityId": "amartya-sen",
     "title": {
       "pt": "Desenvolvimento como Liberdade",
-      "en": "Development as Freedom"
+      "en": "Development as Freedom",
+      "es": "Desarrollo y libertad",
+      "de": "Ökonomie für den Menschen: Wege zu Gerechtigkeit und Solidarität in der Marktwirtschaft",
+      "it": "Lo sviluppo come libertà"
     },
     "year": 1999,
     "url": {
@@ -3279,7 +4098,10 @@
     "personalityId": "ashoka",
     "title": {
       "pt": "Os Editos de Ashoka",
-      "en": "The Edicts of Ashoka"
+      "en": "The Edicts of Ashoka",
+      "es": "Los edictos de Ashoka",
+      "de": "Die Edikte des Ashoka",
+      "it": "Gli editti di Ashoka"
     },
     "year": -250,
     "url": {
@@ -3291,7 +4113,10 @@
     "personalityId": "ibrahim-traore",
     "title": {
       "pt": "Discursos da Revolução e Soberania no Sahel",
-      "en": "Speeches on Sahelian Sovereignty and Revolution"
+      "en": "Speeches on Sahelian Sovereignty and Revolution",
+      "es": "Speeches on Sahelian Sovereignty and Revolution",
+      "de": "Reden über die Souveränität und Revolution der Sahelzone",
+      "it": "Discorsi sulla sovranità saheliana e sulla rivoluzione"
     },
     "year": 2024,
     "url": {
@@ -3303,7 +4128,10 @@
     "personalityId": "jean-luc-melenchon",
     "title": {
       "pt": "A Era do Povo",
-      "en": "The Era of the People (L'Ère du peuple)"
+      "en": "The Era of the People (L'Ère du peuple)",
+      "es": "L'Ère du peuple",
+      "de": "Das Zeitalter des Volkes",
+      "it": "L'era del popolo"
     },
     "year": 2014,
     "url": {
@@ -3315,7 +4143,10 @@
     "personalityId": "jean-marie-le-pen",
     "title": {
       "pt": "Memórias: Filho da Nação",
-      "en": "Memoirs: Son of the Nation (Mémoires: Fils de la nation)"
+      "en": "Memoirs: Son of the Nation (Mémoires: Fils de la nation)",
+      "es": "Mémoires : Fils de la nation",
+      "de": "Memoiren: Sohn der Nation",
+      "it": "Memorie: figlio della nazione"
     },
     "year": 2018,
     "url": {
@@ -3327,7 +4158,10 @@
     "personalityId": "eric-zemmour",
     "title": {
       "pt": "O Suicídio Francês",
-      "en": "The French Suicide (Le Suicide français)"
+      "en": "The French Suicide (Le Suicide français)",
+      "es": "Le Suicide français",
+      "de": "Der französische Selbstmord",
+      "it": "Il suicidio francese"
     },
     "year": 2014,
     "url": {
@@ -3339,7 +4173,10 @@
     "personalityId": "philippe-petain",
     "title": {
       "pt": "Princípios da Revolução Nacional",
-      "en": "Principles of the National Revolution"
+      "en": "Principles of the National Revolution",
+      "es": "Principles of the National Revolution",
+      "de": "Grundsätze der Nationalen Revolution",
+      "it": "Principi della rivoluzione nazionale"
     },
     "year": 1941,
     "url": {
@@ -3351,7 +4188,10 @@
     "personalityId": "francois-mitterrand",
     "title": {
       "pt": "O Golpe de Estado Permanente",
-      "en": "The Permanent Coup d'État (Le Coup d'État permanent)"
+      "en": "The Permanent Coup d'État (Le Coup d'État permanent)",
+      "es": "Le Coup d'État permanent",
+      "de": "Der permanente Staatsstreich",
+      "it": "Il colpo di Stato permanente"
     },
     "year": 1964,
     "url": {
@@ -3363,7 +4203,10 @@
     "personalityId": "jacques-chirac",
     "title": {
       "pt": "Cada Passo Deve Ser Um Objetivo (Memórias)",
-      "en": "Memoirs: Every Step Must Be a Goal"
+      "en": "Memoirs: Every Step Must Be a Goal",
+      "es": "Chaque pas doit être un but",
+      "de": "Jeder Schritt muss ein Ziel sein (Memoiren)",
+      "it": "Memorie: ogni passo deve essere una meta"
     },
     "year": 2009,
     "url": {
@@ -3375,7 +4218,10 @@
     "personalityId": "thomas-malthus",
     "title": {
       "pt": "Ensaio sobre o Princípio da População",
-      "en": "An Essay on the Principle of Population"
+      "en": "An Essay on the Principle of Population",
+      "es": "Ensayo sobre el principio de la población",
+      "de": "Das Bevölkerungsgesetz",
+      "it": "Saggio sul principio di popolazione"
     },
     "year": 1798,
     "url": {
@@ -3387,7 +4233,10 @@
     "personalityId": "paulo-kogos",
     "title": {
       "pt": "O Mínimo sobre Anarcocapitalismo",
-      "en": "O Mínimo sobre Anarcocapitalismo"
+      "en": "O Mínimo sobre Anarcocapitalismo",
+      "es": "O Mínimo sobre Anarcocapitalismo",
+      "de": "Das Wenigste über Anarchokapitalismus",
+      "it": "Il minimo sull'anarcocapitalismo"
     },
     "year": 2023,
     "url": {
@@ -3399,7 +4248,10 @@
     "personalityId": "pim-fortuyn",
     "title": {
       "pt": "De puinhopen van acht jaar Paars",
-      "en": "De puinhopen van acht jaar Paars"
+      "en": "De puinhopen van acht jaar Paars",
+      "es": "De puinhopen van acht jaar Paars",
+      "de": "Die Trümmer von acht Jahren Purpur",
+      "it": "De puinhopen van acht jaar Paars"
     },
     "year": 2002,
     "url": {
@@ -3411,7 +4263,10 @@
     "personalityId": "klaus-schwab",
     "title": {
       "pt": "A Quarta Revolução Industrial",
-      "en": "The Fourth Industrial Revolution"
+      "en": "The Fourth Industrial Revolution",
+      "es": "La cuarta revolución industrial",
+      "de": "Die Vierte Industrielle Revolution",
+      "it": "La quarta rivoluzione industriale"
     },
     "year": 2016,
     "url": {
@@ -3423,7 +4278,10 @@
     "personalityId": "subcomandante-marcos",
     "title": {
       "pt": "Nossa Arma é a Nossa Palavra",
-      "en": "Our Word Is Our Weapon"
+      "en": "Our Word Is Our Weapon",
+      "es": "Our Word Is Our Weapon",
+      "de": "Unser Wort ist unsere Waffe",
+      "it": "La nostra parola è la nostra arma"
     },
     "year": 2001,
     "url": {
@@ -3435,7 +4293,10 @@
     "personalityId": "michael-collins",
     "title": {
       "pt": "The Path to Freedom",
-      "en": "The Path to Freedom"
+      "en": "The Path to Freedom",
+      "es": "The Path to Freedom",
+      "de": "Der Weg zur Freiheit",
+      "it": "La via della libertà"
     },
     "year": 1922,
     "url": {
@@ -3447,7 +4308,10 @@
     "personalityId": "jose-gervasio-artigas",
     "title": {
       "pt": "Instruções do Ano XIII",
-      "en": "Instructions of the Year XIII"
+      "en": "Instructions of the Year XIII",
+      "es": "Instrucciones del año XIII",
+      "de": "Instruktionen des Jahres XIII",
+      "it": "Istruzioni dell'anno XIII"
     },
     "year": 1813,
     "url": {
@@ -3459,7 +4323,10 @@
     "personalityId": "costin-vlad-alamariu",
     "title": {
       "pt": "Bronze Age Mindset",
-      "en": "Bronze Age Mindset"
+      "en": "Bronze Age Mindset",
+      "es": "Bronze Age Mindset",
+      "de": "Bronzezeit-Mentalität",
+      "it": "Bronze Age Mindset"
     },
     "year": 2018,
     "url": {
@@ -3471,7 +4338,10 @@
     "personalityId": "henri-bergson",
     "title": {
       "pt": "As Duas Fontes da Moral e da Religião",
-      "en": "The Two Sources of Morality and Religion"
+      "en": "The Two Sources of Morality and Religion",
+      "es": "Las dos fuentes de la moral y de la religión",
+      "de": "Die beiden Quellen der Moral und der Religion",
+      "it": "Le due fonti della morale e della religione"
     },
     "year": 1932,
     "url": {
@@ -3483,7 +4353,10 @@
     "personalityId": "campos-sales",
     "title": {
       "pt": "Da Propaganda à Presidência",
-      "en": "Da Propaganda à Presidência"
+      "en": "Da Propaganda à Presidência",
+      "es": "Da Propaganda à Presidência",
+      "de": "Von der Propaganda zur Präsidentschaft",
+      "it": "Dalla propaganda alla presidenza"
     },
     "year": 1908,
     "url": {
@@ -3495,7 +4368,10 @@
     "personalityId": "rene-guenon",
     "title": {
       "pt": "A Crise do Mundo Moderno",
-      "en": "The Crisis of the Modern World"
+      "en": "The Crisis of the Modern World",
+      "es": "La crisis del mundo moderno",
+      "de": "Die Krise der modernen Welt",
+      "it": "La crisi del mondo moderno"
     },
     "year": 1927,
     "url": {
@@ -3507,7 +4383,10 @@
     "personalityId": "antonio-negri",
     "title": {
       "pt": "Império",
-      "en": "Empire"
+      "en": "Empire",
+      "es": "Imperio",
+      "de": "Empire: Die neue Weltordnung",
+      "it": "Impero"
     },
     "year": 2000,
     "url": {
@@ -3519,7 +4398,10 @@
     "personalityId": "francis-fukuyama",
     "title": {
       "pt": "O Fim da História e o Último Homem",
-      "en": "The End of History and the Last Man"
+      "en": "The End of History and the Last Man",
+      "es": "El fin de la historia y el último hombre",
+      "de": "Das Ende der Geschichte und der letzte Mensch",
+      "it": "La fine della storia e l'ultimo uomo"
     },
     "year": 1992,
     "url": {
@@ -3531,7 +4413,10 @@
     "personalityId": "oscar-wilde",
     "title": {
       "pt": "A Alma do Homem sob o Socialismo",
-      "en": "The Soul of Man under Socialism"
+      "en": "The Soul of Man under Socialism",
+      "es": "El alma del hombre bajo el socialismo",
+      "de": "Der Sozialismus und die Seele des Menschen",
+      "it": "L'anima dell'uomo sotto il socialismo"
     },
     "year": 1891,
     "url": {
@@ -3543,7 +4428,10 @@
     "personalityId": "hg-wells",
     "title": {
       "pt": "The New World Order",
-      "en": "The New World Order"
+      "en": "The New World Order",
+      "es": "The New World Order",
+      "de": "Die neue Weltordnung",
+      "it": "Il nuovo ordine mondiale"
     },
     "year": 1940,
     "url": {
@@ -3555,7 +4443,10 @@
     "personalityId": "bertrand-russell",
     "title": {
       "pt": "Caminhos para a Liberdade",
-      "en": "Proposed Roads to Freedom"
+      "en": "Proposed Roads to Freedom",
+      "es": "Caminos de libertad",
+      "de": "Wege zur Freiheit",
+      "it": "Proposta di vie verso la libertà"
     },
     "year": 1918,
     "url": {
@@ -3567,7 +4458,10 @@
     "personalityId": "herbert-marcuse",
     "title": {
       "pt": "O Homem Unidimensional",
-      "en": "One-Dimensional Man"
+      "en": "One-Dimensional Man",
+      "es": "El hombre unidimensional",
+      "de": "Der eindimensionale Mensch",
+      "it": "L'uomo a una dimensione"
     },
     "year": 1964,
     "url": {
@@ -3579,7 +4473,10 @@
     "personalityId": "juan-manuel-santos",
     "title": {
       "pt": "La batalla por la paz",
-      "en": "The Battle for Peace"
+      "en": "The Battle for Peace",
+      "es": "La batalla por la paz",
+      "de": "Der Kampf um den Frieden",
+      "it": "La battaglia per la pace"
     },
     "year": 2019,
     "url": {
@@ -3591,7 +4488,10 @@
     "personalityId": "zhuangzi",
     "title": {
       "pt": "Zhuangzi",
-      "en": "Zhuangzi"
+      "en": "Zhuangzi",
+      "es": "Zhuangzi",
+      "de": "Zhuangzi",
+      "it": "Zhuangzi"
     },
     "year": -300,
     "url": {
@@ -3603,7 +4503,10 @@
     "personalityId": "lao-tse",
     "title": {
       "pt": "Tao Te Ching",
-      "en": "Tao Te Ching"
+      "en": "Tao Te Ching",
+      "es": "Tao Te Ching",
+      "de": "Tao Te King",
+      "it": "Tao Te Ching"
     },
     "year": -400,
     "url": {
@@ -3615,7 +4518,10 @@
     "personalityId": "mozi",
     "title": {
       "pt": "Mozi",
-      "en": "Mozi"
+      "en": "Mozi",
+      "es": "Mozi",
+      "de": "Mozi",
+      "it": "Mozi"
     },
     "year": -400,
     "url": {
@@ -3627,7 +4533,10 @@
     "personalityId": "gerrard-winstanley",
     "title": {
       "pt": "The Law of Freedom in a Platform",
-      "en": "The Law of Freedom in a Platform"
+      "en": "The Law of Freedom in a Platform",
+      "es": "The Law of Freedom in a Platform",
+      "de": "Das Gesetz der Freiheit in einem Entwurf",
+      "it": "La legge della libertà in una piattaforma"
     },
     "year": 1652,
     "url": {
@@ -3639,7 +4548,10 @@
     "personalityId": "jean-meslier",
     "title": {
       "pt": "Mémoire des pensées et sentiments de Jean Meslier",
-      "en": "Testament"
+      "en": "Testament",
+      "es": "Memoria contra la religión",
+      "de": "Testament",
+      "it": "Testamento"
     },
     "year": 1762,
     "url": {
@@ -3651,7 +4563,10 @@
     "personalityId": "etienne-de-la-boetie",
     "title": {
       "pt": "Discurso da Servidão Voluntária",
-      "en": "Discourse on Voluntary Servitude"
+      "en": "Discourse on Voluntary Servitude",
+      "es": "Discurso de la servidumbre voluntaria",
+      "de": "Abhandlung über die freiwillige Knechtschaft",
+      "it": "Discorso sulla servitù volontaria"
     },
     "year": 1576,
     "url": {
@@ -3663,7 +4578,10 @@
     "personalityId": "william-godwin",
     "title": {
       "pt": "Uma Investigação sobre a Justiça Política",
-      "en": "An Enquiry Concerning Political Justice"
+      "en": "An Enquiry Concerning Political Justice",
+      "es": "Investigación acerca de la justicia política",
+      "de": "Untersuchung über die politische Gerechtigkeit",
+      "it": "Ricerche sulla giustizia politica"
     },
     "year": 1793,
     "url": {
@@ -3675,7 +4593,10 @@
     "personalityId": "thomas-spence",
     "title": {
       "pt": "The Real Rights of Man",
-      "en": "The Real Rights of Man"
+      "en": "The Real Rights of Man",
+      "es": "The Real Rights of Man",
+      "de": "Die wahren Rechte des Menschen",
+      "it": "I veri diritti dell'uomo"
     },
     "year": 1793,
     "url": {
@@ -3687,7 +4608,10 @@
     "personalityId": "nestor-makhno",
     "title": {
       "pt": "The Russian Revolution in Ukraine",
-      "en": "The Russian Revolution in Ukraine"
+      "en": "The Russian Revolution in Ukraine",
+      "es": "La revolución rusa en Ucrania",
+      "de": "Die russische Revolution in der Ukraine",
+      "it": "La rivoluzione russa in Ucraina"
     },
     "year": 1929,
     "url": {
@@ -3699,7 +4623,10 @@
     "personalityId": "elisee-reclus",
     "title": {
       "pt": "Évolution, révolution et l'idéal anarchique",
-      "en": "Evolution, Revolution and the Anarchist Ideal"
+      "en": "Evolution, Revolution and the Anarchist Ideal",
+      "es": "Évolution, révolution et l'idéal anarchique",
+      "de": "Evolution, Revolution und das anarchistische Ideal",
+      "it": "Evoluzione, rivoluzione e ideale anarchico"
     },
     "year": 1891,
     "url": {
@@ -3711,7 +4638,10 @@
     "personalityId": "gary-johnson",
     "title": {
       "pt": "Seven Principles of Good Government",
-      "en": "Seven Principles of Good Government"
+      "en": "Seven Principles of Good Government",
+      "es": "Seven Principles of Good Government",
+      "de": "Sieben Grundsätze guter Regierungsführung",
+      "it": "Sette principi del buon governo"
     },
     "year": 2012,
     "url": {
@@ -3723,7 +4653,10 @@
     "personalityId": "jordan-bardella",
     "title": {
       "pt": "Ce que je cherche",
-      "en": "Ce que je cherche"
+      "en": "Ce que je cherche",
+      "es": "Ce que je cherche",
+      "de": "Was ich suche",
+      "it": "Ce que je cherche"
     },
     "year": 2024,
     "url": {
@@ -3735,7 +4668,10 @@
     "personalityId": "santiago-abascal",
     "title": {
       "pt": "En defensa de España",
-      "en": "En defensa de España"
+      "en": "En defensa de España",
+      "es": "En defensa de España",
+      "de": "Zur Verteidigung Spaniens",
+      "it": "En defensa de España"
     },
     "year": 2014,
     "url": {
@@ -3747,7 +4683,10 @@
     "personalityId": "graciliano-ramos",
     "title": {
       "pt": "Memórias do Cárcere",
-      "en": "Memórias do Cárcere"
+      "en": "Memórias do Cárcere",
+      "es": "Memórias do Cárcere",
+      "de": "Erinnerungen aus dem Gefängnis",
+      "it": "Memorie del carcere"
     },
     "year": 1953,
     "url": {
@@ -3759,7 +4698,10 @@
     "personalityId": "euclides-da-cunha",
     "title": {
       "pt": "Os Sertões",
-      "en": "Rebellion in the Backlands"
+      "en": "Rebellion in the Backlands",
+      "es": "Los sertones",
+      "de": "Os Sertões: Der Krieg im Sertão",
+      "it": "I Sertões"
     },
     "year": 1902,
     "url": {
@@ -3771,7 +4713,10 @@
     "personalityId": "necmettin-erbakan",
     "title": {
       "pt": "Adil Ekonomik Düzen",
-      "en": "Adil Ekonomik Düzen"
+      "en": "Adil Ekonomik Düzen",
+      "es": "Adil Ekonomik Düzen",
+      "de": "Gerechte Wirtschaftsordnung",
+      "it": "Adil Ekonomik Düzen"
     },
     "year": 1991,
     "url": {
@@ -3783,7 +4728,10 @@
     "personalityId": "shigeru-yoshida",
     "title": {
       "pt": "Kaisō Jūnen",
-      "en": "The Yoshida Memoirs"
+      "en": "The Yoshida Memoirs",
+      "es": "The Yoshida Memoirs",
+      "de": "Die Memoiren des Yoshida",
+      "it": "Le memorie di Yoshida"
     },
     "year": 1957,
     "url": {
@@ -3795,7 +4743,10 @@
     "personalityId": "raul-prebisch",
     "title": {
       "pt": "O Desenvolvimento Econômico da América Latina e Alguns de Seus Principais Problemas",
-      "en": "The Economic Development of Latin America and Its Principal Problems"
+      "en": "The Economic Development of Latin America and Its Principal Problems",
+      "es": "El desarrollo económico de la América Latina y algunos de sus principales problemas",
+      "de": "Die wirtschaftliche Entwicklung Lateinamerikas und ihre wichtigsten Probleme",
+      "it": "Lo sviluppo economico dell'America Latina e i suoi principali problemi"
     },
     "year": 1949,
     "url": {
@@ -3807,7 +4758,10 @@
     "personalityId": "michal-kalecki",
     "title": {
       "pt": "Teoria da Dinâmica Econômica",
-      "en": "Theory of Economic Dynamics"
+      "en": "Theory of Economic Dynamics",
+      "es": "Teoría de la dinámica económica",
+      "de": "Theorie der wirtschaftlichen Dynamik",
+      "it": "Teoria della dinamica economica"
     },
     "year": 1954,
     "url": {
@@ -3819,7 +4773,10 @@
     "personalityId": "giovanni-gentile",
     "title": {
       "pt": "Genesi e struttura della società",
-      "en": "Genesis and Structure of Society"
+      "en": "Genesis and Structure of Society",
+      "es": "Genesi e struttura della società",
+      "de": "Entstehung und Struktur der Gesellschaft",
+      "it": "Genesi e struttura della società"
     },
     "year": 1946,
     "url": {
@@ -3831,7 +4788,10 @@
     "personalityId": "john-adams",
     "title": {
       "pt": "A Defence of the Constitutions of Government of the United States of America",
-      "en": "A Defence of the Constitutions of Government of the United States of America"
+      "en": "A Defence of the Constitutions of Government of the United States of America",
+      "es": "A Defence of the Constitutions of Government of the United States of America",
+      "de": "Eine Verteidigung der Verfassungen der Regierungen der Vereinigten Staaten von Amerika",
+      "it": "Difesa delle costituzioni di governo degli Stati Uniti d'America"
     },
     "year": 1787,
     "url": {
@@ -3843,7 +4803,10 @@
     "personalityId": "allan-kardec",
     "title": {
       "pt": "O Livro dos Espíritos",
-      "en": "The Spirits' Book"
+      "en": "The Spirits' Book",
+      "es": "El libro de los espíritus",
+      "de": "Das Buch der Geister",
+      "it": "Il libro degli spiriti"
     },
     "year": 1857,
     "url": {
@@ -3855,7 +4818,10 @@
     "personalityId": "elias-jabbour",
     "title": {
       "pt": "China: o socialismo do século XXI",
-      "en": "Socialist Economic Development in the 21st Century"
+      "en": "Socialist Economic Development in the 21st Century",
+      "es": "China: o socialismo do século XXI",
+      "de": "China: Der Sozialismus des 21. Jahrhunderts",
+      "it": "Sviluppo economico socialista nel XXI secolo"
     },
     "year": 2021,
     "url": {
@@ -3867,7 +4833,10 @@
     "personalityId": "ted-cruz",
     "title": {
       "pt": "A Time for Truth",
-      "en": "A Time for Truth"
+      "en": "A Time for Truth",
+      "es": "A Time for Truth",
+      "de": "Eine Zeit für die Wahrheit",
+      "it": "Un tempo per la verità"
     },
     "year": 2015,
     "url": {
@@ -3879,7 +4848,10 @@
     "personalityId": "ben-sasse",
     "title": {
       "pt": "Them: Why We Hate Each Other—and How to Heal",
-      "en": "Them: Why We Hate Each Other—and How to Heal"
+      "en": "Them: Why We Hate Each Other—and How to Heal",
+      "es": "Them: Why We Hate Each Other—and How to Heal",
+      "de": "Sie: Warum wir uns hassen und wie wir heilen können",
+      "it": "Loro: perché ci odiamo e come guarire"
     },
     "year": 2018,
     "url": {
@@ -3891,7 +4863,10 @@
     "personalityId": "pete-hegseth",
     "title": {
       "pt": "American Crusade",
-      "en": "American Crusade"
+      "en": "American Crusade",
+      "es": "American Crusade",
+      "de": "Amerikanischer Kreuzzug",
+      "it": "Crociata americana"
     },
     "year": 2020,
     "url": {
@@ -3903,7 +4878,10 @@
     "personalityId": "rand-paul",
     "title": {
       "pt": "The Case Against Socialism",
-      "en": "The Case Against Socialism"
+      "en": "The Case Against Socialism",
+      "es": "The Case Against Socialism",
+      "de": "Das Plädoyer gegen den Sozialismus",
+      "it": "Il caso contro il socialismo"
     },
     "year": 2019,
     "url": {
@@ -3915,7 +4893,10 @@
     "personalityId": "alexander-rustow",
     "title": {
       "pt": "Ortsbestimmung der Gegenwart",
-      "en": "Freedom and Domination"
+      "en": "Freedom and Domination",
+      "es": "Ortsbestimmung der Gegenwart",
+      "de": "Freiheit und Herrschaft",
+      "it": "Libertà e dominio"
     },
     "year": 1950,
     "url": {
@@ -3927,7 +4908,10 @@
     "personalityId": "alfred-muller-armack",
     "title": {
       "pt": "Wirtschaftslenkung und Marktwirtschaft",
-      "en": "Wirtschaftslenkung und Marktwirtschaft"
+      "en": "Wirtschaftslenkung und Marktwirtschaft",
+      "es": "Wirtschaftslenkung und Marktwirtschaft",
+      "de": "Wirtschaftslenkung und Marktwirtschaft",
+      "it": "Wirtschaftslenkung und Marktwirtschaft"
     },
     "year": 1947,
     "url": {
@@ -3939,7 +4923,10 @@
     "personalityId": "walter-eucken",
     "title": {
       "pt": "Grundsätze der Wirtschaftspolitik",
-      "en": "Grundsätze der Wirtschaftspolitik"
+      "en": "Grundsätze der Wirtschaftspolitik",
+      "es": "Grundsätze der Wirtschaftspolitik",
+      "de": "Grundsätze der Wirtschaftspolitik",
+      "it": "Grundsätze der Wirtschaftspolitik"
     },
     "year": 1952,
     "url": {
@@ -3951,7 +4938,10 @@
     "personalityId": "robert-menzies",
     "title": {
       "pt": "The Forgotten People and Other Studies in Democracy",
-      "en": "The Forgotten People and Other Studies in Democracy"
+      "en": "The Forgotten People and Other Studies in Democracy",
+      "es": "The Forgotten People and Other Studies in Democracy",
+      "de": "Die vergessenen Menschen und andere Studien zur Demokratie",
+      "it": "Il popolo dimenticato e altri studi sulla democrazia"
     },
     "year": 1943,
     "url": {
@@ -3963,7 +4953,10 @@
     "personalityId": "john-howard",
     "title": {
       "pt": "Lazarus Rising",
-      "en": "Lazarus Rising"
+      "en": "Lazarus Rising",
+      "es": "Lazarus Rising",
+      "de": "Lazarus erhebt sich",
+      "it": "Lazarus Rising"
     },
     "year": 2010,
     "url": {
@@ -3975,7 +4968,10 @@
     "personalityId": "andres-manuel-lopez-obrador",
     "title": {
       "pt": "Hacia una economía moral",
-      "en": "Towards a Moral Economy"
+      "en": "Towards a Moral Economy",
+      "es": "Hacia una economía moral",
+      "de": "Auf dem Weg zu einer moralischen Wirtschaft",
+      "it": "Verso un'economia morale"
     },
     "year": 2019,
     "url": {
@@ -3987,7 +4983,10 @@
     "personalityId": "roger-douglas",
     "title": {
       "pt": "Unfinished Business",
-      "en": "Unfinished Business"
+      "en": "Unfinished Business",
+      "es": "Unfinished Business",
+      "de": "Unerledigte Geschäfte",
+      "it": "Questioni in sospeso"
     },
     "year": 1993,
     "url": {
@@ -3999,7 +4998,10 @@
     "personalityId": "fethullah-gulen",
     "title": {
       "pt": "Toward a Global Civilization of Love and Tolerance",
-      "en": "Toward a Global Civilization of Love and Tolerance"
+      "en": "Toward a Global Civilization of Love and Tolerance",
+      "es": "Toward a Global Civilization of Love and Tolerance",
+      "de": "Auf dem Weg zu einer globalen Zivilisation der Liebe und Toleranz",
+      "it": "Verso una civiltà globale di amore e tolleranza"
     },
     "year": 2004,
     "url": {
@@ -4011,9 +5013,567 @@
     "personalityId": "abdul-el-sayed",
     "title": {
       "pt": "Medicare for All: A Citizen's Guide",
-      "en": "Medicare for All: A Citizen's Guide"
+      "en": "Medicare for All: A Citizen's Guide",
+      "es": "Medicare for All: A Citizen's Guide",
+      "de": "Medicare für alle: Ein Ratgeber für Bürger",
+      "it": "Medicare for All: guida del cittadino"
     },
     "year": 2021,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "miguel-arraes",
+    "title": {
+      "pt": "O Brasil, o Povo e o Poder",
+      "en": "Brazil: The People and the Power",
+      "es": "O Brasil, o Povo e o Poder",
+      "de": "Brasilien, das Volk und die Macht",
+      "it": "Brasile: il popolo e il potere"
+    },
+    "year": 1969,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "rob-jetten",
+    "title": {
+      "pt": "Hoe het wél kan",
+      "en": "Hoe het wél kan",
+      "es": "Hoe het wél kan",
+      "de": "Wie es doch geht",
+      "it": "Hoe het wél kan"
+    },
+    "year": 2025,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "andrej-babis",
+    "title": {
+      "pt": "O čem sním, když náhodou spím",
+      "en": "O čem sním, když náhodou spím",
+      "es": "O čem sním, když náhodou spím",
+      "de": "Wovon ich träume, wenn ich zufällig schlafe",
+      "it": "O čem sním, když náhodou spím"
+    },
+    "year": 2017,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "alexander-stubb",
+    "title": {
+      "pt": "The Triangle of Power",
+      "en": "The Triangle of Power: Rebalancing the New World Order",
+      "es": "The Triangle of Power: Rebalancing the New World Order",
+      "de": "Das Dreieck der Macht: Die neue Weltordnung neu austarieren",
+      "it": "Il triangolo del potere: riequilibrare il nuovo ordine mondiale"
+    },
+    "year": 2025,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "sebastien-lecornu",
+    "title": {
+      "pt": "Vers la guerre ? La France face au réarmement du monde",
+      "en": "Vers la guerre ? La France face au réarmement du monde",
+      "es": "Vers la guerre ? La France face au réarmement du monde",
+      "de": "Auf dem Weg in den Krieg? Frankreich angesichts der Aufrüstung der Welt",
+      "it": "Vers la guerre ? La France face au réarmement du monde"
+    },
+    "year": 2024,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "edouard-philippe",
+    "title": {
+      "pt": "Impressions et lignes claires",
+      "en": "Impressions et lignes claires",
+      "es": "Impressions et lignes claires",
+      "de": "Eindrücke und klare Linien",
+      "it": "Impressions et lignes claires"
+    },
+    "year": 2021,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "jean-monnet",
+    "title": {
+      "pt": "Memórias",
+      "en": "Memoirs",
+      "es": "Memorias",
+      "de": "Erinnerungen",
+      "it": "Memorie"
+    },
+    "year": 1976,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "mario-soares",
+    "title": {
+      "pt": "Portugal Amordaçado",
+      "en": "Portugal’s Struggle for Liberty",
+      "es": "Portugal amordazado",
+      "de": "Portugal in Fesseln",
+      "it": "La lotta del Portogallo per la libertà"
+    },
+    "year": 1972,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "alvaro-cunhal",
+    "title": {
+      "pt": "Rumo à Vitória",
+      "en": "Rumo à Vitória",
+      "es": "Rumo à Vitória",
+      "de": "Dem Sieg entgegen",
+      "it": "Verso la vittoria"
+    },
+    "year": 1964,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "clement-attlee",
+    "title": {
+      "pt": "The Labour Party in Perspective",
+      "en": "The Labour Party in Perspective",
+      "es": "The Labour Party in Perspective",
+      "de": "Die Labour-Partei im Überblick",
+      "it": "Il Partito Laburista in prospettiva"
+    },
+    "year": 1937,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "david-cameron",
+    "title": {
+      "pt": "For the Record",
+      "en": "For the Record",
+      "es": "For the Record",
+      "de": "Für das Protokoll",
+      "it": "Agli atti"
+    },
+    "year": 2019,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "felipe-gonzalez",
+    "title": {
+      "pt": "Mi idea de Europa",
+      "en": "Mi idea de Europa",
+      "es": "Mi idea de Europa",
+      "de": "Meine Idee von Europa",
+      "it": "La mia idea di Europa"
+    },
+    "year": 2011,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "jose-maria-aznar",
+    "title": {
+      "pt": "Ocho años de Gobierno",
+      "en": "Ocho años de Gobierno",
+      "es": "Ocho años de Gobierno",
+      "de": "Acht Jahre Regierung",
+      "it": "Otto anni di governo"
+    },
+    "year": 2004,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "jose-luis-rodriguez-zapatero",
+    "title": {
+      "pt": "El dilema: 600 días de vértigo",
+      "en": "El dilema: 600 días de vértigo",
+      "es": "El dilema: 600 días de vértigo",
+      "de": "Das Dilemma: 600 Tage im Taumel",
+      "it": "Il dilemma: 600 giorni di vertigine"
+    },
+    "year": 2013,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "mariano-rajoy",
+    "title": {
+      "pt": "Política para adultos",
+      "en": "Política para adultos",
+      "es": "Política para adultos",
+      "de": "Politik für Erwachsene",
+      "it": "Politica per adulti"
+    },
+    "year": 2021,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "mauricio-macri",
+    "title": {
+      "pt": "Primer tiempo",
+      "en": "Primer tiempo",
+      "es": "Primer tiempo",
+      "de": "Erste Halbzeit",
+      "it": "Primo tempo"
+    },
+    "year": 2021,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "raul-alfonsin",
+    "title": {
+      "pt": "Memoria política: Transición a la democracia y derechos humanos",
+      "en": "Memoria política: Transición a la democracia y derechos humanos",
+      "es": "Memoria política: Transición a la democracia y derechos humanos",
+      "de": "Politische Erinnerung: Übergang zur Demokratie und Menschenrechte",
+      "it": "Memoria politica: transizione alla democrazia e diritti umani"
+    },
+    "year": 2004,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "alberto-fernandez",
+    "title": {
+      "pt": "Pensado y escrito",
+      "en": "Pensado y escrito",
+      "es": "Pensado y escrito",
+      "de": "Gedacht und geschrieben",
+      "it": "Pensato e scritto"
+    },
+    "year": 2010,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "willy-brandt",
+    "title": {
+      "pt": "Erinnerungen",
+      "en": "Erinnerungen",
+      "es": "Erinnerungen",
+      "de": "Erinnerungen",
+      "it": "Ricordi"
+    },
+    "year": 1989,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "nicolas-sarkozy",
+    "title": {
+      "pt": "Témoignage",
+      "en": "Témoignage",
+      "es": "Témoignage",
+      "de": "Zeugnis",
+      "it": "Testimonianza"
+    },
+    "year": 2006,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "goh-keng-swee",
+    "title": {
+      "pt": "The Economics of Modernization",
+      "en": "The Economics of Modernization",
+      "es": "The Economics of Modernization",
+      "de": "Die Ökonomie der Modernisierung",
+      "it": "L'economia della modernizzazione"
+    },
+    "year": 1972,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "delfim-netto",
+    "title": {
+      "pt": "O Problema do Café no Brasil",
+      "en": "O Problema do Café no Brasil",
+      "es": "O Problema do Café no Brasil",
+      "de": "Das Kaffeeproblem in Brasilien",
+      "it": "Il problema del caffè in Brasile"
+    },
+    "year": 1959,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "paul-volcker",
+    "title": {
+      "pt": "Changing Fortunes",
+      "en": "Changing Fortunes",
+      "es": "Changing Fortunes",
+      "de": "Wechselnde Vermögen",
+      "it": "Fortune che cambiano"
+    },
+    "year": 1992,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "domingo-cavallo",
+    "title": {
+      "pt": "El Peso de la Verdad",
+      "en": "El Peso de la Verdad",
+      "es": "El peso de la verdad",
+      "de": "Das Gewicht der Wahrheit",
+      "it": "Il peso della verità"
+    },
+    "year": 1997,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "socrates-brasileiro",
+    "title": {
+      "pt": "Democracia Corintiana: A Utopia em Jogo",
+      "en": "Democracia Corintiana: A Utopia em Jogo",
+      "es": "Democracia Corintiana: A Utopia em Jogo",
+      "de": "Korinthische Demokratie: Die Utopie im Spiel",
+      "it": "Democracia Corintiana: l'utopia in campo"
+    },
+    "year": 2002,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "rudolf-hilferding",
+    "title": {
+      "pt": "O Capital Financeiro",
+      "en": "Finance Capital",
+      "es": "El capital financiero",
+      "de": "Das Finanzkapital",
+      "it": "Il capitale finanziario"
+    },
+    "year": 1910,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "wilhelm-ropke",
+    "title": {
+      "pt": "Jenseits von Angebot und Nachfrage",
+      "en": "A Humane Economy",
+      "es": "Jenseits von Angebot und Nachfrage",
+      "de": "Jenseits von Angebot und Nachfrage",
+      "it": "Un'economia umana"
+    },
+    "year": 1958,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "johann-most",
+    "title": {
+      "pt": "Kapital und Arbeit",
+      "en": "Kapital und Arbeit",
+      "es": "Kapital und Arbeit",
+      "de": "Kapital und Arbeit",
+      "it": "Capitale e lavoro"
+    },
+    "year": 1873,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "hjalmar-schacht",
+    "title": {
+      "pt": "Das Ende der Reparationen",
+      "en": "The End of Reparations",
+      "es": "Das Ende der Reparationen",
+      "de": "Das Ende der Reparationen",
+      "it": "La fine delle riparazioni"
+    },
+    "year": 1931,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "bertolt-brecht",
+    "title": {
+      "pt": "A Ópera de Três Vinténs",
+      "en": "The Threepenny Opera",
+      "es": "La ópera de tres centavos",
+      "de": "Die Dreigroschenoper",
+      "it": "L'opera da tre soldi"
+    },
+    "year": 1928,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "gunter-grass",
+    "title": {
+      "pt": "O Tambor",
+      "en": "The Tin Drum",
+      "es": "El tambor de hojalata",
+      "de": "Die Blechtrommel",
+      "it": "Il tamburo di latta"
+    },
+    "year": 1959,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "thomas-mann",
+    "title": {
+      "pt": "Considerações de um Apolítico",
+      "en": "Reflections of a Nonpolitical Man",
+      "es": "Consideraciones de un apolítico",
+      "de": "Betrachtungen eines Unpolitischen",
+      "it": "Considerazioni di un impolitico"
+    },
+    "year": 1918,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "erich-muhsam",
+    "title": {
+      "pt": "Die Befreiung der Gesellschaft vom Staat",
+      "en": "Liberating Society from the State",
+      "es": "Die Befreiung der Gesellschaft vom Staat",
+      "de": "Die Befreiung der Gesellschaft vom Staat",
+      "it": "Liberare la società dallo Stato"
+    },
+    "year": 1932,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "wilhelm-von-humboldt",
+    "title": {
+      "pt": "Ideen zu einem Versuch, die Grenzen der Wirksamkeit des Staates zu bestimmen",
+      "en": "The Limits of State Action",
+      "es": "Los límites de la acción del Estado",
+      "de": "Ideen zu einem Versuch, die Grenzen der Wirksamkeit des Staates zu bestimmen",
+      "it": "I limiti dell'azione dello Stato"
+    },
+    "year": 1792,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "ralf-dahrendorf",
+    "title": {
+      "pt": "As Classes e seu Conflito na Sociedade Industrial",
+      "en": "Class and Class Conflict in Industrial Society",
+      "es": "Las clases sociales y su conflicto en la sociedad industrial",
+      "de": "Soziale Klassen und Klassenkonflikt in der industriellen Gesellschaft",
+      "it": "Classi e conflitto di classe nella società industriale"
+    },
+    "year": 1957,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "jurgen-habermas",
+    "title": {
+      "pt": "Direito e Democracia: Entre Facticidade e Validade",
+      "en": "Between Facts and Norms",
+      "es": "Facticidad y validez",
+      "de": "Faktizität und Geltung",
+      "it": "Fatti e norme"
+    },
+    "year": 1992,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "joseph-ratzinger",
+    "title": {
+      "pt": "Caritas in Veritate",
+      "en": "Caritas in Veritate",
+      "es": "Caritas in veritate",
+      "de": "Caritas in veritate",
+      "it": "Caritas in veritate"
+    },
+    "year": 2009,
     "url": {
       "pt": "",
       "en": ""

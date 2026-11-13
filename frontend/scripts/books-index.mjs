@@ -3,6 +3,9 @@
 import { siteHeader } from './site-header.mjs';
 import { ARROW, IDEOLOGIES_CSS } from './ideologies-index.mjs';
 import { AREA_LABELS, AREA_ORDER, catalogHead, initials } from './personalities-index.mjs';
+import { ES } from './locales/es.mjs';
+import { DE } from './locales/de.mjs';
+import { IT } from './locales/it.mjs';
 
 export const AMAZON_BR_HOST = 'www.amazon.com.br';
 export const AMAZON_BR_TAG = '12axes-20';
@@ -13,7 +16,7 @@ export function amazonAffiliateUrl(directUrl, title, authorName, locale) {
   if (directUrl && String(directUrl).trim().length > 0) {
     return directUrl;
   }
-  const isEn = locale === 'en';
+  const isEn = locale !== 'pt'; // só o português compra na Amazon do Brasil
   const host = isEn ? AMAZON_US_HOST : AMAZON_BR_HOST;
   const tag = isEn ? AMAZON_US_TAG : AMAZON_BR_TAG;
   const query = encodeURIComponent(`${title} ${authorName}`);
@@ -108,6 +111,9 @@ const STR = {
     }
   }
 };
+STR.es = { ...STR.en, ...ES.booksIndex };
+STR.de = { ...STR.en, ...DE.booksIndex };
+STR.it = { ...STR.en, ...IT.booksIndex };
 
 function formatYear(year, t) {
   if (year === null || year === undefined) return '';
@@ -179,7 +185,8 @@ export function booksIndexPage(L, { locale, site, gaSnippet, escapeHtml, profile
       labels[b.category] ?? ''
     ].filter(Boolean).join(' ').toLowerCase();
 
-    const amzUrl = amazonAffiliateUrl(b.url, b.title, author.name, locale);
+    // A busca na Amazon americana usa o título em inglês: edições em espanhol raramente estão lá.
+    const amzUrl = amazonAffiliateUrl(b.url, b.searchTitle, L.storeAuthorName(author), locale);
 
     return `<li class="bc" data-text="${escapeHtml(textParts)}" data-cat="${b.category}">
       <article class="e-read-card bc-card">

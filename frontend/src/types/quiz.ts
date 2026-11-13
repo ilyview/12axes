@@ -185,6 +185,8 @@ export interface PersonalityMatch {
   compatibility: number;
   /** Vetor de 12 eixos (leftPercent) da personalidade. */
   vector?: Record<string, number>;
+  /** Espectro da pessoa (categoria da ideologia mais próxima do vetor dela): a cor dela no governo ideal. */
+  spectrum?: string | null;
 }
 
 export interface BookRecommendation {
@@ -296,6 +298,8 @@ export interface CompareDetail {
   vector: Record<string, number>;
   /** Religiões do perfil no catálogo (vazia quando não há vínculo). */
   religions?: string[];
+  /** Espectro do perfil (categoria da ideologia mais próxima do vetor dele). */
+  spectrum?: string;
 }
 
 /** Um perfil da página /compare: dados do catálogo e vetor de 12 eixos (leftPercent). */
@@ -345,6 +349,9 @@ export interface AxisAnalysis {
   level: 'equilibrado' | 'inclinado' | 'forte' | 'muito_forte';
   /** Texto fixo daquela inclinação; nulo enquanto não houver texto. */
   text: string | null;
+  /** Por que quem tem essa tendência costuma ser elogiado e criticado; nulo no equilibrado. */
+  pros: string | null;
+  cons: string | null;
   impacts: AnswerImpact[];
   ideologyLeftPercent: number | null;
   personalityLeftPercent: number | null;
@@ -369,10 +376,24 @@ export interface Disagreement {
   axes: AxisDivergence[];
 }
 
+/** O comecinho do relatório pago, para o convite da compra: só o que o convite mostra; o resto fica atrás do token. */
+export interface ReportPreview {
+  /** O eixo mais forte, só com o início do texto e sem as respostas. */
+  analysis: AxisAnalysis;
+  /** Ideologia, personalidade e país mais compatíveis (só nome e cor; `axes` vem vazio). */
+  profiles: Disagreement[];
+  /** Só o líder e o vice-líder do governo ideal. */
+  government: GovernmentSeat[];
+  /** Só a primeira era (Antiguidade), com os perfis da lista (`entries` vazio e `compatibility` 0). */
+  timeline: TimelineEra[];
+}
+
 export interface GovernmentSeat {
   seatKey: 'lider' | 'vice' | 'economia' | 'educacao' | 'estrategia' | 'filosofia' | 'social' | 'industria' | 'cultura';
   category: string;
   holder: PersonalityMatch;
+  /** As figuras mais compatíveis da categoria (a titular inclusive), para o usuário trocar quem ocupa o cargo; vazia na prévia. */
+  candidates: PersonalityMatch[];
 }
 
 export interface RankingRow {

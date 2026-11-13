@@ -86,6 +86,58 @@ class BookRecommendationTest {
     }
 
     @Test
+    void spanishShowsTheSpanishTitleButSearchesTheUsStoreWithTheEnglishTitle() throws Exception {
+        var recommendations = result("es").bookRecommendations();
+        assertThat(recommendations).isNotEmpty().allSatisfy(book -> {
+            var stored = dataService.getBooks().get(book.personalityId());
+            String spanish = stored.title().get("es");
+            assertThat(book.title()).isEqualTo(spanish == null || spanish.isBlank() ? stored.title().get("en") : spanish);
+            assertThat(book.url()).startsWith("https://www.amazon.com/").contains("tag=12axes0d-20");
+            if (spanish != null && !spanish.equals(stored.title().get("en"))) {
+                assertThat(java.net.URLDecoder.decode(book.url(), StandardCharsets.UTF_8)).contains(stored.title().get("en"));
+            }
+        });
+    }
+
+    @Test
+    void everyBookHasASpanishTitle() {
+        assertThat(dataService.getBooks().values())
+                .allSatisfy(book -> assertThat(book.title().get("es")).as(book.personalityId()).isNotBlank());
+    }
+
+    @Test
+    void germanShowsTheGermanTitleButSearchesTheUsStoreWithTheEnglishTitle() throws Exception {
+        var recommendations = result("de").bookRecommendations();
+        assertThat(recommendations).isNotEmpty().allSatisfy(book -> {
+            var stored = dataService.getBooks().get(book.personalityId());
+            assertThat(book.title()).isEqualTo(stored.title().get("de"));
+            assertThat(book.url()).startsWith("https://www.amazon.com/").contains("tag=12axes0d-20");
+        });
+    }
+
+    @Test
+    void italianShowsTheItalianTitleButSearchesTheUsStoreWithTheEnglishTitle() throws Exception {
+        var recommendations = result("it").bookRecommendations();
+        assertThat(recommendations).isNotEmpty().allSatisfy(book -> {
+            var stored = dataService.getBooks().get(book.personalityId());
+            assertThat(book.title()).isEqualTo(stored.title().get("it"));
+            assertThat(book.url()).startsWith("https://www.amazon.com/").contains("tag=12axes0d-20");
+        });
+    }
+
+    @Test
+    void everyBookHasAnItalianTitle() {
+        assertThat(dataService.getBooks().values())
+                .allSatisfy(book -> assertThat(book.title().get("it")).as(book.personalityId()).isNotBlank());
+    }
+
+    @Test
+    void everyBookHasAGermanTitle() {
+        assertThat(dataService.getBooks().values())
+                .allSatisfy(book -> assertThat(book.title().get("de")).as(book.personalityId()).isNotBlank());
+    }
+
+    @Test
     void everyBookPointsToAnExistingPersonality() {
         assertThat(dataService.getBooks()).isNotEmpty();
         assertThat(dataService.getBooks().keySet())

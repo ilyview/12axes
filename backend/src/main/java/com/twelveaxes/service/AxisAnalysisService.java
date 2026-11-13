@@ -28,10 +28,22 @@ public class AxisAnalysisService {
 
     private final Map<String, String> portugueseTexts;
     private final Map<String, String> englishTexts;
+    /** Idiomas gerados (espanhol, alemão...): chave sem tradução usa o inglês. */
+    private final Map<String, Map<String, String>> generatedTexts;
 
     public AxisAnalysisService(ObjectMapper objectMapper) {
         this.portugueseTexts = load(objectMapper, "/data/axis-analysis.json");
         this.englishTexts = load(objectMapper, "/data/i18n/en/axis-analysis.json");
+        Map<String, Map<String, String>> generated = new java.util.HashMap<>();
+        for (String lang : QuizDataService.GENERATED_LANGS) {
+            Map<String, String> texts = new java.util.HashMap<>(englishTexts);
+            String path = "/data/i18n/" + lang + "/axis-analysis.json";
+            if (AxisAnalysisService.class.getResource(path) != null) {
+                texts.putAll(load(objectMapper, path));
+            }
+            generated.put(lang, Map.copyOf(texts));
+        }
+        this.generatedTexts = Map.copyOf(generated);
     }
 
     /** disagreements traz a posicao da ideologia, da personalidade e do pais mais compativeis em cada eixo. */
@@ -41,7 +53,10 @@ public class AxisAnalysisService {
             List<Disagreement> disagreements,
             String lang
     ) {
-        Map<String, String> texts = QuizDataService.LANG_EN.equals(QuizDataService.normalizeLang(lang)) ? englishTexts : portugueseTexts;
+        String normalized = QuizDataService.normalizeLang(lang);
+        Map<String, String> texts = QuizDataService.LANG_PT.equals(normalized) ? portugueseTexts
+                : QuizDataService.LANG_EN.equals(normalized) ? englishTexts
+                : generatedTexts.getOrDefault(normalized, englishTexts);
         return axes.stream()
                 .map(axis -> {
                     AxisLevel level = AxisLevel.of(axis.leftPercent());
@@ -52,12 +67,19 @@ public class AxisAnalysisService {
                             level.side(),
                             level.level(),
                             texts.get(level.textKey(axis.axisId())),
+                            judgement(texts, axis.axisId(), level, "pros"),
+                            judgement(texts, axis.axisId(), level, "cons"),
                             topImpacts(impactsByAxis.getOrDefault(axis.axisId(), List.of())),
                             positionOf(disagreements, "ideology", axis.axisId()),
                             positionOf(disagreements, "personality", axis.axisId()),
                             positionOf(disagreements, "country", axis.axisId()));
                 })
                 .toList();
+    }
+
+    /** Por que a posicao e elogiada ("pros") ou criticada ("cons"); texto por polo, sem versao para o equilibrado. */
+    private static String judgement(Map<String, String> texts, String axisId, AxisLevel level, String kind) {
+        return "balanced".equals(level.side()) ? null : texts.get(axisId + "." + level.side() + "." + kind);
     }
 
     // As respostas de maior efeito no eixo. Neutras (impacto 0) nao puxam nada e ficam de fora.

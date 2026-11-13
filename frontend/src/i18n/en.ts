@@ -4,7 +4,7 @@ import type { Strings } from './index';
 
 export const en: Strings = {
   htmlLang: 'en',
-  docTitle: '12 Axes — Free Political Test, Quiz & Compass Across 12 Axes',
+  docTitle: "Free Political Test: What's Your Political Ideology? | 12 Axes",
   loadingAnalysis: 'Loading political analysis...',
   loadingQuiz: 'Loading quiz...',
   loadingResult: 'Loading results...',
@@ -51,7 +51,7 @@ export const en: Strings = {
   navCompare: 'Compare',
   navSupport: 'Support',
   langToggleLabel: 'PT',
-  langToggleAria: 'Mudar para português',
+  langToggleAria: 'Language',
   redoQuiz: 'Retake quiz',
   religionLabel: 'Religion',
   religionQuestion: 'Do you follow a religion? We only use this to tailor your recommendations.',
@@ -118,6 +118,34 @@ export const en: Strings = {
   personalityInfoAria: (name) => `See details about ${name}`,
   closenessTitle: 'What brings you closer',
   closenessYou: 'You',
+  insight: {
+    closeTitle: (name) => `What brings you closer to ${name}`,
+    closeNone: (name) => `You and ${name} do not clearly share a position on any axis.`,
+    closeAxis: (axis, phrase, youPct, otherPct, name, gap) =>
+      `In ${axis}, you both show ${phrase}. You sit at ${youPct}% on that side and ${name} at ${otherPct}%${gap < 8 ? ', practically the same spot' : gap < 15 ? ', very close' : ', with different intensity'}.`,
+    apartTitle: 'Where you part ways',
+    apartNone: (name) => `You and ${name} are not far apart on any axis.`,
+    apartAxis: (axis, you, other, name, gap) => `In ${axis}, you part ways: you show ${you}, while ${name} shows ${other}. The distance between you on this axis is ${gap} ${gap === 1 ? 'point' : 'points'}.`,
+    apartTiny: (axis, name, gap) =>
+      `On ${axis}, the biggest difference between you and ${name} is only ${gap} ${gap === 1 ? 'point' : 'points'}: you are practically in the same spot.`,
+    apartSame: (axis, phrase, youPct, otherPct, name, gap) =>
+      `On ${axis}, you lean the same way but with different intensity: you both show ${phrase}, you at ${youPct}% and ${name} at ${otherPct}%. The distance between you on this axis is ${gap} ${gap === 1 ? 'point' : 'points'}.`,
+    balanced: 'a balanced position',
+    poles: {
+      estrutura: { left: 'a preference for more autonomy for states and regions', right: 'a preference for a stronger central government' },
+      representacao: { left: 'support for democracy and free elections', right: 'support for power concentrated in a leader or group' },
+      poder: { left: 'a priority on security and order', right: 'a priority on individual liberties' },
+      imigracao: { left: 'a preference for assimilation into the national culture', right: 'support for several cultures living side by side' },
+      diplomacia: { left: 'trust in military strength', right: 'a preference for peace and negotiation' },
+      intervencao: { left: 'a preference for staying out of foreign disputes', right: 'an emphasis on defending the national interest' },
+      economia: { left: 'an emphasis on public ownership and services', right: 'an emphasis on private property and enterprise' },
+      controle: { left: 'a preference for a planned, regulated economy', right: 'a preference for free markets and light regulation' },
+      comercio: { left: 'support for protecting national industry', right: 'support for opening up to international trade' },
+      religiao: { left: 'a preference for separating religion from politics', right: 'support for more religion in public life' },
+      moral: { left: 'progressive social values', right: 'traditional social values' },
+      tecnologia: { left: 'trust in technology and industry', right: 'a preference for more natural, biological solutions' }
+    }
+  },
   compareEyebrow: 'Comparative analysis',
   compareTitle: 'Comparative analysis',
   compareLead: 'Pick a personality, country or ideology and see, axis by axis, where you are close or far apart.',
@@ -504,6 +532,12 @@ export const en: Strings = {
   otherMatches: 'Other ideologies',
   navOnThisPage: 'On this page',
   resultsNavReport: 'Full analysis',
+  resultsNavPremiumGroup: 'Full report',
+  resultsNavAxisByAxis: 'Axis by axis',
+  resultsNavDisagree: 'Disagreements',
+  resultsNavGovernment: 'Ideal government',
+  resultsNavTimeline: 'Timeline',
+  resultsNavLiving: 'Where to live',
   resultsNavAxes: '12 axes',
   resultsNavSignature: 'Distinction',
   resultsNavCountries: 'Countries',
@@ -600,8 +634,8 @@ export const en: Strings = {
   areasByAreaTab: 'Field',
   exportCsv: 'Export spreadsheet',
   paywallTitle: 'Full report',
-  paywallLead: 'Get the full report to discover your political profile in depth.',
-  paywallUnlockTitle: 'Unlock now',
+  paywallLead: 'Understand how you see the world axis by axis, find out which current country or region looks most like you, and much more.',
+  paywallUnlockTitle: 'Get access to the complete result of your political views',
   paywallPreviewTitles: [
     'Full analysis, axis by axis',
     'Where you disagree most',
@@ -610,22 +644,40 @@ export const en: Strings = {
     '10 countries or regions to live in'
   ],
   paywallModalTag: 'Your full report',
-  paywallModalTitle: 'Understand your political profile in depth',
-  paywallModalLead: 'Go beyond the result: see what lies behind each axis, where you disagree most and who would govern beside you.',
-  paywallIncludesTitle: 'What you will get:',
+  paywallModalTitle: 'Get access to the complete result of your political views',
+  paywallModalLead: 'Understand how you see the world axis by axis, find out which current country or region looks most like you, and much more.',
+  paywallPdfTitle: 'Take your full report as a PDF',
+  paywallPdfLead: 'The analysis of all 12 axes, your ideal government and the countries to live in, in a PDF to keep and reread whenever you like.',
+  paywallIncludesTitle: 'What you unlock:',
   paywallIncludes: [
-    { lead: 'Analysis of all 12 axes, one by one:', text: 'what your position on each axis means and what weighed most in your answers.' },
-    { lead: 'Where you disagree most:', text: 'with your closest ideology, figure and country, axis by axis.' },
-    { lead: 'Your ideal government:', text: 'nine posts filled by the figures most compatible with you.' },
-    { lead: 'Your ideological timeline:', text: 'the closest profiles of each era, from Antiquity to the 21st century.' },
-    { lead: 'Which country to move to:', text: 'the 10 current countries closest to your political ideals, to find out where you would feel at home.' },
-    { lead: 'Figures by field:', text: 'the one most compatible with you in politics, philosophy, economics and the other fields.' },
-    { lead: 'Full ranking and spreadsheet:', text: 'your compatibility with the whole catalog, to export to Excel.' }
+    { lead: 'Your ideal government:', text: 'nine posts filled by people who think like you.' },
+    { lead: 'Which country to move to:', text: 'the 10 countries closest to your ideals.' },
+    { lead: 'Where you disagree most:', text: 'with the ideology, figure and country closest to you.' },
+    { lead: 'All 12 axes, one by one:', text: 'what each of your positions reveals, why it is praised and why it is criticized.' },
+    { lead: 'Your timeline:', text: 'who thought like you, from Antiquity to the 21st century.' },
+    { lead: 'Your ideal leader by field:', text: 'politics, economics, philosophy and more.' },
+    { lead: 'Full ranking and PDF:', text: 'the whole catalog in a spreadsheet, and the report to keep.' }
   ],
-  paywallGuarantee: '14-day refund guarantee',
+  paywallOnce: 'one-time payment, no subscription',
+  paywallBlockCta: {
+    axes: 'Unlock my full analysis',
+    disagree: 'Unlock my full report',
+    government: 'Unlock my ideal government',
+    timeline: 'Unlock my timeline',
+    countries: 'Unlock my 10 regions'
+  },
+  paywallTeaser: {
+    axisTag: 'Your most striking axis',
+    disagreeWith: (name) => `The 3 axes where you differ most from ${name}.`,
+    seats: ['Political leader', 'Deputy political leader', 'Head of the Economy'],
+    eras: ['Antiquity', 'Middle Ages'],
+    topCountry: 'Closest today'
+  },
+  paywallInstant: 'Unlocked right after payment.',
+  paywallGuarantee: '14-Day Guarantee',
   paywallPayWith: 'Payment methods: cards, PayPal, Apple Pay, Google Pay and more, depending on your country',
   paywallPrice: 'US$ 3.99',
-  paywallCta: 'Unlock the full report',
+  paywallCta: 'Unlock my full report',
   paywallChecking: 'Confirming your payment...',
   paywallProblems: {
     denied: 'This payment does not apply to this result, or it was refunded.',
@@ -643,9 +695,9 @@ export const en: Strings = {
   unlockedCta: 'See report',
   unlockedCopy: 'Copy access link',
   unlockedCopied: 'Link copied!',
-  areasLockedTitle: 'Available in the Full report',
-  areasLockedText: 'See the figure closest to you in each field, from politics to philosophy, and much more in the full report of your result.',
-  areasLockedCta: 'See the full report',
+  areasLockedTitle: 'Which figure is most compatible with you in each field?',
+  areasLockedText: 'See the figure most compatible with you in politics, economics, philosophy and the other fields.',
+  areasLockedCta: 'Unlock my full report',
   personalitiesDistantTitle: 'Furthest from you',
   ideologyDistantTitle: 'The ideology furthest from you',
   phraseTitle: 'A sentence that describes you',
@@ -698,6 +750,7 @@ export const en: Strings = {
   sharePreviewLoading: 'Generating your card preview',
   generatingPdf: 'Generating PDF...',
   downloadPdf: 'Download PDF',
+  downloadPdfFull: 'Download your full report as PDF',
   report: {
     fileName: '12axes-report',
     docLabel: 'Full report',
@@ -721,6 +774,65 @@ export const en: Strings = {
     ctaTitle: 'Retake the quiz or share it'
   },
   shareFilePrefix: '12axes-profile',
+  shareCountriesFilePrefix: '12axes-countries',
+  shareCountriesTitle: 'The countries closest to my profile | 12axes.vercel.app',
+  shareCountriesMessage: (country, percent) =>
+    `See the countries closest to my political profile on the 12 Axes Political Quiz!\n\n` +
+    `🌎 Most compatible present-day country:\n` +
+    `${country} - ${percent}% compatibility\n\n` +
+    `👉 Take the test and find yours:\nhttps://12axes.vercel.app/en`,
+  shareCountriesCta: 'Share nearby countries',
+  sharePersonalitiesCta: 'Share nearby personalities',
+  sharePartiesCta: 'Share nearby parties',
+  shareCompassCta: 'Share values and compass',
+  shareGovernmentCta: 'Share ideal government',
+  shareTimelineCta: 'Share timeline',
+  shareLivingCta: 'Share countries to live in',
+  shareIdealGovernment: 'IDEAL GOVERNMENT',
+  shareTimeline: 'TIMELINE',
+  shareLiving: 'COUNTRIES TO LIVE IN',
+  shareBestEra: 'MOST COMPATIBLE ERA',
+  shareGovernmentFilePrefix: '12axes-ideal-government',
+  shareGovernmentTitle: 'My ideal government | 12axes.vercel.app',
+  shareGovernmentMessage: (leader) =>
+    `See my ideal government on the 12 Axes Political Quiz!\n\n` +
+    `🏛️ Political leader:\n${leader}\n\n` +
+    `👉 Take the test and build yours:\nhttps://12axes.vercel.app/en`,
+  shareTimelineFilePrefix: '12axes-timeline',
+  shareTimelineTitle: 'My ideological timeline | 12axes.vercel.app',
+  shareTimelineMessage: (era) =>
+    `See my ideological timeline on the 12 Axes Political Quiz!\n\n` +
+    `⏳ Most compatible era:\n${era}\n\n` +
+    `👉 Take the test and find yours:\nhttps://12axes.vercel.app/en`,
+  shareLivingFilePrefix: '12axes-countries-to-live-in',
+  shareLivingTitle: 'The countries where I would live | 12axes.vercel.app',
+  shareLivingMessage: (country, percent) =>
+    `See the countries where I would feel at home, according to the 12 Axes Political Quiz!\n\n` +
+    `🌎 Most compatible:\n${country} - ${percent}% compatibility\n\n` +
+    `👉 Take the test and find yours:\nhttps://12axes.vercel.app/en`,
+  shareNearbyPersonalities: 'NEARBY PERSONALITIES',
+  shareNearbyParties: 'NEARBY PARTIES',
+  shareValuesCompass: 'VALUES AND COMPASS',
+  sharePersonalitiesFilePrefix: '12axes-personalities',
+  sharePersonalitiesTitle: 'The personalities closest to my profile | 12axes.vercel.app',
+  sharePersonalitiesMessage: (name, percent) =>
+    `See the personalities closest to my political profile on the 12 Axes Political Quiz!\n\n` +
+    `👤 Most compatible personality:\n` +
+    `${name} - ${percent}% compatibility\n\n` +
+    `👉 Take the test and find yours:\nhttps://12axes.vercel.app/en`,
+  sharePartiesFilePrefix: '12axes-parties',
+  sharePartiesTitle: 'The parties closest to my profile | 12axes.vercel.app',
+  sharePartiesMessage: (name, percent) =>
+    `See the parties closest to my political profile on the 12 Axes Political Quiz!\n\n` +
+    `🏛️ Most compatible present-day party:\n` +
+    `${name} - ${percent}% compatibility\n\n` +
+    `👉 Take the test and find yours:\nhttps://12axes.vercel.app/en`,
+  shareCompassFilePrefix: '12axes-compass',
+  shareCompassTitle: 'My values and my political compass | 12axes.vercel.app',
+  shareCompassMessage: (ideology) =>
+    `See my values and my political compass on the 12 Axes Political Quiz!\n\n` +
+    `💡 My ideology:\n${ideology}\n\n` +
+    `👉 Take the test and find yours:\nhttps://12axes.vercel.app/en`,
   shareMessage: (ideology, ideologyPct, country, countryPct, personality, personalityPct) =>
     `I discovered my ideological profile on the 12 Axes Political Quiz!\n\n` +
     `💡 Most compatible ideology:\n` +

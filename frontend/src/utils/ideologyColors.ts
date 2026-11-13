@@ -29,10 +29,31 @@ const PALETTE: Record<IdeologyColorKey, IdeologyColor> = {
   anarquismo: { key: 'anarquismo', base: '#2B2B2B', bg: '#E2DFD8' }
 };
 
-// Nomes de categoria vindos da API (PT e EN) e ids do espectro da home.
+// Nomes de categoria vindos da API (PT, EN e ES) e ids do espectro da home.
 const ALIASES: Record<string, IdeologyColorKey> = {
   'esquerda radical': 'esq-radical',
   'radical left': 'esq-radical',
+  'izquierda radical': 'esq-radical',
+  izquierda: 'esquerda',
+  derecha: 'direita',
+  'extrema derecha': 'ext-direita',
+  'tercera posición': 'terceira',
+  'radikale linke': 'esq-radical',
+  linke: 'esquerda',
+  mitte: 'centro',
+  rechte: 'direita',
+  'extreme rechte': 'ext-direita',
+  'dritte position': 'terceira',
+  'sinistra radicale': 'esq-radical',
+  sinistra: 'esquerda',
+  destra: 'direita',
+  'estrema destra': 'ext-direita',
+  'terza posizione': 'terceira',
+  anarchico: 'anarquismo',
+  libertär: 'libertario',
+  anarchistisch: 'anarquismo',
+  libertario: 'libertario',
+  anarquista: 'anarquismo',
   'left-radical': 'esq-radical',
   esquerda: 'esquerda',
   left: 'esquerda',
@@ -49,7 +70,6 @@ const ALIASES: Record<string, IdeologyColorKey> = {
   libertário: 'libertario',
   libertarian: 'libertario',
   anarquismo: 'anarquismo',
-  anarquista: 'anarquismo',
   anarchist: 'anarquismo'
 };
 
