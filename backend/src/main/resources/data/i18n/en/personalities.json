@@ -4886,5 +4886,19 @@
     "role": "175-IQ roided giant",
     "lifespan": "unknown–present",
     "description": "Fictional character standing 210 cm, with 36-inch delts and a 175 IQ, an open steroid user. He preaches an aristocracy of body and mind: hierarchy by merit, total sovereignty over one's own body and human enhancement through chemistry and technology."
+  },
+  {
+    "id": "lenny",
+    "name": "Lenny",
+    "role": "Gay communist militant",
+    "lifespan": "unknown–present",
+    "description": "Fictional character, a communist and openly gay. A Marxist-Leninist militant, he calls for abolishing private ownership of the means of production, for economic planning and for LGBT liberation as part of the class struggle."
+  },
+  {
+    "id": "bisavo-do-lenny",
+    "name": "Lenny's Great-Grandfather",
+    "role": "Falangist war hero",
+    "lifespan": "1912–1999",
+    "description": "Fictional character, Lenny's great-grandfather. An old-shirt Falangist decorated in the Spanish Civil War, a devout Catholic loyal to José Antonio's national syndicalism: God, fatherland and bread, against communism and liberalism."
   }
 ]

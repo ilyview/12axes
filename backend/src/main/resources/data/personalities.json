@@ -10579,5 +10579,33 @@
     "imageSourceUrl": "https://12axes.com.br/personalities/portraits/sero.jpg",
     "imageNote": "Retrato de Sero fornecido para o catálogo.",
     "religions": []
+  },
+  {
+    "id": "lenny",
+    "name": "Lenny",
+    "role": "Militante comunista gay",
+    "category": "ativista",
+    "lifespan": "desconhecido–presente",
+    "description": "Personagem fictício, comunista e gay assumido. Militante marxista-leninista, defende a abolição da propriedade privada dos meios de produção, a planificação econômica e a libertação LGBT como parte da luta de classes.",
+    "imagePath": "/personalities/portraits/lenny.jpg",
+    "imageSourceName": "Ilustração gerada para o catálogo",
+    "imageSourceUrl": "https://12axes.com.br/personalities/portraits/lenny.jpg",
+    "imageNote": "Silhueta ilustrativa; personagem fictício sem retrato real.",
+    "religions": []
+  },
+  {
+    "id": "bisavo-do-lenny",
+    "name": "Bisavô do Lenny",
+    "role": "Herói de guerra falangista",
+    "category": "intelectual",
+    "lifespan": "1912–1999",
+    "description": "Personagem fictício, bisavô de Lenny. Camisa velha da Falange condecorado na Guerra Civil Espanhola, católico fervoroso e fiel ao nacional-sindicalismo de José Antonio: Deus, pátria e pão, contra o comunismo e o liberalismo.",
+    "imagePath": "/personalities/portraits/bisavo-do-lenny.jpg",
+    "imageSourceName": "Ilustração gerada para o catálogo",
+    "imageSourceUrl": "https://12axes.com.br/personalities/portraits/bisavo-do-lenny.jpg",
+    "imageNote": "Silhueta ilustrativa; personagem fictício sem retrato real.",
+    "religions": [
+      "catholic"
+    ]
   }
 ]

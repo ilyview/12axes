@@ -12884,5 +12884,39 @@
       "moral": 49.0,
       "tecnologia": 90.1
     }
+  },
+  {
+    "personalityId": "lenny",
+    "vector": {
+      "estrutura": 24.7,
+      "representacao": 43.6,
+      "poder": 43.3,
+      "imigracao": 11.7,
+      "diplomacia": 36.0,
+      "intervencao": 73.2,
+      "economia": 97.2,
+      "controle": 94.9,
+      "comercio": 74.0,
+      "religiao": 95.2,
+      "moral": 87.1,
+      "tecnologia": 70.1
+    }
+  },
+  {
+    "personalityId": "bisavo-do-lenny",
+    "vector": {
+      "estrutura": 10.4,
+      "representacao": 10.2,
+      "poder": 88.6,
+      "imigracao": 83.7,
+      "diplomacia": 93.3,
+      "intervencao": 19.8,
+      "economia": 79.3,
+      "controle": 85.0,
+      "comercio": 91.1,
+      "religiao": 2.1,
+      "moral": 6.5,
+      "tecnologia": 45.2
+    }
   }
 ]

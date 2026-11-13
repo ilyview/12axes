@@ -4854,5 +4854,19 @@
     "role": "Gigante anabolizado, CI 175",
     "lifespan": "desconocido–presente",
     "description": "Personaje ficticio de 210 cm, con deltoides de 36 pulgadas y un CI de 175, usuario declarado de esteroides. Predica una aristocracia del cuerpo y la mente: jerarquía por mérito, soberanía total sobre el propio cuerpo y mejora humana mediante química y tecnología."
+  },
+  {
+    "id": "lenny",
+    "name": "Lenny",
+    "role": "Militante comunista gay",
+    "lifespan": "desconocido–presente",
+    "description": "Personaje ficticio, comunista y abiertamente gay. Militante marxista-leninista, defiende abolir la propiedad privada de los medios de producción, la planificación económica y la liberación LGBT como parte de la lucha de clases."
+  },
+  {
+    "id": "bisavo-do-lenny",
+    "name": "Bisabuelo de Lenny",
+    "role": "Héroe de guerra falangista",
+    "lifespan": "1912–1999",
+    "description": "Personaje ficticio, bisabuelo de Lenny. Falangista de camisa vieja condecorado en la Guerra Civil Española, católico devoto fiel al sindicalismo nacional de José Antonio: Dios, patria y pan, contra el comunismo y el liberalismo."
   }
 ]

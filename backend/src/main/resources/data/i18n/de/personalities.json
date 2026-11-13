@@ -4854,5 +4854,19 @@
     "role": "Steroid-Riese mit IQ 175",
     "lifespan": "unbekannt–heute",
     "description": "Fiktive Figur mit 210 cm Größe, 36-Zoll-Delts und einem IQ von 175, offener Steroidnutzer. Er predigt eine Aristokratie aus Körper und Geist: Hierarchie nach Leistung, völlige Souveränität über den eigenen Körper und Verbesserung des Menschen durch Chemie und Technik."
+  },
+  {
+    "id": "lenny",
+    "name": "Lenny",
+    "role": "Schwuler Kommunist",
+    "lifespan": "unbekannt–heute",
+    "description": "Fiktive Figur, Kommunist und offen schwul. Als marxistisch-leninistischer Aktivist fordert er die Abschaffung des Privateigentums an den Produktionsmitteln, Wirtschaftsplanung und LGBT-Befreiung als Teil des Klassenkampfs."
+  },
+  {
+    "id": "bisavo-do-lenny",
+    "name": "Lennys Urgroßvater",
+    "role": "Falangistischer Kriegsheld",
+    "lifespan": "1912–1999",
+    "description": "Fiktive Figur, Lennys Urgroßvater. Falangist der ersten Stunde, im Spanischen Bürgerkrieg ausgezeichnet, strenggläubiger Katholik und dem nationalen Syndikalismus José Antonios treu: Gott, Vaterland und Brot, gegen Kommunismus und Liberalismus."
   }
 ]
