@@ -4831,5 +4831,53 @@
     "role": "Industrialist, Hitler backer",
     "lifespan": "1873–1951",
     "description": "German steel magnate (Vereinigte Stahlwerke) and devout Catholic. He funded the NSDAP from the 1920s; he broke with Hitler in 1939 over the war and the persecution of the Church, fled, was held in concentration camps and later fined in denazification."
+  },
+  {
+    "id": "mike-ma",
+    "name": "Mike Ma",
+    "role": "Ecofascist writer",
+    "description": "American writer known as Mike Ma, he advocates ecofascism and industrial collapse, founded the Pine Tree Party and wrote 'Harassment Architecture' and 'Gothic Violence'."
+  },
+  {
+    "id": "dennis-becker",
+    "name": "Dennis Becker",
+    "role": "Minister of the Fahrplan in DB-Staat II",
+    "description": "Career bureaucrat and Minister of the Fahrplan in DB-Staat II. The living embodiment of the railway state: he announces timetables with absolute conviction, demands punctuality from passengers, and blames the weather, the tracks and the 20th century for every delay. He has never missed a train — the train misses him."
+  },
+  {
+    "id": "sigma-lord",
+    "name": "The Sigma Lord",
+    "role": "Founder of Ligma Feudalism",
+    "description": "Founder of Ligma Feudalism and Supreme Sigma Lord of Sigmatopia. Refused to hold a conventional job because it was too beta. Governs by mindset, not by law."
+  },
+  {
+    "id": "vibemaster-general",
+    "name": "The Vibemaster General",
+    "role": "Founder of Vibe Communism",
+    "description": "Founder of the Unbothered Republic and first Vibemaster General in history. Has never been seen stressed. Nationalised all means of production one afternoon and then went to get some sun."
+  },
+  {
+    "id": "ceo-president",
+    "name": "CEO-President",
+    "role": "Founder of Corpianism",
+    "description": "First CEO-President of Corporatia. Founded the state while serving as CFO of a holding company that owned the holding company that owned the government. Governs with quarterly KPIs and mandatory board meetings for all citizens."
+  },
+  {
+    "id": "grand-elder",
+    "name": "The Grand Elder",
+    "role": "Lifetime President of the Council of Elders",
+    "description": "Lifetime President of the Council of Elders of Senium. Is 94 years old and remembers everything. Deeply suspicious of microwaves. Governs with accumulated wisdom and refuses to use email."
+  },
+  {
+    "id": "grand-lorekeeper",
+    "name": "The Grand Lorekeeper",
+    "role": "Supreme Guardian of the Lore",
+    "description": "Supreme Guardian of the Lore and founder of the Grand Archive. Nobody knows his age. Governs through knowledge accumulated across 47,000 tomes. Considers electricity suspicious."
+  },
+  {
+    "id": "hatred",
+    "name": "Hatred",
+    "role": "Embodiment of total refusal",
+    "description": "The person behind the Hatred ideology does not govern, promise, or explain: they only deny. Where others offer a programme, they offer a refusal; where others ask for hope, they answer with contempt. It is what remains when someone disagrees with everything."
   }
 ]

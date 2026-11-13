@@ -10460,5 +10460,111 @@
     "religions": [
       "catholic"
     ]
+  },
+  {
+    "id": "mike-ma",
+    "name": "Mike Ma",
+    "role": "Escritor ecofascista",
+    "category": "intelectual",
+    "lifespan": "1995–",
+    "description": "Escritor americano conhecido como Mike Ma, defende o ecofascismo e o colapso industrial, fundou o Pine Tree Party e escreveu 'Harassment Architecture' e 'Gothic Violence'.",
+    "imagePath": "/personalities/portraits/mike-ma.jpg",
+    "imageSourceName": "Wikipédia / arquivo fornecido pelo usuário",
+    "imageSourceUrl": "https://en.wikipedia.org/wiki/Mike_Ma",
+    "imageNote": "Retrato de Mike Ma fornecido para o catálogo.",
+    "religions": []
+  },
+  {
+    "id": "dennis-becker",
+    "name": "Dennis Becker",
+    "role": "Ministro do Fahrplan no DB-Staat II",
+    "category": "politico",
+    "lifespan": "1980–presente",
+    "description": "Burocrata vitalício e Ministro do Fahrplan no DB-Staat II. Personifica o Estado ferroviário: anuncia horários com convicção absoluta, exige pontualidade dos passageiros e culpa o clima, os trilhos e o século XX por cada atraso. Nunca perdeu um comboio — é o comboio que perde por ele.",
+    "imagePath": "/personalities/portraits/dennis-becker.png",
+    "imageSourceName": "DB-Staat II Ministry of Timetables",
+    "imageSourceUrl": "https://12axes.com.br/personalities/portraits/dennis-becker.png",
+    "imageNote": "",
+    "religions": []
+  },
+  {
+    "id": "sigma-lord",
+    "name": "O Sigma Lord",
+    "role": "Fundador do Ligma Feudalismo",
+    "category": "politico",
+    "lifespan": "1985–presente",
+    "description": "Fundador do Ligma Feudalismo e Sigma Lord Supremo de Sigmatopia. Recusou-se a ter um emprego convencional porque era demasiado sigma para trabalhar para betas. Governa pela mentalidade, não pela lei.",
+    "imagePath": "/personalities/portraits/sigma-lord.png",
+    "imageSourceName": "Sigmatopia State Archive",
+    "imageSourceUrl": "https://12axes.com.br/personalities/portraits/sigma-lord.png",
+    "imageNote": "",
+    "religions": []
+  },
+  {
+    "id": "vibemaster-general",
+    "name": "O Vibemaster General",
+    "role": "Fundador do Vibe Comunismo",
+    "category": "politico",
+    "lifespan": "1990–presente",
+    "description": "Fundador da República Unbothered e primeiro Vibemaster General da história. Nunca foi visto estressado. Nacionalizou todos os meios de produção numa tarde e depois foi tomar sol.",
+    "imagePath": "/personalities/portraits/vibemaster-general.webp",
+    "imageSourceName": "Unbothered Republic Archive",
+    "imageSourceUrl": "https://12axes.com.br/personalities/portraits/vibemaster-general.webp",
+    "imageNote": "",
+    "religions": []
+  },
+  {
+    "id": "ceo-president",
+    "name": "CEO-Presidente",
+    "role": "Fundador do Corpianismo",
+    "category": "politico",
+    "lifespan": "1972–presente",
+    "description": "Primeiro CEO-Presidente de Corporatia. Fundou o estado enquanto era CFO de uma holding que detinha a holding que detinha o governo. Governa com KPIs trimestrais e reuniões de board obrigatórias para todos os cidadãos.",
+    "imagePath": "/personalities/portraits/ceo-president.jpg",
+    "imageSourceName": "Corporatia Inc. Annual Report",
+    "imageSourceUrl": "https://12axes.com.br/personalities/portraits/ceo-president.jpg",
+    "imageNote": "",
+    "religions": []
+  },
+  {
+    "id": "grand-elder",
+    "name": "O Grande Ancião",
+    "role": "Presidente Vitalício do Conselho dos Anciãos",
+    "category": "politico",
+    "lifespan": "1931–presente",
+    "description": "Presidente vitalício do Conselho dos Anciãos de Senium. Tem 94 anos e lembra-se de tudo. Desconfia profundamente do microondas. Governa com sabedoria acumulada e recusa-se a usar email.",
+    "imagePath": "/personalities/portraits/grand-elder.jpg",
+    "imageSourceName": "Senium Elder Council",
+    "imageSourceUrl": "https://12axes.com.br/personalities/portraits/grand-elder.jpg",
+    "imageNote": "",
+    "religions": [
+      "other"
+    ]
+  },
+  {
+    "id": "grand-lorekeeper",
+    "name": "O Grão-Lorekeeper",
+    "role": "Guardião Supremo do Lore",
+    "category": "politico",
+    "lifespan": "desconhecido–presente",
+    "description": "Guardião Supremo do Lore e fundador do Grande Arquivo. Ninguém sabe a sua idade. Governa através do conhecimento acumulado em 47.000 tomos. Considera a electricidade suspeita.",
+    "imagePath": "/personalities/portraits/grand-lorekeeper.jpg",
+    "imageSourceName": "The Grand Archive",
+    "imageSourceUrl": "https://12axes.com.br/personalities/portraits/grand-lorekeeper.jpg",
+    "imageNote": "",
+    "religions": []
+  },
+  {
+    "id": "hatred",
+    "name": "Hatred",
+    "role": "Encarnação da recusa total",
+    "category": "politico",
+    "lifespan": "desconhecido–presente",
+    "description": "A pessoa por trás da ideologia Hatred não governa, não promete e não explica: apenas nega. Onde outros oferecem um programa, ela oferece uma recusa; onde outros pedem esperança, ela responde com desprezo. É o que sobra quando alguém discorda de tudo.",
+    "imagePath": "/personalities/portraits/hatred.jpg",
+    "imageSourceName": "Rawpixel",
+    "imageSourceUrl": "https://www.rawpixel.com/",
+    "imageNote": "Retrato via Rawpixel (2025).",
+    "religions": []
   }
 ]

@@ -47,6 +47,13 @@ public class QuizDataService {
     /** Idiomas gerados por i18n-tools/sync.py a partir do inglês: o que faltar neles usa o inglês. */
     public static final java.util.List<String> GENERATED_LANGS = java.util.List.of(LANG_ES, LANG_DE, LANG_IT);
 
+    // Perfil secreto: so aparece quando todas as respostas sao "discordo totalmente".
+    public static final String HATRED_EASTER_EGG_ID = "hatred";
+
+    public static boolean isEasterEgg(String id) {
+        return HATRED_EASTER_EGG_ID.equals(id);
+    }
+
     private final ObjectMapper objectMapper;
     private Map<String, LocaleBundle> bundles;
     private Map<String, IdeologyProfile> ideologyProfiles;

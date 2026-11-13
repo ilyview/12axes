@@ -5578,5 +5578,37 @@
       "pt": "",
       "en": ""
     }
+  },
+  {
+    "personalityId": "mike-ma",
+    "title": {
+      "pt": "Harassment Architecture",
+      "en": "Harassment Architecture",
+      "es": "Harassment Architecture",
+      "de": "Harassment Architecture",
+      "it": "Harassment Architecture"
+    },
+    "year": 2019,
+    "url": {
+      "pt": "",
+      "en": ""
+    },
+    "coverPath": "/books/covers/harassment-architecture.jpg"
+  },
+  {
+    "personalityId": "mike-ma",
+    "title": {
+      "pt": "Gothic Violence",
+      "en": "Gothic Violence",
+      "es": "Gothic Violence",
+      "de": "Gothic Violence",
+      "it": "Gothic Violence"
+    },
+    "year": 2021,
+    "url": {
+      "pt": "",
+      "en": ""
+    },
+    "coverPath": "/books/covers/gothic-violence.jpg"
   }
 ]
