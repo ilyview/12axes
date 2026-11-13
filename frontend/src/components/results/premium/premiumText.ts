@@ -18,12 +18,29 @@ interface PremiumText {
   gapRank: (position: number) => string;
   governmentTitle: string;
   governmentRolesTitle: string;
+  governmentSwap: {
+    aria: (seat: string) => string;
+    title: (seat: string) => string;
+    lead: (category: string) => string;
+    current: string;
+    none: string;
+    swapped: string;
+    searchLabel: string;
+    /** Quem já ocupa outro cargo: a busca avisa que ele troca de lugar. */
+    holdsNow: (seat: string) => string;
+    searchPlaceholder: string;
+    searchNone: string;
+    searchError: string;
+    searching: string;
+  };
   governmentRolesLead: string;
   /** Como cada parágrafo do cargo abre, por eixo ("Politicamente,", "No poder,"...). */
   roleAxis: Record<string, string>;
   /** Sujeito dos parágrafos seguintes ao primeiro, no lugar do nome; nulo quando o idioma o omite. */
   roleSubject: string | null;
   governmentWhy: (area: string, pct: number) => string;
+  /** Cargo ocupado por uma escolha do usuário: não dá para dizer que é a figura mais próxima. */
+  governmentWhySwapped: (pct: number) => string;
   timelineTitle: string;
   timelineEraNames: Record<'antiguidade' | 'medieval' | 'moderna' | 'xix' | 'xx' | 'xxi', string>;
   timelineRange: (from: number | null, to: number | null) => string;
@@ -54,6 +71,20 @@ const pt: PremiumText = {
   gapRank: (position) => (position === 1 ? 'Maior diferença' : `${position}ª maior diferença`),
   governmentTitle: 'Seu governo ideal',
   governmentRolesTitle: 'O papel de cada um no seu governo',
+  governmentSwap: {
+    aria: (seat) => `Trocar quem ocupa o cargo de ${seat}`,
+    title: (seat) => `Trocar: ${seat}`,
+    lead: (category) => `As figuras de ${category} mais compatíveis com você depois da atual. Escolha uma para montar o seu governo ideal.`,
+    current: 'Atual',
+    none: 'Não há outras figuras desta categoria para trocar.',
+    swapped: 'Trocado por você',
+    searchLabel: 'Ou busque qualquer outra figura',
+    holdsNow: (seat) => `Hoje: ${seat}. Troca de lugar.`,
+    searchPlaceholder: 'Digite um nome',
+    searchNone: 'Ninguém encontrado com esse nome.',
+    searchError: 'Não foi possível buscar agora. Tente de novo em instantes.',
+    searching: 'Buscando…'
+  },
   governmentRolesLead: 'Cada cargo é descrito a partir das suas posições nos eixos que mais pesam nele, para você ver por que o resultado saiu assim.',
   roleAxis: {
     estrutura: 'Na estrutura,',
@@ -71,6 +102,7 @@ const pt: PremiumText = {
   },
   roleSubject: null,
   governmentWhy: (area, pct) => `Ocupa o cargo por ser a figura mais próxima de você na categoria ${area}: ${pct}% de compatibilidade.`,
+  governmentWhySwapped: (pct) => `Entrou no cargo pela sua troca: ${pct}% de compatibilidade com o seu resultado.`,
   timelineTitle: 'Sua linha do tempo ideológica',
   timelineEraNames: {
     antiguidade: 'Antiguidade',
@@ -123,6 +155,20 @@ const en: PremiumText = {
   gapRank: (position) => (position === 1 ? 'Biggest gap' : position === 2 ? '2nd biggest gap' : '3rd biggest gap'),
   governmentTitle: 'Your ideal government',
   governmentRolesTitle: 'Each member’s role in your government',
+  governmentSwap: {
+    aria: (seat) => `Swap who holds the ${seat} seat`,
+    title: (seat) => `Swap: ${seat}`,
+    lead: (category) => `The ${category} figures closest to you after the current one. Pick one to build your ideal government.`,
+    current: 'Current',
+    none: 'There are no other figures in this category to swap in.',
+    swapped: 'Swapped by you',
+    searchLabel: 'Or search for any other figure',
+    holdsNow: (seat) => `Now: ${seat}. Swaps places.`,
+    searchPlaceholder: 'Type a name',
+    searchNone: 'Nobody found with that name.',
+    searchError: 'Could not search right now. Please try again in a moment.',
+    searching: 'Searching…'
+  },
   governmentRolesLead: 'Each seat is described from your positions on the axes that weigh most in it, so you can see why the result came out this way.',
   roleAxis: {
     estrutura: 'On structure,',
@@ -140,6 +186,7 @@ const en: PremiumText = {
   },
   roleSubject: 'they',
   governmentWhy: (area, pct) => `Holds the seat as the figure closest to you in the ${area} category: ${pct}% compatibility.`,
+  governmentWhySwapped: (pct) => `Took the seat through your swap: ${pct}% compatibility with your result.`,
   timelineTitle: 'Your ideological timeline',
   timelineEraNames: {
     antiguidade: 'Antiquity',
@@ -192,6 +239,20 @@ const es: PremiumText = {
   gapRank: (position) => (position === 1 ? 'Mayor diferencia' : position === 2 ? '2.ª mayor diferencia' : '3.ª mayor diferencia'),
   governmentTitle: 'Tu gobierno ideal',
   governmentRolesTitle: 'El papel de cada uno en tu gobierno',
+  governmentSwap: {
+    aria: (seat) => `Cambiar quién ocupa el cargo de ${seat}`,
+    title: (seat) => `Cambiar: ${seat}`,
+    lead: (category) => `Las figuras de ${category} más cercanas a ti después de la actual. Elige una para armar tu gobierno ideal.`,
+    current: 'Actual',
+    none: 'No hay otras figuras de esta categoría para cambiar.',
+    swapped: 'Cambiado por ti',
+    searchLabel: 'O busca cualquier otra figura',
+    holdsNow: (seat) => `Hoy: ${seat}. Cambia de lugar.`,
+    searchPlaceholder: 'Escribe un nombre',
+    searchNone: 'No se encontró a nadie con ese nombre.',
+    searchError: 'No se pudo buscar ahora. Inténtalo de nuevo en un momento.',
+    searching: 'Buscando…'
+  },
   governmentRolesLead: 'Cada cargo se describe a partir de tus posiciones en los ejes que más pesan en él, para que veas por qué el resultado salió así.',
   roleAxis: {
     estrutura: 'En la estructura,',
@@ -209,6 +270,7 @@ const es: PremiumText = {
   },
   roleSubject: null,
   governmentWhy: (area, pct) => `Ocupa el cargo por ser la figura más cercana a ti en la categoría ${area}: ${pct}% de compatibilidad.`,
+  governmentWhySwapped: (pct) => `Llegó al cargo por tu cambio: ${pct}% de compatibilidad con tu resultado.`,
   timelineTitle: 'Tu línea del tiempo ideológica',
   timelineEraNames: {
     antiguidade: 'Antigüedad',
@@ -245,4 +307,173 @@ const es: PremiumText = {
   saveCopied: 'Enlace copiado',
 };
 
-export const P: PremiumText = LANG === 'pt' ? pt : LANG === 'es' ? es : en;
+const de: PremiumText = {
+  title: 'Vollständiger Bericht',
+  devBadge: 'Entwicklungsmodus: ohne Zahlung geöffnet, nur auf diesem Rechner.',
+  loading: 'Dein vollständiger Bericht wird erstellt...',
+  error: 'Der Bericht konnte nicht geladen werden. Versuche es gleich noch einmal.',
+  retry: 'Erneut versuchen',
+  historical: 'historisch',
+  axisTitle: 'Vollständige Analyse, Achse für Achse',
+  positions: { you: 'Du', ideology: 'Ideologie', personality: 'Persönlichkeit', country: 'Land' },
+  levelLabels: { equilibrado: 'Ausgeglichen', inclinado: 'Tendenz', forte: 'Stark', muito_forte: 'Sehr stark' },
+  disagreeTitle: 'Wo du am meisten abweichst',
+  disagreeKinds: { ideology: 'von deiner Ideologie', personality: 'von deiner Persönlichkeit', country: 'von deinem Land' },
+  disagreeLegendProfile: 'Profil',
+  gapRank: (position) => (position === 1 ? 'Größte Abweichung' : position === 2 ? '2. größte Abweichung' : '3. größte Abweichung'),
+  governmentTitle: 'Deine ideale Regierung',
+  governmentRolesTitle: 'Die Rolle jedes Mitglieds in deiner Regierung',
+  governmentSwap: {
+    aria: (seat) => `Besetzung ändern: ${seat}`,
+    title: (seat) => `Tauschen: ${seat}`,
+    lead: (category) => `Die Persönlichkeiten der Kategorie ${category} mit der höchsten Übereinstimmung mit dir nach der aktuellen. Wähle eine aus, um deine ideale Regierung zusammenzustellen.`,
+    current: 'Aktuell',
+    none: 'Es gibt keine weiteren Persönlichkeiten in dieser Kategorie zum Tauschen.',
+    swapped: 'Von dir getauscht',
+    searchLabel: 'Oder suche eine beliebige andere Persönlichkeit',
+    holdsNow: (seat) => `Aktuell: ${seat}. Tauscht den Platz.`,
+    searchPlaceholder: 'Name eingeben',
+    searchNone: 'Niemand mit diesem Namen gefunden.',
+    searchError: 'Die Suche ist gerade nicht möglich. Versuche es gleich noch einmal.',
+    searching: 'Suche läuft…'
+  },
+  governmentRolesLead: 'Jedes Amt wird anhand deiner Positionen auf den Achsen beschrieben, die dafür am meisten zählen, damit du siehst, warum das Ergebnis so ausgefallen ist.',
+  // Die Absätze nach dem ersten beginnen mit "diese Person würde ...": nach dem Doppelpunkt ein vollständiger Hauptsatz.
+  roleAxis: {
+    estrutura: 'Bei der Struktur:',
+    representacao: 'Politisch:',
+    poder: 'Bei der Macht:',
+    imigracao: 'Bei der Einwanderung:',
+    diplomacia: 'In der Diplomatie:',
+    intervencao: 'Bei der Intervention:',
+    economia: 'In der Wirtschaft:',
+    controle: 'Bei der Steuerung:',
+    comercio: 'Im Handel:',
+    religiao: 'In der Religion:',
+    moral: 'In der Moral:',
+    tecnologia: 'In der Technologie:'
+  },
+  roleSubject: 'diese Person',
+  governmentWhy: (area, pct) => `Hat das Amt inne, weil diese Persönlichkeit in der Kategorie ${area} am besten zu dir passt: ${pct} % Übereinstimmung.`,
+  governmentWhySwapped: (pct) => `Ist durch deinen Tausch ins Amt gekommen: ${pct} % Übereinstimmung mit deinem Ergebnis.`,
+  timelineTitle: 'Deine ideologische Zeitleiste',
+  timelineEraNames: {
+    antiguidade: 'Antike',
+    medieval: 'Mittelalter',
+    moderna: 'Frühe Neuzeit',
+    xix: '19. Jahrhundert',
+    xx: '20. Jahrhundert',
+    xxi: '21. Jahrhundert'
+  },
+  timelineRange: (from, to) => {
+    const year = (value: number) => (value < 0 ? `${-value} v. Chr.` : String(value));
+    if (from === null && to !== null) return `Bis ${year(to)}`;
+    if (to === null && from !== null) return `Seit ${year(from)}`;
+    return `${year(from ?? 0)} bis ${year(to ?? 0)}`;
+  },
+  timelineCurrent: 'Aktuell',
+  timelineBestEra: 'Epoche mit der höchsten Übereinstimmung:',
+  seats: {
+    lider: 'Politische Führung',
+    vice: 'Stellvertretende politische Führung',
+    economia: 'Verantwortlich für Wirtschaft',
+    educacao: 'Verantwortlich für Bildung',
+    estrategia: 'Leitung Politische Strategie',
+    filosofia: 'Philosophischer Berater',
+    social: 'Koordination Soziales',
+    industria: 'Koordination Industrie und Innovation',
+    cultura: 'Berater für Kultur'
+  },
+  countriesTitle: '10 Länder oder Regionen zum Leben',
+  saveTitle: 'Bewahre deinen Zugang auf',
+  saveIntro: 'Um diesen Bericht auf einem anderen Gerät oder nach dem Löschen des Browserspeichers zu öffnen, speichere den Link unten. Wer den Link hat, kann den Bericht zu diesem Ergebnis öffnen, also bewahre ihn sorgfältig auf.',
+  saveField: 'Zugangslink zum Bericht',
+  saveCopy: 'Link kopieren',
+  saveCopied: 'Link kopiert',
+};
+
+const it: PremiumText = {
+  title: 'Rapporto completo',
+  devBadge: 'Modalità di sviluppo: aperto senza pagamento, solo su questa macchina.',
+  loading: 'Preparazione del tuo rapporto completo...',
+  error: 'Non è stato possibile caricare il rapporto. Riprova tra un attimo.',
+  retry: 'Riprova',
+  historical: 'storico',
+  axisTitle: 'Analisi completa, asse per asse',
+  positions: { you: 'Tu', ideology: 'Ideologia', personality: 'Figura', country: 'Paese' },
+  levelLabels: { equilibrado: 'Equilibrato', inclinado: 'Tendente', forte: 'Forte', muito_forte: 'Molto forte' },
+  disagreeTitle: 'Dove sei più in disaccordo',
+  disagreeKinds: { ideology: 'con la tua ideologia', personality: 'con la tua figura', country: 'con il tuo paese' },
+  disagreeLegendProfile: 'Profilo',
+  gapRank: (position) => (position === 1 ? 'Divario maggiore' : position === 2 ? '2° divario maggiore' : '3° divario maggiore'),
+  governmentTitle: 'Il tuo governo ideale',
+  governmentRolesTitle: 'Il ruolo di ogni membro nel tuo governo',
+  governmentSwap: {
+    aria: (seat) => `Cambia chi ricopre l'incarico di ${seat}`,
+    title: (seat) => `Scambia: ${seat}`,
+    lead: (category) => `Le figure della categoria ${category} più vicine a te dopo quella attuale. Scegline una per costruire il tuo governo ideale.`,
+    current: 'Attuale',
+    none: 'Non ci sono altre figure in questa categoria da inserire.',
+    swapped: 'Scambiata da te',
+    searchLabel: 'Oppure cerca qualsiasi altra figura',
+    holdsNow: (seat) => `Ora: ${seat}. Scambia gli incarichi.`,
+    searchPlaceholder: 'Scrivi un nome',
+    searchNone: 'Nessuno trovato con questo nome.',
+    searchError: 'Non è stato possibile cercare in questo momento. Riprova tra un attimo.',
+    searching: 'Ricerca in corso…'
+  },
+  governmentRolesLead: 'Ogni incarico è descritto a partire dalle tue posizioni sugli assi che pesano di più in esso, così puoi vedere perché il risultato è questo.',
+  roleAxis: {
+    estrutura: 'Sulla struttura,',
+    representacao: 'Politicamente,',
+    poder: 'Sul potere,',
+    imigracao: "Sull'immigrazione,",
+    diplomacia: 'Sulla diplomazia,',
+    intervencao: "Sull'intervento,",
+    economia: "Sull'economia,",
+    controle: 'Sul controllo,',
+    comercio: 'Sul commercio,',
+    religiao: 'Sulla religione,',
+    moral: 'Sulla morale,',
+    tecnologia: 'Sulla tecnologia,'
+  },
+  roleSubject: 'questa persona',
+  governmentWhy: (area, pct) => `Ricopre l'incarico come la figura più vicina a te nella categoria ${area}: ${pct}% di compatibilità.`,
+  governmentWhySwapped: (pct) => `Ha preso l'incarico con il tuo scambio: ${pct}% di compatibilità con il tuo risultato.`,
+  timelineTitle: 'La tua linea del tempo ideologica',
+  timelineEraNames: {
+    antiguidade: 'Antichità',
+    medieval: 'Medioevo',
+    moderna: 'Età moderna',
+    xix: 'XIX secolo',
+    xx: 'XX secolo',
+    xxi: 'XXI secolo'
+  },
+  timelineRange: (from, to) => {
+    const year = (value: number) => (value < 0 ? `${-value} a.C.` : String(value));
+    if (from === null && to !== null) return `Fino al ${year(to)}`;
+    if (to === null && from !== null) return `Dal ${year(from)}`;
+    return `Dal ${year(from ?? 0)} al ${year(to ?? 0)}`;
+  },
+  timelineCurrent: 'Attuale',
+  timelineBestEra: 'Epoca più compatibile:',
+  seats: {
+    lider: 'Leader politico',
+    vice: 'Vice leader politico',
+    economia: "Capo dell'economia",
+    educacao: "Capo dell'istruzione",
+    estrategia: 'Capo della strategia politica',
+    filosofia: 'Consigliere filosofico',
+    social: 'Coordinatore degli affari sociali',
+    industria: 'Coordinatore di industria e innovazione',
+    cultura: 'Consigliere culturale'
+  },
+  countriesTitle: '10 paesi o regioni in cui vivere',
+  saveTitle: 'Conserva il tuo accesso',
+  saveIntro: "Per aprire questo rapporto su un altro dispositivo, o dopo aver cancellato i dati del browser, salva il link qui sotto. Chiunque abbia il link apre il rapporto di questo risultato, quindi conservalo con cura.",
+  saveField: 'Link di accesso al rapporto',
+  saveCopy: 'Copia il link',
+  saveCopied: 'Link copiato',
+};
+
+export const P: PremiumText = LANG === 'pt' ? pt : LANG === 'es' ? es : LANG === 'de' ? de : LANG === 'it' ? it : en;

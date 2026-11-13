@@ -34,23 +34,16 @@ function compact(value: number): string {
   return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
 }
 
-export function shortResultQuery(values: number[], religion: Religion | null, lang: Lang, hatredEgg = false): string {
+export function shortResultQuery(values: number[], religion: Religion | null, lang: Lang): string {
   const parts = [`v=${values.map(compact).join('-')}`];
   if (religion) parts.push(`r=${RELIGION_CODES[religion]}`);
   if (lang !== 'pt') parts.push(`l=${lang}`);
-  if (hatredEgg) parts.push('e=1');
   return parts.join('&');
 }
 
 /** Link curto de um resultado, para o QR code do cartão de compartilhamento. */
-export function shortResultUrl(
-  values: number[],
-  religion: Religion | null,
-  lang: Lang,
-  hatredEgg = false,
-  origin = PUBLIC_ORIGIN
-): string {
-  return `${origin}${SHORT_RESULT_PATH}?${shortResultQuery(values, religion, lang, hatredEgg)}`;
+export function shortResultUrl(values: number[], religion: Religion | null, lang: Lang, origin = PUBLIC_ORIGIN): string {
+  return `${origin}${SHORT_RESULT_PATH}?${shortResultQuery(values, religion, lang)}`;
 }
 
 /** Lê /r?v=…&r=…: null quando não traz os 12 valores válidos (0 a 100). */

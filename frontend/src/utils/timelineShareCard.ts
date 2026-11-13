@@ -269,8 +269,7 @@ export function buildTimelineShareCard(
       shortResultUrl(
         result.axes.map((axis) => Math.round(axis.leftPercent)),
         religion,
-        LANG,
-        result.topMatch.ideologyId === 'hatred'
+        LANG
       )
     )
   );

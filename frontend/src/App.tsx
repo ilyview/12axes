@@ -60,11 +60,11 @@ const FULL_MODE =
 
 const INITIAL_VARIANT: QuizVariant = FULL_MODE ? 'extreme' : 'short';
 
-// /compare, /en/compare e /es/compare (comparação entre perfis do catálogo) são uma página à parte, carregada sob
+// /compare, /en/compare, /es/compare, /de/compare e /it/compare (comparação entre perfis do catálogo) são uma página à parte, carregada sob
 // demanda: o catálogo inteiro só é baixado por quem abre essa rota.
 const COMPARE_MODE =
   typeof window !== 'undefined' &&
-  ['/compare', '/en/compare', '/es/compare'].includes(window.location.pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/');
+  ['/compare', '/en/compare', '/es/compare', '/de/compare', '/it/compare'].includes(window.location.pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/');
 
 // /compare/people: duas pessoas pelo link do resultado de cada uma (vetores na própria URL).
 const COMPARE_PEOPLE_MODE =
@@ -132,9 +132,8 @@ function sharedResultUrl(result: QuizResult, religion: Religion | null = null): 
   const query = result.axes
     .map((axis, index) => `${AXIS_URL_KEYS[index] ?? `x${index}`}=${axis.leftPercent}`)
     .join('&');
-  const egg = result.topMatch.ideologyId === 'hatred' ? '&egg=hatred' : '';
   // O idioma vai na URL: um reload ou a volta do pagamento não dependem do que está salvo no navegador.
-  return `/results?${query}${religion ? `&religion=${religion}` : ''}${egg}${LANG === 'pt' ? '' : `&lang=${LANG}`}`;
+  return `/results?${query}${religion ? `&religion=${religion}` : ''}${LANG === 'pt' ? '' : `&lang=${LANG}`}`;
 }
 
 // Últimas perguntas do bloco de arquétipos: religião e, só para quem escolhe cristianismo, a vertente

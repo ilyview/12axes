@@ -31,10 +31,18 @@ public class IdealGovernmentService {
             new Seat("cultura", "religioso")
     );
 
-    private final PersonalityMatcherService personalityMatcherService;
+    /**
+     * Quantas figuras de cada categoria seguem para o usuario trocar quem ocupa o cargo: sobram 3 opcoes mesmo quando as
+     * outras cadeiras ja levaram algumas (o vice sai da mesma categoria do lider).
+     */
+    public static final int CANDIDATES_PER_SEAT = 6;
 
-    public IdealGovernmentService(PersonalityMatcherService personalityMatcherService) {
+    private final PersonalityMatcherService personalityMatcherService;
+    private final ProfileSpectrumService profileSpectrumService;
+
+    public IdealGovernmentService(PersonalityMatcherService personalityMatcherService, ProfileSpectrumService profileSpectrumService) {
         this.personalityMatcherService = personalityMatcherService;
+        this.profileSpectrumService = profileSpectrumService;
     }
 
     public List<GovernmentSeat> build(List<AxisResult> axes, String lang, String religion) {
@@ -47,8 +55,17 @@ public class IdealGovernmentService {
                     .findFirst()
                     .orElseThrow(() -> new IllegalStateException("Nenhuma personalidade da categoria " + seat.category()));
             used.add(holder.personalityId());
-            seats.add(new GovernmentSeat(seat.key(), seat.category(), holder));
+            List<PersonalityMatch> candidates = ranking.stream()
+                    .filter(match -> seat.category().equals(match.category()))
+                    .limit(CANDIDATES_PER_SEAT)
+                    .map(match -> withSpectrum(match, lang))
+                    .toList();
+            seats.add(new GovernmentSeat(seat.key(), seat.category(), withSpectrum(holder, lang), candidates));
         }
         return List.copyOf(seats);
+    }
+
+    private PersonalityMatch withSpectrum(PersonalityMatch match, String lang) {
+        return match.vector() == null || match.vector().isEmpty() ? match : match.withSpectrum(profileSpectrumService.categoryOf(match.vector(), lang));
     }
 }

@@ -66,8 +66,7 @@ public class BookRecommendationService {
                 title,
                 book.year(),
                 affiliateUrl(localized(book.url(), lang), searchTitle(book, lang, title), storeAuthor, lang),
-                match.compatibility(),
-                book.coverPath()
+                match.compatibility()
         );
     }
 

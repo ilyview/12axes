@@ -354,8 +354,7 @@ export function buildCompassShareCard(
       shortResultUrl(
         result.axes.map((axis) => Math.round(axis.leftPercent)),
         religion,
-        LANG,
-        result.topMatch.ideologyId === 'hatred'
+        LANG
       ),
       undefined,
       { ink: color.base, cta: color.base, footerRule: rgba(INK, 0.2), qr: color.base }

@@ -40,6 +40,20 @@ const ALIASES: Record<string, IdeologyColorKey> = {
   derecha: 'direita',
   'extrema derecha': 'ext-direita',
   'tercera posición': 'terceira',
+  'radikale linke': 'esq-radical',
+  linke: 'esquerda',
+  mitte: 'centro',
+  rechte: 'direita',
+  'extreme rechte': 'ext-direita',
+  'dritte position': 'terceira',
+  'sinistra radicale': 'esq-radical',
+  sinistra: 'esquerda',
+  destra: 'direita',
+  'estrema destra': 'ext-direita',
+  'terza posizione': 'terceira',
+  anarchico: 'anarquismo',
+  libertär: 'libertario',
+  anarchistisch: 'anarquismo',
   libertario: 'libertario',
   anarquista: 'anarquismo',
   'left-radical': 'esq-radical',
@@ -58,8 +72,7 @@ const ALIASES: Record<string, IdeologyColorKey> = {
   libertário: 'libertario',
   libertarian: 'libertario',
   anarquismo: 'anarquismo',
-  anarchist: 'anarquismo',
-  raw: 'raw',
+  anarchist: 'anarquismo'
 };
 
 export const SPECTRUM_ORDER: IdeologyColor[] = [

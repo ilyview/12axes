@@ -1,8 +1,10 @@
 import { Fragment, useEffect, useState, type ReactNode } from 'react';
 import { fetchPremiumReport } from '../../../services/premiumApi';
 import { ApiError } from '../../../services/quizApi';
-import type { Axis, AxisResult, PremiumReport } from '../../../types/quiz';
+import type { Axis, AxisResult, PersonalityMatch, PremiumReport } from '../../../types/quiz';
 import type { SavedAnswers } from '../../../utils/quizProgress';
+import { applyGovernmentSwaps, type GovernmentPicks, type GovernmentSwaps } from '../../../utils/governmentSwaps';
+import type { SeatKey } from './GovernmentPanel';
 import { premiumPanels } from './PremiumPanels';
 import { SaveAccessLink } from './SaveAccessLink';
 import { P } from './premiumText';
@@ -24,12 +26,17 @@ interface Props {
   onDenied?: () => void;
   /** O botão de compartilhar o cartão de cada seção que tem um (governo, linha do tempo e países para viver). */
   shareButton?: (kind: 'government' | 'timeline' | 'living') => ReactNode;
+  /** As trocas do governo ideal feitas pelo usuário e como trocar (ou voltar à sugestão, com null). */
+  governmentSwaps?: GovernmentSwaps;
+  /** Quem o usuário achou na busca, para o cargo trocado por alguém fora das sugestões. */
+  governmentPicks?: GovernmentPicks;
+  onGovernmentSwap?: (seatKey: SeatKey, personalityId: string | null, found?: PersonalityMatch, others?: Record<string, string>) => void;
 }
 
 type State = { status: 'loading' } | { status: 'error' } | { status: 'ready'; report: PremiumReport };
 
 /** Conteúdo do Relatório Completo: carrega do endpoint protegido e mostra as seções pagas. */
-export default function PremiumReportSection({ vector, answers, token, religion, axes, results, devOpen = false, onReport, onDenied, shareButton }: Props) {
+export default function PremiumReportSection({ vector, answers, token, religion, axes, results, devOpen = false, onReport, onDenied, shareButton, governmentSwaps, governmentPicks, onGovernmentSwap }: Props) {
   const [state, setState] = useState<State>({ status: 'loading' });
   const [attempt, setAttempt] = useState(0);
 
@@ -82,7 +89,13 @@ export default function PremiumReportSection({ vector, answers, token, religion,
   return (
     <>
       {devOpen && <p className="e-prem-dev">{P.devBadge}</p>}
-      {premiumPanels(report, axes, results, shareButton).map(({ id, node }) => (
+      {premiumPanels(
+        governmentSwaps ? applyGovernmentSwaps(report, governmentSwaps, governmentPicks) : report,
+        axes,
+        results,
+        shareButton,
+        onGovernmentSwap && governmentSwaps ? { swaps: governmentSwaps, onSwap: onGovernmentSwap } : undefined
+      ).map(({ id, node }) => (
         <Fragment key={id}>{node}</Fragment>
       ))}
       {/* Só na página: o PDF usa premiumPanels sem esta seção. Sem token (modo de desenvolvimento) não há o que guardar. */}

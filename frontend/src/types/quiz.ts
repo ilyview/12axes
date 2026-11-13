@@ -186,6 +186,8 @@ export interface PersonalityMatch {
   compatibility: number;
   /** Vetor de 12 eixos (leftPercent) da personalidade. */
   vector?: Record<string, number>;
+  /** Espectro da pessoa (categoria da ideologia mais próxima do vetor dela): a cor dela no governo ideal. */
+  spectrum?: string | null;
 }
 
 export interface BookRecommendation {
@@ -298,6 +300,8 @@ export interface CompareDetail {
   vector: Record<string, number>;
   /** Religiões do perfil no catálogo (vazia quando não há vínculo). */
   religions?: string[];
+  /** Espectro do perfil (categoria da ideologia mais próxima do vetor dele). */
+  spectrum?: string;
 }
 
 /** Um perfil da página /compare: dados do catálogo e vetor de 12 eixos (leftPercent). */
@@ -390,6 +394,8 @@ export interface GovernmentSeat {
   seatKey: 'lider' | 'vice' | 'economia' | 'educacao' | 'estrategia' | 'filosofia' | 'social' | 'industria' | 'cultura';
   category: string;
   holder: PersonalityMatch;
+  /** As figuras mais compatíveis da categoria (a titular inclusive), para o usuário trocar quem ocupa o cargo; vazia na prévia. */
+  candidates: PersonalityMatch[];
 }
 
 export interface RankingRow {
