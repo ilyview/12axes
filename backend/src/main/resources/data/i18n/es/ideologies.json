@@ -1979,5 +1979,12 @@
     "description": "La ideología del rechazo absoluto: no propone programa, orden ni futuro, solo la negación de cada pregunta y de cada promesa política. Su único consenso es decir no a todo y su único proyecto es el desprecio.",
     "phrase": "Quiero una sociedad que diga no a cada pregunta, donde el rechazo total sea el único programa y el desprecio la única política.",
     "category": "Tercera posición"
+  },
+  {
+    "id": "deltocracia",
+    "name": "Deltocracia",
+    "description": "Sistema en el que la ciudadanía se mide en pulgadas de deltoides y puntos de CI. Ciudades-gimnasio soberanas compiten en un mercado libre total, los esteroides y la edición genética son un derecho sagrado, solo votan los mejorados y el Deltoides Supremo gobierna para siempre.",
+    "phrase": "Quiero ciudades-gimnasio soberanas en un mercado sin límites, donde los esteroides y los genes editados son sagrados y solo votan quienes tienen deltoides y CI.",
+    "category": "Libertario"
   }
 ]

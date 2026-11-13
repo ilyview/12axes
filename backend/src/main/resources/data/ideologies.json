@@ -3573,7 +3573,9 @@
     "vector": null,
     "countryId": "senium",
     "personalityId": "grand-elder",
-    "religions": ["other"]
+    "religions": [
+      "other"
+    ]
   },
   {
     "id": "lore-goblinismo",
@@ -3606,6 +3608,16 @@
     "vector": null,
     "countryId": null,
     "personalityId": "hatred",
+    "religions": []
+  },
+  {
+    "id": "deltocracia",
+    "name": "Deltocracia",
+    "category": "Libertário",
+    "description": "Sistema em que a cidadania é medida em polegadas de deltoide e pontos de QI. Cidades-academia soberanas competem num mercado totalmente livre, esteroides e edição genética são direito sagrado, só os aprimorados votam e o Supremo Deltoide governa para sempre.",
+    "phrase": "Quero cidades-academia soberanas num mercado sem limites, onde esteroides e genes editados são direito sagrado e só vota quem tem deltoide e QI.",
+    "countryId": "eua-new-hampshire",
+    "personalityId": "sero",
     "religions": []
   }
 ]

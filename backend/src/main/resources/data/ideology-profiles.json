@@ -4809,5 +4809,22 @@
       "moral": 50,
       "tecnologia": 50
     }
+  },
+  {
+    "ideologyId": "deltocracia",
+    "vector": {
+      "estrutura": 91.1,
+      "representacao": 12.6,
+      "poder": 13.8,
+      "imigracao": 28.1,
+      "diplomacia": 40.2,
+      "intervencao": 80.0,
+      "economia": 0.6,
+      "controle": 2.8,
+      "comercio": 1.8,
+      "religiao": 93.3,
+      "moral": 59.8,
+      "tecnologia": 91.3
+    }
   }
 ]

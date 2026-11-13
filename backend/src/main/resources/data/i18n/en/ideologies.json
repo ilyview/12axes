@@ -1985,5 +1985,12 @@
     "category": "Third Position",
     "description": "The ideology of absolute refusal: it proposes no programme, order, or future, only the negation of every question and every political promise. Its only consensus is saying no to everything, and its only project is contempt.",
     "phrase": "I want a society that says no to every question, where total refusal is the only programme and contempt is the only politics."
+  },
+  {
+    "id": "deltocracia",
+    "name": "Deltocracy",
+    "category": "Libertarian",
+    "description": "A system in which citizenship is measured in inches of deltoid and points of IQ. Sovereign gym-cities compete in a totally free market, steroids and gene editing are a sacred right, only the enhanced may vote and the Supreme Deltoid rules forever.",
+    "phrase": "I want sovereign gym-cities in a limitless market, where steroids and edited genes are sacred and only those with delts and IQ vote."
   }
 ]
