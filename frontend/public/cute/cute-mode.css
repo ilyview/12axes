@@ -1,0 +1,259 @@
+/* Nya mode (see cute-mode.js). html[data-nya="1"] = pink theme, html[data-nya="2"] = MAX.
+   Overrides the colour tokens of the React app (tokens.css / editorial.css) and of the generated
+   catalog pages (--papel, --floresta, ... in scripts/*.mjs). html[data-nya] beats :root in specificity. */
+
+html[data-nya] {
+  color-scheme: light;
+  /* app tokens */
+  --green-50: #fff0f7;
+  --green-100: #ffd9ea;
+  --green-400: #ff7eb6;
+  --green-500: #ff4f9a;
+  --green-600: #ec3b88;
+  --green-700: #d42c77;
+  --green-800: #b01f62;
+  --red-50: #f3eaff;
+  --red-100: #e6d4ff;
+  --red-400: #a77bff;
+  --red-500: #8b5cf6;
+  --red-600: #7444e6;
+  --red-700: #5b2fc9;
+  --ink-950: #4a1739;
+  --ink-900: #5c1f47;
+  --ink-700: #8a4a74;
+  --ink-500: #a5698f;
+  --ink-400: #c08aac;
+  --ink-300: #ebbfd6;
+  --ink-100: #ffd3e6;
+  --ink-50: #ffe6f1;
+  --canvas: #fff3f8;
+  --paper: #fff3f8;
+  --paper-soft: #fffafc;
+  --bg: #fff3f8;
+  --surface: #fffafc;
+  --surface-soft: #fffafc;
+  --text: #5c1f47;
+  --text-strong: #4a1739;
+  --text-muted: #8a4a74;
+  --text-soft: #c08aac;
+  --line: #ffd3e6;
+  --line-strong: rgba(255, 79, 154, 0.28);
+  --glass-tint: rgba(255, 246, 250, 0.9);
+  --glass-tint-strong: rgba(255, 246, 250, 0.97);
+  --shadow-accent: 0 14px 34px -14px rgba(255, 79, 154, 0.5);
+  --shadow-accent-lg: 0 24px 54px -18px rgba(255, 79, 154, 0.55);
+  --ring-accent: 0 0 0 4px rgba(255, 79, 154, 0.28);
+  --radius-sm: 14px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 30px;
+  --grad-mesh:
+    radial-gradient(42% 38% at 8% 2%, rgba(255, 126, 182, 0.18), transparent 70%),
+    radial-gradient(40% 36% at 96% 0%, rgba(167, 123, 255, 0.14), transparent 72%),
+    radial-gradient(52% 46% at 90% 98%, rgba(255, 179, 214, 0.2), transparent 74%);
+  --font-display: "Mochiy Pop One", "M PLUS Rounded 1c", ui-rounded, system-ui, sans-serif;
+  --font-body: "M PLUS Rounded 1c", ui-rounded, system-ui, sans-serif;
+  /* brand names (app + generated pages) */
+  --papel: #fff3f8;
+  --floresta: #ff4f9a;
+  --carmim: #8b5cf6;
+  --tinta: #5c1f47;
+  --superficie: #fffafc;
+  --sup: #fffafc;
+  --borda: #ffd3e6;
+  --neutro: #ffe6f1;
+  --suave: #8a4a74;
+  --texto-suave: #8a4a74;
+  --texto-sobre-escuro: #fff0f7;
+  --destaque-sobre-escuro: #ffffff;
+  --floresta-claro: #ffd9ea;
+  --linha-escura: #ff8cc0;
+  --display: "Mochiy Pop One", "M PLUS Rounded 1c", ui-rounded, system-ui, sans-serif;
+  --body: "M PLUS Rounded 1c", ui-rounded, system-ui, sans-serif;
+}
+
+html[data-nya] body {
+  background-color: #fff3f8 !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 64 64'%3E%3Cg fill='%23ff4f9a' fill-opacity='.07' transform='rotate(-14 32 32) scale(.42) translate(40 40)'%3E%3Cellipse cx='32' cy='42' rx='14' ry='12'/%3E%3Cellipse cx='14' cy='27' rx='6' ry='8'/%3E%3Cellipse cx='25' cy='16' rx='6' ry='8.5'/%3E%3Cellipse cx='39' cy='16' rx='6' ry='8.5'/%3E%3Cellipse cx='50' cy='27' rx='6' ry='8'/%3E%3C/g%3E%3C/svg%3E") !important;
+  color: #5c1f47;
+  font-family: "M PLUS Rounded 1c", ui-rounded, system-ui, sans-serif !important;
+}
+html[data-nya] h1,
+html[data-nya] h2,
+html[data-nya] h3 {
+  font-family: "Mochiy Pop One", "M PLUS Rounded 1c", ui-rounded, system-ui, sans-serif !important;
+  letter-spacing: 0 !important;
+  font-weight: 400;
+}
+
+/* headers (app .e-nav and generated pages .sh) */
+html[data-nya] .e-nav,
+html[data-nya] .sh {
+  background: rgba(255, 240, 247, 0.88) !important;
+  border-bottom: 2px dashed #ffb3d6 !important;
+  font-family: "M PLUS Rounded 1c", ui-rounded, system-ui, sans-serif !important;
+}
+html[data-nya] .sh .sh-logo b,
+html[data-nya] .e-logo b {
+  color: #ff4f9a !important;
+}
+html[data-nya] .sh .sh-btn-primary {
+  background: #ff4f9a !important;
+  color: #fff !important;
+}
+html[data-nya] .sh .sh-btn-primary:hover {
+  background: #ec3b88 !important;
+}
+html[data-nya] .sh .sh-links a,
+html[data-nya] .sh .sh-lang > summary {
+  color: #8a4a74;
+}
+
+/* dark sections of the app turn into a deep pink */
+html[data-nya] .e-dark {
+  background: linear-gradient(135deg, #ff6aa9, #c86bff) !important;
+  color: #fff !important;
+}
+
+/* friendlier shapes everywhere */
+html[data-nya] .e-btn,
+html[data-nya] .sh-btn {
+  border-radius: 999px;
+}
+html[data-nya] .e-panel {
+  border-radius: 28px !important;
+  border: 2px solid #ffd3e6 !important;
+  box-shadow: 0 10px 30px -18px rgba(255, 79, 154, 0.45) !important;
+}
+html[data-nya] ::selection {
+  background: #ffb3d6;
+  color: #4a1739;
+}
+html[data-nya] a:focus-visible,
+html[data-nya] button:focus-visible,
+html[data-nya] input:focus-visible {
+  outline-color: #ff4f9a !important;
+}
+
+/* =============== MAX =============== */
+html[data-nya="2"] {
+  --green-500: #ff2e8b;
+  --floresta: #ff2e8b;
+  --carmim: #9d4dff;
+  --canvas: #fff0f8;
+  --papel: #fff0f8;
+}
+html[data-nya="2"] body {
+  background-color: #ffe9f5 !important;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 64 64'%3E%3Cg fill='%23ff2e8b' fill-opacity='.1' transform='rotate(-14 32 32) scale(.42) translate(40 40)'%3E%3Cellipse cx='32' cy='42' rx='14' ry='12'/%3E%3Cellipse cx='14' cy='27' rx='6' ry='8'/%3E%3Cellipse cx='25' cy='16' rx='6' ry='8.5'/%3E%3Cellipse cx='39' cy='16' rx='6' ry='8.5'/%3E%3Cellipse cx='50' cy='27' rx='6' ry='8'/%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(120deg, #ffd6ec, #e8dcff, #d6f3ff, #fff3c4, #ffd6ec) !important;
+  background-size: 120px 120px, 400% 400% !important;
+  animation: nya-rainbow 18s ease-in-out infinite;
+}
+@keyframes nya-rainbow {
+  0%, 100% { background-position: 0 0, 0% 50%; }
+  50% { background-position: 60px 60px, 100% 50%; }
+}
+html[data-nya="2"] h1 {
+  background: linear-gradient(90deg, #ff2e8b, #b05cff, #ff7ac2, #ff2e8b);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  animation: nya-shine 6s linear infinite;
+}
+@keyframes nya-shine {
+  to { background-position: 300% 0; }
+}
+html[data-nya="2"] .e-panel,
+html[data-nya="2"] main section {
+  border-color: #ff9ccb !important;
+}
+html[data-nya="2"] .e-panel {
+  background: rgba(255, 255, 255, 0.82) !important;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.6), 0 14px 40px -16px rgba(255, 46, 139, 0.55) !important;
+}
+html[data-nya="2"] img:not(.nya-mascot) {
+  filter: saturate(1.25) brightness(1.04);
+}
+html[data-nya="2"] .e-btn-primary,
+html[data-nya="2"] .sh .sh-btn-primary {
+  background: linear-gradient(135deg, #ff5fa2, #b05cff) !important;
+  color: #fff !important;
+  box-shadow: 0 8px 22px -8px rgba(255, 46, 139, 0.7) !important;
+}
+html[data-nya="2"],
+html[data-nya="2"] * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff4f9a' stroke='white' stroke-width='1.5' d='M12 21s-7.5-4.6-9.6-9.2C.9 8.3 3 4.5 6.6 4.5c2.1 0 3.5 1.2 4.4 2.6.9-1.4 2.3-2.6 4.4-2.6 3.6 0 5.7 3.8 4.2 7.3C19.5 16.4 12 21 12 21z'/%3E%3C/svg%3E") 14 14, auto;
+}
+
+/* floating paws/hearts + mascots */
+.nya-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2147482000;
+  overflow: hidden;
+}
+.nya-layer span {
+  position: absolute;
+  bottom: -40px;
+  opacity: 0.75;
+  color: #ff4f9a;
+  animation: nya-float linear infinite;
+  will-change: transform;
+}
+@keyframes nya-float {
+  0% { transform: translate(0, 0) rotate(0); opacity: 0; }
+  10% { opacity: 0.8; }
+  50% { transform: translate(24px, -55vh) rotate(25deg); }
+  90% { opacity: 0.8; }
+  100% { transform: translate(-12px, -110vh) rotate(-20deg); opacity: 0; }
+}
+.nya-mascot {
+  position: absolute;
+  height: auto;
+  filter: drop-shadow(0 8px 14px rgba(255, 46, 139, 0.35));
+  animation: nya-bob 3.2s ease-in-out infinite;
+}
+.nya-mascot-1 {
+  left: 10px;
+  bottom: 6px;
+  width: 150px;
+}
+.nya-mascot-2 {
+  right: 10px;
+  bottom: 10px;
+  width: 120px;
+  animation-delay: -1.6s;
+}
+@keyframes nya-bob {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-10px) rotate(3deg); }
+}
+.nya-burst {
+  position: fixed;
+  z-index: 2147483001;
+  pointer-events: none;
+  font-size: 18px;
+  color: #ff4f9a;
+  transform: translate(-50%, -50%);
+  animation: nya-burst 0.7s ease-out forwards;
+}
+@keyframes nya-burst {
+  to { transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(0.4); opacity: 0; }
+}
+@media (max-width: 720px) {
+  .nya-mascot-1 { width: 92px; }
+  .nya-mascot-2 { width: 74px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-nya="2"] body,
+  html[data-nya="2"] h1,
+  .nya-mascot { animation: none !important; }
+  .nya-layer span { display: none; }
+}
+@media print {
+  .nya-layer { display: none; }
+}

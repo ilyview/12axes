@@ -36,7 +36,9 @@ const GOOGLE_ANALYTICS_SNIPPET = `<!-- Google tag (gtag.js) -->
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-JF63DF6BNM');
-    </script>`;
+    </script>
+    <!-- Nya mode: the pink paw button (public/cute/) -->
+    <script src="/cute/cute-mode.js"></script>`;
 
 const readJson = (path) => JSON.parse(readFileSync(join(DATA_DIR, path), 'utf8'));
 
