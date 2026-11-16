@@ -130,6 +130,8 @@ export interface IdeologyMatch {
   description: string;
   longDescription: string;
   phrase: string;
+  /** Explicação simples, "explique como se eu tivesse 5 anos". */
+  eli5?: string;
   compatibility: number;
   imagePath?: string;
 }

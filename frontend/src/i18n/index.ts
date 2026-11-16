@@ -492,6 +492,7 @@ export interface Strings {
   phraseTitle: string;
   phraseNote: (ideology: string) => string;
   aboutIdeology: (ideology: string) => string;
+  eli5Title: string;
   knowMoreAbout: (name: string) => string;
   showLess: string;
   matchTopKicker: string;

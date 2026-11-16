@@ -224,6 +224,7 @@ export const DE = {
     refPerson: 'Schlüsselfigur',
     refCountry: 'Referenzland',
     phraseTitle: 'In einem Satz',
+    eli5Title: 'Erklär es mir, als wäre ich fünf',
     phraseNote: (name) => ['So würde jemand mit der Ideologie ', name, ' die Gesellschaft beschreiben, die er oder sie sich wünscht.'],
     portraitAlt: (name) => `Porträt von ${name}`,
     flagAlt: (name) => `Flagge: ${name}`,

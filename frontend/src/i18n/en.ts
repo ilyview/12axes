@@ -703,6 +703,7 @@ export const en: Strings = {
   ideologyDistantTitle: 'The ideology furthest from you',
   phraseTitle: 'A sentence that describes you',
   aboutIdeology: (ideology) => `About ${ideology}`,
+  eli5Title: "Explain like I'm 5",
   knowMoreAbout: (name) => `Learn more about ${name}`,
   showLess: 'Show less',
   matchTopKicker: 'Most compatible',

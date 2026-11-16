@@ -29,6 +29,7 @@ const STR = {
     refPerson: 'Personalidade de referência',
     refCountry: 'País de referência',
     phraseTitle: 'Em uma frase',
+    eli5Title: 'Explique como se eu tivesse 5 anos',
     phraseNote: (name) => ['É assim que alguém do ', name, ' resumiria a sociedade que quer.'],
     portraitAlt: (name) => `Retrato de ${name}`,
     flagAlt: (name) => `Bandeira: ${name}`,
@@ -83,6 +84,7 @@ const STR = {
     refPerson: 'Key figure',
     refCountry: 'Reference country',
     phraseTitle: 'In one sentence',
+    eli5Title: "Explain like I'm 5",
     phraseNote: (name) => ['This is how someone from ', name, ' would sum up the society they want.'],
     portraitAlt: (name) => `Portrait of ${name}`,
     flagAlt: (name) => `Flag: ${name}`,
@@ -249,6 +251,10 @@ export function ideologyPage(L, ideology, ctx) {
     ? `<figure class="panel phrase"><span class="q" aria-hidden="true">“</span><div><p class="eyebrow">${esc(t.phraseTitle)}</p><blockquote>${esc(ideology.phrase)}</blockquote><figcaption>${esc(noteBefore)}<b>${esc(noteName)}</b>${esc(noteAfter)}</figcaption></div></figure>`
     : '';
 
+  const eli5 = ideology.eli5
+    ? `<section class="panel eli5"><span class="e5" aria-hidden="true">5</span><div><p class="eyebrow">${esc(t.eli5Title)}</p><p>${esc(ideology.eli5)}</p></div></section>`
+    : '';
+
   const tabIds = t.ids;
   const tabButton = (key, first) =>
     `<button role="tab" id="t-${tabIds[key]}" aria-controls="${tabIds[key]}" aria-selected="${first}"${first ? '' : ' tabindex="-1"'}>${esc(t.tabs[key])}</button>`;
@@ -297,6 +303,7 @@ ${siteHeader({ L, basePath, current: 'ideologies', webView: `/tree/ideologies?id
     ${refs.length ? `<div class="ih-refs">${refs.join('')}</div>` : ''}
   </article>
   ${phrase}
+  ${eli5}
 
   <div class="ptabs-wrap"><div class="ptabs" role="tablist" aria-label="${esc(t.tabsAria)}">
     ${tabButton('axes', true)}

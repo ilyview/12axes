@@ -150,6 +150,7 @@ public class IdeologyMatcherService {
                 shortDescription,
                 longDescription,
                 ideology.phrase(),
+                ideology.eli5(),
                 candidate.compatibility(),
                 candidate.compatibilityPercentile(),
                 ideology.imagePath()

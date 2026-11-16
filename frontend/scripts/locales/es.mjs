@@ -224,6 +224,7 @@ export const ES = {
     refPerson: 'Figura clave',
     refCountry: 'País de referencia',
     phraseTitle: 'En una frase',
+    eli5Title: 'Explícamelo como si tuviera 5 años',
     phraseNote: (name) => ['Así resumiría alguien de ', name, ' la sociedad que quiere.'],
     portraitAlt: (name) => `Retrato de ${name}`,
     flagAlt: (name) => `Bandera: ${name}`,

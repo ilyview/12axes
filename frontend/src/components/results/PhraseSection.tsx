@@ -6,7 +6,7 @@ import type { IdeologyMatch } from '../../types/quiz';
 export function PhraseSection({ match }: { match: IdeologyMatch }) {
   const about = match.longDescription || match.description;
 
-  if (!match.phrase && !about) {
+  if (!match.phrase && !about && !match.eli5) {
     return null;
   }
 
@@ -20,6 +20,12 @@ export function PhraseSection({ match }: { match: IdeologyMatch }) {
             <blockquote>{match.phrase}</blockquote>
           </div>
         </figure>
+      )}
+      {match.eli5 && (
+        <details className="e-about">
+          <summary>{t.eli5Title}</summary>
+          <p>{match.eli5}</p>
+        </details>
       )}
       {about && (
         <details className="e-about">

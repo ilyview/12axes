@@ -702,6 +702,7 @@ export const it: DeepPartial<Strings> = {
   ideologyDistantTitle: "L'ideologia più lontana da te",
   phraseTitle: 'Una frase che ti descrive',
   aboutIdeology: (ideology) => `Su ${ideology}`,
+  eli5Title: 'Spiegamelo come se avessi 5 anni',
   knowMoreAbout: (name) => `Scopri di più su ${name}`,
   showLess: 'Mostra meno',
   matchTopKicker: 'Più compatibile',

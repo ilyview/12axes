@@ -692,6 +692,7 @@ export const pt: Strings = {
   ideologyDistantTitle: 'A ideologia mais distante de você',
   phraseTitle: 'Uma frase que te descreve',
   aboutIdeology: (ideology) => `Sobre o ${ideology}`,
+  eli5Title: 'Explique como se eu tivesse 5 anos',
   knowMoreAbout: (name) => `Saber mais sobre ${name}`,
   showLess: 'Mostrar menos',
   matchTopKicker: 'Mais compatível',
