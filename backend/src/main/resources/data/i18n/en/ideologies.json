@@ -21,7 +21,7 @@
     "category": "Radical Left",
     "description": "Mao's Chinese adaptation of Marxism, centered on the peasantry as the revolutionary force, protracted people's war, permanent mass mobilization, and cultural revolution against the party bureaucracy.",
     "phrase": "I want a society mobilized in protracted people's war led by the peasantry, with permanent cultural revolution against bureaucracy.",
-    "eli5": "Mao brought communism to China by relying on farmers in the countryside, not just city workers. He believed the revolution should never stop. His plans changed China a lot, but also caused famine and great suffering."
+    "eli5": "Mao brought communism to China by relying on farmers in the countryside, not just city workers. He believed the revolution should never stop. His plans changed China a lot; one of them, the Great Leap Forward, caused a famine in which tens of millions of people died."
   },
   {
     "id": "comunismo-trotskista",
@@ -61,7 +61,7 @@
     "category": "Radical Left",
     "description": "Radical agrarian communism of the Khmer Rouge that emptied cities, abolished money and markets, and pursued an egalitarian peasant society by force, causing one of the greatest genocides of the 20th century in Cambodia.",
     "phrase": "I want an egalitarian peasant society, without cities, money or markets, rebuilt by force under the revolutionary Angkar.",
-    "eli5": "In Cambodia, Pol Pot and the Khmer Rouge forced everyone out of the cities to work in the fields. They got rid of money, schools and hospitals. It was one of the most terrible things in history: about a quarter of the population died."
+    "eli5": "In Cambodia, Pol Pot and the Khmer Rouge forced everyone out of the cities to work in the fields. They got rid of money, schools and hospitals. In under four years, about a quarter of the population died."
   },
   {
     "id": "socialismo-denguista",
@@ -133,7 +133,7 @@
     "category": "Third Position",
     "description": "German variant of fascism based on racism, antisemitism, and expansionism, which united totalitarianism, the cult of Hitler, and the idea of a superior race, culminating in World War II and the Holocaust.",
     "phrase": "I want a society based on the Aryan race, politically hierarchical and authoritarian, with a strong, protectionist state capitalism.",
-    "eli5": "This is Hitler's idea in Germany. He said some people were worth more than others because of where their family came from, and one single leader ruled everything. It led to a huge war and the murder of millions of people, mostly Jewish people. That's why it's remembered as one of the worst things in history."
+    "eli5": "This is Hitler's idea in Germany. He said some people were worth more than others because of where their family came from, and one single leader ruled everything. It led to the Second World War and the Holocaust, in which millions of people were murdered, most of them Jewish."
   },
   {
     "id": "falangismo",
@@ -181,7 +181,7 @@
     "category": "Far-Right",
     "description": "Radical right movement born on the internet, combining identitarian nationalism, opposition to immigration and multiculturalism, criticism of globalism and provocative rhetoric. Part of its voices defend a nationalism based on race.",
     "phrase": "I want a nation with its own identity and controlled borders, one that questions multiculturalism and globalism, with freedom to speak without censorship.",
-    "eli5": "It's a group that grew up on the internet, full of memes. They think their country is changing too fast because of immigrants and they don't like it. They want the country to stay 'the old way', and often make offensive jokes about other groups."
+    "eli5": "It's a group that grew up on the internet, full of memes. They think their country is changing too fast because of immigrants and they don't like it. They want the country to stay 'the old way', and often make jokes that mock other groups."
   },
   {
     "id": "alt-lite",
@@ -221,7 +221,7 @@
     "category": "Far-Right",
     "description": "Current that preserves order, tradition, and hierarchy through a strong state, restricting freedoms and political participation in the name of social stability, morality, religion, and established authority.",
     "phrase": "I want a hierarchical order sustained by a strong state, protecting tradition, religion and customs against moral subversion.",
-    "eli5": "A strong government that wants to keep everything the way it's always been: traditions, order, who gives orders and who obeys. To do that, it may take away some freedoms, like protesting or criticising. It's 'I'm in charge here, and things don't change'."
+    "eli5": "A strong government that wants to keep everything the way it's always been: traditions, order, who gives orders and who obeys. To do that, it may take away some freedoms, like protesting or criticising. The idea is that order and stability matter more than those freedoms."
   },
   {
     "id": "conservadorismo-nacional",
@@ -557,7 +557,7 @@
     "category": "Anarchist",
     "description": "Current that pursues socialism without an authoritarian state, uniting collective ownership and self-management with broad individual freedom, organized from the bottom up by free communities and workers.",
     "phrase": "I want socialism without an authoritarian state, with collective property and self-management organized from the bottom up by free communities and workers.",
-    "eli5": "Sharing things fairly, like in socialism, but without a bossy government. People run their workplaces and neighbourhoods together, and everyone stays free to be who they want."
+    "eli5": "Sharing things fairly, like in socialism, but without a government in charge. People run their workplaces and neighbourhoods together, and everyone stays free to be who they want."
   },
   {
     "id": "socialismo-de-mercado",
@@ -781,7 +781,7 @@
     "category": "Center",
     "description": "Branch that unites conservatism and environmental protection, defending the preservation of nature as part of the tradition and heritage to be passed on to future generations, with prudence toward change.",
     "phrase": "I want to preserve nature as part of the tradition and heritage passed down to us, with prudence toward change and a mixed, balanced economy.",
-    "eli5": "Caring for nature is a lovely tradition, like looking after the family home. These people want to protect the country's forests, fields and landscapes as something handed down from grandparents."
+    "eli5": "These people see caring for nature as a tradition, like looking after the family home. They want to protect the country's forests, fields and landscapes as something handed down from grandparents."
   },
   {
     "id": "econacionalismo",
@@ -805,7 +805,7 @@
     "category": "Libertarian",
     "description": "Current that unites free markets and individual freedoms with concern for social justice, holding that economic freedom must also concretely improve the lives of the poorest and most vulnerable.",
     "phrase": "I want economic and individual freedom that also lifts the poorest out of misery, uniting the free market with compassion for social justice.",
-    "eli5": "Free markets and little government, yes, but with a big heart: these people think freedom should also help poor people have a good life."
+    "eli5": "Free markets and little government, yes, but with a focus on the poor: these people think freedom should also help poor people have a good life."
   },
   {
     "id": "libertarianismo-nacional",
@@ -981,7 +981,7 @@
     "category": "Third Position",
     "description": "Current that joins radical ecology, authoritarianism and white nationalism, associated with Mike Ma and the Pine Tree Party: it defends industrial collapse, population control and nature preservation imposed by an authoritarian order.",
     "phrase": "I want an organic national community in harmony with the land, putting environmental preservation and the survival of the people above individual liberties.",
-    "eli5": "These people love nature a lot, but in a bad way. They think there are too many people on the planet and that only their own group should stay. They want a harsh government, the end of factories, and fewer people. That's why many see them as dangerous and cruel."
+    "eli5": "These people want to protect nature with a very strict government that nobody can vote out. They believe there are too many people on the planet and that only their own group should stay. They want factories shut down and fewer people on Earth."
   },
   {
     "id": "comunismo-agrario",
@@ -1157,7 +1157,7 @@
     "category": "Far-Right",
     "description": "Doctrine that defends the territorial, military and economic expansion of a nation over other peoples and territories, keeping colonies and spheres of influence tied to the interests of the metropole through military and political power.",
     "phrase": "I want a powerful nation that expands its territory and its influence in the world, backed by strong military and economic capacity.",
-    "eli5": "It's when a big country wants to get even bigger by taking land and ruling other peoples, with armies or with money. Like a kid who grabs everyone else's toys."
+    "eli5": "It's when a big country wants to get even bigger by taking land and ruling other peoples, with armies or with money. Its supporters see this as a way to make their nation strong and important."
   },
   {
     "id": "liberalismo-progressista",
@@ -1381,7 +1381,7 @@
     "category": "Anarchist",
     "description": "Proudhon's original doctrine, denouncing property as theft and advocating free mutual credit, federalism of autonomous communities and possession by use, with strong moral reservations about progress and customs.",
     "phrase": "I want to abolish property as theft, with free mutual credit and a federation of autonomous communes where possession comes from use.",
-    "eli5": "A man named Proudhon said: 'property is theft!'. He wanted people to trade work fairly, lend money without interest, and live in free communities linked together without a bossy government."
+    "eli5": "A man named Proudhon said: 'property is theft!'. He wanted people to trade work fairly, lend money without interest, and live in free communities linked together without a government in charge."
   },
   {
     "id": "republicanismo-kantiano",
@@ -1453,7 +1453,7 @@
     "category": "Third Position",
     "description": "Justicialist doctrine of Juan and Eva Perón uniting political sovereignty, economic independence and social justice, with CGT unions, nationalizations, protected industrialization, social Catholicism and a charismatic leader above parties.",
     "phrase": "I want organized workers in strong unions, with decent wages and protected national industry, under firm leadership, faith and family.",
-    "eli5": "In Argentina, Juan Perón and his wife Evita said: 'the country must own its own things and look after its workers'. They gave workers lots of rights and made unions strong, but Perón was very bossy and didn't like people criticising him."
+    "eli5": "In Argentina, Juan Perón and his wife Evita said: 'the country must own its own things and look after its workers'. They gave workers lots of rights and made unions strong. Perón also kept a lot of power in his own hands and restricted newspapers that criticised him."
   },
   {
     "id": "fascismo-vermelho",
@@ -1485,7 +1485,7 @@
     "category": "Left",
     "description": "Early 19th-century current that envisioned an industrial society reorganized by rational planning, led by scientists, engineers and producers, replacing politicians and aristocrats without appealing to class struggle or revolution.",
     "phrase": "I want an industrial society run by scientists and producers, rationally planned, superseding politicians and aristocrats without revolution.",
-    "eli5": "About 200 years ago, some dreamers imagined perfect communities where everyone would work together and share everything fairly. Some even tried to build these villages for real."
+    "eli5": "About 200 years ago, some thinkers imagined ideal communities where everyone would work together and share everything fairly. Some even tried to build these villages for real."
   },
   {
     "id": "tecno-comercialismo",
@@ -1771,7 +1771,7 @@
     "category": "Third Position",
     "description": "An Arab current of state socialism combining pan-Arab nationalism, a vanguard party, planning, land reform and control of strategic sectors, advocating Arab unity, secularism and independence from imperialism.",
     "phrase": "I want the Arab nation united by a revolutionary party, with state socialism, land reform, secularism and independence from imperialism.",
-    "eli5": "It's an idea from Arab countries. It says all Arabs are one big family who should unite, and that the government should run the economy. In practice, Ba'athist governments, like in Syria and Iraq, had very harsh dictators."
+    "eli5": "It's an idea from Arab countries. It says all Arabs are one big family who should unite, and that the government should run the economy. In practice, Ba'athist governments, like in Syria and Iraq, were dictatorships with a single party in power."
   },
   {
     "id": "islamismo",
@@ -1827,7 +1827,7 @@
     "category": "Right",
     "description": "Current that joins ethnic identity and Theravada Buddhist faith and sees the nation as guardian of the Dharma, wary of the influence of other communities, as in Sinhalese nationalism in Sri Lanka and monk movements such as Ma Ba Tha and 969 in Myanmar.",
     "phrase": "I want a nation that protects the Dharma and the Buddhist identity of the majority, with influential monks and firm leadership.",
-    "eli5": "In countries like Sri Lanka or Myanmar, some people believe the country belongs to its Buddhist people and must protect that religion above all, sometimes being harsh to other minorities."
+    "eli5": "In countries like Sri Lanka or Myanmar, some people believe the country belongs to its Buddhist people and must protect that religion above all. This has sometimes led to conflict with other religious minorities."
   },
   {
     "id": "sionismo",
@@ -2267,7 +2267,7 @@
     "category": "Third Position",
     "description": "The ideology of absolute refusal: it proposes no programme, order, or future, only the negation of every question and every political promise. Its only consensus is saying no to everything, and its only project is contempt.",
     "phrase": "I want a society that says no to every question, where total refusal is the only programme and contempt is the only politics.",
-    "eli5": "This ideology doesn't want to build anything. It just says 'no' to everything and everyone. No plan, no promises, only anger at everything. It's like a grumpy kid who doesn't like any game at all."
+    "eli5": "This ideology doesn't want to build anything. It just says 'no' to everything and everyone. No plan, no promises, only rejection of everything. It's like a kid who says no to every game."
   },
   {
     "id": "deltocracia",

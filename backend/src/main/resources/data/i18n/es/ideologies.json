@@ -21,7 +21,7 @@
     "description": "Adaptación china del marxismo por Mao, centrada en el campesinado como fuerza revolucionaria, la guerra popular prolongada, la movilización permanente de las masas y la revolución cultural contra la burocracia del partido.",
     "phrase": "Quiero una sociedad movilizada en una guerra popular prolongada liderada por el campesinado, con revolución cultural permanente contra la burocracia.",
     "category": "Izquierda radical",
-    "eli5": "Mao llevó el comunismo a China apoyándose en los campesinos, no solo en los obreros de las ciudades. Creía que la revolución nunca debía detenerse. Sus planes cambiaron mucho China, pero también causaron hambre y un gran sufrimiento."
+    "eli5": "Mao llevó el comunismo a China apoyándose en los campesinos, no solo en los obreros de las ciudades. Creía que la revolución nunca debía detenerse. Sus planes cambiaron mucho China; uno de ellos, el Gran Salto Adelante, causó una hambruna en la que murieron decenas de millones de personas."
   },
   {
     "id": "comunismo-trotskista",
@@ -61,7 +61,7 @@
     "description": "Comunismo agrario radical de los jemeres rojos, que vació las ciudades, abolió el dinero y los mercados e impuso por la fuerza una sociedad campesina igualitaria, causando uno de los mayores genocidios del siglo XX en Camboya.",
     "phrase": "Quiero una sociedad campesina igualitaria, sin ciudades, dinero ni mercados, reconstruida por la fuerza bajo la Angkar revolucionaria.",
     "category": "Izquierda radical",
-    "eli5": "En Camboya, Pol Pot y los Jemeres Rojos obligaron a todo el mundo a dejar las ciudades para trabajar en el campo. Eliminaron el dinero, las escuelas y los hospitales. Fue una de las cosas más terribles de la historia: murió más o menos una cuarta parte de la población."
+    "eli5": "En Camboya, Pol Pot y los Jemeres Rojos obligaron a todo el mundo a dejar las ciudades para trabajar en el campo. Eliminaron el dinero, las escuelas y los hospitales. En menos de cuatro años murió más o menos una cuarta parte de la población."
   },
   {
     "id": "socialismo-denguista",
@@ -133,7 +133,7 @@
     "description": "Variante alemana del fascismo basada en el racismo, el antisemitismo y el expansionismo, que unió totalitarismo, culto a Hitler e idea de raza superior, y culminó en la Segunda Guerra Mundial y el Holocausto.",
     "phrase": "Quiero una sociedad basada en la raza aria, jerárquica y autoritaria en lo político, con un capitalismo de Estado fuerte y proteccionista.",
     "category": "Tercera posición",
-    "eli5": "Es la idea de Hitler en Alemania. Decía que algunas personas valían más que otras por el lugar de donde venía su familia, y un solo líder mandaba en todo. Llevó a una guerra enorme y al asesinato de millones de personas, sobre todo judíos. Por eso se recuerda como una de las peores cosas de la historia."
+    "eli5": "Es la idea de Hitler en Alemania. Decía que algunas personas valían más que otras por el lugar de donde venía su familia, y un solo líder mandaba en todo. Llevó a la Segunda Guerra Mundial y al Holocausto, en el que fueron asesinados millones de personas, la mayoría judíos."
   },
   {
     "id": "falangismo",
@@ -181,7 +181,7 @@
     "description": "Movimiento de derecha radical nacido en internet, que combina nacionalismo identitario, oposición a la inmigración y al multiculturalismo, crítica del globalismo y retórica provocadora. Parte de sus voces defiende un nacionalismo basado en la raza.",
     "phrase": "Quiero una nación con identidad propia y fronteras controladas, que cuestione el multiculturalismo y el globalismo, con libertad para hablar sin censura.",
     "category": "Extrema derecha",
-    "eli5": "Es un grupo que nació en internet, lleno de memes. Creen que su país está cambiando demasiado rápido por los inmigrantes y no les gusta. Quieren que el país siga «como antes» y a menudo hacen bromas ofensivas sobre otros grupos."
+    "eli5": "Es un grupo que nació en internet, lleno de memes. Creen que su país está cambiando demasiado rápido por los inmigrantes y no les gusta. Quieren que el país siga «como antes» y a menudo hacen bromas burlándose de otros grupos."
   },
   {
     "id": "alt-lite",
@@ -221,7 +221,7 @@
     "description": "Corriente que preserva el orden, la tradición y la jerarquía mediante un Estado fuerte, restringiendo libertades y participación política en nombre de la estabilidad social, la moral, la religión y la autoridad establecida.",
     "phrase": "Quiero un orden jerárquico sostenido por un Estado fuerte, que proteja la tradición, la religión y las costumbres frente a la subversión moral.",
     "category": "Extrema derecha",
-    "eli5": "Un gobierno fuerte que quiere mantener todo como siempre ha sido: las tradiciones, el orden, quién manda y quién obedece. Para eso puede quitar algunas libertades, como protestar o criticar. Es el «aquí mando yo y las cosas no cambian»."
+    "eli5": "Un gobierno fuerte que quiere mantener todo como siempre ha sido: las tradiciones, el orden, quién manda y quién obedece. Para eso puede quitar algunas libertades, como protestar o criticar. La idea es que el orden y la estabilidad importan más que esas libertades."
   },
   {
     "id": "conservadorismo-nacional",
@@ -557,7 +557,7 @@
     "description": "Corriente que busca el socialismo sin un Estado autoritario, uniendo la propiedad colectiva y la autogestión con una amplia libertad individual, organizada de abajo hacia arriba por comunidades y trabajadores libres.",
     "phrase": "Quiero socialismo sin Estado autoritario, con propiedad colectiva y autogestión organizadas de abajo hacia arriba por comunidades y trabajadores libres.",
     "category": "Anarquista",
-    "eli5": "Repartir las cosas de forma justa, como en el socialismo, pero sin un gobierno mandón. La gente dirige junta sus lugares de trabajo y sus barrios, y cada uno sigue siendo libre de ser quien quiera."
+    "eli5": "Repartir las cosas de forma justa, como en el socialismo, pero sin un gobierno al mando. La gente dirige junta sus lugares de trabajo y sus barrios, y cada uno sigue siendo libre de ser quien quiera."
   },
   {
     "id": "socialismo-de-mercado",
@@ -781,7 +781,7 @@
     "description": "Rama que une conservadurismo y protección ambiental, y defiende preservar la naturaleza como parte de la tradición y del patrimonio que se debe transmitir a las generaciones futuras, con prudencia ante el cambio.",
     "phrase": "Quiero preservar la naturaleza como parte de la tradición y del patrimonio que se nos transmitió, con prudencia ante el cambio y una economía mixta y equilibrada.",
     "category": "Centro",
-    "eli5": "Cuidar la naturaleza es una bonita tradición, como cuidar la casa de la familia. Estas personas quieren proteger los bosques, los campos y los paisajes del país como algo heredado de los abuelos."
+    "eli5": "Estas personas ven el cuidado de la naturaleza como una tradición, como cuidar la casa de la familia. Quieren proteger los bosques, los campos y los paisajes del país como algo heredado de los abuelos."
   },
   {
     "id": "econacionalismo",
@@ -805,7 +805,7 @@
     "description": "Corriente que une el libre mercado y las libertades individuales con la preocupación por la justicia social, y sostiene que la libertad económica también debe mejorar de forma concreta la vida de los más pobres y vulnerables.",
     "phrase": "Quiero una libertad económica e individual que también saque de la miseria a los más pobres, uniendo el libre mercado con la compasión por la justicia social.",
     "category": "Libertario",
-    "eli5": "Mercado libre y poco gobierno, sí, pero con un gran corazón: estas personas creen que la libertad también debe ayudar a los pobres a tener una buena vida."
+    "eli5": "Mercado libre y poco gobierno, sí, pero pensando en los pobres: estas personas creen que la libertad también debe ayudar a los pobres a tener una buena vida."
   },
   {
     "id": "libertarianismo-nacional",
@@ -981,7 +981,7 @@
     "description": "Corriente que une ecología radical, autoritarismo y nacionalismo blanco, asociada a Mike Ma y al Pine Tree Party: defiende el colapso industrial, el control de la población y una preservación de la naturaleza impuesta por un orden autoritario.",
     "phrase": "Quiero una comunidad nacional orgánica en armonía con la tierra, que ponga la preservación ambiental y la supervivencia del pueblo por encima de las libertades individuales.",
     "category": "Tercera posición",
-    "eli5": "Estas personas quieren mucho a la naturaleza, pero de una forma mala. Creen que hay demasiada gente en el planeta y que solo su propio grupo debería quedarse. Quieren un gobierno duro, el fin de las fábricas y menos personas. Por eso mucha gente los ve como peligrosos y crueles."
+    "eli5": "Estas personas quieren proteger la naturaleza con un gobierno muy estricto que nadie puede quitar con el voto. Creen que hay demasiada gente en el planeta y que solo su propio grupo debería quedarse. Quieren cerrar las fábricas y que haya menos personas en la Tierra."
   },
   {
     "id": "comunismo-agrario",
@@ -1157,7 +1157,7 @@
     "description": "Doctrina que defiende la expansión territorial, militar y económica de una nación sobre otros pueblos y territorios, y mantiene colonias y esferas de influencia ligadas a los intereses de la metrópoli mediante el poder militar y político.",
     "phrase": "Quiero una nación poderosa que expanda su territorio y su influencia en el mundo, respaldada por una fuerte capacidad militar y económica.",
     "category": "Extrema derecha",
-    "eli5": "Es cuando un país grande quiere hacerse todavía más grande quedándose con tierras y mandando sobre otros pueblos, con ejércitos o con dinero. Como un niño que les quita los juguetes a todos los demás."
+    "eli5": "Es cuando un país grande quiere hacerse todavía más grande quedándose con tierras y mandando sobre otros pueblos, con ejércitos o con dinero. Quienes lo defienden lo ven como una forma de hacer fuerte e importante a su nación."
   },
   {
     "id": "liberalismo-progressista",
@@ -1381,7 +1381,7 @@
     "description": "Doctrina original de Proudhon, que denuncia la propiedad como robo y defiende el crédito mutuo gratuito, el federalismo de comunidades autónomas y la posesión por uso, con fuertes reservas morales sobre el progreso y las costumbres.",
     "phrase": "Quiero abolir la propiedad como robo, con crédito mutuo gratuito y una federación de comunas autónomas donde la posesión nazca del uso.",
     "category": "Anarquista",
-    "eli5": "Un hombre llamado Proudhon dijo: «¡la propiedad es un robo!». Quería que la gente intercambiara trabajo de forma justa, se prestara dinero sin intereses y viviera en comunidades libres unidas entre sí, sin un gobierno mandón."
+    "eli5": "Un hombre llamado Proudhon dijo: «¡la propiedad es un robo!». Quería que la gente intercambiara trabajo de forma justa, se prestara dinero sin intereses y viviera en comunidades libres unidas entre sí, sin un gobierno al mando."
   },
   {
     "id": "republicanismo-kantiano",
@@ -1453,7 +1453,7 @@
     "description": "Doctrina justicialista de Juan y Eva Perón que une soberanía política, independencia económica y justicia social, con sindicatos de la CGT, nacionalizaciones, industrialización protegida, catolicismo social y un líder carismático por encima de los partidos.",
     "phrase": "Quiero trabajadores organizados en sindicatos fuertes, con salarios dignos e industria nacional protegida, bajo un liderazgo firme, la fe y la familia.",
     "category": "Tercera posición",
-    "eli5": "En Argentina, Juan Perón y su esposa Evita decían: «el país tiene que ser dueño de sus cosas y cuidar a sus trabajadores». Dieron muchos derechos a los trabajadores e hicieron fuertes a los sindicatos, pero Perón era muy mandón y no le gustaba que lo criticaran."
+    "eli5": "En Argentina, Juan Perón y su esposa Evita decían: «el país tiene que ser dueño de sus cosas y cuidar a sus trabajadores». Dieron muchos derechos a los trabajadores e hicieron fuertes a los sindicatos. Perón también concentró mucho poder en sus manos y restringió a los periódicos que lo criticaban."
   },
   {
     "id": "fascismo-vermelho",
@@ -1485,7 +1485,7 @@
     "description": "Corriente de principios del siglo XIX que imaginó una sociedad industrial reorganizada mediante planificación racional, dirigida por científicos, ingenieros y productores, que reemplazara a políticos y aristócratas sin apelar a la lucha de clases ni a la revolución.",
     "phrase": "Quiero una sociedad industrial dirigida por científicos y productores, planificada racionalmente, que sustituya a políticos y aristócratas sin revolución.",
     "category": "Izquierda",
-    "eli5": "Hace unos 200 años, algunos soñadores imaginaron comunidades perfectas donde todos trabajarían juntos y lo compartirían todo de forma justa. Algunos hasta intentaron construir esos pueblos de verdad."
+    "eli5": "Hace unos 200 años, algunos pensadores imaginaron comunidades ideales donde todos trabajarían juntos y lo compartirían todo de forma justa. Algunos hasta intentaron construir esos pueblos de verdad."
   },
   {
     "id": "tecno-comercialismo",
@@ -1765,7 +1765,7 @@
     "description": "Corriente árabe de socialismo de Estado que combina nacionalismo panárabe, partido de vanguardia, planificación, reforma agraria y control de sectores estratégicos, y defiende la unidad árabe, el laicismo y la independencia frente al imperialismo.",
     "phrase": "Quiero la nación árabe unida por un partido revolucionario, con socialismo de Estado, reforma agraria, laicismo e independencia frente al imperialismo.",
     "category": "Tercera posición",
-    "eli5": "Es una idea de los países árabes. Dice que todos los árabes son una gran familia que debería unirse y que el gobierno debe dirigir la economía. En la práctica, los gobiernos baazistas, como en Siria e Irak, tuvieron dictadores muy duros."
+    "eli5": "Es una idea de los países árabes. Dice que todos los árabes son una gran familia que debería unirse y que el gobierno debe dirigir la economía. En la práctica, los gobiernos baazistas, como en Siria e Irak, fueron dictaduras con un solo partido en el poder."
   },
   {
     "id": "islamismo",
@@ -1821,7 +1821,7 @@
     "description": "Corriente que une identidad étnica y fe budista theravada y ve a la nación como guardiana del Dharma, recelosa de la influencia de otras comunidades, como el nacionalismo sinhala en Sri Lanka y movimientos de monjes como Ma Ba Tha y 969 en Myanmar.",
     "phrase": "Quiero una nación que proteja el Dharma y la identidad budista de la mayoría, con monjes influyentes y un liderazgo firme.",
     "category": "Derecha",
-    "eli5": "En países como Sri Lanka o Myanmar, algunas personas creen que el país pertenece a su pueblo budista y que debe proteger esa religión por encima de todo, a veces siendo duros con otras minorías."
+    "eli5": "En países como Sri Lanka o Myanmar, algunas personas creen que el país pertenece a su pueblo budista y que debe proteger esa religión por encima de todo. Esto a veces ha llevado a conflictos con otras minorías religiosas."
   },
   {
     "id": "sionismo",
@@ -2261,7 +2261,7 @@
     "description": "La ideología del rechazo absoluto: no propone programa, orden ni futuro, solo la negación de cada pregunta y de cada promesa política. Su único consenso es decir no a todo y su único proyecto es el desprecio.",
     "phrase": "Quiero una sociedad que diga no a cada pregunta, donde el rechazo total sea el único programa y el desprecio la única política.",
     "category": "Tercera posición",
-    "eli5": "Esta ideología no quiere construir nada. Solo dice «no» a todo y a todos. Sin plan, sin promesas, solo rabia contra todo. Es como un niño enfurruñado al que no le gusta ningún juego."
+    "eli5": "Esta ideología no quiere construir nada. Solo dice «no» a todo y a todos. Sin plan, sin promesas, solo rechazo a todo. Es como un niño que dice que no a todos los juegos."
   },
   {
     "id": "deltocracia",
