@@ -1,6 +1,7 @@
 import { useEffect, useState, type CSSProperties, type Ref } from 'react';
 import { t } from '../../i18n';
 import { mixHex } from '../../utils/shareCard';
+import { useNyaKey } from '../../utils/nya';
 
 /** Cores do palco: degradê claro do fundo (de, meio, até) e o fundo da tela do celular (cor do cartão). */
 export interface ShareStageColors {
@@ -14,6 +15,8 @@ type Preview = { status: 'idle' | 'loading' | 'error' } | { status: 'ready'; src
 
 /** Gera a imagem do cartão só quando o palco está perto de aparecer na tela, e de novo se `deps` mudar. */
 export function useSharePreview(generate: () => Promise<string>, deps: unknown[]) {
+  // Nya mode (the pink paw button) changes the card: redraw it when the level changes.
+  const nyaKey = useNyaKey();
   // Ref por função: o palco pode aparecer depois (a comparação só o mostra quando os dados chegam).
   const [node, setNode] = useState<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
@@ -61,7 +64,7 @@ export function useSharePreview(generate: () => Promise<string>, deps: unknown[]
       cancelled = true;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [visible, ...deps]);
+  }, [visible, nyaKey, ...deps]);
 
   return { ref: setNode, status: preview.status, src: preview.status === 'ready' ? preview.src : null };
 }

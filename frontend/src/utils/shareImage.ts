@@ -1,5 +1,6 @@
 import type { Axis, QuizPayload, QuizResult, QuizVariant } from '../types/quiz';
 import type { Religion } from './religion';
+import { nyaNamesReady } from './nya';
 
 /** Quiz mínimo para montar o cartão quando o resultado veio de um link (sem o quiz carregado). */
 export function exportQuizFor(quiz: QuizPayload | null, axes: Axis[], variant: QuizVariant): QuizPayload {
@@ -36,7 +37,8 @@ export async function loadShareFonts(): Promise<void> {
 export async function createSharePng(result: QuizResult, quiz: QuizPayload, religion: Religion | null): Promise<string> {
   let stage: HTMLDivElement | null = null;
   try {
-    await loadShareFonts();
+    // Nya mode: the title is measured when the card is built, so the cute names must be here first.
+    await Promise.all([loadShareFonts(), nyaNamesReady(2500)]);
     const [{ toPng }, shareCard] = await Promise.all([import('html-to-image'), import('./shareCard')]);
     const { stage: builtStage, target } = shareCard.buildShareCard(result, quiz, religion);
     stage = builtStage;

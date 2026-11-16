@@ -1,4 +1,6 @@
 import { LANG, t } from '../i18n';
+import { nyaLevel, nyaText } from './nya';
+import { drawNyaBackground, drawNyaOverlay, drawNyaQrPlate, nyaBaseColor, nyaPrepareTarget } from './nyaShareCard';
 import type { PersonalityMatch, QuizPayload, QuizResult } from '../types/quiz';
 import { resolveCountryFlagSrc } from './countryFlags';
 import { personalityInitials, resolvePersonalityImageSrc } from './personalityImage';
@@ -251,6 +253,8 @@ export function buildShareHeader(label: string = t.shareResultLabel, theme: Shar
       color: theme.label ?? rgba(P, 0.82)
     }, label)
   );
+  // Nya mode hides the label to make room for its kitten (see nyaShareCard.ts).
+  (header.lastChild as HTMLElement).dataset.nyaLabel = '';
   const brand = header.firstChild as HTMLElement;
   brand.append(
     el('span', {}, '12'),
@@ -261,6 +265,8 @@ export function buildShareHeader(label: string = t.shareResultLabel, theme: Shar
 
 export function buildShareIdentity(result: QuizResult, bgColor: string, ink: string = SHARE_COLORS.papel): HTMLElement {
   const P = ink;
+  // Nya mode (MAX/HYPER): the ideology becomes its UwUism name; measured here so the title still fits on one line.
+  const name = nyaText(result.topMatch.name);
   const wrap = el('div', { display: 'flex', flexDirection: 'column', gap: '0', marginTop: '18px' });
   wrap.append(
     el('div', {
@@ -274,7 +280,7 @@ export function buildShareIdentity(result: QuizResult, bgColor: string, ink: str
     el('div', {
       fontFamily: SHARE_FONT_DISPLAY,
       fontWeight: '600',
-      fontSize: `${fitTitleFontSize(result.topMatch.name)}px`,
+      fontSize: `${fitTitleFontSize(name)}px`,
       lineHeight: '1.05',
       letterSpacing: '-0.02em',
       // Uma linha só: a faixa do título é fixa e uma segunda linha sobrepõe o retrato e os eixos.
@@ -285,8 +291,10 @@ export function buildShareIdentity(result: QuizResult, bgColor: string, ink: str
       alignItems: 'center',
       color: P,
       marginTop: '-8px'
-    }, result.topMatch.name)
+    }, name)
   );
+  // Already in its nya form: the later pass over the card must not change it again.
+  (wrap.lastChild as HTMLElement).dataset.nyaSkip = '';
   return wrap;
 }
 
@@ -680,6 +688,7 @@ export function buildShareFooter(cta: string = t.shareFooterCta, qrUrl?: string,
     paddingTop: qrUrl ? '26px' : '30px',
     borderTop: `2px solid ${theme.footerRule ?? rgba(P, 0.25)}`
   });
+  footer.dataset.nyaFooter = '';
   const ctaText = el('span', {
     fontFamily: SHARE_FONT_BODY,
     fontWeight: '600',
@@ -765,6 +774,9 @@ type CanvasRect = { x: number; y: number; width: number; height: number };
 const IMAGE_TIMEOUT_MS = 8000;
 
 export async function renderSharePng(target: HTMLElement, toPng: ToPng): Promise<string> {
+  // Nya mode on MAX (2) or HYPER (3): cute text and names, pink background, mascots (nyaShareCard.ts).
+  const nya = nyaLevel() >= 2 ? nyaLevel() : 0;
+  if (nya) await nyaPrepareTarget(target, nya);
   const slots = collectImageSlots(target);
   // Carrega as imagens em paralelo com o render do DOM.
   const imagesPromise = Promise.all(
@@ -790,8 +802,9 @@ export async function renderSharePng(target: HTMLElement, toPng: ToPng): Promise
     throw new Error('Canvas indisponível');
   }
 
-  const base = target.dataset.shareBase ?? '#101010';
-  drawBackground(ctx, base, target.dataset.shareCircle ?? base, target.dataset.shareGradient);
+  const base = nya ? nyaBaseColor(nya) : target.dataset.shareBase ?? '#101010';
+  if (nya) drawNyaBackground(ctx, nya);
+  else drawBackground(ctx, base, target.dataset.shareCircle ?? base, target.dataset.shareGradient);
 
   slots.forEach((slot, index) => {
     if (slot.kind === 'portrait') {
@@ -806,6 +819,7 @@ export async function renderSharePng(target: HTMLElement, toPng: ToPng): Promise
 
   slots.forEach((slot, index) => {
     if (slot.kind === 'qr') {
+      if (nya) drawNyaQrPlate(ctx, slot.rect, slot.tint ?? SHARE_COLORS.papel);
       drawQr(ctx, slot.src, slot.rect, slot.tint ?? SHARE_COLORS.papel);
       return;
     }
@@ -863,6 +877,8 @@ export async function renderSharePng(target: HTMLElement, toPng: ToPng): Promise
     }
     ctx.restore();
   });
+
+  if (nya) await drawNyaOverlay(ctx, nya, target);
 
   return canvas.toDataURL('image/png');
 }
