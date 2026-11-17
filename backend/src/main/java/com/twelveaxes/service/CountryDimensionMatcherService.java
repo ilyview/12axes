@@ -80,6 +80,7 @@ public class CountryDimensionMatcherService {
         List<Country> countries = dataService.getCountries(QuizDataService.normalizeLang(lang)).stream()
                 .filter(country -> !excludedIds.contains(country.id()))
                 .filter(country -> ReligionFilter.allows(country.religions(), religion))
+                .filter(country -> CatalogVisibility.visible(country.id()))
                 .toList();
         if (countries.isEmpty()) {
             return null;

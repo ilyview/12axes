@@ -523,6 +523,18 @@ export const es: DeepPartial<Strings> = {
   resultsSummaryAria: 'Resumen del análisis',
   metaTop: 'Top match',
   axesSectionEyebrow: 'Ejes políticos',
+  settings: {
+    open: "Ajustes",
+    title: "Ajustes",
+    displaySection: "Visualización",
+    cuteButton: "Botón rosa (modo nya)",
+    cuteButtonHint: "Muestra la patita rosa en la esquina. Si lo apagas, el modo nya también se apaga.",
+    jokes: "Perfiles de broma",
+    jokesHint: "Países e ideologías de fantasía (Sigmatopia, Corporatia…) y personajes como Sero y Lenny en los resultados.",
+    axesSection: "Ejes del test",
+    axesNote: "Un eje desactivado no se pregunta y no cuenta en el resultado ni en la compatibilidad. Vale desde el próximo test.",
+    allAxesOn: "Activar todos los ejes"
+  },
   axesSectionTitle: 'Tus 14 ejes',
   proximityEyebrow: 'Proximidad ideológica',
   otherMatches: 'Otras ideologías',

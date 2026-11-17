@@ -77,6 +77,7 @@ public class PartyDimensionMatcherService {
         List<Party> parties = dataService.getParties(QuizDataService.normalizeLang(lang)).stream()
                 .filter(party -> !excludedIds.contains(party.id()))
                 .filter(party -> ReligionFilter.allows(party.religions(), religion))
+                .filter(party -> CatalogVisibility.visible(party.id()))
                 .toList();
         if (parties.isEmpty()) {
             return null;

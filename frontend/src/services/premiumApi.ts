@@ -2,6 +2,7 @@ import { LANG } from '../i18n';
 import type { PremiumReport, ReportPreview } from '../types/quiz';
 import type { SavedAnswers } from '../utils/quizProgress';
 import { request } from './quizApi';
+import { serializeVector, type ResultVector } from '../utils/peopleCompare';
 
 /**
  * Relatório Completo. O resultado é definido pelos 12 valores dos eixos (ordem de axes.json); as respostas são
@@ -17,7 +18,7 @@ export function archetypeOnly(choices: Record<string, string>): Record<string, s
 }
 
 export function fetchPremiumReport(
-  vector: number[],
+  vector: ResultVector,
   saved: Pick<SavedAnswers, 'variant' | 'answers' | 'archetypeChoices'> | null,
   token: string | null,
   religion: string | null
@@ -27,7 +28,7 @@ export function fetchPremiumReport(
     method: 'POST',
     headers: token ? { 'X-Entitlement': token } : undefined,
     body: JSON.stringify({
-      v: vector.join(','),
+      v: serializeVector(vector),
       answers: saved ? Object.entries(saved.answers).map(([questionId, answer]) => ({ questionId, answer })) : undefined,
       archetype: saved ? archetypeOnly(saved.archetypeChoices) : undefined
     })
@@ -35,19 +36,19 @@ export function fetchPremiumReport(
 }
 
 /** O comecinho do relatório (o eixo mais forte, o líder e o vice do governo e a primeira era) para o convite da compra: não pede acesso. */
-export function fetchReportPreview(vector: number[], religion: string | null): Promise<ReportPreview> {
+export function fetchReportPreview(vector: ResultVector, religion: string | null): Promise<ReportPreview> {
   const religionParam = religion ? `&religion=${encodeURIComponent(religion)}` : '';
   return request<ReportPreview>(`/api/premium/preview?lang=${LANG}${religionParam}`, {
     method: 'POST',
-    body: JSON.stringify({ v: vector.join(',') })
+    body: JSON.stringify({ v: serializeVector(vector) })
   });
 }
 
 /** Abre o pagamento deste resultado e devolve o endereço da página de pagamento. O preço é decidido pelo servidor; o e-mail (só em reais) vai para a AbacatePay. */
-export async function startCheckout(vector: number[], returnUrl: string, email?: string): Promise<string> {
+export async function startCheckout(vector: ResultVector, returnUrl: string, email?: string): Promise<string> {
   const { url } = await request<{ url: string }>('/api/checkout', {
     method: 'POST',
-    body: JSON.stringify({ v: vector.join(','), lang: LANG, returnUrl, email: email || undefined })
+    body: JSON.stringify({ v: serializeVector(vector), lang: LANG, returnUrl, email: email || undefined })
   });
   return url;
 }
@@ -56,10 +57,10 @@ export async function startCheckout(vector: number[], returnUrl: string, email?:
  * Troca um pagamento feito (sessão da volta do checkout, ou código do link do recibo) pelo token deste resultado.
  * 402 = ainda não confirmado (Pix pendente); 403 = o pagamento é de outro resultado ou foi reembolsado.
  */
-export async function unlockPayment(input: { vector: number[]; sessionId?: string; pay?: string; gift?: string; renew?: string }): Promise<string> {
+export async function unlockPayment(input: { vector: ResultVector; sessionId?: string; pay?: string; gift?: string; renew?: string }): Promise<string> {
   const { token } = await request<{ token: string }>('/api/unlock', {
     method: 'POST',
-    body: JSON.stringify({ v: input.vector.join(','), sessionId: input.sessionId, pay: input.pay, gift: input.gift, renew: input.renew })
+    body: JSON.stringify({ v: serializeVector(input.vector), sessionId: input.sessionId, pay: input.pay, gift: input.gift, renew: input.renew })
   });
   return token;
 }

@@ -535,6 +535,18 @@ export const it: DeepPartial<Strings> = {
   resultsSummaryAria: "Riepilogo dell'analisi",
   metaTop: 'Più compatibile',
   axesSectionEyebrow: 'Assi politici',
+  settings: {
+    open: "Impostazioni",
+    title: "Impostazioni",
+    displaySection: "Visualizzazione",
+    cuteButton: "Pulsante rosa (modalità nya)",
+    cuteButtonHint: "Mostra la zampetta rosa nell'angolo. Se lo spegni, si spegne anche la modalità nya.",
+    jokes: "Profili per scherzo",
+    jokesHint: "Paesi e ideologie di fantasia (Sigmatopia, Corporatia…) e personaggi come Sero e Lenny nei risultati.",
+    axesSection: "Assi del test",
+    axesNote: "Un asse disattivato non viene chiesto e non conta nel risultato né nella compatibilità. Vale dal prossimo test.",
+    allAxesOn: "Attiva tutti gli assi"
+  },
   axesSectionTitle: 'I tuoi 14 assi',
   proximityEyebrow: 'Vicinanza ideologica',
   otherMatches: 'Altre ideologie',

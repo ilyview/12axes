@@ -522,6 +522,18 @@ export const pt: Strings = {
   resultsSummaryAria: 'Resumo da análise',
   metaTop: 'Top match',
   axesSectionEyebrow: 'Eixos políticos',
+  settings: {
+    open: "Configurações",
+    title: "Configurações",
+    displaySection: "Exibição",
+    cuteButton: "Botão rosa (modo nya)",
+    cuteButtonHint: "Mostra a patinha rosa no canto da tela. Desligado, o modo nya também desliga.",
+    jokes: "Perfis de brincadeira",
+    jokesHint: "Países e ideologias de fantasia (Sigmatopia, Corporatia…) e personagens como Sero e Lenny nos resultados.",
+    axesSection: "Eixos do teste",
+    axesNote: "Eixo desligado não é perguntado e não conta no resultado nem na compatibilidade. Vale a partir do próximo teste.",
+    allAxesOn: "Ligar todos os eixos"
+  },
   axesSectionTitle: 'Seus 14 eixos',
   proximityEyebrow: 'Proximidade ideológica',
   otherMatches: 'Outras ideologias',

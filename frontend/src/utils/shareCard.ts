@@ -10,6 +10,7 @@ import { religiousPoleIcon } from '../data/religionIcons';
 import { qrModules } from './qrMatrix';
 import type { Religion } from './religion';
 import { shortResultUrl } from './shortLinks';
+import { resultVector } from './peopleCompare';
 
 /**
  * Cartão de compartilhamento social — formato stories 1080x1920.
@@ -217,7 +218,7 @@ export function buildShareCard(
       t.shareFooterCta,
       // Inteiros (meio ponto a menos de precisão): link mais curto, QR 33x33 e não 37x37.
       shortResultUrl(
-        result.axes.map((axis) => Math.round(axis.leftPercent)),
+        resultVector(result.axes).map((value) => (value === null ? null : Math.round(value))),
         religion,
         LANG,
         hatred

@@ -535,6 +535,18 @@ export const de: DeepPartial<Strings> = {
   resultsSummaryAria: 'Zusammenfassung der Analyse',
   metaTop: 'Beste Übereinstimmung',
   axesSectionEyebrow: 'Politische Achsen',
+  settings: {
+    open: "Einstellungen",
+    title: "Einstellungen",
+    displaySection: "Anzeige",
+    cuteButton: "Pinker Button (Nya-Modus)",
+    cuteButtonHint: "Zeigt die pinke Pfote in der Ecke. Ausgeschaltet geht auch der Nya-Modus aus.",
+    jokes: "Joke-Profile",
+    jokesHint: "Fantasie-Länder und -Ideologien (Sigmatopia, Corporatia …) und Figuren wie Sero und Lenny in den Ergebnissen.",
+    axesSection: "Achsen im Test",
+    axesNote: "Eine ausgeschaltete Achse wird nicht abgefragt und zählt weder im Ergebnis noch bei der Übereinstimmung. Gilt ab dem nächsten Test.",
+    allAxesOn: "Alle Achsen einschalten"
+  },
   axesSectionTitle: 'Deine 14 Achsen',
   proximityEyebrow: 'Ideologische Nähe',
   otherMatches: 'Andere Ideologien',

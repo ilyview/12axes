@@ -25,6 +25,7 @@ import {
   type Palette
 } from './sectionShareParts';
 import { shortResultUrl } from './shortLinks';
+import { resultVector } from './peopleCompare';
 
 /**
  * Cartão de compartilhamento dos "Países para viver" — stories 1080x1920: os 10 países atuais mais compatíveis, cada um com a
@@ -135,7 +136,7 @@ export function buildLivingShareCard(
     buildShareFooter(
       t.shareFooterCta,
       shortResultUrl(
-        result.axes.map((axis) => Math.round(axis.leftPercent)),
+        resultVector(result.axes).map((value) => (value === null ? null : Math.round(value))),
         religion,
         LANG
       )

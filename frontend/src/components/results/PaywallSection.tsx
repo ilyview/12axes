@@ -10,6 +10,7 @@ import { LockIcon, UnlockIcon } from './LockIcon';
 import type { PaywallSource } from './PaywallModal';
 import { UnlockButton } from './UnlockButton';
 import type { PremiumAccess } from './usePremiumAccess';
+import { resultVector } from '../../utils/peopleCompare';
 
 // Cada seção do Relatório completo aparece como um painel próprio: o título nítido, o começo da seção como ela é na página paga
 // (do servidor, sem acesso: só o que o convite mostra) e o resto desfocado, com o botão que abre a compra. Enquanto o começo não
@@ -124,7 +125,7 @@ export function PaywallSection({ access, onOpen, result, axes, results, religion
 
   // O comecinho do relatório, do servidor (só o que o convite mostra). Sem ele (servidor antigo, falha), cada painel mostra o teaser
   // simples, com os dados gratuitos do resultado.
-  const vector = useMemo(() => result.axes.map((axis) => axis.leftPercent), [result]);
+  const vector = useMemo(() => resultVector(result.axes), [result]);
   const vectorKey = vector.join(',');
   const [preview, setPreview] = useState<ReportPreview | null>(null);
   useEffect(() => {

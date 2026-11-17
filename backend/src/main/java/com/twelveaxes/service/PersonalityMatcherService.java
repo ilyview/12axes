@@ -150,6 +150,7 @@ public class PersonalityMatcherService {
         return java.util.stream.IntStream.range(0, candidates.size())
                 .mapToObj(i -> new PersonalityCandidate(candidates.get(i).personality(), candidates.get(i).compatibility(), percentiles[i]))
                 .filter(candidate -> ReligionFilter.allows(candidate.personality().religions(), religion))
+                .filter(candidate -> CatalogVisibility.visible(candidate.personality().id()))
                 .sorted(byScore.thenComparing(byName))
                 .map(this::toMatch)
                 .toList();

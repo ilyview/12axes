@@ -5,6 +5,7 @@ import { ApiError } from '../../services/quizApi';
 import { track } from '../../utils/analytics';
 import { openPaddleCheckout, PADDLE_CLIENT_TOKEN, paddleTransactionFromSearch } from '../../utils/paddle';
 import { accessTokenFromHash, findRenewableToken, returnUrlWithLang, loadToken, removeToken, saveToken, tokenExpiresAt, vectorHash } from '../../utils/entitlement';
+import type { ResultVector } from '../../utils/peopleCompare';
 
 /** Por que o acesso não abriu: outro resultado ou reembolso ("denied"), gateway/servidor fora ("unavailable"), ou o Pix demorou ("timeout"). */
 export type AccessProblem = 'denied' | 'unavailable' | 'timeout';
@@ -78,7 +79,7 @@ const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
  * Acesso ao Relatório Completo deste resultado: o token guardado, ou a confirmação do pagamento na volta do pagamento (Mercado Pago).
  * Desligado (`enabled` falso), não faz nada e não chama o servidor.
  */
-export function usePremiumAccess(vector: number[], enabled: boolean): PremiumAccess {
+export function usePremiumAccess(vector: ResultVector, enabled: boolean): PremiumAccess {
   const [state, setState] = useState<AccessState>(enabled ? { status: 'checking' } : { status: 'off' });
   const [attempt, setAttempt] = useState(0);
   const [justPaid, setJustPaid] = useState(false);

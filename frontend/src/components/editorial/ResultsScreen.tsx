@@ -39,6 +39,7 @@ import { pdfButtonAction } from '../../utils/pdfAccess';
 import { paywallEnabled, paywallMode, salesOpen } from '../../utils/paywallFlag';
 import { downloadRankingXlsx } from '../../utils/rankingXlsx';
 import { applyGoatMode } from '../../utils/goatism';
+import { resultVector } from '../../utils/peopleCompare';
 
 // Modo de desenvolvimento local do Relatório Completo: abre sem pagamento (o backend também precisa de PREMIUM_DEV_OPEN).
 // Fica fora do build de produção porque a variável só existe em frontend/.env.local.
@@ -141,7 +142,7 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
     />
   );
   // Identidade do resultado para o relatório pago: os 12 valores, na ordem dos eixos.
-  const premiumVector = useMemo(() => result.axes.map((axis) => axis.leftPercent), [result]);
+  const premiumVector = useMemo(() => resultVector(result.axes), [result]);
   // Resultado visto: uma vez por resultado (quem fez o teste agora ou abriu um link). Junto com quiz_start e quiz_complete mostra
   // onde o funil perde gente antes do convite.
   const vectorKey = premiumVector.join(',');

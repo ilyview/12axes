@@ -8,10 +8,11 @@ import type { SeatKey } from './GovernmentPanel';
 import { premiumPanels } from './PremiumPanels';
 import { SaveAccessLink } from './SaveAccessLink';
 import { P } from './premiumText';
+import type { ResultVector } from '../../../utils/peopleCompare';
 
 interface Props {
   /** Os 12 valores do resultado (% do polo esquerdo, na ordem dos eixos): é o que o relatório e o acesso identificam. */
-  vector: number[];
+  vector: ResultVector;
   /** Respostas deste resultado, quando este navegador as tem: só acrescentam o que mais pesou em cada eixo. */
   answers: Pick<SavedAnswers, 'variant' | 'answers' | 'archetypeChoices'> | null;
   /** Token de acesso; nulo no modo de desenvolvimento local, que abre sem pagamento. */

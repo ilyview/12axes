@@ -15,6 +15,7 @@ import { searchItems } from '../../utils/compareSearch';
 import { InfoSheet } from './InfoSheet';
 import { Portrait } from './PersonalitiesSection';
 import { SheetMatch } from './SheetMatch';
+import { RESULT_AXIS_IDS, resultVector } from '../../utils/peopleCompare';
 
 interface CompareSectionProps {
   axes: Axis[];
@@ -169,7 +170,7 @@ export function CompareSection({ axes, results, religion, userCategory, closest,
   };
 
   const options = useMemo(() => (catalog && !selected ? searchItems(catalog, query) : []), [catalog, query, selected]);
-  const userPercents = useMemo(() => axes.map((axis) => results.get(axis.id)?.leftPercent ?? 50), [axes, results]);
+  const userPercents = useMemo(() => resultVector([...results.values()]), [results]);
 
   // A comparação começa a carregar assim que o perfil é escolhido, enquanto o usuário
   // ainda vai até o botão; "Visualizar" só espera o que faltar (quase sempre nada).
@@ -305,9 +306,9 @@ function ComparisonSheet({ detail, axes, results, userCategory, religion, onClos
   const fullUrl = peopleCompareUrl({
     names: [t.peopleYou, cleanName(item.name, t.peopleOther)],
     people: [
-      { values: axes.map((axis) => results.get(axis.id)?.leftPercent ?? 50), religion: religion ?? null },
+      { values: resultVector([...results.values()]), religion: religion ?? null },
       {
-        values: axes.map((axis) => detail.vector[axis.id] ?? 50),
+        values: RESULT_AXIS_IDS.map((id) => detail.vector[id] ?? null),
         religion: itemReligions[0] ?? null,
         religionFilter: itemReligions.length > 1 ? itemReligions.join(',') : null
       }

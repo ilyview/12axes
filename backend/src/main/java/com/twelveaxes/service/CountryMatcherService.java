@@ -115,6 +115,7 @@ public class CountryMatcherService {
         return java.util.stream.IntStream.range(0, candidates.size())
                 .mapToObj(i -> new CountryCandidate(candidates.get(i).country(), candidates.get(i).compatibility(), percentiles[i]))
                 .filter(candidate -> ReligionFilter.allows(candidate.country().religions(), religion))
+                .filter(candidate -> CatalogVisibility.visible(candidate.country().id()))
                 .sorted(byCompatibility.thenComparing(byName))
                 .map(this::toMatch)
                 .toList();

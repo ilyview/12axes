@@ -8,13 +8,15 @@ import {
   peopleCompareUrl,
   religionPreference,
   RESULT_URL_KEYS,
-  REQUIRED_RESULT_URL_KEYS,
+  serializeVector,
   type PersonResult
 } from './peopleCompare';
 import { parseReligionList } from './religion';
 
 const QUERY = 'est=65&rep=32.5&pod=10&imi=90&dip=50&int=0&eco=100&con=44&com=12&rel=70&mor=33&tec=51';
 const VALUES = [65, 32.5, 10, 90, 50, 0, 100, 44, 12, 70, 33, 51];
+// Como o link antigo é lido: os 12 valores e nulo em metodo e distribuicao.
+const PARSED = [...VALUES, null, null];
 
 describe('parseResultLink', () => {
   it.each([
@@ -30,7 +32,7 @@ describe('parseResultLink', () => {
     ['com chave desconhecida', `/results?utm_source=zap&${QUERY}&foo=bar`]
   ])('aceita %s', (_, raw) => {
     const parsed = parseResultLink(raw);
-    expect(parsed).toEqual({ ok: true, values: VALUES, religion: null });
+    expect(parsed).toEqual({ ok: true, values: PARSED, religion: null });
   });
 
   it('lê a religião e ignora valor desconhecido', () => {
@@ -39,13 +41,13 @@ describe('parseResultLink', () => {
   });
 
   it('aceita vírgula decimal', () => {
-    expect(parseResultLink(QUERY.replace('32.5', '32,5'))).toMatchObject({ ok: true, values: VALUES });
+    expect(parseResultLink(QUERY.replace('32.5', '32,5'))).toMatchObject({ ok: true, values: PARSED });
   });
 
   it('aceita o link curto do cartão (/r?v=...)', () => {
     const short = 'v=65-32.5-10-90-50-0-100-44-12-70-33-51';
-    expect(parseResultLink(`https://12axes.vercel.app/r?${short}`)).toEqual({ ok: true, values: VALUES, religion: null });
-    expect(parseResultLink(`/r?${short}&r=c&l=en`)).toMatchObject({ ok: true, values: VALUES, religion: 'catholic' });
+    expect(parseResultLink(`https://12axes.vercel.app/r?${short}`)).toEqual({ ok: true, values: PARSED, religion: null });
+    expect(parseResultLink(`/r?${short}&r=c&l=en`)).toMatchObject({ ok: true, values: PARSED, religion: 'catholic' });
   });
 
   it('link curto incompleto é inválido', () => {
@@ -57,7 +59,7 @@ describe('parseResultLink', () => {
   });
 
   it('link antigo, só com os 12 primeiros eixos, continua valendo com 12 valores', () => {
-    expect(parseResultLink(`/results?${QUERY}`)).toMatchObject({ ok: true, values: VALUES });
+    expect(parseResultLink(`/results?${QUERY}`)).toMatchObject({ ok: true, values: PARSED });
   });
 
   it('link novo traz também metodo e distribuicao', () => {
@@ -66,12 +68,21 @@ describe('parseResultLink', () => {
     expect(RESULT_URL_KEYS).toHaveLength(14);
   });
 
-  it('só uma das chaves novas: fica o resultado antigo, sem eixo pela metade', () => {
-    expect(parseResultLink(`/results?${QUERY}&met=20`)).toMatchObject({ ok: true, values: VALUES });
+  it('eixo desligado não vem no link e fica nulo', () => {
+    expect(parseResultLink(`/results?${QUERY}&met=20`)).toMatchObject({ ok: true, values: [...VALUES, 20, null] });
+    expect(parseResultLink(`/results?${QUERY.replace('rel=70&', '')}`)).toMatchObject({ ok: true, values: PARSED.map((value, index) => (index === 9 ? null : value)) });
+  });
+
+  it('vetor com eixo desligado vai e volta no link curto e na API, e o antigo segue no formato de 12 valores', () => {
+    const withGap = [...VALUES.slice(0, 9), null, ...VALUES.slice(10), 20, 80];
+    expect(serializeVector(withGap)).toBe('65,32.5,10,90,50,0,100,44,12,,33,51,20,80');
+    expect(serializeVector(PARSED)).toBe(VALUES.join(','));
+    expect(parseResultLink(`/r?v=${serializeVector(withGap, '-')}`)).toMatchObject({ ok: true, values: withGap });
+    expect(pairCompatibility(withGap, [...VALUES, 20, 80])).toBe(100);
   });
 
   it('link curto aceita 12 ou 14 valores', () => {
-    expect(parseResultLink(`/r?v=${VALUES.join('-')}`)).toMatchObject({ ok: true, values: VALUES });
+    expect(parseResultLink(`/r?v=${VALUES.join('-')}`)).toMatchObject({ ok: true, values: PARSED });
     expect(parseResultLink(`/r?v=${[...VALUES, 20, 80].join('-')}`)).toMatchObject({ ok: true, values: [...VALUES, 20, 80] });
     expect(parseResultLink(`/r?v=${[...VALUES, 20].join('-')}`)).toMatchObject({ ok: false });
   });
@@ -81,9 +92,9 @@ describe('parseResultLink', () => {
     expect(midpoint([...VALUES, 0, 100], VALUES)).toHaveLength(12);
   });
 
-  it('diz quais eixos faltam', () => {
+  it('link só com alguns eixos (os outros desligados) vale com nulo nos que faltam', () => {
     const parsed = parseResultLink('/results?est=65&rep=32');
-    expect(parsed).toEqual({ ok: false, problem: { kind: 'missing', keys: REQUIRED_RESULT_URL_KEYS.slice(2) } });
+    expect(parsed).toMatchObject({ ok: true, values: [65, 32, ...Array(12).fill(null)] });
   });
 
   it('rejeita valor fora de 0 a 100 ou não numérico', () => {
@@ -107,7 +118,7 @@ describe('link da comparação entre pessoas', () => {
     expect(url.startsWith('/compare/people?')).toBe(true);
     const back = parsePeopleCompareUrl(url.slice(url.indexOf('?')), ['A', 'B']);
     expect(back?.names).toEqual(link.names);
-    expect(back?.people[0]).toEqual({ values: VALUES, religion: null });
+    expect(back?.people[0]).toEqual({ values: PARSED, religion: null });
     expect(back?.people[1].religion).toBe('islam');
     expect(back?.people[1].values[0]).toBe(35);
   });
@@ -166,7 +177,7 @@ describe('religiões na comparação entre pessoas', () => {
     expect(new URLSearchParams(url.split('?')[1]).get('rb')).toBe('catholic,protestant');
     const parsed = parsePeopleCompareUrl(url.split('?')[1], ['Você', 'Outra']);
     expect(parsed?.people[1]).toMatchObject({ religion: 'catholic', religionFilter: 'catholic,protestant' });
-    expect(parsed?.people[0]).toEqual({ values: VALUES, religion: null });
+    expect(parsed?.people[0]).toEqual({ values: PARSED, religion: null });
   });
 
   it('uma só religião vai sem lista, e valores inválidos são ignorados', () => {

@@ -10,6 +10,7 @@ import { ProfileSheet } from '../ProfileSheet';
 import { GovernmentSwapSheet } from './GovernmentSwapSheet';
 import { SeatIcon } from './SeatIcon';
 import { P } from './premiumText';
+import { resultVector } from '../../../utils/peopleCompare';
 
 export type SeatKey = GovernmentSeat['seatKey'];
 
@@ -263,7 +264,7 @@ export function GovernmentPanel({
           swapped={Boolean(swaps[swapping])}
           category={category}
           heldBy={Object.fromEntries(seats.map((item) => [item.holder.personalityId, { seatKey: item.seatKey, holder: item.holder }]))}
-          userPercents={user ? user.axes.map((axis) => user.results.get(axis.id)?.leftPercent ?? 50) : null}
+          userPercents={user ? resultVector([...user.results.values()]) : null}
           onPick={(id, found) => {
             // Quem já ocupa outra cadeira muda de lugar, e a cadeira que ele deixa passa à próxima figura mais compatível.
             onSwap(swapping, id, found, displacedSwap(seats, swapping, id));

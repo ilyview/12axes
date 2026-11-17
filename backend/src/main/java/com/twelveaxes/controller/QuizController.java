@@ -136,8 +136,9 @@ public class QuizController {
 
     // O resultado depende so dos 12 percentuais (o resto vem do idioma), entao eles formam a chave.
     private static String resultKey(List<AxisResult> axes, String lang, String religion, boolean hatredEgg) {
-        StringBuilder key = new StringBuilder(lang).append('|').append(religion).append('|').append(hatredEgg).append('|');
-        axes.forEach(axis -> key.append(axis.leftPercent()).append(','));
+        StringBuilder key = new StringBuilder(lang).append('|').append(religion).append('|').append(hatredEgg).append('|')
+                .append(com.twelveaxes.service.CatalogVisibility.jokesHidden()).append('|');
+        axes.forEach(axis -> key.append(axis.axisId()).append(':').append(axis.leftPercent()).append(','));
         return key.toString();
     }
 

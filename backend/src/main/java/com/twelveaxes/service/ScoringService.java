@@ -35,9 +35,15 @@ public class ScoringService {
         Map<String, Question> questionById = questionsById();
         validateAnswers(request.answers(), questionById);
         Map<String, WeightedScore> scores = accumulate(request, questionById);
+        // Eixo desligado nas configuracoes: nenhuma pergunta dele foi respondida, e ele sai do resultado (as
+        // perguntas de arquetipo sozinhas nao bastam para posicionar alguem num eixo).
+        Set<String> answeredAxes = request.answers().stream()
+                .map(answer -> questionById.get(answer.questionId()).axisId())
+                .collect(Collectors.toSet());
 
         String normalizedLang = QuizDataService.normalizeLang(lang);
         return dataService.getAxes(normalizedLang).stream()
+                .filter(axis -> answeredAxes.contains(axis.id()))
                 .map(axis -> toAxisResult(axis, scores.get(axis.id()), normalizedLang))
                 .toList();
     }
@@ -98,19 +104,29 @@ public class ScoringService {
 
     // Reconstrói o resultado a partir de um vetor de leftPercent (um valor por
     // eixo, na ordem de axes.json) — usado pelas URLs de resultado compartilhado.
-    // Aceita também o vetor antigo, com os LEGACY_AXIS_COUNT primeiros eixos.
+    // Aceita o vetor antigo (os LEGACY_AXIS_COUNT primeiros eixos) e valores nulos: eixo
+    // desligado nas configuracoes ou ainda inexistente quando o resultado foi feito. Esses eixos ficam fora.
     public List<AxisResult> scoreFromLeftPercents(List<Double> leftPercents, String lang) {
         String normalizedLang = QuizDataService.normalizeLang(lang);
         List<Axis> axes = dataService.getAxes(normalizedLang);
-        if (leftPercents.size() != axes.size() && leftPercents.size() != LEGACY_AXIS_COUNT) {
+        boolean knownSize = leftPercents.size() == axes.size() || leftPercents.size() == LEGACY_AXIS_COUNT;
+        if (!knownSize || leftPercents.stream().allMatch(java.util.Objects::isNull)) {
             throw new ResponseStatusException(
                     HttpStatus.BAD_REQUEST,
                     "Vetor de eixos inválido: esperados " + axes.size() + " valores"
             );
         }
         return java.util.stream.IntStream.range(0, leftPercents.size())
+                .filter(index -> leftPercents.get(index) != null)
                 .mapToObj(index -> buildAxisResult(axes.get(index), leftPercents.get(index), normalizedLang))
                 .toList();
+    }
+
+    /** O vetor na ordem de axes.json, com nulo nos eixos que o resultado nao tem (o inverso de scoreFromLeftPercents). */
+    public List<Double> positionalValues(List<AxisResult> results) {
+        Map<String, Double> byAxis = new HashMap<>();
+        results.forEach(result -> byAxis.put(result.axisId(), result.leftPercent()));
+        return dataService.getAxes().stream().map(axis -> byAxis.get(axis.id())).toList();
     }
 
     /**

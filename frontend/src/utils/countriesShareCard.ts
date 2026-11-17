@@ -18,6 +18,7 @@ import {
   type Palette
 } from './sectionShareParts';
 import { shortResultUrl } from './shortLinks';
+import { resultVector } from './peopleCompare';
 
 /**
  * Cartão de compartilhamento da seção "Países próximos" — stories 1080x1920 (peças em sectionShareParts).
@@ -80,7 +81,7 @@ export function buildCountriesShareCard(result: QuizResult, religion: Religion |
       t.shareFooterCta,
       // Inteiros: link mais curto e QR menor, como no cartão do resultado.
       shortResultUrl(
-        result.axes.map((axis) => Math.round(axis.leftPercent)),
+        resultVector(result.axes).map((value) => (value === null ? null : Math.round(value))),
         religion,
         LANG
       )

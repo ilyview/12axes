@@ -24,6 +24,7 @@ import {
   type Palette
 } from './sectionShareParts';
 import { shortResultUrl } from './shortLinks';
+import { resultVector } from './peopleCompare';
 
 /**
  * Cartão de compartilhamento da "Linha do tempo ideológica" — stories 1080x1920: as seis eras, cada uma com os dois perfis mais
@@ -267,7 +268,7 @@ export function buildTimelineShareCard(
     buildShareFooter(
       t.shareFooterCta,
       shortResultUrl(
-        result.axes.map((axis) => Math.round(axis.leftPercent)),
+        resultVector(result.axes).map((value) => (value === null ? null : Math.round(value))),
         religion,
         LANG
       )

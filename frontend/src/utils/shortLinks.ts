@@ -1,6 +1,6 @@
 import type { Lang } from '../i18n';
 import { parseReligion, type Religion } from './religion';
-import { isResultVectorLength } from './peopleCompare';
+import { parseVectorText, serializeVector, type ResultVector } from './peopleCompare';
 
 /** Origem pública do site: o QR do cartão aponta para ela, não para o endereço de onde a pessoa gerou a imagem. */
 export const PUBLIC_ORIGIN = 'https://12axes.vercel.app';
@@ -33,8 +33,9 @@ function compact(value: number): string {
   return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
 }
 
-export function shortResultQuery(values: number[], religion: Religion | null, lang: Lang, hatredEgg = false): string {
-  const parts = [`v=${values.map(compact).join('-')}`];
+export function shortResultQuery(values: ResultVector, religion: Religion | null, lang: Lang, hatredEgg = false): string {
+  // Eixo desligado fica vazio ("70--20"); sem os eixos novos, sai no formato antigo de 12 valores.
+  const parts = [`v=${serializeVector(values, '-', compact)}`];
   if (religion) parts.push(`r=${RELIGION_CODES[religion]}`);
   if (lang !== 'pt') parts.push(`l=${lang}`);
   if (hatredEgg) parts.push('e=1');
@@ -43,7 +44,7 @@ export function shortResultQuery(values: number[], religion: Religion | null, la
 
 /** Link curto de um resultado, para o QR code do cartão de compartilhamento. */
 export function shortResultUrl(
-  values: number[],
+  values: ResultVector,
   religion: Religion | null,
   lang: Lang,
   hatredEgg = false,
@@ -53,12 +54,12 @@ export function shortResultUrl(
 }
 
 /** Lê /r?v=…&r=…: null quando não traz todos os valores válidos (0 a 100), ou os 12 dos links antigos. */
-export function parseShortResult(search: string): { values: number[]; religion: Religion | null; egg: boolean } | null {
+export function parseShortResult(search: string): { values: ResultVector; religion: Religion | null; egg: boolean } | null {
   const params = new URLSearchParams(search);
   const raw = params.get('v');
   if (!raw) return null;
-  const values = raw.split(/[-,]/).map((part) => Number(part));
-  if (!isResultVectorLength(values.length) || values.some((value) => !Number.isFinite(value) || value < 0 || value > 100)) return null;
+  const values = parseVectorText(raw, /[-,]/);
+  if (!values) return null;
   return {
     values,
     religion: parseReligionCode(params.get('r') ?? params.get('religion')),
@@ -72,13 +73,13 @@ export function parseShortResult(search: string): { values: number[]; religion: 
  */
 export function compactCompareUrl(
   names: [string, string],
-  values: [number[], number[]],
+  values: [ResultVector, ResultVector],
   religions: [string | null, string | null],
   lang: Lang,
   origin = PUBLIC_ORIGIN
 ): string {
   // Inteiros: meio ponto a menos de precisão no QR, em troca de um link bem mais curto (e um QR mais fácil de ler).
-  const list = (items: number[]): string => items.map((value) => String(Math.round(value))).join(',');
+  const list = (items: ResultVector): string => serializeVector(items, ',', (value) => String(Math.round(value)));
   const parts = [
     `an=${encodeURIComponent(names[0])}`,
     `a=${list(values[0])}`,

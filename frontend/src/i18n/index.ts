@@ -365,6 +365,18 @@ export interface Strings {
   resultsSummaryAria: string;
   metaTop: string;
   axesSectionEyebrow: string;
+  settings: {
+    open: string;
+    title: string;
+    displaySection: string;
+    cuteButton: string;
+    cuteButtonHint: string;
+    jokes: string;
+    jokesHint: string;
+    axesSection: string;
+    axesNote: string;
+    allAxesOn: string;
+  };
   axesSectionTitle: string;
   proximityEyebrow: string;
   otherMatches: string;

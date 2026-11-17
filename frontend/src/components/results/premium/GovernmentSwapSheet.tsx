@@ -9,6 +9,7 @@ import { SafeImg } from '../../editorial/primitives';
 import { InfoSheet } from '../InfoSheet';
 import { Portrait } from '../PersonalitiesSection';
 import { P } from './premiumText';
+import type { ResultVector } from '../../../utils/peopleCompare';
 
 interface Props {
   seat: GovernmentSeat;
@@ -20,7 +21,7 @@ interface Props {
   /** Quem ocupa cada cadeira hoje (id -> cargo e pessoa): a busca mostra esses também, e escolhê-los troca de lugar. */
   heldBy: Record<string, { seatKey: GovernmentSeat['seatKey']; holder: PersonalityMatch }>;
   /** Posição do usuário em cada eixo, na ordem dos eixos, para pedir a compatibilidade de quem ele buscar; sem ela não há busca. */
-  userPercents: number[] | null;
+  userPercents: ResultVector | null;
   /** `found` só vem quando a pessoa foi achada na busca (as sugestões já têm todos os dados no relatório). */
   onPick: (personalityId: string, found?: PersonalityMatch) => void;
   onClose: () => void;

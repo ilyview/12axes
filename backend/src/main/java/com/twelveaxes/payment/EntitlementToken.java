@@ -112,12 +112,22 @@ public class EntitlementToken {
      * o mesmo hash (frontend/src/utils/entitlement.ts): ruido abaixo de 1 casa nao muda o resultado de ninguem.
      */
     public static String hashOf(List<Double> leftPercents) {
+        // Eixo sem valor (desligado) entra vazio; os vazios do fim saem, entao um resultado antigo de 12 eixos
+        // continua com o mesmo hash de antes.
+        int end = leftPercents.size();
+        while (end > 0 && leftPercents.get(end - 1) == null) {
+            end--;
+        }
         StringBuilder canonical = new StringBuilder();
-        for (double value : leftPercents) {
-            long tenths = Math.round(value * 10);
-            if (canonical.length() > 0) {
+        for (int i = 0; i < end; i++) {
+            Double value = leftPercents.get(i);
+            if (i > 0) {
                 canonical.append(',');
             }
+            if (value == null) {
+                continue;
+            }
+            long tenths = Math.round(value * 10);
             canonical.append(tenths / 10).append('.').append(tenths % 10);
         }
         try {

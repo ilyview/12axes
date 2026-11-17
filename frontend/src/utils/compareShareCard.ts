@@ -1,3 +1,4 @@
+import { RESULT_AXIS_IDS, type ResultVector } from './peopleCompare';
 import { LANG, t } from '../i18n';
 import type { Axis, QuizResult } from '../types/quiz';
 import { resolveCountryFlagSrc } from './countryFlags';
@@ -32,8 +33,8 @@ import {
 export interface CompareShareData {
   names: [string, string];
   results: [QuizResult, QuizResult];
-  /** % do polo esquerdo de cada eixo, na ordem de `axes`. */
-  values: [number[], number[]];
+  /** % do polo esquerdo de cada eixo, na ordem de RESULT_AXIS_IDS (nulo: eixo que a pessoa não tem). */
+  values: [ResultVector, ResultVector];
   axes: Axis[];
   religions: [Religion | null, Religion | null];
   /** Só entra no texto do compartilhamento; o cartão não mostra a compatibilidade. */
@@ -43,7 +44,7 @@ export interface CompareShareData {
 interface Side {
   name: string;
   result: QuizResult;
-  values: number[];
+  values: ResultVector;
   base: string;
   accent: string;
 }
@@ -400,7 +401,14 @@ function buildAxes(data: CompareShareData, a: Side, b: Side): HTMLElement {
     border: BOX_BORDER
   });
   const sharedReligion = data.religions[0] === data.religions[1] ? data.religions[0] : null;
-  data.axes.forEach((axis, index) => box.append(axisRow(axis, a, b, a.values[index] ?? 50, b.values[index] ?? 50, sharedReligion)));
+  data.axes.forEach((axis) => {
+    const index = RESULT_AXIS_IDS.indexOf(axis.id as (typeof RESULT_AXIS_IDS)[number]);
+    const first = a.values[index];
+    const second = b.values[index];
+    // Eixo desligado ou inexistente em uma das pessoas não entra no cartão.
+    if (first === null || first === undefined || second === null || second === undefined) return;
+    box.append(axisRow(axis, a, b, first, second, sharedReligion));
+  });
   return box;
 }
 

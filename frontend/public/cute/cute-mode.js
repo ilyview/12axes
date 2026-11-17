@@ -39,7 +39,18 @@
     } catch (e) {}
   }
 
-  var level = readLevel();
+  // Configuracoes do site (src/utils/settings.ts): o botao rosa pode ser desligado; desligado, o modo nya tambem.
+  var SETTINGS_KEY = '12axes-settings';
+  function buttonEnabled() {
+    try {
+      var raw = window.localStorage.getItem(SETTINGS_KEY);
+      return !raw || JSON.parse(raw).cuteButton !== false;
+    } catch (e) {
+      return true;
+    }
+  }
+
+  var level = buttonEnabled() ? readLevel() : 0;
   // ?nya=0..3 in the link sets the level (handy for sharing a link that opens in nya mode)
   var fromUrl = /[?&]nya=([0-3])\b/.exec(location.search);
   if (fromUrl) {
@@ -99,7 +110,8 @@
     '.nya-btn[data-level="1"] .nya-pip i:nth-child(1),.nya-btn[data-level="2"] .nya-pip i:nth-child(-n+2),.nya-btn[data-level="3"] .nya-pip i{background:#ff5fa2;opacity:1}' +
     '.nya-btn[data-level="3"]{background:conic-gradient(from 0deg,#ff5fa2,#ffb86b,#ffe66b,#7bffb0,#6bd6ff,#b98bff,#ff5fa2);box-shadow:0 0 0 4px #fff,0 0 26px 8px rgba(255,120,200,.75)}' +
     '@media (max-width:560px){.nya-btn{top:76px;right:12px;width:46px;height:46px}.nya-btn svg{width:26px;height:26px}}' +
-    '@media print{.nya-btn{display:none}}';
+    '@media print{.nya-btn{display:none}}' +
+    'html[data-nya-off] .nya-btn{display:none}';
   document.head.appendChild(btnStyle);
 
   var PAW =
@@ -631,7 +643,19 @@
     toggleAttr('data-nya-max', level >= 2);
     toggleAttr('data-nya-hyper', level >= 3);
   }
+  // Liga ou desliga o botao conforme as configuracoes (sem recarregar a pagina).
+  function syncEnabled() {
+    var enabled = buttonEnabled();
+    toggleAttr('data-nya-off', !enabled);
+    if (!enabled && level !== 0) setLevel(0);
+  }
+  window.addEventListener('axes-settings-change', syncEnabled);
+  window.addEventListener('storage', function (e) {
+    if (!e.key || e.key === SETTINGS_KEY) syncEnabled();
+  });
+
   function ready() {
+    syncEnabled();
     addButton();
     apply();
     // React can replace the whole body content; keep the button around.

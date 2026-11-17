@@ -10,6 +10,8 @@ import type {
   SubmittedAnswer
 } from '../types/quiz';
 import { serializeCompareItems, type CompareRef } from '../utils/compareUrl';
+import { serializeVector, type ResultVector } from '../utils/peopleCompare';
+import { jokesQueryParam } from '../utils/settings';
 
 const API_URL = (import.meta.env.VITE_API_URL ?? '').replace(/\/$/, '');
 
@@ -27,8 +29,11 @@ export async function request<T>(path: string, options?: RequestInit, retries = 
   // Content-Type só quando há corpo: num GET ele transforma a chamada entre origens em uma
   // requisição "não simples", e o navegador gasta uma ida e volta extra (preflight OPTIONS).
   const headers = options?.body ? { 'Content-Type': 'application/json', ...options.headers } : options?.headers;
+  // Perfis de brincadeira escondidos nas configurações: o backend os tira de todos os rankings.
+  const jokes = jokesQueryParam();
+  const url = jokes && path.startsWith('/api/') ? `${path}${path.includes('?') ? '&' : '?'}${jokes}` : path;
   try {
-    const response = await fetch(`${API_URL}${path}`, { ...options, headers });
+    const response = await fetch(`${API_URL}${url}`, { ...options, headers });
 
     if (!response.ok) {
       const message = await response.text();
@@ -89,14 +94,14 @@ export function submitResults(
 const SHARED_RESULT_VERSION = 3;
 
 export function fetchSharedResult(
-  leftPercents: number[],
+  leftPercents: ResultVector,
   religion: string | null = null,
   hatredEgg = false
 ): Promise<QuizResult> {
   const religionParam = religion ? `&religion=${encodeURIComponent(religion)}` : '';
   const eggParam = hatredEgg ? '&egg=hatred' : '';
   return request<QuizResult>(
-    `/api/results/by-axes?v=${leftPercents.join(',')}&lang=${LANG}${religionParam}${eggParam}&rv=${SHARED_RESULT_VERSION}`
+    `/api/results/by-axes?v=${serializeVector(leftPercents)}&lang=${LANG}${religionParam}${eggParam}&rv=${SHARED_RESULT_VERSION}`
   );
 }
 
@@ -113,8 +118,8 @@ export function fetchCompareCatalog(_religion: string | null = null): Promise<Co
 // comparação ficaria com a resposta antiga (sem `religions`).
 const COMPARE_DETAIL_VERSION = 3;
 
-export function fetchCompare(type: CompareType, id: string, leftPercents: number[]): Promise<CompareDetail> {
-  const values = leftPercents.map((value) => Math.round(value * 10) / 10).join(',');
+export function fetchCompare(type: CompareType, id: string, leftPercents: ResultVector): Promise<CompareDetail> {
+  const values = serializeVector(leftPercents.map((value) => (value === null ? null : Math.round(value * 10) / 10)));
   return request<CompareDetail>(
     `/api/compare?type=${type}&id=${encodeURIComponent(id)}&v=${values}&lang=${LANG}&rv=${COMPARE_DETAIL_VERSION}`
   );

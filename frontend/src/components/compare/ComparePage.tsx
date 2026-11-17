@@ -26,6 +26,7 @@ import { buildDetail, usePairResults, usePairShare } from './PairDetail';
 import { SharePhoneStage } from '../results/SharePhoneStage';
 import type { PersonResult } from '../../utils/peopleCompare';
 import { colorOf, PROFILE_COLORS, spectrumColor } from './profileColors';
+import { RESULT_AXIS_IDS } from '../../utils/peopleCompare';
 
 const INITIAL = typeof window === 'undefined' ? { refs: [], religion: null } : parseCompareUrl(window.location.search);
 
@@ -142,7 +143,7 @@ export function ComparePage() {
     () =>
       pair
         ? ([pair.profiles[0], pair.profiles[1]].map((profile) => ({
-            values: shownAxes.map((axis) => profile.vector[axis.id] ?? 50),
+            values: RESULT_AXIS_IDS.map((id) => profile.vector[id] ?? null),
             religion: null
           })) as [PersonResult, PersonResult])
         : null,

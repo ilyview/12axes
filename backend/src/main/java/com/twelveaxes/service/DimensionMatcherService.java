@@ -131,6 +131,7 @@ public class DimensionMatcherService {
                 .filter(personality -> !QuizDataService.isEasterEgg(personality.id()))
                 .filter(personality -> categories.contains(personality.category()))
                 .filter(personality -> ReligionFilter.allows(personality.religions(), religion))
+                .filter(personality -> CatalogVisibility.visible(personality.id()))
                 .toList();
         if (personalities.isEmpty()) {
             return null;

@@ -18,6 +18,7 @@ import {
   renderSectionPng
 } from './sectionShareParts';
 import { shortResultUrl } from './shortLinks';
+import { resultVector } from './peopleCompare';
 
 /**
  * Cartão de compartilhamento da seção "Partidos próximos" — stories 1080x1920 (peças em sectionShareParts).
@@ -111,7 +112,7 @@ export function buildPartiesShareCard(result: QuizResult, religion: Religion | n
     buildShareFooter(
       t.shareFooterCta,
       shortResultUrl(
-        result.axes.map((axis) => Math.round(axis.leftPercent)),
+        resultVector(result.axes).map((value) => (value === null ? null : Math.round(value))),
         religion,
         LANG
       )

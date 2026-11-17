@@ -35,7 +35,13 @@ function toProfile(id: string, name: string, person: PersonResult, result: QuizR
       historical: false,
       initials: personInitials(name)
     },
-    vector: Object.fromEntries(HOME_AXES.slice(0, person.values.length).map((axis, index) => [axis.id, person.values[index]])),
+    // Eixo desligado ou inexistente no resultado da pessoa fica fora do vetor (e da comparação).
+    vector: Object.fromEntries(
+      HOME_AXES.flatMap((axis, index) => {
+        const value = person.values[index];
+        return value === null || value === undefined ? [] : [[axis.id, value]];
+      })
+    ),
     nearest: {
       ideology: result.topMatch,
       country: result.topCountryMatch ?? null,
@@ -64,11 +70,13 @@ function PencilIcon() {
  * Os vetores vão na própria URL; os vizinhos de cada um vêm de /api/results/by-axes, o mesmo dos resultados.
  */
 export function ComparePeoplePage() {
-  // Link de pessoa com resultado antigo traz só os 12 primeiros eixos: a comparação usa os que as duas têm.
-  const axisCount = LINK ? Math.min(LINK.people[0].values.length, LINK.people[1].values.length) : HOME_AXES.length;
+  // Eixo desligado ou inexistente (resultado antigo) em uma das pessoas: a comparação usa os que as duas têm.
   const axes = useMemo(
-    () => HOME_AXES.slice(0, axisCount).map((axis) => ({ ...axis, ...(t.homeAxes[axis.id] ?? {}) })),
-    [axisCount]
+    () =>
+      HOME_AXES.filter((_, index) => !LINK || LINK.people.every((person) => person.values[index] !== null && person.values[index] !== undefined)).map(
+        (axis) => ({ ...axis, ...(t.homeAxes[axis.id] ?? {}) })
+      ),
+    []
   );
   const [names, setNames] = useState<Names>(LINK?.names ?? FALLBACK_NAMES);
   const [editing, setEditing] = useState<0 | 1 | null>(null);

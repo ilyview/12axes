@@ -31,7 +31,7 @@ describe('link curto do resultado', () => {
     expect(query).toBe('v=88.8-13.8-50-87.5-68.8-41.3-20-30.3-40-66-27.6-88.9&r=c');
     const parsed = parseShortResult(`?${query}`);
     expect(parsed?.religion).toBe('catholic');
-    expect(parsed?.values).toEqual([88.8, 13.8, 50, 87.5, 68.8, 41.3, 20, 30.3, 40, 66, 27.6, 88.9]);
+    expect(parsed?.values).toEqual([88.8, 13.8, 50, 87.5, 68.8, 41.3, 20, 30.3, 40, 66, 27.6, 88.9, null, null]);
   });
 
   it('inclui o idioma inglês e ignora o português (padrão)', () => {

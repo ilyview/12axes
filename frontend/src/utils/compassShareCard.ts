@@ -29,6 +29,7 @@ import {
 } from './sectionShareParts';
 import { fitFontSize } from './compareShareCard';
 import { shortResultUrl } from './shortLinks';
+import { resultVector } from './peopleCompare';
 
 /**
  * Cartão de compartilhamento de "Valores e bússola" — stories 1080x1920, num tema claro (papel com texto escuro). Não tem imagem:
@@ -352,7 +353,7 @@ export function buildCompassShareCard(
     buildShareFooter(
       t.shareFooterCta,
       shortResultUrl(
-        result.axes.map((axis) => Math.round(axis.leftPercent)),
+        resultVector(result.axes).map((value) => (value === null ? null : Math.round(value))),
         religion,
         LANG
       ),

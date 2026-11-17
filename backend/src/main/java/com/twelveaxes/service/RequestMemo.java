@@ -12,18 +12,20 @@ import java.util.function.Supplier;
  * a mesma entrada sempre gera a mesma saida, e uma chave nova substitui a antiga.
  */
 final class RequestMemo<K, V> {
-    private record Entry<K, V>(K key, V value) {
+    private record Entry<K, V>(K key, boolean jokesHidden, V value) {
     }
 
     private final ThreadLocal<Entry<K, V>> last = new ThreadLocal<>();
 
     V get(K key, Supplier<V> compute) {
         Entry<K, V> entry = last.get();
-        if (entry != null && Objects.equals(entry.key(), key)) {
+        // A mesma thread atende requisicoes com e sem perfis de brincadeira: a visibilidade faz parte da chave.
+        boolean jokesHidden = CatalogVisibility.jokesHidden();
+        if (entry != null && entry.jokesHidden() == jokesHidden && Objects.equals(entry.key(), key)) {
             return entry.value();
         }
         V value = compute.get();
-        last.set(new Entry<>(key, value));
+        last.set(new Entry<>(key, jokesHidden, value));
         return value;
     }
 }

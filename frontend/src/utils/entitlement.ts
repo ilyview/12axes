@@ -4,7 +4,7 @@
  * o relatório por um pedido de recuperação (por e-mail).
  */
 
-import { resultUrlKeysIn } from './peopleCompare';
+import { resultUrlKeysIn, type ResultVector } from './peopleCompare';
 
 const KEY_PREFIX = '12axes:entitlement:';
 
@@ -12,9 +12,14 @@ const KEY_PREFIX = '12axes:entitlement:';
  * SHA-256 em hex dos 12 valores arredondados a 1 casa, separados por vírgula ("65.0,32.5,..."): o mesmo cálculo do
  * backend (EntitlementToken.hashOf). Ruído abaixo de 1 casa não muda o resultado de ninguém.
  */
-export async function vectorHash(values: number[]): Promise<string> {
+export async function vectorHash(values: ResultVector): Promise<string> {
+  // Eixo sem valor (desligado) entra vazio e os vazios do fim saem: um resultado antigo, de 12 eixos, mantém o hash.
+  let end = values.length;
+  while (end > 0 && values[end - 1] === null) end -= 1;
   const canonical = values
+    .slice(0, end)
     .map((value) => {
+      if (value === null) return '';
       const tenths = Math.round(value * 10);
       return `${Math.floor(tenths / 10)}.${tenths % 10}`;
     })
@@ -152,7 +157,9 @@ export function returnUrlWithLang(url: string, lang: string): string {
 export function canonicalResultLink(resultUrl: string, lang: string): string {
   const source = new URL(resultUrl);
   const query = new URLSearchParams();
-  for (const key of resultUrlKeysIn((name) => source.searchParams.get(name))) {
+  const keys = resultUrlKeysIn((name) => source.searchParams.get(name));
+  if (keys.length === 0) return resultUrl;
+  for (const key of keys) {
     const value = source.searchParams.get(key);
     if (value === null) return resultUrl;
     query.set(key, value);

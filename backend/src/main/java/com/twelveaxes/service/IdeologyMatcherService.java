@@ -113,6 +113,7 @@ public class IdeologyMatcherService {
                 .mapToObj(i -> new IdeologyCandidate(candidates.get(i).ideology(), candidates.get(i).targetVector(),
                         candidates.get(i).compatibility(), percentiles[i]))
                 .filter(candidate -> ReligionFilter.allows(candidate.ideology().religions(), religion))
+                .filter(candidate -> CatalogVisibility.visible(candidate.ideology().id()))
                 .sorted(byScoreThenName())
                 .toList();
     }

@@ -106,7 +106,7 @@ public class PremiumController {
         // Com respostas, elas precisam produzir exatamente estes 12 valores: o relatorio de um resultado nao
         // mostra o que pesou nas respostas de outro.
         ResultRequest answers = new ResultRequest(request.answers(), "short", request.archetype());
-        List<Double> fromAnswers = scoringService.score(answers, lang).stream().map(AxisResult::leftPercent).toList();
+        List<Double> fromAnswers = scoringService.positionalValues(scoringService.score(answers, lang));
         if (!EntitlementToken.hashOf(fromAnswers).equals(EntitlementToken.hashOf(values))) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "As respostas nao correspondem ao resultado informado");
         }

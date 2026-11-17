@@ -1,0 +1,10 @@
+{
+  "description": "Perfis de brincadeira (mundo de fantasia e personagens de amigos). O usuário pode escondê-los nas configurações; o frontend manda jokes=off e o backend os tira dos rankings.",
+  "ids": [
+    "sigmatopia", "republica-unbothered", "corporatia", "senium",
+    "ligma-feudalismo", "vibe-comunismo", "corpianismo", "cronocracia", "deltocracia",
+    "order-of-sigma", "vibe-workers-collective", "corporate-citizens-united", "elder-council-party",
+    "sigma-lord", "vibemaster-general", "ceo-president", "grand-elder",
+    "sero", "lenny", "bisavo-do-lenny"
+  ]
+}

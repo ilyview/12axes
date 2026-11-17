@@ -1,5 +1,7 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { pickReplacement, replacementCandidates, selectAllQuestionsBalanced, selectAndBalanceQuestions } from './utils/quizSelection';
+import { enabledAxisIds, useSettings } from './utils/settings';
+import { SettingsButton } from './components/SettingsButton';
 import { HOME_AXES } from './data/homeAxes';
 import type { ExampleResult } from './data/exampleResult';
 import { LANG, t } from './i18n';
@@ -17,7 +19,7 @@ import { parseShortResult, SHORT_RESULT_PATH } from './utils/shortLinks';
 import { track } from './utils/analytics';
 import type { AnswerSet } from './utils/editAnswers';
 import { CHRISTIAN_DENOMINATIONS, parseReligion, type Religion } from './utils/religion';
-import { PEOPLE_COMPARE_PATH, RESULT_URL_KEYS, resultUrlKeysIn } from './utils/peopleCompare';
+import { parseResultLink, PEOPLE_COMPARE_PATH, RESULT_AXIS_IDS, RESULT_URL_KEYS, resultVector, type ResultVector } from './utils/peopleCompare';
 import {
   answeredCount as savedAnsweredCount,
   clearProgress,
@@ -83,7 +85,7 @@ const ComparePage = lazy(() =>
 // eixo, valor = % do polo esquerdo, na mesma ordem de axes.json).
 const AXIS_URL_KEYS = RESULT_URL_KEYS;
 
-function parseSharedResultUrl(): number[] | null {
+function parseSharedResultUrl(): ResultVector | null {
   if (typeof window === 'undefined') {
     return null;
   }
@@ -95,17 +97,10 @@ function parseSharedResultUrl(): number[] | null {
   if (path !== '/results') {
     return null;
   }
-  const params = new URLSearchParams(window.location.search);
-  // Links antigos trazem só os 12 primeiros eixos: o resultado volta com eles, sem inventar os novos.
-  const rawValues = resultUrlKeysIn((key) => params.get(key)).map((key) => params.get(key));
-  if (rawValues.some((raw) => raw === null || raw.trim() === '')) {
-    return null;
-  }
-  const values = rawValues.map((raw) => Number(raw));
-  if (values.some((value) => !Number.isFinite(value) || value < 0 || value > 100)) {
-    return null;
-  }
-  return values;
+  // Eixo sem chave no link (desligado nas configurações, ou metodo e distribuicao num link antigo) fica nulo:
+  // o resultado volta só com os eixos que tem.
+  const parsed = parseResultLink(window.location.search);
+  return parsed.ok ? parsed.values : null;
 }
 
 const SHARED_RESULT_VALUES = parseSharedResultUrl();
@@ -130,8 +125,9 @@ function parseSharedEgg(): boolean {
 const SHARED_EGG = parseSharedEgg();
 
 function sharedResultUrl(result: QuizResult, religion: Religion | null = null): string {
+  // Uma chave por eixo do resultado, pelo id (eixo desligado não entra no link).
   const query = result.axes
-    .map((axis, index) => `${AXIS_URL_KEYS[index] ?? `x${index}`}=${axis.leftPercent}`)
+    .map((axis) => `${AXIS_URL_KEYS[RESULT_AXIS_IDS.indexOf(axis.axisId as (typeof RESULT_AXIS_IDS)[number])] ?? axis.axisId}=${axis.leftPercent}`)
     .join('&');
   // O idioma vai na URL: um reload ou a volta do pagamento não dependem do que está salvo no navegador.
   return `/results?${query}${religion ? `&religion=${religion}` : ''}${LANG === 'pt' ? '' : `&lang=${LANG}`}`;
@@ -242,7 +238,13 @@ function QuizSkeleton({ message }: { message: string }) {
 }
 
 function buildQuizForVariant(payload: QuizPayload, variant: QuizVariant): QuizPayload {
-  return variant === 'extreme' ? selectAllQuestionsBalanced(payload) : selectAndBalanceQuestions(payload);
+  // Eixos desligados nas configurações: as perguntas deles saem do teste (e o eixo, do resultado).
+  const enabled = new Set(enabledAxisIds(payload.axes.map((axis) => axis.id)));
+  const pool = enabled.size === payload.axes.length
+    ? payload
+    : { ...payload, questions: payload.questions.filter((question) => enabled.has(question.axisId)) };
+  const built = variant === 'extreme' ? selectAllQuestionsBalanced(pool) : selectAndBalanceQuestions(pool);
+  return { ...built, questionCount: built.questions.length };
 }
 
 // Sorteia um índice aleatório dentro de EXAMPLE_RESULTS.
@@ -432,6 +434,23 @@ function MainApp() {
     }
     return new Map(result.axes.map((axis) => [axis.axisId, axis]));
   }, [result]);
+  // Perfis de brincadeira ligados ou desligados com o resultado na tela: recalcula os rankings (o backend os filtra).
+  const { jokes: jokesVisible } = useSettings();
+  const jokesSeenRef = useRef(jokesVisible);
+  useEffect(() => {
+    if (jokesSeenRef.current === jokesVisible) return;
+    jokesSeenRef.current = jokesVisible;
+    if (!result) return;
+    let cancelled = false;
+    fetchSharedResult(resultVector(result.axes), religion, result.topMatch.ideologyId === 'hatred')
+      .then((next) => {
+        if (!cancelled) setResult(next);
+      })
+      .catch(() => undefined);
+    return () => {
+      cancelled = true;
+    };
+  }, [jokesVisible, result, religion]);
   const homeAxes = useMemo(
     () => quiz?.axes ?? HOME_AXES.map((axis) => ({ ...axis, ...(t.homeAxes[axis.id] ?? {}) })),
     [quiz]
@@ -920,17 +939,23 @@ function MainApp() {
                 <CatalogLinks showCompare={false} />
                 <LangToggle />
               </NavLinks>
-              <button className="e-btn e-btn-primary e-btn-sm" type="button" onClick={openVariantChooser}>
-                {t.navStart} <ArrowIcon />
-              </button>
+              <div className="e-nav-actions">
+                <SettingsButton />
+                <button className="e-btn e-btn-primary e-btn-sm" type="button" onClick={openVariantChooser}>
+                  {t.navStart} <ArrowIcon />
+                </button>
+              </div>
               <MenuButton open={isMenuOpen} onToggle={() => setIsMenuOpen((open) => !open)} />
             </>
           )}
           {screen === 'variant' && (
-            <button className="e-back" type="button" onClick={goHome}>
-              <ArrowIcon />
-              {t.backToStart}
-            </button>
+            <>
+              <button className="e-back" type="button" onClick={goHome}>
+                <ArrowIcon />
+                {t.backToStart}
+              </button>
+              <SettingsButton />
+            </>
           )}
           {(screen === 'quiz' || screen === 'archetype') && (
             <div className="e-nav-actions">
@@ -941,9 +966,12 @@ function MainApp() {
             </div>
           )}
           {screen === 'results' && (
-            <button className="e-btn e-btn-primary e-btn-sm" type="button" onClick={() => void startQuiz(selectedVariant)}>
-              {t.redoQuiz} <ArrowIcon />
-            </button>
+            <div className="e-nav-actions">
+              <SettingsButton />
+              <button className="e-btn e-btn-primary e-btn-sm" type="button" onClick={() => void startQuiz(selectedVariant)}>
+                {t.redoQuiz} <ArrowIcon />
+              </button>
+            </div>
           )}
         </div>
       </header>
@@ -1034,7 +1062,7 @@ function MainApp() {
             current={screen === 'archetype' ? quiz.questions.length : currentIndex + 1}
             total={quiz.questions.length}
             questionsPerAxis={quiz.questionsPerAxis}
-            axisCount={quiz.axes.length}
+            axisCount={new Set(quiz.questions.map((question) => question.axisId)).size}
             extraCount={archetypeSteps.length}
             extraCurrent={screen === 'archetype' ? archetypeIndex + 1 : undefined}
           />

@@ -32,7 +32,7 @@ public class ProfileSpectrumService {
     /** Categoria da ideologia mais proxima do vetor (eixo -> leftPercent; eixo ausente conta como 50). */
     public String categoryOf(Map<String, Double> vector, String lang) {
         String normalizedLang = QuizDataService.normalizeLang(lang);
-        return cache.computeIfAbsent(normalizedLang + ":" + new TreeMap<>(vector), key -> {
+        return cache.computeIfAbsent(normalizedLang + ":" + CatalogVisibility.jokesHidden() + ":" + new TreeMap<>(vector), key -> {
             List<AxisResult> axes = scoringService.scoreFromVector(vector, normalizedLang);
             return ideologyMatcherService.findMatches(axes, normalizedLang, null).getFirst().category();
         });

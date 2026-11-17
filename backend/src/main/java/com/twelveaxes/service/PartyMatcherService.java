@@ -90,6 +90,7 @@ public class PartyMatcherService {
         Comparator<PartyMatch> byCompatibility = Comparator.comparingDouble(PartyMatch::compatibility).reversed();
         return IntStream.range(0, parties.size())
                 .filter(i -> ReligionFilter.allows(parties.get(i).religions(), religion))
+                .filter(i -> CatalogVisibility.visible(parties.get(i).id()))
                 .mapToObj(i -> toMatch(parties.get(i), scores.get(i), percentiles[i]))
                 .sorted(byCompatibility.thenComparing(PartyMatch::name))
                 .toList();

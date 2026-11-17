@@ -535,6 +535,18 @@ export const en: Strings = {
   resultsSummaryAria: 'Analysis summary',
   metaTop: 'Top match',
   axesSectionEyebrow: 'Political axes',
+  settings: {
+    open: "Settings",
+    title: "Settings",
+    displaySection: "Display",
+    cuteButton: "Pink button (nya mode)",
+    cuteButtonHint: "Shows the pink paw in the corner. When off, nya mode is turned off too.",
+    jokes: "Joke profiles",
+    jokesHint: "Fantasy countries and ideologies (Sigmatopia, Corporatia…) and characters like Sero and Lenny in the results.",
+    axesSection: "Quiz axes",
+    axesNote: "A disabled axis is not asked and does not count in the result or the compatibility. Applies from the next quiz.",
+    allAxesOn: "Turn all axes on"
+  },
   axesSectionTitle: 'Your 14 axes',
   proximityEyebrow: 'Ideological proximity',
   otherMatches: 'Other ideologies',

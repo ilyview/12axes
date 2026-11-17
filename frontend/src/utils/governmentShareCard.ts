@@ -22,6 +22,7 @@ import {
   type Palette
 } from './sectionShareParts';
 import { shortResultUrl } from './shortLinks';
+import { resultVector } from './peopleCompare';
 
 /**
  * Cartão de compartilhamento do "Governo ideal" — stories 1080x1920: uma grade de 3 por 3, uma caixa por cargo, na ordem do
@@ -180,7 +181,7 @@ export function buildGovernmentShareCard(
     buildShareFooter(
       t.shareFooterCta,
       shortResultUrl(
-        result.axes.map((axis) => Math.round(axis.leftPercent)),
+        resultVector(result.axes).map((value) => (value === null ? null : Math.round(value))),
         religion,
         LANG
       )

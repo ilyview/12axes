@@ -77,7 +77,10 @@ public class CompareService {
      */
     public List<CompareItem> catalog(String lang) {
         String normalizedLang = QuizDataService.normalizeLang(lang);
-        return catalogCache.get(normalizedLang, () -> buildCatalog(normalizedLang));
+        // Perfis de brincadeira escondidos nas configuracoes saem tambem da busca.
+        return catalogCache.get(normalizedLang + "|" + CatalogVisibility.jokesHidden(), () -> buildCatalog(normalizedLang).stream()
+                .filter(item -> CatalogVisibility.visible(item.id()))
+                .toList());
     }
 
     private List<CompareItem> buildCatalog(String lang) {
