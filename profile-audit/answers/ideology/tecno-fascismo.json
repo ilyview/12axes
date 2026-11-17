@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "N",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "D",
-      "economia_02": "N",
-      "economia_08": "C"
+      "economia_02": "N"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A moral individual é irrelevante frente ao projeto coletivo de controle: o tecno-fascismo impõe conformidade social rígida via vigilância comportamental, hostil tanto ao progressismo identitário quanto à privacidade da vida íntima.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "CT",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "D",
       "moral_02": "C",
-      "moral_05": "DT",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "CT",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "D",
       "tecnologia_11": "CT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "DT",
+      "moral_08": "C"
     }
   }
 }

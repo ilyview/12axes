@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "D",
-      "economia_02": "CT",
-      "economia_08": "C"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Como gestor de centro-liberal em São Paulo, Doria adotou costumes moderados e liberais em pautas sociais, sem fazer bandeira conservadora nem progressista militante — postura pragmática, próxima do liberalismo social urbano.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "N",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "D",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "D",
       "moral_14": "D",
-      "moral_08": "N",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "D",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "N"
     }
   }
 }

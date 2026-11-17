@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Populista agrário contra o monopólio do Banco dos EUA e os poderosos, a favor do homem comum, com governo pequeno e dívida pública quitada.",
   "answers": {
-   "economia_01": "D",
    "economia_02": "C",
    "economia_03": "D",
    "economia_04": "C",
    "economia_05": "D",
    "economia_06": "C",
    "economia_07": "D",
-   "economia_08": "C",
    "economia_09": "D",
    "economia_10": "C",
    "economia_11": "DT",
@@ -255,11 +253,8 @@
    "moral_01": "DT",
    "moral_02": "CT",
    "moral_03": "DT",
-   "moral_04": "C",
-   "moral_05": "DT",
    "moral_06": "CT",
    "moral_07": "D",
-   "moral_08": "CT",
    "moral_09": "DT",
    "moral_10": "C",
    "moral_11": "DT",
@@ -305,5 +300,18 @@
   "economia": "F",
   "mundo": "D",
   "tecnologia": "C"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "D",
+   "moral_04": "C"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "C",
+   "moral_05": "DT",
+   "moral_08": "CT"
+  }
  }
 }

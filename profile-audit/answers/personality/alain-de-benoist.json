@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "C",
       "economia_20": "DT",
-      "economia_01": "C",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "D",
-      "economia_08": "C"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A crítica ? teoria de gênero, ao individualismo e ? indistinção convive com rejeição da moral sexual cristã e respeito ? diferença. Não se deve converter esse pensamento em puritanismo nem em adesão automática a direitos sociais universalistas.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "C",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "N",
       "moral_19": "CT",
       "moral_02": "C",
-      "moral_05": "D",
       "moral_17": "N",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "N",
       "moral_14": "CT",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "B",
     "mundo": "C",
     "tecnologia": "B"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
+    }
   }
 }

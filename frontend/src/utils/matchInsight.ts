@@ -30,7 +30,7 @@ export function insightSide(leftPercent: number): InsightSide {
   return distance > 0 ? 'left' : 'right';
 }
 
-/** O que aproxima e o que afasta o usuário de um perfil, só pelos vetores dos 12 eixos (sem texto, sem idioma). */
+/** O que aproxima e o que afasta o usuário de um perfil, só pelos vetores dos 14 eixos (sem texto, sem idioma). */
 export function matchInsight(axes: Axis[], user: ReadonlyMap<string, number>, vector: Readonly<Record<string, number>>): MatchInsight {
   const rows: InsightAxis[] = [];
   for (const axis of axes) {

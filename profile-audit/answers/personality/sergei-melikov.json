@@ -58,8 +58,7 @@
     "answers": {
       "economia_05": "D", "economia_06": "DT", "economia_07": "C", "economia_13": "C", "economia_03": "CT",
       "economia_14": "C", "economia_19": "C", "economia_16": "N", "economia_17": "CT", "economia_12": "N",
-      "economia_04": "D", "economia_11": "N", "economia_18": "C", "economia_15": "N", "economia_20": "D",
-      "economia_01": "DT", "economia_10": "DT", "economia_09": "C", "economia_02": "N", "economia_08": "C"
+      "economia_04": "D", "economia_11": "N", "economia_18": "C", "economia_15": "N", "economia_20": "D", "economia_10": "DT", "economia_09": "C", "economia_02": "N"
     }
   },
   "controle": {
@@ -92,10 +91,9 @@
   "moral": {
     "personaBrief": "Conservador alinhado aos valores tradicionais do Kremlin, com a lei contra propaganda LGBT, e de uma sociedade caucasiana tradicional; defende família tradicional e ordem moral.",
     "answers": {
-      "moral_07": "DT", "moral_04": "C", "moral_15": "N", "moral_12": "C", "moral_03": "DT",
-      "moral_01": "DT", "moral_09": "D", "moral_06": "CT", "moral_19": "D", "moral_02": "CT",
-      "moral_05": "D", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "C",
-      "moral_18": "C", "moral_16": "C", "moral_14": "C", "moral_08": "C", "moral_20": "C"
+      "moral_07": "DT", "moral_15": "N", "moral_12": "C", "moral_03": "DT",
+      "moral_01": "DT", "moral_09": "D", "moral_06": "CT", "moral_19": "D", "moral_02": "CT", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "C",
+      "moral_18": "C", "moral_16": "C", "moral_14": "C", "moral_20": "C"
     }
   },
   "tecnologia": {
@@ -107,5 +105,7 @@
       "tecnologia_09": "N", "tecnologia_17": "N", "tecnologia_02": "D", "tecnologia_14": "C", "tecnologia_11": "C"
     }
   },
-  "archetype": { "sociedade": "A", "poder": "A", "economia": "E", "mundo": "A", "tecnologia": "D" }
+  "archetype": { "sociedade": "A", "poder": "A", "economia": "E", "mundo": "A", "tecnologia": "D" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "D", "moral_08": "C"}}
 }

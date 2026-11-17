@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "D",
       "economia_10": "D",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Sob Jiang, o Estado promoveu estabilidade social, família e controle moral, sem adotar o individualismo liberal contemporâneo; políticas demográficas, porém, também refletiam pragmatismo estatal e não doutrina religiosa. O resultado é socialmente conservador e disciplinador, com algumas posições instrumentais de modernização e igualdade formal.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "CT",
       "moral_15": "D",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "C",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "N",
-      "moral_08": "D",
       "moral_20": "CT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "D",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

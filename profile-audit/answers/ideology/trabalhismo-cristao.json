@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "D",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "D",
-      "economia_08": "N"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A combinacao de cristianismo e compromisso social tende a produzir conservadorismo moral moderado: defesa da familia, reservas sobre aborto e sexualidade mercantilizada, mas sem abandonar dignidade humana e algumas pautas de justica social. Nao e um perfil libertario nos costumes, nem necessariamente punitivista ou reacionario em tudo.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "C",
       "moral_12": "CT",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "N",
       "moral_02": "CT",
-      "moral_05": "C",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "CT",
       "moral_14": "C",
-      "moral_08": "D",
       "moral_20": "CT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "CT",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "N",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

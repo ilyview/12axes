@@ -58,8 +58,7 @@
     "answers": {
       "economia_05": "C", "economia_06": "DT", "economia_07": "CT", "economia_13": "C", "economia_03": "CT",
       "economia_14": "D", "economia_19": "CT", "economia_16": "DT", "economia_17": "CT", "economia_12": "D",
-      "economia_04": "DT", "economia_11": "C", "economia_18": "D", "economia_15": "N", "economia_20": "DT",
-      "economia_01": "C", "economia_10": "DT", "economia_09": "CT", "economia_02": "D", "economia_08": "C"
+      "economia_04": "DT", "economia_11": "C", "economia_18": "D", "economia_15": "N", "economia_20": "DT", "economia_10": "DT", "economia_09": "CT", "economia_02": "D"
     }
   },
   "controle": {
@@ -92,10 +91,9 @@
   "moral": {
     "personaBrief": "Socialismo de moral social conservadora: família tradicional, homossexualidade e gênero fora da agenda, pornografia e prostituição reprimidas, mas com aborto legal desde 1956 e mulheres no mercado de trabalho; sociedade homogênea sem política de cotas raciais.",
     "answers": {
-      "moral_07": "D", "moral_04": "C", "moral_15": "D", "moral_12": "D", "moral_03": "DT",
-      "moral_01": "DT", "moral_09": "C", "moral_06": "C", "moral_19": "N", "moral_02": "C",
-      "moral_05": "D", "moral_17": "DT", "moral_13": "D", "moral_11": "DT", "moral_10": "D",
-      "moral_18": "D", "moral_16": "C", "moral_14": "C", "moral_08": "C", "moral_20": "D"
+      "moral_07": "D", "moral_15": "D", "moral_12": "D", "moral_03": "DT",
+      "moral_01": "DT", "moral_09": "C", "moral_06": "C", "moral_19": "N", "moral_02": "C", "moral_17": "DT", "moral_13": "D", "moral_11": "DT", "moral_10": "D",
+      "moral_18": "D", "moral_16": "C", "moral_14": "C", "moral_20": "D"
     }
   },
   "tecnologia": {
@@ -107,5 +105,7 @@
       "tecnologia_09": "C", "tecnologia_17": "C", "tecnologia_02": "D", "tecnologia_14": "N", "tecnologia_11": "C"
     }
   },
-  "archetype": { "sociedade": "E", "poder": "A", "economia": "A", "mundo": "B", "tecnologia": "D" }
+  "archetype": { "sociedade": "E", "poder": "A", "economia": "A", "mundo": "B", "tecnologia": "D" },
+  "metodo": {"answers": {"economia_01": "C", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "D", "moral_08": "C"}}
 }

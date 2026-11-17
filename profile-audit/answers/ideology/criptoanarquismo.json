@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "DT",
       "economia_20": "CT",
-      "economia_01": "DT",
       "economia_10": "CT",
       "economia_09": "DT",
-      "economia_02": "CT",
-      "economia_08": "CT"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Aplicado aos costumes, o impulso criptoanarquista e de autonomia entre adultos consententes e baixa tolerancia a padroes morais impostos por tradicao, Estado ou maioria.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "DT",
-      "moral_05": "D",
       "moral_17": "C",
       "moral_13": "CT",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "DT",
       "moral_14": "D",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "D",
       "tecnologia_11": "CT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

@@ -59,6 +59,16 @@
       "label": "901121d0d733",
       "leftPole": "901121d0d733",
       "rightPole": "6a2c449b3d34"
+    },
+    "metodo": {
+      "label": "9b900e8b13c5",
+      "leftPole": "01ff758cdc22",
+      "rightPole": "6dba542a8b20"
+    },
+    "distribuicao": {
+      "label": "ea8fd8888693",
+      "leftPole": "63e2c56efa5a",
+      "rightPole": "7f5dea9104d1"
     }
   },
   "questions": {
@@ -781,6 +791,111 @@
     },
     "tecnologia_20": {
       "text": "a0ba1523f71c"
+    },
+    "metodo_01": {
+      "text": "7b8d9862e536"
+    },
+    "metodo_02": {
+      "text": "762050bd8d50"
+    },
+    "metodo_03": {
+      "text": "10918c908b92"
+    },
+    "metodo_04": {
+      "text": "c346380ea9f6"
+    },
+    "metodo_05": {
+      "text": "92eac6b1a4db"
+    },
+    "metodo_06": {
+      "text": "bdfa18a71789"
+    },
+    "metodo_07": {
+      "text": "ebec0fa6242c"
+    },
+    "metodo_08": {
+      "text": "35ae475f2320"
+    },
+    "metodo_09": {
+      "text": "43774461a6d6"
+    },
+    "metodo_10": {
+      "text": "07084fca7e8d"
+    },
+    "metodo_11": {
+      "text": "321e95ea4d27"
+    },
+    "metodo_12": {
+      "text": "0df7389e85ea"
+    },
+    "metodo_13": {
+      "text": "7775271ca3d2"
+    },
+    "metodo_14": {
+      "text": "b888d62f4a01"
+    },
+    "metodo_15": {
+      "text": "05f87b126c8d"
+    },
+    "metodo_16": {
+      "text": "3bf05111c766"
+    },
+    "metodo_17": {
+      "text": "14a029e6470f"
+    },
+    "metodo_18": {
+      "text": "e4629ab0e3f8"
+    },
+    "distribuicao_01": {
+      "text": "b07b25498469"
+    },
+    "distribuicao_02": {
+      "text": "5f183fe02f42"
+    },
+    "distribuicao_03": {
+      "text": "1b1879f22edc"
+    },
+    "distribuicao_04": {
+      "text": "4370bddcd94d"
+    },
+    "distribuicao_05": {
+      "text": "02a27703b479"
+    },
+    "distribuicao_06": {
+      "text": "0d4959c09af2"
+    },
+    "distribuicao_07": {
+      "text": "ff0f2e01f83f"
+    },
+    "distribuicao_08": {
+      "text": "00ed7d61ec67"
+    },
+    "distribuicao_09": {
+      "text": "055597cacf33"
+    },
+    "distribuicao_10": {
+      "text": "2bb6e14182c9"
+    },
+    "distribuicao_11": {
+      "text": "1d936a6310b0"
+    },
+    "distribuicao_12": {
+      "text": "51fb5163da8e"
+    },
+    "distribuicao_13": {
+      "text": "6e2ae1895a14"
+    },
+    "distribuicao_14": {
+      "text": "846f06de2935"
+    },
+    "distribuicao_15": {
+      "text": "80ec72002aad"
+    },
+    "distribuicao_16": {
+      "text": "0474f52c33d1"
+    },
+    "distribuicao_17": {
+      "text": "ae64132609a5"
     }
   },
   "glossary": {
@@ -2005,7 +2120,7 @@
       "disagree": "b168f13aa3f8",
       "agreeExample": "756e35d2d63c",
       "disagreeExample": "a4a67da81af5",
-      "note": "360a49c2d5d3"
+      "note": "f9e55cfc2ddf"
     },
     "economia_02": {
       "agree": "7991db13c26b",
@@ -2807,6 +2922,157 @@
       "agreeExample": "7ef3259db6d2",
       "disagreeExample": "7f1386182eac",
       "note": "40fed315187f"
+    },
+    "metodo_01": {
+      "agree": "2181a83a97eb",
+      "disagree": "a835b96bf02f",
+      "note": "0f4828992b82"
+    },
+    "metodo_02": {
+      "agree": "0b6e39b94db7",
+      "disagree": "131734106f94"
+    },
+    "metodo_03": {
+      "agree": "7f14dd462137",
+      "disagree": "c45cd463643e"
+    },
+    "metodo_04": {
+      "agree": "50c12c71596d",
+      "disagree": "c18fd5bc626a",
+      "note": "68fc242ef2b7"
+    },
+    "metodo_05": {
+      "agree": "bc3aa0ba58da",
+      "disagree": "ac6e842f40d7"
+    },
+    "metodo_06": {
+      "agree": "07cdcc7a46a0",
+      "disagree": "487e8c4b0b5b",
+      "note": "7f8d9df28459"
+    },
+    "metodo_07": {
+      "agree": "35a1a806319a",
+      "disagree": "1c178d0994ca"
+    },
+    "metodo_08": {
+      "agree": "be3a66d91711",
+      "disagree": "d4033e4ae587",
+      "note": "d9ed163f00d7"
+    },
+    "metodo_09": {
+      "agree": "1df2e52043f6",
+      "disagree": "9646bda94d03",
+      "note": "b7ff3238e6ea"
+    },
+    "metodo_10": {
+      "agree": "136e83435876",
+      "disagree": "f57c4abae242",
+      "note": "67ba1599c39d"
+    },
+    "metodo_11": {
+      "agree": "984c13b3812f",
+      "disagree": "f9b46edea180",
+      "note": "c0e16535d179"
+    },
+    "metodo_12": {
+      "agree": "864dc63dcfc3",
+      "disagree": "3ab0db0ffe8b"
+    },
+    "metodo_13": {
+      "agree": "c32cad8cbd46",
+      "disagree": "23a1d4d0b7e7"
+    },
+    "metodo_14": {
+      "agree": "9360fe7fd85a",
+      "disagree": "fb7d4df00be7"
+    },
+    "metodo_15": {
+      "agree": "87198e7a5e1e",
+      "disagree": "c35a54cbf6e7",
+      "note": "9b2280b19c91"
+    },
+    "metodo_16": {
+      "agree": "bcb4099c99d9",
+      "disagree": "ac38bf5cbeac",
+      "note": "1739237b00ce"
+    },
+    "metodo_17": {
+      "agree": "2f49babd7db7",
+      "disagree": "8ac0bb8d5150"
+    },
+    "metodo_18": {
+      "agree": "4c0b99ef542c",
+      "disagree": "7554981f71b8",
+      "note": "a23a9e87ee88"
+    },
+    "distribuicao_01": {
+      "agree": "43bc0e2d138c",
+      "disagree": "667fe5b70edf"
+    },
+    "distribuicao_02": {
+      "agree": "0182b2497433",
+      "disagree": "4ed17dc1120a"
+    },
+    "distribuicao_03": {
+      "agree": "51abd3a8005d",
+      "disagree": "c153c675c997",
+      "note": "3c1939c4b876"
+    },
+    "distribuicao_04": {
+      "agree": "dc2261163a6b",
+      "disagree": "f2c92dd81568"
+    },
+    "distribuicao_05": {
+      "agree": "8abf82b54fb2",
+      "disagree": "7e0752fb975b"
+    },
+    "distribuicao_06": {
+      "agree": "70d62cf025a5",
+      "disagree": "ff736265f846"
+    },
+    "distribuicao_07": {
+      "agree": "267540e14ad5",
+      "disagree": "38b4977093d3"
+    },
+    "distribuicao_08": {
+      "agree": "6c09f5f532c6",
+      "disagree": "ff0a8e3ef5a7"
+    },
+    "distribuicao_09": {
+      "agree": "994542cd8b10",
+      "disagree": "23d893b5ec90"
+    },
+    "distribuicao_10": {
+      "agree": "d82c1091ca62",
+      "disagree": "b865ff697c16"
+    },
+    "distribuicao_11": {
+      "agree": "7094759b56d4",
+      "disagree": "ae26f208310a"
+    },
+    "distribuicao_12": {
+      "agree": "920c2f556c56",
+      "disagree": "371fb003e1f0"
+    },
+    "distribuicao_13": {
+      "agree": "16e9dcefcee5",
+      "disagree": "f24da40e4874"
+    },
+    "distribuicao_14": {
+      "agree": "3da110a11792",
+      "disagree": "66efdbf49eaf"
+    },
+    "distribuicao_15": {
+      "agree": "96e35a670745",
+      "disagree": "4929a93aadd5"
+    },
+    "distribuicao_16": {
+      "agree": "032ec388aaee",
+      "disagree": "d5317673fb2b"
+    },
+    "distribuicao_17": {
+      "agree": "2255b63b68d9",
+      "disagree": "6a043a4cdea4"
     }
   },
   "political-values": {
@@ -3604,7 +3870,7 @@
       "text": "c2fe5ab36dc1"
     },
     "economia.right.pros": {
-      "text": "7365a1d79d1a"
+      "text": "d814c6fbc68c"
     },
     "controle.left.cons": {
       "text": "2ea24afe5b9d"
@@ -3643,16 +3909,16 @@
       "text": "410d44e8eed9"
     },
     "moral.left.cons": {
-      "text": "2dc0d5917ade"
+      "text": "37a971b298ec"
     },
     "moral.left.pros": {
-      "text": "79cd0b60bbb1"
+      "text": "a308d5c03205"
     },
     "moral.right.cons": {
-      "text": "a1d9abc4973e"
+      "text": "0cc338eef575"
     },
     "moral.right.pros": {
-      "text": "653b80bf1d4c"
+      "text": "06e5b769e3ed"
     },
     "tecnologia.left.cons": {
       "text": "8de6e8effdc3"
@@ -3665,6 +3931,72 @@
     },
     "tecnologia.right.pros": {
       "text": "c89fd3667ba2"
+    },
+    "metodo.left.muito_forte": {
+      "text": "f366b93b328b"
+    },
+    "metodo.left.forte": {
+      "text": "68a66a0c7b51"
+    },
+    "metodo.left.inclinado": {
+      "text": "93515fcaedda"
+    },
+    "metodo.balanced": {
+      "text": "fa29edc0fa82"
+    },
+    "metodo.right.inclinado": {
+      "text": "bdb57abc6749"
+    },
+    "metodo.right.forte": {
+      "text": "a1afcb7119ab"
+    },
+    "metodo.right.muito_forte": {
+      "text": "705ade712353"
+    },
+    "distribuicao.left.muito_forte": {
+      "text": "50ff7b249bea"
+    },
+    "distribuicao.left.forte": {
+      "text": "83acc6aef2ad"
+    },
+    "distribuicao.left.inclinado": {
+      "text": "6259b2c3947c"
+    },
+    "distribuicao.balanced": {
+      "text": "a55c49200f38"
+    },
+    "distribuicao.right.inclinado": {
+      "text": "4d580ab0b3fd"
+    },
+    "distribuicao.right.forte": {
+      "text": "28802c3c38f2"
+    },
+    "distribuicao.right.muito_forte": {
+      "text": "738c7ba48b5f"
+    },
+    "metodo.left.pros": {
+      "text": "c3efe0277b49"
+    },
+    "metodo.left.cons": {
+      "text": "b3a7f117a7e7"
+    },
+    "metodo.right.pros": {
+      "text": "87ba6253acfc"
+    },
+    "metodo.right.cons": {
+      "text": "71e04cae6590"
+    },
+    "distribuicao.left.pros": {
+      "text": "e9290b1c2f05"
+    },
+    "distribuicao.left.cons": {
+      "text": "777e3b1dae75"
+    },
+    "distribuicao.right.pros": {
+      "text": "bb87e2e791f6"
+    },
+    "distribuicao.right.cons": {
+      "text": "77f4a8461bfe"
     }
   },
   "ideologies": {

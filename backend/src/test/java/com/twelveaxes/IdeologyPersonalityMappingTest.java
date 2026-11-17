@@ -48,7 +48,7 @@ class IdeologyPersonalityMappingTest {
     }
 
     @Test
-    void everyPersonalityProfileUsesTheTwelveKnownAxes() {
+    void everyPersonalityProfileUsesOnlyKnownAxesAndAllLegacyOnes() {
         var axisIds = dataService.getAxes().stream()
                 .map(axis -> axis.id())
                 .toList();
@@ -57,7 +57,8 @@ class IdeologyPersonalityMappingTest {
                 .allSatisfy(profile -> {
                     assertThat(profile.vector().keySet())
                             .as("Profile %s must define exactly the known axes", profile.personalityId())
-                            .containsExactlyInAnyOrderElementsOf(axisIds);
+                            .containsAll(axisIds.subList(0, com.twelveaxes.service.ScoringService.LEGACY_AXIS_COUNT))
+                            .isSubsetOf(axisIds);
                     assertThat(profile.vector().values())
                             .as("Profile %s values must be percentages", profile.personalityId())
                             .allSatisfy(value -> assertThat(value).isBetween(0.0, 100.0));

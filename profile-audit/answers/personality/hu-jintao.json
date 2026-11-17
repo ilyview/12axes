@@ -38,7 +38,7 @@
   "economia": {
     "personaBrief": "Hu combinou economia de mercado socialista, grande setor estatal e integração comercial com políticas de redução de desigualdade, expansão de serviços sociais e desenvolvimento rural. Ele não buscou abolir propriedade privada nem restaurar coletivização maoísta, mas manteve o Estado em setores estratégicos.",
     "answers": {
-      "economia_05": "D", "economia_06": "CT", "economia_07": "C", "economia_13": "C", "economia_03": "C", "economia_14": "D", "economia_19": "C", "economia_16": "D", "economia_17": "C", "economia_12": "D", "economia_04": "D", "economia_11": "N", "economia_18": "D", "economia_15": "D", "economia_20": "D", "economia_01": "DT", "economia_10": "DT", "economia_09": "C", "economia_02": "D", "economia_08": "D"
+      "economia_05": "D", "economia_06": "CT", "economia_07": "C", "economia_13": "C", "economia_03": "C", "economia_14": "D", "economia_19": "C", "economia_16": "D", "economia_17": "C", "economia_12": "D", "economia_04": "D", "economia_11": "N", "economia_18": "D", "economia_15": "D", "economia_20": "D", "economia_10": "DT", "economia_09": "C", "economia_02": "D"
     }
   },
   "controle": {
@@ -62,7 +62,7 @@
   "moral": {
     "personaBrief": "Hu combinou o discurso socialista de igualdade de gênero com uma ordem pública socialmente conservadora, censura de sexualidade explícita e forte prioridade a família, estabilidade e disciplina. Não foi um reformador progressista de direitos LGBT ou de liberdade sexual, embora o Estado chinês mantivesse políticas reprodutivas seculares.",
     "answers": {
-      "moral_07": "D", "moral_04": "C", "moral_15": "N", "moral_12": "C", "moral_03": "DT", "moral_01": "DT", "moral_09": "D", "moral_06": "C", "moral_19": "D", "moral_02": "C", "moral_05": "C", "moral_17": "D", "moral_13": "D", "moral_11": "D", "moral_10": "D", "moral_18": "D", "moral_16": "C", "moral_14": "C", "moral_08": "D", "moral_20": "C"
+      "moral_07": "D", "moral_15": "N", "moral_12": "C", "moral_03": "DT", "moral_01": "DT", "moral_09": "D", "moral_06": "C", "moral_19": "D", "moral_02": "C", "moral_17": "D", "moral_13": "D", "moral_11": "D", "moral_10": "D", "moral_18": "D", "moral_16": "C", "moral_14": "C", "moral_20": "C"
     }
   },
   "tecnologia": {
@@ -70,5 +70,7 @@
     "answers": {
       "tecnologia_01": "CT", "tecnologia_13": "C", "tecnologia_19": "C", "tecnologia_12": "D", "tecnologia_18": "D", "tecnologia_10": "C", "tecnologia_05": "C", "tecnologia_04": "D", "tecnologia_16": "D", "tecnologia_07": "C", "tecnologia_08": "D", "tecnologia_03": "C", "tecnologia_15": "C", "tecnologia_20": "D", "tecnologia_06": "D", "tecnologia_09": "D", "tecnologia_17": "C", "tecnologia_02": "DT", "tecnologia_14": "D", "tecnologia_11": "CT"
     }
-  }
+  },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "D", "moral_05": "C", "moral_08": "D"}}
 }

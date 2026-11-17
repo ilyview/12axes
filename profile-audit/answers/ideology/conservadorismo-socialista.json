@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "C",
       "economia_20": "DT",
-      "economia_01": "N",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "DT",
-      "economia_08": "D"
+      "economia_02": "DT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Este e o eixo em que o componente conservador aparece de forma mais direta: a ideologia liga justica social a familia, autoridade e bons costumes, nao a liberacao individual irrestrita. Por isso tende a rejeitar pautas sexuais e culturais vistas como corrosivas da ordem comunitaria.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "CT",
       "moral_15": "D",
       "moral_12": "CT",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "C",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "N",
       "moral_16": "CT",
       "moral_14": "CT",
-      "moral_08": "D",
       "moral_20": "CT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "CT",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "N",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

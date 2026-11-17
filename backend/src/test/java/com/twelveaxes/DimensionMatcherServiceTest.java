@@ -41,7 +41,7 @@ class DimensionMatcherServiceTest {
     }
 
     private List<AxisResult> perfilDeTeste() {
-        return axesCom(List.of(96.3, 18.8, 43.8, 75.0, 57.5, 52.5, 15.0, 12.5, 20.0, 63.7, 8.8, 76.3));
+        return axesCom(List.of(96.3, 18.8, 43.8, 75.0, 57.5, 52.5, 15.0, 12.5, 20.0, 63.7, 8.8, 76.3, 62.5, 30.0));
     }
 
     @Test
@@ -49,12 +49,12 @@ class DimensionMatcherServiceTest {
         assertThat(DimensionMatcherService.POLITICAL_AXES).containsExactly(
                 "estrutura", "representacao", "poder", "diplomacia", "imigracao",
                 "intervencao", "tecnologia", "controle", "comercio", "religiao",
-                "economia", "moral");
+                "economia", "moral", "metodo", "distribuicao");
         assertThat(DimensionMatcherService.SOCIAL_AXES).containsExactly(
                 "representacao", "moral", "religiao", "economia", "controle", "comercio",
-                "imigracao", "poder", "tecnologia");
+                "imigracao", "poder", "tecnologia", "metodo", "distribuicao");
         assertThat(DimensionMatcherService.ECONOMIC_AXES).containsExactly(
-                "economia", "controle", "comercio");
+                "economia", "controle", "comercio", "distribuicao");
     }
 
     @Test

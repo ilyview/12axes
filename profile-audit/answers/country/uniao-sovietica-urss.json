@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "CT",
       "economia_20": "DT",
-      "economia_01": "CT",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "DT",
-      "economia_08": "DT"
+      "economia_02": "DT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "O Estado soviético promovia igualdade formal de gênero e ateísmo, mas também impunha um conservadorismo social pragmático em muitas fases (recriminalização do aborto sob Stalin, criminalização da homossexualidade, valorização da família trabalhadora), longe do progressismo liberal ocidental.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "N",
       "moral_02": "C",
-      "moral_05": "N",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "C",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "N",
       "tecnologia_11": "CT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "CT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

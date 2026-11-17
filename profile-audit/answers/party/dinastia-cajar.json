@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "DT",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "CT"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Ordem social patriarcal islâmica, com harém, poligamia, reclusão feminina e hierarquia de classes; modernização cultural apenas cosmética na corte.",
     "answers": {
       "moral_07": "DT",
-      "moral_04": "CT",
       "moral_15": "D",
       "moral_12": "CT",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "DT",
       "moral_02": "CT",
-      "moral_05": "DT",
       "moral_17": "DT",
       "moral_13": "DT",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "CT",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "CT"
     }
   },
@@ -299,5 +294,7 @@
       "tecnologia_11": "N"
     }
   },
-  "archetype": { "sociedade": "A", "poder": "A", "economia": "C", "mundo": "B", "tecnologia": "C" }
+  "archetype": { "sociedade": "A", "poder": "A", "economia": "C", "mundo": "B", "tecnologia": "C" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "CT"}},
+  "distribuicao": {"answers": {"economia_08": "CT", "moral_05": "DT", "moral_08": "C"}}
 }

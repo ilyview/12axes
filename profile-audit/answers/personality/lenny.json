@@ -58,8 +58,7 @@
     "answers": {
       "economia_05": "CT", "economia_06": "DT", "economia_07": "C", "economia_13": "C", "economia_03": "C",
       "economia_14": "DT", "economia_19": "C", "economia_16": "DT", "economia_17": "C", "economia_12": "D",
-      "economia_04": "DT", "economia_11": "C", "economia_18": "DT", "economia_15": "CT", "economia_20": "DT",
-      "economia_01": "CT", "economia_10": "D", "economia_09": "CT", "economia_02": "DT", "economia_08": "DT"
+      "economia_04": "DT", "economia_11": "C", "economia_18": "DT", "economia_15": "CT", "economia_20": "DT", "economia_10": "D", "economia_09": "CT", "economia_02": "DT"
     }
   },
   "controle": {
@@ -92,10 +91,9 @@
   "moral": {
     "personaBrief": "Gay assumido, Lenny vê a libertação LGBT, trans, o feminismo e o amor livre como parte da luta contra toda hierarquia, rejeitando a família tradicional como modelo e a autoridade patriarcal.",
     "answers": {
-      "moral_07": "CT", "moral_04": "DT", "moral_15": "C", "moral_12": "DT", "moral_03": "CT",
-      "moral_01": "CT", "moral_09": "CT", "moral_06": "DT", "moral_19": "CT", "moral_02": "DT",
-      "moral_05": "C", "moral_17": "CT", "moral_13": "C", "moral_11": "CT", "moral_10": "DT",
-      "moral_18": "DT", "moral_16": "DT", "moral_14": "DT", "moral_08": "D", "moral_20": "DT"
+      "moral_07": "CT", "moral_15": "C", "moral_12": "DT", "moral_03": "CT",
+      "moral_01": "CT", "moral_09": "CT", "moral_06": "DT", "moral_19": "CT", "moral_02": "DT", "moral_17": "CT", "moral_13": "C", "moral_11": "CT", "moral_10": "DT",
+      "moral_18": "DT", "moral_16": "DT", "moral_14": "DT", "moral_20": "DT"
     }
   },
   "tecnologia": {
@@ -107,5 +105,7 @@
       "tecnologia_09": "C", "tecnologia_17": "C", "tecnologia_02": "D", "tecnologia_14": "C", "tecnologia_11": "D"
     }
   },
-  "archetype": { "sociedade": "D", "poder": "E", "economia": "A", "mundo": "E", "tecnologia": "C" }
+  "archetype": { "sociedade": "D", "poder": "E", "economia": "A", "mundo": "E", "tecnologia": "C" },
+  "metodo": {"answers": {"economia_01": "CT", "moral_04": "DT"}},
+  "distribuicao": {"answers": {"economia_08": "DT", "moral_05": "C", "moral_08": "D"}}
 }

@@ -117,6 +117,19 @@ const axisIcons: Record<string, JSX.Element> = {
       <path d="M10 16v4" />
       <path d="M14 16v4" />
     </>
+  ),
+  metodo: (
+    <>
+      <path d="M4 12h12" />
+      <path d="m12 7 5 5-5 5" />
+      <path d="M20 5v14" />
+    </>
+  ),
+  distribuicao: (
+    <>
+      <path d="M12 3a9 9 0 1 0 9 9h-9Z" />
+      <path d="M15 3.5A9 9 0 0 1 20.5 9H15Z" />
+    </>
   )
 };
 
@@ -246,6 +259,37 @@ const poleIcons: Record<string, { left: JSX.Element; right: JSX.Element }> = {
       <>
         <path d="M5 19c8 0 13-5 14-14-7 1-13 5-14 14Z" />
         <path d="M5 19c4-5 8-8 14-14" />
+      </>
+    )
+  },
+  metodo: {
+    left: (
+      <>
+        <path d="M4 20h4v-4h4v-4h4V8h4" />
+        <path d="M4 20h16" />
+      </>
+    ),
+    right: (
+      <>
+        <path d="M13 3 5 14h6l-1 7 8-11h-6l1-7Z" />
+      </>
+    )
+  },
+  distribuicao: {
+    left: (
+      <>
+        <path d="M7 18v-7" />
+        <path d="M12 18v-7" />
+        <path d="M17 18v-7" />
+        <path d="M4 20h16" />
+      </>
+    ),
+    right: (
+      <>
+        <path d="M6 18v-4" />
+        <path d="M12 18V9" />
+        <path d="M18 18V4" />
+        <path d="M4 20h16" />
       </>
     )
   }

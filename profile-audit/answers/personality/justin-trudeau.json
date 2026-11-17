@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "N",
-      "economia_08": "D"
+      "economia_02": "N"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Trudeau é um dos líderes mundiais mais associados a pautas progressistas de gênero e diversidade: legalizou o casamento igualitário já era lei, defendeu ativamente direitos LGBT, aborto e cotas de gênero em seu próprio gabinete.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "C",
       "moral_12": "D",
       "moral_03": "CT",
@@ -269,8 +266,6 @@
       "moral_10": "DT",
       "moral_18": "DT",
       "moral_16": "D",
-      "moral_05": "C",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "C",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "Khrushchev conservou a propriedade estatal da indústria e dos bancos, a agricultura coletiva e os serviços sociais públicos, ampliando a construção de moradias e a proteção material da população. Defendia a superação da exploração capitalista, mas distinguia patrimônio pessoal de propriedade produtiva e vinculava benefícios e remuneração ao trabalho, sem assegurar permanência vitalícia em cargos.",
     "answers": {
-      "economia_01": "CT",
       "economia_02": "DT",
       "economia_03": "CT",
       "economia_04": "DT",
       "economia_05": "C",
       "economia_06": "DT",
       "economia_07": "CT",
-      "economia_08": "D",
       "economia_09": "CT",
       "economia_10": "DT",
       "economia_11": "C",
@@ -255,11 +253,8 @@
       "moral_01": "DT",
       "moral_02": "C",
       "moral_03": "D",
-      "moral_04": "C",
-      "moral_05": "C",
       "moral_06": "CT",
       "moral_07": "DT",
-      "moral_08": "D",
       "moral_09": "D",
       "moral_10": "C",
       "moral_11": "D",
@@ -305,5 +300,18 @@
     "economia": "A",
     "mundo": "C",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "CT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
+    }
   }
 }

@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "DT",
       "economia_20": "CT",
-      "economia_01": "DT",
       "economia_10": "CT",
       "economia_09": "DT",
-      "economia_02": "CT",
-      "economia_08": "CT"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Como corrente que quer preservar familia, costumes e autoridade moral tradicional, o anarcoconservadorismo se posiciona com clareza contra progressismo sexual e relativizacao dos papeis familiares. Mesmo sem recorrer ao Estado como primeiro instrumento, seu juizo moral e fortemente tradicionalista.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "CT",
       "moral_15": "DT",
       "moral_12": "CT",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "DT",
       "moral_17": "DT",
       "moral_13": "DT",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "CT",
       "moral_14": "CT",
-      "moral_08": "C",
       "moral_20": "CT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "CT",
       "tecnologia_11": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "DT",
+      "moral_08": "C"
     }
   }
 }

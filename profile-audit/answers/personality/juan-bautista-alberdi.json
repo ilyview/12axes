@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "DT",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "CT",
-      "economia_08": "CT"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Liberal em direitos civis mas homem do século XIX, Alberdi defendia nas Bases uma educação da mulher voltada ao lar, a família como base da sociedade e a mudança de costumes gradual pela 'educação pelas coisas', além de uma visão hierárquica de raças e culturas.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "D",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "D",
       "moral_02": "C",
-      "moral_05": "DT",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "CT",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "F",
     "mundo": "E",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "DT",
+      "moral_08": "C"
+    }
   }
 }

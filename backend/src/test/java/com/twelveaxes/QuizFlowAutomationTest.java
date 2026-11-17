@@ -44,7 +44,7 @@ class QuizFlowAutomationTest {
         mockMvc.perform(get("/api/quiz"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.variant").value(QuizDataService.SHORT_VARIANT))
-                .andExpect(jsonPath("$.questionCount").value(36));
+                .andExpect(jsonPath("$.questionCount").value(42));
     }
 
     @ParameterizedTest
@@ -60,7 +60,7 @@ class QuizFlowAutomationTest {
                             .contentType(MediaType.APPLICATION_JSON)
                             .content(objectMapper.writeValueAsString(new ResultRequest(answers, variant))))
                     .andExpect(status().isOk())
-                    .andExpect(jsonPath("$.axes.length()").value(12))
+                    .andExpect(jsonPath("$.axes.length()").value(14))
                     .andExpect(jsonPath("$.topMatch.ideologyId").isNotEmpty())
                     .andExpect(jsonPath("$.topPersonalityMatch.personalityId").isNotEmpty())
                     .andExpect(jsonPath("$.topPersonalityMatch.compatibility").isNumber())
@@ -153,7 +153,7 @@ class QuizFlowAutomationTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(new ResultRequest(answers, variant))))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.axes.length()").value(12))
+                .andExpect(jsonPath("$.axes.length()").value(14))
                 .andExpect(jsonPath("$.matches.length()").value(4))
                 .andReturn()
                 .getResponse()

@@ -32,8 +32,7 @@
   "economia": { "personaBrief": "Economia de propriedade senhorial, camponesa e mercantil, mas com a coroa retomando terras nobres pela Redução e controlando minas, monopólios e companhias régias.", "answers": {
     "economia_05": "DT", "economia_06": "C", "economia_07": "N", "economia_13": "C", "economia_03": "CT",
     "economia_14": "N", "economia_19": "C", "economia_16": "C", "economia_17": "C", "economia_12": "D",
-    "economia_04": "C", "economia_11": "D", "economia_18": "C", "economia_15": "D", "economia_20": "C",
-    "economia_01": "DT", "economia_10": "DT", "economia_09": "D", "economia_02": "C", "economia_08": "C" } },
+    "economia_04": "C", "economia_11": "D", "economia_18": "C", "economia_15": "D", "economia_20": "C", "economia_10": "DT", "economia_09": "D", "economia_02": "C" } },
   "controle": { "personaBrief": "Mercantilismo de Estado: a coroa regulava exportações de cobre e ferro, concedia privilégios e monopólios, fixava taxas e moeda e dirigia a economia para a guerra.", "answers": {
     "controle_05": "C", "controle_20": "DT", "controle_19": "C", "controle_14": "DT", "controle_07": "CT",
     "controle_04": "D", "controle_02": "D", "controle_17": "C", "controle_16": "D", "controle_10": "D",
@@ -50,14 +49,15 @@
     "religiao_01": "DT", "religiao_14": "CT", "religiao_06": "CT", "religiao_16": "CT", "religiao_08": "CT",
     "religiao_07": "DT", "religiao_09": "DT", "religiao_17": "DT", "religiao_20": "CT", "religiao_04": "CT" } },
   "moral": { "personaBrief": "Sociedade patriarcal e estamental regida pela moral luterana, com disciplina eclesiástica sobre casamento, sexualidade e família.", "answers": {
-    "moral_07": "DT", "moral_04": "C", "moral_15": "D", "moral_12": "C", "moral_03": "DT",
-    "moral_01": "DT", "moral_09": "DT", "moral_06": "CT", "moral_19": "DT", "moral_02": "CT",
-    "moral_05": "D", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "CT",
-    "moral_18": "CT", "moral_16": "CT", "moral_14": "C", "moral_08": "C", "moral_20": "C" } },
+    "moral_07": "DT", "moral_15": "D", "moral_12": "C", "moral_03": "DT",
+    "moral_01": "DT", "moral_09": "DT", "moral_06": "CT", "moral_19": "DT", "moral_02": "CT", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "CT",
+    "moral_18": "CT", "moral_16": "CT", "moral_14": "C", "moral_20": "C" } },
   "tecnologia": { "personaBrief": "Potência mineira e metalúrgica (Falun, canhões de ferro fundido), que valorizava inovação militar e industrial, ainda que numa sociedade agrária e religiosa.", "answers": {
     "tecnologia_01": "C", "tecnologia_13": "D", "tecnologia_19": "C", "tecnologia_12": "DT", "tecnologia_18": "C",
     "tecnologia_10": "D", "tecnologia_05": "C", "tecnologia_04": "C", "tecnologia_16": "D", "tecnologia_07": "C",
     "tecnologia_08": "D", "tecnologia_03": "C", "tecnologia_15": "D", "tecnologia_20": "C", "tecnologia_06": "D",
     "tecnologia_09": "C", "tecnologia_17": "D", "tecnologia_02": "N", "tecnologia_14": "C", "tecnologia_11": "C" } },
-  "archetype": { "sociedade": "A", "poder": "B", "economia": "E", "mundo": "A", "tecnologia": "D" }
+  "archetype": { "sociedade": "A", "poder": "B", "economia": "E", "mundo": "A", "tecnologia": "D" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "D", "moral_08": "C"}}
 }

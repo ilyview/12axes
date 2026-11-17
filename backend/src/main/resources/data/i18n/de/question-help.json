@@ -924,7 +924,7 @@
     "disagree": "Wirtschaftliche Macht sollte nicht durch Revolution umverteilt werden, sei es, weil man gesetzliche Reformen vorzieht, oder weil man keine Umverteilung will.",
     "agreeExample": "Mexiko, dessen Revolution von 1910 zur in der Verfassung von 1917 verankerten Landreform führte.",
     "disagreeExample": "Brasilien, das Einkommen über Bolsa Família umverteilt, 2004 per Gesetz geschaffen.",
-    "note": "Die Frage verbindet Umverteilung und Revolution. Wer auf legalem Weg umverteilen will, sollte nur an die Umverteilung denken."
+    "note": "Die Frage verbindet Umverteilung und Revolution. Auf dieser Achse zählt das Mittel: Wer umverteilen will, aber nur auf legalem Weg, stimmt nicht zu."
   },
   {
     "id": "economia_02",
@@ -1845,5 +1845,191 @@
     "agreeExample": "Die Vereinigten Staaten, wo 24 % sagten, weit verbreitete Exoskelette, die Arbeitern zusätzliche Kraft geben, wären schlecht für die Gesellschaft (Pew, 2022).",
     "disagreeExample": "Die Vereinigten Staaten, wo 33 % sagten, sie wären gut für die Gesellschaft.",
     "note": "Gemessen wird nur die Steigerung bei gesunden Menschen, nicht der medizinische Einsatz. Wer Implantate nur zur Behandlung von Behinderungen oder Krankheiten akzeptiert, stimmt „Ich bin gegen“ zu."
+  },
+  {
+    "id": "metodo_01",
+    "agree": "Selbst große Umgestaltungen sollten Schritt für Schritt über Parlament, Gerichte und Wahlen laufen.",
+    "disagree": "Tiefgreifender Wandel kann es erfordern, die bestehenden Institutionen zu verlassen oder alles auf einmal zu ändern.",
+    "note": "Gemessen wird der Weg des Wandels, nicht seine Richtung. Wer das Land stark verändern will, aber über die Institutionen, stimmt zu."
+  },
+  {
+    "id": "metodo_02",
+    "agree": "Die eigenen Ideen unverändert zu bewahren ist wichtiger, als durch Zugeständnisse mehr Wähler zu gewinnen.",
+    "disagree": "Das Programm zu mäßigen, um Wahlen zu gewinnen und regieren zu können, ist legitim und notwendig."
+  },
+  {
+    "id": "metodo_03",
+    "agree": "Mit Andersdenkenden zu verhandeln und teilweise nachzugeben ist der normale Weg, Politik zu machen.",
+    "disagree": "Kompromisse mit Gegnern verwässern das Projekt und sollten vermieden werden."
+  },
+  {
+    "id": "metodo_04",
+    "agree": "Es gibt Situationen, in denen Gewalt gegen ein Regime gerechtfertigt ist.",
+    "disagree": "Gewalt ist kein legitimes Mittel, um die politische Ordnung zu ändern, auch wenn sie ungerecht ist.",
+    "note": "Gilt für jede Seite: eine Revolution, einen Aufstand oder bewaffneten Widerstand gegen eine Diktatur."
+  },
+  {
+    "id": "metodo_05",
+    "agree": "Wahlsiege bewirken stabileren Wandel als Proteste, Besetzungen oder Aufstände.",
+    "disagree": "Druck von der Straße und direkte Mobilisierung bewirken tieferen oder schnelleren Wandel."
+  },
+  {
+    "id": "metodo_06",
+    "agree": "Direkte Aktionen, die den normalen Betrieb stören, sind akzeptabel, um Wandel zu erzwingen.",
+    "disagree": "Politischer Druck sollte sich auf Formen beschränken, die keine Straßen blockieren und keine öffentlichen Gebäude besetzen.",
+    "note": "Gilt für jedes Anliegen: Streiks mit Blockaden, Besetzungen von Land oder Schulen oder Lager vor Kasernen."
+  },
+  {
+    "id": "metodo_07",
+    "agree": "Auch ohne Antwort der Regierung sollten Demonstrationen nicht in Zerstörung oder Konfrontation übergehen.",
+    "disagree": "Wenn die Regierung friedliche Proteste ignoriert, werden härtere Formen des Drucks akzeptabel."
+  },
+  {
+    "id": "metodo_08",
+    "agree": "Krisen und Zusammenbrüche können nützlich sein, weil sie Raum für tiefgreifende Umgestaltung schaffen.",
+    "disagree": "Die Lage absichtlich zu verschlimmern oder darauf zu hoffen, ist kein akzeptabler Weg zum Wandel.",
+    "note": "Diese Idee heißt Akzelerationismus und wird in linken wie rechten Varianten vertreten."
+  },
+  {
+    "id": "metodo_09",
+    "agree": "Auch ein als ungerecht empfundenes Gesetz sollte befolgt werden, bis es auf normalem Weg aufgehoben wird.",
+    "disagree": "Ungerechte Gesetze offen zu missachten ist ein legitimer Weg, sie zu ändern.",
+    "note": "Es geht um zivilen Ungehorsam, wie bei Gandhi oder der US-Bürgerrechtsbewegung."
+  },
+  {
+    "id": "metodo_10",
+    "agree": "Eine entschlossene Gruppe kann und sollte den Wandel anführen, bevor die Mehrheit ihn unterstützt.",
+    "disagree": "Wandel ist nur legitim, wenn er aus der Unterstützung der Mehrheit entsteht, nicht aus der Initiative einer Minderheit.",
+    "note": "Die Idee der Avantgarde, die es im Leninismus gibt, aber auch in nationalistischen und putschistischen Bewegungen."
+  },
+  {
+    "id": "metodo_11",
+    "agree": "Was sich lange gehalten hat, hat meist Gründe dafür und sollte deshalb vorsichtig verändert werden.",
+    "disagree": "Alte Institutionen verdienen keine besondere Rücksicht, nur weil sie alt sind, und können ohne Bedenken ersetzt werden.",
+    "note": "Eine Idee, die mit Edmund Burke verbunden wird: Gemessen wird die Vorsicht gegenüber Wandel, nicht die Bindung an moralische Werte."
+  },
+  {
+    "id": "metodo_12",
+    "agree": "Es ist besser, mit einer neuen Verfassung neu anzufangen, als die aktuelle weiter zu ändern.",
+    "disagree": "Die aktuelle Verfassung sollte erhalten bleiben, auch wenn sie geändert wird."
+  },
+  {
+    "id": "metodo_13",
+    "agree": "Ein kleiner Fortschritt ist besser als gar keiner, weil man Kompromisse ablehnt.",
+    "disagree": "Halbe Siege schwächen die Sache; es ist besser, an der vollen Forderung festzuhalten."
+  },
+  {
+    "id": "metodo_14",
+    "agree": "Um die Regierung zu kämpfen und sie zu stellen zähmt meist diejenigen, die das System verändern wollten.",
+    "disagree": "In die Regierung zu kommen ist ein wirksamer Weg, das System von innen zu verändern."
+  },
+  {
+    "id": "metodo_15",
+    "agree": "Gegen eine schlechte Regierung zählen Wahlen, Gerichte, Presse und legaler Protest.",
+    "disagree": "Gegen eine schlechte Regierung können illegale Mittel gerechtfertigt sein.",
+    "note": "Denk an eine schlechte Regierung, nicht an eine Diktatur, die jeden legalen Weg verschlossen hat."
+  },
+  {
+    "id": "metodo_16",
+    "agree": "Die Bevölkerung sollte bereit sein, einer tyrannisch gewordenen Regierung mit Gewalt Widerstand zu leisten.",
+    "disagree": "Einer Regierung mit Gewalt Widerstand zu leisten ist nicht die Aufgabe der Bürger, auch bei Missbrauch.",
+    "note": "Es geht um bewaffneten Widerstand gegen die eigene Regierung, nicht um Waffenbesitz zur Selbstverteidigung."
+  },
+  {
+    "id": "metodo_17",
+    "agree": "Ein Wandel sollte erst umgesetzt werden, wenn er die Unterstützung der Mehrheit gewonnen hat.",
+    "disagree": "Wenn die Sache gerecht ist, darf man sie umsetzen, bevor die Mehrheit zustimmt."
+  },
+  {
+    "id": "metodo_18",
+    "agree": "Eine Umgestaltung auf einen Schlag bringt mehr als langsamer, schrittweiser Fortschritt.",
+    "disagree": "Kleine, kontinuierliche Reformen funktionieren besser als abrupter Wandel.",
+    "note": "Gemessen wird das Tempo, nicht die Richtung: Es gilt auch für alle, die Veränderungen auf einen Schlag rückgängig machen wollen."
+  },
+  {
+    "id": "distribuicao_01",
+    "agree": "Steuern sollten stark progressiv sein, mit viel höheren Sätzen an der Spitze.",
+    "disagree": "Die Reichsten sollten keinen viel höheren Steuersatz zahlen als die Mittelschicht."
+  },
+  {
+    "id": "distribuicao_02",
+    "agree": "Einkommensunterschiede sind gerecht, wenn sie aus der Arbeit und den Fähigkeiten jedes Einzelnen stammen.",
+    "disagree": "Große Einkommensunterschiede sind ein Problem, auch wenn sie aus Fleiß und Talent stammen."
+  },
+  {
+    "id": "distribuicao_03",
+    "agree": "Sehr große Vermögen sollten jährlich eine Steuer auf ihren Wert zahlen.",
+    "disagree": "Auf große Vermögen sollte es keine jährliche Vermögenssteuer geben.",
+    "note": "Es geht um eine Steuer auf angesammeltes Vermögen, nicht auf Einkommen."
+  },
+  {
+    "id": "distribuicao_04",
+    "agree": "Alle sollten denselben Prozentsatz ihres Einkommens zahlen, ohne höhere Sätze für Besserverdienende.",
+    "disagree": "Wer mehr verdient, sollte einen höheren Prozentsatz seines Einkommens zahlen."
+  },
+  {
+    "id": "distribuicao_05",
+    "agree": "Das Gesetz sollte begrenzen, um wie viel das höchste Gehalt das niedrigste in einem Unternehmen übersteigen darf.",
+    "disagree": "Der Gehaltsabstand in einem Unternehmen sollte keine gesetzliche Grenze haben."
+  },
+  {
+    "id": "distribuicao_06",
+    "agree": "Durch eigene Leistung erworbener Reichtum ist legitim und muss nicht gerechtfertigt werden.",
+    "disagree": "Auch durch Leistung erworbener Reichtum bringt eine moralische Pflicht gegenüber denen mit sich, die zurückgeblieben sind."
+  },
+  {
+    "id": "distribuicao_07",
+    "agree": "Allen dieselben Chancen zu geben reicht nicht; der Staat sollte Unterschiede bei Einkommen und Lebensbedingungen verringern.",
+    "disagree": "Die Aufgabe des Staates ist es, gleiche Chancen zu garantieren, nicht die Ergebnisse anzugleichen."
+  },
+  {
+    "id": "distribuicao_08",
+    "agree": "Der Staat sollte eine Mindestabsicherung garantieren, sich aber nicht um den Abstand zwischen Arm und Reich kümmern.",
+    "disagree": "Den Abstand zwischen Arm und Reich zu verringern sollte ebenfalls ein Ziel des Staates sein."
+  },
+  {
+    "id": "distribuicao_09",
+    "agree": "Ungleichheit ist an sich ein Problem, nicht nur dann, wenn sie Armut erzeugt.",
+    "disagree": "Wenn niemand arm ist, ist Ungleichheit zwischen den Menschen nicht ungerecht."
+  },
+  {
+    "id": "distribuicao_10",
+    "agree": "Große Vermögensunterschiede gehören zu einer normalen Gesellschaft und fördern den Fortschritt.",
+    "disagree": "Große Vermögensunterschiede sind weder natürlich noch gesund für die Gesellschaft."
+  },
+  {
+    "id": "distribuicao_11",
+    "agree": "Öffentliche Bildungsgelder sollten stärker dorthin fließen, wo der Bedarf größer ist.",
+    "disagree": "Öffentliche Schulen sollten gleich viel Geld bekommen, ohne Schulen in armen Vierteln mehr zu geben."
+  },
+  {
+    "id": "distribuicao_12",
+    "agree": "Wer staatliche Hilfe bekommt, sollte Pflichten erfüllen, etwa arbeiten, sich ausbilden oder Arbeit suchen.",
+    "disagree": "Sozialhilfe sollte gewährt werden, ohne von den Bedürftigen eine Gegenleistung zu verlangen."
+  },
+  {
+    "id": "distribuicao_13",
+    "agree": "Sehr hohe Bezüge sollten zusätzlich besteuert werden, damit sie weniger attraktiv sind.",
+    "disagree": "Hohe Managergehälter sollten keinen Sondersteuern unterliegen."
+  },
+  {
+    "id": "distribuicao_14",
+    "agree": "Schüler, die leichter lernen, sollten getrennt werden, damit sie in ihrem eigenen Tempo vorankommen.",
+    "disagree": "Schüler mit unterschiedlichem Niveau sollten gemeinsam lernen, ohne nach Leistung getrennte Klassen oder Schulen."
+  },
+  {
+    "id": "distribuicao_15",
+    "agree": "Die Staatseinnahmen sollten weniger auf Steuern auf Waren beruhen und mehr auf Steuern für die, die mehr verdienen und besitzen.",
+    "disagree": "Konsumsteuern sollten nicht durch höhere Steuern auf Einkommen und Vermögen ersetzt werden."
+  },
+  {
+    "id": "distribuicao_16",
+    "agree": "Die Reichsten stark zu besteuern hemmt Investitionen und schadet der Wirtschaft.",
+    "disagree": "Hohe Steuern für Reiche sind gerecht und schaden der Schaffung von Arbeitsplätzen nicht."
+  },
+  {
+    "id": "distribuicao_17",
+    "agree": "Der Staat sollte stark umverteilen, damit die familiäre Herkunft nicht über die Chancen eines Kindes entscheidet.",
+    "disagree": "Unterschiedliche Startbedingungen zwischen Familien sind akzeptabel und rechtfertigen keine große Umverteilung."
   }
 ]

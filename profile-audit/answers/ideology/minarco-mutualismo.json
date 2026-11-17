@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "C",
-      "economia_01": "D",
       "economia_10": "C",
       "economia_09": "C",
-      "economia_02": "C",
-      "economia_08": "N"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Como libertarianismo de esquerda, o minarco-mutualismo tende a tratar costumes como materia de escolha voluntaria, nao de imposicao estatal ou religiosa. Isso puxa o perfil para tolerancia ampla com diversidade sexual, familiar e cultural, ainda que sem entusiasmo por paternalismo moral oficial.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "C",
       "moral_12": "D",
       "moral_03": "CT",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "CT",
       "moral_02": "DT",
-      "moral_05": "C",
       "moral_17": "CT",
       "moral_13": "C",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "DT",
       "moral_14": "D",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "C",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "N",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

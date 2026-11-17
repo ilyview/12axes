@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "N",
       "economia_09": "N",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A compaixao universal por todos os seres sencientes (incluindo animais, tema em que foi pioneiro) e o desdem elitista por convencoes morais burguesas coexistem com uma visao pessimista da sexualidade e reproducao como manifestacoes da Vontade cega, nao como categorias sagradas nem 'decadentes'.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "CT",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "D",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "D",
       "moral_14": "N",
-      "moral_08": "D",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "CT",
       "tecnologia_11": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "D"
     }
   }
 }

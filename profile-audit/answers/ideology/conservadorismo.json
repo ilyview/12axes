@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "N",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "O apego conservador à família, aos costumes e à ordem estabelecida se manifesta em firme tradicionalismo moral, com resistência a mudanças culturais rápidas em temas de gênero, sexualidade e família.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "D",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "N",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "C",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "N"
     }
   }
 }

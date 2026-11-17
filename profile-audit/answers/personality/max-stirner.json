@@ -167,11 +167,9 @@
       "economia_18": "N",
       "economia_15": "D",
       "economia_20": "C",
-      "economia_01": "D",
       "economia_10": "CT",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "N"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Stirner rejeita a moral enquanto tal — tanto a tradicional quanto a progressista quando esta se torna novo dogma coletivo — mas sua hostilidade recai com muito mais força sobre a moral conservadora/religiosa, que ele viu de perto e atacou nominalmente; ele apoia a dissolução de qualquer tabu que aprisione o indivíduo a papéis fixos (família, gênero, sexualidade).",
     "answers": {
       "moral_07": "C",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "DT",
-      "moral_05": "N",
       "moral_17": "C",
       "moral_13": "C",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "DT",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "N",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "N",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

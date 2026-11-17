@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "CT",
       "economia_20": "D",
-      "economia_01": "CT",
       "economia_10": "N",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Zumbi liderou uma sociedade que reconstruiu estruturas familiares e comunitárias de raiz africana destruídas pela escravidão, valorizando a família, a ancestralidade e os costumes tradicionais como pilares de resistência cultural, ao mesmo tempo em que sua própria existência era um desafio radical à ordem moral escravista vigente.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "N",
       "moral_02": "C",
-      "moral_05": "CT",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "N",
       "moral_16": "N",
       "moral_14": "N",
-      "moral_08": "D",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "C",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "CT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "CT",
+      "moral_08": "D"
     }
   }
 }

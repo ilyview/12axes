@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Economia de mercado com menos impostos e menos regras para empresas, mas com proteção ao emprego e aos agricultores franceses.",
   "answers": {
-   "economia_01": "D",
    "economia_02": "C",
    "economia_03": "C",
    "economia_04": "C",
    "economia_05": "D",
    "economia_06": "C",
    "economia_07": "D",
-   "economia_08": "C",
    "economia_09": "D",
    "economia_10": "C",
    "economia_11": "D",
@@ -255,11 +253,8 @@
    "moral_01": "DT",
    "moral_02": "C",
    "moral_03": "DT",
-   "moral_04": "C",
-   "moral_05": "DT",
    "moral_06": "CT",
    "moral_07": "DT",
-   "moral_08": "C",
    "moral_09": "D",
    "moral_10": "CT",
    "moral_11": "DT",
@@ -305,5 +300,18 @@
   "economia": "E",
   "mundo": "D",
   "tecnologia": "C"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "D",
+   "moral_04": "C"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "C",
+   "moral_05": "DT",
+   "moral_08": "C"
+  }
  }
 }

@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "D"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Progressismo social moderado e modernizante: apoio a direitos LGBT e igualdade de gênero como parte da renovação centrista, mas sem radicalismo cultural, equilibrando com ênfase em responsabilidade individual e família.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "N",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "N",
-      "moral_05": "C",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "D",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "N",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "N"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

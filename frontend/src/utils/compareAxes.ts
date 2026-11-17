@@ -16,7 +16,7 @@ export interface CompareSummary {
   farthest: CompareAxisRow | null;
 }
 
-// Os 12 eixos com a distância entre o usuário e o perfil, mais o eixo que mais
+// Os 14 eixos com a distância entre o usuário e o perfil, mais o eixo que mais
 // aproxima (menor distância) e o mais distante (maior). Em empate, vale a ordem dos eixos.
 export function compareAxes(
   axes: Axis[],

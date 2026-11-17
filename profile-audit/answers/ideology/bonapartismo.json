@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "N",
-      "economia_08": "C"
+      "economia_02": "N"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Assim como o Código Napoleônico consolidou uma ordem familiar patriarcal e tradicional sem se converter numa cruzada moral religiosa, o bonapartismo tende ao conservadorismo social funcional à ordem e à coesão nacional — tradicionalismo moderado por pragmatismo, não fundamentalismo.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "N",
       "moral_02": "C",
-      "moral_05": "D",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "D",
       "moral_14": "D",
-      "moral_08": "D",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "N",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "D"
     }
   }
 }

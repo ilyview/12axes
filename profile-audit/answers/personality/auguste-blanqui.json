@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "C",
       "economia_20": "DT",
-      "economia_01": "CT",
       "economia_10": "D",
       "economia_09": "CT",
-      "economia_02": "D",
-      "economia_08": "DT"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Revolucionário anticlerical e igualitário do século XIX, Blanqui rejeitava a moral da Igreja e a autoridade da família tradicional sobre a educação, mas mantinha uma austeridade pessoal de virtude revolucionária.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "DT",
       "moral_15": "D",
       "moral_12": "D",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "N",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "C",
       "moral_17": "N",
       "moral_13": "D",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "D",
       "moral_20": "DT"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "A",
     "mundo": "B",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "CT",
+      "moral_04": "DT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "C",
+      "moral_08": "D"
+    }
   }
 }

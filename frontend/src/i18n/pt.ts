@@ -75,7 +75,7 @@ export const pt: Strings = {
   introLead:
     'Talvez você esteja se classificando errado. Em poucos minutos, descubra sua ideologia real, o país que mais pensa como você e o líder político mais parecido com suas ideias.',
   startQuiz: 'Descobrir meu perfil',
-  seeAxes: 'Ver os 12 eixos',
+  seeAxes: 'Ver os 14 eixos',
   heroLabels: ['Gratuito', 'Anônimo', 'Rápido', 'Resultado imediato'],
   heroTeaserLabel: 'match',
   heroTeaserTag: 'Exemplo de resultado',
@@ -84,21 +84,21 @@ export const pt: Strings = {
   formats: {
     short: {
       label: 'Curta',
-      questionCount: '36 perguntas',
+      questionCount: '42 perguntas',
       description: 'Resultado rápido, ideal para uma primeira leitura do seu perfil',
       duration: 'Aprox. 5 min',
       action: 'Começar versão curta'
     },
     extended: {
       label: 'Completa',
-      questionCount: '60 perguntas',
+      questionCount: '70 perguntas',
       description: 'Mais precisão para aproximar seu resultado dos perfis ideológicos.',
       duration: 'Aprox. 9 min',
       action: 'Começar versão completa'
     },
     extreme: {
       label: 'Extrema',
-      questionCount: '240 perguntas',
+      questionCount: '275 perguntas',
       description: 'Saiba exatamente a síntese do seu pensamento com 100% de precisão.',
       duration: 'Aprox. 30 min',
       action: 'Começar versão extrema'
@@ -143,7 +143,9 @@ export const pt: Strings = {
       comercio: { left: 'defesa da proteção à indústria nacional', right: 'defesa da abertura ao comércio internacional' },
       religiao: { left: 'preferência por separar religião e política', right: 'defesa de mais religião na vida pública' },
       moral: { left: 'valores sociais progressistas', right: 'valores sociais tradicionais' },
-      tecnologia: { left: 'confiança na tecnologia e na indústria', right: 'preferência por soluções mais naturais e biológicas' }
+      tecnologia: { left: 'confiança na tecnologia e na indústria', right: 'preferência por soluções mais naturais e biológicas' },
+      metodo: { left: 'preferência por mudanças graduais, pelas instituições', right: 'disposição para rupturas e ação direta' },
+      distribuicao: { left: 'defesa de mais igualdade e redistribuição', right: 'defesa do mérito e da desigualdade que vem dele' }
     }
   },
   compareEyebrow: 'Análise comparativa',
@@ -155,7 +157,7 @@ export const pt: Strings = {
   compareFieldCaption: 'Personalidade, país ou ideologia',
   compareFullView: 'Ver comparação completa',
   compareExamplePlaceholder: 'Ex.: Getúlio Vargas',
-  compareAxesTitle: 'Seus 12 eixos',
+  compareAxesTitle: 'Seus 14 eixos',
   compareNoResults: 'Nenhum perfil encontrado.',
   compareLoading: 'Comparando…',
   compareLoadError: 'Não foi possível carregar a comparação. Tente de novo.',
@@ -167,6 +169,8 @@ export const pt: Strings = {
     religiao: 'religiosamente',
     moral: 'moralmente',
     tecnologia: 'tecnologicamente',
+    metodo: 'no método',
+    distribuicao: 'na distribuição',
     diplomacia: 'diplomaticamente'
   },
   compareClosestLine: (adverb, name) => `Você é ${adverb} compatível com ${name}.`,
@@ -180,7 +184,7 @@ export const pt: Strings = {
   compareOptionAria: (name, type) => `${name}, ${type}`,
   comparePageDocTitle: 'Comparar perfis — 12 Axes',
   comparePageEyebrow: 'Comparar perfis',
-  comparePageTitle: 'Lado a lado, nos 12 eixos',
+  comparePageTitle: 'Lado a lado, nos 14 eixos',
   comparePageProfilesTitle: 'Perfis',
   comparePageNeedMore: 'Escolha mais um perfil para comparar.',
   comparePageFull: 'Até 3 perfis. Remova um para escolher outro.',
@@ -188,7 +192,7 @@ export const pt: Strings = {
   comparePageRemoveAria: (name) => `Remover ${name} da comparação`,
   comparePageUnknown: 'Perfil não encontrado',
   comparePageNotFound: 'Um dos perfis deste link não existe. Remova-o e escolha outro.',
-  comparePageAxesTitle: 'Os 12 eixos',
+  comparePageAxesTitle: 'Os 14 eixos',
   comparePageAxisAria: (axis, values) => `${axis}: ${values}`,
   comparePageCompassAria: (points) => `Bússola política: ${points}`,
   comparePagePointAria: (name, right, authoritarian, traditional) =>
@@ -267,7 +271,7 @@ export const pt: Strings = {
   peopleNavValues: 'Valores',
   peopleNavSharedValues: 'Em comum',
   peoplePageDocTitle: 'Comparar com outra pessoa — 12 Axes',
-  peoplePageTitle: 'Vocês dois, nos 12 eixos',
+  peoplePageTitle: 'Vocês dois, nos 14 eixos',
   peoplePagePeopleTitle: 'Pessoas',
   peoplePageBadLink: 'Este link de comparação está incompleto. Abra o seu resultado e use "Compare com outra pessoa".',
   peoplePageLoadError: 'Não foi possível carregar a comparação. Tente de novo.',
@@ -296,7 +300,9 @@ export const pt: Strings = {
     moral:
       'Avalia progressismo cultural, direitos civis e mudanças sociais em contraste com tradição, família, costumes e conservadorismo moral.',
     tecnologia:
-      'Mede entusiasmo por tecnologia, IA, engenharia genética e desenvolvimento técnico contra cautela biológica, ambiental e preservacionista.'
+      'Mede entusiasmo por tecnologia, IA, engenharia genética e desenvolvimento técnico contra cautela biológica, ambiental e preservacionista.',
+    metodo: 'Mede se a mudança política deve vir aos poucos, pelo voto, pela lei e pelo acordo, ou por ruptura, ação direta, desobediência e, no limite, revolução. Mede o meio, e não a direção da mudança.',
+    distribuicao: 'Mede quanta desigualdade é aceitável: impostos progressivos, taxação de fortunas e heranças e igualdade de resultados contra mérito, imposto igual para todos e diferenças de renda vistas como justas.'
   },
   homeAxes: {},
   spectrumItems: [
@@ -361,12 +367,12 @@ export const pt: Strings = {
     {
       question: 'O teste é confiável?',
       answer:
-        'O teste político 12 Axes é confiável como ferramenta de leitura e comparação de posicionamento político. Ele usa perguntas distribuídas por 12 eixos para reduzir vieses de um único tema, mas não substitui estudo, debate ou análise acadêmica.'
+        'O teste político 12 Axes é confiável como ferramenta de leitura e comparação de posicionamento político. Ele usa perguntas distribuídas por 14 eixos para reduzir vieses de um único tema, mas não substitui estudo, debate ou análise acadêmica.'
     },
     {
       question: 'Quanto tempo demora?',
       answer:
-        'A versão curta demora cerca de 5 minutos. A versão completa leva aproximadamente 9 minutos. A versão extrema, com 240 perguntas, pode levar cerca de 30 minutos.'
+        'A versão curta demora cerca de 5 minutos. A versão completa leva aproximadamente 9 minutos. A versão extrema, com 275 perguntas, pode levar cerca de 30 minutos.'
     },
     {
       question: 'Posso refazer?',
@@ -396,7 +402,7 @@ export const pt: Strings = {
     {
       question: 'Posso compartilhar?',
       answer:
-        'Sim. Ao terminar, você pode compartilhar seu resultado para discutir ideologia política, espectro político, esquerda, direita, centro e os 12 eixos com outras pessoas.'
+        'Sim. Ao terminar, você pode compartilhar seu resultado para discutir ideologia política, espectro político, esquerda, direita, centro e os 14 eixos com outras pessoas.'
     },
     {
       question: 'O teste coleta dados?',
@@ -410,15 +416,15 @@ export const pt: Strings = {
     },
     {
       question: 'O que é o 12 Axes?',
-      answer: 'O 12 Axes é um teste político gratuito que mede sua posição em 12 eixos (estrutura do Estado, representação, liberdades, imigração, diplomacia, intervenção, economia, controle econômico, comércio, religião, moral e tecnologia) e mostra sua ideologia política, país e personalidade compatíveis.'
+      answer: 'O 12 Axes é um teste político gratuito que mede sua posição em 14 eixos (estrutura do Estado, representação, liberdades, imigração, diplomacia, intervenção, economia, controle econômico, comércio, religião, moral, tecnologia, método da mudança e distribuição) e mostra sua ideologia política, país e personalidade compatíveis.'
     },
     {
       question: 'O 12 Axes tem bússola política (political compass)?',
-      answer: 'Sim. No fim do resultado há uma bússola política em dois eixos, esquerda × direita e autoritário × libertário, com uma barra progressista × tradicionalista. Ela resume seus 12 eixos de forma visual, mas não substitui a análise completa.'
+      answer: 'Sim. No fim do resultado há uma bússola política em dois eixos, esquerda × direita e autoritário × libertário, com uma barra progressista × tradicionalista. Ela resume seus 14 eixos de forma visual, mas não substitui a análise completa.'
     },
     {
       question: 'Como descobrir minha ideologia política compatível?',
-      answer: 'Faça o quiz político, com 36, 60 ou 240 perguntas. O resultado mostra as ideologias mais compatíveis com as suas respostas, com a porcentagem de compatibilidade e a posição de cada uma nos 12 eixos.'
+      answer: 'Faça o quiz político, com 42, 70 ou 275 perguntas. O resultado mostra as ideologias mais compatíveis com as suas respostas, com a porcentagem de compatibilidade e a posição de cada uma nos 14 eixos.'
     },
     {
       question: 'Posso descobrir qual país ou personalidade combina comigo?',
@@ -426,7 +432,7 @@ export const pt: Strings = {
     },
     {
       question: 'Quantas perguntas tem o quiz de política?',
-      answer: 'Há três versões: a rápida, com 36 perguntas, a completa, com 60, e a extrema, com 240. Todas cobrem os mesmos 12 eixos; quanto mais perguntas, mais preciso tende a ser o resultado.'
+      answer: 'Há três versões: a rápida, com 42 perguntas, a completa, com 70, e a extrema, com 275. Todas cobrem os mesmos 14 eixos; quanto mais perguntas, mais preciso tende a ser o resultado.'
     }
   ],
   howEyebrow: 'Como funciona',
@@ -439,15 +445,15 @@ export const pt: Strings = {
       text: 'Concorde ou discorde de afirmações sobre economia, Estado, liberdades civis, valores, religião, política externa e tecnologia.'
     },
     {
-      title: 'Análise em 12 eixos',
-      text: 'Cada resposta posiciona você em 12 eixos ideológicos independentes - do livre mercado ao planejamento, do nacionalismo ao globalismo.'
+      title: 'Análise em 14 eixos',
+      text: 'Cada resposta posiciona você em 14 eixos ideológicos independentes - do livre mercado ao planejamento, do nacionalismo ao globalismo.'
     },
     {
       title: 'Descubra seu perfil',
       text: 'Receba seu perfil ideológico, ideologias mais compatíveis, país mais próximo, personalidade relacionada e resultado por eixo.'
     }
   ],
-  axesGuideEyebrow: '12 eixos',
+  axesGuideEyebrow: '14 eixos',
   axesGuideTitle: 'O que significa cada eixo?',
   axesGuideLead:
     'O teste ideológico 12 Axes analisa federalismo, representação política, democracia, eleições, imigração, comércio internacional, religião na política, política econômica, moral e tecnologia em dimensões separadas.',
@@ -476,12 +482,12 @@ export const pt: Strings = {
   navStart: 'Começar',
   navTakeTest: 'Fazer o teste',
   menuAria: 'Abrir menu',
-  roseAria: 'Rosa dos 12 eixos',
+  roseAria: 'Rosa dos 14 eixos',
   spectrumBarAria: 'Barra do espectro político com as oito categorias',
   versionsEyebrow: 'Versões',
   versionsTitle: 'Escolha a profundidade',
   versionsLead:
-    'Comece pelo quiz rápido ou aprofunde sua análise para um retrato mais preciso do seu perfil ideológico. Todas as versões usam os mesmos 12 eixos e retornam o resultado imediatamente.',
+    'Comece pelo quiz rápido ou aprofunde sua análise para um retrato mais preciso do seu perfil ideológico. Todas as versões usam os mesmos 14 eixos e retornam o resultado imediatamente.',
   variantEyebrow: 'Escolha o formato',
   variantTitlePre: 'Você quer velocidade ou ',
   variantTitleEm: 'precisão?',
@@ -489,7 +495,7 @@ export const pt: Strings = {
   depthLabel: 'Profundidade',
   depthAria: (level) => `Profundidade ${level} de 3`,
   recommended: 'Recomendada',
-  formatNotes: ['Todas as versões usam os mesmos 12 eixos', 'Anônimo, sem cadastro', 'Resultado imediato'],
+  formatNotes: ['Todas as versões usam os mesmos 14 eixos', 'Anônimo, sem cadastro', 'Resultado imediato'],
   variantLead:
     'A versão curta revela o resultado de forma rápida. A completa aumenta a precisão para aproximar melhor seu resultado dos perfis ideológicos.',
   quizNavAria: 'Navegação do quiz',
@@ -510,13 +516,13 @@ export const pt: Strings = {
   resultsH1Pre: 'Seu perfil ',
   resultsH1Em: 'ideológico',
   resultsLead: (count) =>
-    `Análise baseada em ${count} respostas distribuídas em 12 dimensões fundamentais da ideologia política. Confira sua posição em cada eixo e suas correspondências ideológicas.`,
+    `Análise baseada em ${count} respostas distribuídas em 14 dimensões fundamentais da ideologia política. Confira sua posição em cada eixo e suas correspondências ideológicas.`,
   resultsLeadShared:
-    'Resultado compartilhado: a posição em cada um dos 12 eixos políticos e as correspondências ideológicas calculadas a partir dele. Faça o teste para descobrir o seu.',
+    'Resultado compartilhado: a posição em cada um dos 14 eixos políticos e as correspondências ideológicas calculadas a partir dele. Faça o teste para descobrir o seu.',
   resultsSummaryAria: 'Resumo da análise',
   metaTop: 'Top match',
   axesSectionEyebrow: 'Eixos políticos',
-  axesSectionTitle: 'Seus 12 eixos',
+  axesSectionTitle: 'Seus 14 eixos',
   proximityEyebrow: 'Proximidade ideológica',
   otherMatches: 'Outras ideologias',
   navOnThisPage: 'Nesta página',
@@ -527,7 +533,7 @@ export const pt: Strings = {
   resultsNavGovernment: 'Governo ideal',
   resultsNavTimeline: 'Linha do tempo',
   resultsNavLiving: 'Para viver',
-  resultsNavAxes: '12 eixos',
+  resultsNavAxes: '14 eixos',
   resultsNavSignature: 'Distinção',
   resultsNavCountries: 'Países',
   resultsNavPersonalities: 'Personalidades',
@@ -586,7 +592,7 @@ export const pt: Strings = {
       'ext-direita': 'A Extrema direita se define por hierarquia e identidade. A bússola mede economia e poder; moral, religião e nação ficam de fora.',
       'esq-radical': 'A Esquerda radical se define por revolução e coletivização. A bússola mede economia e poder; o projeto revolucionário fica de fora.',
       libertarian: 'Sua ideologia fica na divisa entre duas regiões. A bússola mede economia e poder, e uma diferença pequena em um deles decide o lado.',
-      generic: 'A bússola mede 5 dos 12 eixos; os outros 7 ficam de fora.'
+      generic: 'A bússola mede 5 dos 14 eixos; os outros 9 ficam de fora.'
     }
   },
   compassAria: (right, authoritarian, traditional) =>
@@ -637,13 +643,13 @@ export const pt: Strings = {
   paywallModalTitle: 'Tenha acesso ao resultado completo das suas visões políticas',
   paywallModalLead: 'Entenda o seu pensamento de mundo eixo a eixo, saiba qual país ou região atual tem a sua cara e muito mais.',
   paywallPdfTitle: 'Leve o seu relatório completo em PDF',
-  paywallPdfLead: 'A análise dos 12 eixos, o seu governo ideal e os países para viver, num PDF para guardar e reler quando quiser.',
+  paywallPdfLead: 'A análise dos 14 eixos, o seu governo ideal e os países para viver, num PDF para guardar e reler quando quiser.',
   paywallIncludesTitle: 'O que você desbloqueia:',
   paywallIncludes: [
     { lead: 'Seu governo ideal:', text: 'nove cargos ocupados por quem pensa como você.' },
     { lead: 'Para qual país se mudar:', text: 'os 10 países mais próximos dos seus ideais.' },
     { lead: 'Onde você mais discorda:', text: 'da ideologia, da figura e do país mais parecidos com você.' },
-    { lead: 'Os 12 eixos, um por um:', text: 'o que cada posição sua revela, por que ela é elogiada e por que é criticada.' },
+    { lead: 'Os 14 eixos, um por um:', text: 'o que cada posição sua revela, por que ela é elogiada e por que é criticada.' },
     { lead: 'Sua linha do tempo:', text: 'quem pensava como você, da Antiguidade ao século XXI.' },
     { lead: 'Seu líder ideal por área:', text: 'política, economia, filosofia e mais.' },
     { lead: 'Ranking completo e PDF:', text: 'todo o catálogo em planilha, e o relatório para guardar.' }
@@ -705,7 +711,7 @@ export const pt: Strings = {
   signatureUnusualLeadMax: (pole) => `Nenhuma ideologia do catálogo puxa tanto para ${pole.toLowerCase()} quanto você.`,
   signatureUnusualLeadBalanced: (axis, pole, percent) =>
     `Sua posição em ${axis} é de meio-termo. Mesmo assim, isso já te coloca mais para ${pole.toLowerCase()} que ${Math.round(percent)}% das ideologias do catálogo.`,
-  signatureUnusualNote: (axis) => `De todos os 12 eixos, ${axis} é onde você mais se afasta do conjunto. É o traço que mais te diferencia.`,
+  signatureUnusualNote: (axis) => `De todos os 14 eixos, ${axis} é onde você mais se afasta do conjunto. É o traço que mais te diferencia.`,
   signatureCommonLead: (axis) => `Sua posição em ${axis} é praticamente a mediana do catálogo.`,
   signatureCommonNote: (pole) => `Aqui você está em terreno comum. Não puxa para ${pole.toLowerCase()} nem para o polo oposto.`,
   signatureCommonNoteBalanced: (axis) => `Você fica no centro em ${axis}, e o catálogo também. É onde seu perfil menos se distingue.`,
@@ -753,15 +759,15 @@ export const pt: Strings = {
     kpiAnswered: (count) => `${count} perguntas respondidas`,
     tocTitle: 'Neste relatório',
     generatedOn: (date) => `Gerado em ${date}`,
-    axesIntro: 'Sua posição em cada um dos 12 eixos. A barra parte do centro (50%) em direção ao polo para onde você pende; o selo indica a intensidade.',
+    axesIntro: 'Sua posição em cada um dos 14 eixos. A barra parte do centro (50%) em direção ao polo para onde você pende; o selo indica a intensidade.',
     intensityLegend: 'Intensidade',
     intensityLevels: ['Equilibrado · até 57%', 'Inclinado · 58 a 72%', 'Forte · 73 a 87%', 'Muito forte · 88% ou mais'],
     alsoClose: 'Também próximos, por dimensão do seu perfil',
     continued: 'continuação',
-    areasIntro: 'As personalidades do catálogo cujo perfil nos 12 eixos mais se parece com o seu.',
+    areasIntro: 'As personalidades do catálogo cujo perfil nos 14 eixos mais se parece com o seu.',
     booksIntro: 'Uma obra de cada uma das personalidades mais próximas dos seus resultados.',
     aboutTitle: 'Sobre este relatório',
-    aboutText: 'O 12 Axes compara suas respostas com perfis de ideologias, países e personalidades nos mesmos 12 eixos. A compatibilidade mede proximidade entre perfis; não é diagnóstico científico nem rótulo definitivo. Suas respostas não são armazenadas.',
+    aboutText: 'O 12 Axes compara suas respostas com perfis de ideologias, países e personalidades nos mesmos 14 eixos. A compatibilidade mede proximidade entre perfis; não é diagnóstico científico nem rótulo definitivo. Suas respostas não são armazenadas.',
     ctaTitle: 'Refaça o teste ou compartilhe'
   },
   shareFilePrefix: '12axes-perfil',

@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "CT",
       "economia_20": "D",
-      "economia_01": "CT",
       "economia_10": "D",
       "economia_09": "CT",
-      "economia_02": "DT",
-      "economia_08": "DT"
+      "economia_02": "DT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A Lei Revolucionária das Mulheres zapatista, pioneira em 1993, garante direitos reprodutivos, participação política e proteção contra violência às mulheres indígenas, situando o movimento numa posição progressista em gênero, ainda que dentro de comunidades tradicionais maias.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "N",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "N",
       "moral_02": "D",
-      "moral_05": "C",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "N",
       "moral_14": "N",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "C",
       "tecnologia_11": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "CT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

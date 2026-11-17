@@ -1,7 +1,7 @@
 # Auditoria pergunta-a-pergunta dos perfis (12axes)
 
 Este diretório contém o processo de auditoria/reauditoria dos perfis de **personalidades**,
-**ideologias** e **países** do projeto 12axes nos 12 eixos políticos (240 perguntas no total: 20
+**ideologias** e **países** do projeto 12axes nos 14 eixos políticos (275 perguntas no total: 17 a 20
 por eixo).
 
 Se você é uma IA retomando este trabalho numa sessão nova, **leia este arquivo inteiro antes de
@@ -12,7 +12,7 @@ para entender o processo, só os listados abaixo.
 
 Perfis antigos foram auditados com atalhos (respostas copiadas entre perfis parecidos, ou geradas
 por um modelo fraco) e ficaram com qualidade ruim. O processo atual reaudita cada perfil do zero,
-de forma isolada, respondendo as 240 perguntas uma a uma com um modelo de qualidade (não use modelos
+de forma isolada, respondendo as 275 perguntas uma a uma com um modelo de qualidade (não use modelos
 rápidos/baratos tipo Haiku — a qualidade cai visivelmente).
 
 ## Os quatro catálogos
@@ -38,7 +38,7 @@ pela prática real e pelas ideias e valores programáticos**, nunca pelo país c
 organização em eras diferentes é um perfil por era (`partido-republicano-eua` e
 `partido-republicano-eua-new-deal`). Ver `NEW_PROFILE.md`, seção "Catálogo `party`".
 
-As 240 perguntas (`questions-template.txt`) e a fórmula de cálculo do vetor são **as mesmas para os
+As 275 perguntas (`questions-template.txt`) e a fórmula de cálculo do vetor são **as mesmas para os
 quatro catálogos** — só mudam os metadados de entrada e o arquivo de saída.
 
 ## Arquivos desta pasta
@@ -49,21 +49,21 @@ quatro catálogos** — só mudam os metadados de entrada e o arquivo de saída.
 | `NEW_PROFILE.md` | Guia completo passo a passo para criação de novos perfis nos quatro catálogos. |
 | `IDEOLOGY_CATEGORY_REVIEW.md` | Metodologia e critérios para revisão de categoria e consistência teórica de ideologias. |
 | `STATE.json` | **Fonte única de verdade** do progresso, um bloco por catálogo (`personality`, `ideology`, `country`, `party`), cada um com `pending` e `done`. |
-| `questions-template.txt` | As 240 perguntas (12 eixos × 20), prontas para colar em qualquer prompt novo, de qualquer catálogo. Não editar sem necessidade. |
-| `profile_vector.py` | Cálculo único do vetor (240 perguntas + perguntas de arquétipo, igual ao `ScoringService.java`) e gerador do bloco de perguntas de arquétipo do prompt (`--prompt-block`). Usado pelo merge e pelo `validate.py`. |
+| `questions-template.txt` | As 275 perguntas (14 eixos, 17 a 20 por eixo), prontas para colar em qualquer prompt novo, de qualquer catálogo. Não editar sem necessidade. |
+| `profile_vector.py` | Cálculo único do vetor (275 perguntas + perguntas de arquétipo, igual ao `ScoringService.java`) e gerador do bloco de perguntas de arquétipo do prompt (`--prompt-block`). Usado pelo merge e pelo `validate.py`. |
 | `validate.py` | Validador rigoroso pré-merge (formato JSON, limites de neutros, integridade de campos, duplicatas e consistência de religiões). |
 | `compatibility.py` | Calculador de compatibilidade vetorial e proximidade entre perfis usando a mesma métrica do backend. |
 | `compass_check.py` | Análise de dispersão e alinhamento dimensional dos perfis. |
 | `category_coverage.py` | Verificação de cobertura e equilíbrio de categorias no catálogo. |
 | `prompts/<catalog>/<id>.txt` | Prompt já montado para um perfil específico, pronto para mandar a um subagente. Fora de processamento, deve conter só **um arquivo de exemplo** por catálogo (ver passo 7), para uma IA nova entender o formato sem contexto prévio. |
 | `subagent-out/<catalog>/<id>.json` | Saída de um subagente já rodado, aguardando merge/validação. **Temporário**: depois do merge bem-sucedido, o arquivo é apagado daqui (mas uma cópia permanece em `answers/`, ver abaixo) — exceto um exemplo mantido de propósito, ver passo 7. |
-| `answers/<catalog>/<id>.json` | **Arquivo permanente** com as 240 respostas (12 eixos × 20, com `personaBrief` de cada eixo) de todo perfil já mesclado. Nunca é apagado — é o arquivo que o usuário usa para auditar/conferir respostas pergunta a pergunta a qualquer momento, mesmo muito depois do merge. |
+| `answers/<catalog>/<id>.json` | **Arquivo permanente** com as 275 respostas (14 eixos, 17 a 20 por eixo, com `personaBrief` de cada eixo) de todo perfil já mesclado. Nunca é apagado — é o arquivo que o usuário usa para auditar/conferir respostas pergunta a pergunta a qualquer momento, mesmo muito depois do merge. |
 | `reports/` | **Relatórios e análises**: subpasta para dumps de auditoria, comparações históricas (ex.: `BUSSOLA_VS_CATEGORIA.md`, `ideology-compatibility-audit.json`), cobertura e revisões individuais em `reports/category-reviews/`. |
 
 Arquivo vivo do resto do repo que todos os catálogos compartilham:
-- `backend/src/main/resources/data/questions-pool.json` — as 240 perguntas com `id`, `axisId`, `text`, `agreePole` (LEFT/RIGHT), `weight`. É a fonte da fórmula de cálculo do vetor (seção abaixo).
+- `backend/src/main/resources/data/questions-pool.json` — as 275 perguntas com `id`, `axisId`, `text`, `agreePole` (LEFT/RIGHT), `weight`. É a fonte da fórmula de cálculo do vetor (seção abaixo).
 
-## Resumo rápido dos 12 eixos
+## Resumo rápido dos 14 eixos
 
 Use este bloco como trava anti-confusão antes de auditar qualquer perfil. A referência completa está em
 `backend/src/main/resources/data/axes-explained.md`; abaixo fica só o resumo operacional de 1 linha por eixo.
@@ -80,6 +80,21 @@ Use este bloco como trava anti-confusão antes de auditar qualquer perfil. A ref
 - `religiao` — Irreligioso × Religioso: mede secularismo/laicidade e crítica ao poder religioso vs. religião forte na vida privada e/ou no Estado.
 - `moral` — Progressista × Tradicionalista: mede progressismo cultural/direitos civis vs. tradição, costumes, família e conservadorismo moral.
 - `tecnologia` — Tecnologia × Biologia: mede entusiasmo por tecnologia, IA, industrialização e transhumanismo vs. cautela biológica, preservacionista, rural ou naturalista.
+- `metodo` — Gradualismo × Ruptura: mede o MEIO da mudança política (reforma pelas instituições, voto, acordo e protesto pacífico vs. ruptura, ação direta, desobediência, vanguarda e violência revolucionária). **Não mede a direção.** Um reacionário que quer desfazer tudo de uma vez está na ruptura; um socialista reformista está no gradualismo.
+- `distribuicao` — Igualitário × Meritocrático: mede quanta desigualdade é aceitável (impostos progressivos, taxação de fortunas e heranças, cotas e igualdade de resultados vs. mérito, imposto único e desigualdade vista como justa). **Não mede quem é dono das empresas** (isso é `economia`).
+
+### Eixos novos (`metodo` e `distribuicao`) em perfis antigos
+
+Estes dois eixos foram criados depois da auditoria dos catálogos. Cinco perguntas vieram de outros eixos
+(`economia_01` e `moral_04` para `metodo`; `economia_08`, `moral_05` e `moral_08` para `distribuicao`) e as
+respostas já dadas a elas foram movidas, nos arquivos de `answers/`, para blocos parciais `metodo`/`distribuicao`
+(só `answers`, sem `personaBrief`). Os vetores de `economia` e `moral` foram recalculados sem elas.
+
+Até o perfil ser reauditado, o vetor dele **não tem** `metodo` nem `distribuicao`: o backend
+(`ProfileMatchScorer.sharedAxes`) deixa esses eixos fora da compatibilidade com esse perfil, em vez de contá-los
+como 50. Uma reauditoria completa (este processo, com o `questions-template.txt` atual) responde os 14 eixos e
+o perfil passa a ter o vetor inteiro. `validate.py` aceita o bloco parcial em `answers/` (aviso), mas exige os
+14 eixos completos em `subagent-out/`.
 
 ## O processo, passo a passo
 
@@ -117,7 +132,7 @@ disponíveis (`role`+`lifespan` só existem em personality; use `category` para 
 em party inclua também o país associado e `historical`/`period`):
 
 ```
-Você está auditando, pergunta a pergunta e de forma totalmente independente, o perfil "{name}" (catálogo: {tipo de perfil}) nos 12 eixos políticos do projeto 12axes. Avalie ESTE perfil sozinho — você não tem (e não deve imaginar) as respostas dadas a nenhum outro perfil.
+Você está auditando, pergunta a pergunta e de forma totalmente independente, o perfil "{name}" (catálogo: {tipo de perfil}) nos 14 eixos políticos do projeto 12axes. Avalie ESTE perfil sozinho — você não tem (e não deve imaginar) as respostas dadas a nenhum outro perfil.
 
 Dados curados deste perfil (não invente informação além disto; se precisar de contexto histórico adicional, baseie-se apenas em fatos amplamente documentados e verificáveis sobre esta entidade específica):
 id: {id}
@@ -128,7 +143,7 @@ name: {name}
 description: {description}
 
 METODOLOGIA (obrigatória):
-- Para CADA um dos 12 eixos: primeiro escreva um persona brief de 1-2 frases conectando especificamente a description acima ao tema daquele eixo (não repita a description inteira - extraia so a parte relevante aquele eixo).
+- Para CADA um dos 14 eixos: primeiro escreva um persona brief de 1-2 frases conectando especificamente a description acima ao tema daquele eixo (não repita a description inteira - extraia so a parte relevante aquele eixo).
 - Depois responda as 20 perguntas do eixo, uma a uma, com um destes codigos: DT (discordo totalmente), D (discordo), N (neutro/indiferente), C (concordo), CT (concordo totalmente).
 - Simule genuinamente como o proprio perfil / seus porta-vozes reais responderiam CADA pergunta individualmente. NAO escolha um valor-alvo para o eixo e trabalhe de tras para frente. Aceite o que resultar, mesmo que surpreendente.
 - Cada pergunta e independente. As perguntas ja vem em ordem embaralhada. Responda pelo id da pergunta.
@@ -139,11 +154,11 @@ METODOLOGIA (obrigatória):
 SAIDA (obrigatoria): use a ferramenta Write para gravar UM arquivo JSON estrito (sem markdown, sem comentarios) exatamente neste caminho:
 <caminho absoluto para profile-audit/subagent-out/{catalog}/{id}.json>
 
-Formato exato do JSON (as chaves de "answers" devem ser os ids das perguntas; cada eixo com exatamente 20 respostas; todos os 12 eixos presentes; mais o bloco "archetype" com a letra escolhida em cada pergunta de arquétipo do fim deste prompt):
+Formato exato do JSON (as chaves de "answers" devem ser os ids das perguntas; cada eixo com todas as perguntas dele respondidas; todos os 14 eixos presentes; mais o bloco "archetype" com a letra escolhida em cada pergunta de arquétipo do fim deste prompt):
 {
   "estrutura": { "personaBrief": "...", "answers": { "estrutura_01": "C", "estrutura_07": "DT", ... } },
   "representacao": { "personaBrief": "...", "answers": { ... } },
-  ... (todos os 12 eixos: estrutura, representacao, poder, imigracao, diplomacia, intervencao, economia, controle, comercio, religiao, moral, tecnologia),
+  ... (todos os 14 eixos: estrutura, representacao, poder, imigracao, diplomacia, intervencao, economia, controle, comercio, religiao, moral, tecnologia, metodo, distribuicao),
   "archetype": { "sociedade": "A", "poder": "C", "economia": "B", "mundo": "C", "tecnologia": "D" }
 }
 
@@ -182,7 +197,7 @@ Ele checa três níveis e sai com erro se algum bloqueante falhar:
 
 | Nível | O que verifica |
 |---|---|
-| `[FORMA]` | 12 eixos, 20 respostas por eixo, ids corretos, códigos `DT/D/N/C/CT`, `personaBrief` preenchido, bloco `archetype` com uma alternativa válida por pergunta de arquétipo |
+| `[FORMA]` | 14 eixos, 20 respostas por eixo, ids corretos, códigos `DT/D/N/C/CT`, `personaBrief` preenchido, bloco `archetype` com uma alternativa válida por pergunta de arquétipo |
 | `[NEUTROS]` | taxa de `N` — bloqueia acima de 18% no total ou 30% em qualquer eixo |
 | `[CONTEÚDO]` | direção dos eixos contra perfis-âncora, proximidade excessiva de outro perfil (duplicata) e coerência com o perfil declarado |
 
@@ -192,7 +207,7 @@ Se algum arquivo faltar, estiver malformado ou for reprovado, relance só aquele
 
 ### 5. Calcular o vetor de cada perfil e mesclar (automático, sem esperar confirmação)
 
-O perfil é calculado **como um usuário do quiz**: as 240 perguntas mais as perguntas de arquétipo
+O perfil é calculado **como um usuário do quiz**: as 275 perguntas mais as perguntas de arquétipo
 (mesma conta do `ScoringService.java`). A implementação única fica em `profile-audit/profile_vector.py`
 — use-a, não reescreva a fórmula:
 1. Mapeie cada resposta para um score: `DT=0, D=0.25, N=0.5, C=0.75, CT=1`.
@@ -210,7 +225,7 @@ arquivo/chave conforme a tabela da seção "Os quatro catálogos"):
 ```python
 import json, sys
 sys.path.insert(0, 'profile-audit')
-from profile_vector import compute_vector, AXIS_ORDER  # 240 perguntas + arquétipo
+from profile_vector import compute_vector, AXIS_ORDER  # 275 perguntas + arquétipo
 
 CATALOG = "personality"  # ou "ideology" / "country" / "party"
 KEY_FIELD = {"personality": "personalityId", "ideology": "ideologyId", "country": "countryId", "party": "partyId"}[CATALOG]
@@ -249,7 +264,7 @@ Para cada ID do lote mesclado com sucesso, dentro do bloco `STATE.json.<catalog>
 
 Para cada perfil mesclado com sucesso, NESTA ORDEM:
 1. Copie (não mova) `subagent-out/<catalog>/<id>.json` para `answers/<catalog>/<id>.json`. Este
-   arquivo é **permanente** — é o que o usuário usa para auditar as 240 respostas de qualquer perfil
+   arquivo é **permanente** — é o que o usuário usa para auditar as 275 respostas de qualquer perfil
    a qualquer momento, mesmo muito tempo depois do merge. **Nunca apague nada dentro de `answers/`.**
 2. Apague `prompts/<catalog>/<id>.txt` e `subagent-out/<catalog>/<id>.json` de cada perfil do lote,
    **exceto o primeiro ID do lote**: mantenha o par `prompts/<catalog>/<id>.txt` +
@@ -273,7 +288,7 @@ lote**. Só dispare o próximo lote de 15 após confirmação explícita — nã
 
 ## Perguntas de arquétipo
 
-Além das 240 perguntas, o quiz do usuário tem **perguntas de arquétipo** de múltipla escolha
+Além das 275 perguntas, o quiz do usuário tem **perguntas de arquétipo** de múltipla escolha
 (`backend/src/main/resources/data/archetype-questions.json`: sociedade, poder, economia, mundo,
 tecnologia). Cada alternativa tem `effects` por eixo, na mesma escala do vetor (0–100, 100 = polo
 esquerdo de `axes.json`), e entra no resultado do usuário como uma resposta a mais em cada eixo que
@@ -287,7 +302,7 @@ faria**:
 - `validate.py` reprova a saída sem o bloco `archetype` ou com alternativa inválida (passo 4).
 - O vetor mesclado soma as 20 respostas de cada eixo e as alternativas de arquétipo que tocam o
   eixo, com a mesma conta do `ScoringService.java` (passo 5, via `profile_vector.py`).
-- O bloco `archetype` fica arquivado em `answers/` junto com as 240 respostas (passo 7).
+- O bloco `archetype` fica arquivado em `answers/` junto com as 275 respostas (passo 7).
 - No resumo final ao usuário, liste as escolhas de arquétipo de cada perfil (ex.: `Sociedade A ·
   Poder A · Economia D · Mundo A · Tecnologia D`).
 
@@ -330,6 +345,8 @@ em relação à implementação. Use esta tabela, que foi conferida contra perfi
 | `religiao` | religioso | irreligioso/secular | Khomeini 0 · Stálin 98 |
 | `moral` | tradicionalista | progressista | Franco 3 · Foucault 91 |
 | `tecnologia` | biologia/naturalista | tecnófilo | Kaczynski 5 · Kurzweil 86 |
+| `metodo` | ruptura/revolução | gradualismo/reforma | Lenin · Edmund Burke (ainda sem valor até a reauditoria) |
+| `distribuicao` | meritocrático | igualitário | Milton Friedman · Stálin (ainda sem valor até a reauditoria) |
 
 Antes de aceitar um valor extremo, pergunte: **quem mais está nessa faixa?** Se o perfil ficou ao lado
 de alguém incompatível, o vetor está errado — foi assim que se descobriu Nietzsche marcado como

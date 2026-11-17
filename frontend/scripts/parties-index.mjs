@@ -23,9 +23,9 @@ const STR = {
   pt: {
     skip: 'Pular para a lista',
     catalogNav: 'Catálogo',
-    homeAria: '12 axes, página inicial',
+    homeAria: '14 axes, página inicial',
     eyebrow: 'Catálogo',
-    lead: (n, cur, hist) => `${n} partidos, movimentos, casas dinásticas e organizações, ${cur} atuais e ${hist} históricos, com perfil completo nos 12 eixos e o país associado a cada um.`,
+    lead: (n, cur, hist) => `${n} partidos, movimentos, casas dinásticas e organizações, ${cur} atuais e ${hist} históricos, com perfil completo nos 14 eixos e o país associado a cada um.`,
     stats: ['perfis', 'atuais', 'históricos'],
     kindsAria: 'Tipos',
     searchLabel: 'Buscar partido ou organização',
@@ -64,9 +64,9 @@ const STR = {
   en: {
     skip: 'Skip to the list',
     catalogNav: 'Catalog',
-    homeAria: '12 axes, home page',
+    homeAria: '14 axes, home page',
     eyebrow: 'Catalog',
-    lead: (n, cur, hist) => `${n} parties, movements, dynastic houses and organizations, ${cur} current and ${hist} historical, with a full profile across the 12 axes and the country each one is tied to.`,
+    lead: (n, cur, hist) => `${n} parties, movements, dynastic houses and organizations, ${cur} current and ${hist} historical, with a full profile across the 14 axes and the country each one is tied to.`,
     stats: ['profiles', 'current', 'historical'],
     kindsAria: 'Types',
     searchLabel: 'Search party or organization',

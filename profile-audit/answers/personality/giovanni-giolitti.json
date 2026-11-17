@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Estadista do início do século XX e administrador leal à ordem burguesa liberal, Giolitti era favorável a reformas sociais graduais e direitos cívicos básicos, mas mantinha valores morais convencionais e tradicionais da sociedade italiana da época.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "CT",
       "moral_15": "DT",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "DT",
       "moral_02": "CT",
-      "moral_05": "D",
       "moral_17": "DT",
       "moral_13": "N",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "CT",
-      "moral_08": "C",
       "moral_20": "CT"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "C",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
+    }
   }
 }

@@ -5,17 +5,18 @@
 
 export const AXIS_IDS = [
   'estrutura', 'representacao', 'poder', 'imigracao', 'diplomacia', 'intervencao',
-  'economia', 'controle', 'comercio', 'religiao', 'moral', 'tecnologia'
+  'economia', 'controle', 'comercio', 'religiao', 'moral', 'tecnologia',
+  'metodo', 'distribuicao'
 ];
 
 export const DIMENSIONS = [
   {
     key: 'political',
     axes: ['estrutura', 'representacao', 'poder', 'diplomacia', 'imigracao', 'intervencao',
-      'tecnologia', 'controle', 'comercio', 'religiao', 'economia', 'moral']
+      'tecnologia', 'controle', 'comercio', 'religiao', 'economia', 'moral', 'metodo', 'distribuicao']
   },
-  { key: 'social', axes: ['representacao', 'moral', 'religiao', 'economia', 'controle', 'comercio', 'imigracao', 'poder', 'tecnologia'] },
-  { key: 'economic', axes: ['economia', 'controle', 'comercio'] }
+  { key: 'social', axes: ['representacao', 'moral', 'religiao', 'economia', 'controle', 'comercio', 'imigracao', 'poder', 'tecnologia', 'metodo', 'distribuicao'] },
+  { key: 'economic', axes: ['economia', 'controle', 'comercio', 'distribuicao'] }
 ];
 
 const CENTER = 50;
@@ -30,11 +31,18 @@ const OUTLIER_FULL_SPREAD = 100;
 const OUTLIER_EXPONENT = 2.5;
 const DIRECTION_AUGMENT_RADIUS = 8;
 
-const get = (v, id) => v?.[id] ?? CENTER;
 const round1 = (x) => Math.round(x * 10) / 10;
 
-export function compatibility(user, target, axisIds = AXIS_IDS) {
-  const n = axisIds.length;
+// Espelho de ProfileMatchScorer.sharedAxes: eixo sem valor em um dos vetores (perfil ainda não reauditado
+// nos eixos novos) fica fora da conta, em vez de contar como 50. Sem eixo em comum, conta todos (ausente = 50).
+export function sharedAxes(user, target, axisIds = AXIS_IDS) {
+  const shared = axisIds.filter((id) => user?.[id] !== undefined && target?.[id] !== undefined);
+  return shared.length ? shared : axisIds;
+}
+
+export function compatibility(user, target, axisIds = AXIS_IDS, all = false) {
+  // Um laço só, sem alocar: as páginas estáticas chamam isto milhões de vezes.
+  let n = 0;
   let axisSum = 0;
   let dot = 0;
   let uu = 0;
@@ -42,9 +50,16 @@ export function compatibility(user, target, axisIds = AXIS_IDS) {
   let uMag = 0;
   let tMag = 0;
   let maxDiff = 0;
-  for (const id of axisIds) {
-    const u = get(user, id);
-    const t = get(target, id);
+  for (let i = 0; i < axisIds.length; i += 1) {
+    const id = axisIds[i];
+    let u = user?.[id];
+    let t = target?.[id];
+    if (u === undefined || t === undefined) {
+      if (!all) continue;
+      u ??= CENTER;
+      t ??= CENTER;
+    }
+    n += 1;
     const diff = Math.abs(u - t);
     let sim = Math.max(0, 1 - (diff / AXIS_SPREAD) ** 2);
     if ((u - CENTER) * (t - CENTER) < 0) {
@@ -60,8 +75,10 @@ export function compatibility(user, target, axisIds = AXIS_IDS) {
     tt += ct * ct;
     uMag += Math.abs(cu);
     tMag += Math.abs(ct);
-    maxDiff = Math.max(maxDiff, diff);
+    if (diff > maxDiff) maxDiff = diff;
   }
+  // Nenhum eixo em comum: conta todos, com ausente = 50 (mesma regra do backend).
+  if (n === 0) return all ? 0 : compatibility(user, target, axisIds, true);
   const augment = n * DIRECTION_AUGMENT_RADIUS * DIRECTION_AUGMENT_RADIUS;
   const cosine = (dot + augment) / Math.sqrt((uu + augment) * (tt + augment));
   const axisSimilarity = (100 * axisSum) / n;

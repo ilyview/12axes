@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Economia de livre iniciativa e baixos impostos, com automóveis e aço, sindicatos fracos e pouca assistência social estadual.",
   "answers": {
-   "economia_01": "D",
    "economia_02": "C",
    "economia_03": "DT",
    "economia_04": "C",
    "economia_05": "DT",
    "economia_06": "C",
    "economia_07": "D",
-   "economia_08": "C",
    "economia_09": "DT",
    "economia_10": "C",
    "economia_11": "DT",
@@ -255,11 +253,8 @@
    "moral_01": "D",
    "moral_02": "CT",
    "moral_03": "D",
-   "moral_04": "CT",
-   "moral_05": "D",
    "moral_06": "CT",
    "moral_07": "DT",
-   "moral_08": "C",
    "moral_09": "D",
    "moral_10": "C",
    "moral_11": "D",
@@ -305,5 +300,18 @@
   "economia": "F",
   "mundo": "B",
   "tecnologia": "D"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "D",
+   "moral_04": "CT"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "C",
+   "moral_05": "D",
+   "moral_08": "C"
+  }
  }
 }

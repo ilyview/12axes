@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "CT",
       "economia_20": "D",
-      "economia_01": "C",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "O socialismo titoista foi secular e favoravel a emancipacao feminina e a alguma modernizacao dos costumes, mas nao corresponde ao progressismo social maximalista contemporaneo. Ele mistura igualitarismo civico com disciplina social, produtivismo e varios reflexos morais tradicionais da epoca.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "C",
       "moral_15": "D",
       "moral_12": "D",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "C",
       "moral_02": "C",
-      "moral_05": "N",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "N",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "N",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

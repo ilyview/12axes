@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "A soberania de um bloco eurasiano requer controle público de setores estratégicos e instrumentos nacionais de desenvolvimento. A corrente não exige abolir toda propriedade privada nem transformar todas as empresas em coletivos de trabalhadores.",
     "answers": {
-      "economia_01": "D",
       "economia_02": "DT",
       "economia_03": "CT",
       "economia_04": "DT",
       "economia_05": "D",
       "economia_06": "DT",
       "economia_07": "C",
-      "economia_08": "C",
       "economia_09": "C",
       "economia_10": "DT",
       "economia_11": "D",
@@ -255,11 +253,8 @@
       "moral_01": "D",
       "moral_02": "CT",
       "moral_03": "D",
-      "moral_04": "CT",
-      "moral_05": "N",
       "moral_06": "C",
       "moral_07": "D",
-      "moral_08": "N",
       "moral_09": "D",
       "moral_10": "C",
       "moral_11": "D",
@@ -297,6 +292,19 @@
       "tecnologia_18": "C",
       "tecnologia_19": "D",
       "tecnologia_20": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

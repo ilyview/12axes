@@ -98,7 +98,9 @@ const pt: PremiumText = {
     comercio: 'No comércio,',
     religiao: 'Na religião,',
     moral: 'Na moral,',
-    tecnologia: 'Na tecnologia,'
+    tecnologia: 'Na tecnologia,',
+    metodo: 'No método,',
+    distribuicao: 'Na distribuição,'
   },
   roleSubject: null,
   governmentWhy: (area, pct) => `Ocupa o cargo por ser a figura mais próxima de você na categoria ${area}: ${pct}% de compatibilidade.`,
@@ -182,7 +184,9 @@ const en: PremiumText = {
     comercio: 'On trade,',
     religiao: 'On religion,',
     moral: 'On morals,',
-    tecnologia: 'On technology,'
+    tecnologia: 'On technology,',
+    metodo: 'On method,',
+    distribuicao: 'On distribution,'
   },
   roleSubject: 'they',
   governmentWhy: (area, pct) => `Holds the seat as the figure closest to you in the ${area} category: ${pct}% compatibility.`,
@@ -266,7 +270,9 @@ const es: PremiumText = {
     comercio: 'En el comercio,',
     religiao: 'En la religión,',
     moral: 'En la moral,',
-    tecnologia: 'En la tecnología,'
+    tecnologia: 'En la tecnología,',
+    metodo: 'En el método,',
+    distribuicao: 'En la distribución,'
   },
   roleSubject: null,
   governmentWhy: (area, pct) => `Ocupa el cargo por ser la figura más cercana a ti en la categoría ${area}: ${pct}% de compatibilidad.`,
@@ -351,7 +357,9 @@ const de: PremiumText = {
     comercio: 'Im Handel:',
     religiao: 'In der Religion:',
     moral: 'In der Moral:',
-    tecnologia: 'In der Technologie:'
+    tecnologia: 'In der Technologie:',
+    metodo: 'Bei der Methode:',
+    distribuicao: 'Bei der Verteilung:'
   },
   roleSubject: 'diese Person',
   governmentWhy: (area, pct) => `Hat das Amt inne, weil diese Persönlichkeit in der Kategorie ${area} am besten zu dir passt: ${pct} % Übereinstimmung.`,
@@ -435,7 +443,9 @@ const it: PremiumText = {
     comercio: 'Sul commercio,',
     religiao: 'Sulla religione,',
     moral: 'Sulla morale,',
-    tecnologia: 'Sulla tecnologia,'
+    tecnologia: 'Sulla tecnologia,',
+    metodo: 'Sul metodo,',
+    distribuicao: 'Sulla distribuzione,'
   },
   roleSubject: 'questa persona',
   governmentWhy: (area, pct) => `Ricopre l'incarico come la figura più vicina a te nella categoria ${area}: ${pct}% di compatibilità.`,

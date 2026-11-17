@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "DT",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "CT",
-      "economia_08": "C"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Apesar da moda ocidental e do álcool licenciado tolerados no cotidiano urbano de Dubai, os EAU mantêm leis islâmicas conservadoras sobre família, sexualidade e gênero, criminalizando homossexualidade e restringindo fortemente aborto e conteúdo considerado indecente.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "DT",
       "moral_02": "CT",
-      "moral_05": "N",
       "moral_17": "DT",
       "moral_13": "DT",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "D",
       "tecnologia_11": "CT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

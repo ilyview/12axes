@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "CT",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "C",
-      "economia_08": "D"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Seu projeto penal vinculava a moral sexual à família e à procriação, defendia responsabilidade igual dos sexos e atribuía a prostituição à miséria. As respostas contemporâneas são extrapolações dessa moral, temperadas pela defesa de direitos civis e pela crítica à hipocrisia dos censores.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "D",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "C",
       "moral_02": "C",
-      "moral_05": "D",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "D"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "D",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "CT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "D",
+      "moral_08": "C"
+    }
   }
 }

@@ -1,6 +1,6 @@
 ---
 name: new-personality
-description: Cria um perfil totalmente novo no catálogo personality do projeto 12axes (metadados PT/EN, retrato, auditoria de 240 perguntas, testes), seguindo NEW_PROFILE.md.
+description: Cria um perfil totalmente novo no catálogo personality do projeto 12axes (metadados PT/EN, retrato, auditoria de 275 perguntas, testes), seguindo NEW_PROFILE.md.
 ---
 
 # /new_personality <nome>
@@ -34,7 +34,7 @@ Siga `NEW_PROFILE.md` passo a passo, na íntegra:
 3. **Passo 2** — traduzir e adicionar ao final de `i18n/en/personalities.json` (o `role` em EN segue a mesma regra de tamanho e conteúdo; regras de tradução/generalização de referências específicas do Brasil na seção correspondente do NEW_PROFILE.md).
 4. **Passo 3** — baixar retrato real para `frontend/public/personalities/portraits/{id}.jpg` e preencher `imagePath`/`imageSourceName`/`imageSourceUrl`/`imageNote`. Se não for possível baixar, diga isso explicitamente ao usuário — nunca finja. **Logo em seguida, comprima**: `cd frontend && npm run optimize:images -- public/personalities/portraits/{id}.jpg` (imagens da Wikimedia costumam vir gigantes — já tivemos um retrato de 52MB — e isso estoura os limites de banda da Vercel). Nunca pule esse passo nem deixe para depois.
 5. **Passo 4** — conferir consistência dos JSONs (válidos, sem campo obrigatório vazio, `id` idêntico PT/EN, `category` presente no PT e entre os 8 valores, `religions` presente no PT só com valores válidos). `category` e `religions` **não** vão no arquivo EN.
-6. **Passo 5** — auditoria de 240 perguntas para este único perfil, reusando os passos 2-5 de `profile-audit/README.md` (um subagente só, modelo de qualidade). **Valide com `python profile-audit/validate.py personality {id}` antes de mesclar** — forma, neutros e conteúdo; leia os avisos, não só o código de saída. Com o vetor calculado, **reconfira `religions`**: se `religiao` ≤ 35 e a lista estiver vazia, pesquise e preencha antes de mesclar. Depois calcular vetor, mesclar em `personality-profiles.json`, arquivar em `answers/personality/{id}.json`, atualizar `STATE.json.personality.done` (+1 em `totalProfiles`).
+6. **Passo 5** — auditoria de 275 perguntas para este único perfil, reusando os passos 2-5 de `profile-audit/README.md` (um subagente só, modelo de qualidade). **Valide com `python profile-audit/validate.py personality {id}` antes de mesclar** — forma, neutros e conteúdo; leia os avisos, não só o código de saída. Com o vetor calculado, **reconfira `religions`**: se `religiao` ≤ 35 e a lista estiver vazia, pesquise e preencha antes de mesclar. Depois calcular vetor, mesclar em `personality-profiles.json`, arquivar em `answers/personality/{id}.json`, atualizar `STATE.json.personality.done` (+1 em `totalProfiles`).
 7. **Passo 5b — livro** — conferir se a personalidade escreveu um livro relevante e adicioná-lo a `backend/src/main/resources/data/books.json` (um livro por personalidade; se o `personalityId` já existir lá, não duplique):
    - Só entra obra **escrita pela própria personalidade** e sobre política, economia, filosofia política ou tema diretamente relacionado (religião/sociedade só quando a obra tem peso político, ex.: *Rerum Novarum*, *A Cidade de Deus*). Ficção sem peso político, autoajuda, ciência pura e memórias sem conteúdo político não entram. Sem obra assim, **não adicione nada** e diga isso no resumo; nunca invente um livro.
    - Com mais de uma obra, escolha a mais popular/relevante/importante para o pensamento político da pessoa.
@@ -51,4 +51,4 @@ Siga `NEW_PROFILE.md` passo a passo, na íntegra:
 
 ## Regras que não podem ser quebradas
 
-Nunca invente um vetor sem rodar a auditoria real de 240 perguntas. Nunca use modelo fraco. Nunca afirme imagem baixada ou testes passando sem ter feito de fato. Nunca apague `answers/`. Nunca deixe uma imagem baixada da internet sem rodar `npm run optimize:images` antes de seguir em frente.
+Nunca invente um vetor sem rodar a auditoria real de 275 perguntas. Nunca use modelo fraco. Nunca afirme imagem baixada ou testes passando sem ter feito de fato. Nunca apague `answers/`. Nunca deixe uma imagem baixada da internet sem rodar `npm run optimize:images` antes de seguir em frente.

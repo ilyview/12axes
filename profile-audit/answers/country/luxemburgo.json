@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Sociedade europeia liberal e progressista, Luxemburgo foi um dos primeiros países a legalizar casamento igualitário e eutanásia, refletindo valores sociais avançados e pluralistas.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "N",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "N",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "C",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "N"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

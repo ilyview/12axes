@@ -24,7 +24,7 @@ class CountryDimensionMatcherServiceTest {
 
     private List<AxisResult> profileUnderTest() {
         List<Double> leftPercents = List.of(96.3, 18.8, 43.8, 75.0, 57.5, 52.5,
-                15.0, 12.5, 20.0, 63.7, 8.8, 76.3);
+                15.0, 12.5, 20.0, 63.7, 8.8, 76.3, 62.5, 30.0);
         var axes = dataService.getAxes();
         return java.util.stream.IntStream.range(0, axes.size())
                 .mapToObj(index -> {

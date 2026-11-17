@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "CT",
       "economia_20": "DT",
-      "economia_01": "CT",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "DT",
-      "economia_08": "DT"
+      "economia_02": "DT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A FRELIMO promovia ativamente emancipação feminina e mobilização de mulheres combatentes, combatendo poligamia, prostituição e autoridade patriarcal tradicional como práticas 'atrasadas', numa moral revolucionária puritana mas anti-tradicionalista.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "DT",
-      "moral_05": "C",
       "moral_17": "D",
       "moral_13": "DT",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "N",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "D",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "CT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

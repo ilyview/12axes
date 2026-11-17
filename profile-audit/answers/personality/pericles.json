@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "D",
-      "economia_01": "D",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "C"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Péricles geriu uma Atenas de papéis de gênero rígidos e moral cívica tradicional, mas também presidiu a efervescência intelectual e artística do seu século, mantendo como companheira Aspásia, mulher culta que rompia as convenções da época.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "D",
       "moral_15": "D",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "C",
       "moral_02": "C",
-      "moral_05": "D",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "D",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "D",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

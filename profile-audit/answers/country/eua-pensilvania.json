@@ -58,8 +58,7 @@
     "answers": {
       "economia_05": "D", "economia_06": "D", "economia_07": "C", "economia_13": "C", "economia_03": "C",
       "economia_14": "C", "economia_19": "C", "economia_16": "D", "economia_17": "C", "economia_12": "N",
-      "economia_04": "N", "economia_11": "C", "economia_18": "C", "economia_15": "D", "economia_20": "D",
-      "economia_01": "DT", "economia_10": "DT", "economia_09": "N", "economia_02": "N", "economia_08": "C"
+      "economia_04": "N", "economia_11": "C", "economia_18": "C", "economia_15": "D", "economia_20": "D", "economia_10": "DT", "economia_09": "N", "economia_02": "N"
     }
   },
   "controle": {
@@ -92,10 +91,9 @@
   "moral": {
     "personaBrief": "Estado dividido entre cidades liberais e interior tradicional: aceita o casamento gay e o aborto legal até 24 semanas, mas mantém valores familiares, cultura de caça e ceticismo diante de pautas identitárias mais recentes.",
     "answers": {
-      "moral_07": "C", "moral_04": "C", "moral_15": "D", "moral_12": "C", "moral_03": "N",
-      "moral_01": "C", "moral_09": "C", "moral_06": "D", "moral_19": "D", "moral_02": "C",
-      "moral_05": "D", "moral_17": "D", "moral_13": "D", "moral_11": "N", "moral_10": "N",
-      "moral_18": "D", "moral_16": "N", "moral_14": "C", "moral_08": "C", "moral_20": "C"
+      "moral_07": "C", "moral_15": "D", "moral_12": "C", "moral_03": "N",
+      "moral_01": "C", "moral_09": "C", "moral_06": "D", "moral_19": "D", "moral_02": "C", "moral_17": "D", "moral_13": "D", "moral_11": "N", "moral_10": "N",
+      "moral_18": "D", "moral_16": "N", "moral_14": "C", "moral_20": "C"
     }
   },
   "tecnologia": {
@@ -107,5 +105,7 @@
       "tecnologia_09": "C", "tecnologia_17": "D", "tecnologia_02": "D", "tecnologia_14": "C", "tecnologia_11": "C"
     }
   },
-  "archetype": { "sociedade": "B", "poder": "C", "economia": "C", "mundo": "B", "tecnologia": "D" }
+  "archetype": { "sociedade": "B", "poder": "C", "economia": "C", "mundo": "B", "tecnologia": "D" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "D", "moral_08": "C"}}
 }

@@ -32,8 +32,7 @@
   "economia": { "personaBrief": "Economia de mercado de serviços e finanças, com estatais estratégicas (eletricidade, telecom, portos) mantidas públicas, sistema nacional de saúde GESY, sindicatos fortes e peso do AKEL, sem imposto sobre herança.", "answers": {
     "economia_05": "D", "economia_06": "D", "economia_07": "C", "economia_13": "C", "economia_03": "C",
     "economia_14": "C", "economia_19": "C", "economia_16": "D", "economia_17": "C", "economia_12": "D",
-    "economia_04": "D", "economia_11": "C", "economia_18": "C", "economia_15": "D", "economia_20": "D",
-    "economia_01": "DT", "economia_10": "DT", "economia_09": "C", "economia_02": "N", "economia_08": "C" } },
+    "economia_04": "D", "economia_11": "C", "economia_18": "C", "economia_15": "D", "economia_20": "D", "economia_10": "DT", "economia_09": "C", "economia_02": "N" } },
   "controle": { "personaBrief": "Imposto corporativo baixo e centro financeiro aberto dentro do euro e do BCE, mas com salário mínimo legal desde 2023, memória do controle de capitais de 2013 e gasto anticíclico pressionado pela esquerda.", "answers": {
     "controle_05": "C", "controle_20": "C", "controle_19": "C", "controle_14": "N", "controle_07": "C",
     "controle_04": "D", "controle_02": "D", "controle_17": "D", "controle_16": "C", "controle_10": "C",
@@ -50,14 +49,15 @@
     "religiao_01": "D", "religiao_14": "C", "religiao_06": "C", "religiao_16": "C", "religiao_08": "C",
     "religiao_07": "D", "religiao_09": "D", "religiao_17": "D", "religiao_20": "CT", "religiao_04": "C" } },
   "moral": { "personaBrief": "Sociedade tradicional e familista sob influência ortodoxa que só descriminalizou a homossexualidade em 1998 e criou uniões civis em 2015, sem casamento igualitário, com aborto legalizado em 2018 sob oposição da Igreja.", "answers": {
-    "moral_07": "N", "moral_04": "C", "moral_15": "D", "moral_12": "C", "moral_03": "N",
-    "moral_01": "D", "moral_09": "N", "moral_06": "C", "moral_19": "C", "moral_02": "C",
-    "moral_05": "D", "moral_17": "D", "moral_13": "D", "moral_11": "D", "moral_10": "C",
-    "moral_18": "C", "moral_16": "C", "moral_14": "C", "moral_08": "C", "moral_20": "C" } },
+    "moral_07": "N", "moral_15": "D", "moral_12": "C", "moral_03": "N",
+    "moral_01": "D", "moral_09": "N", "moral_06": "C", "moral_19": "C", "moral_02": "C", "moral_17": "D", "moral_13": "D", "moral_11": "D", "moral_10": "C",
+    "moral_18": "C", "moral_16": "C", "moral_14": "C", "moral_20": "C" } },
   "tecnologia": { "personaBrief": "Economia urbana de serviços que aposta em soluções técnicas (dessalinização, gás natural do campo Afrodite, polo tecnológico), sem extremos biotecnológicos e com ceticismo europeu sobre transgênicos.", "answers": {
     "tecnologia_01": "C", "tecnologia_13": "C", "tecnologia_19": "C", "tecnologia_12": "N", "tecnologia_18": "D",
     "tecnologia_10": "C", "tecnologia_05": "D", "tecnologia_04": "C", "tecnologia_16": "N", "tecnologia_07": "D",
     "tecnologia_08": "C", "tecnologia_03": "N", "tecnologia_15": "D", "tecnologia_20": "C", "tecnologia_06": "C",
     "tecnologia_09": "C", "tecnologia_17": "D", "tecnologia_02": "D", "tecnologia_14": "C", "tecnologia_11": "N" } },
-  "archetype": { "sociedade": "B", "poder": "C", "economia": "C", "mundo": "B", "tecnologia": "C" }
+  "archetype": { "sociedade": "B", "poder": "C", "economia": "C", "mundo": "B", "tecnologia": "C" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "D", "moral_08": "C"}}
 }

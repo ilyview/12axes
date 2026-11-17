@@ -8,11 +8,11 @@
       "imigracao": 38.8,
       "diplomacia": 35,
       "intervencao": 57.5,
-      "economia": 55,
+      "economia": 58.3,
       "controle": 55,
       "comercio": 55,
       "religiao": 46.2,
-      "moral": 53.8,
+      "moral": 54.5,
       "tecnologia": 47.5
     }
   },
@@ -25,11 +25,11 @@
       "imigracao": 37.5,
       "diplomacia": 78.8,
       "intervencao": 22.5,
-      "economia": 30.0,
+      "economia": 31.9,
       "controle": 35.0,
       "comercio": 52.5,
       "religiao": 42.5,
-      "moral": 43.8,
+      "moral": 44.2,
       "tecnologia": 67.5
     }
   },
@@ -42,11 +42,11 @@
       "imigracao": 36.2,
       "diplomacia": 28.7,
       "intervencao": 60,
-      "economia": 61.3,
+      "economia": 63.9,
       "controle": 53.8,
       "comercio": 47.5,
       "religiao": 42.5,
-      "moral": 52.5,
+      "moral": 51.5,
       "tecnologia": 48.8
     }
   },
@@ -59,11 +59,11 @@
       "imigracao": 45,
       "diplomacia": 31.2,
       "intervencao": 60,
-      "economia": 60,
+      "economia": 62.5,
       "controle": 50,
       "comercio": 32.5,
       "religiao": 62.5,
-      "moral": 70,
+      "moral": 72.1,
       "tecnologia": 55
     }
   },
@@ -76,11 +76,11 @@
       "imigracao": 32.5,
       "diplomacia": 23.8,
       "intervencao": 70,
-      "economia": 60,
+      "economia": 61.8,
       "controle": 77.5,
       "comercio": 70,
       "religiao": 47.5,
-      "moral": 41.2,
+      "moral": 38.2,
       "tecnologia": 32.5
     }
   },
@@ -93,11 +93,11 @@
       "imigracao": 42.5,
       "diplomacia": 67.5,
       "intervencao": 55,
-      "economia": 91.2,
+      "economia": 91.6,
       "controle": 90,
       "comercio": 73.8,
       "religiao": 48.8,
-      "moral": 52.5,
+      "moral": 51.5,
       "tecnologia": 50
     }
   },
@@ -110,11 +110,11 @@
       "imigracao": 50,
       "diplomacia": 62,
       "intervencao": 35,
-      "economia": 92,
+      "economia": 92.1,
       "controle": 93,
       "comercio": 82,
       "religiao": 73.8,
-      "moral": 48,
+      "moral": 49.2,
       "tecnologia": 47.5
     }
   },
@@ -127,11 +127,11 @@
       "imigracao": 38.8,
       "diplomacia": 10,
       "intervencao": 67.5,
-      "economia": 56.2,
+      "economia": 59.7,
       "controle": 50,
       "comercio": 31.2,
       "religiao": 33,
-      "moral": 57.5,
+      "moral": 58.8,
       "tecnologia": 38.8
     }
   },
@@ -144,11 +144,11 @@
       "imigracao": 60.0,
       "diplomacia": 35.0,
       "intervencao": 72.5,
-      "economia": 38.8,
+      "economia": 41.7,
       "controle": 28.7,
       "comercio": 27.5,
       "religiao": 58.8,
-      "moral": 56.2,
+      "moral": 60.2,
       "tecnologia": 47.5
     }
   },
@@ -161,11 +161,11 @@
       "imigracao": 32.5,
       "diplomacia": 35.0,
       "intervencao": 65.0,
-      "economia": 51.2,
+      "economia": 52.7,
       "controle": 47.5,
       "comercio": 22.5,
       "religiao": 82.5,
-      "moral": 76.2,
+      "moral": 77.9,
       "tecnologia": 53.8
     }
   },
@@ -178,11 +178,11 @@
       "imigracao": 46.2,
       "diplomacia": 37.5,
       "intervencao": 53.8,
-      "economia": 55,
+      "economia": 58.3,
       "controle": 43.8,
       "comercio": 40,
       "religiao": 58.8,
-      "moral": 66.2,
+      "moral": 69.1,
       "tecnologia": 62
     }
   },
@@ -195,11 +195,11 @@
       "imigracao": 57.5,
       "diplomacia": 55,
       "intervencao": 33.8,
-      "economia": 60,
+      "economia": 63.9,
       "controle": 60,
       "comercio": 57.5,
       "religiao": 75,
-      "moral": 65,
+      "moral": 70.6,
       "tecnologia": 58
     }
   },
@@ -212,11 +212,11 @@
       "imigracao": 35,
       "diplomacia": 35,
       "intervencao": 48.8,
-      "economia": 55,
+      "economia": 58.3,
       "controle": 53.8,
       "comercio": 43.8,
       "religiao": 67.5,
-      "moral": 68.8,
+      "moral": 72.1,
       "tecnologia": 48.8
     }
   },
@@ -229,11 +229,11 @@
       "imigracao": 53.8,
       "diplomacia": 65.0,
       "intervencao": 15.0,
-      "economia": 46.2,
+      "economia": 50.0,
       "controle": 42.5,
       "comercio": 40.0,
       "religiao": 55.0,
-      "moral": 56.2,
+      "moral": 58.8,
       "tecnologia": 65.0
     }
   },
@@ -246,11 +246,11 @@
       "imigracao": 82.5,
       "diplomacia": 52.5,
       "intervencao": 58.8,
-      "economia": 45,
+      "economia": 48.6,
       "controle": 61.3,
       "comercio": 60,
       "religiao": 21.2,
-      "moral": 30,
+      "moral": 28.7,
       "tecnologia": 56.2
     }
   },
@@ -263,11 +263,11 @@
       "imigracao": 83.8,
       "diplomacia": 86.2,
       "intervencao": 15,
-      "economia": 58.8,
+      "economia": 63.9,
       "controle": 75,
       "comercio": 85,
       "religiao": 17.5,
-      "moral": 13.8,
+      "moral": 11.8,
       "tecnologia": 63.7
     }
   },
@@ -280,11 +280,11 @@
       "imigracao": 75.5,
       "diplomacia": 41.0,
       "intervencao": 43.6,
-      "economia": 41.3,
+      "economia": 44.3,
       "controle": 52.1,
       "comercio": 43.7,
       "religiao": 62.7,
-      "moral": 42.0,
+      "moral": 46.2,
       "tecnologia": 66.5
     }
   },
@@ -297,11 +297,11 @@
       "imigracao": 65,
       "diplomacia": 57.5,
       "intervencao": 41.2,
-      "economia": 38.8,
+      "economia": 40.3,
       "controle": 58.8,
       "comercio": 42.5,
       "religiao": 58.8,
-      "moral": 36.2,
+      "moral": 36.7,
       "tecnologia": 70
     }
   },
@@ -314,11 +314,11 @@
       "imigracao": 81.2,
       "diplomacia": 82.5,
       "intervencao": 25,
-      "economia": 28,
+      "economia": 31.8,
       "controle": 80,
       "comercio": 45,
       "religiao": 52.5,
-      "moral": 12.5,
+      "moral": 8.8,
       "tecnologia": 65
     }
   },
@@ -331,11 +331,11 @@
       "imigracao": 77.5,
       "diplomacia": 72,
       "intervencao": 32,
-      "economia": 62,
+      "economia": 63.9,
       "controle": 78.8,
       "comercio": 62,
       "religiao": 83.8,
-      "moral": 30,
+      "moral": 27.9,
       "tecnologia": 73.8
     }
   },
@@ -348,11 +348,11 @@
       "imigracao": 97.5,
       "diplomacia": 93,
       "intervencao": 37.5,
-      "economia": 95,
+      "economia": 94.4,
       "controle": 93.8,
       "comercio": 95,
       "religiao": 83.8,
-      "moral": 22.5,
+      "moral": 19.1,
       "tecnologia": 57.5
     }
   },
@@ -365,11 +365,11 @@
       "imigracao": 55.0,
       "diplomacia": 53.8,
       "intervencao": 57.5,
-      "economia": 31.2,
+      "economia": 33.3,
       "controle": 38.8,
       "comercio": 18.8,
       "religiao": 58.8,
-      "moral": 28.7,
+      "moral": 27.9,
       "tecnologia": 70.0
     }
   },
@@ -382,11 +382,11 @@
       "imigracao": 70,
       "diplomacia": 56.2,
       "intervencao": 48.8,
-      "economia": 58.8,
+      "economia": 61.2,
       "controle": 70,
       "comercio": 38.8,
       "religiao": 71.2,
-      "moral": 37.5,
+      "moral": 36.8,
       "tecnologia": 60
     }
   },
@@ -399,11 +399,11 @@
       "imigracao": 58.8,
       "diplomacia": 35,
       "intervencao": 57.5,
-      "economia": 48.8,
+      "economia": 52.8,
       "controle": 62.5,
       "comercio": 60,
       "religiao": 23.8,
-      "moral": 25,
+      "moral": 22.1,
       "tecnologia": 50
     }
   },
@@ -416,11 +416,11 @@
       "imigracao": 72.5,
       "diplomacia": 76.2,
       "intervencao": 19,
-      "economia": 41.2,
+      "economia": 44.4,
       "controle": 73,
       "comercio": 66,
       "religiao": 15,
-      "moral": 26,
+      "moral": 23.5,
       "tecnologia": 60
     }
   },
@@ -433,11 +433,11 @@
       "imigracao": 83.8,
       "diplomacia": 77.5,
       "intervencao": 30,
-      "economia": 67.5,
+      "economia": 69.6,
       "controle": 80,
       "comercio": 86.3,
       "religiao": 0,
-      "moral": 8.8,
+      "moral": 4.5,
       "tecnologia": 40
     }
   },
@@ -450,11 +450,11 @@
       "imigracao": 83.8,
       "diplomacia": 68.8,
       "intervencao": 21.2,
-      "economia": 58,
+      "economia": 61.3,
       "controle": 67.5,
       "comercio": 52.5,
       "religiao": 6.2,
-      "moral": 10,
+      "moral": 5.9,
       "tecnologia": 72.5
     }
   },
@@ -467,11 +467,11 @@
       "imigracao": 63.7,
       "diplomacia": 80,
       "intervencao": 28.7,
-      "economia": 30,
+      "economia": 32.8,
       "controle": 32,
       "comercio": 41,
       "religiao": 29,
-      "moral": 38,
+      "moral": 38.4,
       "tecnologia": 71.2
     }
   },
@@ -484,11 +484,11 @@
       "imigracao": 35,
       "diplomacia": 26.2,
       "intervencao": 62.5,
-      "economia": 57.5,
+      "economia": 59.7,
       "controle": 56.2,
       "comercio": 46.2,
       "religiao": 46.2,
-      "moral": 56.2,
+      "moral": 55.8,
       "tecnologia": 56.2
     }
   },
@@ -501,11 +501,11 @@
       "imigracao": 85.0,
       "diplomacia": 72.5,
       "intervencao": 8.8,
-      "economia": 57.5,
+      "economia": 61.1,
       "controle": 66.2,
       "comercio": 13.8,
       "religiao": 13.8,
-      "moral": 22.5,
+      "moral": 23.5,
       "tecnologia": 47.5
     }
   },
@@ -518,11 +518,11 @@
       "imigracao": 98.8,
       "diplomacia": 94,
       "intervencao": 22.5,
-      "economia": 65,
+      "economia": 65.3,
       "controle": 78.8,
       "comercio": 96.2,
       "religiao": 15,
-      "moral": 27.5,
+      "moral": 29.4,
       "tecnologia": 35
     }
   },
@@ -535,11 +535,11 @@
       "imigracao": 32.5,
       "diplomacia": 86.2,
       "intervencao": 7.5,
-      "economia": 46.2,
+      "economia": 50.0,
       "controle": 70,
       "comercio": 43.8,
       "religiao": 18.8,
-      "moral": 33.8,
+      "moral": 35.3,
       "tecnologia": 50
     }
   },
@@ -552,11 +552,11 @@
       "imigracao": 55,
       "diplomacia": 70,
       "intervencao": 15,
-      "economia": 45,
+      "economia": 48.3,
       "controle": 65,
       "comercio": 55,
       "religiao": 20,
-      "moral": 15,
+      "moral": 15.3,
       "tecnologia": 45
     }
   },
@@ -569,11 +569,11 @@
       "imigracao": 66.2,
       "diplomacia": 51.2,
       "intervencao": 51.2,
-      "economia": 42.5,
+      "economia": 45.8,
       "controle": 46.2,
       "comercio": 62.5,
       "religiao": 2.5,
-      "moral": 10,
+      "moral": 5.9,
       "tecnologia": 28.7
     }
   },
@@ -586,11 +586,11 @@
       "imigracao": 66.2,
       "diplomacia": 62.5,
       "intervencao": 28.7,
-      "economia": 31.2,
+      "economia": 34.7,
       "controle": 68.8,
       "comercio": 57.5,
       "religiao": 36.2,
-      "moral": 33.8,
+      "moral": 33.9,
       "tecnologia": 71.2
     }
   },
@@ -603,11 +603,11 @@
       "imigracao": 32,
       "diplomacia": 81.2,
       "intervencao": 21.2,
-      "economia": 53.8,
+      "economia": 58.4,
       "controle": 75,
       "comercio": 70,
       "religiao": 5,
-      "moral": 13.8,
+      "moral": 10.3,
       "tecnologia": 43.8
     }
   },
@@ -620,11 +620,11 @@
       "imigracao": 77.5,
       "diplomacia": 73.8,
       "intervencao": 11.2,
-      "economia": 23.8,
+      "economia": 26.4,
       "controle": 25,
       "comercio": 22.5,
       "religiao": 18.8,
-      "moral": 8.8,
+      "moral": 5.9,
       "tecnologia": 71.2
     }
   },
@@ -637,11 +637,11 @@
       "imigracao": 43.8,
       "diplomacia": 27.5,
       "intervencao": 48.8,
-      "economia": 35,
+      "economia": 38.6,
       "controle": 65,
       "comercio": 53.8,
       "religiao": 26.2,
-      "moral": 33.8,
+      "moral": 30.1,
       "tecnologia": 65
     }
   },
@@ -654,11 +654,11 @@
       "imigracao": 100.0,
       "diplomacia": 100.0,
       "intervencao": 10.0,
-      "economia": 47.5,
+      "economia": 51.8,
       "controle": 78.8,
       "comercio": 96.2,
       "religiao": 38.8,
-      "moral": 11.2,
+      "moral": 11.7,
       "tecnologia": 76.2
     }
   },
@@ -671,11 +671,11 @@
       "imigracao": 95.0,
       "diplomacia": 97.5,
       "intervencao": 15.0,
-      "economia": 51.2,
+      "economia": 55.4,
       "controle": 77.5,
       "comercio": 93.8,
       "religiao": 16.2,
-      "moral": 5.0,
+      "moral": 4.0,
       "tecnologia": 73.8
     }
   },
@@ -688,11 +688,11 @@
       "imigracao": 77.5,
       "diplomacia": 72,
       "intervencao": 32.5,
-      "economia": 7.5,
+      "economia": 8.3,
       "controle": 17.5,
       "comercio": 17.5,
       "religiao": 23.8,
-      "moral": 6.2,
+      "moral": 5.8,
       "tecnologia": 62.5
     }
   },
@@ -705,11 +705,11 @@
       "imigracao": 35.0,
       "diplomacia": 80.0,
       "intervencao": 17.5,
-      "economia": 97.5,
+      "economia": 97.2,
       "controle": 97.5,
       "comercio": 81.2,
       "religiao": 97.5,
-      "moral": 45.0,
+      "moral": 45.6,
       "tecnologia": 72.5
     }
   },
@@ -722,11 +722,11 @@
       "imigracao": 57.5,
       "diplomacia": 80,
       "intervencao": 36,
-      "economia": 91.9,
+      "economia": 90.8,
       "controle": 95.6,
       "comercio": 86.9,
       "religiao": 93.8,
-      "moral": 45,
+      "moral": 43.1,
       "tecnologia": 66.9
     }
   },
@@ -739,11 +739,11 @@
       "imigracao": 96.2,
       "diplomacia": 78.8,
       "intervencao": 53.8,
-      "economia": 90,
+      "economia": 88.9,
       "controle": 86.2,
       "comercio": 96.2,
       "religiao": 93.8,
-      "moral": 37.5,
+      "moral": 35.3,
       "tecnologia": 8.8
     }
   },
@@ -756,11 +756,11 @@
       "imigracao": 13.8,
       "diplomacia": 17.5,
       "intervencao": 81.2,
-      "economia": 81.2,
+      "economia": 79.1,
       "controle": 68.8,
       "comercio": 60,
       "religiao": 90,
-      "moral": 71.2,
+      "moral": 73.5,
       "tecnologia": 37.5
     }
   },
@@ -773,11 +773,11 @@
       "imigracao": 65,
       "diplomacia": 57.5,
       "intervencao": 45,
-      "economia": 85,
+      "economia": 89.6,
       "controle": 93.8,
       "comercio": 77.5,
       "religiao": 32.5,
-      "moral": 30,
+      "moral": 28.4,
       "tecnologia": 62.5
     }
   },
@@ -790,11 +790,11 @@
       "imigracao": 72.5,
       "diplomacia": 78.8,
       "intervencao": 23.8,
-      "economia": 87.5,
+      "economia": 88.9,
       "controle": 91.2,
       "comercio": 83.8,
       "religiao": 53,
-      "moral": 23.8,
+      "moral": 20.6,
       "tecnologia": 63.7
     }
   },
@@ -807,11 +807,11 @@
       "imigracao": 92.5,
       "diplomacia": 66.3,
       "intervencao": 15,
-      "economia": 31.3,
+      "economia": 35.9,
       "controle": 78,
       "comercio": 70,
       "religiao": 5,
-      "moral": 5,
+      "moral": 3.2,
       "tecnologia": 51.2
     }
   },
@@ -824,11 +824,11 @@
       "imigracao": 42.5,
       "diplomacia": 45,
       "intervencao": 51.2,
-      "economia": 25,
+      "economia": 26.4,
       "controle": 23.8,
       "comercio": 21.2,
       "religiao": 56.2,
-      "moral": 46.2,
+      "moral": 47.0,
       "tecnologia": 66.2
     }
   },
@@ -841,11 +841,11 @@
       "imigracao": 40.0,
       "diplomacia": 42.1,
       "intervencao": 37.6,
-      "economia": 40.1,
+      "economia": 41.9,
       "controle": 34.2,
       "comercio": 17.5,
       "religiao": 45.7,
-      "moral": 53.8,
+      "moral": 58.6,
       "tecnologia": 67.7
     }
   },
@@ -858,11 +858,11 @@
       "imigracao": 62.5,
       "diplomacia": 17.5,
       "intervencao": 71.2,
-      "economia": 28.7,
+      "economia": 30.5,
       "controle": 23.8,
       "comercio": 25.0,
       "religiao": 43.8,
-      "moral": 43.8,
+      "moral": 45.6,
       "tecnologia": 55.0
     }
   },
@@ -875,11 +875,11 @@
       "imigracao": 13.8,
       "diplomacia": 26.2,
       "intervencao": 66.2,
-      "economia": 85,
+      "economia": 86.1,
       "controle": 73.8,
       "comercio": 67.5,
       "religiao": 71.2,
-      "moral": 72.5,
+      "moral": 72.1,
       "tecnologia": 30
     }
   },
@@ -892,11 +892,11 @@
       "imigracao": 27.5,
       "diplomacia": 52.5,
       "intervencao": 66.2,
-      "economia": 78.8,
+      "economia": 79.5,
       "controle": 68.8,
       "comercio": 55,
       "religiao": 82.5,
-      "moral": 47.5,
+      "moral": 48.5,
       "tecnologia": 72.5
     }
   },
@@ -909,11 +909,11 @@
       "imigracao": 90,
       "diplomacia": 78,
       "intervencao": 42.5,
-      "economia": 33.8,
+      "economia": 37.5,
       "controle": 72.5,
       "comercio": 81.2,
       "religiao": 1.2,
-      "moral": 5,
+      "moral": 2.9,
       "tecnologia": 46
     }
   },
@@ -926,11 +926,11 @@
       "imigracao": 66.2,
       "diplomacia": 32.5,
       "intervencao": 80,
-      "economia": 21.2,
+      "economia": 22.2,
       "controle": 15,
       "comercio": 27.5,
       "religiao": 28.7,
-      "moral": 15,
+      "moral": 13.2,
       "tecnologia": 23.8
     }
   },
@@ -943,11 +943,11 @@
       "imigracao": 57.5,
       "diplomacia": 65.0,
       "intervencao": 27.5,
-      "economia": 28.7,
+      "economia": 30.5,
       "controle": 35.0,
       "comercio": 23.8,
       "religiao": 16.2,
-      "moral": 22.5,
+      "moral": 19.1,
       "tecnologia": 77.5
     }
   },
@@ -960,11 +960,11 @@
       "imigracao": 82.5,
       "diplomacia": 70,
       "intervencao": 30,
-      "economia": 50,
+      "economia": 55.6,
       "controle": 72.5,
       "comercio": 81.2,
       "religiao": 3.8,
-      "moral": 6.2,
+      "moral": 4.4,
       "tecnologia": 27.5
     }
   },
@@ -977,11 +977,11 @@
       "imigracao": 66.3,
       "diplomacia": 86.3,
       "intervencao": 21.3,
-      "economia": 52.5,
+      "economia": 56.9,
       "controle": 75,
       "comercio": 77.5,
       "religiao": 63.7,
-      "moral": 41.3,
+      "moral": 40.8,
       "tecnologia": 58.8
     }
   },
@@ -994,11 +994,11 @@
       "imigracao": 72.5,
       "diplomacia": 67.5,
       "intervencao": 31.2,
-      "economia": 48.8,
+      "economia": 52.8,
       "controle": 51.2,
       "comercio": 43.8,
       "religiao": 22.5,
-      "moral": 25,
+      "moral": 23.5,
       "tecnologia": 50
     }
   },
@@ -1011,11 +1011,11 @@
       "imigracao": 10,
       "diplomacia": 18.8,
       "intervencao": 86.2,
-      "economia": 78.8,
+      "economia": 76.4,
       "controle": 55,
       "comercio": 67.5,
       "religiao": 88.8,
-      "moral": 62.5,
+      "moral": 63.2,
       "tecnologia": 42.5
     }
   },
@@ -1028,11 +1028,11 @@
       "imigracao": 80,
       "diplomacia": 61.3,
       "intervencao": 36.2,
-      "economia": 62.5,
+      "economia": 66.7,
       "controle": 73.8,
       "comercio": 78.8,
       "religiao": 33,
-      "moral": 25,
+      "moral": 21.0,
       "tecnologia": 60
     }
   },
@@ -1045,11 +1045,11 @@
       "imigracao": 65,
       "diplomacia": 45,
       "intervencao": 48.8,
-      "economia": 41.2,
+      "economia": 44.4,
       "controle": 40,
       "comercio": 37.5,
       "religiao": 75,
-      "moral": 61.3,
+      "moral": 64.8,
       "tecnologia": 52.5
     }
   },
@@ -1062,11 +1062,11 @@
       "imigracao": 18.8,
       "diplomacia": 25,
       "intervencao": 63.7,
-      "economia": 60,
+      "economia": 62.5,
       "controle": 56.2,
       "comercio": 23.8,
       "religiao": 71.2,
-      "moral": 83.8,
+      "moral": 85.3,
       "tecnologia": 58.8
     }
   },
@@ -1079,11 +1079,11 @@
       "imigracao": 72.5,
       "diplomacia": 73.8,
       "intervencao": 28.7,
-      "economia": 16.2,
+      "economia": 18.0,
       "controle": 17.5,
       "comercio": 40,
       "religiao": 33,
-      "moral": 23.8,
+      "moral": 23.6,
       "tecnologia": 68.8
     }
   },
@@ -1096,11 +1096,11 @@
       "imigracao": 16.2,
       "diplomacia": 35,
       "intervencao": 51.2,
-      "economia": 60,
+      "economia": 62.5,
       "controle": 51.2,
       "comercio": 22.5,
       "religiao": 66.2,
-      "moral": 81.2,
+      "moral": 82.3,
       "tecnologia": 53.8
     }
   },
@@ -1113,11 +1113,11 @@
       "imigracao": 62.5,
       "diplomacia": 33.8,
       "intervencao": 67.5,
-      "economia": 15,
+      "economia": 16.7,
       "controle": 15,
       "comercio": 28.7,
       "religiao": 71.2,
-      "moral": 65,
+      "moral": 69.1,
       "tecnologia": 63.7
     }
   },
@@ -1130,11 +1130,11 @@
       "imigracao": 46.2,
       "diplomacia": 71.2,
       "intervencao": 25,
-      "economia": 31.2,
+      "economia": 33.3,
       "controle": 42.5,
       "comercio": 42.5,
       "religiao": 53.8,
-      "moral": 60,
+      "moral": 61.8,
       "tecnologia": 61.3
     }
   },
@@ -1147,11 +1147,11 @@
       "imigracao": 25,
       "diplomacia": 30,
       "intervencao": 58.8,
-      "economia": 58.8,
+      "economia": 61.2,
       "controle": 58.8,
       "comercio": 37.5,
       "religiao": 71.2,
-      "moral": 83.8,
+      "moral": 85.3,
       "tecnologia": 61.3
     }
   },
@@ -1164,11 +1164,11 @@
       "imigracao": 22.5,
       "diplomacia": 26.2,
       "intervencao": 60,
-      "economia": 55,
+      "economia": 58.3,
       "controle": 45,
       "comercio": 43.8,
       "religiao": 66.2,
-      "moral": 73.8,
+      "moral": 76.5,
       "tecnologia": 51.2
     }
   },
@@ -1181,11 +1181,11 @@
       "imigracao": 57.5,
       "diplomacia": 33.8,
       "intervencao": 51.2,
-      "economia": 46.2,
+      "economia": 50.0,
       "controle": 42.5,
       "comercio": 23.8,
       "religiao": 71.2,
-      "moral": 81.2,
+      "moral": 85.2,
       "tecnologia": 55.0
     }
   },
@@ -1198,11 +1198,11 @@
       "imigracao": 66.2,
       "diplomacia": 35,
       "intervencao": 52.5,
-      "economia": 51.2,
+      "economia": 55.5,
       "controle": 51.2,
       "comercio": 46.2,
       "religiao": 42.5,
-      "moral": 40,
+      "moral": 41.2,
       "tecnologia": 42.5
     }
   },
@@ -1215,11 +1215,11 @@
       "imigracao": 40,
       "diplomacia": 32.5,
       "intervencao": 56.2,
-      "economia": 60,
+      "economia": 63.9,
       "controle": 53.8,
       "comercio": 35,
       "religiao": 68.8,
-      "moral": 68.8,
+      "moral": 72.1,
       "tecnologia": 47.5
     }
   },
@@ -1232,11 +1232,11 @@
       "imigracao": 45,
       "diplomacia": 35,
       "intervencao": 60,
-      "economia": 60,
+      "economia": 63.9,
       "controle": 57.5,
       "comercio": 35,
       "religiao": 68.8,
-      "moral": 75,
+      "moral": 79.4,
       "tecnologia": 48.8
     }
   },
@@ -1249,11 +1249,11 @@
       "imigracao": 71.2,
       "diplomacia": 40,
       "intervencao": 53.8,
-      "economia": 55,
+      "economia": 56.9,
       "controle": 46.2,
       "comercio": 30,
       "religiao": 63.7,
-      "moral": 72.5,
+      "moral": 76.5,
       "tecnologia": 52.5
     }
   },
@@ -1266,11 +1266,11 @@
       "imigracao": 46.2,
       "diplomacia": 52.5,
       "intervencao": 35,
-      "economia": 41.2,
+      "economia": 43.0,
       "controle": 42.5,
       "comercio": 33.8,
       "religiao": 63.7,
-      "moral": 67.5,
+      "moral": 69.1,
       "tecnologia": 51.2
     }
   },
@@ -1283,11 +1283,11 @@
       "imigracao": 36.2,
       "diplomacia": 22.5,
       "intervencao": 67.5,
-      "economia": 51.2,
+      "economia": 52.7,
       "controle": 42.5,
       "comercio": 25,
       "religiao": 71.2,
-      "moral": 80,
+      "moral": 80.9,
       "tecnologia": 41.2
     }
   },
@@ -1300,11 +1300,11 @@
       "imigracao": 35,
       "diplomacia": 16.2,
       "intervencao": 68.8,
-      "economia": 51.2,
+      "economia": 54.1,
       "controle": 43.8,
       "comercio": 26.2,
       "religiao": 67.5,
-      "moral": 66.2,
+      "moral": 69.1,
       "tecnologia": 51.2
     }
   },
@@ -1317,11 +1317,11 @@
       "imigracao": 58.8,
       "diplomacia": 71.2,
       "intervencao": 27.5,
-      "economia": 42.5,
+      "economia": 45.8,
       "controle": 46.2,
       "comercio": 41.2,
       "religiao": 43.8,
-      "moral": 48.8,
+      "moral": 48.6,
       "tecnologia": 56.2
     }
   },
@@ -1334,11 +1334,11 @@
       "imigracao": 71.8,
       "diplomacia": 81.4,
       "intervencao": 35.2,
-      "economia": 68.5,
+      "economia": 66.5,
       "controle": 73.1,
       "comercio": 75.2,
       "religiao": 37.9,
-      "moral": 24.4,
+      "moral": 21.5,
       "tecnologia": 73.7
     }
   },
@@ -1351,11 +1351,11 @@
       "imigracao": 81.2,
       "diplomacia": 37.5,
       "intervencao": 30,
-      "economia": 58,
+      "economia": 63.1,
       "controle": 57.5,
       "comercio": 38.8,
       "religiao": 7,
-      "moral": 10,
+      "moral": 5.9,
       "tecnologia": 54
     }
   },
@@ -1368,11 +1368,11 @@
       "imigracao": 46.2,
       "diplomacia": 27.5,
       "intervencao": 67.5,
-      "economia": 35,
+      "economia": 37.5,
       "controle": 35,
       "comercio": 31.2,
       "religiao": 38.8,
-      "moral": 37.5,
+      "moral": 36.8,
       "tecnologia": 50
     }
   },
@@ -1385,11 +1385,11 @@
       "imigracao": 46.9,
       "diplomacia": 55.7,
       "intervencao": 51.4,
-      "economia": 37.7,
+      "economia": 40.2,
       "controle": 42.6,
       "comercio": 31.8,
       "religiao": 24.6,
-      "moral": 19.4,
+      "moral": 14.3,
       "tecnologia": 55.8
     }
   },
@@ -1402,11 +1402,11 @@
       "imigracao": 60,
       "diplomacia": 43.8,
       "intervencao": 42.5,
-      "economia": 43.8,
+      "economia": 47.3,
       "controle": 47.5,
       "comercio": 38.8,
       "religiao": 26.2,
-      "moral": 35,
+      "moral": 33.8,
       "tecnologia": 48.8
     }
   },
@@ -1419,11 +1419,11 @@
       "imigracao": 66.2,
       "diplomacia": 50,
       "intervencao": 46.2,
-      "economia": 43.8,
+      "economia": 47.3,
       "controle": 51.2,
       "comercio": 38.8,
       "religiao": 27.5,
-      "moral": 46.2,
+      "moral": 47.0,
       "tecnologia": 51.2
     }
   },
@@ -1436,11 +1436,11 @@
       "imigracao": 58.8,
       "diplomacia": 35,
       "intervencao": 66.2,
-      "economia": 51.2,
+      "economia": 55.5,
       "controle": 60,
       "comercio": 43.8,
       "religiao": 21.2,
-      "moral": 18.8,
+      "moral": 13.3,
       "tecnologia": 57.5
     }
   },
@@ -1453,11 +1453,11 @@
       "imigracao": 45.0,
       "diplomacia": 57.5,
       "intervencao": 46.2,
-      "economia": 48.8,
+      "economia": 52.8,
       "controle": 55.0,
       "comercio": 38.8,
       "religiao": 62.5,
-      "moral": 73.8,
+      "moral": 75.0,
       "tecnologia": 72.5
     }
   },
@@ -1470,11 +1470,11 @@
       "imigracao": 66.2,
       "diplomacia": 56.2,
       "intervencao": 42.5,
-      "economia": 30,
+      "economia": 31.9,
       "controle": 35,
       "comercio": 38.8,
       "religiao": 33,
-      "moral": 26.2,
+      "moral": 24.9,
       "tecnologia": 65
     }
   },
@@ -1487,11 +1487,11 @@
       "imigracao": 52.7,
       "diplomacia": 61.2,
       "intervencao": 31.7,
-      "economia": 41.3,
+      "economia": 44.3,
       "controle": 36.6,
       "comercio": 29.4,
       "religiao": 37.9,
-      "moral": 37.5,
+      "moral": 36.8,
       "tecnologia": 57.0
     }
   },
@@ -1504,11 +1504,11 @@
       "imigracao": 33.8,
       "diplomacia": 25,
       "intervencao": 68.8,
-      "economia": 62.5,
+      "economia": 65.3,
       "controle": 57.5,
       "comercio": 32.5,
       "religiao": 78.8,
-      "moral": 75,
+      "moral": 77.9,
       "tecnologia": 47.5
     }
   },
@@ -1521,11 +1521,11 @@
       "imigracao": 81.2,
       "diplomacia": 77.5,
       "intervencao": 16.2,
-      "economia": 35,
+      "economia": 38.9,
       "controle": 62.5,
       "comercio": 70,
       "religiao": 20,
-      "moral": 21.2,
+      "moral": 17.6,
       "tecnologia": 65
     }
   },
@@ -1538,11 +1538,11 @@
       "imigracao": 37.5,
       "diplomacia": 48,
       "intervencao": 35,
-      "economia": 32.5,
+      "economia": 34.7,
       "controle": 26.2,
       "comercio": 25,
       "religiao": 32.5,
-      "moral": 22.5,
+      "moral": 22.1,
       "tecnologia": 53.8
     }
   },
@@ -1555,11 +1555,11 @@
       "imigracao": 57.5,
       "diplomacia": 37.5,
       "intervencao": 61.3,
-      "economia": 62.5,
+      "economia": 65.3,
       "controle": 66.2,
       "comercio": 46.2,
       "religiao": 51.2,
-      "moral": 52.5,
+      "moral": 52.9,
       "tecnologia": 55
     }
   },
@@ -1572,11 +1572,11 @@
       "imigracao": 53.4,
       "diplomacia": 67.5,
       "intervencao": 28.1,
-      "economia": 56.7,
+      "economia": 58.6,
       "controle": 63.7,
       "comercio": 63.8,
       "religiao": 44,
-      "moral": 35,
+      "moral": 30.5,
       "tecnologia": 51.9
     }
   },
@@ -1589,11 +1589,11 @@
       "imigracao": 28.7,
       "diplomacia": 20.0,
       "intervencao": 71.2,
-      "economia": 71.2,
+      "economia": 75.0,
       "controle": 65.0,
       "comercio": 32.5,
       "religiao": 2.5,
-      "moral": 17.5,
+      "moral": 13.2,
       "tecnologia": 25.0
     }
   },
@@ -1606,11 +1606,11 @@
       "imigracao": 52.5,
       "diplomacia": 17.5,
       "intervencao": 73.8,
-      "economia": 27.5,
+      "economia": 30.6,
       "controle": 23.8,
       "comercio": 26.2,
       "religiao": 42.5,
-      "moral": 45,
+      "moral": 47.1,
       "tecnologia": 55
     }
   },
@@ -1623,11 +1623,11 @@
       "imigracao": 66.2,
       "diplomacia": 56.2,
       "intervencao": 40,
-      "economia": 26.2,
+      "economia": 27.7,
       "controle": 26.2,
       "comercio": 23.8,
       "religiao": 76.2,
-      "moral": 66.2,
+      "moral": 70.5,
       "tecnologia": 66.2
     }
   },
@@ -1640,11 +1640,11 @@
       "imigracao": 33.8,
       "diplomacia": 22.5,
       "intervencao": 60,
-      "economia": 40,
+      "economia": 43.1,
       "controle": 32.5,
       "comercio": 20,
       "religiao": 68.8,
-      "moral": 71.2,
+      "moral": 75.0,
       "tecnologia": 56.2
     }
   },
@@ -1657,11 +1657,11 @@
       "imigracao": 76.2,
       "diplomacia": 72.5,
       "intervencao": 25,
-      "economia": 22.5,
+      "economia": 25.0,
       "controle": 20,
       "comercio": 46.2,
       "religiao": 35,
-      "moral": 23.8,
+      "moral": 23.6,
       "tecnologia": 67.5
     }
   },
@@ -1674,11 +1674,11 @@
       "imigracao": 85,
       "diplomacia": 88,
       "intervencao": 12,
-      "economia": 45,
+      "economia": 48.6,
       "controle": 75,
       "comercio": 85,
       "religiao": 12,
-      "moral": 15,
+      "moral": 13.6,
       "tecnologia": 60
     }
   },
@@ -1691,11 +1691,11 @@
       "imigracao": 46,
       "diplomacia": 71.2,
       "intervencao": 28.7,
-      "economia": 35,
+      "economia": 38.9,
       "controle": 60,
       "comercio": 67.5,
       "religiao": 16.2,
-      "moral": 16.2,
+      "moral": 14.7,
       "tecnologia": 41.2
     }
   },
@@ -1708,11 +1708,11 @@
       "imigracao": 73.8,
       "diplomacia": 28.7,
       "intervencao": 68.8,
-      "economia": 46,
+      "economia": 48.5,
       "controle": 62.5,
       "comercio": 60,
       "religiao": 25,
-      "moral": 40,
+      "moral": 39.7,
       "tecnologia": 25
     }
   },
@@ -1725,11 +1725,11 @@
       "imigracao": 30.0,
       "diplomacia": 80.0,
       "intervencao": 16.2,
-      "economia": 58.8,
+      "economia": 62.5,
       "controle": 77.5,
       "comercio": 62.5,
       "religiao": 23.8,
-      "moral": 25.0,
+      "moral": 22.1,
       "tecnologia": 70.0
     }
   },
@@ -1742,11 +1742,11 @@
       "imigracao": 12.5,
       "diplomacia": 8.8,
       "intervencao": 81.2,
-      "economia": 90,
+      "economia": 88.9,
       "controle": 83.8,
       "comercio": 52.5,
       "religiao": 90,
-      "moral": 63.7,
+      "moral": 64.7,
       "tecnologia": 53.8
     }
   },
@@ -1759,11 +1759,11 @@
       "imigracao": 40,
       "diplomacia": 21.2,
       "intervencao": 66.2,
-      "economia": 61.3,
+      "economia": 63.9,
       "controle": 57.5,
       "comercio": 31.2,
       "religiao": 73.8,
-      "moral": 82.5,
+      "moral": 83.8,
       "tecnologia": 50
     }
   },
@@ -1776,11 +1776,11 @@
       "imigracao": 68.8,
       "diplomacia": 62.5,
       "intervencao": 30.0,
-      "economia": 26.2,
+      "economia": 29.1,
       "controle": 26.2,
       "comercio": 30.0,
       "religiao": 26.2,
-      "moral": 30.0,
+      "moral": 29.4,
       "tecnologia": 73.8
     }
   },
@@ -1793,11 +1793,11 @@
       "imigracao": 62.5,
       "diplomacia": 72,
       "intervencao": 16,
-      "economia": 30,
+      "economia": 32.9,
       "controle": 37.5,
       "comercio": 46.3,
       "religiao": 36.3,
-      "moral": 27.5,
+      "moral": 26.6,
       "tecnologia": 52.5
     }
   },
@@ -1810,11 +1810,11 @@
       "imigracao": 72.5,
       "diplomacia": 56.2,
       "intervencao": 34,
-      "economia": 77.5,
+      "economia": 80.6,
       "controle": 91.2,
       "comercio": 62,
       "religiao": 88.8,
-      "moral": 37,
+      "moral": 37.6,
       "tecnologia": 66.2
     }
   },
@@ -1827,11 +1827,11 @@
       "imigracao": 35,
       "diplomacia": 21.2,
       "intervencao": 75,
-      "economia": 86.2,
+      "economia": 87.5,
       "controle": 88.8,
       "comercio": 73.8,
       "religiao": 70,
-      "moral": 65,
+      "moral": 63.2,
       "tecnologia": 52.5
     }
   },
@@ -1848,7 +1848,7 @@
       "controle": 76.2,
       "comercio": 77.5,
       "religiao": 67.5,
-      "moral": 62.5,
+      "moral": 60.3,
       "tecnologia": 41.2
     }
   },
@@ -1861,11 +1861,11 @@
       "imigracao": 88.8,
       "diplomacia": 62,
       "intervencao": 35,
-      "economia": 26.2,
+      "economia": 29.1,
       "controle": 26.2,
       "comercio": 28.7,
       "religiao": 6.2,
-      "moral": 5,
+      "moral": 2.9,
       "tecnologia": 32.5
     }
   },
@@ -1878,11 +1878,11 @@
       "imigracao": 37.5,
       "diplomacia": 41.2,
       "intervencao": 52.5,
-      "economia": 25,
+      "economia": 26.4,
       "controle": 31.2,
       "comercio": 26.2,
       "religiao": 52.5,
-      "moral": 43.8,
+      "moral": 44.2,
       "tecnologia": 58.8
     }
   },
@@ -1895,11 +1895,11 @@
       "imigracao": 77.5,
       "diplomacia": 45,
       "intervencao": 40,
-      "economia": 53.8,
+      "economia": 59.8,
       "controle": 73.8,
       "comercio": 78,
       "religiao": 0,
-      "moral": 10,
+      "moral": 5.9,
       "tecnologia": 30
     }
   },
@@ -1912,11 +1912,11 @@
       "imigracao": 72.5,
       "diplomacia": 71.2,
       "intervencao": 18.8,
-      "economia": 50,
+      "economia": 54.2,
       "controle": 72.5,
       "comercio": 63.7,
       "religiao": 1.2,
-      "moral": 11.2,
+      "moral": 7.3,
       "tecnologia": 43.8
     }
   },
@@ -1929,11 +1929,11 @@
       "imigracao": 95,
       "diplomacia": 83.8,
       "intervencao": 12.5,
-      "economia": 45,
+      "economia": 50.0,
       "controle": 72,
       "comercio": 83.8,
       "religiao": 1.2,
-      "moral": 7.5,
+      "moral": 2.9,
       "tecnologia": 42.5
     }
   },
@@ -1946,11 +1946,11 @@
       "imigracao": 85,
       "diplomacia": 80,
       "intervencao": 12.5,
-      "economia": 40,
+      "economia": 44.4,
       "controle": 71.2,
       "comercio": 67.5,
       "religiao": 2.5,
-      "moral": 7.5,
+      "moral": 2.9,
       "tecnologia": 40
     }
   },
@@ -1963,11 +1963,11 @@
       "imigracao": 77.5,
       "diplomacia": 56.2,
       "intervencao": 41.2,
-      "economia": 36.2,
+      "economia": 38.8,
       "controle": 62,
       "comercio": 42.5,
       "religiao": 0,
-      "moral": 6.2,
+      "moral": 4.4,
       "tecnologia": 32
     }
   },
@@ -1980,11 +1980,11 @@
       "imigracao": 76.2,
       "diplomacia": 81.2,
       "intervencao": 18.8,
-      "economia": 52.5,
+      "economia": 56.2,
       "controle": 70,
       "comercio": 71.2,
       "religiao": 4,
-      "moral": 21.3,
+      "moral": 16.7,
       "tecnologia": 58.8
     }
   },
@@ -1997,11 +1997,11 @@
       "imigracao": 63.7,
       "diplomacia": 26.2,
       "intervencao": 68.8,
-      "economia": 58.8,
+      "economia": 62.5,
       "controle": 51.2,
       "comercio": 40,
       "religiao": 65,
-      "moral": 63.7,
+      "moral": 66.1,
       "tecnologia": 40
     }
   },
@@ -2014,11 +2014,11 @@
       "imigracao": 81.2,
       "diplomacia": 72,
       "intervencao": 30,
-      "economia": 46.2,
+      "economia": 51.3,
       "controle": 61.3,
       "comercio": 78.8,
       "religiao": 25,
-      "moral": 16.2,
+      "moral": 16.1,
       "tecnologia": 58.8
     }
   },
@@ -2031,11 +2031,11 @@
       "imigracao": 42.5,
       "diplomacia": 26.2,
       "intervencao": 58.8,
-      "economia": 52.5,
+      "economia": 55.6,
       "controle": 50,
       "comercio": 28.7,
       "religiao": 55,
-      "moral": 65,
+      "moral": 67.6,
       "tecnologia": 48.8
     }
   },
@@ -2048,11 +2048,11 @@
       "imigracao": 70,
       "diplomacia": 58.8,
       "intervencao": 38.8,
-      "economia": 93.8,
+      "economia": 94.5,
       "controle": 95,
       "comercio": 83.8,
       "religiao": 85,
-      "moral": 48.8,
+      "moral": 50.0,
       "tecnologia": 68.8
     }
   },
@@ -2065,11 +2065,11 @@
       "imigracao": 38.8,
       "diplomacia": 16.2,
       "intervencao": 67.5,
-      "economia": 58.8,
+      "economia": 61.2,
       "controle": 53.8,
       "comercio": 33.8,
       "religiao": 70,
-      "moral": 76.2,
+      "moral": 79.4,
       "tecnologia": 48.8
     }
   },
@@ -2082,11 +2082,11 @@
       "imigracao": 51.2,
       "diplomacia": 55,
       "intervencao": 57.5,
-      "economia": 57.5,
+      "economia": 61.1,
       "controle": 52.5,
       "comercio": 33.8,
       "religiao": 68.8,
-      "moral": 72.5,
+      "moral": 76.5,
       "tecnologia": 52.5
     }
   },
@@ -2099,11 +2099,11 @@
       "imigracao": 42.5,
       "diplomacia": 93.1,
       "intervencao": 13.8,
-      "economia": 40.7,
+      "economia": 42.6,
       "controle": 61.9,
       "comercio": 43.4,
       "religiao": 41.9,
-      "moral": 16.6,
+      "moral": 15.6,
       "tecnologia": 38
     }
   },
@@ -2116,11 +2116,11 @@
       "imigracao": 71.2,
       "diplomacia": 83.8,
       "intervencao": 23.8,
-      "economia": 48.8,
+      "economia": 52.8,
       "controle": 75,
       "comercio": 78.8,
       "religiao": 22.5,
-      "moral": 5,
+      "moral": 2.9,
       "tecnologia": 70
     }
   },
@@ -2133,11 +2133,11 @@
       "imigracao": 46.2,
       "diplomacia": 36.2,
       "intervencao": 65,
-      "economia": 85,
+      "economia": 86.1,
       "controle": 75,
       "comercio": 76.2,
       "religiao": 67.5,
-      "moral": 46.2,
+      "moral": 44.1,
       "tecnologia": 52.5
     }
   },
@@ -2150,11 +2150,11 @@
       "imigracao": 38,
       "diplomacia": 58.8,
       "intervencao": 71.2,
-      "economia": 46.2,
+      "economia": 47.2,
       "controle": 36.2,
       "comercio": 53.8,
       "religiao": 28,
-      "moral": 16.2,
+      "moral": 11.7,
       "tecnologia": 42.5
     }
   },
@@ -2167,11 +2167,11 @@
       "imigracao": 68.8,
       "diplomacia": 97.5,
       "intervencao": 3.8,
-      "economia": 42.8,
+      "economia": 47.1,
       "controle": 67.5,
       "comercio": 75.0,
       "religiao": 37.5,
-      "moral": 22.2,
+      "moral": 20.9,
       "tecnologia": 73.8
     }
   },
@@ -2184,11 +2184,11 @@
       "imigracao": 63.7,
       "diplomacia": 53.8,
       "intervencao": 46.2,
-      "economia": 50.0,
+      "economia": 52.8,
       "controle": 45.0,
       "comercio": 42.5,
       "religiao": 37.5,
-      "moral": 31.2,
+      "moral": 29.4,
       "tecnologia": 57.5
     }
   },
@@ -2201,11 +2201,11 @@
       "imigracao": 74.1,
       "diplomacia": 41.0,
       "intervencao": 59.0,
-      "economia": 24.6,
+      "economia": 25.9,
       "controle": 25.9,
       "comercio": 17.5,
       "religiao": 16.4,
-      "moral": 16.0,
+      "moral": 15.9,
       "tecnologia": 59.4
     }
   },
@@ -2218,11 +2218,11 @@
       "imigracao": 38.8,
       "diplomacia": 17.5,
       "intervencao": 70.0,
-      "economia": 33.8,
+      "economia": 36.2,
       "controle": 28.7,
       "comercio": 22.5,
       "religiao": 45.0,
-      "moral": 42.5,
+      "moral": 42.6,
       "tecnologia": 58.8
     }
   },
@@ -2235,11 +2235,11 @@
       "imigracao": 30.0,
       "diplomacia": 28.7,
       "intervencao": 51.2,
-      "economia": 66.2,
+      "economia": 70.8,
       "controle": 51.2,
       "comercio": 27.5,
       "religiao": 60.0,
-      "moral": 80.0,
+      "moral": 82.4,
       "tecnologia": 46.2
     }
   },
@@ -2252,11 +2252,11 @@
       "imigracao": 57.5,
       "diplomacia": 33.8,
       "intervencao": 58.8,
-      "economia": 42.5,
+      "economia": 44.4,
       "controle": 37.5,
       "comercio": 32.5,
       "religiao": 36.2,
-      "moral": 33.8,
+      "moral": 32.4,
       "tecnologia": 47.5
     }
   },
@@ -2269,11 +2269,11 @@
       "imigracao": 51.2,
       "diplomacia": 33.8,
       "intervencao": 52.5,
-      "economia": 36.2,
+      "economia": 38.8,
       "controle": 28.7,
       "comercio": 36.2,
       "religiao": 30.0,
-      "moral": 32.5,
+      "moral": 30.9,
       "tecnologia": 48.8
     }
   },
@@ -2286,11 +2286,11 @@
       "imigracao": 61.3,
       "diplomacia": 31.2,
       "intervencao": 60.0,
-      "economia": 62.5,
+      "economia": 66.7,
       "controle": 55.0,
       "comercio": 38.8,
       "religiao": 68.8,
-      "moral": 66.2,
+      "moral": 69.1,
       "tecnologia": 40.0
     }
   },
@@ -2303,11 +2303,11 @@
       "imigracao": 73.8,
       "diplomacia": 37.5,
       "intervencao": 62.5,
-      "economia": 47.5,
+      "economia": 51.4,
       "controle": 45.0,
       "comercio": 35.0,
       "religiao": 32.5,
-      "moral": 31.2,
+      "moral": 30.8,
       "tecnologia": 51.2
     }
   },
@@ -2320,11 +2320,11 @@
       "imigracao": 86.2,
       "diplomacia": 80.0,
       "intervencao": 27.5,
-      "economia": 27.5,
+      "economia": 30.6,
       "controle": 57.5,
       "comercio": 55.0,
       "religiao": 23.8,
-      "moral": 18.8,
+      "moral": 19.2,
       "tecnologia": 56.2
     }
   },
@@ -2337,11 +2337,11 @@
       "imigracao": 57.5,
       "diplomacia": 36.2,
       "intervencao": 62.5,
-      "economia": 27.5,
+      "economia": 30.6,
       "controle": 11.2,
       "comercio": 18.8,
       "religiao": 48.8,
-      "moral": 51.2,
+      "moral": 54.4,
       "tecnologia": 80.0
     }
   },
@@ -2354,11 +2354,11 @@
       "imigracao": 31.2,
       "diplomacia": 10.0,
       "intervencao": 81.2,
-      "economia": 86.2,
+      "economia": 84.7,
       "controle": 66.2,
       "comercio": 81.2,
       "religiao": 50.0,
-      "moral": 66.2,
+      "moral": 64.7,
       "tecnologia": 20.0
     }
   },
@@ -2371,11 +2371,11 @@
       "imigracao": 70.0,
       "diplomacia": 48.8,
       "intervencao": 55.0,
-      "economia": 38.8,
+      "economia": 41.7,
       "controle": 33.8,
       "comercio": 42.5,
       "religiao": 28.7,
-      "moral": 36.2,
+      "moral": 36.7,
       "tecnologia": 53.8
     }
   },
@@ -2388,11 +2388,11 @@
       "imigracao": 40.0,
       "diplomacia": 35.0,
       "intervencao": 61.3,
-      "economia": 55.0,
+      "economia": 56.9,
       "controle": 56.2,
       "comercio": 31.2,
       "religiao": 43.8,
-      "moral": 47.5,
+      "moral": 48.5,
       "tecnologia": 50.0
     }
   },
@@ -2405,11 +2405,11 @@
       "imigracao": 71.2,
       "diplomacia": 60.0,
       "intervencao": 55.0,
-      "economia": 7.5,
+      "economia": 8.3,
       "controle": 11.2,
       "comercio": 31.2,
       "religiao": 38.8,
-      "moral": 32.5,
+      "moral": 35.3,
       "tecnologia": 60.0
     }
   },
@@ -2422,11 +2422,11 @@
       "imigracao": 68.8,
       "diplomacia": 73.8,
       "intervencao": 42.5,
-      "economia": 18.8,
+      "economia": 19.5,
       "controle": 27.5,
       "comercio": 22.5,
       "religiao": 48.8,
-      "moral": 28.7,
+      "moral": 27.9,
       "tecnologia": 63.7
     }
   },
@@ -2439,11 +2439,11 @@
       "imigracao": 57.6,
       "diplomacia": 27.6,
       "intervencao": 60.1,
-      "economia": 59.1,
+      "economia": 62.7,
       "controle": 70.0,
       "comercio": 47.2,
       "religiao": 30.6,
-      "moral": 20.6,
+      "moral": 19.9,
       "tecnologia": 54.6
     }
   },
@@ -2456,11 +2456,11 @@
       "imigracao": 32.5,
       "diplomacia": 22.5,
       "intervencao": 71.2,
-      "economia": 77.5,
+      "economia": 80.6,
       "controle": 70.0,
       "comercio": 33.8,
       "religiao": 60.0,
-      "moral": 75.0,
+      "moral": 77.9,
       "tecnologia": 45.0
     }
   },
@@ -2473,11 +2473,11 @@
       "imigracao": 30.0,
       "diplomacia": 32.5,
       "intervencao": 52.5,
-      "economia": 30.0,
+      "economia": 31.9,
       "controle": 28.7,
       "comercio": 27.5,
       "religiao": 65.0,
-      "moral": 67.5,
+      "moral": 66.2,
       "tecnologia": 68.8
     }
   },
@@ -2490,11 +2490,11 @@
       "imigracao": 35.0,
       "diplomacia": 31.2,
       "intervencao": 56.2,
-      "economia": 65.0,
+      "economia": 70.8,
       "controle": 51.2,
       "comercio": 41.2,
       "religiao": 52.5,
-      "moral": 65.0,
+      "moral": 66.2,
       "tecnologia": 48.8
     }
   },
@@ -2507,11 +2507,11 @@
       "imigracao": 67.5,
       "diplomacia": 43.8,
       "intervencao": 56.2,
-      "economia": 32.5,
+      "economia": 34.7,
       "controle": 30.0,
       "comercio": 48.8,
       "religiao": 31.2,
-      "moral": 31.2,
+      "moral": 32.3,
       "tecnologia": 62.5
     }
   },
@@ -2524,11 +2524,11 @@
       "imigracao": 67.5,
       "diplomacia": 50.0,
       "intervencao": 45.0,
-      "economia": 33.8,
+      "economia": 36.2,
       "controle": 28.7,
       "comercio": 51.2,
       "religiao": 33.8,
-      "moral": 31.2,
+      "moral": 32.3,
       "tecnologia": 61.3
     }
   },
@@ -2541,11 +2541,11 @@
       "imigracao": 37.5,
       "diplomacia": 32.5,
       "intervencao": 58.8,
-      "economia": 51.2,
+      "economia": 55.5,
       "controle": 43.8,
       "comercio": 33.8,
       "religiao": 52.5,
-      "moral": 62.5,
+      "moral": 63.2,
       "tecnologia": 63.7
     }
   },
@@ -2558,11 +2558,11 @@
       "imigracao": 40.0,
       "diplomacia": 35.0,
       "intervencao": 57.5,
-      "economia": 51.2,
+      "economia": 55.5,
       "controle": 45.0,
       "comercio": 51.2,
       "religiao": 47.5,
-      "moral": 38.8,
+      "moral": 38.3,
       "tecnologia": 61.3
     }
   },
@@ -2575,11 +2575,11 @@
       "imigracao": 66.2,
       "diplomacia": 92.5,
       "intervencao": 10.0,
-      "economia": 25.0,
+      "economia": 27.8,
       "controle": 53.8,
       "comercio": 23.8,
       "religiao": 0.0,
-      "moral": 6.2,
+      "moral": 4.4,
       "tecnologia": 46.2
     }
   },
@@ -2592,11 +2592,11 @@
       "imigracao": 78.1,
       "diplomacia": 83.8,
       "intervencao": 15.0,
-      "economia": 57.8,
+      "economia": 60.0,
       "controle": 73.1,
       "comercio": 58.6,
       "religiao": 69.4,
-      "moral": 28.6,
+      "moral": 26.6,
       "tecnologia": 48.7
     }
   },
@@ -2609,7 +2609,7 @@
       "imigracao": 63.8,
       "diplomacia": 77.9,
       "intervencao": 6.7,
-      "economia": 61.3,
+      "economia": 63.8,
       "controle": 82.6,
       "comercio": 59.8,
       "religiao": 40.8,
@@ -2626,11 +2626,11 @@
       "imigracao": 62.1,
       "diplomacia": 81.4,
       "intervencao": 16.2,
-      "economia": 88.1,
+      "economia": 88.2,
       "controle": 92.4,
       "comercio": 76.4,
       "religiao": 27.4,
-      "moral": 26.0,
+      "moral": 26.2,
       "tecnologia": 51.0
     }
   },
@@ -2643,11 +2643,11 @@
       "imigracao": 75.3,
       "diplomacia": 83.8,
       "intervencao": 5.5,
-      "economia": 85.1,
+      "economia": 86.2,
       "controle": 92.1,
       "comercio": 87.1,
       "religiao": 31.9,
-      "moral": 17.2,
+      "moral": 13.1,
       "tecnologia": 70.1
     }
   },
@@ -2660,11 +2660,11 @@
       "imigracao": 73.0,
       "diplomacia": 81.4,
       "intervencao": 11.4,
-      "economia": 39.9,
+      "economia": 44.1,
       "controle": 64.8,
       "comercio": 70.5,
       "religiao": 8.1,
-      "moral": 5.3,
+      "moral": 4.8,
       "tecnologia": 58.3
     }
   },
@@ -2677,11 +2677,11 @@
       "imigracao": 77.7,
       "diplomacia": 76.7,
       "intervencao": 4.3,
-      "economia": 41.1,
+      "economia": 45.4,
       "controle": 67.1,
       "comercio": 72.9,
       "religiao": 3.3,
-      "moral": 7.7,
+      "moral": 6.2,
       "tecnologia": 51.2
     }
   },
@@ -2694,11 +2694,11 @@
       "imigracao": 64.6,
       "diplomacia": 73.1,
       "intervencao": 18.6,
-      "economia": 48.4,
+      "economia": 53.5,
       "controle": 68.8,
       "comercio": 54.4,
       "religiao": 4.5,
-      "moral": 8.9,
+      "moral": 7.6,
       "tecnologia": 50.0
     }
   },
@@ -2711,11 +2711,11 @@
       "imigracao": 60.0,
       "diplomacia": 66.0,
       "intervencao": 24.5,
-      "economia": 37.7,
+      "economia": 40.4,
       "controle": 56.9,
       "comercio": 56.8,
       "religiao": 21.0,
-      "moral": 14.6,
+      "moral": 14.3,
       "tecnologia": 56.0
     }
   },
@@ -2728,11 +2728,11 @@
       "imigracao": 68.2,
       "diplomacia": 57.6,
       "intervencao": 29.3,
-      "economia": 61.3,
+      "economia": 65.1,
       "controle": 74.3,
       "comercio": 53.8,
       "religiao": 6.9,
-      "moral": 28.0,
+      "moral": 28.5,
       "tecnologia": 39.3
     }
   },
@@ -2745,11 +2745,11 @@
       "imigracao": 80.1,
       "diplomacia": 76.7,
       "intervencao": 23.3,
-      "economia": 45.9,
+      "economia": 50.7,
       "controle": 68.3,
       "comercio": 58.6,
       "religiao": 3.3,
-      "moral": 7.7,
+      "moral": 4.8,
       "tecnologia": 59.4
     }
   },
@@ -2762,11 +2762,11 @@
       "imigracao": 74.1,
       "diplomacia": 70.0,
       "intervencao": 37.1,
-      "economia": 62.5,
+      "economia": 67.1,
       "controle": 73.1,
       "comercio": 58.6,
       "religiao": 17.6,
-      "moral": 19.6,
+      "moral": 15.8,
       "tecnologia": 58.2
     }
   },
@@ -2779,11 +2779,11 @@
       "imigracao": 83.7,
       "diplomacia": 71.2,
       "intervencao": 63.3,
-      "economia": 39.9,
+      "economia": 44.1,
       "controle": 54.0,
       "comercio": 53.8,
       "religiao": 1.0,
-      "moral": 4.1,
+      "moral": 0.6,
       "tecnologia": 32.4
     }
   },
@@ -2796,11 +2796,11 @@
       "imigracao": 56.4,
       "diplomacia": 61.2,
       "intervencao": 32.9,
-      "economia": 39.9,
+      "economia": 44.1,
       "controle": 37.3,
       "comercio": 19.6,
       "religiao": 12.7,
-      "moral": 23.0,
+      "moral": 19.9,
       "tecnologia": 61.8
     }
   },
@@ -2813,11 +2813,11 @@
       "imigracao": 41.4,
       "diplomacia": 38.6,
       "intervencao": 42.4,
-      "economia": 33.0,
+      "economia": 35.2,
       "controle": 47.3,
       "comercio": 24.6,
       "religiao": 64.3,
-      "moral": 47.9,
+      "moral": 51.7,
       "tecnologia": 67.7
     }
   },
@@ -2830,11 +2830,11 @@
       "imigracao": 67.1,
       "diplomacia": 57.6,
       "intervencao": 36.4,
-      "economia": 49.4,
+      "economia": 53.3,
       "controle": 60.0,
       "comercio": 41.9,
       "religiao": 10.3,
-      "moral": 17.0,
+      "moral": 14.3,
       "tecnologia": 61.8
     }
   },
@@ -2847,11 +2847,11 @@
       "imigracao": 49.1,
       "diplomacia": 64.8,
       "intervencao": 22.1,
-      "economia": 46.0,
+      "economia": 49.5,
       "controle": 49.7,
       "comercio": 18.7,
       "religiao": 3.3,
-      "moral": 12.5,
+      "moral": 10.4,
       "tecnologia": 64.1
     }
   },
@@ -2864,11 +2864,11 @@
       "imigracao": 70.7,
       "diplomacia": 40.2,
       "intervencao": 68.1,
-      "economia": 54.4,
+      "economia": 58.8,
       "controle": 62.8,
       "comercio": 47.2,
       "religiao": 12.7,
-      "moral": 14.6,
+      "moral": 14.3,
       "tecnologia": 33.3
     }
   },
@@ -2881,11 +2881,11 @@
       "imigracao": 92.0,
       "diplomacia": 85.0,
       "intervencao": 44.8,
-      "economia": 54.2,
+      "economia": 58.6,
       "controle": 74.3,
       "comercio": 82.4,
       "religiao": 4.5,
-      "moral": 7.7,
+      "moral": 7.6,
       "tecnologia": 61.8
     }
   },
@@ -2898,11 +2898,11 @@
       "imigracao": 62.4,
       "diplomacia": 31.2,
       "intervencao": 62.5,
-      "economia": 55.6,
+      "economia": 60.1,
       "controle": 58.0,
       "comercio": 41.3,
       "religiao": 50.8,
-      "moral": 36.0,
+      "moral": 36.5,
       "tecnologia": 41.7
     }
   },
@@ -2915,11 +2915,11 @@
       "imigracao": 86.4,
       "diplomacia": 54.5,
       "intervencao": 61.0,
-      "economia": 61.3,
+      "economia": 65.1,
       "controle": 76.7,
       "comercio": 87.1,
       "religiao": 92.0,
-      "moral": 40.5,
+      "moral": 38.9,
       "tecnologia": 72.5
     }
   },
@@ -2932,11 +2932,11 @@
       "imigracao": 78.9,
       "diplomacia": 77.9,
       "intervencao": 28.1,
-      "economia": 62.5,
+      "economia": 67.8,
       "controle": 75.5,
       "comercio": 66.9,
       "religiao": 4.5,
-      "moral": 5.3,
+      "moral": 3.4,
       "tecnologia": 48.8
     }
   },
@@ -2949,11 +2949,11 @@
       "imigracao": 55.2,
       "diplomacia": 49.3,
       "intervencao": 34.0,
-      "economia": 24.4,
+      "economia": 27.0,
       "controle": 18.2,
       "comercio": 16.0,
       "religiao": 49.6,
-      "moral": 45.6,
+      "moral": 49.0,
       "tecnologia": 67.7
     }
   },
@@ -2966,11 +2966,11 @@
       "imigracao": 95.6,
       "diplomacia": 61.7,
       "intervencao": 71.7,
-      "economia": 56.6,
+      "economia": 62.6,
       "controle": 82.6,
       "comercio": 99.0,
       "religiao": 24.8,
-      "moral": 26.8,
+      "moral": 29.9,
       "tecnologia": 19.3
     }
   },
@@ -2983,11 +2983,11 @@
       "imigracao": 44.4,
       "diplomacia": 36.0,
       "intervencao": 58.9,
-      "economia": 69.7,
+      "economia": 74.4,
       "controle": 77.9,
       "comercio": 65.7,
       "religiao": 20.0,
-      "moral": 11.3,
+      "moral": 4.8,
       "tecnologia": 36.9
     }
   },
@@ -3000,11 +3000,11 @@
       "imigracao": 51.5,
       "diplomacia": 52.9,
       "intervencao": 37.6,
-      "economia": 43.5,
+      "economia": 46.8,
       "controle": 61.2,
       "comercio": 65.7,
       "religiao": 15.2,
-      "moral": 10.1,
+      "moral": 6.2,
       "tecnologia": 59.4
     }
   },
@@ -3017,11 +3017,11 @@
       "imigracao": 81.3,
       "diplomacia": 60.5,
       "intervencao": 59.8,
-      "economia": 76.8,
+      "economia": 82.3,
       "controle": 80.2,
       "comercio": 83.6,
       "religiao": 16.4,
-      "moral": 13.7,
+      "moral": 10.4,
       "tecnologia": 55.8
     }
   },
@@ -3034,11 +3034,11 @@
       "imigracao": 75.5,
       "diplomacia": 52.9,
       "intervencao": 41.2,
-      "economia": 46.0,
+      "economia": 49.5,
       "controle": 34.2,
       "comercio": 31.8,
       "religiao": 22.2,
-      "moral": 49.1,
+      "moral": 53.1,
       "tecnologia": 42.9
     }
   },
@@ -3051,11 +3051,11 @@
       "imigracao": 73.0,
       "diplomacia": 59.3,
       "intervencao": 55.0,
-      "economia": 55.4,
+      "economia": 59.9,
       "controle": 68.3,
       "comercio": 33.6,
       "religiao": 21.2,
-      "moral": 24.4,
+      "moral": 24.3,
       "tecnologia": 54.6
     }
   },
@@ -3068,11 +3068,11 @@
       "imigracao": 32.6,
       "diplomacia": 38.3,
       "intervencao": 60.1,
-      "economia": 53.2,
+      "economia": 57.5,
       "controle": 41.4,
       "comercio": 28.2,
       "religiao": 53.2,
-      "moral": 42.0,
+      "moral": 39.3,
       "tecnologia": 32.1
     }
   },
@@ -3085,11 +3085,11 @@
       "imigracao": 51.5,
       "diplomacia": 77.9,
       "intervencao": 23.3,
-      "economia": 60.1,
+      "economia": 65.1,
       "controle": 75.5,
       "comercio": 95.5,
       "religiao": 35.5,
-      "moral": 10.1,
+      "moral": 9.0,
       "tecnologia": 21.4
     }
   },
@@ -3102,11 +3102,11 @@
       "imigracao": 94.4,
       "diplomacia": 31.3,
       "intervencao": 73.3,
-      "economia": 23.4,
+      "economia": 25.9,
       "controle": 34.2,
       "comercio": 84.1,
       "religiao": 2.1,
-      "moral": 20.8,
+      "moral": 22.9,
       "tecnologia": 8.6
     }
   },
@@ -3119,11 +3119,11 @@
       "imigracao": 67.0,
       "diplomacia": 81.4,
       "intervencao": 22.1,
-      "economia": 54.2,
+      "economia": 59.9,
       "controle": 60.0,
       "comercio": 66.9,
       "religiao": 1.0,
-      "moral": 12.5,
+      "moral": 9.0,
       "tecnologia": 16.9
     }
   },
@@ -3136,11 +3136,11 @@
       "imigracao": 59.3,
       "diplomacia": 56.4,
       "intervencao": 29.3,
-      "economia": 52.0,
+      "economia": 53.5,
       "controle": 52.1,
       "comercio": 29.4,
       "religiao": 56.0,
-      "moral": 64.5,
+      "moral": 71.1,
       "tecnologia": 61.8
     }
   },
@@ -3153,11 +3153,11 @@
       "imigracao": 27.1,
       "diplomacia": 27.6,
       "intervencao": 58.9,
-      "economia": 76.2,
+      "economia": 79.0,
       "controle": 67.4,
       "comercio": 69.3,
       "religiao": 77.4,
-      "moral": 77.6,
+      "moral": 80.8,
       "tecnologia": 24.0
     }
   },
@@ -3170,11 +3170,11 @@
       "imigracao": 41.0,
       "diplomacia": 55.2,
       "intervencao": 35.2,
-      "economia": 27.0,
+      "economia": 28.5,
       "controle": 28.3,
       "comercio": 33.0,
       "religiao": 19.9,
-      "moral": 13.4,
+      "moral": 12.9,
       "tecnologia": 63.0
     }
   },
@@ -3187,11 +3187,11 @@
       "imigracao": 42.4,
       "diplomacia": 64.8,
       "intervencao": 30.5,
-      "economia": 46.0,
+      "economia": 50.8,
       "controle": 35.4,
       "comercio": 34.1,
       "religiao": 57.6,
-      "moral": 41.9,
+      "moral": 44.7,
       "tecnologia": 58.2
     }
   },
@@ -3204,11 +3204,11 @@
       "imigracao": 69.4,
       "diplomacia": 64.8,
       "intervencao": 26.9,
-      "economia": 30.3,
+      "economia": 33.5,
       "controle": 36.1,
       "comercio": 29.1,
       "religiao": 17.6,
-      "moral": 8.9,
+      "moral": 9.0,
       "tecnologia": 52.4
     }
   },
@@ -3221,11 +3221,11 @@
       "imigracao": 50.5,
       "diplomacia": 57.6,
       "intervencao": 30.5,
-      "economia": 54.4,
+      "economia": 58.8,
       "controle": 49.7,
       "comercio": 66.3,
       "religiao": 49.6,
-      "moral": 42.0,
+      "moral": 44.8,
       "tecnologia": 60.6
     }
   },
@@ -3238,11 +3238,11 @@
       "imigracao": 26.0,
       "diplomacia": 40.7,
       "intervencao": 37.5,
-      "economia": 65.5,
+      "economia": 68.4,
       "controle": 59.1,
       "comercio": 44.3,
       "religiao": 59.5,
-      "moral": 69.3,
+      "moral": 69.7,
       "tecnologia": 60.7
     }
   },
@@ -3255,11 +3255,11 @@
       "imigracao": 76.5,
       "diplomacia": 73.1,
       "intervencao": 25.7,
-      "economia": 59.0,
+      "economia": 65.2,
       "controle": 75.5,
       "comercio": 83.6,
       "religiao": 3.3,
-      "moral": 11.3,
+      "moral": 10.4,
       "tecnologia": 58.3
     }
   },
@@ -3272,11 +3272,11 @@
       "imigracao": 48.6,
       "diplomacia": 21.7,
       "intervencao": 62.5,
-      "economia": 72.7,
+      "economia": 76.4,
       "controle": 63.9,
       "comercio": 39.5,
       "religiao": 52.4,
-      "moral": 63.3,
+      "moral": 65.5,
       "tecnologia": 36.9
     }
   },
@@ -3289,11 +3289,11 @@
       "imigracao": 66.0,
       "diplomacia": 63.6,
       "intervencao": 28.1,
-      "economia": 50.8,
+      "economia": 54.8,
       "controle": 47.3,
       "comercio": 33.0,
       "religiao": 50.8,
-      "moral": 34.9,
+      "moral": 36.5,
       "tecnologia": 54.6
     }
   },
@@ -3306,11 +3306,11 @@
       "imigracao": 76.7,
       "diplomacia": 62.4,
       "intervencao": 35.2,
-      "economia": 48.4,
+      "economia": 52.2,
       "controle": 45.0,
       "comercio": 29.4,
       "religiao": 59.1,
-      "moral": 37.2,
+      "moral": 42.0,
       "tecnologia": 53.6
     }
   },
@@ -3323,11 +3323,11 @@
       "imigracao": 58.8,
       "diplomacia": 50.5,
       "intervencao": 34.0,
-      "economia": 54.4,
+      "economia": 58.8,
       "controle": 54.5,
       "comercio": 43.7,
       "religiao": 28.2,
-      "moral": 26.5,
+      "moral": 26.8,
       "tecnologia": 51.2
     }
   },
@@ -3340,11 +3340,11 @@
       "imigracao": 83.8,
       "diplomacia": 34.8,
       "intervencao": 49.4,
-      "economia": 52.0,
+      "economia": 57.5,
       "controle": 47.3,
       "comercio": 35.3,
       "religiao": 42.5,
-      "moral": 23.0,
+      "moral": 24.0,
       "tecnologia": 48.8
     }
   },
@@ -3357,11 +3357,11 @@
       "imigracao": 63.6,
       "diplomacia": 46.9,
       "intervencao": 37.6,
-      "economia": 58.0,
+      "economia": 62.8,
       "controle": 54.5,
       "comercio": 44.9,
       "religiao": 24.6,
-      "moral": 31.3,
+      "moral": 32.3,
       "tecnologia": 41.7
     }
   },
@@ -3374,11 +3374,11 @@
       "imigracao": 64.8,
       "diplomacia": 45.7,
       "intervencao": 50.7,
-      "economia": 58.0,
+      "economia": 62.8,
       "controle": 53.3,
       "comercio": 30.6,
       "religiao": 22.2,
-      "moral": 31.3,
+      "moral": 32.3,
       "tecnologia": 45.2
     }
   },
@@ -3391,11 +3391,11 @@
       "imigracao": 74.1,
       "diplomacia": 91.0,
       "intervencao": 6.7,
-      "economia": 42.3,
+      "economia": 45.4,
       "controle": 81.4,
       "comercio": 69.3,
       "religiao": 5.7,
-      "moral": 8.9,
+      "moral": 6.2,
       "tecnologia": 58.2
     }
   },
@@ -3408,11 +3408,11 @@
       "imigracao": 74.1,
       "diplomacia": 73.1,
       "intervencao": 29.3,
-      "economia": 35.1,
+      "economia": 38.8,
       "controle": 70.7,
       "comercio": 74.0,
       "religiao": 9.3,
-      "moral": 11.3,
+      "moral": 10.4,
       "tecnologia": 56.0
     }
   },
@@ -3425,11 +3425,11 @@
       "imigracao": 68.6,
       "diplomacia": 51.4,
       "intervencao": 51.8,
-      "economia": 51.8,
+      "economia": 55.9,
       "controle": 69.5,
       "comercio": 34.8,
       "religiao": 94.4,
-      "moral": 39.3,
+      "moral": 41.7,
       "tecnologia": 83.2
     }
   },
@@ -3442,11 +3442,11 @@
       "imigracao": 73.3,
       "diplomacia": 61.7,
       "intervencao": 50.2,
-      "economia": 73.2,
+      "economia": 75.6,
       "controle": 85.0,
       "comercio": 52.6,
       "religiao": 92.0,
-      "moral": 28.6,
+      "moral": 29.2,
       "tecnologia": 79.6
     }
   },
@@ -3459,11 +3459,11 @@
       "imigracao": 55.1,
       "diplomacia": 70.7,
       "intervencao": 11.4,
-      "economia": 42.3,
+      "economia": 46.8,
       "controle": 62.4,
       "comercio": 74.0,
       "religiao": 5.7,
-      "moral": 8.9,
+      "moral": 7.6,
       "tecnologia": 40.5
     }
   },
@@ -3476,11 +3476,11 @@
       "imigracao": 53.3,
       "diplomacia": 26.4,
       "intervencao": 60.1,
-      "economia": 65.5,
+      "economia": 69.8,
       "controle": 60.3,
       "comercio": 50.2,
       "religiao": 69.0,
-      "moral": 71.7,
+      "moral": 79.5,
       "tecnologia": 54.8
     }
   },
@@ -3493,11 +3493,11 @@
       "imigracao": 29.5,
       "diplomacia": 11.0,
       "intervencao": 64.9,
-      "economia": 62.0,
+      "economia": 63.3,
       "controle": 48.4,
       "comercio": 49.0,
       "religiao": 66.7,
-      "moral": 69.3,
+      "moral": 73.9,
       "tecnologia": 41.7
     }
   },
@@ -3510,11 +3510,11 @@
       "imigracao": 51.5,
       "diplomacia": 69.5,
       "intervencao": 30.5,
-      "economia": 32.8,
+      "economia": 34.9,
       "controle": 56.4,
       "comercio": 53.8,
       "religiao": 11.7,
-      "moral": 14.9,
+      "moral": 14.6,
       "tecnologia": 57.1
     }
   },
@@ -3527,11 +3527,11 @@
       "imigracao": 46.8,
       "diplomacia": 76.7,
       "intervencao": 22.1,
-      "economia": 43.7,
+      "economia": 48.3,
       "controle": 56.9,
       "comercio": 40.1,
       "religiao": 3.3,
-      "moral": 18.4,
+      "moral": 17.3,
       "tecnologia": 53.6
     }
   },
@@ -3544,11 +3544,11 @@
       "imigracao": 50.3,
       "diplomacia": 71.9,
       "intervencao": 25.7,
-      "economia": 37.5,
+      "economia": 41.4,
       "controle": 58.8,
       "comercio": 59.8,
       "religiao": 6.9,
-      "moral": 10.1,
+      "moral": 7.6,
       "tecnologia": 52.4
     }
   },
@@ -3561,11 +3561,11 @@
       "imigracao": 74.1,
       "diplomacia": 39.5,
       "intervencao": 72.0,
-      "economia": 55.4,
+      "economia": 59.9,
       "controle": 61.2,
       "comercio": 41.9,
       "religiao": 5.7,
-      "moral": 6.5,
+      "moral": 4.8,
       "tecnologia": 58.3
     }
   },
@@ -3578,11 +3578,11 @@
       "imigracao": 78.9,
       "diplomacia": 39.8,
       "intervencao": 56.7,
-      "economia": 48.2,
+      "economia": 53.3,
       "controle": 67.1,
       "comercio": 37.1,
       "religiao": 6.9,
-      "moral": 7.7,
+      "moral": 3.4,
       "tecnologia": 59.4
     }
   },
@@ -3595,11 +3595,11 @@
       "imigracao": 69.4,
       "diplomacia": 51.0,
       "intervencao": 64.5,
-      "economia": 62.5,
+      "economia": 67.8,
       "controle": 75.5,
       "comercio": 52.6,
       "religiao": 11.7,
-      "moral": 10.1,
+      "moral": 4.8,
       "tecnologia": 57.0
     }
   },
@@ -3612,11 +3612,11 @@
       "imigracao": 71.9,
       "diplomacia": 40.2,
       "intervencao": 63.3,
-      "economia": 54.2,
+      "economia": 58.6,
       "controle": 66.0,
       "comercio": 52.6,
       "religiao": 21.0,
-      "moral": 17.0,
+      "moral": 12.9,
       "tecnologia": 57.0
     }
   },
@@ -3629,11 +3629,11 @@
       "imigracao": 71.9,
       "diplomacia": 50.5,
       "intervencao": 54.3,
-      "economia": 50.6,
+      "economia": 54.6,
       "controle": 58.8,
       "comercio": 38.3,
       "religiao": 11.5,
-      "moral": 14.6,
+      "moral": 12.9,
       "tecnologia": 65.3
     }
   },
@@ -3646,11 +3646,11 @@
       "imigracao": 74.3,
       "diplomacia": 39.0,
       "intervencao": 66.9,
-      "economia": 76.2,
+      "economia": 77.6,
       "controle": 75.8,
       "comercio": 65.7,
       "religiao": 27.0,
-      "moral": 25.3,
+      "moral": 25.4,
       "tecnologia": 53.6
     }
   },
@@ -3663,11 +3663,11 @@
       "imigracao": 85.2,
       "diplomacia": 48.6,
       "intervencao": 69.3,
-      "economia": 56.6,
+      "economia": 61.2,
       "controle": 76.7,
       "comercio": 61.0,
       "religiao": 74.1,
-      "moral": 11.9,
+      "moral": 12.5,
       "tecnologia": 68.9
     }
   },
@@ -3680,11 +3680,11 @@
       "imigracao": 56.7,
       "diplomacia": 47.4,
       "intervencao": 61.0,
-      "economia": 49.4,
+      "economia": 53.3,
       "controle": 69.5,
       "comercio": 55.0,
       "religiao": 58.7,
-      "moral": 19.0,
+      "moral": 18.0,
       "tecnologia": 77.2
     }
   },
@@ -3697,11 +3697,11 @@
       "imigracao": 73.0,
       "diplomacia": 66.4,
       "intervencao": 55.0,
-      "economia": 34.0,
+      "economia": 36.3,
       "controle": 44.5,
       "comercio": 53.8,
       "religiao": 2.1,
-      "moral": 7.7,
+      "moral": 4.8,
       "tecnologia": 45.5
     }
   },
@@ -3714,11 +3714,11 @@
       "imigracao": 80.1,
       "diplomacia": 85.0,
       "intervencao": 50.7,
-      "economia": 34.0,
+      "economia": 36.3,
       "controle": 63.6,
       "comercio": 58.6,
       "religiao": 4.5,
-      "moral": 7.7,
+      "moral": 6.2,
       "tecnologia": 49.9
     }
   },
@@ -3731,11 +3731,11 @@
       "imigracao": 79.0,
       "diplomacia": 51.0,
       "intervencao": 65.7,
-      "economia": 22.0,
+      "economia": 24.3,
       "controle": 23.0,
       "comercio": 17.2,
       "religiao": 2.0,
-      "moral": 7.5,
+      "moral": 6.0,
       "tecnologia": 45.2
     }
   },
@@ -3748,11 +3748,11 @@
       "imigracao": 78.9,
       "diplomacia": 30.0,
       "intervencao": 61.3,
-      "economia": 48.4,
+      "economia": 52.2,
       "controle": 67.6,
       "comercio": 27.0,
       "religiao": 3.3,
-      "moral": 11.3,
+      "moral": 6.2,
       "tecnologia": 45.2
     }
   },
@@ -3765,11 +3765,11 @@
       "imigracao": 68.6,
       "diplomacia": 80.2,
       "intervencao": 32.9,
-      "economia": 54.2,
+      "economia": 59.9,
       "controle": 71.9,
       "comercio": 53.8,
       "religiao": 70.6,
-      "moral": 20.2,
+      "moral": 19.4,
       "tecnologia": 70.1
     }
   },
@@ -3782,11 +3782,11 @@
       "imigracao": 42.6,
       "diplomacia": 31.4,
       "intervencao": 44.8,
-      "economia": 50.8,
+      "economia": 54.8,
       "controle": 40.2,
       "comercio": 28.2,
       "religiao": 65.5,
-      "moral": 37.1,
+      "moral": 37.7,
       "tecnologia": 60.6
     }
   },
@@ -3799,11 +3799,11 @@
       "imigracao": 52.9,
       "diplomacia": 26.4,
       "intervencao": 61.3,
-      "economia": 49.6,
+      "economia": 53.5,
       "controle": 48.5,
       "comercio": 36.5,
       "religiao": 53.2,
-      "moral": 31.3,
+      "moral": 32.3,
       "tecnologia": 39.3
     }
   },
@@ -3816,11 +3816,11 @@
       "imigracao": 73.1,
       "diplomacia": 41.4,
       "intervencao": 72.9,
-      "economia": 59.0,
+      "economia": 62.6,
       "controle": 79.0,
       "comercio": 38.7,
       "religiao": 49.6,
-      "moral": 27.7,
+      "moral": 25.4,
       "tecnologia": 58.2
     }
   },
@@ -3833,11 +3833,11 @@
       "imigracao": 80.1,
       "diplomacia": 47.4,
       "intervencao": 65.7,
-      "economia": 23.2,
+      "economia": 25.6,
       "controle": 43.3,
       "comercio": 18.1,
       "religiao": 17.6,
-      "moral": 19.6,
+      "moral": 20.1,
       "tecnologia": 67.7
     }
   },
@@ -3850,11 +3850,11 @@
       "imigracao": 58.8,
       "diplomacia": 42.1,
       "intervencao": 59.0,
-      "economia": 47.2,
+      "economia": 50.9,
       "controle": 49.7,
       "comercio": 34.1,
       "religiao": 40.1,
-      "moral": 15.8,
+      "moral": 12.9,
       "tecnologia": 40.5
     }
   },
@@ -3867,11 +3867,11 @@
       "imigracao": 86.0,
       "diplomacia": 40.2,
       "intervencao": 68.1,
-      "economia": 50.6,
+      "economia": 55.9,
       "controle": 62.4,
       "comercio": 59.8,
       "religiao": 1.0,
-      "moral": 7.7,
+      "moral": 6.2,
       "tecnologia": 65.3
     }
   },
@@ -3884,11 +3884,11 @@
       "imigracao": 78.1,
       "diplomacia": 54.0,
       "intervencao": 49.5,
-      "economia": 54.2,
+      "economia": 58.6,
       "controle": 68.3,
       "comercio": 50.2,
       "religiao": 59.9,
-      "moral": 13.1,
+      "moral": 12.5,
       "tecnologia": 61.8
     }
   },
@@ -3901,11 +3901,11 @@
       "imigracao": 51.7,
       "diplomacia": 24.0,
       "intervencao": 66.0,
-      "economia": 62.0,
+      "economia": 65.9,
       "controle": 56.7,
       "comercio": 32.4,
       "religiao": 15.1,
-      "moral": 23.0,
+      "moral": 19.9,
       "tecnologia": 46.3
     }
   },
@@ -3918,11 +3918,11 @@
       "imigracao": 50.5,
       "diplomacia": 60.0,
       "intervencao": 42.4,
-      "economia": 64.9,
+      "economia": 70.4,
       "controle": 77.9,
       "comercio": 61.0,
       "religiao": 24.6,
-      "moral": 14.6,
+      "moral": 10.1,
       "tecnologia": 51.0
     }
   },
@@ -3935,11 +3935,11 @@
       "imigracao": 50.3,
       "diplomacia": 49.3,
       "intervencao": 57.9,
-      "economia": 42.3,
+      "economia": 45.4,
       "controle": 64.8,
       "comercio": 41.9,
       "religiao": 28.3,
-      "moral": 22.0,
+      "moral": 18.7,
       "tecnologia": 65.3
     }
   },
@@ -3952,11 +3952,11 @@
       "imigracao": 49.3,
       "diplomacia": 37.1,
       "intervencao": 51.8,
-      "economia": 41.3,
+      "economia": 44.3,
       "controle": 50.9,
       "comercio": 35.3,
       "religiao": 15.1,
-      "moral": 9.9,
+      "moral": 8.8,
       "tecnologia": 57.0
     }
   },
@@ -3969,11 +3969,11 @@
       "imigracao": 50.3,
       "diplomacia": 30.0,
       "intervencao": 56.5,
-      "economia": 50.8,
+      "economia": 54.8,
       "controle": 50.9,
       "comercio": 43.7,
       "religiao": 12.9,
-      "moral": 14.9,
+      "moral": 11.8,
       "tecnologia": 64.1
     }
   },
@@ -3986,11 +3986,11 @@
       "imigracao": 57.6,
       "diplomacia": 47.4,
       "intervencao": 52.6,
-      "economia": 45.9,
+      "economia": 49.4,
       "controle": 74.3,
       "comercio": 55.0,
       "religiao": 33.0,
-      "moral": 19.4,
+      "moral": 18.5,
       "tecnologia": 65.3
     }
   },
@@ -4003,11 +4003,11 @@
       "imigracao": 78.9,
       "diplomacia": 50.5,
       "intervencao": 34.0,
-      "economia": 37.5,
+      "economia": 41.4,
       "controle": 44.5,
       "comercio": 65.7,
       "religiao": 3.3,
-      "moral": 6.5,
+      "moral": 6.2,
       "tecnologia": 53.6
     }
   },
@@ -4020,11 +4020,11 @@
       "imigracao": 57.9,
       "diplomacia": 71.9,
       "intervencao": 18.6,
-      "economia": 38.7,
+      "economia": 41.5,
       "controle": 68.3,
       "comercio": 44.3,
       "religiao": 62.2,
-      "moral": 27.4,
+      "moral": 29.2,
       "tecnologia": 80.8
     }
   },
@@ -4037,11 +4037,11 @@
       "imigracao": 44.5,
       "diplomacia": 39.5,
       "intervencao": 66.0,
-      "economia": 57.8,
+      "economia": 61.2,
       "controle": 68.3,
       "comercio": 40.7,
       "religiao": 54.4,
-      "moral": 27.7,
+      "moral": 28.2,
       "tecnologia": 64.1
     }
   },
@@ -4054,11 +4054,11 @@
       "imigracao": 74.1,
       "diplomacia": 57.6,
       "intervencao": 62.6,
-      "economia": 76.8,
+      "economia": 77.0,
       "controle": 88.6,
       "comercio": 70.5,
       "religiao": 16.4,
-      "moral": 8.9,
+      "moral": 6.2,
       "tecnologia": 55.8
     }
   },
@@ -4071,11 +4071,11 @@
       "imigracao": 38.6,
       "diplomacia": 19.3,
       "intervencao": 63.7,
-      "economia": 43.7,
+      "economia": 47.0,
       "controle": 50.9,
       "comercio": 24.6,
       "religiao": 48.4,
-      "moral": 49.1,
+      "moral": 53.1,
       "tecnologia": 64.3
     }
   },
@@ -4088,11 +4088,11 @@
       "imigracao": 55.2,
       "diplomacia": 32.4,
       "intervencao": 62.5,
-      "economia": 53.6,
+      "economia": 57.9,
       "controle": 68.6,
       "comercio": 57.4,
       "religiao": 18.7,
-      "moral": 11.0,
+      "moral": 10.1,
       "tecnologia": 51.0
     }
   },
@@ -4105,11 +4105,11 @@
       "imigracao": 44.5,
       "diplomacia": 36.2,
       "intervencao": 51.9,
-      "economia": 40.1,
+      "economia": 43.0,
       "controle": 52.1,
       "comercio": 37.7,
       "religiao": 34.1,
-      "moral": 18.2,
+      "moral": 17.1,
       "tecnologia": 63.0
     }
   },
@@ -4122,11 +4122,11 @@
       "imigracao": 82.5,
       "diplomacia": 46.2,
       "intervencao": 78.8,
-      "economia": 76.8,
+      "economia": 82.3,
       "controle": 85.0,
       "comercio": 86.0,
       "religiao": 47.4,
-      "moral": 13.7,
+      "moral": 13.2,
       "tecnologia": 65.3
     }
   },
@@ -4139,11 +4139,11 @@
       "imigracao": 57.6,
       "diplomacia": 24.8,
       "intervencao": 62.1,
-      "economia": 49.6,
+      "economia": 53.5,
       "controle": 50.9,
       "comercio": 27.0,
       "religiao": 21.0,
-      "moral": 43.2,
+      "moral": 44.8,
       "tecnologia": 57.1
     }
   },
@@ -4156,11 +4156,11 @@
       "imigracao": 51.7,
       "diplomacia": 30.0,
       "intervencao": 58.9,
-      "economia": 52.0,
+      "economia": 56.2,
       "controle": 47.3,
       "comercio": 33.0,
       "religiao": 33.0,
-      "moral": 23.0,
+      "moral": 22.7,
       "tecnologia": 52.4
     }
   },
@@ -4173,11 +4173,11 @@
       "imigracao": 53.9,
       "diplomacia": 50.5,
       "intervencao": 54.3,
-      "economia": 48.2,
+      "economia": 52.0,
       "controle": 63.6,
       "comercio": 56.2,
       "religiao": 20.0,
-      "moral": 18.4,
+      "moral": 14.5,
       "tecnologia": 66.5
     }
   },
@@ -4190,11 +4190,11 @@
       "imigracao": 57.6,
       "diplomacia": 32.6,
       "intervencao": 48.3,
-      "economia": 44.9,
+      "economia": 48.3,
       "controle": 43.8,
       "comercio": 31.8,
       "religiao": 46.0,
-      "moral": 31.3,
+      "moral": 32.3,
       "tecnologia": 34.5
     }
   },
@@ -4207,11 +4207,11 @@
       "imigracao": 50.5,
       "diplomacia": 35.0,
       "intervencao": 42.4,
-      "economia": 43.7,
+      "economia": 47.0,
       "controle": 48.5,
       "comercio": 23.4,
       "religiao": 47.2,
-      "moral": 23.0,
+      "moral": 21.3,
       "tecnologia": 51.0
     }
   },
@@ -4224,11 +4224,11 @@
       "imigracao": 44.5,
       "diplomacia": 35.0,
       "intervencao": 57.9,
-      "economia": 49.6,
+      "economia": 53.5,
       "controle": 61.6,
       "comercio": 38.9,
       "religiao": 22.2,
-      "moral": 26.5,
+      "moral": 26.8,
       "tecnologia": 58.2
     }
   },
@@ -4241,11 +4241,11 @@
       "imigracao": 78.9,
       "diplomacia": 76.7,
       "intervencao": 24.5,
-      "economia": 55.4,
+      "economia": 59.9,
       "controle": 67.1,
       "comercio": 69.3,
       "religiao": 18.8,
-      "moral": 13.7,
+      "moral": 14.6,
       "tecnologia": 45.2
     }
   },
@@ -4258,11 +4258,11 @@
       "imigracao": 48.1,
       "diplomacia": 26.4,
       "intervencao": 62.5,
-      "economia": 43.7,
+      "economia": 47.0,
       "controle": 42.6,
       "comercio": 35.3,
       "religiao": 21.0,
-      "moral": 21.8,
+      "moral": 19.9,
       "tecnologia": 56.0
     }
   },
@@ -4275,11 +4275,11 @@
       "imigracao": 31.4,
       "diplomacia": 47.4,
       "intervencao": 55.0,
-      "economia": 22.0,
+      "economia": 24.3,
       "controle": 24.2,
       "comercio": 24.4,
       "religiao": 22.2,
-      "moral": 9.9,
+      "moral": 10.2,
       "tecnologia": 32.4
     }
   },
@@ -4292,11 +4292,11 @@
       "imigracao": 80.7,
       "diplomacia": 85.0,
       "intervencao": 13.8,
-      "economia": 66.1,
+      "economia": 65.2,
       "controle": 83.8,
       "comercio": 84.8,
       "religiao": 88.1,
-      "moral": 36.0,
+      "moral": 35.0,
       "tecnologia": 74.9
     }
   },
@@ -4309,11 +4309,11 @@
       "imigracao": 71.8,
       "diplomacia": 86.2,
       "intervencao": 15.0,
-      "economia": 48.2,
+      "economia": 53.3,
       "controle": 62.4,
       "comercio": 52.6,
       "religiao": 5.7,
-      "moral": 6.5,
+      "moral": 4.8,
       "tecnologia": 52.2
     }
   },
@@ -4326,11 +4326,11 @@
       "imigracao": 35.0,
       "diplomacia": 27.6,
       "intervencao": 66.0,
-      "economia": 54.4,
+      "economia": 58.8,
       "controle": 62.8,
       "comercio": 38.9,
       "religiao": 35.3,
-      "moral": 39.6,
+      "moral": 42.0,
       "tecnologia": 53.6
     }
   },
@@ -4343,11 +4343,11 @@
       "imigracao": 71.8,
       "diplomacia": 53.3,
       "intervencao": 50.2,
-      "economia": 25.6,
+      "economia": 28.3,
       "controle": 26.6,
       "comercio": 32.7,
       "religiao": 4.5,
-      "moral": 7.7,
+      "moral": 4.8,
       "tecnologia": 49.0
     }
   },
@@ -4360,11 +4360,11 @@
       "imigracao": 62.4,
       "diplomacia": 69.5,
       "intervencao": 23.3,
-      "economia": 28.2,
+      "economia": 29.9,
       "controle": 31.9,
       "comercio": 22.2,
       "religiao": 46.0,
-      "moral": 12.2,
+      "moral": 12.9,
       "tecnologia": 68.9
     }
   },
@@ -4377,11 +4377,11 @@
       "imigracao": 49.3,
       "diplomacia": 27.1,
       "intervencao": 72.9,
-      "economia": 43.7,
+      "economia": 47.0,
       "controle": 34.2,
       "comercio": 29.4,
       "religiao": 18.7,
-      "moral": 15.8,
+      "moral": 14.3,
       "tecnologia": 50.0
     }
   },
@@ -4394,11 +4394,11 @@
       "imigracao": 75.5,
       "diplomacia": 60.5,
       "intervencao": 34.8,
-      "economia": 50.8,
+      "economia": 54.8,
       "controle": 37.8,
       "comercio": 35.3,
       "religiao": 11.5,
-      "moral": 9.9,
+      "moral": 10.2,
       "tecnologia": 45.2
     }
   },
@@ -4411,11 +4411,11 @@
       "imigracao": 70.7,
       "diplomacia": 60.0,
       "intervencao": 36.4,
-      "economia": 36.5,
+      "economia": 39.0,
       "controle": 34.2,
       "comercio": 37.7,
       "religiao": 23.4,
-      "moral": 18.2,
+      "moral": 17.1,
       "tecnologia": 65.3
     }
   },
@@ -4428,11 +4428,11 @@
       "imigracao": 75.3,
       "diplomacia": 47.4,
       "intervencao": 51.4,
-      "economia": 53.0,
+      "economia": 57.3,
       "controle": 67.1,
       "comercio": 74.0,
       "religiao": 5.7,
-      "moral": 12.5,
+      "moral": 11.8,
       "tecnologia": 37.1
     }
   },
@@ -4445,11 +4445,11 @@
       "imigracao": 76.7,
       "diplomacia": 75.5,
       "intervencao": 22.1,
-      "economia": 43.5,
+      "economia": 46.8,
       "controle": 61.2,
       "comercio": 72.9,
       "religiao": 30.6,
-      "moral": 13.4,
+      "moral": 12.9,
       "tecnologia": 60.6
     }
   },
@@ -4462,11 +4462,11 @@
       "imigracao": 76.7,
       "diplomacia": 65.2,
       "intervencao": 37.1,
-      "economia": 49.4,
+      "economia": 53.3,
       "controle": 70.7,
       "comercio": 76.4,
       "religiao": 6.8,
-      "moral": 12.2,
+      "moral": 11.5,
       "tecnologia": 67.7
     }
   },
@@ -4479,11 +4479,11 @@
       "imigracao": 82.6,
       "diplomacia": 66.0,
       "intervencao": 18.6,
-      "economia": 39.9,
+      "economia": 44.1,
       "controle": 67.1,
       "comercio": 43.1,
       "religiao": 15.1,
-      "moral": 7.5,
+      "moral": 6.0,
       "tecnologia": 67.9
     }
   },
@@ -4496,11 +4496,11 @@
       "imigracao": 76.5,
       "diplomacia": 69.5,
       "intervencao": 25.7,
-      "economia": 36.3,
+      "economia": 40.1,
       "controle": 49.3,
       "comercio": 69.3,
       "religiao": 17.6,
-      "moral": 13.7,
+      "moral": 13.2,
       "tecnologia": 52.4
     }
   },
@@ -4513,11 +4513,11 @@
       "imigracao": 65.8,
       "diplomacia": 65.2,
       "intervencao": 47.9,
-      "economia": 50.6,
+      "economia": 54.6,
       "controle": 67.1,
       "comercio": 66.9,
       "religiao": 23.6,
-      "moral": 35.1,
+      "moral": 28.4,
       "tecnologia": 60.6
     }
   },
@@ -4530,11 +4530,11 @@
       "imigracao": 54.0,
       "diplomacia": 30.0,
       "intervencao": 68.4,
-      "economia": 59.6,
+      "economia": 63.2,
       "controle": 69.8,
       "comercio": 56.2,
       "religiao": 24.6,
-      "moral": 38.4,
+      "moral": 35.1,
       "tecnologia": 45.2
     }
   },
@@ -4547,11 +4547,11 @@
       "imigracao": 35.0,
       "diplomacia": 15.7,
       "intervencao": 66.0,
-      "economia": 53.2,
+      "economia": 57.5,
       "controle": 50.9,
       "comercio": 24.6,
       "religiao": 31.8,
-      "moral": 23.0,
+      "moral": 22.7,
       "tecnologia": 38.1
     }
   },
@@ -4564,11 +4564,11 @@
       "imigracao": 63.6,
       "diplomacia": 32.4,
       "intervencao": 62.5,
-      "economia": 49.6,
+      "economia": 54.8,
       "controle": 60.4,
       "comercio": 43.7,
       "religiao": 15.1,
-      "moral": 20.6,
+      "moral": 18.5,
       "tecnologia": 31.0
     }
   },
@@ -4581,11 +4581,11 @@
       "imigracao": 45.7,
       "diplomacia": 73.1,
       "intervencao": 19.8,
-      "economia": 67.3,
+      "economia": 73.1,
       "controle": 85.0,
       "comercio": 61.0,
       "religiao": 23.4,
-      "moral": 26.5,
+      "moral": 28.1,
       "tecnologia": 61.8
     }
   },
@@ -4598,11 +4598,11 @@
       "imigracao": 49.1,
       "diplomacia": 74.3,
       "intervencao": 22.1,
-      "economia": 36.4,
+      "economia": 40.2,
       "controle": 35.0,
       "comercio": 30.4,
       "religiao": 12.9,
-      "moral": 22.0,
+      "moral": 24.3,
       "tecnologia": 59.4
     }
   },
@@ -4615,11 +4615,11 @@
       "imigracao": 61.2,
       "diplomacia": 76.7,
       "intervencao": 6.7,
-      "economia": 24.4,
+      "economia": 27.0,
       "controle": 34.9,
       "comercio": 16.0,
       "religiao": 33.0,
-      "moral": 8.7,
+      "moral": 8.8,
       "tecnologia": 77.2
     }
   },
@@ -4632,11 +4632,11 @@
       "imigracao": 76.5,
       "diplomacia": 45.0,
       "intervencao": 59.8,
-      "economia": 50.6,
+      "economia": 54.6,
       "controle": 64.8,
       "comercio": 75.2,
       "religiao": 5.7,
-      "moral": 11.3,
+      "moral": 11.8,
       "tecnologia": 41.7
     }
   },
@@ -4649,11 +4649,11 @@
       "imigracao": 45.0,
       "diplomacia": 44.3,
       "intervencao": 56.5,
-      "economia": 67.9,
+      "economia": 73.7,
       "controle": 72.2,
       "comercio": 55.0,
       "religiao": 63.1,
-      "moral": 59.8,
+      "moral": 57.3,
       "tecnologia": 67.7
     }
   },
@@ -4666,11 +4666,11 @@
       "imigracao": 31.9,
       "diplomacia": 32.4,
       "intervencao": 63.7,
-      "economia": 72.7,
+      "economia": 76.4,
       "controle": 73.4,
       "comercio": 63.3,
       "religiao": 52.4,
-      "moral": 51.4,
+      "moral": 47.5,
       "tecnologia": 40.5
     }
   },
@@ -4683,11 +4683,11 @@
       "imigracao": 55.2,
       "diplomacia": 60.5,
       "intervencao": 49.0,
-      "economia": 64.3,
+      "economia": 68.4,
       "controle": 68.6,
       "comercio": 68.1,
       "religiao": 22.2,
-      "moral": 27.7,
+      "moral": 21.2,
       "tecnologia": 52.4
     }
   },
@@ -4700,11 +4700,11 @@
       "imigracao": 78.9,
       "diplomacia": 88.6,
       "intervencao": 17.4,
-      "economia": 54.2,
+      "economia": 58.6,
       "controle": 68.3,
       "comercio": 78.8,
       "religiao": 15.2,
-      "moral": 7.7,
+      "moral": 4.8,
       "tecnologia": 55.8
     }
   },
@@ -4717,11 +4717,11 @@
       "imigracao": 41.4,
       "diplomacia": 45.5,
       "intervencao": 55.3,
-      "economia": 69.1,
+      "economia": 73.7,
       "controle": 69.8,
       "comercio": 58.6,
       "religiao": 46.4,
-      "moral": 51.4,
+      "moral": 50.2,
       "tecnologia": 51.2
     }
   },
@@ -4734,11 +4734,11 @@
       "imigracao": 64.8,
       "diplomacia": 66.0,
       "intervencao": 42.4,
-      "economia": 19.9,
+      "economia": 22.0,
       "controle": 35.4,
       "comercio": 35.3,
       "religiao": 21.0,
-      "moral": 25.3,
+      "moral": 25.4,
       "tecnologia": 66.5
     }
   },
@@ -4751,7 +4751,7 @@
       "imigracao": 38.3,
       "diplomacia": 51.0,
       "intervencao": 52.6,
-      "economia": 91.7,
+      "economia": 93.5,
       "controle": 92.4,
       "comercio": 84.8,
       "religiao": 38.1,
@@ -4768,11 +4768,11 @@
       "imigracao": 76.9,
       "diplomacia": 55.2,
       "intervencao": 23.3,
-      "economia": 34.1,
+      "economia": 37.7,
       "controle": 35.4,
       "comercio": 72.2,
       "religiao": 86.0,
-      "moral": 16.7,
+      "moral": 18.1,
       "tecnologia": 70.1
     }
   },
@@ -4785,11 +4785,11 @@
       "imigracao": 48.6,
       "diplomacia": 58.8,
       "intervencao": 47.1,
-      "economia": 93.7,
+      "economia": 94.3,
       "controle": 93.7,
       "comercio": 74.0,
       "religiao": 91.7,
-      "moral": 51.4,
+      "moral": 54.4,
       "tecnologia": 63.0
     }
   },
@@ -4802,11 +4802,11 @@
       "imigracao": 57.5,
       "diplomacia": 74.8,
       "intervencao": 47.9,
-      "economia": 66.1,
+      "economia": 69.1,
       "controle": 75.5,
       "comercio": 71.7,
       "religiao": 33.1,
-      "moral": 14.9,
+      "moral": 10.4,
       "tecnologia": 49.9
     }
   },
@@ -4819,11 +4819,11 @@
       "imigracao": 70.7,
       "diplomacia": 61.7,
       "intervencao": 40.7,
-      "economia": 56.8,
+      "economia": 58.8,
       "controle": 77.1,
       "comercio": 59.1,
       "religiao": 29.4,
-      "moral": 12.2,
+      "moral": 11.5,
       "tecnologia": 64.1
     }
   },
@@ -4836,11 +4836,11 @@
       "imigracao": 80.2,
       "diplomacia": 68.3,
       "intervencao": 42.4,
-      "economia": 12.5,
+      "economia": 13.8,
       "controle": 20.6,
       "comercio": 66.0,
       "religiao": 29.4,
-      "moral": 11.0,
+      "moral": 11.5,
       "tecnologia": 71.3
     }
   },
@@ -4853,11 +4853,11 @@
       "imigracao": 24.8,
       "diplomacia": 18.1,
       "intervencao": 67.2,
-      "economia": 75.0,
+      "economia": 79.0,
       "controle": 68.6,
       "comercio": 44.3,
       "religiao": 72.6,
-      "moral": 76.4,
+      "moral": 79.4,
       "tecnologia": 40.5
     }
   },
@@ -4870,11 +4870,11 @@
       "imigracao": 52.1,
       "diplomacia": 37.1,
       "intervencao": 62.5,
-      "economia": 81.0,
+      "economia": 81.6,
       "controle": 80.5,
       "comercio": 66.9,
       "religiao": 89.3,
-      "moral": 56.2,
+      "moral": 58.6,
       "tecnologia": 72.5
     }
   },
@@ -4887,11 +4887,11 @@
       "imigracao": 74.3,
       "diplomacia": 27.6,
       "intervencao": 62.5,
-      "economia": 19.6,
+      "economia": 21.7,
       "controle": 30.1,
       "comercio": 44.6,
       "religiao": 54.4,
-      "moral": 6.3,
+      "moral": 6.0,
       "tecnologia": 50.0
     }
   },
@@ -4904,11 +4904,11 @@
       "imigracao": 93.2,
       "diplomacia": 40.2,
       "intervencao": 70.5,
-      "economia": 54.3,
+      "economia": 60.0,
       "controle": 83.8,
       "comercio": 92.3,
       "religiao": 6.9,
-      "moral": 6.5,
+      "moral": 6.2,
       "tecnologia": 27.6
     }
   },
@@ -4921,11 +4921,11 @@
       "imigracao": 88.4,
       "diplomacia": 89.8,
       "intervencao": 11.4,
-      "economia": 26.8,
+      "economia": 29.6,
       "controle": 82.6,
       "comercio": 94.3,
       "religiao": 12.9,
-      "moral": 6.5,
+      "moral": 6.2,
       "tecnologia": 38.1
     }
   },
@@ -4938,11 +4938,11 @@
       "imigracao": 79.0,
       "diplomacia": 51.4,
       "intervencao": 55.3,
-      "economia": 16.0,
+      "economia": 17.7,
       "controle": 27.8,
       "comercio": 49.4,
       "religiao": 18.7,
-      "moral": 8.7,
+      "moral": 10.1,
       "tecnologia": 57.1
     }
   },
@@ -4955,11 +4955,11 @@
       "imigracao": 81.3,
       "diplomacia": 79.0,
       "intervencao": 25.7,
-      "economia": 13.7,
+      "economia": 12.5,
       "controle": 19.4,
       "comercio": 41.0,
       "religiao": 16.4,
-      "moral": 14.9,
+      "moral": 14.6,
       "tecnologia": 63.0
     }
   },
@@ -4972,11 +4972,11 @@
       "imigracao": 74.3,
       "diplomacia": 52.9,
       "intervencao": 61.4,
-      "economia": 24.4,
+      "economia": 24.3,
       "controle": 24.2,
       "comercio": 38.7,
       "religiao": 63.9,
-      "moral": 53.9,
+      "moral": 58.7,
       "tecnologia": 76.0
     }
   },
@@ -4989,11 +4989,11 @@
       "imigracao": 31.9,
       "diplomacia": 25.2,
       "intervencao": 60.1,
-      "economia": 65.5,
+      "economia": 64.5,
       "controle": 55.5,
       "comercio": 62.1,
       "religiao": 56.0,
-      "moral": 63.3,
+      "moral": 61.4,
       "tecnologia": 64.3
     }
   },
@@ -5006,11 +5006,11 @@
       "imigracao": 23.6,
       "diplomacia": 19.3,
       "intervencao": 74.4,
-      "economia": 53.6,
+      "economia": 54.0,
       "controle": 43.6,
       "comercio": 50.2,
       "religiao": 94.0,
-      "moral": 88.3,
+      "moral": 86.4,
       "tecnologia": 25.2
     }
   },
@@ -5023,11 +5023,11 @@
       "imigracao": 20.5,
       "diplomacia": 25.2,
       "intervencao": 57.7,
-      "economia": 58.4,
+      "economia": 56.7,
       "controle": 69.8,
       "comercio": 40.7,
       "religiao": 25.0,
-      "moral": 51.0,
+      "moral": 52.6,
       "tecnologia": 61.9
     }
   },
@@ -5040,11 +5040,11 @@
       "imigracao": 23.6,
       "diplomacia": 25.2,
       "intervencao": 60.1,
-      "economia": 67.9,
+      "economia": 67.2,
       "controle": 62.7,
       "comercio": 33.6,
       "religiao": 46.4,
-      "moral": 61.0,
+      "moral": 64.2,
       "tecnologia": 74.9
     }
   },
@@ -5057,11 +5057,11 @@
       "imigracao": 26.7,
       "diplomacia": 27.6,
       "intervencao": 53.0,
-      "economia": 44.9,
+      "economia": 44.4,
       "controle": 61.6,
       "comercio": 44.9,
       "religiao": 25.8,
-      "moral": 37.2,
+      "moral": 33.7,
       "tecnologia": 70.1
     }
   },
@@ -5074,11 +5074,11 @@
       "imigracao": 68.2,
       "diplomacia": 50.5,
       "intervencao": 40.0,
-      "economia": 18.4,
+      "economia": 19.0,
       "controle": 24.2,
       "comercio": 24.4,
       "religiao": 24.8,
-      "moral": 24.4,
+      "moral": 24.3,
       "tecnologia": 65.3
     }
   },
@@ -5091,11 +5091,11 @@
       "imigracao": 74.5,
       "diplomacia": 39.8,
       "intervencao": 48.3,
-      "economia": 34.1,
+      "economia": 36.4,
       "controle": 35.4,
       "comercio": 18.7,
       "religiao": 68.3,
-      "moral": 70.5,
+      "moral": 80.9,
       "tecnologia": 71.4
     }
   },
@@ -5108,11 +5108,11 @@
       "imigracao": 80.2,
       "diplomacia": 43.3,
       "intervencao": 48.3,
-      "economia": 35.3,
+      "economia": 39.0,
       "controle": 31.9,
       "comercio": 35.3,
       "religiao": 27.0,
-      "moral": 30.1,
+      "moral": 32.3,
       "tecnologia": 41.7
     }
   },
@@ -5125,11 +5125,11 @@
       "imigracao": 46.9,
       "diplomacia": 58.8,
       "intervencao": 35.2,
-      "economia": 33.9,
+      "economia": 37.5,
       "controle": 43.2,
       "comercio": 7.7,
       "religiao": 6.8,
-      "moral": 9.9,
+      "moral": 10.2,
       "tecnologia": 84.4
     }
   },
@@ -5142,11 +5142,11 @@
       "imigracao": 54.0,
       "diplomacia": 34.8,
       "intervencao": 47.0,
-      "economia": 59.0,
+      "economia": 63.9,
       "controle": 75.5,
       "comercio": 64.5,
       "religiao": 46.0,
-      "moral": 21.8,
+      "moral": 21.3,
       "tecnologia": 71.3
     }
   },
@@ -5159,11 +5159,11 @@
       "imigracao": 79.0,
       "diplomacia": 27.6,
       "intervencao": 51.8,
-      "economia": 55.4,
+      "economia": 59.9,
       "controle": 77.9,
       "comercio": 78.8,
       "religiao": 62.7,
-      "moral": 18.2,
+      "moral": 19.8,
       "tecnologia": 67.7
     }
   },
@@ -5176,11 +5176,11 @@
       "imigracao": 88.4,
       "diplomacia": 64.8,
       "intervencao": 43.6,
-      "economia": 42.3,
+      "economia": 46.8,
       "controle": 69.5,
       "comercio": 63.3,
       "religiao": 26.0,
-      "moral": 12.5,
+      "moral": 13.2,
       "tecnologia": 65.3
     }
   },
@@ -5193,11 +5193,11 @@
       "imigracao": 86.4,
       "diplomacia": 87.4,
       "intervencao": 18.6,
-      "economia": 59.0,
+      "economia": 63.9,
       "controle": 80.2,
       "comercio": 65.7,
       "religiao": 63.4,
-      "moral": 11.9,
+      "moral": 11.1,
       "tecnologia": 67.7
     }
   },
@@ -5210,11 +5210,11 @@
       "imigracao": 52.7,
       "diplomacia": 75.5,
       "intervencao": 11.4,
-      "economia": 17.2,
+      "economia": 19.0,
       "controle": 19.4,
       "comercio": 29.1,
       "religiao": 21.2,
-      "moral": 11.3,
+      "moral": 9.0,
       "tecnologia": 70.1
     }
   },
@@ -5227,11 +5227,11 @@
       "imigracao": 62.4,
       "diplomacia": 58.1,
       "intervencao": 39.5,
-      "economia": 32.7,
+      "economia": 33.5,
       "controle": 56.3,
       "comercio": 51.8,
       "religiao": 19.9,
-      "moral": 13.4,
+      "moral": 12.9,
       "tecnologia": 50.0
     }
   },
@@ -5244,11 +5244,11 @@
       "imigracao": 77.9,
       "diplomacia": 74.3,
       "intervencao": 26.9,
-      "economia": 64.9,
+      "economia": 70.4,
       "controle": 83.8,
       "comercio": 76.4,
       "religiao": 58.0,
-      "moral": 19.4,
+      "moral": 21.2,
       "tecnologia": 67.7
     }
   },
@@ -5261,11 +5261,11 @@
       "imigracao": 23.6,
       "diplomacia": 22.9,
       "intervencao": 56.5,
-      "economia": 61.5,
+      "economia": 65.3,
       "controle": 54.5,
       "comercio": 34.1,
       "religiao": 59.5,
-      "moral": 64.5,
+      "moral": 64.1,
       "tecnologia": 50.0
     }
   },
@@ -5278,11 +5278,11 @@
       "imigracao": 99.1,
       "diplomacia": 91.0,
       "intervencao": 18.6,
-      "economia": 63.8,
+      "economia": 67.9,
       "controle": 81.4,
       "comercio": 82.8,
       "religiao": 2.1,
-      "moral": 7.7,
+      "moral": 4.8,
       "tecnologia": 21.7
     }
   },
@@ -5295,11 +5295,11 @@
       "imigracao": 77.7,
       "diplomacia": 50.5,
       "intervencao": 47.1,
-      "economia": 57.9,
+      "economia": 62.7,
       "controle": 69.5,
       "comercio": 74.4,
       "religiao": 2.1,
-      "moral": 7.7,
+      "moral": 4.8,
       "tecnologia": 36.9
     }
   },
@@ -5312,11 +5312,11 @@
       "imigracao": 77.7,
       "diplomacia": 79.0,
       "intervencao": 29.3,
-      "economia": 63.8,
+      "economia": 69.2,
       "controle": 86.1,
       "comercio": 91.1,
       "religiao": 2.1,
-      "moral": 7.7,
+      "moral": 6.2,
       "tecnologia": 59.4
     }
   },
@@ -5329,11 +5329,11 @@
       "imigracao": 83.7,
       "diplomacia": 89.8,
       "intervencao": 12.6,
-      "economia": 29.2,
+      "economia": 32.3,
       "controle": 51.7,
       "comercio": 50.2,
       "religiao": 6.9,
-      "moral": 3.0,
+      "moral": 2.1,
       "tecnologia": 67.7
     }
   },
@@ -5346,11 +5346,11 @@
       "imigracao": 51.4,
       "diplomacia": 38.3,
       "intervencao": 44.6,
-      "economia": 85.3,
+      "economia": 89.0,
       "controle": 88.9,
       "comercio": 81.2,
       "religiao": 53.6,
-      "moral": 23.7,
+      "moral": 17.9,
       "tecnologia": 47.6
     }
   },
@@ -5363,11 +5363,11 @@
       "imigracao": 33.1,
       "diplomacia": 21.7,
       "intervencao": 50.6,
-      "economia": 29.1,
+      "economia": 30.9,
       "controle": 15.9,
       "comercio": 7.7,
       "religiao": 69.0,
-      "moral": 71.7,
+      "moral": 71.1,
       "tecnologia": 54.8
     }
   },
@@ -5380,11 +5380,11 @@
       "imigracao": 31.7,
       "diplomacia": 69.5,
       "intervencao": 29.3,
-      "economia": 22.0,
+      "economia": 24.3,
       "controle": 30.1,
       "comercio": 23.2,
       "religiao": 71.9,
-      "moral": 69.3,
+      "moral": 73.9,
       "tecnologia": 74.9
     }
   },
@@ -5397,11 +5397,11 @@
       "imigracao": 48.6,
       "diplomacia": 33.6,
       "intervencao": 57.7,
-      "economia": 48.4,
+      "economia": 52.2,
       "controle": 58.0,
       "comercio": 48.4,
       "religiao": 54.8,
-      "moral": 44.3,
+      "moral": 42.0,
       "tecnologia": 57.0
     }
   },
@@ -5414,11 +5414,11 @@
       "imigracao": 74.5,
       "diplomacia": 67.1,
       "intervencao": 22.1,
-      "economia": 96.0,
+      "economia": 95.6,
       "controle": 91.3,
       "comercio": 84.8,
       "religiao": 98.0,
-      "moral": 35.7,
+      "moral": 33.3,
       "tecnologia": 83.2
     }
   },
@@ -5431,11 +5431,11 @@
       "imigracao": 74.5,
       "diplomacia": 57.6,
       "intervencao": 30.5,
-      "economia": 84.1,
+      "economia": 87.7,
       "controle": 91.3,
       "comercio": 68.1,
       "religiao": 71.8,
-      "moral": 33.3,
+      "moral": 34.7,
       "tecnologia": 73.7
     }
   },

@@ -166,11 +166,9 @@
       "economia_18": "N",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "N",
       "economia_10": "DT",
       "economia_09": "C",
       "economia_02": "D",
-      "economia_08": "N",
       "economia_04": "DT"
     }
   },
@@ -253,7 +251,6 @@
     "personaBrief": "O regime baathista de Saddam era socialmente conservador e patriarcal, promovendo a família tradicional árabe e valores nacionalistas, ao mesmo tempo em que mantinha um Estado relativamente secular no direito de família comparado a vizinhos islamistas.",
     "answers": {
       "moral_07": "DT",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "DT",
       "moral_02": "CT",
-      "moral_05": "N",
       "moral_17": "DT",
       "moral_13": "DT",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "N",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "N",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "N",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

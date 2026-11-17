@@ -15,7 +15,7 @@ const STR = {
   pt: {
     skip: 'Pular para o conteúdo',
     catalogNav: 'Catálogo',
-    homeAria: '12 axes, página inicial',
+    homeAria: '14 axes, página inicial',
     takeTheTest: 'Fazer o teste',
     compareWith: 'Comparar com…',
     currentKind: 'Atual',
@@ -30,7 +30,7 @@ const STR = {
     tabs: { axes: 'Eixos', ideologies: 'Ideologias', personalities: 'Personalidades', parties: 'Partidos e organizações' },
     ids: { axes: 'eixos', ideologies: 'ideologias', personalities: 'personalidades', parties: 'partidos' },
     axesEyebrow: 'Eixos políticos',
-    axesTitle: 'Perfil nos 12 eixos',
+    axesTitle: 'Perfil nos 14 eixos',
     distTitle: (name) => `O que distingue ${name}`,
     rareTag: 'Posição mais incomum',
     commonTag: 'Posição mais comum',
@@ -56,13 +56,13 @@ const STR = {
     associatedCountry: 'País associado',
     matchWord: 'match',
     ctaTitle: 'Você se identifica com este perfil?',
-    ctaText: (name, n) => `Responda ao quiz e veja sua compatibilidade com ${name} e outros ${n} partidos e organizações nos 12 eixos.`,
+    ctaText: (name, n) => `Responda ao quiz e veja sua compatibilidade com ${name} e outros ${n} partidos e organizações nos 14 eixos.`,
     footer: 'Quiz político independente · 12axes.vercel.app · © 2026. Todos os direitos reservados'
   },
   en: {
     skip: 'Skip to content',
     catalogNav: 'Catalog',
-    homeAria: '12 axes, home page',
+    homeAria: '14 axes, home page',
     takeTheTest: 'Take the test',
     compareWith: 'Compare with…',
     currentKind: 'Current',
@@ -77,7 +77,7 @@ const STR = {
     tabs: { axes: 'Axes', ideologies: 'Ideologies', personalities: 'Personalities', parties: 'Parties and organizations' },
     ids: { axes: 'axes', ideologies: 'ideologies', personalities: 'personalities', parties: 'parties' },
     axesEyebrow: 'Political axes',
-    axesTitle: 'Profile across the 12 axes',
+    axesTitle: 'Profile across the 14 axes',
     distTitle: (name) => `What sets ${name} apart`,
     rareTag: 'Most unusual position',
     commonTag: 'Most common position',
@@ -103,7 +103,7 @@ const STR = {
     associatedCountry: 'Associated country',
     matchWord: 'match',
     ctaTitle: 'Do you identify with this profile?',
-    ctaText: (name, n) => `Take the quiz and see your compatibility with ${name} and ${n} other parties and organizations across the 12 axes.`,
+    ctaText: (name, n) => `Take the quiz and see your compatibility with ${name} and ${n} other parties and organizations across the 14 axes.`,
     footer: 'Independent political quiz · 12axes.vercel.app · © 2026. All rights reserved'
   }
 };

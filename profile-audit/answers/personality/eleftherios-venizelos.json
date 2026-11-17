@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "CT",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Pioneiro nas reformas trabalhistas e educacionais na Grécia, adotou a língua demótica popular nas escolas e expandiu direitos civis, combinando um espírito reformista moderno com o patriotismo cívico republicano.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "D",
       "moral_15": "D",
       "moral_12": "DT",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "D",
       "moral_02": "D",
-      "moral_05": "D",
       "moral_17": "DT",
       "moral_13": "C",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "C",
       "moral_14": "D",
-      "moral_08": "C",
       "moral_20": "D"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "B",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
+    }
   }
 }

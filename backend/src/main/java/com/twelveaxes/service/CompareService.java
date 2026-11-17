@@ -149,9 +149,11 @@ public class CompareService {
     private IdeologyMatch commonIdeology(List<String[]> refs, List<Resolved> resolved, String lang) {
         Map<String, Double> mean = new java.util.LinkedHashMap<>();
         for (var axis : dataService.getAxes(lang)) {
-            mean.put(axis.id(), resolved.stream()
-                    .mapToDouble(profile -> profile.vector().getOrDefault(axis.id(), 50.0))
-                    .average().orElse(50.0));
+            resolved.stream()
+                    .filter(profile -> profile.vector().containsKey(axis.id()))
+                    .mapToDouble(profile -> profile.vector().get(axis.id()))
+                    .average()
+                    .ifPresent(average -> mean.put(axis.id(), average));
         }
         Set<String> inComparison = new HashSet<>();
         for (String[] ref : refs) {
@@ -165,10 +167,7 @@ public class CompareService {
     }
 
     private List<AxisResult> axisResults(Map<String, Double> vector, String lang) {
-        List<Double> leftPercents = dataService.getAxes(lang).stream()
-                .map(axis -> vector.getOrDefault(axis.id(), 50.0))
-                .toList();
-        return scoringService.scoreFromLeftPercents(leftPercents, lang);
+        return scoringService.scoreFromVector(vector, lang);
     }
 
     private static boolean isSelf(String[] self, String type, String id) {

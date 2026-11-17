@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "C",
       "economia_20": "DT",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "N",
-      "economia_08": "C"
+      "economia_02": "N"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A vida pessoal de Keynes e o ambiente intelectual de Bloomsbury o associam mais ao liberalismo de costumes do que ao moralismo tradicional. Ele tenderia a defender autonomia individual em temas íntimos, ainda que sem a linguagem contemporânea completa de todos os debates.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "C",
       "moral_17": "C",
       "moral_13": "C",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "N",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "C",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

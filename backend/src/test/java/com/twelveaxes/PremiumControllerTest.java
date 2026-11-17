@@ -101,7 +101,7 @@ class PremiumControllerTest {
         return EntitlementToken.hashOf(scoringService.score(request, "pt").stream().map(AxisResult::leftPercent).toList());
     }
 
-    // Corpo do relatorio: os 12 valores (obrigatorio) e, opcionalmente, as respostas que os originaram.
+    // Corpo do relatorio: os valores dos eixos (obrigatorio) e, opcionalmente, as respostas que os originaram.
     private String body(ResultRequest request, boolean withAnswers) throws Exception {
         String vector = scoringService.score(request, "pt").stream().map(axis -> String.valueOf(axis.leftPercent()))
                 .collect(java.util.stream.Collectors.joining(","));
@@ -157,7 +157,7 @@ class PremiumControllerTest {
 
         report(mixed(), token)
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.axisAnalysis.length()").value(12))
+                .andExpect(jsonPath("$.axisAnalysis.length()").value(14))
                 .andExpect(jsonPath("$.topCountries.length()").value(10))
                 .andExpect(jsonPath("$.idealGovernment.length()").value(9))
                 .andExpect(jsonPath("$.disagreements.length()").value(3))
@@ -166,12 +166,12 @@ class PremiumControllerTest {
     }
 
     @Test
-    void worksFromTheTwelveValuesAloneWithoutAnswers() throws Exception {
+    void worksFromTheValuesAloneWithoutAnswers() throws Exception {
         String token = entitlementToken.issue(hashOf(mixed()), PAYMENT, Duration.ofDays(365));
 
         reportWith(body(mixed(), false), token)
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.axisAnalysis.length()").value(12))
+                .andExpect(jsonPath("$.axisAnalysis.length()").value(14))
                 .andExpect(jsonPath("$.axisAnalysis[0].impacts.length()").value(0))
                 .andExpect(jsonPath("$.axisAnalysis[0].text").isNotEmpty());
     }

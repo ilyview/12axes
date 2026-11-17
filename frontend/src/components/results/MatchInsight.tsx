@@ -53,7 +53,7 @@ export function divergenceText(axisId: string, label: string, userLeft: number, 
   return t.insight.apartAxis(label, poleText(axisId, userSide), poleText(axisId, otherSide), name, gap);
 }
 
-/** O que aproxima o usuário de um perfil e onde os dois se afastam, em texto, só pelos vetores dos 12 eixos. */
+/** O que aproxima o usuário de um perfil e onde os dois se afastam, em texto, só pelos vetores dos 14 eixos. */
 export function MatchInsightBlock({ name, vector }: { name: string; vector: Record<string, number> | undefined }) {
   const source = useContext(MatchInsightContext);
   const insight = useMemo(() => {

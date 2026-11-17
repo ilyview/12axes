@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "N",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "N",
-      "economia_08": "D"
+      "economia_02": "N"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Mujica apoiou como presidente a legalização do casamento igualitário, do aborto e da maconha no Uruguai, consolidando um perfil fortemente progressista e libertário nos costumes.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "C",
       "moral_17": "N",
       "moral_13": "C",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "CT",
       "tecnologia_14": "CT",
       "tecnologia_11": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "N",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "N"
     }
   }
 }

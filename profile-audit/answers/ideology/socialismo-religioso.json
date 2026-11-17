@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "CT",
       "economia_20": "DT",
-      "economia_01": "N",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "DT",
-      "economia_08": "DT"
+      "economia_02": "DT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "O socialismo religioso mistura impulso igualitario com referencia forte a valores espirituais e comunitarios. Isso costuma gerar abertura para justica social e combate a discriminacao, mas mais reserva em temas de sexualidade, familia e aborto.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "C",
       "moral_12": "C",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "N",
       "moral_02": "C",
-      "moral_05": "CT",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "C",
       "moral_14": "N",
-      "moral_08": "DT",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "CT",
       "tecnologia_11": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "N",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "CT",
+      "moral_08": "DT"
     }
   }
 }

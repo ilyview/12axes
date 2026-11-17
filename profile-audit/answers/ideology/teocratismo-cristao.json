@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "Nao costuma ser igualitarista nem libertaria: aceita propriedade privada, hierarquia economica e heranca, mas admite intervencao estatal e funcao social para conter desordem, pobreza e poderes privados concorrentes. A economia ideal tende a ser organicista, moralizada e subordinada ao bem comum definido pela autoridade.",
     "answers": {
-      "economia_01": "DT",
       "economia_02": "N",
       "economia_03": "C",
       "economia_04": "D",
       "economia_05": "D",
       "economia_06": "DT",
       "economia_07": "C",
-      "economia_08": "CT",
       "economia_09": "C",
       "economia_10": "DT",
       "economia_11": "D",
@@ -255,11 +253,8 @@
       "moral_01": "DT",
       "moral_02": "CT",
       "moral_03": "DT",
-      "moral_04": "CT",
-      "moral_05": "D",
       "moral_06": "CT",
       "moral_07": "D",
-      "moral_08": "C",
       "moral_09": "DT",
       "moral_10": "CT",
       "moral_11": "DT",
@@ -297,6 +292,19 @@
       "tecnologia_18": "C",
       "tecnologia_19": "C",
       "tecnologia_20": "CT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

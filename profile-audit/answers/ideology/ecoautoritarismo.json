@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "C",
       "economia_20": "DT",
-      "economia_01": "C",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "DT",
-      "economia_08": "DT"
+      "economia_02": "DT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Nos costumes, o ecoautoritarismo tende a combinar progressismo em genero, sexualidade e igualdade social com critica dura ao consumismo e a formas de exploracao vistas como degradantes. Tambem aceita que escola e Estado disputem a formacao moral quando a familia bloqueia valores considerados emancipadores ou ecologicamente responsaveis.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "C",
       "moral_15": "CT",
       "moral_12": "DT",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "C",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "CT",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "C",
       "moral_14": "D",
-      "moral_08": "DT",
       "moral_20": "DT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "CT",
       "tecnologia_11": "DT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "C",
+      "moral_08": "DT"
     }
   }
 }

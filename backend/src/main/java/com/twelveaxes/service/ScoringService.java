@@ -90,19 +90,38 @@ public class ScoringService {
         return question.agreePole() == Pole.LEFT ? towardAgreement : 1.0 - towardAgreement;
     }
 
+    /**
+     * Quantos eixos existiam antes de metodo e distribuicao. Links e relatorios pagos de resultados antigos trazem
+     * so esses valores: o resultado volta com esses eixos, sem inventar posicao nos eixos novos.
+     */
+    public static final int LEGACY_AXIS_COUNT = 12;
+
     // Reconstrói o resultado a partir de um vetor de leftPercent (um valor por
     // eixo, na ordem de axes.json) — usado pelas URLs de resultado compartilhado.
+    // Aceita também o vetor antigo, com os LEGACY_AXIS_COUNT primeiros eixos.
     public List<AxisResult> scoreFromLeftPercents(List<Double> leftPercents, String lang) {
         String normalizedLang = QuizDataService.normalizeLang(lang);
         List<Axis> axes = dataService.getAxes(normalizedLang);
-        if (leftPercents.size() != axes.size()) {
+        if (leftPercents.size() != axes.size() && leftPercents.size() != LEGACY_AXIS_COUNT) {
             throw new ResponseStatusException(
                     HttpStatus.BAD_REQUEST,
                     "Vetor de eixos inválido: esperados " + axes.size() + " valores"
             );
         }
-        return java.util.stream.IntStream.range(0, axes.size())
+        return java.util.stream.IntStream.range(0, leftPercents.size())
                 .mapToObj(index -> buildAxisResult(axes.get(index), leftPercents.get(index), normalizedLang))
+                .toList();
+    }
+
+    /**
+     * Resultado a partir do vetor de um perfil (eixo -> leftPercent), na ordem de axes.json. Eixo que o perfil
+     * ainda nao tem (eixo novo antes da reauditoria) fica fora, em vez de virar um 50 inventado.
+     */
+    public List<AxisResult> scoreFromVector(java.util.Map<String, Double> vector, String lang) {
+        String normalizedLang = QuizDataService.normalizeLang(lang);
+        return dataService.getAxes(normalizedLang).stream()
+                .filter(axis -> vector.containsKey(axis.id()))
+                .map(axis -> buildAxisResult(axis, vector.get(axis.id()), normalizedLang))
                 .toList();
     }
 

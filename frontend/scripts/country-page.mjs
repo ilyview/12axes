@@ -15,7 +15,7 @@ const STR = {
   pt: {
     skip: 'Pular para o conteúdo',
     catalogNav: 'Catálogo',
-    homeAria: '12 axes, página inicial',
+    homeAria: '14 axes, página inicial',
     takeTheTest: 'Fazer o teste',
     compareWith: 'Comparar com…',
     currentCountry: 'País atual',
@@ -30,7 +30,7 @@ const STR = {
     tabs: { axes: 'Eixos', ideologies: 'Ideologias', personalities: 'Personalidades', countries: 'Países' },
     ids: { axes: 'eixos', ideologies: 'ideologias', personalities: 'personalidades', countries: 'paises' },
     axesEyebrow: 'Eixos políticos',
-    axesTitle: 'Perfil nos 12 eixos',
+    axesTitle: 'Perfil nos 14 eixos',
     distTitle: (name) => `O que distingue ${name}`,
     rareTag: 'Posição mais incomum',
     commonTag: 'Posição mais comum',
@@ -59,13 +59,13 @@ const STR = {
     farCountries: 'Os mais diferentes',
     matchWord: 'match',
     ctaTitle: 'Você viveria bem aqui?',
-    ctaText: (name, n) => `Responda ao quiz e veja sua compatibilidade com ${name} e outros ${n} países e regimes nos 12 eixos.`,
+    ctaText: (name, n) => `Responda ao quiz e veja sua compatibilidade com ${name} e outros ${n} países e regimes nos 14 eixos.`,
     footer: 'Quiz político independente · 12axes.vercel.app · © 2026. Todos os direitos reservados'
   },
   en: {
     skip: 'Skip to content',
     catalogNav: 'Catalog',
-    homeAria: '12 axes, home page',
+    homeAria: '14 axes, home page',
     takeTheTest: 'Take the test',
     compareWith: 'Compare with…',
     currentCountry: 'Modern country',
@@ -80,7 +80,7 @@ const STR = {
     tabs: { axes: 'Axes', ideologies: 'Ideologies', personalities: 'Personalities', countries: 'Countries' },
     ids: { axes: 'axes', ideologies: 'ideologies', personalities: 'personalities', countries: 'countries' },
     axesEyebrow: 'Political axes',
-    axesTitle: 'Profile across the 12 axes',
+    axesTitle: 'Profile across the 14 axes',
     distTitle: (name) => `What sets ${name} apart`,
     rareTag: 'Most unusual position',
     commonTag: 'Most common position',
@@ -109,7 +109,7 @@ const STR = {
     farCountries: 'The most different',
     matchWord: 'match',
     ctaTitle: 'Would you live well here?',
-    ctaText: (name, n) => `Take the quiz and see your compatibility with ${name} and ${n} other countries and regimes across the 12 axes.`,
+    ctaText: (name, n) => `Take the quiz and see your compatibility with ${name} and ${n} other countries and regimes across the 14 axes.`,
     footer: 'Independent political quiz · 12axes.vercel.app · © 2026. All rights reserved'
   }
 };

@@ -70,7 +70,7 @@ export function AxisTags({ axis, profiles }: { axis: Axis; profiles: CompareProf
   );
 }
 
-/** Os 12 eixos com as etiquetas dos perfis na trilha e os polos com ícone embaixo (o mesmo desenho da comparação entre pessoas). */
+/** Os 14 eixos com as etiquetas dos perfis na trilha e os polos com ícone embaixo (o mesmo desenho da comparação entre pessoas). */
 export function AxisTagList({ axes, profiles }: { axes: Axis[]; profiles: CompareProfile[] }) {
   return (
     <ul className="e-cp-axes">

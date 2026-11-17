@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "C",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Sankara foi radicalmente progressista para sua época e região, promovendo emancipação feminina explícita (proibição de mutilação genital, casamento forçado e poligamia, incentivo a mulheres em cargos de poder), embora dentro de uma cultura africana tradicional.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "N",
       "moral_19": "N",
       "moral_02": "D",
-      "moral_05": "C",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "N",
       "moral_14": "N",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "N",
       "tecnologia_14": "N",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

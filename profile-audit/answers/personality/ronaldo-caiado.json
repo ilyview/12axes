@@ -32,8 +32,7 @@
   "economia": { "personaBrief": "Fundador da UDR, defensor intransigente da propriedade rural e contra a reforma agrária; liberal sem fazer da privatização total bandeira.", "answers": {
     "economia_05": "DT", "economia_06": "DT", "economia_07": "D", "economia_13": "D", "economia_03": "N",
     "economia_14": "C", "economia_19": "D", "economia_16": "C", "economia_17": "N", "economia_12": "C",
-    "economia_04": "D", "economia_11": "D", "economia_18": "CT", "economia_15": "DT", "economia_20": "C",
-    "economia_01": "DT", "economia_10": "D", "economia_09": "D", "economia_02": "C", "economia_08": "C" } },
+    "economia_04": "D", "economia_11": "D", "economia_18": "CT", "economia_15": "DT", "economia_20": "C", "economia_10": "D", "economia_09": "D", "economia_02": "C" } },
   "controle": { "personaBrief": "Controle de gastos e rejeição a aumento de impostos, mas com estratégia nacional de biocompetitividade para o agro.", "answers": {
     "controle_05": "D", "controle_20": "C", "controle_19": "N", "controle_14": "D", "controle_07": "C",
     "controle_04": "C", "controle_02": "C", "controle_17": "D", "controle_16": "C", "controle_10": "CT",
@@ -50,13 +49,14 @@
     "religiao_01": "D", "religiao_14": "C", "religiao_06": "C", "religiao_16": "C", "religiao_08": "D",
     "religiao_07": "D", "religiao_09": "N", "religiao_17": "DT", "religiao_20": "C", "religiao_04": "C" } },
   "moral": { "personaBrief": "Conservador de costumes, sancionou lei antiaborto em Goiás e defende família tradicional e autoridade dos pais.", "answers": {
-    "moral_07": "N", "moral_04": "C", "moral_15": "DT", "moral_12": "CT", "moral_03": "D",
-    "moral_01": "D", "moral_09": "DT", "moral_06": "C", "moral_19": "D", "moral_02": "CT",
-    "moral_05": "D", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "CT",
-    "moral_18": "D", "moral_16": "C", "moral_14": "C", "moral_08": "C", "moral_20": "CT" } },
+    "moral_07": "N", "moral_15": "DT", "moral_12": "CT", "moral_03": "D",
+    "moral_01": "D", "moral_09": "DT", "moral_06": "C", "moral_19": "D", "moral_02": "CT", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "CT",
+    "moral_18": "D", "moral_16": "C", "moral_14": "C", "moral_20": "CT" } },
   "tecnologia": { "personaBrief": "Médico entusiasta de IA no SUS, agro tecnológico, biotecnologia e bioenergia; cético do ambientalismo restritivo e defensor da pecuária.", "answers": {
     "tecnologia_01": "C", "tecnologia_13": "N", "tecnologia_19": "C", "tecnologia_12": "D", "tecnologia_18": "N",
     "tecnologia_10": "D", "tecnologia_05": "CT", "tecnologia_04": "D", "tecnologia_16": "N", "tecnologia_07": "C",
     "tecnologia_08": "D", "tecnologia_03": "C", "tecnologia_15": "C", "tecnologia_20": "D", "tecnologia_06": "DT",
-    "tecnologia_09": "D", "tecnologia_17": "DT", "tecnologia_02": "DT", "tecnologia_14": "C", "tecnologia_11": "C" } }
+    "tecnologia_09": "D", "tecnologia_17": "DT", "tecnologia_02": "DT", "tecnologia_14": "C", "tecnologia_11": "C" } },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "D", "moral_08": "C"}}
 }

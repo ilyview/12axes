@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "N",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A sociedade tailandesa combina tolerância social cotidiana (inclusive quanto a diversidade de gênero) com valores familiares tradicionais budistas e conservadorismo em temas como aborto, refletindo um meio-termo entre modernidade e tradição.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "N",
       "moral_19": "N",
       "moral_02": "C",
-      "moral_05": "N",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "N",
       "moral_16": "C",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "N",
       "tecnologia_14": "D",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

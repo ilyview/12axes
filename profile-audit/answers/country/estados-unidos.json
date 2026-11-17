@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "DT",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Sociedade culturalmente polarizada entre um polo urbano/progressista nas costas e um polo tradicionalista/religioso no interior, o que produz uma média nacional dividida em quase todos os temas morais.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "N",
       "moral_15": "D",
       "moral_12": "C",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "D",
       "moral_02": "C",
-      "moral_05": "N",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "N",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "C",
       "tecnologia_11": "CT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "N"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "C"
     }
   }
 }

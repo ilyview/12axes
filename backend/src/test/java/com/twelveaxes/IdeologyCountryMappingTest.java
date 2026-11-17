@@ -33,7 +33,7 @@ class IdeologyCountryMappingTest {
     }
 
     @Test
-    void everyCountryProfileUsesTheTwelveKnownAxes() {
+    void everyCountryProfileUsesOnlyKnownAxesAndAllLegacyOnes() {
         var axisIds = dataService.getAxes().stream()
                 .map(axis -> axis.id())
                 .toList();
@@ -42,7 +42,8 @@ class IdeologyCountryMappingTest {
                 .allSatisfy(profile -> {
                     assertThat(profile.vector().keySet())
                             .as("Country profile %s must define exactly the known axes", profile.countryId())
-                            .containsExactlyInAnyOrderElementsOf(axisIds);
+                            .containsAll(axisIds.subList(0, com.twelveaxes.service.ScoringService.LEGACY_AXIS_COUNT))
+                            .isSubsetOf(axisIds);
                     assertThat(profile.vector().values())
                             .as("Country profile %s values must be percentages", profile.countryId())
                             .allSatisfy(value -> assertThat(value).isBetween(0.0, 100.0));

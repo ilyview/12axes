@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "CT"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A sociedade wilhelmina era profundamente conservadora nos costumes: papéis de gênero rígidos, valorização da família patriarcal tradicional, moralidade burguesa vitoriana e leis penalizando homossexualidade (Parágrafo 175).",
     "answers": {
       "moral_07": "DT",
-      "moral_04": "CT",
       "moral_15": "D",
       "moral_12": "C",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "DT",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "CT",
       "moral_16": "C",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "N",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "DT",
+      "moral_08": "N"
     }
   }
 }

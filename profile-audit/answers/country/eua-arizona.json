@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Economia de mercado com impostos baixos, setor privado forte e pouca presença estatal, com imposto de renda de alíquota única.",
   "answers": {
-   "economia_01": "D",
    "economia_02": "C",
    "economia_03": "D",
    "economia_04": "C",
    "economia_05": "D",
    "economia_06": "C",
    "economia_07": "D",
-   "economia_08": "C",
    "economia_09": "D",
    "economia_10": "C",
    "economia_11": "D",
@@ -255,11 +253,8 @@
    "moral_01": "C",
    "moral_02": "C",
    "moral_03": "C",
-   "moral_04": "C",
-   "moral_05": "D",
    "moral_06": "D",
    "moral_07": "C",
-   "moral_08": "C",
    "moral_09": "C",
    "moral_10": "D",
    "moral_11": "D",
@@ -305,5 +300,18 @@
   "economia": "F",
   "mundo": "B",
   "tecnologia": "D"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "D",
+   "moral_04": "C"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "C",
+   "moral_05": "D",
+   "moral_08": "C"
+  }
  }
 }

@@ -62,7 +62,7 @@ Duas sessões de IA independentes auditando a mesma pessoa viva **já produziram
 materialmente diferentes** (um caso real: `representacao` saiu 51 numa sessão e 76 noutra para o
 mesmo perfil) porque cada uma parou a pesquisa em um nível de profundidade diferente. Rótulos
 ideológicos genéricos ("liberal", "linha-dura", "nacionalista") não são suficientes para calibrar
-240 respostas — é fácil "confirmar" um rótulo com 2 buscas rasas e deixar de fora exatamente os
+275 respostas — é fácil "confirmar" um rótulo com 2 buscas rasas e deixar de fora exatamente os
 fatos que mais moveriam o vetor.
 
 Se o perfil é uma pessoa viva e politicamente ativa (sobretudo candidato ou titular de cargo em
@@ -80,13 +80,13 @@ mandato/campanha corrente), **antes de escrever a `description`**:
    controvérsia recente com citação direta.
 3. Cruze pelo menos 3 fontes independentes e note a data de cada fato — priorize o que é mais
    recente em relação à data atual da conversa.
-4. **Antes de prosseguir para o Passo 1**, releia os 12 eixos do resumo rápido de
+4. **Antes de prosseguir para o Passo 1**, releia os 14 eixos do resumo rápido de
    `profile-audit/README.md` e verifique: para cada eixo, você tem pelo menos um fato específico e
    sourced, ou só uma inferência genérica a partir do rótulo ideológico? Se algum eixo só tem
    inferência genérica, faça mais uma busca dedicada a ele antes de escrever a `description`.
 5. Inclua na `description` (ou no contexto adicional do prompt de auditoria do Passo 5) os fatos
    concretos mais reveladores — inclusive os que geram tensão ou contradição com o rótulo
-   ideológico principal da pessoa. É exatamente essa tensão que o vetor de 12 eixos deveria
+   ideológico principal da pessoa. É exatamente essa tensão que o vetor de 14 eixos deveria
    capturar; suavizá-la no texto produz um vetor raso.
 
 Essa mesma checklist vale ao **reauditar** um perfil de pessoa viva já existente
@@ -558,7 +558,7 @@ editados e confirme:
   legitimamente `null`/`""` por padrão, como `vector: null` e `period: ""` em países não
   históricos).
 
-## Passo 5 — Auditar o novo perfil (gerar o vetor de 12 eixos)
+## Passo 5 — Auditar o novo perfil (gerar o vetor de 14 eixos)
 
 Este passo reusa **integralmente** o protocolo de `profile-audit/README.md`, passos 2 a 5, mas
 para um único perfil novo (não um lote de 15):
@@ -569,7 +569,7 @@ para um único perfil novo (não um lote de 15):
    inglês — o prompt de auditoria sempre usa os metadados em português, como os outros perfis).
    Salve em `profile-audit/prompts/<catalog>/<id>.txt`. O prompt termina com o bloco das
    **perguntas de arquétipo** (`python profile-audit/profile_vector.py --prompt-block`): o perfil
-   responde as 240 perguntas **e** o arquétipo, como um usuário do quiz, e as duas partes entram no
+   responde as 275 perguntas **e** o arquétipo, como um usuário do quiz, e as duas partes entram no
    vetor (ver "Perguntas de arquétipo" no README).
    **Só para `country`:** Responda como o REGIME. O prompt de cada país deve conter (já está no template de `profile-audit/README.md`) a instrução de que o subagente responde como o governo/regime em exercício (ou, em país histórico, o regime daquele período) responderia, pela sua prática institucional real, e não pelo que a população, a oposição ou a Constituição afirmam. Em `representacao`, eleição formal, parlamento e Constituição democráticos não contam quando há fraude, oposição excluída ou perseguida, imprensa controlada, Judiciário submisso, partido/dinastia/Exército que não perde o poder ou ausência de eleições. As perguntas de `representacao` são normativas, e sem essa regra o subagente responde pelo ideal da sociedade e deixa regimes autoritários ou híbridos em 55–90. Em democracias reais o regime responde democraticamente. Para país com regime contestado ou híbrido, acrescente no prompt um parágrafo "FATO PÚBLICO DE CONTEXTO" (Democracy Index/Freedom House/V-Dem e histórico recente) como contexto, nunca como alvo numérico.
 3. Dispare **um único subagente** (não precisa ser em lote de 15 — é só um perfil) com esse prompt,
@@ -644,7 +644,7 @@ para um único perfil novo (não um lote de 15):
      personalidade tem perfil explícito, metadados válidos e imagem existente em
      `frontend/public/...`.
    - `IdeologyCountryMappingTest` (relevante para country/ideology): confere que todo país tem
-     perfil explícito com os 12 eixos válidos.
+     perfil explícito com os 14 eixos válidos.
    - `ProfileMatchScorerTest` / `ScorerBenchmarkTest`: não deveriam quebrar com a adição de um
      perfil novo, mas rode mesmo assim — um vetor mal calculado (fora de 0-100, eixo faltando) quebra
      essas suítes também.
@@ -707,7 +707,7 @@ Feche o processo com um resumo direto ao usuário contendo:
 ## Regras que não podem ser quebradas
 
 - **Nunca** invente/estime um vetor sem rodar o processo de auditoria pergunta-a-pergunta do passo
-  5 — é a mesma regra do `profile-audit/README.md`: cada perfil precisa das 240 respostas reais
+  5 — é a mesma regra do `profile-audit/README.md`: cada perfil precisa das 275 respostas reais
   simuladas por um modelo de qualidade, nunca um atalho.
 - **Nunca** use um modelo fraco/rápido (tipo Haiku) para gerar as respostas de auditoria.
 - **Nunca** deixe um `id` duplicado entre metadados PT e EN, ou entre um catálogo e outro.

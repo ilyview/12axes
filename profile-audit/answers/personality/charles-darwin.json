@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "Darwin era um cavalheiro vitoriano de família abastada (herdeiro da fortuna Wedgwood), vivendo confortavelmente de rendas privadas e investimentos, sem qualquer inclinação socialista ou coletivista documentada; sua visão de 'luta pela existência' foi apropriada por outros para o darwinismo social, mas ele mesmo não a endossava como programa econômico.",
     "answers": {
-      "economia_01": "DT",
       "economia_02": "C",
       "economia_03": "N",
       "economia_04": "N",
       "economia_05": "DT",
       "economia_06": "D",
       "economia_07": "N",
-      "economia_08": "C",
       "economia_09": "N",
       "economia_10": "D",
       "economia_11": "N",
@@ -255,11 +253,8 @@
       "moral_01": "N",
       "moral_02": "C",
       "moral_03": "N",
-      "moral_04": "C",
-      "moral_05": "N",
       "moral_06": "N",
       "moral_07": "N",
-      "moral_08": "N",
       "moral_09": "N",
       "moral_10": "N",
       "moral_11": "N",
@@ -297,6 +292,19 @@
       "tecnologia_18": "N",
       "tecnologia_19": "N",
       "tecnologia_20": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

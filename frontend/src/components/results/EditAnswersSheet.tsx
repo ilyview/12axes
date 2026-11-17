@@ -45,7 +45,7 @@ const arrow = (flip = false) => (
 );
 
 /**
- * Edita as respostas de um quiz já feito. À esquerda ficam os 12 eixos (mais arquétipo e religião); à direita, as
+ * Edita as respostas de um quiz já feito. À esquerda ficam os 14 eixos (mais arquétipo e religião); à direita, as
  * perguntas do eixo escolhido como um baralho de cartas, que passam com Voltar e Avançar. "Gravar" recalcula o resultado.
  */
 export function EditAnswersSheet({ quiz, axes, axisResults, religion, initial, buildSteps, normalizeChoices, isSaving, error, onSave, onClose }: EditAnswersSheetProps) {

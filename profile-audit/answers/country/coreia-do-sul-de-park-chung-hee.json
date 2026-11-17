@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Park impôs conservadorismo social confucionista rígido: campanhas de disciplina moral, controle de costumes (inclusive proibição de minissaia e cabelo comprido), família patriarcal tradicional e forte tabu sobre temas de sexualidade e gênero.",
     "answers": {
       "moral_07": "DT",
-      "moral_04": "CT",
       "moral_15": "D",
       "moral_12": "CT",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "DT",
       "moral_02": "CT",
-      "moral_05": "N",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "CT",
       "moral_16": "CT",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "CT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "N",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

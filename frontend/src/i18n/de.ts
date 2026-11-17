@@ -40,7 +40,7 @@ export const de: DeepPartial<Strings> = {
   backToStartAria: 'Zurück zum Start',
   mainNavAria: 'Hauptnavigation',
   navHow: 'So funktioniert es',
-  navAxes: '12 Achsen',
+  navAxes: '14 Achsen',
   navSpectrum: 'Spektrum',
   navFaq: 'FAQ',
   navBooks: 'Bücher',
@@ -75,7 +75,7 @@ export const de: DeepPartial<Strings> = {
   introLead:
     'Vielleicht ordnest du dich falsch ein. In wenigen Minuten findest du deine wahre Ideologie heraus, das Land, das am ähnlichsten denkt wie du, und den politischen Anführer, der deinen Ideen am nächsten steht.',
   startQuiz: 'Mein Profil entdecken',
-  seeAxes: 'Die 12 Achsen ansehen',
+  seeAxes: 'Die 14 Achsen ansehen',
   heroLabels: ['Kostenlos', 'Anonym', 'Schnell', 'Sofort-Ergebnis'],
   heroTeaserLabel: 'match',
   heroTeaserTag: 'Beispielergebnis',
@@ -84,21 +84,21 @@ export const de: DeepPartial<Strings> = {
   formats: {
     short: {
       label: 'Kurz',
-      questionCount: '36 Fragen',
+      questionCount: '42 Fragen',
       description: 'Ein schnelles Ergebnis, ideal für einen ersten Blick auf dein Profil',
       duration: 'Etwa 5 Min.',
       action: 'Kurzversion starten'
     },
     extended: {
       label: 'Voll',
-      questionCount: '60 Fragen',
+      questionCount: '70 Fragen',
       description: 'Mehr Genauigkeit, damit dein Ergebnis näher an die ideologischen Profile heranrückt.',
       duration: 'Etwa 9 Min.',
       action: 'Vollversion starten'
     },
     extreme: {
       label: 'Extrem',
-      questionCount: '240 Fragen',
+      questionCount: '275 Fragen',
       description: 'Erfahre die exakte Synthese deines Denkens mit 100 % Genauigkeit.',
       duration: 'Etwa 30 Min.',
       action: 'Extremversion starten'
@@ -143,7 +143,9 @@ export const de: DeepPartial<Strings> = {
       comercio: { left: 'Unterstützung für den Schutz der nationalen Industrie', right: 'Unterstützung für die Öffnung für den internationalen Handel' },
       religiao: { left: 'eine Präferenz für die Trennung von Religion und Politik', right: 'Unterstützung für mehr Religion im öffentlichen Leben' },
       moral: { left: 'progressive gesellschaftliche Werte', right: 'traditionelle gesellschaftliche Werte' },
-      tecnologia: { left: 'Vertrauen in Technologie und Industrie', right: 'eine Präferenz für natürlichere, biologische Lösungen' }
+      tecnologia: { left: 'Vertrauen in Technologie und Industrie', right: 'eine Präferenz für natürlichere, biologische Lösungen' },
+      metodo: { left: 'eine Präferenz für schrittweisen Wandel über die Institutionen', right: 'Bereitschaft zu Umbruch und direkter Aktion' },
+      distribuicao: { left: 'Einsatz für mehr Gleichheit und Umverteilung', right: 'Einsatz für Leistung und die Ungleichheit, die daraus entsteht' }
     }
   },
   compareEyebrow: 'Vergleichende Analyse',
@@ -155,7 +157,7 @@ export const de: DeepPartial<Strings> = {
   compareFieldCaption: 'Persönlichkeit, Land oder Ideologie',
   compareFullView: 'Vollständigen Vergleich ansehen',
   compareExamplePlaceholder: 'z. B. Donald Trump',
-  compareAxesTitle: 'Deine 12 Achsen',
+  compareAxesTitle: 'Deine 14 Achsen',
   compareNoResults: 'Keine Profile gefunden.',
   compareLoading: 'Vergleich läuft…',
   compareLoadError: 'Der Vergleich konnte nicht geladen werden. Bitte versuche es erneut.',
@@ -165,6 +167,8 @@ export const de: DeepPartial<Strings> = {
     economia: 'wirtschaftlich',
     moral: 'moralisch',
     tecnologia: 'technologisch',
+    metodo: 'methodisch',
+    distribuicao: 'bei der Verteilung',
     diplomacia: 'diplomatisch'
   },
   compareClosestLine: (adverb, name) => `Du passt ${adverb} gut zu ${name}.`,
@@ -178,7 +182,7 @@ export const de: DeepPartial<Strings> = {
   compareOptionAria: (name, type) => `${name}, ${type}`,
   comparePageDocTitle: 'Profile vergleichen — 12 Axes',
   comparePageEyebrow: 'Profile vergleichen',
-  comparePageTitle: 'Nebeneinander, auf den 12 Achsen',
+  comparePageTitle: 'Nebeneinander, auf den 14 Achsen',
   comparePageProfilesTitle: 'Profile',
   comparePageNeedMore: 'Wähle noch ein Profil zum Vergleichen.',
   comparePageFull: 'Bis zu 3 Profile. Entferne eines, um ein anderes zu wählen.',
@@ -186,7 +190,7 @@ export const de: DeepPartial<Strings> = {
   comparePageRemoveAria: (name) => `${name} aus dem Vergleich entfernen`,
   comparePageUnknown: 'Profil nicht gefunden',
   comparePageNotFound: 'Eines der Profile in diesem Link existiert nicht. Entferne es und wähle ein anderes.',
-  comparePageAxesTitle: 'Die 12 Achsen',
+  comparePageAxesTitle: 'Die 14 Achsen',
   comparePageAxisAria: (axis, values) => `${axis}: ${values}`,
   comparePageCompassAria: (points) => `Politischer Kompass: ${points}`,
   comparePagePointAria: (name, right, authoritarian, traditional) =>
@@ -196,7 +200,7 @@ export const de: DeepPartial<Strings> = {
   comparePageSignatureTitle: 'Was sie unterscheidet',
   comparePageIdeologyTitle: 'Nächste Ideologie',
   comparePageNavIdeologies: 'Ideologien',
-  comparePageNavAxes: '12 Achsen',
+  comparePageNavAxes: '14 Achsen',
   comparePageNavSignature: 'Unterschied',
   comparePageNavCountries: 'Länder',
   comparePageNavParties: 'Parteien',
@@ -265,7 +269,7 @@ export const de: DeepPartial<Strings> = {
   peopleNavValues: 'Werte',
   peopleNavSharedValues: 'Gemeinsam',
   peoplePageDocTitle: 'Mit jemand anderem vergleichen — 12 Axes',
-  peoplePageTitle: 'Ihr beide, auf den 12 Achsen',
+  peoplePageTitle: 'Ihr beide, auf den 14 Achsen',
   peoplePagePeopleTitle: 'Personen',
   peoplePageBadLink: 'Dieser Vergleichslink ist unvollständig. Öffne dein Ergebnis und nutze „Mit jemand anderem vergleichen“.',
   peoplePageLoadError: 'Der Vergleich konnte nicht geladen werden. Bitte versuche es erneut.',
@@ -294,7 +298,9 @@ export const de: DeepPartial<Strings> = {
     moral:
       'Bewertet kulturellen Progressivismus, Bürgerrechte und gesellschaftlichen Wandel im Gegensatz zu Tradition, Familie, Sitten und moralischem Konservatismus.',
     tecnologia:
-      'Misst die Begeisterung für Technologie, KI, Gentechnik und technische Entwicklung im Verhältnis zu biologischer, ökologischer und bewahrender Vorsicht.'
+      'Misst die Begeisterung für Technologie, KI, Gentechnik und technische Entwicklung im Verhältnis zu biologischer, ökologischer und bewahrender Vorsicht.',
+    metodo: 'Misst, ob politischer Wandel schrittweise kommen soll, über Wahlen, Gesetze und Einigung, oder durch Umbruch, direkte Aktion, Ungehorsam und im Extremfall Revolution. Gemessen wird das Mittel, nicht die Richtung des Wandels.',
+    distribuicao: 'Misst, wie viel Ungleichheit akzeptabel ist: progressive Steuern, Steuern auf Vermögen und Erbschaften und Ergebnisgleichheit gegenüber Leistung, einem einheitlichen Steuersatz und Einkommensunterschieden, die als gerecht gelten.'
   },
   homeAxes: {
     estrutura: { label: 'Struktur', leftPole: 'Föderal', rightPole: 'Zentralistisch' },
@@ -308,7 +314,9 @@ export const de: DeepPartial<Strings> = {
     comercio: { label: 'Handel', leftPole: 'Protektionistisch', rightPole: 'Globalistisch' },
     religiao: { label: 'Religion', leftPole: 'Areligiös', rightPole: 'Religiös' },
     moral: { label: 'Moral', leftPole: 'Progressiv', rightPole: 'Traditionalistisch' },
-    tecnologia: { label: 'Technologie', leftPole: 'Technologisch', rightPole: 'Biologisch' }
+    tecnologia: { label: 'Technologie', leftPole: 'Technologisch', rightPole: 'Biologisch' },
+    metodo: { label: 'Methode', leftPole: 'Gradualismus', rightPole: 'Umbruch' },
+    distribuicao: { label: 'Verteilung', leftPole: 'Egalitär', rightPole: 'Meritokratisch' }
   },
   spectrumItems: [
     {
@@ -372,12 +380,12 @@ export const de: DeepPartial<Strings> = {
     {
       question: 'Ist der Test zuverlässig?',
       answer:
-        'Der politische Test von 12 Axes ist zuverlässig als Werkzeug, um politische Positionen einzuordnen und zu vergleichen. Er nutzt Fragen über 12 Achsen verteilt, um die Verzerrung durch ein einzelnes Thema zu verringern, ersetzt aber weder Studium noch Debatte oder wissenschaftliche Analyse.'
+        'Der politische Test von 12 Axes ist zuverlässig als Werkzeug, um politische Positionen einzuordnen und zu vergleichen. Er nutzt Fragen über 14 Achsen verteilt, um die Verzerrung durch ein einzelnes Thema zu verringern, ersetzt aber weder Studium noch Debatte oder wissenschaftliche Analyse.'
     },
     {
       question: 'Wie lange dauert er?',
       answer:
-        'Die Kurzversion dauert etwa 5 Minuten. Die Vollversion braucht rund 9 Minuten. Die Extremversion mit 240 Fragen kann etwa 30 Minuten dauern.'
+        'Die Kurzversion dauert etwa 5 Minuten. Die Vollversion braucht rund 9 Minuten. Die Extremversion mit 275 Fragen kann etwa 30 Minuten dauern.'
     },
     {
       question: 'Kann ich ihn wiederholen?',
@@ -407,7 +415,7 @@ export const de: DeepPartial<Strings> = {
     {
       question: 'Kann ich ihn teilen?',
       answer:
-        'Ja. Wenn du fertig bist, kannst du dein Ergebnis teilen, um mit anderen über politische Ideologie, das politische Spektrum, links, rechts, Mitte und die 12 Achsen zu diskutieren.'
+        'Ja. Wenn du fertig bist, kannst du dein Ergebnis teilen, um mit anderen über politische Ideologie, das politische Spektrum, links, rechts, Mitte und die 14 Achsen zu diskutieren.'
     },
     {
       question: 'Sammelt der Test Daten?',
@@ -421,15 +429,15 @@ export const de: DeepPartial<Strings> = {
     },
     {
       question: 'Was ist 12 Axes?',
-      answer: '12 Axes ist ein kostenloser politischer Test, der deine Position auf 12 Achsen misst (Staatsstruktur, Repräsentation, Freiheiten, Einwanderung, Diplomatie, Intervention, Wirtschaft, Wirtschaftskontrolle, Handel, Religion, Moral und Technologie) und dir die dazu passende politische Ideologie, das passende Land und die passende politische Persönlichkeit zeigt.'
+      answer: '12 Axes ist ein kostenloser politischer Test, der deine Position auf 14 Achsen misst (Staatsstruktur, Repräsentation, Freiheiten, Einwanderung, Diplomatie, Intervention, Wirtschaft, Wirtschaftskontrolle, Handel, Religion, Moral, Technologie, Methode des Wandels und Verteilung) und dir die dazu passende politische Ideologie, das passende Land und die passende politische Persönlichkeit zeigt.'
     },
     {
       question: 'Hat 12 Axes einen politischen Kompass?',
-      answer: 'Ja. Am Ende des Ergebnisses gibt es einen politischen Kompass mit zwei Achsen, links × rechts und autoritär × libertär, mit einer Leiste progressiv × traditionalistisch. Er fasst deine 12 Achsen visuell zusammen, ersetzt aber nicht die vollständige Analyse.'
+      answer: 'Ja. Am Ende des Ergebnisses gibt es einen politischen Kompass mit zwei Achsen, links × rechts und autoritär × libertär, mit einer Leiste progressiv × traditionalistisch. Er fasst deine 14 Achsen visuell zusammen, ersetzt aber nicht die vollständige Analyse.'
     },
     {
       question: 'Wie finde ich meine passende politische Ideologie?',
-      answer: 'Mach den politischen Test mit 36, 60 oder 240 Fragen. Das Ergebnis zeigt die Ideologien, die am besten zu deinen Antworten passen, mit dem Prozentwert der Übereinstimmung und der Position jeder einzelnen auf den 12 Achsen.'
+      answer: 'Mach den politischen Test mit 42, 70 oder 275 Fragen. Das Ergebnis zeigt die Ideologien, die am besten zu deinen Antworten passen, mit dem Prozentwert der Übereinstimmung und der Position jeder einzelnen auf den 14 Achsen.'
     },
     {
       question: 'Kann ich herausfinden, welches Land oder welche politische Persönlichkeit zu mir passt?',
@@ -437,7 +445,7 @@ export const de: DeepPartial<Strings> = {
     },
     {
       question: 'Wie viele Fragen hat der politische Test?',
-      answer: 'Es gibt drei Versionen: kurz mit 36 Fragen, voll mit 60 und extrem mit 240. Alle decken dieselben 12 Achsen ab; je mehr Fragen, desto genauer wird das Ergebnis in der Regel.'
+      answer: 'Es gibt drei Versionen: kurz mit 42 Fragen, voll mit 70 und extrem mit 275. Alle decken dieselben 14 Achsen ab; je mehr Fragen, desto genauer wird das Ergebnis in der Regel.'
     }
   ],
   howEyebrow: 'So funktioniert es',
@@ -450,7 +458,7 @@ export const de: DeepPartial<Strings> = {
       text: 'Stimme Aussagen zu Wirtschaft, Staat, bürgerlichen Freiheiten, Werten, Religion, Außenpolitik und Technologie zu oder lehne sie ab.'
     },
     {
-      title: 'Analyse auf 12 Achsen',
+      title: 'Analyse auf 14 Achsen',
       text: 'Jede Antwort ordnet dich auf 12 unabhängigen ideologischen Achsen ein - vom freien Markt bis zur Planung, vom Nationalismus bis zum Globalismus.'
     },
     {
@@ -458,7 +466,7 @@ export const de: DeepPartial<Strings> = {
       text: 'Du erhältst dein ideologisches Profil, die am besten passenden Ideologien, das nächste Land, eine verwandte Persönlichkeit und die Ergebnisse pro Achse.'
     }
   ],
-  axesGuideEyebrow: '12 Achsen',
+  axesGuideEyebrow: '14 Achsen',
   axesGuideTitle: 'Was bedeutet jede Achse?',
   axesGuideLead:
     'Der Ideologietest von 12 Axes analysiert Föderalismus, politische Repräsentation, Demokratie, Wahlen, Einwanderung, internationalen Handel, Religion in der Politik, Wirtschaftspolitik, Moral und Technologie in getrennten Dimensionen.',
@@ -487,12 +495,12 @@ export const de: DeepPartial<Strings> = {
   navStart: 'Start',
   navTakeTest: 'Test machen',
   menuAria: 'Menü öffnen',
-  roseAria: 'Rose der 12 Achsen',
+  roseAria: 'Rose der 14 Achsen',
   spectrumBarAria: 'Leiste des politischen Spektrums mit den acht Kategorien',
   versionsEyebrow: 'Versionen',
   versionsTitle: 'Wähle die Tiefe',
   versionsLead:
-    'Starte mit dem Kurztest oder geh tiefer für ein genaueres Porträt deines ideologischen Profils. Alle Versionen nutzen dieselben 12 Achsen und liefern das Ergebnis sofort.',
+    'Starte mit dem Kurztest oder geh tiefer für ein genaueres Porträt deines ideologischen Profils. Alle Versionen nutzen dieselben 14 Achsen und liefern das Ergebnis sofort.',
   variantEyebrow: 'Format wählen',
   variantTitlePre: 'Willst du Tempo oder ',
   variantTitleEm: 'Genauigkeit?',
@@ -500,7 +508,7 @@ export const de: DeepPartial<Strings> = {
   depthLabel: 'Tiefe',
   depthAria: (level) => `Tiefe ${level} von 3`,
   recommended: 'Empfohlen',
-  formatNotes: ['Alle Versionen nutzen dieselben 12 Achsen', 'Anonym, ohne Anmeldung', 'Sofort-Ergebnis'],
+  formatNotes: ['Alle Versionen nutzen dieselben 14 Achsen', 'Anonym, ohne Anmeldung', 'Sofort-Ergebnis'],
   variantLead:
     'Die Kurzversion zeigt das Ergebnis schnell. Die Vollversion erhöht die Genauigkeit, damit dein Ergebnis näher an die ideologischen Profile heranrückt.',
   quizNavAria: 'Test-Navigation',
@@ -523,11 +531,11 @@ export const de: DeepPartial<Strings> = {
   resultsLead: (count) =>
     `Analyse auf Basis von ${count} Antworten, verteilt auf 12 grundlegende Dimensionen der politischen Ideologie. Sieh dir deine Position auf jeder Achse und deine ideologischen Übereinstimmungen an.`,
   resultsLeadShared:
-    'Geteiltes Ergebnis: die Position auf jeder der 12 politischen Achsen und die daraus berechneten ideologischen Übereinstimmungen. Mach den Test, um deine herauszufinden.',
+    'Geteiltes Ergebnis: die Position auf jeder der 14 politischen Achsen und die daraus berechneten ideologischen Übereinstimmungen. Mach den Test, um deine herauszufinden.',
   resultsSummaryAria: 'Zusammenfassung der Analyse',
   metaTop: 'Beste Übereinstimmung',
   axesSectionEyebrow: 'Politische Achsen',
-  axesSectionTitle: 'Deine 12 Achsen',
+  axesSectionTitle: 'Deine 14 Achsen',
   proximityEyebrow: 'Ideologische Nähe',
   otherMatches: 'Andere Ideologien',
   navOnThisPage: 'Auf dieser Seite',
@@ -538,7 +546,7 @@ export const de: DeepPartial<Strings> = {
   resultsNavGovernment: 'Idealregierung',
   resultsNavTimeline: 'Zeitleiste',
   resultsNavLiving: 'Wo leben',
-  resultsNavAxes: '12 Achsen',
+  resultsNavAxes: '14 Achsen',
   resultsNavSignature: 'Unterschied',
   resultsNavCountries: 'Länder',
   resultsNavPersonalities: 'Persönlichkeiten',
@@ -596,7 +604,7 @@ export const de: DeepPartial<Strings> = {
       'ext-direita': 'Die extreme Rechte ist durch Hierarchie und Identität geprägt. Der Kompass misst Wirtschaft und Macht; Moral, Religion und Nation bleiben außen vor.',
       'esq-radical': 'Die radikale Linke ist durch Revolution und Kollektivierung geprägt. Der Kompass misst Wirtschaft und Macht; das revolutionäre Projekt bleibt außen vor.',
       libertarian: 'Deine Ideologie liegt an der Grenze zwischen zwei Bereichen. Der Kompass misst Wirtschaft und Macht, und ein kleiner Unterschied bei einem von beiden entscheidet über die Seite.',
-      generic: 'Der Kompass misst 5 der 12 Achsen; die anderen 7 bleiben außen vor.'
+      generic: 'Der Kompass misst 5 der 14 Achsen; die anderen 9 bleiben außen vor.'
     }
   },
   compassAria: (right, authoritarian, traditional) =>
@@ -647,13 +655,13 @@ export const de: DeepPartial<Strings> = {
   paywallModalTitle: 'Erhalte Zugriff auf das vollständige Ergebnis deiner politischen Ansichten',
   paywallModalLead: 'Verstehe Achse für Achse, wie du die Welt siehst, finde heraus, welches heutige Land oder welche Region dir am ähnlichsten ist, und vieles mehr.',
   paywallPdfTitle: 'Nimm deinen vollständigen Bericht als PDF mit',
-  paywallPdfLead: 'Die Analyse aller 12 Achsen, deine Idealregierung und die Länder zum Leben, als PDF zum Aufbewahren und Nachlesen, wann immer du willst.',
+  paywallPdfLead: 'Die Analyse aller 14 Achsen, deine Idealregierung und die Länder zum Leben, als PDF zum Aufbewahren und Nachlesen, wann immer du willst.',
   paywallIncludesTitle: 'Was du freischaltest:',
   paywallIncludes: [
     { lead: 'Deine Idealregierung:', text: 'neun Posten, besetzt mit Menschen, die denken wie du.' },
     { lead: 'In welches Land du ziehen solltest:', text: 'die 10 Länder, die deinen Idealen am nächsten sind.' },
     { lead: 'Wo du am meisten widersprichst:', text: 'bei der Ideologie, der Persönlichkeit und dem Land, die dir am nächsten sind.' },
-    { lead: 'Alle 12 Achsen, eine nach der anderen:', text: 'was jede deiner Positionen verrät, warum sie gelobt und warum sie kritisiert wird.' },
+    { lead: 'Alle 14 Achsen, eine nach der anderen:', text: 'was jede deiner Positionen verrät, warum sie gelobt und warum sie kritisiert wird.' },
     { lead: 'Deine Zeitleiste:', text: 'wer so dachte wie du, von der Antike bis ins 21. Jahrhundert.' },
     { lead: 'Dein idealer Anführer pro Bereich:', text: 'Politik, Wirtschaft, Philosophie und mehr.' },
     { lead: 'Vollständiges Ranking und PDF:', text: 'der ganze Katalog als Tabelle und der Bericht zum Aufbewahren.' }
@@ -715,7 +723,7 @@ export const de: DeepPartial<Strings> = {
   signatureUnusualLeadMax: (pole) => `Keine Ideologie im Katalog ist so stark ${pole.toLowerCase()} ausgerichtet wie du.`,
   signatureUnusualLeadBalanced: (axis, pole, percent) =>
     `Deine Position bei ${axis} liegt in der Mitte. Trotzdem bist du damit stärker ${pole.toLowerCase()} ausgerichtet als ${Math.round(percent)}% der Ideologien im Katalog.`,
-  signatureUnusualNote: (axis) => `Von allen 12 Achsen weichst du bei ${axis} am stärksten vom Feld ab. Das ist das Merkmal, das dich unterscheidet.`,
+  signatureUnusualNote: (axis) => `Von allen 14 Achsen weichst du bei ${axis} am stärksten vom Feld ab. Das ist das Merkmal, das dich unterscheidet.`,
   signatureCommonLead: (axis) => `Deine Position bei ${axis} liegt fast genau beim Median des Katalogs.`,
   signatureCommonNote: (pole) => `Das ist gemeinsamer Boden. Du bist weder ${pole.toLowerCase()} noch zum Gegenpol hin ausgerichtet.`,
   signatureCommonNoteBalanced: (axis) => `Bei ${axis} stehst du in der Mitte, und der Katalog ebenfalls. Hier fällst du am wenigsten auf.`,
@@ -763,15 +771,15 @@ export const de: DeepPartial<Strings> = {
     kpiAnswered: (count) => `${count} Fragen beantwortet`,
     tocTitle: 'In diesem Bericht',
     generatedOn: (date) => `Erstellt am ${date}`,
-    axesIntro: 'Deine Position auf jeder der 12 Achsen. Der Balken beginnt in der Mitte (50%) und reicht zu dem Pol, zu dem du neigst; das Abzeichen zeigt die Intensität.',
+    axesIntro: 'Deine Position auf jeder der 14 Achsen. Der Balken beginnt in der Mitte (50%) und reicht zu dem Pol, zu dem du neigst; das Abzeichen zeigt die Intensität.',
     intensityLegend: 'Intensität',
     intensityLevels: ['Ausgewogen · bis 57%', 'Neigend · 58 bis 72%', 'Stark · 73 bis 87%', 'Sehr stark · 88% oder mehr'],
     alsoClose: 'Auch nah, nach Dimension deines Profils',
     continued: 'Fortsetzung',
-    areasIntro: 'Die Persönlichkeiten im Katalog, deren Profil auf den 12 Achsen deinem am meisten ähnelt.',
+    areasIntro: 'Die Persönlichkeiten im Katalog, deren Profil auf den 14 Achsen deinem am meisten ähnelt.',
     booksIntro: 'Ein Werk von jeder der Persönlichkeiten, die deinen Ergebnissen am nächsten sind.',
     aboutTitle: 'Über diesen Bericht',
-    aboutText: '12 Axes vergleicht deine Antworten mit Profilen von Ideologien, Ländern und Persönlichkeiten auf denselben 12 Achsen. Die Übereinstimmung misst die Nähe zwischen Profilen; sie ist weder eine wissenschaftliche Diagnose noch ein endgültiges Etikett. Deine Antworten werden nicht gespeichert.',
+    aboutText: '12 Axes vergleicht deine Antworten mit Profilen von Ideologien, Ländern und Persönlichkeiten auf denselben 14 Achsen. Die Übereinstimmung misst die Nähe zwischen Profilen; sie ist weder eine wissenschaftliche Diagnose noch ein endgültiges Etikett. Deine Antworten werden nicht gespeichert.',
     ctaTitle: 'Mach den Test noch einmal oder teile ihn'
   },
   shareFilePrefix: '12axes-profile',

@@ -65,8 +65,8 @@
       "economia_05": "DT", "economia_06": "D", "economia_07": "N", "economia_13": "C",
       "economia_03": "CT", "economia_14": "N", "economia_19": "C", "economia_16": "C",
       "economia_17": "CT", "economia_12": "D", "economia_04": "N", "economia_11": "D",
-      "economia_18": "C", "economia_15": "D", "economia_20": "D", "economia_01": "DT",
-      "economia_10": "DT", "economia_09": "D", "economia_02": "D", "economia_08": "CT"
+      "economia_18": "C", "economia_15": "D", "economia_20": "D",
+      "economia_10": "DT", "economia_09": "D", "economia_02": "D"
     }
   },
   "controle": {
@@ -102,11 +102,11 @@
   "moral": {
     "personaBrief": "Tradicionalismo ortodoxo patriarcal: casamento religioso, divórcio só pela Igreja, sodomia criminalizada, aborto proibido; prostituição, contudo, era regulamentada pelo Estado (bilhetes amarelos) e a alta sociedade era cosmopolita.",
     "answers": {
-      "moral_07": "DT", "moral_04": "CT", "moral_15": "D", "moral_12": "C",
+      "moral_07": "DT", "moral_15": "D", "moral_12": "C",
       "moral_03": "DT", "moral_01": "DT", "moral_09": "DT", "moral_06": "CT",
-      "moral_19": "D", "moral_02": "CT", "moral_05": "DT", "moral_17": "DT",
+      "moral_19": "D", "moral_02": "CT", "moral_17": "DT",
       "moral_13": "D", "moral_11": "DT", "moral_10": "CT", "moral_18": "C",
-      "moral_16": "C", "moral_14": "C", "moral_08": "C", "moral_20": "C"
+      "moral_16": "C", "moral_14": "C", "moral_20": "C"
     }
   },
   "tecnologia": {
@@ -119,5 +119,7 @@
       "tecnologia_17": "D", "tecnologia_02": "D", "tecnologia_14": "C", "tecnologia_11": "C"
     }
   },
-  "archetype": { "sociedade": "A", "poder": "A", "economia": "E", "mundo": "A", "tecnologia": "D" }
+  "archetype": { "sociedade": "A", "poder": "A", "economia": "E", "mundo": "A", "tecnologia": "D" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "CT"}},
+  "distribuicao": {"answers": {"economia_08": "CT", "moral_05": "DT", "moral_08": "C"}}
 }

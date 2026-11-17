@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "D"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A combinacao de liberdades individuais com preocupacao anti-dominacao empurra esse perfil para um progressismo social nitido. Em geral, escolhas sexuais, familiares e identitarias entre adultos sao tratadas como materia de autonomia, nao de policiamento moral.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "C",
       "moral_12": "D",
       "moral_03": "CT",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "N",
       "moral_17": "C",
       "moral_13": "C",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "DT",
       "moral_14": "DT",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "C",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "N",
+      "moral_08": "C"
     }
   }
 }

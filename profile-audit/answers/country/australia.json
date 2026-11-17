@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "DT",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "N"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "País progressista em costumes, a Austrália legalizou o casamento igualitário por plebiscito nacional em 2017 e adota políticas amplas de multiculturalismo e reconciliação com povos aborígenes.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "N",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "N",
       "moral_02": "D",
-      "moral_05": "N",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "C",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "N",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

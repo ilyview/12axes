@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "CT",
       "economia_20": "DT",
-      "economia_01": "C",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "O nasserismo era socialmente conservador em costumes, alinhado a valores familiares tradicionais árabes, mas progressista em relação ao papel público da mulher e reformas sociais ligadas ao projeto de modernização nacional.",
     "answers": {
       "moral_07": "DT",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "D",
       "moral_02": "C",
-      "moral_05": "N",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "N",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

@@ -8,6 +8,7 @@ import {
   peopleCompareUrl,
   religionPreference,
   RESULT_URL_KEYS,
+  REQUIRED_RESULT_URL_KEYS,
   type PersonResult
 } from './peopleCompare';
 import { parseReligionList } from './religion';
@@ -55,9 +56,34 @@ describe('parseResultLink', () => {
     expect(parseResultLink('   ')).toEqual({ ok: false, problem: { kind: 'empty' } });
   });
 
+  it('link antigo, só com os 12 primeiros eixos, continua valendo com 12 valores', () => {
+    expect(parseResultLink(`/results?${QUERY}`)).toMatchObject({ ok: true, values: VALUES });
+  });
+
+  it('link novo traz também metodo e distribuicao', () => {
+    const parsed = parseResultLink(`/results?${QUERY}&met=20&dis=80`);
+    expect(parsed).toMatchObject({ ok: true, values: [...VALUES, 20, 80] });
+    expect(RESULT_URL_KEYS).toHaveLength(14);
+  });
+
+  it('só uma das chaves novas: fica o resultado antigo, sem eixo pela metade', () => {
+    expect(parseResultLink(`/results?${QUERY}&met=20`)).toMatchObject({ ok: true, values: VALUES });
+  });
+
+  it('link curto aceita 12 ou 14 valores', () => {
+    expect(parseResultLink(`/r?v=${VALUES.join('-')}`)).toMatchObject({ ok: true, values: VALUES });
+    expect(parseResultLink(`/r?v=${[...VALUES, 20, 80].join('-')}`)).toMatchObject({ ok: true, values: [...VALUES, 20, 80] });
+    expect(parseResultLink(`/r?v=${[...VALUES, 20].join('-')}`)).toMatchObject({ ok: false });
+  });
+
+  it('pessoa com resultado antigo e pessoa com resultado novo comparam nos eixos que as duas têm', () => {
+    expect(pairCompatibility(VALUES, [...VALUES, 0, 100])).toBe(100);
+    expect(midpoint([...VALUES, 0, 100], VALUES)).toHaveLength(12);
+  });
+
   it('diz quais eixos faltam', () => {
     const parsed = parseResultLink('/results?est=65&rep=32');
-    expect(parsed).toEqual({ ok: false, problem: { kind: 'missing', keys: RESULT_URL_KEYS.slice(2) } });
+    expect(parsed).toEqual({ ok: false, problem: { kind: 'missing', keys: REQUIRED_RESULT_URL_KEYS.slice(2) } });
   });
 
   it('rejeita valor fora de 0 a 100 ou não numérico', () => {

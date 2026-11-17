@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "O Chile é conhecido por seu modelo de economia de mercado aberta herdado das reformas liberais, mas a agenda progressista recente (governo Boric, debates constitucionais) trouxe forte questionamento sobre desigualdade, previdência privada e papel do Estado.",
     "answers": {
-      "economia_01": "D",
       "economia_02": "C",
       "economia_03": "C",
       "economia_04": "D",
       "economia_05": "D",
       "economia_06": "DT",
       "economia_07": "C",
-      "economia_08": "N",
       "economia_09": "C",
       "economia_10": "DT",
       "economia_11": "N",
@@ -255,11 +253,8 @@
       "moral_01": "C",
       "moral_02": "D",
       "moral_03": "C",
-      "moral_04": "N",
-      "moral_05": "C",
       "moral_06": "D",
       "moral_07": "C",
-      "moral_08": "N",
       "moral_09": "C",
       "moral_10": "D",
       "moral_11": "C",
@@ -297,6 +292,19 @@
       "tecnologia_18": "D",
       "tecnologia_19": "N",
       "tecnologia_20": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "N"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "N",
+      "moral_05": "C",
+      "moral_08": "N"
     }
   }
 }

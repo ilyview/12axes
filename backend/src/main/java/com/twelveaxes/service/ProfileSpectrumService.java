@@ -33,10 +33,7 @@ public class ProfileSpectrumService {
     public String categoryOf(Map<String, Double> vector, String lang) {
         String normalizedLang = QuizDataService.normalizeLang(lang);
         return cache.computeIfAbsent(normalizedLang + ":" + new TreeMap<>(vector), key -> {
-            List<Double> values = dataService.getAxes(normalizedLang).stream()
-                    .map(axis -> vector.getOrDefault(axis.id(), 50.0))
-                    .toList();
-            List<AxisResult> axes = scoringService.scoreFromLeftPercents(values, normalizedLang);
+            List<AxisResult> axes = scoringService.scoreFromVector(vector, normalizedLang);
             return ideologyMatcherService.findMatches(axes, normalizedLang, null).getFirst().category();
         });
     }

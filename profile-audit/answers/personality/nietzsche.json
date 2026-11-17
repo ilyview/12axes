@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "Nietzsche não tem economia; tem sociologia moral. Despreza o socialismo como 'tirania dos mais mesquinhos' e a redistribuição como ressentimento organizado, mas despreza igualmente o burguês, o industrial e o 'espírito de comércio'. Defende a desigualdade como condição do pathos da distância e a herança como base da linhagem — o que o joga para o polo Privado, mas por razões aristocráticas, não liberais.",
     "answers": {
-      "economia_01": "DT",
       "economia_02": "C",
       "economia_03": "N",
       "economia_04": "C",
       "economia_05": "DT",
       "economia_06": "D",
       "economia_07": "D",
-      "economia_08": "C",
       "economia_09": "C",
       "economia_10": "D",
       "economia_11": "DT",
@@ -255,11 +253,8 @@
       "moral_01": "N",
       "moral_02": "C",
       "moral_03": "D",
-      "moral_04": "C",
-      "moral_05": "DT",
       "moral_06": "C",
       "moral_07": "C",
-      "moral_08": "C",
       "moral_09": "C",
       "moral_10": "DT",
       "moral_11": "C",
@@ -297,6 +292,19 @@
       "tecnologia_18": "C",
       "tecnologia_19": "C",
       "tecnologia_20": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "DT",
+      "moral_08": "C"
     }
   }
 }

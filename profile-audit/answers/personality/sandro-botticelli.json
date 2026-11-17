@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "D",
       "economia_20": "D",
-      "economia_01": "D",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A obra inclui temas cristãos e mitológicos, mas não há doutrina moral ou pronunciamentos políticos conhecidos que autorizem transferir esses temas para posições sociais atuais.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "N",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "N",
       "moral_14": "D",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "C",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "N",
+      "moral_08": "D"
+    }
   }
 }

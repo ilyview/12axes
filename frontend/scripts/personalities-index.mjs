@@ -43,9 +43,9 @@ const STR = {
   pt: {
     skip: 'Pular para a lista',
     catalogNav: 'Catálogo',
-    homeAria: '12 axes, página inicial',
+    homeAria: '14 axes, página inicial',
     eyebrow: 'Catálogo',
-    lead: (n) => `${n} líderes, pensadores, economistas e ativistas mapeados pelo 12 Axes, organizados por área de atuação. Cada um tem foto, biografia curta e perfil completo nos 12 eixos.`,
+    lead: (n) => `${n} líderes, pensadores, economistas e ativistas mapeados pelo 12 Axes, organizados por área de atuação. Cada um tem foto, biografia curta e perfil completo nos 14 eixos.`,
     stats: ['personalidades', 'áreas de atuação', 'eixos por perfil'],
     areasAria: 'Áreas de atuação',
     searchLabel: 'Buscar personalidade',
@@ -81,9 +81,9 @@ const STR = {
   en: {
     skip: 'Skip to the list',
     catalogNav: 'Catalog',
-    homeAria: '12 axes, home page',
+    homeAria: '14 axes, home page',
     eyebrow: 'Catalog',
-    lead: (n) => `${n} leaders, thinkers, economists and activists mapped by 12 Axes, organized by field. Each one has a photo, a short bio and a full profile across the 12 axes.`,
+    lead: (n) => `${n} leaders, thinkers, economists and activists mapped by 12 Axes, organized by field. Each one has a photo, a short bio and a full profile across the 14 axes.`,
     stats: ['personalities', 'fields', 'axes per profile'],
     areasAria: 'Fields',
     searchLabel: 'Search personality',

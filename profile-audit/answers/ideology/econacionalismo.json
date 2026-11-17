@@ -167,11 +167,9 @@
       "economia_18": "N",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "N",
-      "economia_08": "C"
+      "economia_02": "N"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Como corrente de centro-direita, o econacionalismo tende a valorizar continuidade cultural, autoridade familiar e cautela com mudancas sociais aceleradas. Ao mesmo tempo, seu foco principal nao e policiamento moral total, e sim a preservacao do tecido comunitario e da responsabilidade social.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "C",
       "moral_12": "C",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "N",
       "moral_19": "N",
       "moral_02": "C",
-      "moral_05": "N",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "CT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "N",
       "tecnologia_14": "CT",
       "tecnologia_11": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "C"
     }
   }
 }

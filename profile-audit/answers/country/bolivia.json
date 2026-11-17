@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "N",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "O movimento indígena-popular boliviano combina forte tradicionalismo cultural e familiar com pautas progressistas de justiça social, reforma agrária e reconhecimento de direitos coletivos, mas é socialmente mais conservador em costumes.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "D",
       "moral_02": "C",
-      "moral_05": "C",
       "moral_17": "D",
       "moral_13": "N",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "N",
       "moral_16": "N",
       "moral_14": "N",
-      "moral_08": "D",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "C",
       "tecnologia_11": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "N",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

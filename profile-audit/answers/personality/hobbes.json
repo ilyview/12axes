@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "N",
-      "economia_02": "D",
-      "economia_08": "C"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Hobbes derivava moralidade e o próprio conceito de justiça das leis civis promulgadas pelo soberano, não de dogma religioso ou natureza — mas ele também tratava a família como uma pequena soberania sob autoridade paterna, um modelo em miniatura da ordem que evita a guerra de todos contra todos, o que o torna estruturalmente conservador em questões de autoridade familiar mesmo sem hostilidade doutrinária a minorias.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "C",
-      "moral_05": "D",
       "moral_17": "D",
       "moral_13": "N",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "D",
       "moral_14": "D",
-      "moral_08": "D",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "N",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "D"
     }
   }
 }

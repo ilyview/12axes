@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "CT",
       "economia_20": "DT",
-      "economia_01": "C",
       "economia_10": "C",
       "economia_09": "CT",
-      "economia_02": "DT",
-      "economia_08": "DT"
+      "economia_02": "DT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "No campo moral, o anarquismo cristao combina compaixao radical e recusa da coercao com uma etica crista exigente sobre vida, sexualidade e comunidade. Isso tende a produzir respostas menos punitivas e menos patriarcais, mas nem sempre alinhadas ao progressismo liberal em temas bioeticos e sexuais.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "N",
       "moral_15": "C",
       "moral_12": "C",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "N",
       "moral_02": "D",
-      "moral_05": "C",
       "moral_17": "N",
       "moral_13": "D",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "C",
       "moral_14": "D",
-      "moral_08": "DT",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "CT",
       "tecnologia_11": "DT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "N"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "C",
+      "moral_08": "DT"
     }
   }
 }

@@ -167,11 +167,9 @@
                                      "economia_18":  "DT",
                                      "economia_15":  "CT",
                                      "economia_20":  "DT",
-                                     "economia_01":  "CT",
                                      "economia_10":  "DT",
                                      "economia_09":  "CT",
-                                     "economia_02":  "DT",
-                                     "economia_08":  "DT"
+                                     "economia_02":  "DT"
                                  }
                  },
     "controle":  {
@@ -253,7 +251,6 @@
                   "personaBrief":  "A prioridade política de Connolly era a libertação da classe trabalhadora e da Irlanda, não os debates atuais sobre identidade e sexualidade. Sua formação católica sugere alguns valores tradicionais, enquanto seu socialismo e sindicalismo apontam para igualdade social; não há base para converter isso em posições firmes sobre todas as pautas contemporâneas.",
                   "answers":  {
                                   "moral_07":  "C",
-                                  "moral_04":  "C",
                                   "moral_15":  "D",
                                   "moral_12":  "C",
                                   "moral_03":  "C",
@@ -262,7 +259,6 @@
                                   "moral_06":  "D",
                                   "moral_19":  "C",
                                   "moral_02":  "D",
-                                  "moral_05":  "CT",
                                   "moral_17":  "D",
                                   "moral_13":  "D",
                                   "moral_11":  "C",
@@ -270,7 +266,6 @@
                                   "moral_18":  "D",
                                   "moral_16":  "C",
                                   "moral_14":  "D",
-                                  "moral_08":  "DT",
                                   "moral_20":  "C"
                               }
               },
@@ -305,5 +300,7 @@
                       "economia":  "A",
                       "mundo":  "D",
                       "tecnologia":  "D"
-                  }
+                  },
+  "metodo": {"answers": {"economia_01": "CT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "DT", "moral_05": "CT", "moral_08": "DT"}}
 }

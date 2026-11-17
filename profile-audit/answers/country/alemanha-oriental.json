@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "CT",
       "economia_20": "DT",
-      "economia_01": "C",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "DT",
-      "economia_08": "DT"
+      "economia_02": "DT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A RDA promovia um moralismo socialista relativamente conservador em costumes familiares e sexuais, mas com igualdade de gênero funcional no trabalho e educação secular, sem tolerância para pautas identitárias individualistas ocidentais.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "N",
       "moral_19": "N",
       "moral_02": "N",
-      "moral_05": "N",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "C",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "N",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

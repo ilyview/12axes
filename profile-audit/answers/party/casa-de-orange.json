@@ -32,8 +32,7 @@
   "economia": { "personaBrief": "A República dos Orange era o berço do capitalismo mercantil privado (VOC, WIC, Bolsa), com propriedade e herança respeitadas e assistência via igrejas e municípios, não pelo Estado.", "answers": {
     "economia_05": "DT", "economia_06": "C", "economia_07": "D", "economia_13": "D", "economia_03": "N",
     "economia_14": "C", "economia_19": "D", "economia_16": "C", "economia_17": "D", "economia_12": "C",
-    "economia_04": "C", "economia_11": "D", "economia_18": "CT", "economia_15": "DT", "economia_20": "C",
-    "economia_01": "DT", "economia_10": "D", "economia_09": "D", "economia_02": "C", "economia_08": "CT" } },
+    "economia_04": "C", "economia_11": "D", "economia_18": "CT", "economia_15": "DT", "economia_20": "C", "economia_10": "D", "economia_09": "D", "economia_02": "C" } },
   "controle": { "personaBrief": "Economia mercantil amplamente livre, mas com companhias de monopólio privilegiadas pelo Estado e tributação pesada sobre consumo para financiar a guerra; os Orange eram menos ligados aos interesses mercantis que os regentes.", "answers": {
     "controle_05": "D", "controle_20": "C", "controle_19": "D", "controle_14": "C", "controle_07": "C",
     "controle_04": "C", "controle_02": "C", "controle_17": "D", "controle_16": "C", "controle_10": "C",
@@ -50,14 +49,15 @@
     "religiao_01": "D", "religiao_14": "C", "religiao_06": "CT", "religiao_16": "CT", "religiao_08": "CT",
     "religiao_07": "C", "religiao_09": "DT", "religiao_17": "DT", "religiao_20": "CT", "religiao_04": "C" } },
   "moral": { "personaBrief": "Moral calvinista ortodoxa e patriarcal: família como base, sodomia punida severamente, autoridade paterna e mudanças lentas.", "answers": {
-    "moral_07": "DT", "moral_04": "CT", "moral_15": "D", "moral_12": "CT", "moral_03": "DT",
-    "moral_01": "DT", "moral_09": "DT", "moral_06": "CT", "moral_19": "DT", "moral_02": "CT",
-    "moral_05": "D", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "CT",
-    "moral_18": "C", "moral_16": "CT", "moral_14": "C", "moral_08": "C", "moral_20": "CT" } },
+    "moral_07": "DT", "moral_15": "D", "moral_12": "CT", "moral_03": "DT",
+    "moral_01": "DT", "moral_09": "DT", "moral_06": "CT", "moral_19": "DT", "moral_02": "CT", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "CT",
+    "moral_18": "C", "moral_16": "CT", "moral_14": "C", "moral_20": "CT" } },
   "tecnologia": { "personaBrief": "A República era vanguarda técnica (diques, moinhos, navegação, engenharia militar de Maurício), drenando a natureza pela prosperidade, mas sob uma moral calvinista que respeita limites da criação humana.", "answers": {
     "tecnologia_01": "CT", "tecnologia_13": "C", "tecnologia_19": "C", "tecnologia_12": "D", "tecnologia_18": "D",
     "tecnologia_10": "D", "tecnologia_05": "C", "tecnologia_04": "C", "tecnologia_16": "D", "tecnologia_07": "C",
     "tecnologia_08": "D", "tecnologia_03": "C", "tecnologia_15": "D", "tecnologia_20": "C", "tecnologia_06": "D",
     "tecnologia_09": "C", "tecnologia_17": "D", "tecnologia_02": "D", "tecnologia_14": "C", "tecnologia_11": "C" } },
-  "archetype": { "sociedade": "A", "poder": "B", "economia": "C", "mundo": "B", "tecnologia": "D" }
+  "archetype": { "sociedade": "A", "poder": "B", "economia": "C", "mundo": "B", "tecnologia": "D" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "CT"}},
+  "distribuicao": {"answers": {"economia_08": "CT", "moral_05": "D", "moral_08": "C"}}
 }

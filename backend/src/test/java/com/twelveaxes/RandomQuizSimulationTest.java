@@ -71,7 +71,7 @@ class RandomQuizSimulationTest {
         printResult(matches.getFirst(), axes);
 
         assertThat(answers).hasSize(quiz.questionCount());
-        assertThat(axes).hasSize(12);
+        assertThat(axes).hasSize(14);
         assertThat(matches).isNotEmpty();
     }
 

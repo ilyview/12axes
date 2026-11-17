@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "A administração favorece privatizações, contratos privados e propriedade particular, em ruptura com o peronismo. Saúde e educação públicas, empresas estratégicas e assistência focalizada continuam presentes, de modo que a orientação liberalizante não implica propriedade exclusivamente privada nem impostos voluntários.",
     "answers": {
-      "economia_01": "DT",
       "economia_02": "CT",
       "economia_03": "C",
       "economia_04": "D",
       "economia_05": "D",
       "economia_06": "C",
       "economia_07": "C",
-      "economia_08": "C",
       "economia_09": "D",
       "economia_10": "DT",
       "economia_11": "C",
@@ -255,11 +253,8 @@
       "moral_01": "CT",
       "moral_02": "C",
       "moral_03": "C",
-      "moral_04": "C",
-      "moral_05": "D",
       "moral_06": "DT",
       "moral_07": "CT",
-      "moral_08": "C",
       "moral_09": "C",
       "moral_10": "D",
       "moral_11": "D",
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "B",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
+    }
   }
 }

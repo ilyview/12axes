@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "N",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Erdoğan promove ativamente valores familiares tradicionais islâmicos, opondo-se abertamente a direitos LGBT, ao aborto e a mudanças de costumes, enquadrando-os como ameaças aos valores nacionais e religiosos turcos.",
     "answers": {
       "moral_07": "DT",
-      "moral_04": "CT",
       "moral_15": "N",
       "moral_12": "CT",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "DT",
       "moral_02": "CT",
-      "moral_05": "N",
       "moral_17": "DT",
       "moral_13": "DT",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "CT",
       "moral_14": "C",
-      "moral_08": "N",
       "moral_20": "CT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "C",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

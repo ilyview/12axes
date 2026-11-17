@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Anarcocomunismo: terra e instrumentos de produção comuns, fim da propriedade privada e do salário, sem Estado.",
   "answers": {
-   "economia_01": "CT",
    "economia_02": "DT",
    "economia_03": "N",
    "economia_04": "DT",
    "economia_05": "CT",
    "economia_06": "DT",
    "economia_07": "N",
-   "economia_08": "DT",
    "economia_09": "CT",
    "economia_10": "DT",
    "economia_11": "CT",
@@ -255,11 +253,8 @@
    "moral_01": "CT",
    "moral_02": "DT",
    "moral_03": "C",
-   "moral_04": "DT",
-   "moral_05": "C",
    "moral_06": "DT",
    "moral_07": "CT",
-   "moral_08": "DT",
    "moral_09": "CT",
    "moral_10": "DT",
    "moral_11": "C",
@@ -305,5 +300,18 @@
   "economia": "A",
   "mundo": "E",
   "tecnologia": "C"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "CT",
+   "moral_04": "DT"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "DT",
+   "moral_05": "C",
+   "moral_08": "DT"
+  }
  }
 }

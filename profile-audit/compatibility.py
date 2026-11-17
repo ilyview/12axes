@@ -27,6 +27,7 @@ import os
 AXIS_IDS = [
     "estrutura", "representacao", "poder", "imigracao", "diplomacia", "intervencao",
     "economia", "controle", "comercio", "religiao", "moral", "tecnologia",
+    "metodo", "distribuicao",
 ]
 CENTER = 50.0
 AXIS_SPREAD = 50.0
@@ -87,9 +88,9 @@ def opposite_side_factor(u, t):
     return 1.0 - penalty
 
 
-def axis_similarity(uv, tv):
+def axis_similarity(uv, tv, axes):
     total = 0.0
-    for ax in AXIS_IDS:
+    for ax in axes:
         u = uv.get(ax, CENTER)
         t = tv.get(ax, CENTER)
         diff = abs(u - t)
@@ -97,45 +98,52 @@ def axis_similarity(uv, tv):
         if (u - CENTER) * (t - CENTER) < 0.0:
             sim *= opposite_side_factor(u, t)
         total += sim
-    return 100.0 * total / len(AXIS_IDS)
+    return 100.0 * total / len(axes)
 
 
-def direction_similarity(uv, tv):
+def direction_similarity(uv, tv, axes):
     dot = 0.0
     un = 0.0
     tn = 0.0
-    for ax in AXIS_IDS:
+    for ax in axes:
         cu = uv.get(ax, CENTER) - CENTER
         ct = tv.get(ax, CENTER) - CENTER
         dot += cu * ct
         un += cu * cu
         tn += ct * ct
     # Cosseno aumentado (espelho de ProfileMatchScorer.directionSimilarity).
-    augment = len(AXIS_IDS) * DIRECTION_AUGMENT_RADIUS * DIRECTION_AUGMENT_RADIUS
+    augment = len(axes) * DIRECTION_AUGMENT_RADIUS * DIRECTION_AUGMENT_RADIUS
     cosine = (dot + augment) / math.sqrt((un + augment) * (tn + augment))
     return CENTER + CENTER * cosine
 
 
-def avg_dist_from_center(v):
-    return sum(abs(v.get(ax, CENTER) - CENTER) for ax in AXIS_IDS) / len(AXIS_IDS)
+def avg_dist_from_center(v, axes):
+    return sum(abs(v.get(ax, CENTER) - CENTER) for ax in axes) / len(axes)
 
 
-def magnitude_similarity(uv, tv):
-    return 100.0 - 2.0 * abs(avg_dist_from_center(uv) - avg_dist_from_center(tv))
+def magnitude_similarity(uv, tv, axes):
+    return 100.0 - 2.0 * abs(avg_dist_from_center(uv, axes) - avg_dist_from_center(tv, axes))
 
 
-def outlier_similarity(uv, tv):
+def outlier_similarity(uv, tv, axes):
     maxdiff = 0.0
-    for ax in AXIS_IDS:
+    for ax in axes:
         maxdiff = max(maxdiff, abs(uv.get(ax, CENTER) - tv.get(ax, CENTER)))
     return 100.0 * max(0.0, 1.0 - (maxdiff / OUTLIER_FULL_SPREAD) ** OUTLIER_EXPONENT)
 
 
+def shared_axes(uv, tv):
+    """Espelho de ProfileMatchScorer.sharedAxes: eixo sem valor em um dos vetores fica fora da conta."""
+    axes = [ax for ax in AXIS_IDS if ax in uv and ax in tv]
+    return axes or AXIS_IDS
+
+
 def compatibility(uv, tv):
-    a = axis_similarity(uv, tv)
-    d = direction_similarity(uv, tv)
-    m = magnitude_similarity(uv, tv)
-    o = outlier_similarity(uv, tv)
+    axes = shared_axes(uv, tv)
+    a = axis_similarity(uv, tv, axes)
+    d = direction_similarity(uv, tv, axes)
+    m = magnitude_similarity(uv, tv, axes)
+    o = outlier_similarity(uv, tv, axes)
     raw = AXIS_WEIGHT * a + DIRECTION_WEIGHT * d + MAGNITUDE_WEIGHT * m + OUTLIER_WEIGHT * o
     return round(max(0.0, min(100.0, raw)), 1)
 

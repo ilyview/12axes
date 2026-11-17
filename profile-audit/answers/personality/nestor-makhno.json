@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Anarcocomunista: a terra e os meios de produção pertencem às comunidades, sem patrões, sem proprietários e sem Estado.",
   "answers": {
-   "economia_01": "CT",
    "economia_02": "D",
    "economia_03": "N",
    "economia_04": "D",
    "economia_05": "CT",
    "economia_06": "D",
    "economia_07": "N",
-   "economia_08": "D",
    "economia_09": "CT",
    "economia_10": "DT",
    "economia_11": "C",
@@ -255,11 +253,8 @@
    "moral_01": "C",
    "moral_02": "D",
    "moral_03": "C",
-   "moral_04": "D",
-   "moral_05": "C",
    "moral_06": "D",
    "moral_07": "C",
-   "moral_08": "D",
    "moral_09": "C",
    "moral_10": "D",
    "moral_11": "C",
@@ -305,5 +300,18 @@
   "economia": "A",
   "mundo": "D",
   "tecnologia": "B"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "CT",
+   "moral_04": "D"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "D",
+   "moral_05": "C",
+   "moral_08": "D"
+  }
  }
 }

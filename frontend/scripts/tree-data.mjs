@@ -114,7 +114,9 @@ export function buildTreeData(dataDir) {
     const items = metas.filter((meta) => vectors.has(meta.id));
     const n = items.length;
     const objects = items.map((meta) => vectors.get(meta.id));
-    const arrays = objects.map((vector) => axisIds.map((id) => vector[id] ?? 50));
+    // Só os eixos que todos os perfis têm (os novos entram quando o catálogo inteiro for reauditado).
+    const kindAxisIds = axisIds.filter((id) => objects.every((vector) => vector[id] !== undefined));
+    const arrays = objects.map((vector) => kindAxisIds.map((id) => vector[id]));
 
     // Similaridade = a pontuação do quiz (ProfileMatchScorer), média dos dois sentidos. Perfis de religiões
     // incompatíveis (ex.: um grupo islâmico e um católico) nunca são vizinhos: pontuação 0, como no filtro do quiz.
@@ -135,7 +137,7 @@ export function buildTreeData(dataDir) {
     const scale = Math.max(0.85, Math.sqrt(n / 271));
     const worldX = BASE_X * scale;
     const worldY = BASE_Y * scale;
-    const own = arrays.map((vector) => compassOf(vector, axisIds));
+    const own = arrays.map((vector) => compassOf(vector, kindAxisIds));
     const rightRank = percentile(own.map((o) => o.right));
     const authRank = percentile(own.map((o) => o.authoritarian));
     const anchors = items.map((_, i) => {

@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Economia mista com forte regulação, serviços públicos e política ambiental, empresas como Nike e Intel, mas sem controle estatal da produção.",
   "answers": {
-   "economia_01": "C",
    "economia_02": "C",
    "economia_03": "C",
    "economia_04": "D",
    "economia_05": "D",
    "economia_06": "C",
    "economia_07": "D",
-   "economia_08": "C",
    "economia_09": "D",
    "economia_10": "C",
    "economia_11": "D",
@@ -255,11 +253,8 @@
    "moral_01": "C",
    "moral_02": "DT",
    "moral_03": "C",
-   "moral_04": "DT",
-   "moral_05": "CT",
    "moral_06": "D",
    "moral_07": "C",
-   "moral_08": "DT",
    "moral_09": "CT",
    "moral_10": "DT",
    "moral_11": "CT",
@@ -305,5 +300,18 @@
   "economia": "B",
   "mundo": "C",
   "tecnologia": "B"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "C",
+   "moral_04": "DT"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "C",
+   "moral_05": "CT",
+   "moral_08": "DT"
+  }
  }
 }

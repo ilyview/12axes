@@ -75,7 +75,7 @@ export const en: Strings = {
   introLead:
     'You might be labeling yourself wrong. In a few minutes, discover your real ideology, the country that thinks most like you, and the political leader closest to your ideas.',
   startQuiz: 'Discover my profile',
-  seeAxes: 'See the 12 axes',
+  seeAxes: 'See the 14 axes',
   heroLabels: ['Free', 'Anonymous', 'Fast', 'Instant result'],
   heroTeaserLabel: 'match',
   heroTeaserTag: 'Example result',
@@ -84,21 +84,21 @@ export const en: Strings = {
   formats: {
     short: {
       label: 'Short',
-      questionCount: '36 questions',
+      questionCount: '42 questions',
       description: 'A quick result, ideal for a first reading of your profile',
       duration: 'About 5 min',
       action: 'Start short version'
     },
     extended: {
       label: 'Full',
-      questionCount: '60 questions',
+      questionCount: '70 questions',
       description: 'More precision to bring your result closer to the ideological profiles.',
       duration: 'About 9 min',
       action: 'Start full version'
     },
     extreme: {
       label: 'Extreme',
-      questionCount: '240 questions',
+      questionCount: '275 questions',
       description: 'Know the exact synthesis of your thinking with 100% precision.',
       duration: 'About 30 min',
       action: 'Start extreme version'
@@ -143,7 +143,9 @@ export const en: Strings = {
       comercio: { left: 'support for protecting national industry', right: 'support for opening up to international trade' },
       religiao: { left: 'a preference for separating religion from politics', right: 'support for more religion in public life' },
       moral: { left: 'progressive social values', right: 'traditional social values' },
-      tecnologia: { left: 'trust in technology and industry', right: 'a preference for more natural, biological solutions' }
+      tecnologia: { left: 'trust in technology and industry', right: 'a preference for more natural, biological solutions' },
+      metodo: { left: 'a preference for gradual change through institutions', right: 'a readiness for rupture and direct action' },
+      distribuicao: { left: 'support for more equality and redistribution', right: 'support for merit and the inequality that comes from it' }
     }
   },
   compareEyebrow: 'Comparative analysis',
@@ -155,7 +157,7 @@ export const en: Strings = {
   compareFieldCaption: 'Personality, country or ideology',
   compareFullView: 'See full comparison',
   compareExamplePlaceholder: 'Ex.: Donald Trump',
-  compareAxesTitle: 'Your 12 axes',
+  compareAxesTitle: 'Your 14 axes',
   compareNoResults: 'No profiles found.',
   compareLoading: 'Comparing…',
   compareLoadError: 'Could not load the comparison. Please try again.',
@@ -165,6 +167,8 @@ export const en: Strings = {
     economia: 'economically',
     moral: 'morally',
     tecnologia: 'technologically',
+    metodo: 'methodically',
+    distribuicao: 'distributively',
     diplomacia: 'diplomatically'
   },
   compareClosestLine: (adverb, name) => `You are ${adverb} compatible with ${name}.`,
@@ -178,7 +182,7 @@ export const en: Strings = {
   compareOptionAria: (name, type) => `${name}, ${type}`,
   comparePageDocTitle: 'Compare profiles — 12 Axes',
   comparePageEyebrow: 'Compare profiles',
-  comparePageTitle: 'Side by side, on the 12 axes',
+  comparePageTitle: 'Side by side, on the 14 axes',
   comparePageProfilesTitle: 'Profiles',
   comparePageNeedMore: 'Pick one more profile to compare.',
   comparePageFull: 'Up to 3 profiles. Remove one to pick another.',
@@ -186,7 +190,7 @@ export const en: Strings = {
   comparePageRemoveAria: (name) => `Remove ${name} from the comparison`,
   comparePageUnknown: 'Profile not found',
   comparePageNotFound: 'One of the profiles in this link does not exist. Remove it and pick another.',
-  comparePageAxesTitle: 'The 12 axes',
+  comparePageAxesTitle: 'The 14 axes',
   comparePageAxisAria: (axis, values) => `${axis}: ${values}`,
   comparePageCompassAria: (points) => `Political compass: ${points}`,
   comparePagePointAria: (name, right, authoritarian, traditional) =>
@@ -265,7 +269,7 @@ export const en: Strings = {
   peopleNavValues: 'Values',
   peopleNavSharedValues: 'In common',
   peoplePageDocTitle: 'Compare with someone else — 12 Axes',
-  peoplePageTitle: 'The two of you, on the 12 axes',
+  peoplePageTitle: 'The two of you, on the 14 axes',
   peoplePagePeopleTitle: 'People',
   peoplePageBadLink: 'This comparison link is incomplete. Open your result and use "Compare with someone else".',
   peoplePageLoadError: 'Could not load the comparison. Please try again.',
@@ -294,7 +298,9 @@ export const en: Strings = {
     moral:
       'Evaluates cultural progressivism, civil rights, and social change in contrast with tradition, family, customs, and moral conservatism.',
     tecnologia:
-      'Measures enthusiasm for technology, AI, genetic engineering, and technical development against biological, environmental, and preservationist caution.'
+      'Measures enthusiasm for technology, AI, genetic engineering, and technical development against biological, environmental, and preservationist caution.',
+    metodo: 'Measures whether political change should come gradually, through voting, law and agreement, or through rupture, direct action, disobedience and, at the limit, revolution. It measures the means, not the direction of change.',
+    distribuicao: 'Measures how much inequality is acceptable: progressive taxes, taxes on fortunes and inheritances and equal outcomes versus merit, a single tax rate for all and income differences seen as fair.'
   },
   homeAxes: {
     estrutura: { label: 'Structure', leftPole: 'Federal', rightPole: 'Unitary' },
@@ -308,7 +314,9 @@ export const en: Strings = {
     comercio: { label: 'Trade', leftPole: 'Protectionism', rightPole: 'Globalism' },
     religiao: { label: 'Religion', leftPole: 'Irreligious', rightPole: 'Religious' },
     moral: { label: 'Morality', leftPole: 'Progressive', rightPole: 'Traditionalist' },
-    tecnologia: { label: 'Technology', leftPole: 'Technology', rightPole: 'Biology' }
+    tecnologia: { label: 'Technology', leftPole: 'Technology', rightPole: 'Biology' },
+    metodo: { label: 'Method', leftPole: 'Gradualism', rightPole: 'Rupture' },
+    distribuicao: { label: 'Distribution', leftPole: 'Egalitarian', rightPole: 'Meritocratic' }
   },
   spectrumItems: [
     {
@@ -372,12 +380,12 @@ export const en: Strings = {
     {
       question: 'Is the test reliable?',
       answer:
-        'The 12 Axes political test is reliable as a tool for reading and comparing political positions. It uses questions spread across 12 axes to reduce single-topic bias, but it does not replace study, debate, or academic analysis.'
+        'The 12 Axes political test is reliable as a tool for reading and comparing political positions. It uses questions spread across 14 axes to reduce single-topic bias, but it does not replace study, debate, or academic analysis.'
     },
     {
       question: 'How long does it take?',
       answer:
-        'The short version takes about 5 minutes. The full version takes roughly 9 minutes. The extreme version, with 240 questions, can take about 30 minutes.'
+        'The short version takes about 5 minutes. The full version takes roughly 9 minutes. The extreme version, with 275 questions, can take about 30 minutes.'
     },
     {
       question: 'Can I retake it?',
@@ -407,7 +415,7 @@ export const en: Strings = {
     {
       question: 'Can I share it?',
       answer:
-        'Yes. When you finish, you can share your result to discuss political ideology, the political spectrum, left, right, center, and the 12 axes with other people.'
+        'Yes. When you finish, you can share your result to discuss political ideology, the political spectrum, left, right, center, and the 14 axes with other people.'
     },
     {
       question: 'Does the test collect data?',
@@ -421,15 +429,15 @@ export const en: Strings = {
     },
     {
       question: 'What is 12 Axes?',
-      answer: '12 Axes is a free political test that measures your position across 12 axes (state structure, representation, liberties, immigration, diplomacy, intervention, economy, economic control, trade, religion, morals and technology) and shows your compatible political ideology, country and political figure.'
+      answer: '12 Axes is a free political test that measures your position across 14 axes (state structure, representation, liberties, immigration, diplomacy, intervention, economy, economic control, trade, religion, morals, technology, method of change and distribution) and shows your compatible political ideology, country and political figure.'
     },
     {
       question: 'Does 12 Axes have a political compass?',
-      answer: 'Yes. At the end of the result there is a two-axis political compass, left × right and authoritarian × libertarian, with a progressive × traditionalist bar. It summarizes your 12 axes visually, but it does not replace the full analysis.'
+      answer: 'Yes. At the end of the result there is a two-axis political compass, left × right and authoritarian × libertarian, with a progressive × traditionalist bar. It summarizes your 14 axes visually, but it does not replace the full analysis.'
     },
     {
       question: 'How do I find my compatible political ideology?',
-      answer: 'Take the political quiz, with 36, 60 or 240 questions. The result shows the ideologies most compatible with your answers, with the compatibility percentage and the position of each one across the 12 axes.'
+      answer: 'Take the political quiz, with 42, 70 or 275 questions. The result shows the ideologies most compatible with your answers, with the compatibility percentage and the position of each one across the 14 axes.'
     },
     {
       question: 'Can I find out which country or political figure matches me?',
@@ -437,7 +445,7 @@ export const en: Strings = {
     },
     {
       question: 'How many questions does the political quiz have?',
-      answer: 'There are three versions: quick, with 36 questions, full, with 60, and extreme, with 240. All cover the same 12 axes; the more questions, the more precise the result tends to be.'
+      answer: 'There are three versions: quick, with 42 questions, full, with 70, and extreme, with 275. All cover the same 14 axes; the more questions, the more precise the result tends to be.'
     }
   ],
   howEyebrow: 'How it works',
@@ -450,7 +458,7 @@ export const en: Strings = {
       text: 'Agree or disagree with statements about the economy, the state, civil liberties, values, religion, foreign policy, and technology.'
     },
     {
-      title: 'Analysis across 12 axes',
+      title: 'Analysis across 14 axes',
       text: 'Each answer positions you on 12 independent ideological axes - from free markets to planning, from nationalism to globalism.'
     },
     {
@@ -458,7 +466,7 @@ export const en: Strings = {
       text: 'Receive your ideological profile, most compatible ideologies, closest country, related personality, and per-axis results.'
     }
   ],
-  axesGuideEyebrow: '12 axes',
+  axesGuideEyebrow: '14 axes',
   axesGuideTitle: 'What does each axis mean?',
   axesGuideLead:
     'The 12 Axes ideology test analyzes federalism, political representation, democracy, elections, immigration, international trade, religion in politics, economic policy, morality, and technology in separate dimensions.',
@@ -487,12 +495,12 @@ export const en: Strings = {
   navStart: 'Start',
   navTakeTest: 'Take the test',
   menuAria: 'Open menu',
-  roseAria: 'Rose of the 12 axes',
+  roseAria: 'Rose of the 14 axes',
   spectrumBarAria: 'Political spectrum bar with the eight categories',
   versionsEyebrow: 'Versions',
   versionsTitle: 'Choose the depth',
   versionsLead:
-    'Start with the quick quiz or go deeper for a more precise portrait of your ideological profile. All versions use the same 12 axes and return the result immediately.',
+    'Start with the quick quiz or go deeper for a more precise portrait of your ideological profile. All versions use the same 14 axes and return the result immediately.',
   variantEyebrow: 'Choose the format',
   variantTitlePre: 'Do you want speed or ',
   variantTitleEm: 'precision?',
@@ -500,7 +508,7 @@ export const en: Strings = {
   depthLabel: 'Depth',
   depthAria: (level) => `Depth ${level} of 3`,
   recommended: 'Recommended',
-  formatNotes: ['All versions use the same 12 axes', 'Anonymous, no sign-up', 'Instant result'],
+  formatNotes: ['All versions use the same 14 axes', 'Anonymous, no sign-up', 'Instant result'],
   variantLead:
     'The short version reveals the result quickly. The full version increases precision to bring your result closer to the ideological profiles.',
   quizNavAria: 'Quiz navigation',
@@ -523,11 +531,11 @@ export const en: Strings = {
   resultsLead: (count) =>
     `Analysis based on ${count} answers distributed across 12 fundamental dimensions of political ideology. Check your position on each axis and your ideological matches.`,
   resultsLeadShared:
-    'Shared result: the position on each of the 12 political axes and the ideological matches calculated from it. Take the test to discover yours.',
+    'Shared result: the position on each of the 14 political axes and the ideological matches calculated from it. Take the test to discover yours.',
   resultsSummaryAria: 'Analysis summary',
   metaTop: 'Top match',
   axesSectionEyebrow: 'Political axes',
-  axesSectionTitle: 'Your 12 axes',
+  axesSectionTitle: 'Your 14 axes',
   proximityEyebrow: 'Ideological proximity',
   otherMatches: 'Other ideologies',
   navOnThisPage: 'On this page',
@@ -538,7 +546,7 @@ export const en: Strings = {
   resultsNavGovernment: 'Ideal government',
   resultsNavTimeline: 'Timeline',
   resultsNavLiving: 'Where to live',
-  resultsNavAxes: '12 axes',
+  resultsNavAxes: '14 axes',
   resultsNavSignature: 'Distinction',
   resultsNavCountries: 'Countries',
   resultsNavPersonalities: 'Personalities',
@@ -597,7 +605,7 @@ export const en: Strings = {
       'ext-direita': 'The far right is defined by hierarchy and identity. The compass measures economy and power; morals, religion and nation are left out.',
       'esq-radical': 'The radical left is defined by revolution and collectivization. The compass measures economy and power; the revolutionary project is left out.',
       libertarian: 'Your ideology sits on the border between two regions. The compass measures economy and power, and a small difference in either decides the side.',
-      generic: 'The compass measures 5 of the 12 axes; the other 7 are left out.'
+      generic: 'The compass measures 5 of the 14 axes; the other 9 are left out.'
     }
   },
   compassAria: (right, authoritarian, traditional) =>
@@ -648,13 +656,13 @@ export const en: Strings = {
   paywallModalTitle: 'Get access to the complete result of your political views',
   paywallModalLead: 'Understand how you see the world axis by axis, find out which current country or region looks most like you, and much more.',
   paywallPdfTitle: 'Take your full report as a PDF',
-  paywallPdfLead: 'The analysis of all 12 axes, your ideal government and the countries to live in, in a PDF to keep and reread whenever you like.',
+  paywallPdfLead: 'The analysis of all 14 axes, your ideal government and the countries to live in, in a PDF to keep and reread whenever you like.',
   paywallIncludesTitle: 'What you unlock:',
   paywallIncludes: [
     { lead: 'Your ideal government:', text: 'nine posts filled by people who think like you.' },
     { lead: 'Which country to move to:', text: 'the 10 countries closest to your ideals.' },
     { lead: 'Where you disagree most:', text: 'with the ideology, figure and country closest to you.' },
-    { lead: 'All 12 axes, one by one:', text: 'what each of your positions reveals, why it is praised and why it is criticized.' },
+    { lead: 'All 14 axes, one by one:', text: 'what each of your positions reveals, why it is praised and why it is criticized.' },
     { lead: 'Your timeline:', text: 'who thought like you, from Antiquity to the 21st century.' },
     { lead: 'Your ideal leader by field:', text: 'politics, economics, philosophy and more.' },
     { lead: 'Full ranking and PDF:', text: 'the whole catalog in a spreadsheet, and the report to keep.' }
@@ -716,7 +724,7 @@ export const en: Strings = {
   signatureUnusualLeadMax: (pole) => `No ideology in the catalog leans as far toward ${pole.toLowerCase()} as you do.`,
   signatureUnusualLeadBalanced: (axis, pole, percent) =>
     `Your position on ${axis} is middle of the road. Even so, that puts you further toward ${pole.toLowerCase()} than ${Math.round(percent)}% of the ideologies in the catalog.`,
-  signatureUnusualNote: (axis) => `Of all 12 axes, ${axis} is where you depart most from the field. It is the trait that sets you apart.`,
+  signatureUnusualNote: (axis) => `Of all 14 axes, ${axis} is where you depart most from the field. It is the trait that sets you apart.`,
   signatureCommonLead: (axis) => `Your position on ${axis} sits almost exactly at the catalog median.`,
   signatureCommonNote: (pole) => `This is common ground. You lean neither toward ${pole.toLowerCase()} nor to the opposite pole.`,
   signatureCommonNoteBalanced: (axis) => `You sit at the centre on ${axis}, and so does the catalog. This is where your profile stands out least.`,
@@ -764,15 +772,15 @@ export const en: Strings = {
     kpiAnswered: (count) => `${count} questions answered`,
     tocTitle: 'In this report',
     generatedOn: (date) => `Generated on ${date}`,
-    axesIntro: 'Your position on each of the 12 axes. The bar starts at the center (50%) and extends toward the pole you lean to; the badge shows the intensity.',
+    axesIntro: 'Your position on each of the 14 axes. The bar starts at the center (50%) and extends toward the pole you lean to; the badge shows the intensity.',
     intensityLegend: 'Intensity',
     intensityLevels: ['Balanced · up to 57%', 'Leaning · 58 to 72%', 'Strong · 73 to 87%', 'Very strong · 88% or more'],
     alsoClose: 'Also close, by dimension of your profile',
     continued: 'continued',
-    areasIntro: 'The figures in the catalog whose profile across the 12 axes most resembles yours.',
+    areasIntro: 'The figures in the catalog whose profile across the 14 axes most resembles yours.',
     booksIntro: 'One work by each of the figures closest to your results.',
     aboutTitle: 'About this report',
-    aboutText: '12 Axes compares your answers with profiles of ideologies, countries and figures on the same 12 axes. Compatibility measures closeness between profiles; it is not a scientific diagnosis or a definitive label. Your answers are not stored.',
+    aboutText: '12 Axes compares your answers with profiles of ideologies, countries and figures on the same 14 axes. Compatibility measures closeness between profiles; it is not a scientific diagnosis or a definitive label. Your answers are not stored.',
     ctaTitle: 'Retake the quiz or share it'
   },
   shareFilePrefix: '12axes-profile',

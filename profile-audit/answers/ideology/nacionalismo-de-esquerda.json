@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "C",
-      "economia_08": "D"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A igualdade social favorece direitos civis e inclusão, mas não determina toda posição cultural. A família ideológica ? heterogênea e pode privilegiar mudança gradual em temas não centrais.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "D",
       "moral_15": "D",
       "moral_12": "D",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "C",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "D",
       "moral_14": "D",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "B",
     "mundo": "C",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
+    }
   }
 }

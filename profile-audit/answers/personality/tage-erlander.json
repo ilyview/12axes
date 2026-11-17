@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "Expandiu serviços universais e pensões públicas, sem substituir amplamente a indústria privada por propriedade estatal. Negociação coletiva e redução da desigualdade conviviam com empresas privadas numa economia mista reformista.",
     "answers": {
-      "economia_01": "D",
       "economia_02": "D",
       "economia_03": "CT",
       "economia_04": "DT",
       "economia_05": "D",
       "economia_06": "D",
       "economia_07": "CT",
-      "economia_08": "D",
       "economia_09": "CT",
       "economia_10": "DT",
       "economia_11": "CT",
@@ -255,11 +253,8 @@
       "moral_01": "D",
       "moral_02": "C",
       "moral_03": "C",
-      "moral_04": "C",
-      "moral_05": "N",
       "moral_06": "C",
       "moral_07": "C",
-      "moral_08": "C",
       "moral_09": "C",
       "moral_10": "D",
       "moral_11": "C",
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "D",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "N",
+      "moral_08": "C"
+    }
   }
 }

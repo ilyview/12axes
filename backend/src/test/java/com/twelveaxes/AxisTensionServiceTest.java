@@ -36,7 +36,7 @@ class AxisTensionServiceTest {
     // Federalismo maximo com autocracia forte: no catalogo esses eixos andam
     // juntos na direcao oposta, entao a combinacao e rara.
     private List<AxisResult> perfilExtremo() {
-        return axesCom(List.of(96.3, 18.8, 43.8, 75.0, 57.5, 52.5, 15.0, 12.5, 20.0, 63.7, 8.8, 76.3));
+        return axesCom(List.of(96.3, 18.8, 43.8, 75.0, 57.5, 52.5, 15.0, 12.5, 20.0, 63.7, 8.8, 76.3, 62.5, 30.0));
     }
 
     @Test
@@ -56,7 +56,7 @@ class AxisTensionServiceTest {
     @Test
     void neutralProfileHasNoTension() {
         var tensao = tensionService.findStrongest(
-                axesCom(Collections.nCopies(12, 50.0)), QuizDataService.LANG_PT);
+                axesCom(Collections.nCopies(14, 50.0)), QuizDataService.LANG_PT);
 
         assertThat(tensao).isNull();
     }
@@ -65,7 +65,7 @@ class AxisTensionServiceTest {
     @Test
     void moderateProfileHasNoTension() {
         var tensao = tensionService.findStrongest(
-                axesCom(List.of(58.0, 55.0, 46.0, 53.0, 47.0, 52.0, 44.0, 57.0, 49.0, 53.0, 45.0, 56.0)),
+                axesCom(List.of(58.0, 55.0, 46.0, 53.0, 47.0, 52.0, 44.0, 57.0, 49.0, 53.0, 45.0, 56.0, 54.0, 47.0)),
                 QuizDataService.LANG_PT);
 
         assertThat(tensao).isNull();

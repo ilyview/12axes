@@ -32,8 +32,7 @@
   "economia": { "personaBrief": "Segue a doutrina social da Igreja: propriedade privada familiar difundida, bens comunais e grêmios, contra o capitalismo liberal e o socialismo estatista.", "answers": {
     "economia_05": "D", "economia_06": "D", "economia_07": "C", "economia_13": "C", "economia_03": "C",
     "economia_14": "N", "economia_19": "C", "economia_16": "D", "economia_17": "C", "economia_12": "N",
-    "economia_04": "D", "economia_11": "C", "economia_18": "C", "economia_15": "D", "economia_20": "D",
-    "economia_01": "DT", "economia_10": "D", "economia_09": "C", "economia_02": "D", "economia_08": "CT" } },
+    "economia_04": "D", "economia_11": "C", "economia_18": "C", "economia_15": "D", "economia_20": "D", "economia_10": "D", "economia_09": "C", "economia_02": "D" } },
   "controle": { "personaBrief": "Prefere economia orgânica e corporativa, com salário justo e regulação gremial, rejeitando o livre-mercado liberal e também o planejamento estatal centralizado.", "answers": {
     "controle_05": "C", "controle_20": "D", "controle_19": "C", "controle_14": "N", "controle_07": "C",
     "controle_04": "D", "controle_02": "D", "controle_17": "C", "controle_16": "D", "controle_10": "D",
@@ -50,14 +49,15 @@
     "religiao_01": "DT", "religiao_14": "CT", "religiao_06": "CT", "religiao_16": "CT", "religiao_08": "CT",
     "religiao_07": "DT", "religiao_09": "DT", "religiao_17": "DT", "religiao_20": "CT", "religiao_04": "CT" } },
   "moral": { "personaBrief": "Tradicionalismo católico pleno: família natural, contra aborto, ideologia de gênero e permissividade sexual.", "answers": {
-    "moral_07": "D", "moral_04": "CT", "moral_15": "D", "moral_12": "CT", "moral_03": "DT",
-    "moral_01": "DT", "moral_09": "DT", "moral_06": "CT", "moral_19": "DT", "moral_02": "CT",
-    "moral_05": "D", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "CT",
-    "moral_18": "C", "moral_16": "CT", "moral_14": "CT", "moral_08": "C", "moral_20": "CT" } },
+    "moral_07": "D", "moral_15": "D", "moral_12": "CT", "moral_03": "DT",
+    "moral_01": "DT", "moral_09": "DT", "moral_06": "CT", "moral_19": "DT", "moral_02": "CT", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "CT",
+    "moral_18": "C", "moral_16": "CT", "moral_14": "CT", "moral_20": "CT" } },
   "tecnologia": { "personaBrief": "Ruralista e tradicional, valoriza vida comunitária no campo e limites morais à biotecnologia, desconfiando do progressismo tecnocrático sem ser ecologista radical.", "answers": {
     "tecnologia_01": "D", "tecnologia_13": "D", "tecnologia_19": "N", "tecnologia_12": "N", "tecnologia_18": "C",
     "tecnologia_10": "C", "tecnologia_05": "D", "tecnologia_04": "CT", "tecnologia_16": "C", "tecnologia_07": "D",
     "tecnologia_08": "C", "tecnologia_03": "D", "tecnologia_15": "DT", "tecnologia_20": "C", "tecnologia_06": "C",
     "tecnologia_09": "D", "tecnologia_17": "DT", "tecnologia_02": "C", "tecnologia_14": "CT", "tecnologia_11": "D" } },
-  "archetype": { "sociedade": "A", "poder": "B", "economia": "D", "mundo": "D", "tecnologia": "B" }
+  "archetype": { "sociedade": "A", "poder": "B", "economia": "D", "mundo": "D", "tecnologia": "B" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "CT"}},
+  "distribuicao": {"answers": {"economia_08": "CT", "moral_05": "D", "moral_08": "C"}}
 }

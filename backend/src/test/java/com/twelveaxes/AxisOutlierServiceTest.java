@@ -35,12 +35,12 @@ class AxisOutlierServiceTest {
     // Perfil extremo em estrutura (96.3 = fortemente federal) e quase no centro
     // em intervencao (52.5).
     private List<AxisResult> axesDeTeste() {
-        return axesCom(List.of(96.3, 18.8, 43.8, 75.0, 57.5, 52.5, 15.0, 12.5, 20.0, 63.7, 8.8, 76.3));
+        return axesCom(List.of(96.3, 18.8, 43.8, 75.0, 57.5, 52.5, 15.0, 12.5, 20.0, 63.7, 8.8, 76.3, 62.5, 30.0));
     }
 
     // Todas as respostas neutras: nenhum eixo tem polo dominante.
     private List<AxisResult> axesNeutros() {
-        return axesCom(java.util.Collections.nCopies(12, 50.0));
+        return axesCom(java.util.Collections.nCopies(14, 50.0));
     }
 
     @Test

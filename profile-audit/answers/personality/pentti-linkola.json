@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "C",
       "economia_10": "D",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Linkola era um tradicionalista cultural em muitos aspectos, cético do individualismo liberal moderno e da cultura de consumo urbana, mas seu foco central era a redução populacional, o que o tornava favorável a comportamentos que reduzem natalidade e crítico do estilo de vida consumista das sociedades progressistas urbanas.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "C",
       "moral_15": "C",
       "moral_12": "C",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "N",
       "moral_02": "C",
-      "moral_05": "D",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "N",
       "moral_16": "C",
       "moral_14": "D",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "CT",
       "tecnologia_14": "CT",
       "tecnologia_11": "DT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "D",
+      "moral_08": "N"
     }
   }
 }

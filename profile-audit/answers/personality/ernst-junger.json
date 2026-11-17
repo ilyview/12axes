@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "C",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "C"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Seu conservadorismo valoriza continuidade cultural, disciplina e formas herdadas, mas o escritor também prezava autonomia pessoal e não formulou programa contemporâneo sobre direitos LGBT, cotas ou bioética. As respostas a questões recentes são inferências cuidadosas, sem projetar moralismo religioso automático.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "C",
       "moral_12": "C",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "D",
       "moral_17": "C",
       "moral_13": "D",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "N",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "E",
     "mundo": "B",
     "tecnologia": "C"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
+    }
   }
 }

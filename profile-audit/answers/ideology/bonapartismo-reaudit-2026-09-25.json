@@ -56,8 +56,8 @@
   "economia": {
     "personaBrief": "O bonapartismo preserva e uniformiza juridicamente propriedade privada, herança e contratos, ao mesmo tempo que usa bancos, obras e serviços públicos para modernizar e pacificar a sociedade. Rejeita tanto a socialização geral dos meios de produção quanto um Estado reduzido a espectador.",
     "answers": {
-      "economia_01": "DT", "economia_02": "C", "economia_03": "C", "economia_04": "D", "economia_05": "DT",
-      "economia_06": "DT", "economia_07": "C", "economia_08": "CT", "economia_09": "C", "economia_10": "DT",
+      "economia_02": "C", "economia_03": "C", "economia_04": "D", "economia_05": "DT",
+      "economia_06": "DT", "economia_07": "C", "economia_09": "C", "economia_10": "DT",
       "economia_11": "D", "economia_12": "C", "economia_13": "C", "economia_14": "C", "economia_15": "C",
       "economia_16": "C", "economia_17": "C", "economia_18": "CT", "economia_19": "C", "economia_20": "D"
     }
@@ -92,8 +92,8 @@
   "moral": {
     "personaBrief": "A conciliação entre legado revolucionário e ordem social produz conservadorismo familiar e disciplina, não uma restauração religiosa integral. O bonapartismo tende a desconfiar de mudanças culturais desagregadoras, mas sua prioridade é estabilidade estatal e modernização, não uma cruzada moral autônoma.",
     "answers": {
-      "moral_01": "D", "moral_02": "C", "moral_03": "D", "moral_04": "CT", "moral_05": "D",
-      "moral_06": "C", "moral_07": "D", "moral_08": "C", "moral_09": "D", "moral_10": "C",
+      "moral_01": "D", "moral_02": "C", "moral_03": "D",
+      "moral_06": "C", "moral_07": "D", "moral_09": "D", "moral_10": "C",
       "moral_11": "D", "moral_12": "C", "moral_13": "D", "moral_14": "C", "moral_15": "D",
       "moral_16": "C", "moral_17": "D", "moral_18": "C", "moral_19": "D", "moral_20": "C"
     }
@@ -106,5 +106,7 @@
       "tecnologia_11": "C", "tecnologia_12": "D", "tecnologia_13": "C", "tecnologia_14": "D", "tecnologia_15": "C",
       "tecnologia_16": "D", "tecnologia_17": "C", "tecnologia_18": "D", "tecnologia_19": "C", "tecnologia_20": "D"
     }
-  }
+  },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "CT"}},
+  "distribuicao": {"answers": {"economia_08": "CT", "moral_05": "D", "moral_08": "C"}}
 }

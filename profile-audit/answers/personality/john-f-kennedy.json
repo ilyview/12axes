@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "N"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Kennedy foi um liberal moderado para os padrões dos anos 1960, apoiando direitos civis raciais e reformas sociais progressistas, mas operava antes da revolução sexual e dos movimentos LGBT e de gênero que dominariam décadas seguintes, mantendo valores de família relativamente convencionais em sua vida pública.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "N",
       "moral_15": "N",
       "moral_12": "N",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "N",
       "moral_02": "C",
-      "moral_05": "C",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "N",
       "moral_16": "D",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "N",
       "tecnologia_11": "CT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "N"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "N",
+      "moral_05": "C",
+      "moral_08": "N"
     }
   }
 }

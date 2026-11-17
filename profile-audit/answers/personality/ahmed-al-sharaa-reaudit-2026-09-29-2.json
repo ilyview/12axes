@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "A transição protege propriedade privada e al-Sharaa busca investidores estrangeiros para reconstruir infraestrutura e serviços; não propõe coletivização da produção, embora o Estado coordene a reconstrução.",
     "answers": {
-      "economia_01": "D",
       "economia_02": "C",
       "economia_03": "D",
       "economia_04": "D",
       "economia_05": "DT",
       "economia_06": "DT",
       "economia_07": "C",
-      "economia_08": "C",
       "economia_09": "C",
       "economia_10": "DT",
       "economia_11": "D",
@@ -255,11 +253,8 @@
       "moral_01": "D",
       "moral_02": "C",
       "moral_03": "D",
-      "moral_04": "C",
-      "moral_05": "N",
       "moral_06": "C",
       "moral_07": "D",
-      "moral_08": "N",
       "moral_09": "D",
       "moral_10": "C",
       "moral_11": "D",
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "C",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
+    }
   }
 }

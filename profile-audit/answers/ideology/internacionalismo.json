@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "D",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Pautado na dignidade intrínseca de cada ser humano, o internacionalismo defende a igualdade substantiva, os direitos civis e a autodeterminação individual contra preconceitos paroquiais e tradicionalismos excludentes.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "N",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "CT",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "C",
       "moral_17": "C",
       "moral_13": "C",
       "moral_11": "CT",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "D",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "C",
     "tecnologia": "C"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "N"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "C",
+      "moral_08": "D"
+    }
   }
 }

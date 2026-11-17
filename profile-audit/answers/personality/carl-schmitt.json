@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "N",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "N",
-      "economia_08": "C"
+      "economia_02": "N"
     }
   },
   "controle": {
@@ -254,7 +252,6 @@
     "personaBrief": "Schmitt era um conservador católico tradicionalista, hostil ao relativismo moral e à modernidade liberal-progressista, defendendo a família patriarcal e a ordem moral tradicional como pilares da comunidade política homogênea.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "CT",
       "moral_15": "D",
       "moral_12": "CT",
       "moral_03": "DT",
@@ -263,7 +260,6 @@
       "moral_06": "CT",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "D",
       "moral_17": "DT",
       "moral_13": "DT",
       "moral_11": "D",
@@ -271,7 +267,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "N",
       "moral_20": "CT"
     }
   },
@@ -299,5 +294,7 @@
       "tecnologia_14": "C",
       "tecnologia_11": "N"
     }
-  }
+  },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "CT"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "D", "moral_08": "N"}}
 }

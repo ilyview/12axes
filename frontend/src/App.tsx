@@ -17,7 +17,7 @@ import { parseShortResult, SHORT_RESULT_PATH } from './utils/shortLinks';
 import { track } from './utils/analytics';
 import type { AnswerSet } from './utils/editAnswers';
 import { CHRISTIAN_DENOMINATIONS, parseReligion, type Religion } from './utils/religion';
-import { PEOPLE_COMPARE_PATH, RESULT_URL_KEYS } from './utils/peopleCompare';
+import { PEOPLE_COMPARE_PATH, RESULT_URL_KEYS, resultUrlKeysIn } from './utils/peopleCompare';
 import {
   answeredCount as savedAnsweredCount,
   clearProgress,
@@ -96,7 +96,8 @@ function parseSharedResultUrl(): number[] | null {
     return null;
   }
   const params = new URLSearchParams(window.location.search);
-  const rawValues = AXIS_URL_KEYS.map((key) => params.get(key));
+  // Links antigos trazem só os 12 primeiros eixos: o resultado volta com eles, sem inventar os novos.
+  const rawValues = resultUrlKeysIn((key) => params.get(key)).map((key) => params.get(key));
   if (rawValues.some((raw) => raw === null || raw.trim() === '')) {
     return null;
   }
@@ -292,8 +293,8 @@ function MainApp() {
   const [editError, setEditError] = useState<string | null>(null);
   const advanceTimerRef = useRef<number | null>(null);
   const isAdvancingRef = useRef(false);
-  // Pool completo (240 perguntas) recebido do backend, guardado para poder
-  // sortear as 24 questões extras da extensão sem repetir as já respondidas.
+  // Pool completo (275 perguntas) recebido do backend, guardado para poder
+  // sortear as 28 questões extras da extensão sem repetir as já respondidas.
   const poolRef = useRef<QuizPayload | null>(null);
 
   // Perguntas de arquétipo do backend + a de religião, no mesmo bloco e na mesma barra.
@@ -399,7 +400,7 @@ function MainApp() {
   const currentQuestion = quiz?.questions[currentIndex];
   const answeredCount = Object.keys(answers).length;
   const canFinish = Boolean(quiz && answeredCount === quiz.questions.length);
-  // "Trocar" só existe nas versões curtas (36 e 60): a de 240 já usa todas as perguntas. Troca primeiro dentro
+  // "Trocar" só existe nas versões curtas (42 e 70): a de 275 já usa todas as perguntas. Troca primeiro dentro
   // do eixo e polo e, quando acabam, dentro do eixo com o polo invertido; o botão apaga quando acaba tudo do eixo.
   const canSwapQuestions = Boolean(quiz && quiz.variant !== 'extreme' && poolRef.current);
   const swapsLeft =
@@ -434,6 +435,11 @@ function MainApp() {
   const homeAxes = useMemo(
     () => quiz?.axes ?? HOME_AXES.map((axis) => ({ ...axis, ...(t.homeAxes[axis.id] ?? {}) })),
     [quiz]
+  );
+  // Resultado antigo (link de antes de metodo e distribuicao) só tem os 12 primeiros eixos: a tela mostra só os que ele tem.
+  const resultAxes = useMemo(
+    () => (result ? homeAxes.filter((axis) => resultByAxis.has(axis.id)) : homeAxes),
+    [homeAxes, result, resultByAxis]
   );
   useEffect(() => {
     document.documentElement.lang = t.htmlLang;
@@ -637,7 +643,7 @@ function MainApp() {
     }, 200);
   }
 
-  // Fim do quiz: na versão curta (36) ainda não estendida, oferece as 24
+  // Fim do quiz: na versão curta (42) ainda não estendida, oferece as 28
   // questões extras antes de calcular; nas demais, vai direto ao resultado.
   // Fim das perguntas: primeiro as perguntas de arquétipo, depois o envio.
   function handleQuizEnd(answerMap = answers) {
@@ -1160,7 +1166,7 @@ function MainApp() {
           <ResultsScreen
             result={result}
             quiz={quiz}
-            axes={homeAxes}
+            axes={resultAxes}
             axisResults={resultByAxis}
             isSharing={isSharing}
             error={error}

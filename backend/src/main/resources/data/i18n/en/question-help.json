@@ -924,7 +924,7 @@
     "disagree": "Economic power should not be redistributed by revolution, whether because one prefers legal reforms or does not want redistribution.",
     "agreeExample": "Mexico, whose 1910 revolution led to the land reform written into its 1917 Constitution.",
     "disagreeExample": "Brazil, which redistributes income through Bolsa Família, created by law in 2004.",
-    "note": "The question combines redistribution and revolution. Those who want to redistribute through legal means should think only about the redistribution."
+    "note": "The question combines redistribution and revolution. On this axis what counts is the means: those who want to redistribute, but only through legal means, disagree."
   },
   {
     "id": "economia_02",
@@ -1845,5 +1845,191 @@
     "agreeExample": "United States, where 24% said widespread exoskeletons that give workers extra strength would be bad for society (Pew, 2022).",
     "disagreeExample": "United States, where 33% said they would be good for society.",
     "note": "This measures only enhancement of healthy people, not medical use. Those who accept implants only to treat disability or illness agree with 'I am against'."
+  },
+  {
+    "id": "metodo_01",
+    "agree": "Even major transformations should go, step by step, through parliament, the courts and elections.",
+    "disagree": "Deep change may require going outside current institutions or happening all at once.",
+    "note": "Measures the path of change, not its direction. Those who want to transform the country a lot, but through institutional channels, agree."
+  },
+  {
+    "id": "metodo_02",
+    "agree": "Keeping its ideas intact matters more than broadening electoral support through concessions.",
+    "disagree": "Moderating the platform to win elections and be able to govern is legitimate and necessary."
+  },
+  {
+    "id": "metodo_03",
+    "agree": "Negotiating and partly giving way to those who think differently is the normal way of doing politics.",
+    "disagree": "Deals with opponents water down the project and should be avoided."
+  },
+  {
+    "id": "metodo_04",
+    "agree": "There are situations in which using force against a regime is justified.",
+    "disagree": "Violence is not a legitimate means of changing the political order, even when it is unjust.",
+    "note": "Applies to any side: a revolution, an insurrection or armed resistance to a dictatorship."
+  },
+  {
+    "id": "metodo_05",
+    "agree": "Electoral victories create more stable change than protests, occupations or uprisings.",
+    "disagree": "Street pressure and direct mobilization produce deeper or faster change."
+  },
+  {
+    "id": "metodo_06",
+    "agree": "Direct actions that disrupt normal functioning are acceptable to force change.",
+    "disagree": "Political pressure should stay within forms that do not block roads or occupy public buildings.",
+    "note": "Applies to any cause: strikes with blockades, occupations of land or schools, or camps outside military barracks."
+  },
+  {
+    "id": "metodo_07",
+    "agree": "Even without a government response, demonstrations should not turn to destruction or confrontation.",
+    "disagree": "If the government ignores peaceful protests, harsher forms of pressure become acceptable."
+  },
+  {
+    "id": "metodo_08",
+    "agree": "Crises and collapses can be useful because they open room for deep transformation.",
+    "disagree": "Making things worse on purpose, or hoping for it, is not an acceptable path to change.",
+    "note": "An idea known as accelerationism, defended in both left-wing and right-wing versions."
+  },
+  {
+    "id": "metodo_09",
+    "agree": "Even a law considered unjust should be obeyed until it is repealed through normal channels.",
+    "disagree": "Openly disobeying unjust laws is a legitimate way to change them.",
+    "note": "Concerns civil disobedience, like Gandhi's or that of the US civil rights movement."
+  },
+  {
+    "id": "metodo_10",
+    "agree": "A determined group can and should lead the transformation before the majority supports it.",
+    "disagree": "Change is only legitimate when it comes from majority support, not from a minority's initiative.",
+    "note": "The idea of a vanguard, present in Leninism but also in nationalist and putschist movements."
+  },
+  {
+    "id": "metodo_11",
+    "agree": "What has stood the test of time usually has reasons for being, so it should be changed with care.",
+    "disagree": "Old institutions do not deserve special care for being old and can be replaced without fear.",
+    "note": "An idea associated with Edmund Burke: it measures prudence toward change, not attachment to moral values."
+  },
+  {
+    "id": "metodo_12",
+    "agree": "It is better to start over with a new Constitution than to keep amending the current one.",
+    "disagree": "The current Constitution should be kept, even if amended."
+  },
+  {
+    "id": "metodo_13",
+    "agree": "Advancing a little is better than not advancing at all by refusing half-measures.",
+    "disagree": "Accepting half-victories weakens the cause; it is better to hold out for the full demand."
+  },
+  {
+    "id": "metodo_14",
+    "agree": "Contesting and holding government tends to tame those who wanted to transform the system.",
+    "disagree": "Reaching government is an effective way to change the system from within."
+  },
+  {
+    "id": "metodo_15",
+    "agree": "Against a bad government, elections, courts, the press and lawful protest are what count.",
+    "disagree": "Against a bad government, unlawful means can be justified.",
+    "note": "Think of a bad government, not a dictatorship that has closed every legal avenue."
+  },
+  {
+    "id": "metodo_16",
+    "agree": "The population should be ready to resist by force a government that becomes tyrannical.",
+    "disagree": "Resisting a government by force is not the citizens' role, even in the face of abuses.",
+    "note": "Concerns armed resistance to one's own government, not owning guns for self-defense."
+  },
+  {
+    "id": "metodo_17",
+    "agree": "A change should only go ahead after winning majority support.",
+    "disagree": "If the cause is just, it is acceptable to implement it before the majority agrees."
+  },
+  {
+    "id": "metodo_18",
+    "agree": "A one-off transformation achieves more than slow, gradual progress.",
+    "disagree": "Small, continuous reforms work better than abrupt change.",
+    "note": "Measures pace, not direction: it also applies to those who want to undo changes all at once."
+  },
+  {
+    "id": "distribuicao_01",
+    "agree": "Taxes should be strongly progressive, with much higher rates at the top.",
+    "disagree": "The richest should not pay a much higher rate than the middle class."
+  },
+  {
+    "id": "distribuicao_02",
+    "agree": "Income differences are fair when they come from each person's work and ability.",
+    "disagree": "Large income differences are a problem even when they come from effort and talent."
+  },
+  {
+    "id": "distribuicao_03",
+    "agree": "Very large fortunes should pay an annual tax on their value.",
+    "disagree": "Large fortunes should not have an annual wealth tax.",
+    "note": "Concerns a tax on accumulated wealth, not on income."
+  },
+  {
+    "id": "distribuicao_04",
+    "agree": "Everyone should pay the same percentage of income, with no higher rates for higher earners.",
+    "disagree": "Those who earn more should pay a higher percentage of their income."
+  },
+  {
+    "id": "distribuicao_05",
+    "agree": "The law should limit how many times the highest salary can exceed the lowest within a company.",
+    "disagree": "The pay gap within a company should have no legal limit."
+  },
+  {
+    "id": "distribuicao_06",
+    "agree": "Wealth earned through one's own effort is legitimate and needs no justification.",
+    "disagree": "Even wealth earned on merit carries a moral duty toward those left behind."
+  },
+  {
+    "id": "distribuicao_07",
+    "agree": "Giving everyone the same chances is not enough; the state should reduce differences in income and living conditions.",
+    "disagree": "The state's role is to guarantee equal opportunities, not to equalize outcomes."
+  },
+  {
+    "id": "distribuicao_08",
+    "agree": "The state should guarantee a minimum floor but not worry about the gap between rich and poor.",
+    "disagree": "Reducing the gap between rich and poor should also be a goal of the state."
+  },
+  {
+    "id": "distribuicao_09",
+    "agree": "Inequality is a problem in itself, not only when it creates poverty.",
+    "disagree": "If no one is poor, inequality between people is not unjust."
+  },
+  {
+    "id": "distribuicao_10",
+    "agree": "Large differences in wealth are part of a normal society and encourage progress.",
+    "disagree": "Large differences in wealth are neither natural nor healthy for society."
+  },
+  {
+    "id": "distribuicao_11",
+    "agree": "Public education money should go more to where there is greater need.",
+    "disagree": "Public schools should receive equal funding, without giving more to those in poor neighborhoods."
+  },
+  {
+    "id": "distribuicao_12",
+    "agree": "Those who receive state aid should meet obligations, such as working, studying or looking for a job.",
+    "disagree": "Social aid should be given without requiring anything in return from those who need it."
+  },
+  {
+    "id": "distribuicao_13",
+    "agree": "Very high pay should face extra taxes so that it becomes less attractive.",
+    "disagree": "High executive salaries should not face special taxes."
+  },
+  {
+    "id": "distribuicao_14",
+    "agree": "Students who learn more easily should be separated so they can advance at their own pace.",
+    "disagree": "Students of different levels should study together, without classes or schools separated by performance."
+  },
+  {
+    "id": "distribuicao_15",
+    "agree": "Revenue should rely less on taxes on goods and more on taxes on those who earn and own more.",
+    "disagree": "Consumption taxes should not be replaced by more taxes on income and wealth."
+  },
+  {
+    "id": "distribuicao_16",
+    "agree": "Heavily taxing the richest discourages investment and hurts the economy.",
+    "disagree": "High taxes on the rich are fair and do not harm job creation."
+  },
+  {
+    "id": "distribuicao_17",
+    "agree": "The state should redistribute heavily so that family background does not determine a child's chances.",
+    "disagree": "Differences in starting point between families are acceptable and do not justify major redistribution."
   }
 ]

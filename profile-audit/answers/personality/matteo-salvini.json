@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "N",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Salvini defende a família tradicional e critica pautas de identidade de gênero e ideologia de gênero nas escolas, adotando posições conservadoras em costumes, embora tenha moderado o discurso anti-LGBT ao longo da carreira.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "C",
       "moral_15": "D",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "D",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "CT",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "N",
       "tecnologia_14": "C",
       "tecnologia_08": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

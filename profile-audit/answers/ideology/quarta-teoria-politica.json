@@ -167,11 +167,9 @@
       "economia_18": "N",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "N",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "D",
-      "economia_08": "C"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A enfase em tradicao, identidade e critica ao liberalismo moderno coloca este perfil contra o progressismo moral e a dissolucao de normas herdadas. Familia, autoridade cultural e limites aos costumes vistos como decadentes ocupam lugar central.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "CT",
       "moral_15": "D",
       "moral_12": "CT",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "DT",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "CT",
       "moral_14": "CT",
-      "moral_08": "C",
       "moral_20": "CT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "CT",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "N",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "DT",
+      "moral_08": "C"
     }
   }
 }

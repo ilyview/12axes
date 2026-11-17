@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "N",
-      "economia_01": "N",
       "economia_10": "N",
       "economia_09": "N",
-      "economia_02": "N",
-      "economia_08": "C"
+      "economia_02": "N"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "As comunidades camponesas suíças eram tradicionais e conservadoras, organizadas em torno da família patriarcal, da igreja local e de costumes rurais rígidos.",
     "answers": {
       "moral_07": "DT",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "CT",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "N",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "CT",
       "moral_16": "C",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "CT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "N",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "N",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

@@ -35,7 +35,7 @@ function toProfile(id: string, name: string, person: PersonResult, result: QuizR
       historical: false,
       initials: personInitials(name)
     },
-    vector: Object.fromEntries(HOME_AXES.map((axis, index) => [axis.id, person.values[index]])),
+    vector: Object.fromEntries(HOME_AXES.slice(0, person.values.length).map((axis, index) => [axis.id, person.values[index]])),
     nearest: {
       ideology: result.topMatch,
       country: result.topCountryMatch ?? null,
@@ -60,11 +60,16 @@ function PencilIcon() {
 }
 
 /**
- * /compare/people: duas pessoas, cada uma pelo link do seu resultado, lado a lado nos 12 eixos.
+ * /compare/people: duas pessoas, cada uma pelo link do seu resultado, lado a lado nos 14 eixos.
  * Os vetores vão na própria URL; os vizinhos de cada um vêm de /api/results/by-axes, o mesmo dos resultados.
  */
 export function ComparePeoplePage() {
-  const axes = useMemo(() => HOME_AXES.map((axis) => ({ ...axis, ...(t.homeAxes[axis.id] ?? {}) })), []);
+  // Link de pessoa com resultado antigo traz só os 12 primeiros eixos: a comparação usa os que as duas têm.
+  const axisCount = LINK ? Math.min(LINK.people[0].values.length, LINK.people[1].values.length) : HOME_AXES.length;
+  const axes = useMemo(
+    () => HOME_AXES.slice(0, axisCount).map((axis) => ({ ...axis, ...(t.homeAxes[axis.id] ?? {}) })),
+    [axisCount]
+  );
   const [names, setNames] = useState<Names>(LINK?.names ?? FALLBACK_NAMES);
   const [editing, setEditing] = useState<0 | 1 | null>(null);
   const [draft, setDraft] = useState('');

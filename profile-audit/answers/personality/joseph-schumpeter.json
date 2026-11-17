@@ -58,8 +58,7 @@
     "answers": {
       "economia_05": "DT", "economia_06": "D", "economia_07": "N", "economia_13": "C", "economia_03": "N",
       "economia_14": "C", "economia_19": "N", "economia_16": "C", "economia_17": "D", "economia_12": "C",
-      "economia_04": "C", "economia_11": "D", "economia_18": "C", "economia_15": "D", "economia_20": "C",
-      "economia_01": "DT", "economia_10": "D", "economia_09": "D", "economia_02": "C", "economia_08": "C"
+      "economia_04": "C", "economia_11": "D", "economia_18": "C", "economia_15": "D", "economia_20": "C", "economia_10": "D", "economia_09": "D", "economia_02": "C"
     }
   },
   "controle": {
@@ -93,10 +92,9 @@
   "moral": {
     "personaBrief": "Conservador cultural cético do intelectual moderno crítico da burguesia, valoriza tradições e a família convencional, mas seu foco é econômico e institucional, não uma cruzada moralista militante.",
     "answers": {
-      "moral_07": "C", "moral_04": "C", "moral_15": "N", "moral_12": "C", "moral_03": "D",
-      "moral_01": "N", "moral_09": "D", "moral_06": "C", "moral_19": "D", "moral_02": "C",
-      "moral_05": "D", "moral_17": "D", "moral_13": "N", "moral_11": "D", "moral_10": "N",
-      "moral_18": "C", "moral_16": "C", "moral_14": "D", "moral_08": "N", "moral_20": "C"
+      "moral_07": "C", "moral_15": "N", "moral_12": "C", "moral_03": "D",
+      "moral_01": "N", "moral_09": "D", "moral_06": "C", "moral_19": "D", "moral_02": "C", "moral_17": "D", "moral_13": "N", "moral_11": "D", "moral_10": "N",
+      "moral_18": "C", "moral_16": "C", "moral_14": "D", "moral_20": "C"
     }
   },
   "tecnologia": {
@@ -107,5 +105,7 @@
       "tecnologia_08": "D", "tecnologia_03": "C", "tecnologia_15": "C", "tecnologia_20": "D", "tecnologia_06": "D",
       "tecnologia_09": "C", "tecnologia_17": "C", "tecnologia_02": "D", "tecnologia_14": "D", "tecnologia_11": "C"
     }
-  }
+  },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "D", "moral_08": "N"}}
 }

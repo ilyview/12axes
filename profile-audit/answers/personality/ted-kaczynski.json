@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "N",
       "economia_20": "N",
-      "economia_01": "C",
       "economia_10": "N",
       "economia_09": "N",
-      "economia_02": "N",
-      "economia_08": "D"
+      "economia_02": "N"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Kaczynski era socialmente conservador em muitos aspectos pessoais e criticava o que via como o enfraquecimento psicológico da modernidade, incluindo movimentos de esquerda ligados a identidade, sexualidade e ativismo social, que ele analisava no manifesto como sintomas de 'processo de sobrecompensação' e busca de poder substituto por parte de ativistas frustrados.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "N",
       "moral_19": "N",
       "moral_02": "C",
-      "moral_05": "D",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "N",
       "moral_16": "N",
       "moral_14": "C",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "CT",
       "tecnologia_14": "CT",
       "tecnologia_11": "DT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "D",
+      "moral_08": "N"
     }
   }
 }

@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "DT",
       "economia_20": "CT",
-      "economia_01": "DT",
       "economia_10": "C",
       "economia_09": "DT",
-      "economia_02": "CT",
-      "economia_08": "C"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Neste eixo, o feminismo libertario e fortemente voltado a consentimento, autodeterminacao corporal e rejeicao de papeis sexuais impostos por tradicao ou Estado. Ao mesmo tempo, sua desconfianca de engenharia social estatal o torna menos entusiasta de alguns instrumentos coletivos de correcao moral ou historica.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "C",
       "moral_12": "N",
       "moral_03": "CT",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "DT",
-      "moral_05": "D",
       "moral_17": "C",
       "moral_13": "CT",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "DT",
       "moral_14": "D",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "C",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

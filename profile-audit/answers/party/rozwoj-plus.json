@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Economia de mercado com Estado dinamizador: crescimento, empresas fortes e 500+, mas com ênfase em salários e programas sociais.",
   "answers": {
-   "economia_01": "D",
    "economia_02": "D",
    "economia_03": "D",
    "economia_04": "C",
    "economia_05": "D",
    "economia_06": "C",
    "economia_07": "D",
-   "economia_08": "D",
    "economia_09": "C",
    "economia_10": "C",
    "economia_11": "C",
@@ -255,11 +253,8 @@
    "moral_01": "D",
    "moral_02": "CT",
    "moral_03": "D",
-   "moral_04": "C",
-   "moral_05": "DT",
    "moral_06": "CT",
    "moral_07": "D",
-   "moral_08": "C",
    "moral_09": "D",
    "moral_10": "C",
    "moral_11": "DT",
@@ -305,5 +300,18 @@
   "economia": "E",
   "mundo": "B",
   "tecnologia": "D"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "D",
+   "moral_04": "C"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "D",
+   "moral_05": "DT",
+   "moral_08": "C"
+  }
  }
 }

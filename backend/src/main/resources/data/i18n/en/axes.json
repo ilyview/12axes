@@ -10,5 +10,7 @@
   { "id": "comercio", "label": "Trade", "leftPole": "Protectionism", "rightPole": "Globalism" },
   { "id": "religiao", "label": "Religion", "leftPole": "Irreligious", "rightPole": "Religious" },
   { "id": "moral", "label": "Morality", "leftPole": "Progressive", "rightPole": "Traditionalist" },
-  { "id": "tecnologia", "label": "Technology", "leftPole": "Technology", "rightPole": "Biology" }
+  { "id": "tecnologia", "label": "Technology", "leftPole": "Technology", "rightPole": "Biology" },
+  { "id": "metodo", "label": "Method", "leftPole": "Gradualism", "rightPole": "Rupture" },
+  { "id": "distribuicao", "label": "Distribution", "leftPole": "Egalitarian", "rightPole": "Meritocratic" }
 ]

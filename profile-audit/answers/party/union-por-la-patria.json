@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Peronismo: Estado de bem-estar, subsídios, empresas públicas (YPF, Aerolíneas), distribuição de renda e aumento de salários.",
   "answers": {
-   "economia_01": "C",
    "economia_02": "D",
    "economia_03": "C",
    "economia_04": "D",
    "economia_05": "C",
    "economia_06": "D",
    "economia_07": "C",
-   "economia_08": "DT",
    "economia_09": "C",
    "economia_10": "D",
    "economia_11": "C",
@@ -255,11 +253,8 @@
    "moral_01": "C",
    "moral_02": "D",
    "moral_03": "C",
-   "moral_04": "D",
-   "moral_05": "C",
    "moral_06": "D",
    "moral_07": "C",
-   "moral_08": "D",
    "moral_09": "C",
    "moral_10": "D",
    "moral_11": "C",
@@ -305,5 +300,18 @@
   "economia": "D",
   "mundo": "C",
   "tecnologia": "C"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "C",
+   "moral_04": "D"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "DT",
+   "moral_05": "C",
+   "moral_08": "D"
+  }
  }
 }

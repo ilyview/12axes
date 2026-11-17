@@ -58,8 +58,7 @@
     "answers": {
       "economia_05": "D", "economia_06": "D", "economia_07": "C", "economia_13": "C", "economia_03": "C",
       "economia_14": "D", "economia_19": "C", "economia_16": "DT", "economia_17": "C", "economia_12": "D",
-      "economia_04": "D", "economia_11": "C", "economia_18": "C", "economia_15": "D", "economia_20": "D",
-      "economia_01": "D", "economia_10": "DT", "economia_09": "C", "economia_02": "N", "economia_08": "N"
+      "economia_04": "D", "economia_11": "C", "economia_18": "C", "economia_15": "D", "economia_20": "D", "economia_10": "DT", "economia_09": "C", "economia_02": "N"
     }
   },
   "controle": {
@@ -92,10 +91,9 @@
   "moral": {
     "personaBrief": "Estado-refúgio do aborto (Lei de Saúde Reprodutiva) e pioneiro em direitos LGBT, Illinois é progressista em costumes nas áreas urbanas, com um interior e uma tradição católica que moderam algumas posições familiares.",
     "answers": {
-      "moral_07": "CT", "moral_04": "N", "moral_15": "N", "moral_12": "D", "moral_03": "C",
-      "moral_01": "CT", "moral_09": "C", "moral_06": "DT", "moral_19": "N", "moral_02": "D",
-      "moral_05": "C", "moral_17": "N", "moral_13": "D", "moral_11": "C", "moral_10": "D",
-      "moral_18": "D", "moral_16": "D", "moral_14": "D", "moral_08": "D", "moral_20": "C"
+      "moral_07": "CT", "moral_15": "N", "moral_12": "D", "moral_03": "C",
+      "moral_01": "CT", "moral_09": "C", "moral_06": "DT", "moral_19": "N", "moral_02": "D", "moral_17": "N", "moral_13": "D", "moral_11": "C", "moral_10": "D",
+      "moral_18": "D", "moral_16": "D", "moral_14": "D", "moral_20": "C"
     }
   },
   "tecnologia": {
@@ -107,5 +105,7 @@
       "tecnologia_09": "C", "tecnologia_17": "N", "tecnologia_02": "D", "tecnologia_14": "C", "tecnologia_11": "C"
     }
   },
-  "archetype": { "sociedade": "D", "poder": "C", "economia": "B", "mundo": "C", "tecnologia": "C" }
+  "archetype": { "sociedade": "D", "poder": "C", "economia": "B", "mundo": "C", "tecnologia": "C" },
+  "metodo": {"answers": {"economia_01": "D", "moral_04": "N"}},
+  "distribuicao": {"answers": {"economia_08": "N", "moral_05": "C", "moral_08": "D"}}
 }

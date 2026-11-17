@@ -469,12 +469,13 @@ public class QuizDataService {
         int questionCount = normalizedVariant.equals(EXTREME_VARIANT)
                 ? data.questions().size()
                 : questionsPerAxis * data.axes().size();
+        int axisCount = data.axes().size();
         String description = switch (normalizedLang) {
-            case LANG_EN -> "A quiz of " + questionCount + " questions to estimate your position on the 12 political axes.";
-            case LANG_ES -> "Un cuestionario de " + questionCount + " preguntas para estimar tu posición en los 12 ejes políticos.";
-            case LANG_IT -> "Un test di " + questionCount + " domande per stimare la tua posizione sui 12 assi politici.";
-            case LANG_DE -> "Ein Test mit " + questionCount + " Fragen, um deine Position auf den 12 politischen Achsen zu bestimmen.";
-            default -> "Um quiz de " + questionCount + " perguntas para estimar sua posição nos 12 eixos políticos.";
+            case LANG_EN -> "A quiz of " + questionCount + " questions to estimate your position on the " + axisCount + " political axes.";
+            case LANG_ES -> "Un cuestionario de " + questionCount + " preguntas para estimar tu posición en los " + axisCount + " ejes políticos.";
+            case LANG_IT -> "Un test di " + questionCount + " domande per stimare la tua posizione sui " + axisCount + " assi politici.";
+            case LANG_DE -> "Ein Test mit " + questionCount + " Fragen, um deine Position auf den " + axisCount + " politischen Achsen zu bestimmen.";
+            default -> "Um quiz de " + questionCount + " perguntas para estimar sua posição nos " + axisCount + " eixos políticos.";
         };
         return new QuizPayload(
                 "12 Axes",

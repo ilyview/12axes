@@ -111,7 +111,7 @@ export function saveGovernmentPicks(resultKey: string, picks: GovernmentPicks): 
   }
 }
 
-/** As trocas guardadas deste resultado (a chave é o vetor dos 12 eixos); sem armazenamento, nenhuma. */
+/** As trocas guardadas deste resultado (a chave é o vetor dos 14 eixos); sem armazenamento, nenhuma. */
 export function loadGovernmentSwaps(resultKey: string): GovernmentSwaps {
   const saved = readAll()[resultKey];
   if (!saved || typeof saved !== 'object') return {};

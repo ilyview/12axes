@@ -1,4 +1,4 @@
-// Layout da teia (posição 2D de cada item a partir do vetor de 12 eixos). Roda no build
+// Layout da teia (posição 2D de cada item a partir do vetor de 14 eixos). Roda no build
 // (scripts/tree-data.mjs): o navegador só recebe as posições prontas.
 // Puro e determinístico (sem Math.random): mesmo resultado a cada build.
 
@@ -61,7 +61,7 @@ function pca2(points) {
  * @param {{ id: string, vector: number[] }[]} items
  * @param {number} [neighbors] ligações por item
  * @param {[number, number][]} [anchors] posição-alvo de cada item, em unidades de -1 a 1 (y para baixo);
- *   sem elas, a posição inicial vem de uma projeção PCA dos 12 eixos
+ *   sem elas, a posição inicial vem de uma projeção PCA dos 14 eixos
  * @param {(i: number, j: number) => number} [similarity] similaridade 0–1 entre dois itens
  * @returns {{ x: Float64Array, y: Float64Array, edges: { a: number, b: number, similarity: number }[], degree: number[] }}
  */

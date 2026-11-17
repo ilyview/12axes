@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "D",
       "economia_20": "CT",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "D",
-      "economia_02": "CT",
-      "economia_08": "CT"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Na moral social, a tecnocracia de direita tende a rejeitar experimentalismo cultural acelerado quando o vê como fonte de desordem, mas também evita fundamentar políticas em moralismo religioso puro. Seu padrão é estabilidade social, autonomia funcional e baixa tolerância a agendas percebidas como ideológicas.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "C",
-      "moral_05": "D",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "D",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

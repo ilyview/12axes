@@ -10,7 +10,7 @@ Reaudita perfis já existentes do catálogo **personality**.
 ## Antes de qualquer coisa
 
 Leia **profile-audit/README.md inteiro** (raiz do projeto) — ele é autossuficiente e contém:
-- A lista dos 12 eixos e o que cada um mede.
+- A lista dos 14 eixos e o que cada um mede.
 - O template exato do prompt de auditoria (cabeçalho + `questions-template.txt`).
 - A regra de disparo simultâneo dos 15 subagentes.
 - A validação das 15 saídas.
@@ -70,7 +70,7 @@ Leia **profile-audit/README.md inteiro** (raiz do projeto) — ele é autossufic
    - Atualizar `STATE.json` (mover IDs de `pending` para `done`, atualizar `lastUpdated`).
    - Arquivar em `answers/personality/<id>.json` (permanente, nunca apagar) e limpar temporários (mantendo só um par de exemplo em `prompts/personality/` + `subagent-out/personality/`).
 4. Para **cada perfil do lote** já mesclado, rode `python profile-audit/compatibility.py personality <id>` e leia as 2 personalidades, 2 ideologias e 2 países mais compatíveis com o vetor recém-atualizado (mesmo algoritmo de `ProfileMatchScorer.java`). Nunca estimar esses matches de cabeça.
-   - **Perguntas de arquétipo:** a auditoria responde as 240 perguntas **e** as perguntas de arquétipo, como um usuário do quiz. O prompt termina com o bloco de `python profile-audit/profile_vector.py --prompt-block`, a saída traz o bloco `archetype`, o `validate.py` reprova se faltar, e o vetor mesclado (via `profile_vector.compute_vector`) soma as alternativas escolhidas como respostas extras, igual ao `ScoringService`. Liste as escolhas no resumo final. Ver "Perguntas de arquétipo" em `profile-audit/README.md`.
+   - **Perguntas de arquétipo:** a auditoria responde as 275 perguntas **e** as perguntas de arquétipo, como um usuário do quiz. O prompt termina com o bloco de `python profile-audit/profile_vector.py --prompt-block`, a saída traz o bloco `archetype`, o `validate.py` reprova se faltar, e o vetor mesclado (via `profile_vector.compute_vector`) soma as alternativas escolhidas como respostas extras, igual ao `ScoringService`. Liste as escolhas no resumo final. Ver "Perguntas de arquétipo" em `profile-audit/README.md`.
 5. Ao final, apresente para cada perfil do lote um resumo com os matches calculados no passo anterior (percentual exato), a revisão de `religions` e o livro adicionado a `books.json` (ou por que nenhum) e informe quantos perfis restam em `pending`. **Pergunte explicitamente** se deve continuar para o próximo lote — nunca encadeie lotes sozinho.
 
 ## Regras que não podem ser quebradas

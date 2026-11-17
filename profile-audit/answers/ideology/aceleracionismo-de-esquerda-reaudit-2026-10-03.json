@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "DT",
-      "economia_01": "C",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "D",
-      "economia_08": "DT"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Nesta versão, a transformação econômica acompanha emancipação social radical: igualdade, direitos LGBT+, autonomia reprodutiva, pluralidade familiar e oposição a hierarquias tradicionais de gênero e raça. Essas ênfases culturais foram explicitamente pedidas para esta ficha e não devem ser atribuídas indistintamente a todo autor aceleracionista.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "DT",
       "moral_15": "C",
       "moral_12": "DT",
       "moral_03": "CT",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "CT",
       "moral_02": "DT",
-      "moral_05": "CT",
       "moral_17": "CT",
       "moral_13": "CT",
       "moral_11": "CT",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "DT",
       "moral_14": "CT",
-      "moral_08": "DT",
       "moral_20": "D"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "A",
     "mundo": "E",
     "tecnologia": "E"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "DT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "CT",
+      "moral_08": "DT"
+    }
   }
 }

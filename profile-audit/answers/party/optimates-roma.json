@@ -65,8 +65,8 @@
       "economia_05": "DT", "economia_06": "C", "economia_07": "DT", "economia_13": "D",
       "economia_03": "N", "economia_14": "C", "economia_19": "D", "economia_16": "C",
       "economia_17": "D", "economia_12": "N", "economia_04": "C", "economia_11": "DT",
-      "economia_18": "CT", "economia_15": "DT", "economia_20": "C", "economia_01": "DT",
-      "economia_10": "D", "economia_09": "D", "economia_02": "C", "economia_08": "CT"
+      "economia_18": "CT", "economia_15": "DT", "economia_20": "C",
+      "economia_10": "D", "economia_09": "D", "economia_02": "C"
     }
   },
   "controle": {
@@ -102,11 +102,11 @@
   "moral": {
     "personaBrief": "Moralistas do mos maiorum (Catão), defendiam o pater familias, a matrona virtuosa, as leis suntuárias e a mudança lenta. Algumas práticas romanas, como a prostituição tolerada e a nudez na arte, não eram tabu.",
     "answers": {
-      "moral_07": "DT", "moral_04": "CT", "moral_15": "DT", "moral_12": "CT",
+      "moral_07": "DT", "moral_15": "DT", "moral_12": "CT",
       "moral_03": "DT", "moral_01": "DT", "moral_09": "N", "moral_06": "CT",
-      "moral_19": "C", "moral_02": "CT", "moral_05": "DT", "moral_17": "DT",
+      "moral_19": "C", "moral_02": "CT", "moral_17": "DT",
       "moral_13": "D", "moral_11": "DT", "moral_10": "D", "moral_18": "CT",
-      "moral_16": "C", "moral_14": "CT", "moral_08": "CT", "moral_20": "CT"
+      "moral_16": "C", "moral_14": "CT", "moral_20": "CT"
     }
   },
   "tecnologia": {
@@ -119,5 +119,7 @@
       "tecnologia_17": "DT", "tecnologia_02": "C", "tecnologia_14": "C", "tecnologia_11": "N"
     }
   },
-  "archetype": { "sociedade": "A", "poder": "B", "economia": "C", "mundo": "A", "tecnologia": "C" }
+  "archetype": { "sociedade": "A", "poder": "B", "economia": "C", "mundo": "A", "tecnologia": "C" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "CT"}},
+  "distribuicao": {"answers": {"economia_08": "CT", "moral_05": "DT", "moral_08": "CT"}}
 }

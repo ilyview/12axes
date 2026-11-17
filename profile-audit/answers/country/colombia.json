@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Basis: law in force with tie-breaks from the government's orientation. Court rulings on abortion up to week 24, equal marriage, adoption and gender ID remain in force with no formal act against them, but the government's moral profile (pro-life and pro-family commitment, Education Minister from the 2017 referendum campaign) is conservative.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "D",
       "moral_12": "C",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "D",
       "moral_02": "C",
-      "moral_05": "C",
       "moral_17": "DT",
       "moral_13": "C",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "B",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "C",
+      "moral_08": "C"
+    }
   }
 }

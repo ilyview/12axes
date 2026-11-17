@@ -56,8 +56,8 @@
   "economia": {
     "personaBrief": "MacDiarmid embraced Marxism and the communist movement, favoring collective ownership, public provision, and transformation of concentrated economic power. His Scottish republicanism gives those commitments a national setting, but does not dilute their explicitly socialist content.",
     "answers": {
-      "economia_01": "CT", "economia_02": "DT", "economia_03": "CT", "economia_04": "CT", "economia_05": "CT",
-      "economia_06": "DT", "economia_07": "CT", "economia_08": "DT", "economia_09": "CT", "economia_10": "C",
+      "economia_02": "DT", "economia_03": "CT", "economia_04": "CT", "economia_05": "CT",
+      "economia_06": "DT", "economia_07": "CT", "economia_09": "CT", "economia_10": "C",
       "economia_11": "CT", "economia_12": "CT", "economia_13": "DT", "economia_14": "CT", "economia_15": "DT",
       "economia_16": "CT", "economia_17": "DT", "economia_18": "CT", "economia_19": "DT", "economia_20": "DT"
     }
@@ -92,8 +92,8 @@
   "moral": {
     "personaBrief": "MacDiarmid’s modernist writing and revolutionary left politics place him far from social conservatism, though his political priorities were national culture and socialism rather than today’s rights vocabulary. Egalitarian and secular commitments support socially liberal judgments, with some caution about projecting current policy language backward.",
     "answers": {
-      "moral_01": "C", "moral_02": "DT", "moral_03": "C", "moral_04": "D", "moral_05": "C",
-      "moral_06": "C", "moral_07": "C", "moral_08": "DT", "moral_09": "C", "moral_10": "DT",
+      "moral_01": "C", "moral_02": "DT", "moral_03": "C",
+      "moral_06": "C", "moral_07": "C", "moral_09": "C", "moral_10": "DT",
       "moral_11": "C", "moral_12": "C", "moral_13": "C", "moral_14": "C", "moral_15": "C",
       "moral_16": "D", "moral_17": "C", "moral_18": "C", "moral_19": "D", "moral_20": "D"
     }
@@ -113,5 +113,7 @@
     "economia": "A",
     "mundo": "C",
     "tecnologia": "D"
-  }
+  },
+  "metodo": {"answers": {"economia_01": "CT", "moral_04": "D"}},
+  "distribuicao": {"answers": {"economia_08": "DT", "moral_05": "C", "moral_08": "DT"}}
 }

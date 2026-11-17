@@ -13,7 +13,7 @@ interface ProfileSheetProps {
   /** Linha de apoio abaixo do nome (função e anos de vida, período...). */
   caption?: string;
   description: string;
-  /** Vetor de 12 eixos do perfil: no relatório pago, a ficha mostra ao lado o que aproxima e afasta o usuário dele. */
+  /** Vetor de 14 eixos do perfil: no relatório pago, a ficha mostra ao lado o que aproxima e afasta o usuário dele. */
   vector?: Record<string, number>;
   /** Cor de acento da aba (catStyle). */
   style?: CSSProperties;

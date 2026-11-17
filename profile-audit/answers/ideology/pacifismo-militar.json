@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "N",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "N",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "O perfil nao tem um projeto de costumes definido pela description, mas o nacionalismo defensivo e o culto ao servico militar e a familia como base da nacao (o cidadao-soldado que defende o lar) puxam para um conservadorismo social moderado, tradicional mas nao reacionario, na linha da tradicao europeia de referencia.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "N",
       "moral_02": "C",
-      "moral_05": "N",
       "moral_17": "D",
       "moral_13": "N",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "D",
       "moral_14": "D",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "N",
       "tecnologia_11": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

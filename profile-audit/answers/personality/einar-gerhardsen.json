@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "Gerhardsen buscou direção socialista gradual por serviços públicos, setores estratégicos sob controle nacional, crédito e participação dos empregados. Preservou uma economia mista com empresários privados; não propõe coletivizar todas as empresas por revolução nem privatizar o welfare e eliminar sindicatos.",
     "answers": {
-      "economia_01": "D",
       "economia_02": "D",
       "economia_03": "CT",
       "economia_04": "DT",
       "economia_05": "D",
       "economia_06": "D",
       "economia_07": "CT",
-      "economia_08": "D",
       "economia_09": "CT",
       "economia_10": "DT",
       "economia_11": "CT",
@@ -255,11 +253,8 @@
       "moral_01": "D",
       "moral_02": "C",
       "moral_03": "C",
-      "moral_04": "CT",
-      "moral_05": "D",
       "moral_06": "C",
       "moral_07": "D",
-      "moral_08": "C",
       "moral_09": "D",
       "moral_10": "N",
       "moral_11": "D",
@@ -305,5 +300,18 @@
     "economia": "B",
     "mundo": "B",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "D",
+      "moral_08": "C"
+    }
   }
 }

@@ -32,8 +32,7 @@
   "economia": { "personaBrief": "Propriedade privada mantida, mas subordinada ao Estado corporativo; hostilidade ao capital financeiro e às grandes finanças internacionais, com obras públicas e pleno emprego.", "answers": {
     "economia_05": "D", "economia_06": "D", "economia_07": "C", "economia_13": "CT", "economia_03": "CT",
     "economia_14": "N", "economia_19": "C", "economia_16": "D", "economia_17": "CT", "economia_12": "N",
-    "economia_04": "D", "economia_11": "C", "economia_18": "D", "economia_15": "C", "economia_20": "D",
-    "economia_01": "DT", "economia_10": "DT", "economia_09": "C", "economia_02": "D", "economia_08": "C" } },
+    "economia_04": "D", "economia_11": "C", "economia_18": "D", "economia_15": "C", "economia_20": "D", "economia_10": "DT", "economia_09": "C", "economia_02": "D" } },
   "controle": { "personaBrief": "Estado corporativo planejador e keynesianismo do Memorando Mosley: controle de câmbio, crédito e salários, finanças nacionais subordinadas ao governo.", "answers": {
     "controle_05": "C", "controle_20": "DT", "controle_19": "CT", "controle_14": "DT", "controle_07": "CT",
     "controle_04": "DT", "controle_02": "DT", "controle_17": "CT", "controle_16": "DT", "controle_10": "DT",
@@ -50,14 +49,15 @@
     "religiao_01": "C", "religiao_14": "D", "religiao_06": "N", "religiao_16": "D", "religiao_08": "D",
     "religiao_07": "D", "religiao_09": "C", "religiao_17": "D", "religiao_20": "C", "religiao_04": "D" } },
   "moral": { "personaBrief": "Tradicionalismo de virilidade, família e disciplina nacional, misturado a certo modernismo de costumes da elite de Mosley; hostil a qualquer pauta de igualdade racial ou sexual.", "answers": {
-    "moral_07": "DT", "moral_04": "D", "moral_15": "D", "moral_12": "D", "moral_03": "DT",
-    "moral_01": "DT", "moral_09": "D", "moral_06": "CT", "moral_19": "D", "moral_02": "CT",
-    "moral_05": "DT", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "C",
-    "moral_18": "C", "moral_16": "C", "moral_14": "CT", "moral_08": "CT", "moral_20": "D" } },
+    "moral_07": "DT", "moral_15": "D", "moral_12": "D", "moral_03": "DT",
+    "moral_01": "DT", "moral_09": "D", "moral_06": "CT", "moral_19": "D", "moral_02": "CT", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "C",
+    "moral_18": "C", "moral_16": "C", "moral_14": "CT", "moral_20": "D" } },
   "tecnologia": { "personaBrief": "Modernismo futurista: ciência, indústria e técnica como motor da grandeza britânica, com desprezo pelo ruralismo nostálgico, embora valorizando a agricultura nacional.", "answers": {
     "tecnologia_01": "CT", "tecnologia_13": "C", "tecnologia_19": "CT", "tecnologia_12": "D", "tecnologia_18": "D",
     "tecnologia_10": "D", "tecnologia_05": "C", "tecnologia_04": "D", "tecnologia_16": "D", "tecnologia_07": "C",
     "tecnologia_08": "D", "tecnologia_03": "C", "tecnologia_15": "C", "tecnologia_20": "D", "tecnologia_06": "D",
     "tecnologia_09": "CT", "tecnologia_17": "C", "tecnologia_02": "DT", "tecnologia_14": "D", "tecnologia_11": "CT" } },
-  "archetype": { "sociedade": "E", "poder": "A", "economia": "D", "mundo": "D", "tecnologia": "D" }
+  "archetype": { "sociedade": "E", "poder": "A", "economia": "D", "mundo": "D", "tecnologia": "D" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "D"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "DT", "moral_08": "CT"}}
 }

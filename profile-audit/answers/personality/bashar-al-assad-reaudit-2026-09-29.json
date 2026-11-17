@@ -168,11 +168,9 @@
       "economia_18": "D",
       "economia_15": "D",
       "economia_20": "D",
-      "economia_01": "D",
       "economia_10": "D",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "C"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -254,7 +252,6 @@
     "personaBrief": "O regime baathista de Assad se apresentava como socialmente mais secular e permissivo que os islamistas rivais, mas ainda operava dentro de normas patriarcais e conservadoras da sociedade síria tradicional, sem qualquer agenda progressista deliberada.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "D",
       "moral_12": "C",
       "moral_03": "D",
@@ -263,7 +260,6 @@
       "moral_06": "C",
       "moral_19": "D",
       "moral_02": "C",
-      "moral_05": "D",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "D",
@@ -271,7 +267,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -299,7 +294,9 @@
       "tecnologia_14": "C",
       "tecnologia_11": "C"
     }
-  }
+  },
+  "metodo": {"answers": {"economia_01": "D", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "D", "moral_08": "C"}}
 }
 
 

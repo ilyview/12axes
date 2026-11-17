@@ -167,11 +167,9 @@
    "economia_18": "C",
    "economia_15": "D",
    "economia_20": "D",
-   "economia_01": "DT",
    "economia_10": "DT",
    "economia_09": "C",
-   "economia_02": "C",
-   "economia_08": "C"
+   "economia_02": "C"
   }
  },
  "controle": {
@@ -253,7 +251,6 @@
   "personaBrief": "Sociedade conservadora e religiosa do Himalaia, com valores familiares tradicionais e pouco espaço público para agendas progressistas.",
   "answers": {
    "moral_07": "DT",
-   "moral_04": "C",
    "moral_15": "DT",
    "moral_12": "C",
    "moral_03": "DT",
@@ -262,7 +259,6 @@
    "moral_06": "CT",
    "moral_19": "DT",
    "moral_02": "CT",
-   "moral_05": "D",
    "moral_17": "DT",
    "moral_13": "DT",
    "moral_11": "DT",
@@ -270,7 +266,6 @@
    "moral_18": "C",
    "moral_16": "CT",
    "moral_14": "C",
-   "moral_08": "C",
    "moral_20": "CT"
   }
  },
@@ -305,5 +300,18 @@
   "economia": "E",
   "mundo": "A",
   "tecnologia": "D"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "DT",
+   "moral_04": "C"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "C",
+   "moral_05": "D",
+   "moral_08": "C"
+  }
  }
 }

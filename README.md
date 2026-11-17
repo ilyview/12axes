@@ -30,11 +30,11 @@ People curious about politics who want more than a left-right label, students co
 
 - Twelve axes scored independently, so the result keeps tensions and unusual combinations.
 - Three catalogs (ideologies, countries, personalities), each matched on its own. Countries include +68 historical regimes, from the Paris Commune to Atatürk's Turkey.
-- Every profile in the catalogs answered the same 240 questions a user can answer, instead of being placed by hand.
+- Every profile in the catalogs answered the same 275 questions a user can answer, instead of being placed by hand.
 - An optional religion filter, so a user can hide profiles tied to a faith that is not theirs.
 - A shareable result card, a PDF report, and a link that rebuilds the result from the URL.
 
-### The 12 axes
+### The 14 axes
 
 The model is inspired by the original [12 Axes test](https://politicaltests.github.io/12axes/). Each axis runs between two poles:
 
@@ -52,6 +52,10 @@ The model is inspired by the original [12 Axes test](https://politicaltests.gith
 | Religion | Irreligious | Religious |
 | Morality | Progressive | Traditionalist |
 | Technology | Technology | Biology |
+| Method | Gradualism | Rupture |
+| Distribution | Egalitarian | Meritocratic |
+
+Method measures how change should happen (reform through institutions versus rupture and direct action), not its direction. Distribution measures how much inequality is acceptable, separately from who owns the economy.
 
 ### Political spectra
 
@@ -61,17 +65,17 @@ The axes describe the user. Ideologies are grouped into eight broader families, 
 
 1. Each answer moves an axis toward one of its poles. Strong agreement counts fully, "neutral" leaves the axis at the center, and disagreement pushes the other way.
 2. The average of your answers on each axis becomes a percentage between the two poles, labeled balanced, leaning, strong, or very strong depending on how far it is from the center.
-3. Your twelve percentages form a profile, which is compared with every ideology, country, and personality in the catalogs. The closest ones are shown with a compatibility score.
+3. Your fourteen percentages form a profile, which is compared with every ideology, country, and personality in the catalogs. The closest ones are shown with a compatibility score.
 
 ### Questions and scoring
 
 | Format | Questions | Per axis |
 |--------|----------:|---------:|
-| Short | 36 | 3 |
-| Complete | 60 | 5 |
-| Extreme | 240 | 20 |
+| Short | 42 | 3 |
+| Complete | 70 | 5 |
+| Extreme | 275 | 17-20 |
 
-The pool has 240 statements, 20 per axis, half phrased toward each pole so agreeing with everything does not skew the result. The short and complete formats draw a balanced subset. Five multiple-choice "archetype" questions at the end add broader signals across several axes. A last, optional question about your religion sets the filter and does not affect the score.
+The pool has 275 statements, 20 per axis (economy has 18 and morality 17, after five questions moved to method and distribution), half phrased toward each pole so agreeing with everything does not skew the result. The short and complete formats draw a balanced subset. Five multiple-choice "archetype" questions at the end add broader signals across several axes. A last, optional question about your religion sets the filter and does not affect the score.
 
 | Answer | Value |
 |--------|------:|
@@ -128,8 +132,8 @@ English is kept by hand. Other languages (`i18n/es/`, `i18n/de/`, `i18n/it/`) ar
 
 | File | Contents |
 |------|----------|
-| `axes.json` | The 12 axes, their poles and labels |
-| `questions-pool.json` | 240 questions, with axis, polarity, and weight |
+| `axes.json` | The 14 axes, their poles and labels |
+| `questions-pool.json` | 275 questions, with axis, polarity, and weight |
 | `archetype-questions.json` | The five multiple-choice questions |
 | `ideologies.json` / `ideology-profiles.json` | Ideologies and their 12-axis vectors |
 | `countries.json` / `countries-profiles.json` | Countries, regions, and historical regimes |
@@ -264,7 +268,7 @@ Bug reports, corrections to profiles, and translation fixes are welcome as issue
 
 ### Adding ideologies, countries, or personalities
 
-Catalog entries are not written by hand. Each new profile answers all 240 questions, one by one, in character, and its vector is computed from those answers with the same formula a user gets. The process is in [`profile-audit/NEW_PROFILE.md`](profile-audit/NEW_PROFILE.md), and the repository ships [Claude Code](https://claude.com/claude-code) skills that run it end to end:
+Catalog entries are not written by hand. Each new profile answers all 275 questions, one by one, in character, and its vector is computed from those answers with the same formula a user gets. The process is in [`profile-audit/NEW_PROFILE.md`](profile-audit/NEW_PROFILE.md), and the repository ships [Claude Code](https://claude.com/claude-code) skills that run it end to end:
 
 | Skill | Purpose |
 |-------|---------|
@@ -276,7 +280,7 @@ Catalog entries are not written by hand. Each new profile answers all 240 questi
 A new profile has to meet these requirements before it is merged:
 
 - Metadata in Portuguese and English, with the English version free of Brazil-specific references.
-- A full 240-answer audit, archived in `profile-audit/answers/`.
+- A full 275-answer audit, archived in `profile-audit/answers/`.
 - `python profile-audit/validate.py <catalog> <id>` passes. It blocks vectors that are near duplicates of an existing profile, too many neutral answers, and a religious vector with no religion tag.
 - Portraits and historical flags come from Wikimedia Commons, with their source recorded, and are compressed with `npm run optimize:images`.
 - `mvn test` passes.

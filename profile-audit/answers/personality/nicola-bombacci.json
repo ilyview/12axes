@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "O eixo contínuo é a transferência de poder econômico aos trabalhadores e o combate ao capitalismo. A socialização na RSI admitia formas de propriedade pessoal e participação operária, sem ser mero corporativismo nem estatização integral de toda a vida econômica.",
     "answers": {
-      "economia_01": "CT",
       "economia_02": "DT",
       "economia_03": "CT",
       "economia_04": "DT",
       "economia_05": "CT",
       "economia_06": "D",
       "economia_07": "CT",
-      "economia_08": "C",
       "economia_09": "CT",
       "economia_10": "DT",
       "economia_11": "C",
@@ -255,11 +253,8 @@
       "moral_01": "D",
       "moral_02": "C",
       "moral_03": "N",
-      "moral_04": "C",
-      "moral_05": "C",
       "moral_06": "C",
       "moral_07": "D",
-      "moral_08": "C",
       "moral_09": "C",
       "moral_10": "N",
       "moral_11": "D",
@@ -305,5 +300,18 @@
     "economia": "A",
     "mundo": "C",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "CT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "C",
+      "moral_08": "C"
+    }
   }
 }

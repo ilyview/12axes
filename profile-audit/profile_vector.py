@@ -1,7 +1,7 @@
-"""Calculo do vetor de 12 eixos de um perfil auditado — fonte unica usada pelo
+"""Calculo do vetor de 14 eixos de um perfil auditado — fonte unica usada pelo
 README (merge), NEW_PROFILE.md e validate.py.
 
-O perfil responde como um usuario: as 240 perguntas (20 por eixo) MAIS as
+O perfil responde como um usuario: as 275 perguntas (17 a 20 por eixo) MAIS as
 perguntas de arquetipo de multipla escolha (backend/.../archetype-questions.json).
 O calculo espelha ScoringService.java:
   - cada resposta vira um valor 0..1 do lado do polo esquerdo
@@ -24,7 +24,11 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(BASE, "..", "backend", "src", "main", "resources", "data")
 
 AXIS_ORDER = ['estrutura', 'representacao', 'poder', 'imigracao', 'diplomacia', 'intervencao',
-              'economia', 'controle', 'comercio', 'religiao', 'moral', 'tecnologia']
+              'economia', 'controle', 'comercio', 'religiao', 'moral', 'tecnologia',
+              'metodo', 'distribuicao']
+# Eixos acrescentados depois da auditoria original: perfis antigos so os tem depois de
+# reauditados. Ate la o vetor do perfil fica sem eles, e o backend os ignora no matching.
+NEW_AXES = ['metodo', 'distribuicao']
 SCORE = {'DT': 0, 'D': 0.25, 'N': 0.5, 'C': 0.75, 'CT': 1}
 ARCHETYPE_KEY = "archetype"
 
@@ -62,11 +66,29 @@ def archetype_problems(data):
     return problems
 
 
-def compute_vector(data, qmap=None):
-    """Vetor 0-100 por eixo: 20 respostas por eixo + alternativas de arquetipo."""
+def axis_question_ids(qmap=None):
     qmap = qmap or question_map()
-    totals = {ax: [0.0, 0.0] for ax in AXIS_ORDER}  # soma, peso
-    for ax in AXIS_ORDER:
+    ids = {ax: set() for ax in AXIS_ORDER}
+    for q in qmap.values():
+        ids[q['axisId']].add(q['id'])
+    return ids
+
+
+def complete_axes(data, qmap=None):
+    """Eixos com todas as perguntas respondidas. Um eixo novo ainda nao reauditado fica de fora
+    (pode ter so as perguntas que vieram de outro eixo)."""
+    ids = axis_question_ids(qmap)
+    return [ax for ax in AXIS_ORDER
+            if ax in data and set(data[ax].get('answers', {})) >= ids[ax]]
+
+
+def compute_vector(data, qmap=None):
+    """Vetor 0-100 por eixo: as respostas de cada eixo + alternativas de arquetipo.
+    So entram os eixos completos (ver complete_axes)."""
+    qmap = qmap or question_map()
+    axes = complete_axes(data, qmap)
+    totals = {ax: [0.0, 0.0] for ax in axes}  # soma, peso
+    for ax in axes:
         for qid, ans in data[ax]['answers'].items():
             q = qmap[qid]
             s = SCORE[ans]
@@ -78,9 +100,11 @@ def compute_vector(data, qmap=None):
         if opt is None:
             continue
         for ax, left_percent in opt['effects'].items():
+            if ax not in totals:
+                continue
             totals[ax][0] += left_percent / 100.0
             totals[ax][1] += 1.0
-    return {ax: round(totals[ax][0] / totals[ax][1] * 100, 1) for ax in AXIS_ORDER}
+    return {ax: round(totals[ax][0] / totals[ax][1] * 100, 1) for ax in axes}
 
 
 def archetype_prompt_block():
@@ -88,7 +112,7 @@ def archetype_prompt_block():
     lines = [
         "",
         "=== PERGUNTAS DE ARQUETIPO (multipla escolha) ===",
-        "Alem das 240 perguntas acima, responda estas perguntas de multipla escolha como o proprio",
+        "Alem das perguntas acima, responda estas perguntas de multipla escolha como o proprio",
         "perfil responderia no quiz: escolha UMA alternativa por pergunta, a que um adepto/porta-voz",
         "real marcaria. Escolha pelo sentido do texto; nao existe alternativa 'neutra' nem opcao de",
         "pular. Grave a letra da alternativa (ex.: \"A\") no bloco \"archetype\" do JSON.",

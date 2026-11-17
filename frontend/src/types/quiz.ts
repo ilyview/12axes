@@ -119,7 +119,7 @@ export interface PartyMatch {
   historical: boolean;
   period: string;
   compatibility: number;
-  /** Vetor de 12 eixos (leftPercent) do perfil. */
+  /** Vetor de 14 eixos (leftPercent) do perfil. */
   vector?: Record<string, number>;
 }
 
@@ -149,7 +149,7 @@ export interface CountryMatch {
   historical: boolean;
   period: string;
   compatibility: number;
-  /** Vetor de 12 eixos (leftPercent) do país. */
+  /** Vetor de 14 eixos (leftPercent) do país. */
   vector?: Record<string, number>;
 }
 
@@ -186,7 +186,7 @@ export interface PersonalityMatch {
   imageSourceUrl?: string;
   imageNote?: string;
   compatibility: number;
-  /** Vetor de 12 eixos (leftPercent) da personalidade. */
+  /** Vetor de 14 eixos (leftPercent) da personalidade. */
   vector?: Record<string, number>;
   /** Espectro da pessoa (categoria da ideologia mais próxima do vetor dela): a cor dela no governo ideal. */
   spectrum?: string | null;
@@ -298,7 +298,7 @@ export interface CompareDetail {
   item: CompareItem;
   description: string;
   compatibility: number;
-  /** Vetor de 12 eixos (leftPercent) do perfil comparado. */
+  /** Vetor de 14 eixos (leftPercent) do perfil comparado. */
   vector: Record<string, number>;
   /** Religiões do perfil no catálogo (vazia quando não há vínculo). */
   religions?: string[];
@@ -306,7 +306,7 @@ export interface CompareDetail {
   spectrum?: string;
 }
 
-/** Um perfil da página /compare: dados do catálogo e vetor de 12 eixos (leftPercent). */
+/** Um perfil da página /compare: dados do catálogo e vetor de 14 eixos (leftPercent). */
 export interface CompareProfile {
   item: CompareItem;
   vector: Record<string, number>;

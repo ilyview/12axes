@@ -22,7 +22,7 @@ const STR = {
   pt: {
     skip: 'Pular para o conteúdo',
     catalogNav: 'Catálogo',
-    homeAria: '12 axes, página inicial',
+    homeAria: '14 axes, página inicial',
     takeTheTest: 'Fazer o teste',
     compareWith: 'Comparar com…',
     kind: 'Ideologia',
@@ -37,7 +37,7 @@ const STR = {
     tabs: { axes: 'Eixos', personalities: 'Personalidades', countries: 'Países', ideologies: 'Ideologias' },
     ids: { axes: 'eixos', personalities: 'personalidades', countries: 'paises', ideologies: 'ideologias' },
     axesEyebrow: 'Eixos políticos',
-    axesTitle: 'Perfil nos 12 eixos',
+    axesTitle: 'Perfil nos 14 eixos',
     distTitle: 'O que distingue esta ideologia',
     rareTag: 'Posição mais incomum',
     commonTag: 'Posição mais comum',
@@ -71,13 +71,13 @@ const STR = {
     distantIdeology: 'A ideologia mais distante',
     matchWord: 'match',
     ctaTitle: 'E você, onde está no espectro?',
-    ctaText: (name, n) => `Responda ao quiz e veja sua compatibilidade com ${name} e outras ${n} ideologias nos 12 eixos.`,
+    ctaText: (name, n) => `Responda ao quiz e veja sua compatibilidade com ${name} e outras ${n} ideologias nos 14 eixos.`,
     footer: 'Quiz político independente · 12axes.vercel.app · © 2026. Todos os direitos reservados'
   },
   en: {
     skip: 'Skip to content',
     catalogNav: 'Catalog',
-    homeAria: '12 axes, home page',
+    homeAria: '14 axes, home page',
     takeTheTest: 'Take the test',
     compareWith: 'Compare with…',
     kind: 'Ideology',
@@ -92,7 +92,7 @@ const STR = {
     tabs: { axes: 'Axes', personalities: 'Personalities', countries: 'Countries', ideologies: 'Ideologies' },
     ids: { axes: 'axes', personalities: 'personalities', countries: 'countries', ideologies: 'ideologies' },
     axesEyebrow: 'Political axes',
-    axesTitle: 'Profile across the 12 axes',
+    axesTitle: 'Profile across the 14 axes',
     distTitle: 'What sets this ideology apart',
     rareTag: 'Most unusual position',
     commonTag: 'Most common position',
@@ -126,7 +126,7 @@ const STR = {
     distantIdeology: 'The most distant ideology',
     matchWord: 'match',
     ctaTitle: 'And you, where do you stand?',
-    ctaText: (name, n) => `Take the quiz and see your compatibility with ${name} and ${n} other ideologies across the 12 axes.`,
+    ctaText: (name, n) => `Take the quiz and see your compatibility with ${name} and ${n} other ideologies across the 14 axes.`,
     footer: 'Independent political quiz · 12axes.vercel.app · © 2026. All rights reserved'
   }
 };

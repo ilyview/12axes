@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "C",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Tutu defendeu publicamente igualdade LGBT, combate à discriminação das mulheres e compaixão pelos animais, com fundamento cristão. Sua abertura ao aborto em condições justificadas e à educação inclusiva convive com uma ética de compromisso e cuidado, que não implica equiparar toda prática sexual ao casamento ou celebrar pornografia.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "C",
       "moral_12": "D",
       "moral_03": "CT",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "C",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "CT",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "C",
       "moral_14": "D",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "B",
     "mundo": "C",
     "tecnologia": "C"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
+    }
   }
 }

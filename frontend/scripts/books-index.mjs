@@ -31,7 +31,7 @@ const STR = {
   pt: {
     skip: 'Pular para a lista',
     catalogNav: 'Catálogo',
-    homeAria: '12 axes, página inicial',
+    homeAria: '14 axes, página inicial',
     eyebrow: 'Biblioteca política',
     lead: (n, cats, years) => `Uma biblioteca com ${n} obras políticas, econômicas e filosóficas fundamentais escritas pelas figuras mapeadas pelo 12 Axes. Organize por área, descubra ideias ao longo de ~${years} anos e encontre onde ler cada obra.`,
     stats: ['obras catalogadas', 'áreas de pensamento', 'anos de história'],
@@ -45,7 +45,7 @@ const STR = {
     authorLabel: 'Autor',
     yearBc: (y) => `${y} a.C.`,
     dnaNote:
-      '<b>Como ler a faixa de 12 ícones:</b> cada ícone representa a inclinação ideológica do autor nos 12 eixos. Quanto mais forte o ícone, mais nítida a posição. Passe o cursor para ver os valores.',
+      '<b>Como ler a faixa de 12 ícones:</b> cada ícone representa a inclinação ideológica do autor nos 14 eixos. Quanto mais forte o ícone, mais nítida a posição. Passe o cursor para ver os valores.',
     legendAria: 'Polos de cada eixo, na ordem da faixa',
     emptyTitle: 'Nenhum livro encontrado',
     emptyText: 'Tente outro termo de busca ou limpe os filtros.',
@@ -54,7 +54,7 @@ const STR = {
     credit: 'Obras originais escritas pelas personalidades históricas e contemporâneas do catálogo 12 Axes.',
     portraitAlt: (name) => `Retrato de ${name}`,
     ctaTitle: 'Qual livro combina com suas ideias?',
-    ctaText: 'Responda ao quiz de 12 eixos e receba uma lista personalizada de livros das personalidades mais compatíveis com o seu resultado.',
+    ctaText: 'Responda ao quiz de 14 eixos e receba uma lista personalizada de livros das personalidades mais compatíveis com o seu resultado.',
     takeTheTest: 'Fazer o teste',
     footer: 'Quiz político independente · 12axes.vercel.app · © 2026. Todos os direitos reservados',
     otherLang: { label: 'English', href: '/en/books' },
@@ -72,7 +72,7 @@ const STR = {
   en: {
     skip: 'Skip to the list',
     catalogNav: 'Catalog',
-    homeAria: '12 axes, home page',
+    homeAria: '14 axes, home page',
     eyebrow: 'Political library',
     lead: (n, cats, years) => `A library of ${n} foundational political, economic, and philosophical works written by the figures mapped across the 12 Axes. Browse by field, explore ideas across ~${years} years, and find where to read each work.`,
     stats: ['cataloged works', 'fields of thought', 'years of history'],
@@ -86,7 +86,7 @@ const STR = {
     authorLabel: 'Author',
     yearBc: (y) => `${y} BC`,
     dnaNote:
-      '<b>How to read the 12-icon strip:</b> each icon shows the author\'s ideological leaning across the 12 axes. The stronger the icon, the stronger the position. Hover to see exact values.',
+      '<b>How to read the 12-icon strip:</b> each icon shows the author\'s ideological leaning across the 14 axes. The stronger the icon, the stronger the position. Hover to see exact values.',
     legendAria: 'Poles of each axis, in strip order',
     emptyTitle: 'No book found',
     emptyText: 'Try another search term or clear the filters.',

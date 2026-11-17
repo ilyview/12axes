@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "CT",
       "economia_20": "DT",
-      "economia_01": "CT",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "DT",
-      "economia_08": "DT"
+      "economia_02": "DT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Coautor e divulgador da Lei Revolucionária das Mulheres (1993) — que rompeu com o patriarcado tradicional ao garantir às mulheres comando político-militar, escolha reprodutiva e combate à violência doméstica —, Marcos destacou-se na esquerda latino-americana pela defesa explícita de pessoas LGBTQ+, trabalhadoras sexuais, igualdade racial/indígena e uso de linguagem neutra ('compañeroas').",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "DT",
       "moral_15": "N",
       "moral_12": "DT",
       "moral_03": "CT",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "CT",
       "moral_02": "DT",
-      "moral_05": "CT",
       "moral_17": "C",
       "moral_13": "CT",
       "moral_11": "CT",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "DT",
-      "moral_08": "DT",
       "moral_20": "DT"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "A",
     "mundo": "D",
     "tecnologia": "B"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "CT",
+      "moral_04": "DT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "CT",
+      "moral_08": "DT"
+    }
   }
 }

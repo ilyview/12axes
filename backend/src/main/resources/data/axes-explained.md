@@ -1,6 +1,6 @@
-# 12 Eixos — Documentação de Referência
+# 14 Eixos — Documentação de Referência
 
-Documento de referência dos 12 eixos do quiz político **12axes**. Cada eixo mede uma tensão entre dois polos opostos. Abaixo estão, para cada eixo: identificador técnico, rótulos (PT/EN), polos, cores, a descrição exibida na interface e os temas avaliados por cada polo.
+Documento de referência dos 14 eixos do quiz político **12axes**. Cada eixo mede uma tensão entre dois polos opostos. Abaixo estão, para cada eixo: identificador técnico, rótulos (PT/EN), polos, cores, a descrição exibida na interface e os temas avaliados por cada polo.
 
 > A ordem segue a numeração oficial da interface (01–12), idêntica à do `axes.json`.
 
@@ -210,6 +210,36 @@ A **intensidade** depende da **distância até o centro (50)** — ou seja, de q
 
 ---
 
+## 13. Método — Gradualismo × Ruptura
+
+- **ID:** `metodo`
+- **Rótulo (EN):** Method
+- **Polo esquerdo:** Gradualismo (`#4A6FA5`) — EN: *Gradualism*
+- **Polo direito:** Ruptura (`#B8432F`) — EN: *Rupture*
+
+**Descrição:** Mede se a mudança política deve vir aos poucos, pelo voto, pela lei e pelo acordo, ou por ruptura, ação direta, desobediência e, no limite, revolução.
+
+**Temas avaliados:** reformismo, compromisso, prudência institucional (Burke), desobediência civil, ação direta, aceleracionismo, vanguarda, nova constituinte e resistência armada.
+
+**Como as questões operacionalizam o eixo:** mudança pelas instituições, acordos com adversários, vitórias parciais, protestos pacíficos e convencer a maioria compõem o gradualismo. Violência contra uma ordem injusta, bloqueios e ocupações, "piorar para mudar", minoria organizada, Constituição nova, mudança rápida e resistência armada a um governo tirânico compõem a ruptura. Este eixo mede **o meio da mudança, não a direção**: há ruptura de esquerda e de direita. Recebeu `economia_01` (revolução para redistribuir) e `moral_04` (ritmo da mudança cultural).
+
+---
+
+## 14. Distribuição — Igualitário × Meritocrático
+
+- **ID:** `distribuicao`
+- **Rótulo (EN):** Distribution
+- **Polo esquerdo:** Igualitário (`#D9731A`) — EN: *Egalitarian*
+- **Polo direito:** Meritocrático (`#2B7A78`) — EN: *Meritocratic*
+
+**Descrição:** Mede quanta desigualdade é aceitável: impostos progressivos, taxação de fortunas e heranças e igualdade de resultados contra mérito, imposto igual para todos e diferenças de renda vistas como justas.
+
+**Temas avaliados:** progressividade tributária, imposto sobre fortunas e heranças, teto salarial, igualdade de resultados ou de oportunidades, cotas, contrapartidas em programas sociais e seleção por mérito.
+
+**Como as questões operacionalizam o eixo:** alíquotas maiores no topo, taxação anual de grandes fortunas, limite à diferença salarial, cotas, mais recursos para escolas pobres e mesmo ponto de partida compõem o polo igualitário. Imposto único, desigualdade justificada por esforço, combate à pobreza sem meta de igualdade, contrapartidas, turmas por desempenho e herança protegida compõem o polo meritocrático. Este eixo **não mede quem é dono da economia** (isso é `economia`). Recebeu `economia_08` (herança) e `moral_05`/`moral_08` (cotas raciais).
+
+---
+
 ## Tabela-resumo
 
 | # | Eixo | Polo esquerdo | Polo direito | ID |
@@ -226,9 +256,11 @@ A **intensidade** depende da **distância até o centro (50)** — ou seja, de q
 | 10 | Religião | Irreligioso | Religioso | `religiao` |
 | 11 | Moral | Progressista | Tradicionalista | `moral` |
 | 12 | Tecnologia | Tecnologia | Biologia | `tecnologia` |
+| 13 | Método | Gradualismo | Ruptura | `metodo` |
+| 14 | Distribuição | Igualitário | Meritocrático | `distribuicao` |
 
 ---
 
 ## Relação direta com o banco de questões
 
-Este documento explica o significado conceitual de cada eixo, mas sua aplicação é definida diretamente por [questions-pool.json](questions-pool.json). O arquivo contém as 20 perguntas de cada eixo, o polo com o qual concordar aproxima a resposta (`agreePole`) e o peso usado no cálculo. Ao alterar, criar ou reinterpretar uma pergunta, revise também esta documentação para manter a correspondência entre conceito, texto da questão e pontuação do quiz.
+Este documento explica o significado conceitual de cada eixo, mas sua aplicação é definida diretamente por [questions-pool.json](questions-pool.json). O arquivo contém as perguntas de cada eixo (20 na maioria; 18 em economia e 17 em moral, que cederam perguntas a método e distribuição), o polo com o qual concordar aproxima a resposta (`agreePole`) e o peso usado no cálculo. Ao alterar, criar ou reinterpretar uma pergunta, revise também esta documentação para manter a correspondência entre conceito, texto da questão e pontuação do quiz.

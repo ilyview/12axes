@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "N",
       "economia_10": "D",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Esparta impunha um código moral coletivista e disciplinar extremo, com controle estatal sobre corpo, casamento e reprodução (exposição de bebês fracos, encorajamento de procriação forte), priorizando a utilidade militar sobre a autonomia individual.",
     "answers": {
       "moral_07": "DT",
-      "moral_04": "CT",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "N",
       "moral_02": "CT",
-      "moral_05": "DT",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "C",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "C",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "N",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "DT",
+      "moral_08": "N"
     }
   }
 }

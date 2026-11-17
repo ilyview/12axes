@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A imagem cultural do Rio \u00e9 aberta, festiva e tolerante com diversidade sexual e express\u00e3o art\u00edstica, enquanto amplos setores religiosos e securit\u00e1rios s\u00e3o socialmente conservadores. O perfil resultante \u00e9 progressista em direitos civis, mas dividido em aborto, fam\u00edlia e pautas identit\u00e1rias recentes.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "C",
       "moral_15": "C",
       "moral_12": "C",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "CT",
       "moral_02": "N",
-      "moral_05": "C",
       "moral_17": "C",
       "moral_13": "C",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "C",
-      "moral_08": "D",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "CT",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

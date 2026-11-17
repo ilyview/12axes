@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "D",
       "economia_20": "D",
-      "economia_01": "D",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Infiro valorização da fidelidade e da disciplina, considerando a participação feminina na comunidade. As restrições alimentares favorecem reduzir carne, embora as fontes discordem sobre vegetarianismo estrito.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "C",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "C",
       "moral_02": "C",
-      "moral_05": "D",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "C",
     "tecnologia": "C"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
+    }
   }
 }

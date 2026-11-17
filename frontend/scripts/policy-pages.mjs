@@ -48,7 +48,7 @@ const PAGES = {
       lead: 'Análise aprofundada do seu resultado político, em compra única, sem assinatura.',
       sections: [
         ['O que inclui', [
-          '- <strong>Análise dos 12 eixos, um por um:</strong> o que a sua posição em cada eixo significa e o que mais pesou nas suas respostas.',
+          '- <strong>Análise dos 14 eixos, um por um:</strong> o que a sua posição em cada eixo significa e o que mais pesou nas suas respostas.',
           '- <strong>Onde você mais discorda:</strong> da ideologia, da personalidade e do país mais próximos, eixo a eixo.',
           '- <strong>Seu governo ideal:</strong> nove cargos ocupados pelas figuras mais compatíveis com você.',
           '- <strong>Sua linha do tempo ideológica:</strong> os perfis mais próximos de cada era, da Antiguidade ao século XXI.',
@@ -67,7 +67,7 @@ const PAGES = {
       title: 'Termos de uso',
       lead: 'Regras de uso do 12 Axes e do Relatório Completo.',
       sections: [
-        ['O que é o 12 Axes', ['Quiz político independente e gratuito, que posiciona você em 12 eixos e o compara com ideologias, personalidades, países e partidos. É um conteúdo informativo e educativo: os resultados são aproximações e não representam a posição do autor nem aconselhamento de qualquer natureza.']],
+        ['O que é o 12 Axes', ['Quiz político independente e gratuito, que posiciona você em 14 eixos e o compara com ideologias, personalidades, países e partidos. É um conteúdo informativo e educativo: os resultados são aproximações e não representam a posição do autor nem aconselhamento de qualquer natureza.']],
         ['O Relatório Completo', [
           'Conteúdo digital adicional sobre um resultado específico, vendido por compra única, por resultado: o acesso vale para o resultado comprado (os 12 valores dos eixos), e outro resultado exige outra compra.',
           'Inclui análises e rankings completos do resultado e exportação em CSV e PDF. O que está incluído é mostrado antes do pagamento.',
@@ -114,7 +114,7 @@ const PAGES = {
       lead: 'An in-depth analysis of your political result, as a one-time purchase with no subscription.',
       sections: [
         ['What is included', [
-          '- <strong>Analysis of all 12 axes, one by one:</strong> what your position on each axis means and what weighed most in your answers.',
+          '- <strong>Analysis of all 14 axes, one by one:</strong> what your position on each axis means and what weighed most in your answers.',
           '- <strong>Where you disagree most:</strong> with your closest ideology, figure and country, axis by axis.',
           '- <strong>Your ideal government:</strong> nine posts filled by the figures most compatible with you.',
           '- <strong>Your ideological timeline:</strong> the closest profiles of each era, from Antiquity to the 21st century.',
@@ -133,7 +133,7 @@ const PAGES = {
       title: 'Terms of use',
       lead: 'Rules for using 12 Axes and the Full Report.',
       sections: [
-        ['What 12 Axes is', ['An independent, free political quiz that places you on 12 axes and compares you with ideologies, figures, countries and parties. It is informational and educational content: results are approximations and do not represent the author’s position or advice of any kind.']],
+        ['What 12 Axes is', ['An independent, free political quiz that places you on 14 axes and compares you with ideologies, figures, countries and parties. It is informational and educational content: results are approximations and do not represent the author’s position or advice of any kind.']],
         ['The Full Report', [
           'Additional digital content about one specific result, sold as a one-time purchase per result: access covers the result you bought (its 12 axis values), and another result needs another purchase.',
           'It includes in-depth analyses and full rankings of the result and CSV and PDF export. What is included is shown before payment.',

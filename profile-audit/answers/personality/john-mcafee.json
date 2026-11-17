@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "DT",
       "economia_20": "CT",
-      "economia_01": "DT",
       "economia_10": "CT",
       "economia_09": "DT",
-      "economia_02": "CT",
-      "economia_08": "CT"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Vida pessoal notoriamente boêmia e anticonvencional (múltiplos casamentos, uso recreativo de drogas, rejeição de normas sociais), McAfee era um liberal social radical em quase tudo.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "CT",
       "moral_02": "DT",
-      "moral_05": "N",
       "moral_17": "CT",
       "moral_13": "CT",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_16": "DT",
       "moral_18": "DT",
       "moral_14": "N",
-      "moral_08": "N",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "D",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

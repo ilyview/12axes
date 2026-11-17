@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "D",
       "economia_20": "CT",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "CT",
-      "economia_08": "CT"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Por privilegiar autonomia individual e baixa interferencia estatal na vida privada, o neoliberalismo tende a aceitar maior liberdade de costumes. Em pautas redistributivas ou identitarias, porem, costuma se dividir quando enxerga coercao estatal ou engenharia social.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "D",
       "moral_17": "C",
       "moral_13": "C",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "N",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "DT",
       "economia_20": "CT",
-      "economia_01": "D",
       "economia_10": "CT",
       "economia_09": "D",
-      "economia_02": "CT",
-      "economia_08": "CT"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Pelo princípio de não-agressão, Rothbard defendia liberdade plena para adultos consentindo em suas escolhas pessoais (sexualidade, drogas, corpo), rejeitando tanto a imposição estatal progressista quanto a tradicionalista, embora sua aliança paleolibertariana tardia tenha o aproximado retoricamente do conservadorismo social.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "N",
       "moral_19": "C",
       "moral_02": "N",
-      "moral_05": "DT",
       "moral_17": "C",
       "moral_13": "C",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "N",
       "moral_14": "D",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "D",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "DT",
+      "moral_08": "C"
     }
   }
 }

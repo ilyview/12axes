@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "N",
-      "economia_01": "D",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "N",
-      "economia_08": "C"
+      "economia_02": "N"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "É imoralista, não progressista: rejeita a moral cristã, o puritanismo sexual e o culto à 'família sagrada' como negação da vida, o que a afasta do polo tradicionalista — mas despreza igualmente a compaixão universal, a igualdade, os direitos de minorias, o feminismo e o 'avanço moral' humanitário como moral de rebanho e ressentimento; cotas, linguagem inclusiva e respeito identitário são nivelamento, não virtude. É elitista em costumes: aprova a licenciosidade e a autocriação dos fortes além do bem e do mal, não a emancipação igualitária universal.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "N",
       "moral_15": "D",
       "moral_12": "N",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "D",
       "moral_17": "C",
       "moral_13": "N",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "D",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "D",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "N"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

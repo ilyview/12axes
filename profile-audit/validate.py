@@ -10,7 +10,7 @@ Exemplos:
 
 Roda TRES niveis de checagem, nesta ordem:
 
-  [FORMA]     12 eixos, 20 respostas por eixo, ids corretos, codigos DT/D/N/C/CT,
+  [FORMA]     14 eixos, todas as perguntas de cada eixo, ids corretos, codigos DT/D/N/C/CT,
               personaBrief nao vazio e o bloco "archetype" com uma alternativa valida
               por pergunta de arquetipo.
   [NEUTROS]   taxa de "N" no total e por eixo. Cada "N" vale exatamente 0.50 (o
@@ -73,6 +73,8 @@ AXIS_POLES = {
     "religiao":      ("religioso", "irreligioso/secular", "khomeini", "stalin"),
     "moral":         ("tradicionalista", "progressista", "francisco-franco", "foucault"),
     "tecnologia":    ("biologia/naturalista", "tecnofilo", "ted-kaczynski", "ray-kurzweil"),
+    "metodo":        ("ruptura/revolucao", "gradualismo/reforma", "lenin", "edmund-burke"),
+    "distribuicao":  ("meritocratico", "igualitario", "milton-friedman", "stalin"),
 }
 
 # Categorias validas do catalogo personality. Agrupam a pessoa na secao "por
@@ -115,7 +117,7 @@ def names(catalog):
 
 
 def compute_vector(data, qmap):
-    # 240 perguntas + perguntas de arquetipo, igual ao ScoringService (ver profile_vector.py).
+    # todas as perguntas + perguntas de arquetipo, igual ao ScoringService (ver profile_vector.py).
     return profile_vector.compute_vector(data, qmap)
 
 
@@ -243,16 +245,25 @@ def main():
                 )
 
     # ---------- [FORMA] ----------
+    # Arquivos antigos de answers/ foram auditados antes dos eixos novos (profile_vector.NEW_AXES):
+    # ali um eixo novo incompleto so gera aviso e fica fora do vetor ate a reauditoria.
+    legacy = os.path.abspath(path).startswith(os.path.abspath(os.path.join(BASE, "answers")))
+    checked_axes = []
     for ax in AXES:
+        expected = len(pool[ax])
+        if legacy and ax in profile_vector.NEW_AXES and len(data.get(ax, {}).get("answers", {})) < expected:
+            warnings.append(f"[FORMA] {ax}: eixo novo ainda nao auditado neste perfil (fica fora do vetor)")
+            continue
         if ax not in data:
             errors.append(f"[FORMA] eixo ausente: {ax}")
             continue
+        checked_axes.append(ax)
         obj = data[ax]
         ans = obj.get("answers", {})
         if not str(obj.get("personaBrief", "")).strip():
             errors.append(f"[FORMA] {ax}: personaBrief vazio")
-        if len(ans) != 20:
-            errors.append(f"[FORMA] {ax}: {len(ans)} respostas (esperado 20)")
+        if len(ans) != expected:
+            errors.append(f"[FORMA] {ax}: {len(ans)} respostas (esperado {expected})")
         missing = pool[ax] - set(ans)
         unknown = set(ans) - pool[ax]
         if missing:
@@ -265,7 +276,6 @@ def main():
     # Perguntas de arquetipo: obrigatorias em saida nova; arquivos antigos de answers/
     # (anteriores a esta regra) nao tem o bloco, entao ali a falta so gera aviso.
     arch_problems = profile_vector.archetype_problems(data)
-    legacy = os.path.normpath(path).startswith(os.path.normpath(os.path.join(BASE, "answers")))
     for prob in arch_problems:
         (warnings if legacy else errors).append(f"[FORMA] {prob}")
     if not arch_problems:
@@ -282,20 +292,22 @@ def main():
 
     # ---------- [NEUTROS] ----------
     total_n = 0
-    for ax in AXES:
+    total_q = 0
+    for ax in checked_axes:
         vals = list(data[ax]["answers"].values())
         n = collections.Counter(vals)["N"]
         total_n += n
-        frac = n / 20
+        total_q += len(vals)
+        frac = n / len(vals)
         if frac > MAX_N_AXIS:
             errors.append(
-                f"[NEUTROS] {ax}: {n}/20 = {frac:.0%} de N (limite {MAX_N_AXIS:.0%}). "
+                f"[NEUTROS] {ax}: {n}/{len(vals)} = {frac:.0%} de N (limite {MAX_N_AXIS:.0%}). "
                 f"Cada N vale 0.50; este eixo esta colapsando para o ponto morto."
             )
         elif frac >= WARN_N_AXIS:
-            warnings.append(f"[NEUTROS] {ax}: {n}/20 = {frac:.0%} de N (perto do limite)")
-    tfrac = total_n / 240
-    print(f"[NEUTROS] total {total_n}/240 = {tfrac:.1%}")
+            warnings.append(f"[NEUTROS] {ax}: {n}/{len(vals)} = {frac:.0%} de N (perto do limite)")
+    tfrac = total_n / total_q
+    print(f"[NEUTROS] total {total_n}/{total_q} = {tfrac:.1%}")
     if tfrac > MAX_N_TOTAL:
         errors.append(f"[NEUTROS] total {tfrac:.1%} acima do limite {MAX_N_TOTAL:.0%}")
 
@@ -327,15 +339,15 @@ def main():
 
     print("\n[CONTEUDO] vetor e direcao real dos eixos")
     print(f"  {'eixo':15s} {'valor':>6s}  0 <--------> 100")
-    for ax in AXES:
+    for ax in [a for a in AXES if a in vec]:
         lo, hi, alo, ahi = AXIS_POLES[ax]
         print(f"  {ax:15s} {vec[ax]:6.1f}  {lo} <-> {hi}")
 
     # ancoras: o vetor esta do mesmo lado de quem deveria?
     print("\n[CONTEUDO] ancoras de referencia (para conferir se o lado faz sentido)")
-    for ax in AXES:
+    for ax in [a for a in AXES if a in vec]:
         lo, hi, alo, ahi = AXIS_POLES[ax]
-        if alo in pvec and ahi in pvec:
+        if alo in pvec and ahi in pvec and ax in pvec[alo] and ax in pvec[ahi]:
             print(f"  {ax:15s} {vec[ax]:6.1f}   | {pname.get(alo,alo)}={pvec[alo][ax]:.0f} .. {pname.get(ahi,ahi)}={pvec[ahi][ax]:.0f}")
 
     # duplicata dentro do proprio catalogo
@@ -372,7 +384,7 @@ def main():
                         f"personalidade desta ideologia. Um dos dois vetores esta errado - "
                         f"compare eixo a eixo antes de mesclar."
                     )
-                gaps = sorted(((abs(pvec[ref][a] - vec[a]), a) for a in AXES), reverse=True)[:3]
+                gaps = sorted(((abs(pvec[ref][a] - vec[a]), a) for a in AXES if a in vec and a in pvec[ref]), reverse=True)[:3]
                 print("  maiores divergencias: " + ", ".join(
                     f"{a} ({pvec[ref][a]:.0f} vs {vec[a]:.0f})" for _, a in gaps))
     else:

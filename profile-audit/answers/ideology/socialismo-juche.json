@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "C",
       "economia_20": "DT",
-      "economia_01": "CT",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "DT",
-      "economia_08": "DT"
+      "economia_02": "DT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Apesar de socialista na economia, o juche historicamente se alinha a disciplina social, familia normativa e rejeicao de costumes vistos como decadentes ou desagregadores. A moralidade tende a ser conservadora e subordinada a ordem coletiva.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "CT",
       "moral_15": "DT",
       "moral_12": "C",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "D",
       "moral_17": "DT",
       "moral_13": "DT",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "N",
       "moral_16": "CT",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "D",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "CT",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

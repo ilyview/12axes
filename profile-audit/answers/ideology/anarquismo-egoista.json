@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "CT",
-      "economia_01": "C",
       "economia_10": "CT",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "N"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Como rejeita moral objetiva e instituicoes sagradas, o anarquismo egoista tende a aceitar escolhas sexuais, afetivas e corporais desde que voluntarias. Tradicao, familia e bons costumes nao ganham autoridade automatica sobre o individuo.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "DT",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "CT",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "CT",
       "moral_02": "DT",
-      "moral_05": "D",
       "moral_17": "CT",
       "moral_13": "CT",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "DT",
       "moral_14": "D",
-      "moral_08": "C",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "DT",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "C",
+      "moral_04": "DT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "N",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

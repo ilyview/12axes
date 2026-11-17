@@ -80,12 +80,15 @@ class ProfileMatchScorerTest {
                 "poder", 100.0
         ));
 
-        double augment = 12 * ProfileMatchScorer.DIRECTION_AUGMENT_RADIUS * ProfileMatchScorer.DIRECTION_AUGMENT_RADIUS;
+        int axisCount = neutral.size();
+        double augment = axisCount * ProfileMatchScorer.DIRECTION_AUGMENT_RADIUS * ProfileMatchScorer.DIRECTION_AUGMENT_RADIUS;
         double targetNormSquared = 3 * 50.0 * 50.0;
         double direction = 50.0 + 50.0 * augment / Math.sqrt(augment * (targetNormSquared + augment));
         double outlierScore = 100.0 * (1.0 - Math.pow(
                 50.0 / ProfileMatchScorer.OUTLIER_FULL_SPREAD, ProfileMatchScorer.OUTLIER_EXPONENT));
-        double expected = expectedScore(75.0, direction, 75.0, outlierScore);
+        // 3 eixos opostos (similaridade 0) e o resto identico; a intensidade media difere 3 x 50 / axisCount.
+        double sameAxes = 100.0 * (axisCount - 3) / axisCount;
+        double expected = expectedScore(sameAxes, direction, 100.0 - 2.0 * 150.0 / axisCount, outlierScore);
         assertThat(scorer.compatibility(neutral, target)).isEqualTo(expected);
         assertThat(scorer.compatibility(target, neutral)).isEqualTo(expected);
     }
@@ -206,6 +209,21 @@ class ProfileMatchScorerTest {
                 + ProfileMatchScorer.MAGNITUDE_WEIGHT
                 + ProfileMatchScorer.OUTLIER_WEIGHT)
                 .isEqualTo(1.0);
+    }
+
+    @Test
+    void axisMissingFromTheTargetIsLeftOutInsteadOfCountingAsCenter() {
+        Map<String, Double> user = vector(Map.of("estrutura", 80.0, "metodo", 5.0, "distribuicao", 95.0));
+        Map<String, Double> legacyTarget = new LinkedHashMap<>(vector(Map.of("estrutura", 80.0)));
+        legacyTarget.remove("metodo");
+        legacyTarget.remove("distribuicao");
+        Map<String, Double> legacyUser = new LinkedHashMap<>(user);
+        legacyUser.remove("metodo");
+        legacyUser.remove("distribuicao");
+
+        // Sem os eixos novos no perfil, a nota e a mesma de quem so tem os eixos antigos.
+        assertThat(scorer.compatibility(user, legacyTarget)).isEqualTo(scorer.compatibility(legacyUser, legacyTarget));
+        assertThat(scorer.compatibility(user, legacyTarget)).isEqualTo(100.0);
     }
 
     private double expectedScore(double axisSimilarity, double directionSimilarity, double magnitudeSimilarity,

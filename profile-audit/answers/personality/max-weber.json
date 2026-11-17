@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Weber, como intelectual liberal burguês do início do século XX imerso em círculos de vanguarda cultural (incluindo debates com sua esposa Marianne Weber sobre direitos das mulheres), tinha visão relativamente aberta para sua época em ética pessoal, mas seu quadro conceitual é anterior às pautas identitárias contemporâneas, exigindo inferência cautelosa a partir de seu racionalismo secular e individualismo liberal.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "N",
@@ -262,14 +259,12 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "D",
       "moral_17": "N",
       "moral_13": "C",
       "moral_14": "N",
       "moral_10": "D",
       "moral_18": "D",
       "moral_16": "D",
-      "moral_08": "C",
       "moral_20": "D",
       "moral_11": "C"
     }
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "N",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

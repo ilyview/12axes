@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "C",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "N",
-      "economia_02": "C",
-      "economia_08": "D"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Progressista gradualista: celebrou a derrota do referendo contra a adoção por casais do mesmo sexo ('No se pueden desconocer los derechos fundamentales', 10/05/2017), apoiou a descriminalização do aborto pela Corte como 'a correct move' com 'gradualism' num país 'very conservative' (23/02/2022) e defende legalizar as drogas; mas deixou o casamento igualitário ao voto de consciência (2013) e recuou nas cartilhas escolares de gênero (11/08/2016).",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "D",
       "moral_12": "N",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "N",
       "moral_02": "D",
-      "moral_05": "C",
       "moral_17": "D",
       "moral_13": "N",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "N",
       "moral_14": "N",
-      "moral_08": "D",
       "moral_20": "N"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "C",
     "tecnologia": "C"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
+    }
   }
 }

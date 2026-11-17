@@ -1,13 +1,12 @@
 import type { Lang } from '../i18n';
 import { parseReligion, type Religion } from './religion';
+import { isResultVectorLength } from './peopleCompare';
 
 /** Origem pública do site: o QR do cartão aponta para ela, não para o endereço de onde a pessoa gerou a imagem. */
 export const PUBLIC_ORIGIN = 'https://12axes.vercel.app';
 
-/** Caminho do link curto de resultado: /r?v=70-80-20-… (os 12 eixos, % do polo esquerdo, separados por traço). */
+/** Caminho do link curto de resultado: /r?v=70-80-20-… (um valor por eixo, % do polo esquerdo, separados por traço). */
 export const SHORT_RESULT_PATH = '/r';
-
-const AXIS_COUNT = 12;
 
 /** Religião em uma letra no link curto (o QR code fica menor). Ortodoxo é "o" e "outra religião" é "x". */
 const RELIGION_CODES: Record<Religion, string> = {
@@ -53,13 +52,13 @@ export function shortResultUrl(
   return `${origin}${SHORT_RESULT_PATH}?${shortResultQuery(values, religion, lang, hatredEgg)}`;
 }
 
-/** Lê /r?v=…&r=…: null quando não traz os 12 valores válidos (0 a 100). */
+/** Lê /r?v=…&r=…: null quando não traz todos os valores válidos (0 a 100), ou os 12 dos links antigos. */
 export function parseShortResult(search: string): { values: number[]; religion: Religion | null; egg: boolean } | null {
   const params = new URLSearchParams(search);
   const raw = params.get('v');
   if (!raw) return null;
   const values = raw.split(/[-,]/).map((part) => Number(part));
-  if (values.length !== AXIS_COUNT || values.some((value) => !Number.isFinite(value) || value < 0 || value > 100)) return null;
+  if (!isResultVectorLength(values.length) || values.some((value) => !Number.isFinite(value) || value < 0 || value > 100)) return null;
   return {
     values,
     religion: parseReligionCode(params.get('r') ?? params.get('religion')),

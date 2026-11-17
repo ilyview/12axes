@@ -25,7 +25,7 @@ export function ProfileLegend({ profiles }: { profiles: CompareProfile[] }) {
 }
 
 /**
- * Os 12 eixos um sobre o outro, nas cores e com os ícones dos polos como nos resultados, e um rosto por perfil
+ * Os 14 eixos um sobre o outro, nas cores e com os ícones dos polos como nos resultados, e um rosto por perfil
  * na trilha. Passar o mouse (ou focar) no rosto mostra a porcentagem daquele perfil.
  */
 export function CompareAxes({ axes, profiles, tags = false }: { axes: Axis[]; profiles: CompareProfile[]; tags?: boolean }) {

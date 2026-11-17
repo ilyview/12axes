@@ -38,7 +38,7 @@
   "economia": {
     "personaBrief": "A definição do perfil é a superação da propriedade privada no estágio final comunista: meios produtivos automatizados pertencem à comunidade. A abundância reduz a dependência de salário, lucro, herança e mercado, em vez de apenas trocar proprietários privados por uma burocracia técnica.",
     "answers": {
-      "economia_01": "C", "economia_02": "DT", "economia_03": "CT", "economia_04": "DT", "economia_05": "CT", "economia_06": "DT", "economia_07": "CT", "economia_08": "DT", "economia_09": "CT", "economia_10": "DT", "economia_11": "C", "economia_12": "C", "economia_13": "CT", "economia_14": "DT", "economia_15": "CT", "economia_16": "DT", "economia_17": "CT", "economia_18": "DT", "economia_19": "CT", "economia_20": "DT"
+      "economia_02": "DT", "economia_03": "CT", "economia_04": "DT", "economia_05": "CT", "economia_06": "DT", "economia_07": "CT", "economia_09": "CT", "economia_10": "DT", "economia_11": "C", "economia_12": "C", "economia_13": "CT", "economia_14": "DT", "economia_15": "CT", "economia_16": "DT", "economia_17": "CT", "economia_18": "DT", "economia_19": "CT", "economia_20": "DT"
     }
   },
   "controle": {
@@ -62,7 +62,7 @@
   "moral": {
     "personaBrief": "Ao abolir hierarquias de classe, o projeto tende à emancipação de gênero, sexualidade e raça, sem uma moral familiar ou religiosa compulsória. A crítica à mercantilização não equivale a punir escolhas íntimas entre adultos.",
     "answers": {
-      "moral_01": "CT", "moral_02": "DT", "moral_03": "CT", "moral_04": "D", "moral_05": "C", "moral_06": "DT", "moral_07": "CT", "moral_08": "DT", "moral_09": "C", "moral_10": "DT", "moral_11": "CT", "moral_12": "DT", "moral_13": "C", "moral_14": "D", "moral_15": "C", "moral_16": "D", "moral_17": "C", "moral_18": "DT", "moral_19": "CT", "moral_20": "D"
+      "moral_01": "CT", "moral_02": "DT", "moral_03": "CT", "moral_06": "DT", "moral_07": "CT", "moral_09": "C", "moral_10": "DT", "moral_11": "CT", "moral_12": "DT", "moral_13": "C", "moral_14": "D", "moral_15": "C", "moral_16": "D", "moral_17": "C", "moral_18": "DT", "moral_19": "CT", "moral_20": "D"
     }
   },
   "tecnologia": {
@@ -70,6 +70,8 @@
     "answers": {
       "tecnologia_01": "CT", "tecnologia_02": "DT", "tecnologia_03": "CT", "tecnologia_04": "DT", "tecnologia_05": "CT", "tecnologia_06": "D", "tecnologia_07": "C", "tecnologia_08": "DT", "tecnologia_09": "C", "tecnologia_10": "C", "tecnologia_11": "CT", "tecnologia_12": "DT", "tecnologia_13": "C", "tecnologia_14": "D", "tecnologia_15": "CT", "tecnologia_16": "D", "tecnologia_17": "CT", "tecnologia_18": "DT", "tecnologia_19": "CT", "tecnologia_20": "DT"
     }
-  }
+  },
+  "metodo": {"answers": {"economia_01": "C", "moral_04": "D"}},
+  "distribuicao": {"answers": {"economia_08": "DT", "moral_05": "C", "moral_08": "DT"}}
 }
 

@@ -167,11 +167,9 @@
       "economia_15": "N",
       "economia_20": "D",
       "economia_16": "C",
-      "economia_01": "D",
       "economia_10": "D",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "C"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Sócrates defendia que ninguém erra voluntariamente (o mal é ignorância) e buscava a virtude pelo autoconhecimento, mas viveu e nunca contestou a estrutura familiar e os papéis de gênero da Atenas de sua época; seu universalismo racional aparece mais claramente quando o tema é julgar indivíduos pela virtude, não por categoria de nascimento.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "D",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "C",
       "moral_02": "C",
-      "moral_05": "D",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "N",
-      "moral_08": "C",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "C",
       "tecnologia_11": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

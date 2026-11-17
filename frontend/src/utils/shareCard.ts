@@ -151,6 +151,14 @@ const sharePoleIconPaths: Record<string, Record<PoleSide, string[]>> = {
   tecnologia: {
     left: ['M8 8h8v8H8z', 'M4 10h4', 'M4 14h4', 'M16 10h4', 'M16 14h4', 'M10 4v4', 'M14 4v4', 'M10 16v4', 'M14 16v4'],
     right: ['M5 19c8 0 13-5 14-14-7 1-13 5-14 14Z', 'M5 19c4-5 8-8 14-14']
+  },
+  metodo: {
+    left: ['M4 20h4v-4h4v-4h4V8h4', 'M4 20h16'],
+    right: ['M13 3 5 14h6l-1 7 8-11h-6l1-7Z']
+  },
+  distribuicao: {
+    left: ['M7 18v-7', 'M12 18v-7', 'M17 18v-7', 'M4 20h16'],
+    right: ['M6 18v-4', 'M12 18V9', 'M18 18V4', 'M4 20h16']
   }
 };
 
@@ -438,7 +446,9 @@ function buildShareAxesColumn(
     justifyContent: 'space-between'
   });
   const axesById = new Map(quiz.axes.map((axis) => [axis.id, axis]));
-  result.axes.forEach((axis) => list.append(buildShareAxisLine(axis, axesById.get(axis.axisId), color, religion)));
+  // Até 12 eixos (resultados antigos) a linha tem 58px; com 14 encolhe para caber no mesmo cartão.
+  const rowHeight = result.axes.length > 12 ? 50 : 58;
+  result.axes.forEach((axis) => list.append(buildShareAxisLine(axis, axesById.get(axis.axisId), color, religion, rowHeight)));
   col.append(list);
   return col;
 }
@@ -447,7 +457,8 @@ function buildShareAxisLine(
   axis: QuizResult['axes'][number],
   definition: QuizPayload['axes'][number] | undefined,
   color: { base: string; bg: string },
-  religion: Religion | null
+  religion: Religion | null,
+  rowHeight = 58
 ): HTMLElement {
   const P = SHARE_COLORS.papel;
   const isBalanced = axis.intensity === 'Equilibrado';
@@ -466,7 +477,7 @@ function buildShareAxisLine(
     display: 'flex',
     alignItems: 'center',
     gap: '13px',
-    height: '58px'
+    height: `${rowHeight}px`
   });
 
   const icon = el('span', {

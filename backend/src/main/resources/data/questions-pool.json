@@ -840,13 +840,6 @@
     "weight": 1
   },
   {
-    "id": "economia_01",
-    "axisId": "economia",
-    "text": "Sou a favor de uma revolução para redistribuir o poder econômico concentrado nas mãos de poucos.",
-    "agreePole": "LEFT",
-    "weight": 1
-  },
-  {
     "id": "economia_02",
     "axisId": "economia",
     "text": "Serviços públicos deveriam ser prestados por empresas privadas quando houver concorrência.",
@@ -886,13 +879,6 @@
     "axisId": "economia",
     "text": "Quando o mercado exclui os pobres, o Estado deve assumir o serviço diretamente.",
     "agreePole": "LEFT",
-    "weight": 1
-  },
-  {
-    "id": "economia_08",
-    "axisId": "economia",
-    "text": "A herança familiar deve ser protegida contra políticas de redistribuição de patrimônio.",
-    "agreePole": "RIGHT",
     "weight": 1
   },
   {
@@ -1421,20 +1407,6 @@
     "weight": 1
   },
   {
-    "id": "moral_04",
-    "axisId": "moral",
-    "text": "Prefiro mudanças culturais graduais a mudanças culturais rápidas.",
-    "agreePole": "RIGHT",
-    "weight": 1
-  },
-  {
-    "id": "moral_05",
-    "axisId": "moral",
-    "text": "Sou a favor de cotas raciais no acesso às universidades.",
-    "agreePole": "LEFT",
-    "weight": 1
-  },
-  {
     "id": "moral_06",
     "axisId": "moral",
     "text": "O casamento deve ser reconhecido apenas entre um homem e uma mulher.",
@@ -1446,13 +1418,6 @@
     "axisId": "moral",
     "text": "Casais LGBT devem poder demonstrar afeto em público como qualquer outro casal.",
     "agreePole": "LEFT",
-    "weight": 1
-  },
-  {
-    "id": "moral_08",
-    "axisId": "moral",
-    "text": "Sou contra cotas raciais no acesso a cargos públicos.",
-    "agreePole": "RIGHT",
     "weight": 1
   },
   {
@@ -1676,6 +1641,286 @@
     "id": "tecnologia_20",
     "axisId": "tecnologia",
     "text": "Sou contra implantes artificiais para ampliar as capacidades físicas de pessoas saudáveis.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_01",
+    "axisId": "metodo",
+    "text": "Mudanças políticas profundas devem acontecer aos poucos, por meio das instituições existentes.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_02",
+    "axisId": "metodo",
+    "text": "Um movimento político não deve abrir mão de seus princípios para conquistar votos.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_03",
+    "axisId": "metodo",
+    "text": "Fazer acordos com adversários políticos é necessário para avançar qualquer agenda.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_04",
+    "axisId": "metodo",
+    "text": "A violência pode ser legítima para derrubar uma ordem política injusta.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_05",
+    "axisId": "metodo",
+    "text": "Mudanças conquistadas nas urnas são mais duradouras que as conquistadas nas ruas.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_06",
+    "axisId": "metodo",
+    "text": "Bloquear estradas e ocupar prédios públicos são formas legítimas de pressão política.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_07",
+    "axisId": "metodo",
+    "text": "Protestos devem permanecer pacíficos, mesmo quando o governo ignora as reivindicações.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_08",
+    "axisId": "metodo",
+    "text": "Às vezes é preciso que a situação piore para que as pessoas aceitem uma mudança radical.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_09",
+    "axisId": "metodo",
+    "text": "Leis injustas devem ser mudadas pelo Congresso, não desobedecidas.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_10",
+    "axisId": "metodo",
+    "text": "Uma minoria organizada e consciente deve liderar o povo rumo à mudança, mesmo sem apoio da maioria.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_11",
+    "axisId": "metodo",
+    "text": "Instituições antigas costumam guardar uma sabedoria que não percebemos à primeira vista.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_12",
+    "axisId": "metodo",
+    "text": "A Constituição atual deveria ser substituída por uma completamente nova.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_13",
+    "axisId": "metodo",
+    "text": "Um político deve aceitar vitórias parciais em vez de insistir no tudo ou nada.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_14",
+    "axisId": "metodo",
+    "text": "Partidos que entram no governo acabam corrompidos pelo sistema que prometiam mudar.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_15",
+    "axisId": "metodo",
+    "text": "Mesmo um governo ruim deve ser combatido apenas por meios legais.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_16",
+    "axisId": "metodo",
+    "text": "Cidadãos armados podem ser necessários para defender o país de um governo tirânico.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_17",
+    "axisId": "metodo",
+    "text": "Quem quer mudar o país deve primeiro convencer a maioria da população, não impor sua visão.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "metodo_18",
+    "axisId": "metodo",
+    "text": "Mudanças rápidas e profundas são melhores que décadas de pequenas reformas.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "economia_01",
+    "axisId": "metodo",
+    "text": "Sou a favor de uma revolução para redistribuir o poder econômico concentrado nas mãos de poucos.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "moral_04",
+    "axisId": "metodo",
+    "text": "Prefiro mudanças culturais graduais a mudanças culturais rápidas.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_01",
+    "axisId": "distribuicao",
+    "text": "Os mais ricos deveriam pagar uma porcentagem de impostos bem maior que a classe média.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_02",
+    "axisId": "distribuicao",
+    "text": "Desigualdade de renda é aceitável quando reflete diferenças de esforço e talento.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_03",
+    "axisId": "distribuicao",
+    "text": "Grandes fortunas deveriam ser taxadas anualmente.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_04",
+    "axisId": "distribuicao",
+    "text": "Um imposto de alíquota única, igual para todos, é o sistema mais justo.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_05",
+    "axisId": "distribuicao",
+    "text": "Deveria haver um limite para a diferença entre o maior e o menor salário de uma empresa.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_06",
+    "axisId": "distribuicao",
+    "text": "Quem chega ao topo pelo próprio mérito não deve se sentir culpado pela riqueza que tem.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_07",
+    "axisId": "distribuicao",
+    "text": "O Estado deve buscar igualdade de resultados, não apenas de oportunidades.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_08",
+    "axisId": "distribuicao",
+    "text": "Combater a pobreza é importante, mas reduzir a desigualdade não deve ser objetivo do Estado.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_09",
+    "axisId": "distribuicao",
+    "text": "Uma sociedade muito desigual é injusta, mesmo que ninguém viva na pobreza.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_10",
+    "axisId": "distribuicao",
+    "text": "É natural e saudável que algumas pessoas tenham muito mais que outras.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_11",
+    "axisId": "distribuicao",
+    "text": "Escolas de bairros pobres deveriam receber mais recursos públicos que as de bairros ricos.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_12",
+    "axisId": "distribuicao",
+    "text": "Programas sociais devem exigir contrapartidas, como trabalho ou estudo, de quem os recebe.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_13",
+    "axisId": "distribuicao",
+    "text": "Salários de executivos muito acima da média deveriam ser desestimulados por impostos.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_14",
+    "axisId": "distribuicao",
+    "text": "Alunos mais talentosos deveriam estudar em turmas ou escolas separadas.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_15",
+    "axisId": "distribuicao",
+    "text": "Impostos sobre consumo pesam mais sobre os pobres e deveriam dar lugar a impostos sobre renda e patrimônio.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_16",
+    "axisId": "distribuicao",
+    "text": "Impostos altos sobre os ricos punem quem gera empregos e riqueza.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "distribuicao_17",
+    "axisId": "distribuicao",
+    "text": "Filhos de famílias pobres e ricas deveriam ter o mesmo ponto de partida, mesmo que isso exija grande redistribuição.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "economia_08",
+    "axisId": "distribuicao",
+    "text": "A herança familiar deve ser protegida contra políticas de redistribuição de patrimônio.",
+    "agreePole": "RIGHT",
+    "weight": 1
+  },
+  {
+    "id": "moral_05",
+    "axisId": "distribuicao",
+    "text": "Sou a favor de cotas raciais no acesso às universidades.",
+    "agreePole": "LEFT",
+    "weight": 1
+  },
+  {
+    "id": "moral_08",
+    "axisId": "distribuicao",
+    "text": "Sou contra cotas raciais no acesso a cargos públicos.",
     "agreePole": "RIGHT",
     "weight": 1
   }

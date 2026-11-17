@@ -49,14 +49,14 @@ public class DisagreementService {
 
     // Categoria da ideologia mais proxima de um perfil, pelo vetor dele (sem filtro de religiao: e a cor do perfil, nao um ranking do usuario).
     private String closestIdeologyCategory(List<AxisResult> axes, Map<String, Double> profileVector, String lang) {
-        List<Double> values = axes.stream().map(axis -> profileVector.getOrDefault(axis.axisId(), 50.0)).toList();
-        List<AxisResult> profileAxes = scoringService.scoreFromLeftPercents(values, lang);
+        List<AxisResult> profileAxes = scoringService.scoreFromVector(profileVector, lang);
         return ideologyMatcherService.findMatches(profileAxes, lang, null).getFirst().category();
     }
 
-    // Os 12 eixos, do que mais destoa do perfil para o que menos destoa.
+    // Os eixos que o perfil tem, do que mais destoa do perfil para o que menos destoa.
     private List<AxisDivergence> divergences(List<AxisResult> axes, Map<String, Double> profileVector) {
         return axes.stream()
+                .filter(axis -> profileVector.containsKey(axis.axisId()))
                 .map(axis -> {
                     double profile = profileVector.getOrDefault(axis.axisId(), 50.0);
                     return new AxisDivergence(axis.axisId(), axis.label(), axis.leftPercent(), profile,

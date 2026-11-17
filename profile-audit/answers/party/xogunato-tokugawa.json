@@ -32,8 +32,7 @@
   "economia": { "personaBrief": "Economia agrária feudal: a terra pertence aos senhores, o tributo é cobrado em arroz e há monopólios e guildas licenciadas (kabunakama). A herança hereditária é sagrada e os mercadores ficam no fim da hierarquia.", "answers": {
     "economia_05": "DT", "economia_06": "D", "economia_07": "D", "economia_13": "C", "economia_03": "CT",
     "economia_14": "C", "economia_19": "C", "economia_16": "C", "economia_17": "C", "economia_12": "DT",
-    "economia_04": "C", "economia_11": "D", "economia_18": "CT", "economia_15": "DT", "economia_20": "D",
-    "economia_01": "DT", "economia_10": "DT", "economia_09": "D", "economia_02": "D", "economia_08": "CT" } },
+    "economia_04": "C", "economia_11": "D", "economia_18": "CT", "economia_15": "DT", "economia_20": "D", "economia_10": "DT", "economia_09": "D", "economia_02": "D" } },
   "controle": { "personaBrief": "O bakufu regulava preços do arroz, a moeda, as guildas, as leis suntuárias e o comércio exterior com reformas dirigistas (Kyoho, Kansei, Tenpo), mas sem planejamento integral.", "answers": {
     "controle_05": "C", "controle_20": "DT", "controle_19": "C", "controle_14": "DT", "controle_07": "C",
     "controle_04": "D", "controle_02": "DT", "controle_17": "CT", "controle_16": "DT", "controle_10": "DT",
@@ -50,14 +49,15 @@
     "religiao_01": "DT", "religiao_14": "D", "religiao_06": "CT", "religiao_16": "C", "religiao_08": "CT",
     "religiao_07": "DT", "religiao_09": "D", "religiao_17": "DT", "religiao_20": "CT", "religiao_04": "C" } },
   "moral": { "personaBrief": "A hierarquia neoconfuciana se apoiava na piedade filial, no patriarcado da casa (ie), na rigidez de castas e nas leis suntuárias. Ainda assim, os bairros de prazer licenciados e o nanshoku eram tolerados.", "answers": {
-    "moral_07": "D", "moral_04": "CT", "moral_15": "N", "moral_12": "CT", "moral_03": "DT",
-    "moral_01": "DT", "moral_09": "N", "moral_06": "C", "moral_19": "D", "moral_02": "CT",
-    "moral_05": "DT", "moral_17": "D", "moral_13": "C", "moral_11": "DT", "moral_10": "D",
-    "moral_18": "CT", "moral_16": "D", "moral_14": "CT", "moral_08": "C", "moral_20": "CT" } },
+    "moral_07": "D", "moral_15": "N", "moral_12": "CT", "moral_03": "DT",
+    "moral_01": "DT", "moral_09": "N", "moral_06": "C", "moral_19": "D", "moral_02": "CT", "moral_17": "D", "moral_13": "C", "moral_11": "DT", "moral_10": "D",
+    "moral_18": "CT", "moral_16": "D", "moral_14": "CT", "moral_20": "CT" } },
   "tecnologia": { "personaBrief": "Ordem agrária centrada no arroz, que restringiu armas de fogo e navios e desconfiava de inovações estrangeiras, embora tolerasse o rangaku. A estabilidade importava mais que o progresso, com Edo como metrópole administrativa e a silvicultura gerida.", "answers": {
     "tecnologia_01": "D", "tecnologia_13": "D", "tecnologia_19": "D", "tecnologia_12": "D", "tecnologia_18": "C",
     "tecnologia_10": "C", "tecnologia_05": "D", "tecnologia_04": "CT", "tecnologia_16": "C", "tecnologia_07": "C",
     "tecnologia_08": "C", "tecnologia_03": "DT", "tecnologia_15": "DT", "tecnologia_20": "CT", "tecnologia_06": "D",
     "tecnologia_09": "D", "tecnologia_17": "DT", "tecnologia_02": "C", "tecnologia_14": "CT", "tecnologia_11": "DT" } },
-  "archetype": { "sociedade": "A", "poder": "B", "economia": "E", "mundo": "D", "tecnologia": "B" }
+  "archetype": { "sociedade": "A", "poder": "B", "economia": "E", "mundo": "D", "tecnologia": "B" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "CT"}},
+  "distribuicao": {"answers": {"economia_08": "CT", "moral_05": "DT", "moral_08": "C"}}
 }

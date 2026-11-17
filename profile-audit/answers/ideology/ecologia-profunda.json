@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "CT",
       "economia_20": "D",
-      "economia_01": "N",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "D",
-      "economia_08": "DT"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Ao ampliar a comunidade moral para alem do humano e questionar hierarquias dominadoras, a ecologia profunda tende a ser progressista em costumes e fortemente sensivel ao sofrimento animal. Ela rejeita normas tradicionais impostas de cima, mas pode mostrar alguma ambivalencia em temas ligados ao valor da vida biologica.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "CT",
       "moral_12": "D",
       "moral_03": "CT",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "DT",
-      "moral_05": "C",
       "moral_17": "C",
       "moral_13": "C",
       "moral_11": "CT",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "D",
-      "moral_08": "DT",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "C",
       "tecnologia_14": "CT",
       "tecnologia_11": "DT"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "N",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "C",
+      "moral_08": "DT"
     }
   }
 }

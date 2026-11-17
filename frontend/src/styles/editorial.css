@@ -787,7 +787,7 @@ html{scroll-behavior:smooth;scroll-padding-top:88px}
   .e-foot-col h3{margin-bottom:14px}
 }
 
-/* Análise comparativa: busca de perfil + aba com os 12 eixos lado a lado */
+/* Análise comparativa: busca de perfil + aba com os 14 eixos lado a lado */
 .e-cmp-lead{margin:6px 0 20px;max-width:60ch;color:var(--texto-suave);font-size:16px}
 .e-cmp-bar{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
 .e-cmp-field{position:relative;flex:1 1 300px;min-width:0}
@@ -1005,7 +1005,7 @@ html{scroll-behavior:smooth;scroll-padding-top:88px}
 .e-cp-legend .e-close-face{width:24px;height:24px}
 .e-cp-duo{display:flex;flex:none}
 .e-cp-duo .e-cmpp-ring+.e-cmpp-ring{margin-left:-14px}
-/* 12 eixos: uma trilha por eixo, nas cores dos polos, com um rosto por perfil e a porcentagem ao passar o mouse. */
+/* 14 eixos: uma trilha por eixo, nas cores dos polos, com um rosto por perfil e a porcentagem ao passar o mouse. */
 .e-cp-axes{list-style:none;margin:0;padding:0;display:grid;gap:26px}
 .e-cp-axis{min-width:0}
 .e-cp-track{position:relative;height:10px;border-radius:10px;margin:22px 14px 14px;background:linear-gradient(90deg,color-mix(in srgb,var(--al) 60%,var(--borda)),var(--borda) 50%,color-mix(in srgb,var(--ar) 60%,var(--borda)))}
@@ -1077,7 +1077,7 @@ html{scroll-behavior:smooth;scroll-padding-top:88px}
 .e-cmpp-results[aria-busy="true"]{opacity:.55}
 .e-cmpp h2:focus{outline:none}
 
-/* ── Editar respostas: os 12 eixos à esquerda, as perguntas do eixo como um baralho à direita ── */
+/* ── Editar respostas: os 14 eixos à esquerda, as perguntas do eixo como um baralho à direita ── */
 .e-axes-edit{display:flex;justify-content:flex-end;margin-top:20px}
 /* Lápis e texto, sem contorno de botão. */
 .e-axes-edit-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border:0;border-radius:10px;background:none;color:#4A5565;font:400 14px var(--font-body);cursor:pointer;transition:color .15s,background .15s}

@@ -25,7 +25,7 @@
   },
   "economia": {
     "personaBrief": "Em Justiça Social no Islã, Qutb critica duramente o capitalismo e a desigualdade e defende zakat, limites à acumulação e responsabilidade do Estado pelos necessitados, mas rejeita o comunismo ateu e mantém a propriedade privada e a herança islâmicas.",
-    "answers": {"economia_05":"D","economia_06":"DT","economia_07":"C","economia_13":"C","economia_03":"C","economia_14":"D","economia_19":"C","economia_16":"N","economia_17":"N","economia_12":"N","economia_04":"D","economia_11":"CT","economia_18":"D","economia_15":"C","economia_20":"D","economia_01":"D","economia_10":"DT","economia_09":"C","economia_02":"N","economia_08":"C"}
+    "answers": {"economia_05":"D","economia_06":"DT","economia_07":"C","economia_13":"C","economia_03":"C","economia_14":"D","economia_19":"C","economia_16":"N","economia_17":"N","economia_12":"N","economia_04":"D","economia_11":"CT","economia_18":"D","economia_15":"C","economia_20":"D","economia_10":"DT","economia_09":"C","economia_02":"N"}
   },
   "controle": {
     "personaBrief": "Qutb quer uma economia guiada pela justiça islâmica, com redistribuição e dever do governante de garantir o bem-estar, sem planejamento total à maneira comunista nem livre mercado ocidental: posição intermediária inclinada à direção estatal.",
@@ -41,11 +41,13 @@
   },
   "moral": {
     "personaBrief": "Qutb, que descreveu a América como materialista e promíscua, defende a moral islâmica tradicional: família patriarcal, papéis de gênero definidos, condenação da homossexualidade, do aborto e da licenciosidade.",
-    "answers": {"moral_07":"DT","moral_04":"C","moral_15":"D","moral_12":"C","moral_03":"DT","moral_01":"DT","moral_09":"DT","moral_06":"CT","moral_19":"DT","moral_02":"CT","moral_05":"N","moral_17":"DT","moral_13":"DT","moral_11":"DT","moral_10":"CT","moral_18":"CT","moral_16":"CT","moral_14":"C","moral_08":"N","moral_20":"C"}
+    "answers": {"moral_07":"DT","moral_15":"D","moral_12":"C","moral_03":"DT","moral_01":"DT","moral_09":"DT","moral_06":"CT","moral_19":"DT","moral_02":"CT","moral_17":"DT","moral_13":"DT","moral_11":"DT","moral_10":"CT","moral_18":"CT","moral_16":"CT","moral_14":"C","moral_20":"C"}
   },
   "tecnologia": {
     "personaBrief": "Qutb criticou o vazio espiritual e o materialismo da civilização ocidental industrial, mas não rejeitava a ciência e a técnica como instrumentos; sua preocupação é moral, e limites vêm da fé e da natureza criada por Deus.",
     "answers": {"tecnologia_01":"C","tecnologia_13":"D","tecnologia_19":"C","tecnologia_12":"D","tecnologia_18":"C","tecnologia_10":"N","tecnologia_05":"C","tecnologia_04":"C","tecnologia_16":"N","tecnologia_07":"N","tecnologia_08":"N","tecnologia_03":"C","tecnologia_15":"D","tecnologia_20":"C","tecnologia_06":"N","tecnologia_09":"D","tecnologia_17":"N","tecnologia_02":"D","tecnologia_14":"C","tecnologia_11":"C"}
   },
-  "archetype": { "sociedade": "A", "poder": "B", "economia": "B", "mundo": "A", "tecnologia": "C" }
+  "archetype": { "sociedade": "A", "poder": "B", "economia": "B", "mundo": "A", "tecnologia": "C" },
+  "metodo": {"answers": {"economia_01": "D", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "N", "moral_08": "N"}}
 }

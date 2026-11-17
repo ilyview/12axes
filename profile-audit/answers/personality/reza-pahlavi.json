@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "O Iran Prosperity Project prevê propriedade privada, investimento e privatização gradual de estatais auditadas, mantendo continuidade dos serviços essenciais e proteção social na emergência. Isso combina orientação ao mercado com papel público residual.",
     "answers": {
-      "economia_01": "D",
       "economia_02": "C",
       "economia_03": "C",
       "economia_04": "D",
       "economia_05": "DT",
       "economia_06": "D",
       "economia_07": "C",
-      "economia_08": "C",
       "economia_09": "C",
       "economia_10": "DT",
       "economia_11": "N",
@@ -255,11 +253,8 @@
       "moral_01": "C",
       "moral_02": "D",
       "moral_03": "C",
-      "moral_04": "C",
-      "moral_05": "N",
       "moral_06": "D",
       "moral_07": "C",
-      "moral_08": "N",
       "moral_09": "N",
       "moral_10": "D",
       "moral_11": "C",
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "C",
     "tecnologia": "C"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
+    }
   }
 }

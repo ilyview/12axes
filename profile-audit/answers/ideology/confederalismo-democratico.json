@@ -167,11 +167,9 @@
    "economia_18": "D",
    "economia_15": "C",
    "economia_20": "D",
-   "economia_01": "C",
    "economia_10": "D",
    "economia_09": "CT",
-   "economia_02": "D",
-   "economia_08": "N"
+   "economia_02": "D"
   }
  },
  "controle": {
@@ -253,7 +251,6 @@
   "personaBrief": "Explicitamente feminista (jineologia, copresidência de gênero, YPJ), contra o patriarcado e a família tradicional; progressista, com reservas da jineologia à mercantilização sexual.",
   "answers": {
    "moral_07": "C",
-   "moral_04": "D",
    "moral_15": "N",
    "moral_12": "D",
    "moral_03": "C",
@@ -262,7 +259,6 @@
    "moral_06": "D",
    "moral_19": "N",
    "moral_02": "DT",
-   "moral_05": "C",
    "moral_17": "C",
    "moral_13": "D",
    "moral_11": "C",
@@ -270,7 +266,6 @@
    "moral_18": "DT",
    "moral_16": "N",
    "moral_14": "D",
-   "moral_08": "D",
    "moral_20": "D"
   }
  },
@@ -305,5 +300,18 @@
   "economia": "B",
   "mundo": "D",
   "tecnologia": "C"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "C",
+   "moral_04": "D"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "N",
+   "moral_05": "C",
+   "moral_08": "D"
+  }
  }
 }

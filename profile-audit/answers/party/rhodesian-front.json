@@ -32,8 +32,7 @@
   "economia": { "personaBrief": "O Rhodesian Front defendia propriedade privada, fazendas comerciais brancas e livre iniciativa, opondo-se a qualquer redistribuição de terras, embora mantivesse ferrovias e algumas estatais estratégicas sob sanções.", "answers": {
     "economia_05": "DT", "economia_06": "C", "economia_07": "D", "economia_13": "D", "economia_03": "C",
     "economia_14": "C", "economia_19": "N", "economia_16": "C", "economia_17": "C", "economia_12": "C",
-    "economia_04": "C", "economia_11": "D", "economia_18": "CT", "economia_15": "DT", "economia_20": "C",
-    "economia_01": "DT", "economia_10": "D", "economia_09": "D", "economia_02": "C", "economia_08": "CT" } },
+    "economia_04": "C", "economia_11": "D", "economia_18": "CT", "economia_15": "DT", "economia_20": "C", "economia_10": "D", "economia_09": "D", "economia_02": "C" } },
   "controle": { "personaBrief": "Ideologicamente pró-mercado, o partido impôs na prática controles de câmbio, de capitais e de importação, subsídios à substituição de importações e à agricultura para resistir às sanções.", "answers": {
     "controle_05": "D", "controle_20": "D", "controle_19": "D", "controle_14": "C", "controle_07": "C",
     "controle_04": "C", "controle_02": "C", "controle_17": "C", "controle_16": "D", "controle_10": "C",
@@ -50,14 +49,15 @@
     "religiao_01": "D", "religiao_14": "C", "religiao_06": "C", "religiao_16": "C", "religiao_08": "D",
     "religiao_07": "D", "religiao_09": "D", "religiao_17": "D", "religiao_20": "CT", "religiao_04": "C" } },
   "moral": { "personaBrief": "Conservador colonial britânico dos anos 60-70, o partido defendia família tradicional, moral cristã, censura e hierarquia racial, rejeitando qualquer política de igualdade racial.", "answers": {
-    "moral_07": "DT", "moral_04": "CT", "moral_15": "DT", "moral_12": "C", "moral_03": "DT",
-    "moral_01": "DT", "moral_09": "D", "moral_06": "CT", "moral_19": "D", "moral_02": "CT",
-    "moral_05": "DT", "moral_17": "DT", "moral_13": "D", "moral_11": "DT", "moral_10": "C",
-    "moral_18": "C", "moral_16": "C", "moral_14": "C", "moral_08": "CT", "moral_20": "CT" } },
+    "moral_07": "DT", "moral_15": "DT", "moral_12": "C", "moral_03": "DT",
+    "moral_01": "DT", "moral_09": "D", "moral_06": "CT", "moral_19": "D", "moral_02": "CT", "moral_17": "DT", "moral_13": "D", "moral_11": "DT", "moral_10": "C",
+    "moral_18": "C", "moral_16": "C", "moral_14": "C", "moral_20": "CT" } },
   "tecnologia": { "personaBrief": "Base agrária de fazendeiros brancos, o partido também impulsionou mineração, industrialização substitutiva e agricultura moderna intensiva, valorizando o desenvolvimento acima da preservação.", "answers": {
     "tecnologia_01": "C", "tecnologia_13": "D", "tecnologia_19": "C", "tecnologia_12": "D", "tecnologia_18": "C",
     "tecnologia_10": "D", "tecnologia_05": "C", "tecnologia_04": "C", "tecnologia_16": "N", "tecnologia_07": "C",
     "tecnologia_08": "D", "tecnologia_03": "D", "tecnologia_15": "D", "tecnologia_20": "C", "tecnologia_06": "D",
     "tecnologia_09": "C", "tecnologia_17": "DT", "tecnologia_02": "D", "tecnologia_14": "C", "tecnologia_11": "C" } },
-  "archetype": { "sociedade": "A", "poder": "B", "economia": "C", "mundo": "B", "tecnologia": "D" }
+  "archetype": { "sociedade": "A", "poder": "B", "economia": "C", "mundo": "B", "tecnologia": "D" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "CT"}},
+  "distribuicao": {"answers": {"economia_08": "CT", "moral_05": "DT", "moral_08": "CT"}}
 }

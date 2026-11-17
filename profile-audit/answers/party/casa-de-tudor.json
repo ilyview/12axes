@@ -167,11 +167,9 @@
    "economia_18": "CT",
    "economia_15": "DT",
    "economia_20": "C",
-   "economia_01": "DT",
    "economia_10": "DT",
    "economia_09": "D",
-   "economia_02": "C",
-   "economia_08": "CT"
+   "economia_02": "C"
   }
  },
  "controle": {
@@ -253,7 +251,6 @@
   "personaBrief": "Sociedade Tudor era hierárquica e patriarcal, com moral cristã tradicional, famílias dinásticas e punição de heresia e desvios sexuais.",
   "answers": {
    "moral_07": "DT",
-   "moral_04": "CT",
    "moral_15": "DT",
    "moral_12": "C",
    "moral_03": "DT",
@@ -262,7 +259,6 @@
    "moral_06": "CT",
    "moral_19": "DT",
    "moral_02": "CT",
-   "moral_05": "DT",
    "moral_17": "DT",
    "moral_13": "DT",
    "moral_11": "DT",
@@ -270,7 +266,6 @@
    "moral_18": "C",
    "moral_16": "C",
    "moral_14": "C",
-   "moral_08": "C",
    "moral_20": "C"
   }
  },
@@ -305,5 +300,18 @@
   "economia": "E",
   "mundo": "B",
   "tecnologia": "D"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "DT",
+   "moral_04": "CT"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "CT",
+   "moral_05": "DT",
+   "moral_08": "C"
+  }
  }
 }

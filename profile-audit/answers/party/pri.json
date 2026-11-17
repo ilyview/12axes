@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Nacionalismo revolucionário, Pemex, CFE e ejidos, depois privatizações e abertura (TLCAN); hoje, centrista e pró-mercado moderado.",
   "answers": {
-   "economia_01": "D",
    "economia_02": "D",
    "economia_03": "D",
    "economia_04": "C",
    "economia_05": "C",
    "economia_06": "D",
    "economia_07": "C",
-   "economia_08": "D",
    "economia_09": "C",
    "economia_10": "D",
    "economia_11": "C",
@@ -255,11 +253,8 @@
    "moral_01": "D",
    "moral_02": "D",
    "moral_03": "D",
-   "moral_04": "C",
-   "moral_05": "D",
    "moral_06": "C",
    "moral_07": "D",
-   "moral_08": "C",
    "moral_09": "D",
    "moral_10": "C",
    "moral_11": "D",
@@ -305,5 +300,18 @@
   "economia": "D",
   "mundo": "D",
   "tecnologia": "C"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "D",
+   "moral_04": "C"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "D",
+   "moral_05": "D",
+   "moral_08": "C"
+  }
  }
 }

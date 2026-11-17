@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "C",
-      "economia_08": "CT"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Sociedade conservadora em gênero e família: Constituição define casamento como homem-mulher, rejeição da Convenção de Istambul e lei de 2024 contra 'propaganda LGBT' nas escolas; ao mesmo tempo o aborto é legal e aceito desde 1990.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "CT",
       "moral_15": "D",
       "moral_12": "CT",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "N",
       "moral_02": "CT",
-      "moral_05": "D",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "N",
       "moral_14": "CT",
-      "moral_08": "C",
       "moral_20": "CT"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "C",
     "tecnologia": "C"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "D",
+      "moral_08": "C"
+    }
   }
 }

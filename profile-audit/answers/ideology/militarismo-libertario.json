@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "DT",
       "economia_20": "CT",
-      "economia_01": "DT",
       "economia_10": "C",
       "economia_09": "D",
-      "economia_02": "CT",
-      "economia_08": "CT"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Liberdade individual em costumes é um pilar libertário: o que adultos fazem com suas vidas privadas — sexualidade, relações, escolhas pessoais — não é assunto do Estado, embora o perfil não tenha agenda progressista ativa.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "N",
       "moral_15": "N",
       "moral_12": "C",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "N",
       "moral_19": "C",
       "moral_02": "N",
-      "moral_05": "D",
       "moral_17": "C",
       "moral_13": "C",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "D",
       "moral_14": "D",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "N",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "N"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "D",
+      "moral_08": "N"
     }
   }
 }

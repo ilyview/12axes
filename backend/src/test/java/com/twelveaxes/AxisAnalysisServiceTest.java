@@ -97,10 +97,19 @@ class AxisAnalysisServiceTest {
     void positionsOfTheThreeTopProfilesComeFromTheDisagreements() {
         PremiumReport report = premiumReportService.report(TestAnswers.mixed(dataService), "pt", null);
 
+        // Os eixos novos (metodo, distribuicao) so tem posicao nos perfis ja reauditados: nos outros fica nula.
+        var legacyAxes = dataService.getAxes().subList(0, com.twelveaxes.service.ScoringService.LEGACY_AXIS_COUNT).stream()
+                .map(axis -> axis.id()).toList();
         for (AxisAnalysis analysis : report.axisAnalysis()) {
-            assertThat(analysis.ideologyLeftPercent()).isNotNull().isBetween(0.0, 100.0);
-            assertThat(analysis.personalityLeftPercent()).isNotNull().isBetween(0.0, 100.0);
-            assertThat(analysis.countryLeftPercent()).isNotNull().isBetween(0.0, 100.0);
+            for (Double position : java.util.Arrays.asList(analysis.ideologyLeftPercent(),
+                    analysis.personalityLeftPercent(), analysis.countryLeftPercent())) {
+                if (legacyAxes.contains(analysis.axisId())) {
+                    assertThat(position).isNotNull();
+                }
+                if (position != null) {
+                    assertThat(position).isBetween(0.0, 100.0);
+                }
+            }
         }
     }
 
@@ -132,7 +141,7 @@ class AxisAnalysisServiceTest {
         assertThat(en.values()).allSatisfy(text -> assertThat(text).isNotBlank());
     }
 
-    // Os quatro lotes de textos estao escritos: 12 eixos x 7 inclinacoes, em PT e EN.
+    // Os quatro lotes de textos estao escritos: 14 eixos x 7 inclinacoes, em PT e EN.
     @Test
     void allTwelveAxesAreCovered() throws Exception {
         Map<String, String> pt = texts("/data/axis-analysis.json");
@@ -144,9 +153,9 @@ class AxisAnalysisServiceTest {
                 assertThat(en).containsKey(axis.id() + "." + levelKey);
             }
         }
-        // 12 eixos x (7 inclinacoes + elogio e critica de cada um dos 2 polos).
-        assertThat(pt).hasSize(132);
-        assertThat(en).hasSize(132);
+        // 14 eixos x (7 inclinacoes + elogio e critica de cada um dos 2 polos).
+        assertThat(pt).hasSize(154);
+        assertThat(en).hasSize(154);
     }
 
     @Test
@@ -181,7 +190,7 @@ class AxisAnalysisServiceTest {
     }
 
     private List<AxisAnalysis> analysisFor(double leftPercent, String lang) {
-        List<AxisResult> axes = scoringService.scoreFromLeftPercents(java.util.Collections.nCopies(12, leftPercent), lang);
+        List<AxisResult> axes = scoringService.scoreFromLeftPercents(java.util.Collections.nCopies(14, leftPercent), lang);
         return axisAnalysisService.analyze(axes, Map.of(), List.of(), lang);
     }
 

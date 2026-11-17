@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Nacionalista de esquerda, de origem nazbol: contra os oligarcas, a favor da nacionalização de recursos e de um Estado social forte.",
   "answers": {
-   "economia_01": "C",
    "economia_02": "D",
    "economia_03": "CT",
    "economia_04": "D",
    "economia_05": "C",
    "economia_06": "D",
    "economia_07": "CT",
-   "economia_08": "D",
    "economia_09": "CT",
    "economia_10": "DT",
    "economia_11": "C",
@@ -255,11 +253,8 @@
    "moral_01": "DT",
    "moral_02": "CT",
    "moral_03": "DT",
-   "moral_04": "CT",
-   "moral_05": "N",
    "moral_06": "CT",
    "moral_07": "DT",
-   "moral_08": "CT",
    "moral_09": "DT",
    "moral_10": "CT",
    "moral_11": "DT",
@@ -305,5 +300,18 @@
   "economia": "E",
   "mundo": "A",
   "tecnologia": "D"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "C",
+   "moral_04": "CT"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "D",
+   "moral_05": "N",
+   "moral_08": "CT"
+  }
  }
 }

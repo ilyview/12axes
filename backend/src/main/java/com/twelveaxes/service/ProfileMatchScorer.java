@@ -21,7 +21,9 @@ public class ProfileMatchScorer {
             "comercio",
             "religiao",
             "moral",
-            "tecnologia"
+            "tecnologia",
+            "metodo",
+            "distribuicao"
     );
 
     private static final double CENTER = 50.0;
@@ -51,7 +53,8 @@ public class ProfileMatchScorer {
      * "com quem eu combino politicamente / socialmente / economicamente", em que
      * so os eixos daquele grupo entram na conta.
      */
-    public double compatibility(Map<String, Double> userVector, Map<String, Double> targetVector, List<String> axisIds) {
+    public double compatibility(Map<String, Double> userVector, Map<String, Double> targetVector, List<String> requestedAxisIds) {
+        List<String> axisIds = sharedAxes(userVector, targetVector, requestedAxisIds);
         double axisSimilarity = axisSimilarity(userVector, targetVector, axisIds);
         double directionSimilarity = directionSimilarity(userVector, targetVector, axisIds);
         double magnitudeSimilarity = magnitudeSimilarity(userVector, targetVector, axisIds);
@@ -62,6 +65,18 @@ public class ProfileMatchScorer {
                         + MAGNITUDE_WEIGHT * magnitudeSimilarity
                         + OUTLIER_WEIGHT * outlierSimilarity
         ));
+    }
+
+    /**
+     * Eixos que os dois vetores tem. Perfis auditados antes da criacao de um eixo ainda nao tem valor
+     * nele (ex.: metodo e distribuicao ate a reauditoria): o eixo fica fora da conta para esse perfil,
+     * em vez de entrar como 50, o que puniria todo usuario com posicao forte nele.
+     */
+    static List<String> sharedAxes(Map<String, Double> userVector, Map<String, Double> targetVector, List<String> axisIds) {
+        List<String> shared = axisIds.stream()
+                .filter(axisId -> userVector.containsKey(axisId) && targetVector.containsKey(axisId))
+                .toList();
+        return shared.isEmpty() ? axisIds : shared;
     }
 
     public double percentile(double compatibility, List<Double> catalogCompatibilities) {

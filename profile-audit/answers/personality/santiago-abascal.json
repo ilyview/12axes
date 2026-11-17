@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Defende cortar impostos, simplificar o Estado, privatizar e reduzir a máquina pública, mas protege os espanhóis nas ajudas e no sistema social.",
   "answers": {
-   "economia_01": "D",
    "economia_02": "C",
    "economia_03": "D",
    "economia_04": "C",
    "economia_05": "D",
    "economia_06": "C",
    "economia_07": "D",
-   "economia_08": "C",
    "economia_09": "N",
    "economia_10": "C",
    "economia_11": "D",
@@ -255,11 +253,8 @@
    "moral_01": "DT",
    "moral_02": "CT",
    "moral_03": "DT",
-   "moral_04": "CT",
-   "moral_05": "D",
    "moral_06": "CT",
    "moral_07": "DT",
-   "moral_08": "CT",
    "moral_09": "DT",
    "moral_10": "CT",
    "moral_11": "DT",
@@ -305,5 +300,18 @@
   "economia": "C",
   "mundo": "B",
   "tecnologia": "D"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "D",
+   "moral_04": "CT"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "C",
+   "moral_05": "D",
+   "moral_08": "CT"
+  }
  }
 }

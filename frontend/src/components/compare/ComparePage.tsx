@@ -32,7 +32,7 @@ const INITIAL = typeof window === 'undefined' ? { refs: [], religion: null } : p
 type Status = 'idle' | 'loading' | 'ready' | 'notFound' | 'error';
 
 /**
- * /compare: de 2 a 3 perfis do catálogo lado a lado (12 eixos, bússola e compatibilidade entre pares).
+ * /compare: de 2 a 3 perfis do catálogo lado a lado (14 eixos, bússola e compatibilidade entre pares).
  * Fica numa rota própria para o catálogo só carregar aqui, e não na página de resultados.
  */
 export function ComparePage() {
@@ -133,15 +133,20 @@ export function ComparePage() {
   // Com dois perfis a página é a da comparação entre pessoas: o mesmo endpoint dos resultados traz países,
   // personalidades, partidos e valores de cada um. Com três, ficam as seções do catálogo.
   const pair = shown && shown.profiles.length === 2 ? shown : null;
+  // Perfis ainda não reauditados não têm os eixos novos: a comparação usa só os eixos que todos têm.
+  const shownAxes = useMemo(
+    () => (shown ? axes.filter((axis) => shown.profiles.every((profile) => profile.vector[axis.id] !== undefined)) : axes),
+    [shown, axes]
+  );
   const pairPeople = useMemo<[PersonResult, PersonResult] | null>(
     () =>
       pair
         ? ([pair.profiles[0], pair.profiles[1]].map((profile) => ({
-            values: axes.map((axis) => profile.vector[axis.id] ?? 50),
+            values: shownAxes.map((axis) => profile.vector[axis.id] ?? 50),
             religion: null
           })) as [PersonResult, PersonResult])
         : null,
-    [pair, axes]
+    [pair, shownAxes]
   );
   const pairLoaded = usePairResults(pairPeople);
   useScrollReveal(true, [pairLoaded.loaded, shown]);
@@ -149,7 +154,7 @@ export function ComparePage() {
   const secondName = pair?.profiles[1].item.name ?? '';
   // Estável entre renders: o cartão de compartilhamento só é refeito quando os dados mudam de verdade.
   const pairNames = useMemo<[string, string]>(() => [firstName, secondName], [firstName, secondName]);
-  const { actions: shareActions, stage } = usePairShare(pairLoaded.loaded, pair, pairNames, pairPeople, axes);
+  const { actions: shareActions, stage } = usePairShare(pairLoaded.loaded, pair, pairNames, pairPeople, shownAxes);
   const detail = pair && pairPeople && pairLoaded.loaded ? buildDetail(pairLoaded.loaded, pair, pairNames, pairPeople) : null;
 
   const add = (item: CompareItem) => {
@@ -254,7 +259,7 @@ export function ComparePage() {
 
             {shown && (
               <div className="e-cmpp-results" aria-busy={status === 'loading'}>
-                <CompareResults profiles={shown} axes={axes} nearby={detail?.nearby} tags={Boolean(pair)} />
+                <CompareResults profiles={shown} axes={shownAxes} nearby={detail?.nearby} tags={Boolean(pair)} />
               </div>
             )}
 

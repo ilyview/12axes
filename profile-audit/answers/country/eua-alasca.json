@@ -58,8 +58,7 @@
     "answers": {
       "economia_05": "D", "economia_06": "N", "economia_07": "C", "economia_13": "N", "economia_03": "C",
       "economia_14": "D", "economia_19": "C", "economia_16": "D", "economia_17": "C", "economia_12": "C",
-      "economia_04": "C", "economia_11": "C", "economia_18": "C", "economia_15": "DT", "economia_20": "N",
-      "economia_01": "DT", "economia_10": "D", "economia_09": "N", "economia_02": "C", "economia_08": "CT"
+      "economia_04": "C", "economia_11": "C", "economia_18": "C", "economia_15": "DT", "economia_20": "N", "economia_10": "D", "economia_09": "N", "economia_02": "C"
     }
   },
   "controle": {
@@ -92,10 +91,9 @@
   "moral": {
     "personaBrief": "Tolerante em costumes por individualismo (aborto protegido pela privacidade constitucional, maconha legal), mas com cultura rural de caça e família e resistência a pautas identitárias e cotas.",
     "answers": {
-      "moral_07": "C", "moral_04": "C", "moral_15": "DT", "moral_12": "C", "moral_03": "N",
-      "moral_01": "C", "moral_09": "C", "moral_06": "D", "moral_19": "N", "moral_02": "C",
-      "moral_05": "D", "moral_17": "N", "moral_13": "D", "moral_11": "D", "moral_10": "N",
-      "moral_18": "D", "moral_16": "N", "moral_14": "C", "moral_08": "C", "moral_20": "CT"
+      "moral_07": "C", "moral_15": "DT", "moral_12": "C", "moral_03": "N",
+      "moral_01": "C", "moral_09": "C", "moral_06": "D", "moral_19": "N", "moral_02": "C", "moral_17": "N", "moral_13": "D", "moral_11": "D", "moral_10": "N",
+      "moral_18": "D", "moral_16": "N", "moral_14": "C", "moral_20": "CT"
     }
   },
   "tecnologia": {
@@ -107,5 +105,7 @@
       "tecnologia_09": "C", "tecnologia_17": "DT", "tecnologia_02": "C", "tecnologia_14": "N", "tecnologia_11": "C"
     }
   },
-  "archetype": { "sociedade": "C", "poder": "C", "economia": "C", "mundo": "B", "tecnologia": "D" }
+  "archetype": { "sociedade": "C", "poder": "C", "economia": "C", "mundo": "B", "tecnologia": "D" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "CT", "moral_05": "D", "moral_08": "C"}}
 }

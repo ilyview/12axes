@@ -1,5 +1,5 @@
 // Módulo compartilhado de filtros avançados para as páginas de catálogo (wiki)
-// Permite filtrar por eixos políticos (12 eixos / 24 polos), intensidade,
+// Permite filtrar por eixos políticos (14 eixos / 24 polos), intensidade,
 // tradição religiosa, épocas históricas e categorias adicionais (Issue #253).
 
 import { poleUse } from './pole-icons.mjs';
@@ -11,8 +11,8 @@ export const FILTER_STR = {
   pt: {
     filterBtn: 'Filtros',
     filterTitle: 'Filtros avançados',
-    filterDesc: 'Filtre por inclinação nos 12 eixos políticos, intensidade e outras características.',
-    axesHeading: 'Posição nos 12 eixos políticos',
+    filterDesc: 'Filtre por inclinação nos 14 eixos políticos, intensidade e outras características.',
+    axesHeading: 'Posição nos 14 eixos políticos',
     axesSubtitle: 'Selecione o polo desejado em cada eixo para encontrar perfis alinhados:',
     intensityLabel: 'Intensidade:',
     intensityAny: 'Qualquer inclinação',
@@ -48,8 +48,8 @@ export const FILTER_STR = {
   en: {
     filterBtn: 'Filters',
     filterTitle: 'Advanced filters',
-    filterDesc: 'Filter by leaning across the 12 political axes, intensity and attributes.',
-    axesHeading: 'Position across the 12 political axes',
+    filterDesc: 'Filter by leaning across the 14 political axes, intensity and attributes.',
+    axesHeading: 'Position across the 14 political axes',
     axesSubtitle: 'Select the desired pole on each axis to find matching profiles:',
     intensityLabel: 'Intensity:',
     intensityAny: 'Any leaning',

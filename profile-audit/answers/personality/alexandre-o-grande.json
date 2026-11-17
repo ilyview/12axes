@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "Alexandre operou numa economia pré-moderna de pilhagem, tributação imperial e patronagem real: extraía riquezas dos territórios conquistados (como os tesouros persas) para financiar seu exército e suas cidades, mas não tinha conceito de propriedade privada moderna ou economia planificada.",
     "answers": {
-      "economia_01": "N",
       "economia_02": "N",
       "economia_03": "N",
       "economia_04": "N",
       "economia_05": "DT",
       "economia_06": "D",
       "economia_07": "N",
-      "economia_08": "C",
       "economia_09": "N",
       "economia_10": "D",
       "economia_11": "N",
@@ -255,11 +253,8 @@
       "moral_01": "N",
       "moral_02": "C",
       "moral_03": "N",
-      "moral_04": "C",
-      "moral_05": "N",
       "moral_06": "N",
       "moral_07": "N",
-      "moral_08": "N",
       "moral_09": "N",
       "moral_10": "N",
       "moral_11": "D",
@@ -297,6 +292,19 @@
       "tecnologia_18": "D",
       "tecnologia_19": "N",
       "tecnologia_20": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "N",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

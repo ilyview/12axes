@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "C",
-      "economia_02": "C",
-      "economia_08": "D"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Referência global de progressismo social, a Califórnia lidera pautas LGBT, direitos reprodutivos e diversidade de gênero nos Estados Unidos.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "C",
       "moral_12": "D",
       "moral_03": "CT",
@@ -263,14 +260,12 @@
       "moral_19": "C",
       "moral_02": "D",
       "moral_11": "C",
-      "moral_05": "C",
       "moral_17": "C",
       "moral_13": "C",
       "moral_14": "D",
       "moral_10": "DT",
       "moral_18": "DT",
       "moral_16": "D",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "C",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

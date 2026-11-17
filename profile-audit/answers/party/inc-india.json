@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Economia mista, bem-estar (MGNREGA, segurança alimentar), liberalização de 1991 e papel do Estado na saúde e educação.",
   "answers": {
-   "economia_01": "D",
    "economia_02": "D",
    "economia_03": "C",
    "economia_04": "D",
    "economia_05": "D",
    "economia_06": "D",
    "economia_07": "C",
-   "economia_08": "D",
    "economia_09": "C",
    "economia_10": "DT",
    "economia_11": "C",
@@ -255,11 +253,8 @@
    "moral_01": "C",
    "moral_02": "C",
    "moral_03": "C",
-   "moral_04": "C",
-   "moral_05": "CT",
    "moral_06": "D",
    "moral_07": "C",
-   "moral_08": "DT",
    "moral_09": "C",
    "moral_10": "D",
    "moral_11": "C",
@@ -305,5 +300,18 @@
   "economia": "C",
   "mundo": "D",
   "tecnologia": "C"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "D",
+   "moral_04": "C"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "D",
+   "moral_05": "CT",
+   "moral_08": "DT"
+  }
  }
 }

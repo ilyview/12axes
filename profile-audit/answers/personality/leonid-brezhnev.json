@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Propriedade estatal e coletiva (kolkhozes), sem mercado privado, emprego garantido e serviços públicos universais, mas sem revolução nova.",
   "answers": {
-   "economia_01": "N",
    "economia_02": "DT",
    "economia_03": "CT",
    "economia_04": "DT",
    "economia_05": "C",
    "economia_06": "DT",
    "economia_07": "CT",
-   "economia_08": "DT",
    "economia_09": "CT",
    "economia_10": "DT",
    "economia_11": "C",
@@ -255,11 +253,8 @@
    "moral_01": "DT",
    "moral_02": "CT",
    "moral_03": "DT",
-   "moral_04": "CT",
-   "moral_05": "N",
    "moral_06": "CT",
    "moral_07": "DT",
-   "moral_08": "N",
    "moral_09": "N",
    "moral_10": "C",
    "moral_11": "DT",
@@ -305,5 +300,18 @@
   "economia": "A",
   "mundo": "A",
   "tecnologia": "D"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "N",
+   "moral_04": "CT"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "DT",
+   "moral_05": "N",
+   "moral_08": "N"
+  }
  }
 }

@@ -2,12 +2,29 @@ import { parseReligion, parseReligionList, type Religion } from './religion';
 import { parseShortResult } from './shortLinks';
 
 // Comparação entre duas pessoas: /compare/people?an=Você&a=65,32,...&bn=Julia&b=40,51,...
-// (a e b = % do polo esquerdo dos 12 eixos, na ordem de RESULT_URL_KEYS; ra e rb = religião, opcional).
+// (a e b = % do polo esquerdo dos 14 eixos, na ordem de RESULT_URL_KEYS; ra e rb = religião, opcional).
 export const PEOPLE_COMPARE_PATH = '/compare/people';
 
 // URL de resultado compartilhável: /results?est=65&rep=32.5&... (uma chave por eixo, valor = % do polo
 // esquerdo, na mesma ordem de axes.json e dos ids de HOME_AXES).
-export const RESULT_URL_KEYS = ['est', 'rep', 'pod', 'imi', 'dip', 'int', 'eco', 'con', 'com', 'rel', 'mor', 'tec'] as const;
+export const RESULT_URL_KEYS = ['est', 'rep', 'pod', 'imi', 'dip', 'int', 'eco', 'con', 'com', 'rel', 'mor', 'tec', 'met', 'dis'] as const;
+
+// Links de antes de metodo (met) e distribuicao (dis) trazem só as 12 primeiras chaves. Elas são obrigatórias;
+// as novas entram só quando vêm todas, e o resultado antigo continua com 12 eixos, sem posição inventada nos novos.
+export const LEGACY_RESULT_KEY_COUNT = 12;
+export const REQUIRED_RESULT_URL_KEYS = RESULT_URL_KEYS.slice(0, LEGACY_RESULT_KEY_COUNT);
+const OPTIONAL_RESULT_URL_KEYS = RESULT_URL_KEYS.slice(LEGACY_RESULT_KEY_COUNT);
+
+/** Um vetor de resultado válido tem todos os eixos ou só os 12 dos links antigos. */
+export function isResultVectorLength(length: number): boolean {
+  return length === RESULT_URL_KEYS.length || length === LEGACY_RESULT_KEY_COUNT;
+}
+
+/** As chaves do resultado presentes no link: as 12 obrigatórias e, se vierem todas, as novas. */
+export function resultUrlKeysIn(get: (key: string) => string | null | undefined): string[] {
+  const hasOptional = OPTIONAL_RESULT_URL_KEYS.every((key) => (get(key) ?? '').trim() !== '');
+  return hasOptional ? [...RESULT_URL_KEYS] : [...REQUIRED_RESULT_URL_KEYS];
+}
 
 export const MAX_NAME_LENGTH = 40;
 
@@ -51,17 +68,18 @@ export function parseResultLink(raw: string): ResultLinkParse {
   const byKey = new Map<string, string>();
   params.forEach((value, key) => byKey.set(key.trim().toLowerCase(), value.trim()));
 
-  const missing = RESULT_URL_KEYS.filter((key) => !byKey.get(key));
-  // Link curto do QR do cartão (/r?v=70-80-…&r=c): os 12 valores num só parâmetro.
-  if (missing.length === RESULT_URL_KEYS.length && byKey.has('v')) {
+  const missing: string[] = REQUIRED_RESULT_URL_KEYS.filter((key) => !byKey.get(key));
+  // Link curto do QR do cartão (/r?v=70-80-…&r=c): os valores num só parâmetro.
+  if (missing.length === REQUIRED_RESULT_URL_KEYS.length && byKey.has('v')) {
     const short = parseShortResult(query);
     if (short) return { ok: true, values: short.values, religion: short.religion };
     return { ok: false, problem: { kind: 'invalid', keys: ['v'] } };
   }
   if (missing.length > 0) return { ok: false, problem: { kind: 'missing', keys: missing } };
 
-  const values = RESULT_URL_KEYS.map((key) => Number((byKey.get(key) ?? '').replace(',', '.')));
-  const invalid = RESULT_URL_KEYS.filter((_, index) => !Number.isFinite(values[index]) || values[index] < 0 || values[index] > 100);
+  const keys = resultUrlKeysIn((key) => byKey.get(key));
+  const values = keys.map((key) => Number((byKey.get(key) ?? '').replace(',', '.')));
+  const invalid = keys.filter((_, index) => !Number.isFinite(values[index]) || values[index] < 0 || values[index] > 100);
   if (invalid.length > 0) return { ok: false, problem: { kind: 'invalid', keys: invalid } };
 
   return { ok: true, values, religion: parseReligion(byKey.get('religion')) };
@@ -76,7 +94,7 @@ const round1 = (value: number): number => Math.round(value * 10) / 10;
 
 function parseVector(raw: string | null): number[] | null {
   const values = (raw ?? '').split(',').map((part) => Number(part));
-  if (values.length !== RESULT_URL_KEYS.length) return null;
+  if (!isResultVectorLength(values.length)) return null;
   return values.every((value) => Number.isFinite(value) && value >= 0 && value <= 100) ? values : null;
 }
 
@@ -180,5 +198,6 @@ export function pairCompatibility(first: number[], second: number[]): number {
 
 /** Vetor médio das duas pessoas, para achar a ideologia que têm em comum. */
 export function midpoint(first: number[], second: number[]): number[] {
-  return first.map((value, index) => round1((value + second[index]) / 2));
+  const size = Math.min(first.length, second.length);
+  return first.slice(0, size).map((value, index) => round1((value + second[index]) / 2));
 }

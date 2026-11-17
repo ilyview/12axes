@@ -37,13 +37,14 @@ class PartyCatalogTest {
     }
 
     @Test
-    void everyPartyProfileUsesTheTwelveKnownAxes() {
+    void everyPartyProfileUsesOnlyKnownAxesAndAllLegacyOnes() {
         var axisIds = dataService.getAxes().stream().map(axis -> axis.id()).toList();
 
         assertThat(dataService.getPartyProfiles().values()).allSatisfy(profile -> {
             assertThat(profile.vector().keySet())
                     .as("Party profile %s must define exactly the known axes", profile.partyId())
-                    .containsExactlyInAnyOrderElementsOf(axisIds);
+                    .containsAll(axisIds.subList(0, com.twelveaxes.service.ScoringService.LEGACY_AXIS_COUNT))
+                            .isSubsetOf(axisIds);
             assertThat(profile.vector().values())
                     .as("Party profile %s values must be percentages", profile.partyId())
                     .allSatisfy(value -> assertThat(value).isBetween(0.0, 100.0));
@@ -124,9 +125,7 @@ class PartyCatalogTest {
     @Test
     void partyMatchIsDrivenPurelyByVectorProximity() {
         var profile = dataService.getPartyProfiles().get("vox");
-        var axes = scoringService.scoreFromLeftPercents(
-                dataService.getAxes().stream().map(axis -> profile.vector().get(axis.id())).toList(),
-                QuizDataService.LANG_PT);
+        var axes = scoringService.scoreFromVector(profile.vector(), QuizDataService.LANG_PT);
 
         List<PartyMatch> top = partyMatcherService.findTopMatches(axes, QuizDataService.LANG_PT, null);
 

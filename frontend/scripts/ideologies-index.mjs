@@ -68,9 +68,9 @@ const STR = {
   pt: {
     skip: 'Pular para a lista',
     catalogNav: 'Catálogo',
-    homeAria: '12 axes, página inicial',
+    homeAria: '14 axes, página inicial',
     eyebrow: 'Catálogo',
-    lead: (n) => `As ${n} correntes políticas mapeadas pelo 12 Axes, organizadas por espectro. Cada uma tem descrição e perfil completo nos 12 eixos.`,
+    lead: (n) => `As ${n} correntes políticas mapeadas pelo 12 Axes, organizadas por espectro. Cada uma tem descrição e perfil completo nos 14 eixos.`,
     stats: ['correntes', 'espectros', 'eixos por perfil'],
     distribution: 'Distribuição no espectro',
     distributionAria: (label, n) => `${label}: ${n} ideologias`,
@@ -105,9 +105,9 @@ const STR = {
   en: {
     skip: 'Skip to the list',
     catalogNav: 'Catalog',
-    homeAria: '12 axes, home page',
+    homeAria: '14 axes, home page',
     eyebrow: 'Catalog',
-    lead: (n) => `The ${n} political currents mapped by 12 Axes, organized by spectrum. Each one has a description and a full profile across the 12 axes.`,
+    lead: (n) => `The ${n} political currents mapped by 12 Axes, organized by spectrum. Each one has a description and a full profile across the 14 axes.`,
     stats: ['currents', 'spectrums', 'axes per profile'],
     distribution: 'Distribution across the spectrum',
     distributionAria: (label, n) => `${label}: ${n} ideologies`,
@@ -152,7 +152,8 @@ export function dna(axes, vector, escapeHtml) {
   const icons = [];
   const titles = [];
   for (const axis of axes) {
-    const left = vector?.[axis.id] ?? 50;
+    if (vector?.[axis.id] === undefined) continue;
+    const left = vector[axis.id];
     const leansLeft = left >= 50;
     const pct = leansLeft ? left : 100 - left;
     const opacity = 0.35 + (Math.abs(left - 50) / 50) * 0.65;

@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "N",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "C"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Porto Alegre foi pioneira em causas LGBT e de esquerda cultural no Brasil, enquanto o interior colonial e o meio rural mantêm costumes mais tradicionais de família - essa fratura moral real entre capital e interior é uma das mais nítidas do país, e não deve ser achatada em neutralidade.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "C",
       "moral_15": "D",
       "moral_12": "C",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "N",
       "moral_19": "C",
       "moral_02": "N",
-      "moral_05": "C",
       "moral_17": "C",
       "moral_13": "C",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "D",
       "moral_14": "C",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "D",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

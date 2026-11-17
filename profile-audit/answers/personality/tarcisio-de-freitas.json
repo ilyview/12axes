@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "CT",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "D",
-      "economia_02": "CT",
-      "economia_08": "C"
+      "economia_02": "CT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Conservador nos costumes — contrário ao aborto e à ideologia de gênero nas escolas, defensor da família tradicional e das escolas cívico-militares — mas pragmático o suficiente para não fazer da pauta moral o centro do seu governo, evitando o confronto cultural permanente de Bolsonaro ou Nikolas.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "CT",
       "moral_15": "N",
       "moral_12": "CT",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "D",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "D",
@@ -270,7 +266,6 @@
       "moral_18": "N",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "N",
       "moral_20": "CT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "N",
       "tecnologia_11": "C"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "N"
     }
   }
 }

@@ -58,8 +58,7 @@
     "answers": {
       "economia_05": "DT", "economia_06": "C", "economia_07": "D", "economia_13": "C", "economia_03": "N",
       "economia_14": "C", "economia_19": "D", "economia_16": "C", "economia_17": "C", "economia_12": "C",
-      "economia_04": "C", "economia_11": "D", "economia_18": "C", "economia_15": "N", "economia_20": "C",
-      "economia_01": "D", "economia_10": "D", "economia_09": "D", "economia_02": "C", "economia_08": "C"
+      "economia_04": "C", "economia_11": "D", "economia_18": "C", "economia_15": "N", "economia_20": "C", "economia_10": "D", "economia_09": "D", "economia_02": "C"
     }
   },
   "controle": {
@@ -92,10 +91,9 @@
   "moral": {
     "personaBrief": "Moral republicana e protestante: família patriarcal, virtude pública e leis estaduais de costumes contra fornicação, blasfêmia e vícios; escravidão e hierarquia racial persistem e nenhuma ideia de direitos sexuais ou de gênero.",
     "answers": {
-      "moral_07": "DT", "moral_04": "C", "moral_15": "DT", "moral_12": "C", "moral_03": "DT",
-      "moral_01": "DT", "moral_09": "D", "moral_06": "CT", "moral_19": "D", "moral_02": "CT",
-      "moral_05": "DT", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "C",
-      "moral_18": "C", "moral_16": "C", "moral_14": "C", "moral_08": "C", "moral_20": "C"
+      "moral_07": "DT", "moral_15": "DT", "moral_12": "C", "moral_03": "DT",
+      "moral_01": "DT", "moral_09": "D", "moral_06": "CT", "moral_19": "D", "moral_02": "CT", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "C",
+      "moral_18": "C", "moral_16": "C", "moral_14": "C", "moral_20": "C"
     }
   },
   "tecnologia": {
@@ -107,5 +105,7 @@
       "tecnologia_09": "C", "tecnologia_17": "D", "tecnologia_02": "C", "tecnologia_14": "C", "tecnologia_11": "D"
     }
   },
-  "archetype": { "sociedade": "B", "poder": "C", "economia": "F", "mundo": "D", "tecnologia": "C" }
+  "archetype": { "sociedade": "B", "poder": "C", "economia": "F", "mundo": "D", "tecnologia": "C" },
+  "metodo": {"answers": {"economia_01": "D", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "DT", "moral_08": "C"}}
 }

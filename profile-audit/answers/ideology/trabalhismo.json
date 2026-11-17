@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "D",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Como centro-esquerda focada em igualdade e protecao social, o trabalhismo contemporaneo tende a apoiar direitos civis e combate a discriminacao, mas sem necessariamente abraçar todas as pautas de vanguarda cultural sem reservas. O resultado costuma ser progressismo moderado, mais social do que libertario absoluto.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "N",
       "moral_15": "C",
       "moral_12": "D",
       "moral_03": "CT",
@@ -262,7 +259,6 @@
       "moral_06": "DT",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "CT",
       "moral_17": "N",
       "moral_13": "N",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "N",
-      "moral_08": "DT",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "C",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "N"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "CT",
+      "moral_08": "DT"
     }
   }
 }

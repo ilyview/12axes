@@ -167,11 +167,9 @@
       "economia_18": "DT",
       "economia_15": "CT",
       "economia_20": "DT",
-      "economia_01": "CT",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "DT",
-      "economia_08": "DT"
+      "economia_02": "DT"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A transformação bolchevique favorece a emancipação das mulheres, a educação pública e a ruptura com a família patriarcal, mas não implica endossar toda forma contemporânea de liberdade sexual ou de comércio do corpo. As respostas sobre gênero, adoção e linguagem são inferências a partir desse horizonte histórico, não posições pessoais documentadas sobre debates posteriores.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "D",
       "moral_15": "D",
       "moral_12": "DT",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "C",
       "moral_02": "DT",
-      "moral_05": "C",
       "moral_17": "D",
       "moral_13": "DT",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "C",
       "moral_14": "D",
-      "moral_08": "D",
       "moral_20": "DT"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "A",
     "mundo": "B",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "CT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "DT",
+      "moral_05": "C",
+      "moral_08": "D"
+    }
   }
 }

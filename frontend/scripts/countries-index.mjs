@@ -42,9 +42,9 @@ const STR = {
   pt: {
     skip: 'Pular para a lista',
     catalogNav: 'Catálogo',
-    homeAria: '12 axes, página inicial',
+    homeAria: '14 axes, página inicial',
     eyebrow: 'Catálogo',
-    lead: (cur, hist) => `${cur} países atuais e ${hist} regimes históricos com perfil completo nos 12 eixos. Da Antiguidade à política de hoje, descubra onde cada um se posiciona.`,
+    lead: (cur, hist) => `${cur} países atuais e ${hist} regimes históricos com perfil completo nos 14 eixos. Da Antiguidade à política de hoje, descubra onde cada um se posiciona.`,
     stats: ['perfis', 'países atuais', 'regimes históricos', 'anos de história'],
     erasAria: 'Épocas',
     searchLabel: 'Buscar país ou regime',
@@ -76,7 +76,7 @@ const STR = {
       xx: 'Séculos XX e XXI'
     },
     descriptions: {
-      atuais: 'Estados e regiões autônomas de hoje, cada um com seu regime político e perfil nos 12 eixos.',
+      atuais: 'Estados e regiões autônomas de hoje, cada um com seu regime político e perfil nos 14 eixos.',
       antiguidade: 'Cidades-Estado, repúblicas e impérios do mundo antigo.',
       medieval: 'Impérios, repúblicas mercantes e comunidades medievais.',
       moderna: 'Monarquias, impérios coloniais e repúblicas da era moderna.',
@@ -87,9 +87,9 @@ const STR = {
   en: {
     skip: 'Skip to the list',
     catalogNav: 'Catalog',
-    homeAria: '12 axes, home page',
+    homeAria: '14 axes, home page',
     eyebrow: 'Catalog',
-    lead: (cur, hist) => `${cur} modern countries and ${hist} historical regimes with a full profile across the 12 axes. From Antiquity to today's politics, see where each one stands.`,
+    lead: (cur, hist) => `${cur} modern countries and ${hist} historical regimes with a full profile across the 14 axes. From Antiquity to today's politics, see where each one stands.`,
     stats: ['profiles', 'modern countries', 'historical regimes', 'years of history'],
     erasAria: 'Eras',
     searchLabel: 'Search country or regime',
@@ -121,7 +121,7 @@ const STR = {
       xx: '20th and 21st centuries'
     },
     descriptions: {
-      atuais: "Today's states and autonomous regions, each with its political regime and profile across the 12 axes.",
+      atuais: "Today's states and autonomous regions, each with its political regime and profile across the 14 axes.",
       antiguidade: 'City-states, republics and empires of the ancient world.',
       medieval: 'Empires, merchant republics and medieval communities.',
       moderna: 'Monarchies, colonial empires and republics of the early modern era.',

@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "Defendia serviços públicos, poupança coletiva e sindicatos fortes, mantendo empresas privadas produtivas numa economia mista. Foi cauteloso sobre fundos de assalariados e não propôs expropriação revolucionária ou eliminar proprietários privados.",
     "answers": {
-      "economia_01": "DT",
       "economia_02": "D",
       "economia_03": "C",
       "economia_04": "DT",
       "economia_05": "N",
       "economia_06": "D",
       "economia_07": "CT",
-      "economia_08": "D",
       "economia_09": "CT",
       "economia_10": "DT",
       "economia_11": "CT",
@@ -255,11 +253,8 @@
       "moral_01": "C",
       "moral_02": "D",
       "moral_03": "C",
-      "moral_04": "C",
-      "moral_05": "N",
       "moral_06": "D",
       "moral_07": "CT",
-      "moral_08": "N",
       "moral_09": "C",
       "moral_10": "D",
       "moral_11": "C",
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "C",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "N",
+      "moral_08": "N"
+    }
   }
 }

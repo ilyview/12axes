@@ -167,11 +167,9 @@
       "economia_18": "N",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "N",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "N",
-      "economia_08": "N"
+      "economia_02": "N"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "O Estado iraniano impõe um código moral islâmico rígido e tradicionalista sobre família, gênero e sexualidade, criminalizando relações LGBT, exigindo véu obrigatório e promovendo papéis de gênero conservadores.",
     "answers": {
       "moral_07": "DT",
-      "moral_04": "CT",
       "moral_15": "N",
       "moral_12": "CT",
       "moral_03": "DT",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "DT",
       "moral_02": "CT",
-      "moral_05": "N",
       "moral_17": "DT",
       "moral_13": "DT",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "CT",
       "moral_16": "CT",
       "moral_14": "C",
-      "moral_08": "N",
       "moral_20": "CT"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "C",
       "tecnologia_17": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "N",
+      "moral_04": "CT"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "N",
+      "moral_05": "N",
+      "moral_08": "N"
     }
   }
 }

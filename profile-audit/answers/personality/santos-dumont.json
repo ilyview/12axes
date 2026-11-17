@@ -32,8 +32,7 @@
   "economia": { "personaBrief": "Herdeiro de rica família cafeicultora, vivia de renda privada; mas liberou suas patentes ao domínio público, sinal de generosidade e desapego ao lucro sobre o conhecimento, sem programa econômico radical.", "answers": {
     "economia_05": "D", "economia_06": "D", "economia_07": "C", "economia_13": "N", "economia_03": "N",
     "economia_14": "N", "economia_19": "N", "economia_16": "N", "economia_17": "C", "economia_12": "N",
-    "economia_04": "D", "economia_11": "C", "economia_18": "C", "economia_15": "D", "economia_20": "D",
-    "economia_01": "DT", "economia_10": "DT", "economia_09": "C", "economia_02": "C", "economia_08": "C" } },
+    "economia_04": "D", "economia_11": "C", "economia_18": "C", "economia_15": "D", "economia_20": "D", "economia_10": "DT", "economia_09": "C", "economia_02": "C" } },
   "controle": { "personaBrief": "Não era economista; como entusiasta do progresso técnico nacional, apoiaria incentivo estatal a setores estratégicos (menos defesa), mantendo postura liberal moderada de um herdeiro cosmopolita.", "answers": {
     "controle_05": "C", "controle_20": "C", "controle_19": "C", "controle_14": "D", "controle_07": "C",
     "controle_04": "N", "controle_02": "N", "controle_17": "D", "controle_16": "C", "controle_10": "C",
@@ -50,13 +49,14 @@
     "religiao_01": "C", "religiao_14": "C", "religiao_06": "C", "religiao_16": "D", "religiao_08": "DT",
     "religiao_07": "D", "religiao_09": "C", "religiao_17": "D", "religiao_20": "C", "religiao_04": "D" } },
   "moral": { "personaBrief": "Dândi excêntrico e solteiro da Paris boêmia, que desafiava convenções de vestuário e costume, mas discreto e reservado; progressista moderado no temperamento, ainda com traços de seu tempo.", "answers": {
-    "moral_07": "C", "moral_04": "D", "moral_15": "N", "moral_12": "D", "moral_03": "C",
-    "moral_01": "C", "moral_09": "D", "moral_06": "D", "moral_19": "C", "moral_02": "D",
-    "moral_05": "C", "moral_17": "C", "moral_13": "D", "moral_11": "C", "moral_10": "C",
-    "moral_18": "D", "moral_16": "C", "moral_14": "D", "moral_08": "D", "moral_20": "C" } },
+    "moral_07": "C", "moral_15": "N", "moral_12": "D", "moral_03": "C",
+    "moral_01": "C", "moral_09": "D", "moral_06": "D", "moral_19": "C", "moral_02": "D", "moral_17": "C", "moral_13": "D", "moral_11": "C", "moral_10": "C",
+    "moral_18": "D", "moral_16": "C", "moral_14": "D", "moral_20": "C" } },
   "tecnologia": { "personaBrief": "Tecnófilo máximo, pioneiro dos dirigíveis e do avião, crente no progresso técnico como destino humano, ainda que abalado pelo mau uso militar da invenção.", "answers": {
     "tecnologia_01": "CT", "tecnologia_13": "C", "tecnologia_19": "CT", "tecnologia_12": "D", "tecnologia_18": "D",
     "tecnologia_10": "C", "tecnologia_05": "C", "tecnologia_04": "DT", "tecnologia_16": "DT", "tecnologia_07": "C",
     "tecnologia_08": "D", "tecnologia_03": "CT", "tecnologia_15": "CT", "tecnologia_20": "DT", "tecnologia_06": "N",
-    "tecnologia_09": "C", "tecnologia_17": "C", "tecnologia_02": "DT", "tecnologia_14": "D", "tecnologia_11": "CT" } }
+    "tecnologia_09": "C", "tecnologia_17": "C", "tecnologia_02": "DT", "tecnologia_14": "D", "tecnologia_11": "CT" } },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "D"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "C", "moral_08": "D"}}
 }

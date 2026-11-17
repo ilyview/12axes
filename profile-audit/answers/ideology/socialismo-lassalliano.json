@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "DT",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Lassalle era um racionalista secular e anticlerical, judeu secularizado e boêmio, que defendia educação estatal laica e igualdade legal formal, e morreu em duelo por uma relação escandalosa com a condessa Sophie von Hatzfeldt — não é a figura de um movimento de costumes conservadores. Em família, sexualidade e autoridade religiosa sobre a educação, tende ao lado emancipatório; como é uma doutrina do século XIX, pautas identitárias contemporâneas (cotas raciais, linguagem neutra) são respondidas pelo princípio de igualdade legal formal, sem entusiasmo identitário específico.",
     "answers": {
       "moral_07": "C",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "C",
@@ -262,7 +259,6 @@
       "moral_06": "D",
       "moral_19": "C",
       "moral_02": "D",
-      "moral_05": "D",
       "moral_17": "C",
       "moral_13": "C",
       "moral_11": "C",
@@ -270,7 +266,6 @@
       "moral_18": "DT",
       "moral_16": "D",
       "moral_14": "N",
-      "moral_08": "C",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "C",
       "tecnologia_11": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }

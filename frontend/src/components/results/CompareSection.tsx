@@ -287,6 +287,8 @@ function ComparisonSheet({ detail, axes, results, userCategory, religion, onClos
   onClose: () => void;
 }) {
   const { item } = detail;
+  // Perfil ainda não reauditado não tem os eixos novos: a comparação fica nos eixos que os dois têm.
+  axes = axes.filter((axis) => results.has(axis.id) && detail.vector[axis.id] !== undefined);
   const summary = compareAxes(axes, results, detail.vector);
   const kinds = summaryKinds(summary);
   // O usuário e o perfil comparado, como "perfis" para o desenho dos eixos (o do usuário vale a cor da sua ideologia).

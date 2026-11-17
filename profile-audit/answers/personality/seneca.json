@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "D",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "D",
       "economia_09": "C",
-      "economia_02": "C",
-      "economia_08": "D"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "A filosofia de Sêneca condenava crueldade, valorizava autodomínio e compaixão e incluía mulheres como interlocutoras filosóficas; ele também foi produto da hierarquia social romana. Posições sobre direitos LGBT, aborto e políticas contemporâneas não são documentadas e aqui são inferências prudentes, não afirmações históricas.",
     "answers": {
       "moral_07": "N",
-      "moral_04": "C",
       "moral_15": "C",
       "moral_12": "C",
       "moral_03": "N",
@@ -262,7 +259,6 @@
       "moral_06": "C",
       "moral_19": "D",
       "moral_02": "C",
-      "moral_05": "N",
       "moral_17": "D",
       "moral_13": "D",
       "moral_11": "N",
@@ -270,7 +266,6 @@
       "moral_18": "D",
       "moral_16": "C",
       "moral_14": "D",
-      "moral_08": "N",
       "moral_20": "C"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "C",
     "tecnologia": "C"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "N",
+      "moral_08": "N"
+    }
   }
 }

@@ -167,11 +167,9 @@
       "economia_18": "CT",
       "economia_15": "DT",
       "economia_20": "C",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "C",
-      "economia_08": "CT"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Modernizador nas instituições (ensino laico, registro civil), Roca era nos costumes um homem da elite patriarcal do século XIX, que comandou a Conquista do Deserto em nome da 'civilização'. Família tradicional, hierarquia social e mudança gradual sob ordem, sem qualquer agenda de igualdade racial ou de gênero.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "DT",
       "moral_12": "C",
       "moral_03": "D",
@@ -262,7 +259,6 @@
       "moral_06": "CT",
       "moral_19": "D",
       "moral_02": "C",
-      "moral_05": "DT",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "DT",
@@ -270,7 +266,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "D"
     }
   },
@@ -305,5 +300,18 @@
     "economia": "F",
     "mundo": "D",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "CT",
+      "moral_05": "DT",
+      "moral_08": "C"
+    }
   }
 }

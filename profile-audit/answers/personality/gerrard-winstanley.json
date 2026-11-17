@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "A terra é um tesouro comum: abolir a propriedade privada da terra, o aluguel, o salário e o comércio com a terra.",
   "answers": {
-   "economia_01": "CT",
    "economia_02": "DT",
    "economia_03": "CT",
    "economia_04": "DT",
    "economia_05": "CT",
    "economia_06": "DT",
    "economia_07": "CT",
-   "economia_08": "DT",
    "economia_09": "CT",
    "economia_10": "DT",
    "economia_11": "CT",
@@ -255,11 +253,8 @@
    "moral_01": "C",
    "moral_02": "C",
    "moral_03": "N",
-   "moral_04": "C",
-   "moral_05": "C",
    "moral_06": "C",
    "moral_07": "N",
-   "moral_08": "N",
    "moral_09": "D",
    "moral_10": "C",
    "moral_11": "D",
@@ -305,5 +300,18 @@
   "economia": "A",
   "mundo": "E",
   "tecnologia": "A"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "CT",
+   "moral_04": "C"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "DT",
+   "moral_05": "C",
+   "moral_08": "N"
+  }
  }
 }

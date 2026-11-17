@@ -139,7 +139,7 @@ Persona brief (1-2 frases) conectando a description acima a ESTE eixo especifica
 20. [id=intervencao_15] O Brasil não deveria aplicar sanções a países cujos governos desaprova.
 
 ### Eixo "economia" — propriedade/produção pública-coletiva vs. privada-individual
-Persona brief (1-2 frases) conectando a description acima a ESTE eixo especificamente, depois responda as 20 perguntas.
+Persona brief (1-2 frases) conectando a description acima a ESTE eixo especificamente, depois responda as 18 perguntas.
 1. [id=economia_05] Grandes empresas deveriam pertencer a seus trabalhadores, não a donos privados.
 2. [id=economia_06] Estradas e presídios deveriam poder ser administrados por empresas privadas.
 3. [id=economia_07] Quando o mercado exclui os pobres, o Estado deve assumir o serviço diretamente.
@@ -155,11 +155,9 @@ Persona brief (1-2 frases) conectando a description acima a ESTE eixo especifica
 13. [id=economia_18] A propriedade privada deve ser respeitada mesmo quando gera muita desigualdade.
 14. [id=economia_15] O Brasil deveria redistribuir grandes propriedades rurais por meio de uma reforma agrária.
 15. [id=economia_20] A gestão de serviços públicos deveria priorizar o setor privado.
-16. [id=economia_01] Sou a favor de uma revolução para redistribuir o poder econômico concentrado nas mãos de poucos.
-17. [id=economia_10] Os impostos deveriam ser voluntários.
-18. [id=economia_09] Saúde, educação e água não deveriam funcionar sob a lógica do lucro.
-19. [id=economia_02] Serviços públicos deveriam ser prestados por empresas privadas quando houver concorrência.
-20. [id=economia_08] A herança familiar deve ser protegida contra políticas de redistribuição de patrimônio.
+16. [id=economia_10] Os impostos deveriam ser voluntários.
+17. [id=economia_09] Saúde, educação e água não deveriam funcionar sob a lógica do lucro.
+18. [id=economia_02] Serviços públicos deveriam ser prestados por empresas privadas quando houver concorrência.
 
 ### Eixo "controle" — planejamento e direção estatal da economia vs. livre-mercado
 Persona brief (1-2 frases) conectando a description acima a ESTE eixo especificamente, depois responda as 20 perguntas.
@@ -231,27 +229,24 @@ Persona brief (1-2 frases) conectando a description acima a ESTE eixo especifica
 20. [id=religiao_04] As leis do país deveriam refletir os valores da religião da maioria.
 
 ### Eixo "moral" — progressismo social vs. tradicionalismo
-Persona brief (1-2 frases) conectando a description acima a ESTE eixo especificamente, depois responda as 20 perguntas.
+Persona brief (1-2 frases) conectando a description acima a ESTE eixo especificamente, depois responda as 17 perguntas.
 1. [id=moral_07] Casais LGBT devem poder demonstrar afeto em público como qualquer outro casal.
-2. [id=moral_04] Prefiro mudanças culturais graduais a mudanças culturais rápidas.
-3. [id=moral_15] Devemos reduzir o consumo de carne por respeito aos animais.
-4. [id=moral_12] A educação sexual dos filhos deve seguir os valores da família, não os da escola.
-5. [id=moral_03] A identidade de gênero declarada por cada pessoa deve ser respeitada.
-6. [id=moral_01] Casais do mesmo sexo devem ter o mesmo direito de adotar crianças que outros casais.
-7. [id=moral_09] Considero o aborto no início da gravidez moralmente aceitável.
-8. [id=moral_06] O casamento deve ser reconhecido apenas entre um homem e uma mulher.
-9. [id=moral_19] A nudez no cinema, na arte e nas praias não deveria ser considerada ofensiva.
-10. [id=moral_02] A família tradicional deve servir de modelo para a sociedade.
-11. [id=moral_05] Sou a favor de cotas raciais no acesso às universidades.
-12. [id=moral_17] Relações abertas e poliamor devem ser tão respeitados quanto o casamento.
-13. [id=moral_13] A prostituição deve ser reconhecida como um trabalho legítimo.
-14. [id=moral_11] Adolescentes deveriam receber educação sobre identidade de gênero.
-15. [id=moral_10] Considero o aborto moralmente errado.
-16. [id=moral_18] Cuidar da família deve ser a principal prioridade na vida de uma mulher.
-17. [id=moral_16] Considero o consumo de pornografia moralmente errado.
-18. [id=moral_14] A linguagem neutra não deveria ser adotada em nossa sociedade.
-19. [id=moral_08] Sou contra cotas raciais no acesso a cargos públicos.
-20. [id=moral_20] Os pais devem ser a autoridade final na educação moral dos filhos.
+2. [id=moral_15] Devemos reduzir o consumo de carne por respeito aos animais.
+3. [id=moral_12] A educação sexual dos filhos deve seguir os valores da família, não os da escola.
+4. [id=moral_03] A identidade de gênero declarada por cada pessoa deve ser respeitada.
+5. [id=moral_01] Casais do mesmo sexo devem ter o mesmo direito de adotar crianças que outros casais.
+6. [id=moral_09] Considero o aborto no início da gravidez moralmente aceitável.
+7. [id=moral_06] O casamento deve ser reconhecido apenas entre um homem e uma mulher.
+8. [id=moral_19] A nudez no cinema, na arte e nas praias não deveria ser considerada ofensiva.
+9. [id=moral_02] A família tradicional deve servir de modelo para a sociedade.
+10. [id=moral_17] Relações abertas e poliamor devem ser tão respeitados quanto o casamento.
+11. [id=moral_13] A prostituição deve ser reconhecida como um trabalho legítimo.
+12. [id=moral_11] Adolescentes deveriam receber educação sobre identidade de gênero.
+13. [id=moral_10] Considero o aborto moralmente errado.
+14. [id=moral_18] Cuidar da família deve ser a principal prioridade na vida de uma mulher.
+15. [id=moral_16] Considero o consumo de pornografia moralmente errado.
+16. [id=moral_14] A linguagem neutra não deveria ser adotada em nossa sociedade.
+17. [id=moral_20] Os pais devem ser a autoridade final na educação moral dos filhos.
 
 ### Eixo "tecnologia" — abraçar tecnologia/biotecnologia vs. priorizar natureza/limites biológicos
 Persona brief (1-2 frases) conectando a description acima a ESTE eixo especificamente, depois responda as 20 perguntas.
@@ -275,3 +270,49 @@ Persona brief (1-2 frases) conectando a description acima a ESTE eixo especifica
 18. [id=tecnologia_02] Prefiro um modo de vida simples e natural a uma vida com muita tecnologia.
 19. [id=tecnologia_14] A edição genética de embriões para aumentar a inteligência deveria ser proibida.
 20. [id=tecnologia_11] A humanidade deveria investir na exploração de outros planetas.
+
+### Eixo "metodo" — gradualismo/reforma pelas instituições vs. ruptura/ação direta (mede o MEIO da mudança, não a direção)
+Persona brief (1-2 frases) conectando a description acima a ESTE eixo especificamente, depois responda as 20 perguntas.
+1. [id=metodo_11] Instituições antigas costumam guardar uma sabedoria que não percebemos à primeira vista.
+2. [id=metodo_14] Partidos que entram no governo acabam corrompidos pelo sistema que prometiam mudar.
+3. [id=metodo_17] Quem quer mudar o país deve primeiro convencer a maioria da população, não impor sua visão.
+4. [id=metodo_08] Às vezes é preciso que a situação piore para que as pessoas aceitem uma mudança radical.
+5. [id=moral_04] Prefiro mudanças culturais graduais a mudanças culturais rápidas.
+6. [id=metodo_04] A violência pode ser legítima para derrubar uma ordem política injusta.
+7. [id=metodo_13] Um político deve aceitar vitórias parciais em vez de insistir no tudo ou nada.
+8. [id=economia_01] Sou a favor de uma revolução para redistribuir o poder econômico concentrado nas mãos de poucos.
+9. [id=metodo_12] A Constituição atual deveria ser substituída por uma completamente nova.
+10. [id=metodo_09] Leis injustas devem ser mudadas pelo Congresso, não desobedecidas.
+11. [id=metodo_05] Mudanças conquistadas nas urnas são mais duradouras que as conquistadas nas ruas.
+12. [id=metodo_15] Mesmo um governo ruim deve ser combatido apenas por meios legais.
+13. [id=metodo_01] Mudanças políticas profundas devem acontecer aos poucos, por meio das instituições existentes.
+14. [id=metodo_03] Fazer acordos com adversários políticos é necessário para avançar qualquer agenda.
+15. [id=metodo_07] Protestos devem permanecer pacíficos, mesmo quando o governo ignora as reivindicações.
+16. [id=metodo_16] Cidadãos armados podem ser necessários para defender o país de um governo tirânico.
+17. [id=metodo_02] Um movimento político não deve abrir mão de seus princípios para conquistar votos.
+18. [id=metodo_18] Mudanças rápidas e profundas são melhores que décadas de pequenas reformas.
+19. [id=metodo_10] Uma minoria organizada e consciente deve liderar o povo rumo à mudança, mesmo sem apoio da maioria.
+20. [id=metodo_06] Bloquear estradas e ocupar prédios públicos são formas legítimas de pressão política.
+
+### Eixo "distribuicao" — igualitarismo/redistribuição vs. meritocracia/aceitação da desigualdade (não mede quem é dono das empresas)
+Persona brief (1-2 frases) conectando a description acima a ESTE eixo especificamente, depois responda as 20 perguntas.
+1. [id=distribuicao_15] Impostos sobre consumo pesam mais sobre os pobres e deveriam dar lugar a impostos sobre renda e patrimônio.
+2. [id=distribuicao_04] Um imposto de alíquota única, igual para todos, é o sistema mais justo.
+3. [id=distribuicao_10] É natural e saudável que algumas pessoas tenham muito mais que outras.
+4. [id=economia_08] A herança familiar deve ser protegida contra políticas de redistribuição de patrimônio.
+5. [id=moral_08] Sou contra cotas raciais no acesso a cargos públicos.
+6. [id=distribuicao_17] Filhos de famílias pobres e ricas deveriam ter o mesmo ponto de partida, mesmo que isso exija grande redistribuição.
+7. [id=distribuicao_02] Desigualdade de renda é aceitável quando reflete diferenças de esforço e talento.
+8. [id=distribuicao_11] Escolas de bairros pobres deveriam receber mais recursos públicos que as de bairros ricos.
+9. [id=distribuicao_05] Deveria haver um limite para a diferença entre o maior e o menor salário de uma empresa.
+10. [id=distribuicao_08] Combater a pobreza é importante, mas reduzir a desigualdade não deve ser objetivo do Estado.
+11. [id=distribuicao_12] Programas sociais devem exigir contrapartidas, como trabalho ou estudo, de quem os recebe.
+12. [id=distribuicao_09] Uma sociedade muito desigual é injusta, mesmo que ninguém viva na pobreza.
+13. [id=distribuicao_16] Impostos altos sobre os ricos punem quem gera empregos e riqueza.
+14. [id=distribuicao_14] Alunos mais talentosos deveriam estudar em turmas ou escolas separadas.
+15. [id=distribuicao_03] Grandes fortunas deveriam ser taxadas anualmente.
+16. [id=moral_05] Sou a favor de cotas raciais no acesso às universidades.
+17. [id=distribuicao_07] O Estado deve buscar igualdade de resultados, não apenas de oportunidades.
+18. [id=distribuicao_01] Os mais ricos deveriam pagar uma porcentagem de impostos bem maior que a classe média.
+19. [id=distribuicao_13] Salários de executivos muito acima da média deveriam ser desestimulados por impostos.
+20. [id=distribuicao_06] Quem chega ao topo pelo próprio mérito não deve se sentir culpado pela riqueza que tem.

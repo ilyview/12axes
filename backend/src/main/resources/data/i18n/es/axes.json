@@ -70,5 +70,17 @@
     "label": "Tecnología",
     "leftPole": "Tecnología",
     "rightPole": "Biología"
+  },
+  {
+    "id": "metodo",
+    "label": "Método",
+    "leftPole": "Gradualismo",
+    "rightPole": "Ruptura"
+  },
+  {
+    "id": "distribuicao",
+    "label": "Distribución",
+    "leftPole": "Igualitario",
+    "rightPole": "Meritocrático"
   }
 ]

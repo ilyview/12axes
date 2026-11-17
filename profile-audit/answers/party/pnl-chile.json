@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Mercado livre radical: privatizações, impostos mínimos e fim de monopólios estatais.",
   "answers": {
-   "economia_01": "D",
    "economia_02": "CT",
    "economia_03": "DT",
    "economia_04": "C",
    "economia_05": "D",
    "economia_06": "CT",
    "economia_07": "D",
-   "economia_08": "CT",
    "economia_09": "DT",
    "economia_10": "CT",
    "economia_11": "DT",
@@ -255,11 +253,8 @@
    "moral_01": "DT",
    "moral_02": "CT",
    "moral_03": "DT",
-   "moral_04": "C",
-   "moral_05": "DT",
    "moral_06": "C",
    "moral_07": "DT",
-   "moral_08": "CT",
    "moral_09": "D",
    "moral_10": "CT",
    "moral_11": "DT",
@@ -305,5 +300,18 @@
   "economia": "F",
   "mundo": "B",
   "tecnologia": "D"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "D",
+   "moral_04": "C"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "CT",
+   "moral_05": "DT",
+   "moral_08": "CT"
+  }
  }
 }

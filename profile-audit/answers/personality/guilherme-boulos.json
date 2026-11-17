@@ -167,11 +167,9 @@
       "economia_18": "D",
       "economia_15": "C",
       "economia_20": "D",
-      "economia_01": "D",
       "economia_10": "DT",
       "economia_09": "CT",
-      "economia_02": "D",
-      "economia_08": "D"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -253,7 +251,6 @@
     "personaBrief": "Boulos é uma das figuras mais progressistas da política institucional brasileira, defendendo pautas de gênero, diversidade sexual, cotas raciais e direitos reprodutivos como parte central de sua agenda de justiça social.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "C",
       "moral_12": "D",
       "moral_03": "CT",
@@ -268,9 +265,7 @@
       "moral_14": "CT",
       "moral_10": "DT",
       "moral_18": "DT",
-      "moral_05": "CT",
       "moral_16": "D",
-      "moral_08": "DT",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "DT",
       "tecnologia_14": "CT",
       "tecnologia_11": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "CT",
+      "moral_08": "DT"
     }
   }
 }

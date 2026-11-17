@@ -38,7 +38,7 @@
   "economia": {
     "personaBrief": "Inácio fez voto de pobreza e organizou uma ordem voltada à educação e à missão, mas isso descreve a disciplina de uma comunidade religiosa, não um programa de propriedade pública para a sociedade. Uma postura de proteção aos necessitados é plausível; posições específicas sobre empresas, impostos ou serviços públicos não são documentadas.",
     "answers": {
-      "economia_01": "DT", "economia_02": "D", "economia_03": "C", "economia_04": "D", "economia_05": "D", "economia_06": "C", "economia_07": "C", "economia_08": "C", "economia_09": "C", "economia_10": "DT", "economia_11": "C", "economia_12": "D", "economia_13": "C", "economia_14": "C", "economia_15": "D", "economia_16": "DT", "economia_17": "D", "economia_18": "C", "economia_19": "C", "economia_20": "D"
+      "economia_02": "D", "economia_03": "C", "economia_04": "D", "economia_05": "D", "economia_06": "C", "economia_07": "C", "economia_09": "C", "economia_10": "DT", "economia_11": "C", "economia_12": "D", "economia_13": "C", "economia_14": "C", "economia_15": "D", "economia_16": "DT", "economia_17": "D", "economia_18": "C", "economia_19": "C", "economia_20": "D"
     }
   },
   "controle": {
@@ -62,7 +62,7 @@
   "moral": {
     "personaBrief": "Como sacerdote católico do século XVI, Inácio viveu dentro de uma tradição moral que valorizava matrimônio, disciplina sexual e autoridade familiar. As respostas acompanham essa moldura histórica; temas contemporâneos como identidade de gênero, cotas e linguagem neutra exigem inferência, não alegações de declarações pessoais.",
     "answers": {
-      "moral_01": "DT", "moral_02": "CT", "moral_03": "D", "moral_04": "C", "moral_05": "D", "moral_06": "DT", "moral_07": "DT", "moral_08": "CT", "moral_09": "D", "moral_10": "CT", "moral_11": "D", "moral_12": "CT", "moral_13": "DT", "moral_14": "DT", "moral_15": "C", "moral_16": "CT", "moral_17": "CT", "moral_18": "CT", "moral_19": "D", "moral_20": "CT"
+      "moral_01": "DT", "moral_02": "CT", "moral_03": "D", "moral_06": "DT", "moral_07": "DT", "moral_09": "D", "moral_10": "CT", "moral_11": "D", "moral_12": "CT", "moral_13": "DT", "moral_14": "DT", "moral_15": "C", "moral_16": "CT", "moral_17": "CT", "moral_18": "CT", "moral_19": "D", "moral_20": "CT"
     }
   },
   "tecnologia": {
@@ -77,5 +77,7 @@
     "economia": "C",
     "mundo": "C",
     "tecnologia": "C"
-  }
+  },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "D", "moral_08": "CT"}}
 }

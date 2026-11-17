@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Governa economia de mercado com Estado de bem-estar forte e participações pontuais (SEPI), serviços públicos universais, sem nacionalizações nem coletivização.",
   "answers": {
-   "economia_01": "DT",
    "economia_02": "N",
    "economia_03": "C",
    "economia_04": "DT",
    "economia_05": "D",
    "economia_06": "DT",
    "economia_07": "C",
-   "economia_08": "D",
    "economia_09": "C",
    "economia_10": "DT",
    "economia_11": "D",
@@ -255,11 +253,8 @@
    "moral_01": "CT",
    "moral_02": "D",
    "moral_03": "CT",
-   "moral_04": "D",
-   "moral_05": "C",
    "moral_06": "DT",
    "moral_07": "CT",
-   "moral_08": "DT",
    "moral_09": "CT",
    "moral_10": "DT",
    "moral_11": "C",
@@ -305,5 +300,18 @@
   "economia": "C",
   "mundo": "C",
   "tecnologia": "C"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "DT",
+   "moral_04": "D"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "D",
+   "moral_05": "C",
+   "moral_08": "DT"
+  }
  }
 }

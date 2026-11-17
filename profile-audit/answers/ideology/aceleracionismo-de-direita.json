@@ -167,11 +167,9 @@
    "economia_18": "C",
    "economia_15": "D",
    "economia_20": "CT",
-   "economia_01": "D",
    "economia_10": "C",
    "economia_09": "D",
-   "economia_02": "C",
-   "economia_08": "C"
+   "economia_02": "C"
   }
  },
  "controle": {
@@ -253,7 +251,6 @@
   "personaBrief": "Rejeita o progressismo e o igualitarismo, e a ala militante é identitária e hierárquica; a ala landiana é transgressora e não defende tradição como fim em si, daí o tradicionalismo moderado e algum N.",
   "answers": {
    "moral_07": "N",
-   "moral_04": "D",
    "moral_15": "DT",
    "moral_12": "C",
    "moral_03": "D",
@@ -262,7 +259,6 @@
    "moral_06": "C",
    "moral_19": "C",
    "moral_02": "C",
-   "moral_05": "DT",
    "moral_17": "N",
    "moral_13": "C",
    "moral_11": "D",
@@ -270,7 +266,6 @@
    "moral_18": "C",
    "moral_16": "C",
    "moral_14": "CT",
-   "moral_08": "CT",
    "moral_20": "C"
   }
  },
@@ -305,5 +300,18 @@
   "economia": "F",
   "mundo": "A",
   "tecnologia": "E"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "D",
+   "moral_04": "D"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "C",
+   "moral_05": "DT",
+   "moral_08": "CT"
+  }
  }
 }

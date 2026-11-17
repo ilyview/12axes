@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Economia de mercado com Estado social e capacidade administrativa; rejeita estatização e privatização radical.",
   "answers": {
-   "economia_01": "DT",
    "economia_02": "C",
    "economia_03": "D",
    "economia_04": "D",
    "economia_05": "DT",
    "economia_06": "D",
    "economia_07": "N",
-   "economia_08": "C",
    "economia_09": "D",
    "economia_10": "DT",
    "economia_11": "C",
@@ -255,11 +253,8 @@
    "moral_01": "C",
    "moral_02": "N",
    "moral_03": "C",
-   "moral_04": "C",
-   "moral_05": "C",
    "moral_06": "D",
    "moral_07": "C",
-   "moral_08": "C",
    "moral_09": "C",
    "moral_10": "D",
    "moral_11": "N",
@@ -305,5 +300,18 @@
   "economia": "C",
   "mundo": "C",
   "tecnologia": "C"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "DT",
+   "moral_04": "C"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "C",
+   "moral_05": "C",
+   "moral_08": "C"
+  }
  }
 }

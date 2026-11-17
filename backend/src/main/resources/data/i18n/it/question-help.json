@@ -924,7 +924,7 @@
     "disagree": "Il potere economico non dovrebbe essere ridistribuito con una rivoluzione, sia perché si preferiscono riforme legali sia perché non si vuole la ridistribuzione.",
     "agreeExample": "Messico, la cui rivoluzione del 1910 portò alla riforma agraria sancita nella Costituzione del 1917.",
     "disagreeExample": "Brasile, che ridistribuisce il reddito con la Bolsa Família, creata per legge nel 2004.",
-    "note": "La domanda unisce ridistribuzione e rivoluzione. Chi vuole ridistribuire con mezzi legali dovrebbe pensare solo alla ridistribuzione."
+    "note": "La domanda unisce redistribuzione e rivoluzione. Su questo asse conta il mezzo: chi vuole redistribuire, ma solo per vie legali, è in disaccordo."
   },
   {
     "id": "economia_02",
@@ -1845,5 +1845,191 @@
     "agreeExample": "Stati Uniti, dove il 24% ha detto che esoscheletri diffusi che danno ai lavoratori forza extra sarebbero un male per la società (Pew, 2022).",
     "disagreeExample": "Stati Uniti, dove il 33% ha detto che sarebbero un bene per la società.",
     "note": "Qui si misura solo il potenziamento di persone sane, non l'uso medico. Chi accetta gli impianti solo per curare disabilità o malattie è d'accordo con «Sono contrario»."
+  },
+  {
+    "id": "metodo_01",
+    "agree": "Anche le grandi trasformazioni devono passare, passo dopo passo, per il Parlamento, i tribunali e le elezioni.",
+    "disagree": "I cambiamenti profondi possono richiedere di uscire dalle istituzioni attuali o di avvenire tutti in una volta.",
+    "note": "Misura la strada del cambiamento, non la sua direzione. Chi vuole trasformare molto il paese, ma per vie istituzionali, è d'accordo."
+  },
+  {
+    "id": "metodo_02",
+    "agree": "Mantenere intatte le idee conta più che allargare il consenso elettorale con concessioni.",
+    "disagree": "Moderare il programma per vincere le elezioni e poter governare è legittimo e necessario."
+  },
+  {
+    "id": "metodo_03",
+    "agree": "Negoziare e cedere in parte con chi la pensa diversamente è il modo normale di fare politica.",
+    "disagree": "Gli accordi con gli avversari annacquano il progetto e vanno evitati."
+  },
+  {
+    "id": "metodo_04",
+    "agree": "Ci sono situazioni in cui usare la forza contro un regime è giustificato.",
+    "disagree": "La violenza non è un mezzo legittimo per cambiare l'ordine politico, anche quando è ingiusto.",
+    "note": "Vale per qualsiasi parte: una rivoluzione, un'insurrezione o la resistenza armata a una dittatura."
+  },
+  {
+    "id": "metodo_05",
+    "agree": "Le vittorie elettorali producono cambiamenti più stabili di proteste, occupazioni o rivolte.",
+    "disagree": "La pressione della piazza e la mobilitazione diretta producono cambiamenti più profondi o più rapidi."
+  },
+  {
+    "id": "metodo_06",
+    "agree": "Le azioni dirette che intralciano il normale funzionamento sono accettabili per forzare un cambiamento.",
+    "disagree": "La pressione politica dovrebbe limitarsi a forme che non bloccano strade né occupano edifici pubblici.",
+    "note": "Vale per qualsiasi causa: scioperi con blocchi, occupazioni di terre o scuole, o accampamenti davanti alle caserme."
+  },
+  {
+    "id": "metodo_07",
+    "agree": "Anche senza risposta del governo, le manifestazioni non dovrebbero passare alla distruzione o allo scontro.",
+    "disagree": "Se il governo ignora le proteste pacifiche, forme di pressione più dure diventano accettabili."
+  },
+  {
+    "id": "metodo_08",
+    "agree": "Crisi e crolli possono essere utili perché aprono spazio a una trasformazione profonda.",
+    "disagree": "Peggiorare la situazione di proposito, o sperarlo, non è una strada accettabile per cambiare.",
+    "note": "È l'idea nota come accelerazionismo, sostenuta in versioni di sinistra e di destra."
+  },
+  {
+    "id": "metodo_09",
+    "agree": "Anche una legge ritenuta ingiusta va rispettata finché non viene abrogata per le vie normali.",
+    "disagree": "Disobbedire apertamente alle leggi ingiuste è un modo legittimo per cambiarle.",
+    "note": "Riguarda la disobbedienza civile, come quella di Gandhi o del movimento per i diritti civili negli Stati Uniti."
+  },
+  {
+    "id": "metodo_10",
+    "agree": "Un gruppo deciso può e deve guidare la trasformazione prima che la maggioranza la sostenga.",
+    "disagree": "Il cambiamento è legittimo solo quando nasce dal sostegno della maggioranza, non dall'iniziativa di una minoranza.",
+    "note": "È l'idea di avanguardia, presente nel leninismo ma anche in movimenti nazionalisti e golpisti."
+  },
+  {
+    "id": "metodo_11",
+    "agree": "Ciò che ha resistito al tempo di solito ha delle ragioni d'essere, quindi va cambiato con cautela.",
+    "disagree": "Le istituzioni antiche non meritano un riguardo speciale solo perché antiche e possono essere sostituite senza timore.",
+    "note": "Idea associata a Edmund Burke: misura la prudenza verso il cambiamento, non l'attaccamento ai valori morali."
+  },
+  {
+    "id": "metodo_12",
+    "agree": "È meglio ripartire con una nuova Costituzione che continuare a emendare quella attuale.",
+    "disagree": "La Costituzione attuale va mantenuta, anche se con emendamenti."
+  },
+  {
+    "id": "metodo_13",
+    "agree": "Avanzare un po' è meglio che non avanzare affatto rifiutando i compromessi.",
+    "disagree": "Accettare mezze vittorie indebolisce la causa; è meglio tenere ferma la richiesta completa."
+  },
+  {
+    "id": "metodo_14",
+    "agree": "Contendersi e occupare il governo tende ad addomesticare chi voleva trasformare il sistema.",
+    "disagree": "Arrivare al governo è un modo efficace per cambiare il sistema dall'interno."
+  },
+  {
+    "id": "metodo_15",
+    "agree": "Contro un cattivo governo valgono le elezioni, i tribunali, la stampa e la protesta nel rispetto della legge.",
+    "disagree": "Contro un cattivo governo, i mezzi illegali possono essere giustificati.",
+    "note": "Pensa a un cattivo governo, non a una dittatura che ha chiuso ogni via legale."
+  },
+  {
+    "id": "metodo_16",
+    "agree": "La popolazione dovrebbe essere pronta a resistere con la forza a un governo diventato tirannico.",
+    "disagree": "Resistere con la forza a un governo non è compito dei cittadini, nemmeno di fronte ad abusi.",
+    "note": "Riguarda la resistenza armata al proprio governo, non il possesso di armi per difesa personale."
+  },
+  {
+    "id": "metodo_17",
+    "agree": "Un cambiamento dovrebbe andare avanti solo dopo aver conquistato il sostegno della maggioranza.",
+    "disagree": "Se la causa è giusta, è accettabile realizzarla prima che la maggioranza sia d'accordo."
+  },
+  {
+    "id": "metodo_18",
+    "agree": "Una trasformazione in un colpo solo ottiene più di progressi lenti e graduali.",
+    "disagree": "Riforme piccole e continue funzionano meglio dei cambiamenti bruschi.",
+    "note": "Misura il ritmo, non la direzione: vale anche per chi vuole annullare dei cambiamenti in un colpo solo."
+  },
+  {
+    "id": "distribuicao_01",
+    "agree": "Le tasse dovrebbero essere fortemente progressive, con aliquote molto più alte in cima.",
+    "disagree": "I più ricchi non dovrebbero pagare un'aliquota molto più alta della classe media."
+  },
+  {
+    "id": "distribuicao_02",
+    "agree": "Le differenze di reddito sono giuste quando derivano dal lavoro e dalle capacità di ciascuno.",
+    "disagree": "Grandi differenze di reddito sono un problema anche quando derivano da impegno e talento."
+  },
+  {
+    "id": "distribuicao_03",
+    "agree": "I patrimoni molto grandi dovrebbero pagare una tassa annuale sul loro valore.",
+    "disagree": "I grandi patrimoni non dovrebbero avere una patrimoniale annuale.",
+    "note": "Riguarda una tassa sul patrimonio accumulato, non sul reddito."
+  },
+  {
+    "id": "distribuicao_04",
+    "agree": "Tutti dovrebbero pagare la stessa percentuale del reddito, senza aliquote più alte per chi guadagna di più.",
+    "disagree": "Chi guadagna di più dovrebbe pagare una percentuale più alta del proprio reddito."
+  },
+  {
+    "id": "distribuicao_05",
+    "agree": "La legge dovrebbe limitare di quante volte lo stipendio più alto può superare il più basso in un'azienda.",
+    "disagree": "Il divario salariale in un'azienda non dovrebbe avere un limite di legge."
+  },
+  {
+    "id": "distribuicao_06",
+    "agree": "La ricchezza ottenuta con il proprio impegno è legittima e non ha bisogno di giustificazioni.",
+    "disagree": "Anche la ricchezza ottenuta per merito comporta un dovere morale verso chi è rimasto indietro."
+  },
+  {
+    "id": "distribuicao_07",
+    "agree": "Non basta dare a tutti le stesse possibilità; lo Stato dovrebbe ridurre le differenze di reddito e di condizioni di vita.",
+    "disagree": "Il ruolo dello Stato è garantire pari opportunità, non uguagliare i risultati."
+  },
+  {
+    "id": "distribuicao_08",
+    "agree": "Lo Stato dovrebbe garantire una soglia minima, ma non preoccuparsi della distanza tra ricchi e poveri.",
+    "disagree": "Ridurre la distanza tra ricchi e poveri dovrebbe essere anche un obiettivo dello Stato."
+  },
+  {
+    "id": "distribuicao_09",
+    "agree": "La disuguaglianza è un problema in sé, non solo quando crea povertà.",
+    "disagree": "Se nessuno è povero, la disuguaglianza tra le persone non è ingiusta."
+  },
+  {
+    "id": "distribuicao_10",
+    "agree": "Grandi differenze di ricchezza fanno parte di una società normale e stimolano il progresso.",
+    "disagree": "Grandi differenze di ricchezza non sono né naturali né sane per la società."
+  },
+  {
+    "id": "distribuicao_11",
+    "agree": "Il denaro pubblico per l'istruzione dovrebbe andare di più dove c'è più bisogno.",
+    "disagree": "Le scuole pubbliche dovrebbero ricevere fondi uguali, senza dare di più a quelle dei quartieri poveri."
+  },
+  {
+    "id": "distribuicao_12",
+    "agree": "Chi riceve aiuti dallo Stato dovrebbe rispettare degli obblighi, come lavorare, studiare o cercare lavoro.",
+    "disagree": "L'aiuto sociale dovrebbe essere dato senza chiedere nulla in cambio a chi ne ha bisogno."
+  },
+  {
+    "id": "distribuicao_13",
+    "agree": "Le retribuzioni molto alte dovrebbero pagare tasse extra, così da essere meno attraenti.",
+    "disagree": "Gli stipendi alti dei dirigenti non dovrebbero avere tasse speciali."
+  },
+  {
+    "id": "distribuicao_14",
+    "agree": "Gli studenti che imparano più facilmente dovrebbero essere separati per avanzare al proprio ritmo.",
+    "disagree": "Studenti di livelli diversi dovrebbero studiare insieme, senza classi o scuole separate in base al rendimento."
+  },
+  {
+    "id": "distribuicao_15",
+    "agree": "Le entrate dovrebbero dipendere meno dalle tasse sui prodotti e più da quelle su chi guadagna e possiede di più.",
+    "disagree": "Le imposte sui consumi non dovrebbero essere sostituite da più tasse su reddito e patrimonio."
+  },
+  {
+    "id": "distribuicao_16",
+    "agree": "Tassare pesantemente i più ricchi scoraggia gli investimenti e danneggia l'economia.",
+    "disagree": "Tasse alte sui ricchi sono giuste e non danneggiano la creazione di lavoro."
+  },
+  {
+    "id": "distribuicao_17",
+    "agree": "Lo Stato dovrebbe redistribuire molto perché l'origine familiare non decida le possibilità di un bambino.",
+    "disagree": "Le differenze di partenza tra famiglie sono accettabili e non giustificano una grande redistribuzione."
   }
 ]

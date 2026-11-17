@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "O núcleo do perfil: metas socialistas de igualdade e justiça social aplicadas dentro de uma economia mista, com forte presença pública em setores estratégicos e serviços essenciais, mas sem abolir a propriedade privada nem o mercado.",
     "answers": {
-      "economia_01": "D",
       "economia_02": "N",
       "economia_03": "C",
       "economia_04": "D",
       "economia_05": "N",
       "economia_06": "DT",
       "economia_07": "C",
-      "economia_08": "D",
       "economia_09": "C",
       "economia_10": "DT",
       "economia_11": "C",
@@ -255,11 +253,8 @@
       "moral_01": "CT",
       "moral_02": "D",
       "moral_03": "C",
-      "moral_04": "D",
-      "moral_05": "C",
       "moral_06": "DT",
       "moral_07": "CT",
-      "moral_08": "D",
       "moral_09": "CT",
       "moral_10": "D",
       "moral_11": "C",
@@ -297,6 +292,19 @@
       "tecnologia_18": "D",
       "tecnologia_19": "N",
       "tecnologia_20": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "D",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

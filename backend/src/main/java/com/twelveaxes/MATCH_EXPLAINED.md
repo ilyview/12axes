@@ -46,7 +46,7 @@ Idiomas:
 
 Recebe respostas do quiz, calcula eixos e retorna:
 
-- `axes`: os 12 eixos calculados.
+- `axes`: os 14 eixos calculados.
 - `topMatch`: primeira ideologia do ranking final.
 - `matches`: 4 ideologias finais.
 - `topCountryMatch`: pais mais compativel.
@@ -271,7 +271,7 @@ Isso impede que um usuario "morno" ganhe nota quase perfeita contra um perfil ra
 
 Pergunta: existe algum eixo isolado onde usuario e alvo divergem muito, mesmo que a media geral va bem?
 
-Esse componente existe para o seguinte problema: um perfil pode ter compatibilidade alta na media (11 dos 12 eixos proximos) e ainda assim ter 1 eixo com diferenca enorme (ex.: usuario liberal na economia vs. alvo com economia totalmente estatizada). Os outros 3 componentes diluem esse outlier na media geral e o usuario ve uma nota alta para um perfil que diverge muito dele nesse eixo especifico.
+Esse componente existe para o seguinte problema: um perfil pode ter compatibilidade alta na media (13 dos 14 eixos proximos) e ainda assim ter 1 eixo com diferenca enorme (ex.: usuario liberal na economia vs. alvo com economia totalmente estatizada). Os outros 3 componentes diluem esse outlier na media geral e o usuario ve uma nota alta para um perfil que diverge muito dele nesse eixo especifico.
 
 Primeiro calcula a maior diferenca absoluta entre os dois vetores, em qualquer eixo:
 
@@ -450,7 +450,7 @@ Foi o bug observado em producao: usuario com extremidade media baixa recebeu "Qu
 
 ### Tratar `compatibility` como probabilidade
 
-`compatibility` e uma nota de proximidade no espaco dos 12 eixos, nao uma chance estatistica.
+`compatibility` e uma nota de proximidade no espaco dos 14 eixos, nao uma chance estatistica.
 
 ### Fixar numero magico em teste de fluxo
 

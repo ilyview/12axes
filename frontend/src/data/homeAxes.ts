@@ -96,5 +96,21 @@ export const HOME_AXES: Axis[] = [
     rightPole: 'Biologia',
     leftColor: '#5376B0',
     rightColor: '#4E9020'
+  },
+  {
+    id: 'metodo',
+    label: 'Método',
+    leftPole: 'Gradualismo',
+    rightPole: 'Ruptura',
+    leftColor: '#4A6FA5',
+    rightColor: '#B8432F'
+  },
+  {
+    id: 'distribuicao',
+    label: 'Distribuição',
+    leftPole: 'Igualitário',
+    rightPole: 'Meritocrático',
+    leftColor: '#D9731A',
+    rightColor: '#2B7A78'
   }
 ];

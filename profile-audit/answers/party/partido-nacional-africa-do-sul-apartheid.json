@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Capitalismo africâner com forte Estado (ISCOR, SASOL, Eskom), emprego protegido para brancos e hostilidade a sindicatos negros.",
   "answers": {
-   "economia_01": "DT",
    "economia_02": "D",
    "economia_03": "C",
    "economia_04": "D",
    "economia_05": "DT",
    "economia_06": "D",
    "economia_07": "C",
-   "economia_08": "C",
    "economia_09": "D",
    "economia_10": "DT",
    "economia_11": "D",
@@ -255,11 +253,8 @@
    "moral_01": "DT",
    "moral_02": "CT",
    "moral_03": "DT",
-   "moral_04": "CT",
-   "moral_05": "DT",
    "moral_06": "CT",
    "moral_07": "DT",
-   "moral_08": "CT",
    "moral_09": "DT",
    "moral_10": "CT",
    "moral_11": "DT",
@@ -305,5 +300,18 @@
   "economia": "E",
   "mundo": "A",
   "tecnologia": "D"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "DT",
+   "moral_04": "CT"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "C",
+   "moral_05": "DT",
+   "moral_08": "CT"
+  }
  }
 }

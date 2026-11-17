@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "O núcleo desta corrente é justamente unir capitalismo de mercado a um robusto Estado de bem-estar: propriedade privada e empresas são aceitas, mas com forte provisão pública em setores essenciais.",
     "answers": {
-      "economia_01": "DT",
       "economia_02": "C",
       "economia_03": "N",
       "economia_04": "D",
       "economia_05": "D",
       "economia_06": "DT",
       "economia_07": "C",
-      "economia_08": "D",
       "economia_09": "C",
       "economia_10": "DT",
       "economia_11": "C",
@@ -255,11 +253,8 @@
       "moral_01": "CT",
       "moral_02": "D",
       "moral_03": "C",
-      "moral_04": "D",
-      "moral_05": "C",
       "moral_06": "DT",
       "moral_07": "CT",
-      "moral_08": "D",
       "moral_09": "C",
       "moral_10": "D",
       "moral_11": "C",
@@ -297,6 +292,19 @@
       "tecnologia_18": "D",
       "tecnologia_19": "N",
       "tecnologia_20": "D"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

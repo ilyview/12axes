@@ -38,7 +38,7 @@
   "economia": {
     "personaBrief": "A economia dolarizada do Panamá se apoia no Canal, finanças, comércio e serviços privados, em vez de propriedade coletiva ou empresas estatais dominantes.",
     "answers": {
-      "economia_05": "D", "economia_06": "D", "economia_07": "N", "economia_13": "N", "economia_03": "N", "economia_14": "C", "economia_19": "D", "economia_16": "C", "economia_17": "D", "economia_12": "C", "economia_04": "C", "economia_11": "D", "economia_18": "C", "economia_15": "D", "economia_20": "C", "economia_01": "DT", "economia_10": "D", "economia_09": "N", "economia_02": "C", "economia_08": "C"
+      "economia_05": "D", "economia_06": "D", "economia_07": "N", "economia_13": "N", "economia_03": "N", "economia_14": "C", "economia_19": "D", "economia_16": "C", "economia_17": "D", "economia_12": "C", "economia_04": "C", "economia_11": "D", "economia_18": "C", "economia_15": "D", "economia_20": "C", "economia_10": "D", "economia_09": "N", "economia_02": "C"
     }
   },
   "controle": {
@@ -62,7 +62,7 @@
   "moral": {
     "personaBrief": "O Panamá combina instituições civis modernas e abertura internacional com uma sociedade de herança cristã relativamente tradicional em temas familiares e reprodutivos.",
     "answers": {
-      "moral_07": "C", "moral_04": "C", "moral_15": "N", "moral_12": "C", "moral_03": "N", "moral_01": "N", "moral_09": "D", "moral_06": "C", "moral_19": "N", "moral_02": "C", "moral_05": "N", "moral_17": "N", "moral_13": "N", "moral_11": "N", "moral_10": "C", "moral_18": "D", "moral_16": "C", "moral_14": "N", "moral_08": "N", "moral_20": "C"
+      "moral_07": "C", "moral_15": "N", "moral_12": "C", "moral_03": "N", "moral_01": "N", "moral_09": "D", "moral_06": "C", "moral_19": "N", "moral_02": "C", "moral_17": "N", "moral_13": "N", "moral_11": "N", "moral_10": "C", "moral_18": "D", "moral_16": "C", "moral_14": "N", "moral_20": "C"
     }
   },
   "tecnologia": {
@@ -70,5 +70,7 @@
     "answers": {
       "tecnologia_01": "C", "tecnologia_13": "C", "tecnologia_19": "C", "tecnologia_12": "N", "tecnologia_18": "D", "tecnologia_10": "C", "tecnologia_05": "C", "tecnologia_04": "D", "tecnologia_16": "C", "tecnologia_07": "C", "tecnologia_08": "N", "tecnologia_03": "C", "tecnologia_15": "N", "tecnologia_20": "N", "tecnologia_06": "N", "tecnologia_09": "N", "tecnologia_17": "C", "tecnologia_02": "D", "tecnologia_14": "C", "tecnologia_11": "N"
     }
-  }
+  },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "N", "moral_08": "N"}}
 }

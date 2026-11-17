@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "D",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "C",
-      "economia_02": "D",
-      "economia_08": "C"
+      "economia_02": "D"
     }
   },
   "controle": {
@@ -254,7 +252,6 @@
     "personaBrief": "Tradicionalista nos costumes e familista, mas popular e plebeu: defende a família tradicional e a autoridade dos pais, rejeitando tanto o progressismo cultural quanto qualquer elitismo distante do povo trabalhador.",
     "answers": {
       "moral_07": "D",
-      "moral_04": "C",
       "moral_15": "D",
       "moral_12": "CT",
       "moral_03": "D",
@@ -263,7 +260,6 @@
       "moral_06": "C",
       "moral_19": "D",
       "moral_02": "CT",
-      "moral_05": "D",
       "moral_17": "DT",
       "moral_13": "D",
       "moral_11": "D",
@@ -271,7 +267,6 @@
       "moral_18": "C",
       "moral_16": "C",
       "moral_14": "C",
-      "moral_08": "C",
       "moral_20": "CT"
     }
   },
@@ -299,5 +294,7 @@
       "tecnologia_14": "C",
       "tecnologia_11": "N"
     }
-  }
+  },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "D", "moral_08": "C"}}
 }

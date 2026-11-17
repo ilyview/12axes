@@ -38,7 +38,7 @@
   "economia": {
     "personaBrief": "A automação é socializada: meios de produção, infraestrutura, crédito e serviços devem pertencer coletivamente, não a capitalistas. A expropriação revolucionária é vista como condição para usar ganhos tecnológicos em benefício social e avançar ao comunismo.",
     "answers": {
-      "economia_05": "CT", "economia_06": "DT", "economia_07": "CT", "economia_13": "CT", "economia_03": "CT", "economia_14": "DT", "economia_19": "CT", "economia_16": "DT", "economia_17": "CT", "economia_12": "C", "economia_04": "DT", "economia_11": "CT", "economia_18": "DT", "economia_15": "CT", "economia_20": "DT", "economia_01": "CT", "economia_10": "DT", "economia_09": "CT", "economia_02": "DT", "economia_08": "DT"
+      "economia_05": "CT", "economia_06": "DT", "economia_07": "CT", "economia_13": "CT", "economia_03": "CT", "economia_14": "DT", "economia_19": "CT", "economia_16": "DT", "economia_17": "CT", "economia_12": "C", "economia_04": "DT", "economia_11": "CT", "economia_18": "DT", "economia_15": "CT", "economia_20": "DT", "economia_10": "DT", "economia_09": "CT", "economia_02": "DT"
     }
   },
   "controle": {
@@ -62,7 +62,7 @@
   "moral": {
     "personaBrief": "A igualdade social e a rejeição da família patriarcal burguesa levam esta vertente a posições majoritariamente progressistas em gênero, sexualidade e raça. Ela pode subordinar escolhas individuais ao projeto coletivo, mas não faz da moral tradicional sua referência de legitimidade.",
     "answers": {
-      "moral_07": "CT", "moral_04": "D", "moral_15": "C", "moral_12": "D", "moral_03": "CT", "moral_01": "CT", "moral_09": "C", "moral_06": "DT", "moral_19": "C", "moral_02": "DT", "moral_05": "CT", "moral_17": "D", "moral_13": "D", "moral_11": "CT", "moral_10": "D", "moral_18": "DT", "moral_16": "D", "moral_14": "D", "moral_08": "DT", "moral_20": "D"
+      "moral_07": "CT", "moral_15": "C", "moral_12": "D", "moral_03": "CT", "moral_01": "CT", "moral_09": "C", "moral_06": "DT", "moral_19": "C", "moral_02": "DT", "moral_17": "D", "moral_13": "D", "moral_11": "CT", "moral_10": "D", "moral_18": "DT", "moral_16": "D", "moral_14": "D", "moral_20": "D"
     }
   },
   "tecnologia": {
@@ -70,6 +70,8 @@
     "answers": {
       "tecnologia_01": "CT", "tecnologia_13": "CT", "tecnologia_19": "CT", "tecnologia_12": "DT", "tecnologia_18": "DT", "tecnologia_10": "D", "tecnologia_05": "CT", "tecnologia_04": "DT", "tecnologia_16": "D", "tecnologia_07": "CT", "tecnologia_08": "DT", "tecnologia_03": "CT", "tecnologia_15": "CT", "tecnologia_20": "DT", "tecnologia_06": "D", "tecnologia_09": "C", "tecnologia_17": "CT", "tecnologia_02": "DT", "tecnologia_14": "D", "tecnologia_11": "CT"
     }
-  }
+  },
+  "metodo": {"answers": {"economia_01": "CT", "moral_04": "D"}},
+  "distribuicao": {"answers": {"economia_08": "DT", "moral_05": "CT", "moral_08": "DT"}}
 }
 

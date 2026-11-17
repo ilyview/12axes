@@ -32,12 +32,12 @@ CI runs the same checks on every pull request, and `main` only receives changes 
 
 ## Adding or re-auditing a profile
 
-Profiles are never placed on the axes by hand. Each one answers the 240 questions, and its vector comes from those answers. Read [`profile-audit/NEW_PROFILE.md`](profile-audit/NEW_PROFILE.md) before you start. The `/new_ideology`, `/new_country`, and `/new_personality` skills in `.claude/skills/` run the whole process in [Claude Code](https://claude.com/claude-code).
+Profiles are never placed on the axes by hand. Each one answers the 275 questions, and its vector comes from those answers. Read [`profile-audit/NEW_PROFILE.md`](profile-audit/NEW_PROFILE.md) before you start. The `/new_ideology`, `/new_country`, and `/new_personality` skills in `.claude/skills/` run the whole process in [Claude Code](https://claude.com/claude-code).
 
 A profile pull request needs:
 
 - metadata in both `data/*.json` (Portuguese) and `data/i18n/en/*.json` (English), with Brazil-specific references generalized in English;
-- the 240 answers archived in `profile-audit/answers/<catalog>/<id>.json`;
+- the 275 answers archived in `profile-audit/answers/<catalog>/<id>.json`;
 - a clean run of `python profile-audit/validate.py <catalog> <id>`;
 - a `religions` tag that follows the rule in `NEW_PROFILE.md`;
 - for countries and personalities, an image from Wikimedia Commons with its source recorded, compressed with `npm run optimize:images`.

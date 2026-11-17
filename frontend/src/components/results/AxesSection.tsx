@@ -12,7 +12,8 @@ export const DISPLAY_ORDER = [
   'poder', 'comercio',
   'imigracao', 'religiao',
   'diplomacia', 'moral',
-  'intervencao', 'tecnologia'
+  'intervencao', 'tecnologia',
+  'metodo', 'distribuicao'
 ];
 
 // Posicao na grade de duas colunas (desktop); no mobile vale a ordem original.
@@ -35,7 +36,8 @@ export function AxesSection({ axes, results, religion, onEditAnswers }: AxesSect
   return (
     <section className="e-panel" id="eixos-resultado" data-reveal>
       <h2 className="e-sec-title">
-        {t.axesSectionTitle}
+        {/* Resultado antigo tem só 12 eixos: o número do título acompanha o que está na tela. */}
+        {t.axesSectionTitle.replace(/\b14\b/, String(axes.length))}
       </h2>
       <ul className="e-axes-list">
         {axes.map((axis) => {

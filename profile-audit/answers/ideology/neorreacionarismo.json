@@ -167,11 +167,9 @@
    "economia_18": "C",
    "economia_15": "DT",
    "economia_20": "C",
-   "economia_01": "DT",
    "economia_10": "N",
    "economia_09": "D",
-   "economia_02": "C",
-   "economia_08": "C"
+   "economia_02": "C"
   }
  },
  "controle": {
@@ -253,7 +251,6 @@
   "personaBrief": "Rejeita o progressismo da Catedral e a história whig e valoriza hierarquia, família e ordem tradicional, mas sem uma pauta moralista de massas.",
   "answers": {
    "moral_07": "N",
-   "moral_04": "C",
    "moral_15": "D",
    "moral_12": "C",
    "moral_03": "D",
@@ -262,7 +259,6 @@
    "moral_06": "C",
    "moral_19": "N",
    "moral_02": "C",
-   "moral_05": "DT",
    "moral_17": "D",
    "moral_13": "D",
    "moral_11": "D",
@@ -270,7 +266,6 @@
    "moral_18": "C",
    "moral_16": "C",
    "moral_14": "C",
-   "moral_08": "C",
    "moral_20": "C"
   }
  },
@@ -305,5 +300,18 @@
   "economia": "F",
   "mundo": "D",
   "tecnologia": "E"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "DT",
+   "moral_04": "C"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "C",
+   "moral_05": "DT",
+   "moral_08": "C"
+  }
  }
 }

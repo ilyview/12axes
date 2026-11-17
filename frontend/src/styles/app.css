@@ -11169,7 +11169,7 @@
 [data-reveal][data-revealed] .faq-item:nth-child(6) { transition-delay: 360ms; }
 [data-reveal][data-revealed] .axis-guide-card:nth-child(n + 7) { transition-delay: 420ms; }
 
-/* ── Home: cards dos 12 eixos ────────────────────────────────────────────
+/* ── Home: cards dos 14 eixos ────────────────────────────────────────────
    O hover e o principal momento de vida da home: cada eixo reage ao mouse,
    o icone gira levemente e a cor do eixo invade a borda.                    */
 

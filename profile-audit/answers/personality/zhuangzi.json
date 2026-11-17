@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Despreza riqueza e acumulação, mas também não confia em planos coletivos do Estado; posição intermediária por rejeitar os dois polos.",
   "answers": {
-   "economia_01": "D",
    "economia_02": "D",
    "economia_03": "D",
    "economia_04": "N",
    "economia_05": "D",
    "economia_06": "D",
    "economia_07": "D",
-   "economia_08": "N",
    "economia_09": "C",
    "economia_10": "C",
    "economia_11": "N",
@@ -255,11 +253,8 @@
    "moral_01": "C",
    "moral_02": "D",
    "moral_03": "C",
-   "moral_04": "D",
-   "moral_05": "N",
    "moral_06": "D",
    "moral_07": "C",
-   "moral_08": "D",
    "moral_09": "C",
    "moral_10": "D",
    "moral_11": "C",
@@ -305,5 +300,18 @@
   "economia": "B",
   "mundo": "E",
   "tecnologia": "A"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "D",
+   "moral_04": "D"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "N",
+   "moral_05": "N",
+   "moral_08": "D"
+  }
  }
 }

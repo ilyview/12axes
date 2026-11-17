@@ -56,8 +56,8 @@
   "economia": {
     "personaBrief": "O “capitalista vermelho” aceitou propriedade estatal e objetivos socialistas, mas usou práticas empresariais e capital estrangeiro; portanto favoreceria economia mista com comando público dos setores estratégicos.",
     "answers": {
-      "economia_01": "D", "economia_02": "C", "economia_03": "CT", "economia_04": "D", "economia_05": "C",
-      "economia_06": "DT", "economia_07": "CT", "economia_08": "C", "economia_09": "CT", "economia_10": "DT",
+      "economia_02": "C", "economia_03": "CT", "economia_04": "D", "economia_05": "C",
+      "economia_06": "DT", "economia_07": "CT", "economia_09": "CT", "economia_10": "DT",
       "economia_11": "N", "economia_12": "C", "economia_13": "C", "economia_14": "C", "economia_15": "C",
       "economia_16": "N", "economia_17": "CT", "economia_18": "N", "economia_19": "C", "economia_20": "D"
     }
@@ -92,8 +92,8 @@
   "moral": {
     "personaBrief": "Rong foi um dirigente chinês de sua geração, socialmente discreto e ligado a uma ordem institucional conservadora; faltam evidências de progressismo cultural, embora seu pragmatismo não implique moralismo religioso.",
     "answers": {
-      "moral_01": "D", "moral_02": "C", "moral_03": "N", "moral_04": "C", "moral_05": "N",
-      "moral_06": "C", "moral_07": "N", "moral_08": "N", "moral_09": "C", "moral_10": "D",
+      "moral_01": "D", "moral_02": "C", "moral_03": "N",
+      "moral_06": "C", "moral_07": "N", "moral_09": "C", "moral_10": "D",
       "moral_11": "D", "moral_12": "C", "moral_13": "D", "moral_14": "C", "moral_15": "N",
       "moral_16": "D", "moral_17": "D", "moral_18": "D", "moral_19": "D", "moral_20": "C"
     }
@@ -106,5 +106,7 @@
       "tecnologia_11": "C", "tecnologia_12": "D", "tecnologia_13": "CT", "tecnologia_14": "C", "tecnologia_15": "C",
       "tecnologia_16": "N", "tecnologia_17": "C", "tecnologia_18": "D", "tecnologia_19": "C", "tecnologia_20": "D"
     }
-  }
+  },
+  "metodo": {"answers": {"economia_01": "D", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "N", "moral_08": "N"}}
 }

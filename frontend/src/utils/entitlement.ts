@@ -4,7 +4,7 @@
  * o relatório por um pedido de recuperação (por e-mail).
  */
 
-import { RESULT_URL_KEYS } from './peopleCompare';
+import { resultUrlKeysIn } from './peopleCompare';
 
 const KEY_PREFIX = '12axes:entitlement:';
 
@@ -152,7 +152,7 @@ export function returnUrlWithLang(url: string, lang: string): string {
 export function canonicalResultLink(resultUrl: string, lang: string): string {
   const source = new URL(resultUrl);
   const query = new URLSearchParams();
-  for (const key of RESULT_URL_KEYS) {
+  for (const key of resultUrlKeysIn((name) => source.searchParams.get(name))) {
     const value = source.searchParams.get(key);
     if (value === null) return resultUrl;
     query.set(key, value);

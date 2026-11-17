@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Livre mercado, redução de impostos, menos gastos federais e do Estado; contra subsídios a empresas e a corporações.",
   "answers": {
-   "economia_01": "DT",
    "economia_02": "CT",
    "economia_03": "D",
    "economia_04": "CT",
    "economia_05": "DT",
    "economia_06": "CT",
    "economia_07": "DT",
-   "economia_08": "CT",
    "economia_09": "D",
    "economia_10": "C",
    "economia_11": "D",
@@ -255,11 +253,8 @@
    "moral_01": "CT",
    "moral_02": "DT",
    "moral_03": "CT",
-   "moral_04": "D",
-   "moral_05": "N",
    "moral_06": "D",
    "moral_07": "CT",
-   "moral_08": "D",
    "moral_09": "C",
    "moral_10": "D",
    "moral_11": "C",
@@ -305,5 +300,18 @@
   "economia": "F",
   "mundo": "E",
   "tecnologia": "D"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "DT",
+   "moral_04": "D"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "CT",
+   "moral_05": "N",
+   "moral_08": "D"
+  }
  }
 }

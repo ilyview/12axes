@@ -167,11 +167,9 @@
       "economia_18": "C",
       "economia_15": "N",
       "economia_20": "D",
-      "economia_01": "DT",
       "economia_10": "DT",
       "economia_09": "D",
-      "economia_02": "C",
-      "economia_08": "D"
+      "economia_02": "C"
     }
   },
   "controle": {
@@ -253,11 +251,9 @@
     "personaBrief": "Obama evoluiu publicamente para apoiar o casamento igualitário, defendeu direitos reprodutivos e diversidade de gênero, posicionando-se claramente do lado progressista nas questões de costumes.",
     "answers": {
       "moral_07": "CT",
-      "moral_04": "D",
       "moral_15": "N",
       "moral_12": "D",
       "moral_03": "C",
-      "moral_05": "C",
       "moral_01": "CT",
       "moral_09": "C",
       "moral_06": "DT",
@@ -270,7 +266,6 @@
       "moral_10": "DT",
       "moral_18": "DT",
       "moral_16": "D",
-      "moral_08": "D",
       "moral_20": "D"
     }
   },
@@ -297,6 +292,19 @@
       "tecnologia_02": "D",
       "tecnologia_14": "C",
       "tecnologia_11": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "D"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "D",
+      "moral_05": "C",
+      "moral_08": "D"
     }
   }
 }

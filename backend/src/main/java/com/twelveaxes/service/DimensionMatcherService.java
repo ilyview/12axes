@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
  * A compatibilidade geral responde "com quem voce mais se parece". Estas tres
  * respondem "quem, entre os politicos e teoricos, entre os pensadores e
  * ativistas e entre os economistas e empresarios, mais se parece com voce".
- * As tres usam a compatibilidade dos 12 eixos; o que muda e o grupo de pessoas
+ * As tres usam a compatibilidade dos eixos; o que muda e o grupo de pessoas
  * comparado em cada area: um filosofo nao entra na disputa economica, nem um
  * economista na politica. Quem ja apareceu como destaque, na area politica ou
  * na social nao se repete nas seguintes.
@@ -35,14 +35,14 @@ public class DimensionMatcherService {
      */
     public static final List<String> POLITICAL_AXES = List.of(
             "estrutura", "representacao", "poder", "diplomacia", "imigracao",
-            "intervencao", "tecnologia", "controle", "comercio", "religiao", "economia", "moral");
+            "intervencao", "tecnologia", "controle", "comercio", "religiao", "economia", "moral", "metodo", "distribuicao");
 
     /** Costumes, fe, economia, imigracao, poder e tecnologia. */
     public static final List<String> SOCIAL_AXES = List.of("representacao", "moral", "religiao", "economia", "controle",
-            "comercio", "imigracao", "poder", "tecnologia");
+            "comercio", "imigracao", "poder", "tecnologia", "metodo", "distribuicao");
 
-    /** Propriedade, coordenacao da producao e abertura comercial. */
-    public static final List<String> ECONOMIC_AXES = List.of("economia", "controle", "comercio");
+    /** Propriedade, coordenacao da producao, abertura comercial e distribuicao da renda. */
+    public static final List<String> ECONOMIC_AXES = List.of("economia", "controle", "comercio", "distribuicao");
 
     /**
      * Quem atua na politica: governantes, estadistas, formuladores de doutrina e

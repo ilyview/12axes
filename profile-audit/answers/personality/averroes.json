@@ -25,7 +25,7 @@
   },
   "economia": {
     "personaBrief": "Na linha aristotélica e da lei islâmica, aceita a propriedade privada e o comércio, mas subordina a riqueza à justiça: zakat, herança regulada, dever do governante de amparar os pobres e vigiar o excesso; rejeita tanto o coletivismo revolucionário quanto o laissez-faire.",
-    "answers": {"economia_05":"D","economia_06":"DT","economia_07":"C","economia_13":"C","economia_03":"C","economia_14":"D","economia_19":"N","economia_16":"D","economia_17":"C","economia_12":"N","economia_04":"D","economia_11":"C","economia_18":"D","economia_15":"N","economia_20":"D","economia_01":"DT","economia_10":"DT","economia_09":"C","economia_02":"C","economia_08":"C"}
+    "answers": {"economia_05":"D","economia_06":"DT","economia_07":"C","economia_13":"C","economia_03":"C","economia_14":"D","economia_19":"N","economia_16":"D","economia_17":"C","economia_12":"N","economia_04":"D","economia_11":"C","economia_18":"D","economia_15":"N","economia_20":"D","economia_10":"DT","economia_09":"C","economia_02":"C"}
   },
   "controle": {
     "personaBrief": "A tradição do muhtasib (fiscal de mercado) e a República platônica sustentam direção do governante justo sobre preços, salários e setores vitais; Averróis vê o mercado como subordinado ao bem comum, sem defender planificação total.",
@@ -41,11 +41,13 @@
   },
   "moral": {
     "personaBrief": "Jurista do século XII, adota a moral familiar e sexual da lei islâmica (casamento, pudor, proibição de embriaguez e vícios), embora tenha sido incomumente favorável à capacidade política e militar das mulheres; tradicionalista em costumes.",
-    "answers": {"moral_07":"D","moral_04":"C","moral_15":"N","moral_12":"C","moral_03":"DT","moral_01":"DT","moral_09":"D","moral_06":"CT","moral_19":"D","moral_02":"CT","moral_05":"N","moral_17":"DT","moral_13":"DT","moral_11":"D","moral_10":"C","moral_18":"D","moral_16":"CT","moral_14":"C","moral_08":"N","moral_20":"C"}
+    "answers": {"moral_07":"D","moral_15":"N","moral_12":"C","moral_03":"DT","moral_01":"DT","moral_09":"D","moral_06":"CT","moral_19":"D","moral_02":"CT","moral_17":"DT","moral_13":"DT","moral_11":"D","moral_10":"C","moral_18":"D","moral_16":"CT","moral_14":"C","moral_20":"C"}
   },
   "tecnologia": {
     "personaBrief": "Médico e cientista, autor dos Kulliyat, valoriza o conhecimento racional e empírico e a arte que aperfeiçoa a natureza, sem desprezar o equilíbrio natural; progressista em ciência, cauteloso em intervenções radicais.",
     "answers": {"tecnologia_01":"C","tecnologia_13":"C","tecnologia_19":"C","tecnologia_12":"D","tecnologia_18":"D","tecnologia_10":"C","tecnologia_05":"C","tecnologia_04":"C","tecnologia_16":"D","tecnologia_07":"D","tecnologia_08":"D","tecnologia_03":"C","tecnologia_15":"D","tecnologia_20":"C","tecnologia_06":"C","tecnologia_09":"D","tecnologia_17":"C","tecnologia_02":"D","tecnologia_14":"C","tecnologia_11":"N"}
   },
-  "archetype": { "sociedade": "B", "poder": "B", "economia": "C", "mundo": "C", "tecnologia": "C" }
+  "archetype": { "sociedade": "B", "poder": "B", "economia": "C", "mundo": "C", "tecnologia": "C" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "C", "moral_05": "N", "moral_08": "N"}}
 }

@@ -16,7 +16,7 @@ const STR = {
   pt: {
     skip: 'Pular para o conteúdo',
     catalogNav: 'Catálogo',
-    homeAria: '12 axes, página inicial',
+    homeAria: '14 axes, página inicial',
     takeTheTest: 'Fazer o teste',
     compareWith: 'Comparar com…',
     kpiSpectrum: 'Espectro mais próximo',
@@ -28,7 +28,7 @@ const STR = {
     tabs: { axes: 'Eixos', ideologies: 'Ideologias', personalities: 'Personalidades', countries: 'Países' },
     ids: { axes: 'eixos', ideologies: 'ideologias', personalities: 'personalidades', countries: 'paises' },
     axesEyebrow: 'Eixos políticos',
-    axesTitle: 'Perfil nos 12 eixos',
+    axesTitle: 'Perfil nos 14 eixos',
     distTitle: (name) => `O que distingue ${name}`,
     rareTag: 'Posição mais incomum',
     commonTag: 'Posição mais comum',
@@ -56,13 +56,13 @@ const STR = {
     currentKicker: 'País mais compatível',
     historicalKicker: 'Experiência histórica mais compatível',
     ctaTitle: 'E você, com quem se parece?',
-    ctaText: (name) => `Responda ao quiz e veja sua compatibilidade com ${name}, ideologias, países e outras personalidades nos 12 eixos.`,
+    ctaText: (name) => `Responda ao quiz e veja sua compatibilidade com ${name}, ideologias, países e outras personalidades nos 14 eixos.`,
     footer: 'Quiz político independente · 12axes.vercel.app · © 2026. Todos os direitos reservados'
   },
   en: {
     skip: 'Skip to content',
     catalogNav: 'Catalog',
-    homeAria: '12 axes, home page',
+    homeAria: '14 axes, home page',
     takeTheTest: 'Take the test',
     compareWith: 'Compare with…',
     kpiSpectrum: 'Closest spectrum',
@@ -74,7 +74,7 @@ const STR = {
     tabs: { axes: 'Axes', ideologies: 'Ideologies', personalities: 'Personalities', countries: 'Countries' },
     ids: { axes: 'axes', ideologies: 'ideologies', personalities: 'personalities', countries: 'countries' },
     axesEyebrow: 'Political axes',
-    axesTitle: 'Profile across the 12 axes',
+    axesTitle: 'Profile across the 14 axes',
     distTitle: (name) => `What sets ${name} apart`,
     rareTag: 'Most unusual position',
     commonTag: 'Most common position',
@@ -102,7 +102,7 @@ const STR = {
     currentKicker: 'Most compatible country',
     historicalKicker: 'Most compatible historical experience',
     ctaTitle: 'And you, who do you resemble?',
-    ctaText: (name) => `Take the quiz and see your compatibility with ${name}, ideologies, countries and other personalities across the 12 axes.`,
+    ctaText: (name) => `Take the quiz and see your compatibility with ${name}, ideologies, countries and other personalities across the 14 axes.`,
     footer: 'Independent political quiz · 12axes.vercel.app · © 2026. All rights reserved'
   }
 };
@@ -132,7 +132,8 @@ export function catalogStats(axes, profiles) {
   const vectors = [...profiles.values()];
   const stats = new Map();
   for (const axis of axes) {
-    const values = vectors.map((v) => v?.[axis.id] ?? 50).sort((a, b) => a - b);
+    const values = vectors.map((v) => v?.[axis.id]).filter((x) => x !== undefined).sort((a, b) => a - b);
+    if (!values.length) continue;
     const mid = values.length >> 1;
     const median = values.length % 2 ? values[mid] : (values[mid - 1] + values[mid]) / 2;
     stats.set(axis.id, { values, median });
@@ -145,7 +146,8 @@ export function catalogStats(axes, profiles) {
 // Eixo mais incomum e mais comum do vetor em relação à mediana do catálogo.
 export function distinctive(axes, vector, profiles) {
   const stats = catalogStats(axes, profiles);
-  const deviations = axes.map((axis) => {
+  // Perfil ainda não reauditado não tem os eixos novos: só entram os eixos que ele tem.
+  const deviations = axes.filter((axis) => vector[axis.id] !== undefined && stats.has(axis.id)).map((axis) => {
     const left = vector[axis.id] ?? 50;
     const { values, median } = stats.get(axis.id);
     return { axis, left, median, values, dev: Math.abs(left - median) };
@@ -176,15 +178,16 @@ AXIS_INFO.es = { ...AXIS_INFO.en, ...ES.axisInfo };
 AXIS_INFO.de = { ...AXIS_INFO.en, ...DE.axisInfo };
 AXIS_INFO.it = { ...AXIS_INFO.en, ...IT.axisInfo };
 
-// Barras dos 12 eixos, iguais às da tela de resultados (AxesSection.tsx):
+// Barras dos eixos do perfil, iguais às da tela de resultados (AxesSection.tsx):
 // ícones de polo preenchidos, cinza quando equilibrado e helper "?" que abre
 // a explicação do eixo (texto do i18n do app).
 export function axisRowsHtml(L, vector, esc, locale, religions = []) {
   const info = AXIS_INFO[locale];
   const religion = profileReligion(religions);
   return L.axes
+    .filter((axis) => vector[axis.id] !== undefined)
     .map((axis) => {
-      const left = Math.max(0, Math.min(100, vector[axis.id] ?? 50));
+      const left = Math.max(0, Math.min(100, vector[axis.id]));
       const right = 100 - left;
       const dist = Math.abs(left - 50);
       const balanced = dist < 7.5;

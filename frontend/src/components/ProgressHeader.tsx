@@ -15,14 +15,14 @@ interface ProgressHeaderProps {
 
 export function ProgressHeader({ current, total, axisCount, extraCount = 0, extraCurrent }: ProgressHeaderProps) {
   // Na etapa de arquetipo as perguntas comuns ja estao completas e o segmento
-  // extra avanca; o texto troca de "Pergunta X de 36" para o arquetipo.
+  // extra avanca; o texto troca de "Pergunta X de 42" para o arquetipo.
   const inExtra = extraCurrent !== undefined && extraCount > 0;
   // Porcentagem pelas perguntas ja respondidas sobre o total com as extras:
   // so chega a 100% quando o arquetipo tambem foi respondido.
   const grandTotal = total + extraCount;
 
   // Um segmento por pergunta quando cabe (ate axisCount); acima disso, um
-  // segmento por bloco de perguntas (240/12 = 20), com preenchimento parcial.
+  // segmento por bloco de perguntas (275/14, cerca de 20), com preenchimento parcial.
   const segmentCount = Math.max(1, Math.min(total, axisCount && axisCount > 0 ? axisCount : 12));
   const perSegment = total / segmentCount;
   const answered = inExtra ? total + extraCurrent - 1 : Math.max(0, current - 1);

@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "O ajuste fiscal, concessões e agenda de privatizações ampliam o protagonismo empresarial e defendem propriedade privada. O país, entretanto, mantém saúde e educação públicas, transferências sociais focalizadas, bancos e empresas estratégicas estatais: a política efetiva não corresponde a serviços integralmente privados ou impostos voluntários.",
     "answers": {
-      "economia_01": "DT",
       "economia_02": "C",
       "economia_03": "C",
       "economia_04": "D",
       "economia_05": "DT",
       "economia_06": "C",
       "economia_07": "C",
-      "economia_08": "C",
       "economia_09": "C",
       "economia_10": "DT",
       "economia_11": "C",
@@ -255,11 +253,8 @@
       "moral_01": "CT",
       "moral_02": "C",
       "moral_03": "C",
-      "moral_04": "C",
-      "moral_05": "D",
       "moral_06": "DT",
       "moral_07": "CT",
-      "moral_08": "C",
       "moral_09": "C",
       "moral_10": "D",
       "moral_11": "C",
@@ -305,5 +300,18 @@
     "economia": "C",
     "mundo": "B",
     "tecnologia": "D"
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
+    }
   }
 }

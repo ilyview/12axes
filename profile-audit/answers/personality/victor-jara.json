@@ -25,7 +25,7 @@
   },
   "economia": {
     "personaBrief": "Militante comunista de origem camponesa pobre, apoiou a reforma agrária, a nacionalização do cobre e serviços públicos universais, com propriedade social dos meios de produção.",
-    "answers": {"economia_05":"C","economia_06":"DT","economia_07":"C","economia_13":"CT","economia_03":"CT","economia_14":"DT","economia_19":"CT","economia_16":"DT","economia_17":"C","economia_12":"D","economia_04":"DT","economia_11":"C","economia_18":"DT","economia_15":"CT","economia_20":"DT","economia_01":"D","economia_10":"DT","economia_09":"CT","economia_02":"DT","economia_08":"D"}
+    "answers": {"economia_05":"C","economia_06":"DT","economia_07":"C","economia_13":"CT","economia_03":"CT","economia_14":"DT","economia_19":"CT","economia_16":"DT","economia_17":"C","economia_12":"D","economia_04":"DT","economia_11":"C","economia_18":"DT","economia_15":"CT","economia_20":"DT","economia_10":"DT","economia_09":"CT","economia_02":"DT"}
   },
   "controle": {
     "personaBrief": "Aliado do programa da Unidade Popular de planejamento estatal, nacionalizações, controle de preços e redistribuição, Jara via a economia como algo a ser dirigido coletivamente a serviço do povo.",
@@ -41,11 +41,13 @@
   },
   "moral": {
     "personaBrief": "Comunista de cultura camponesa e cristã popular, igualitário em classe e raça e defensor das mulheres e do teatro popular, mas com valores familiares e comunitários tradicionais do campo e do PCCh de 1973.",
-    "answers": {"moral_07":"C","moral_04":"C","moral_15":"D","moral_12":"C","moral_03":"C","moral_01":"D","moral_09":"D","moral_06":"C","moral_19":"C","moral_02":"C","moral_05":"C","moral_17":"D","moral_13":"D","moral_11":"D","moral_10":"C","moral_18":"D","moral_16":"C","moral_14":"C","moral_08":"D","moral_20":"C"}
+    "answers": {"moral_07":"C","moral_15":"D","moral_12":"C","moral_03":"C","moral_01":"D","moral_09":"D","moral_06":"C","moral_19":"C","moral_02":"C","moral_17":"D","moral_13":"D","moral_11":"D","moral_10":"C","moral_18":"D","moral_16":"C","moral_14":"C","moral_20":"C"}
   },
   "tecnologia": {
     "personaBrief": "Filho do campo e pesquisador da cultura rural, valorizava a terra e a vida simples, mas apoiava a industrialização e a mineração nacionalizada a serviço do povo, com cautela diante de intervenções no corpo humano.",
     "answers": {"tecnologia_01":"C","tecnologia_13":"D","tecnologia_19":"C","tecnologia_12":"D","tecnologia_18":"C","tecnologia_10":"C","tecnologia_05":"D","tecnologia_04":"C","tecnologia_16":"C","tecnologia_07":"D","tecnologia_08":"C","tecnologia_03":"D","tecnologia_15":"D","tecnologia_20":"C","tecnologia_06":"C","tecnologia_09":"C","tecnologia_17":"D","tecnologia_02":"C","tecnologia_14":"C","tecnologia_11":"D"}
   },
-  "archetype": { "sociedade": "D", "poder": "C", "economia": "A", "mundo": "E", "tecnologia": "C" }
+  "archetype": { "sociedade": "D", "poder": "C", "economia": "A", "mundo": "E", "tecnologia": "C" },
+  "metodo": {"answers": {"economia_01": "D", "moral_04": "C"}},
+  "distribuicao": {"answers": {"economia_08": "D", "moral_05": "C", "moral_08": "D"}}
 }

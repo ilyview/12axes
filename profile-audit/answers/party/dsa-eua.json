@@ -152,14 +152,12 @@
  "economia": {
   "personaBrief": "Socialismo democrático: propriedade social das indústrias-chave, cooperativas, saúde pública universal e fim do trabalho assalariado capitalista.",
   "answers": {
-   "economia_01": "C",
    "economia_02": "DT",
    "economia_03": "CT",
    "economia_04": "DT",
    "economia_05": "CT",
    "economia_06": "DT",
    "economia_07": "CT",
-   "economia_08": "DT",
    "economia_09": "CT",
    "economia_10": "DT",
    "economia_11": "CT",
@@ -255,11 +253,8 @@
    "moral_01": "CT",
    "moral_02": "DT",
    "moral_03": "CT",
-   "moral_04": "DT",
-   "moral_05": "CT",
    "moral_06": "DT",
    "moral_07": "CT",
-   "moral_08": "DT",
    "moral_09": "CT",
    "moral_10": "DT",
    "moral_11": "CT",
@@ -305,5 +300,18 @@
   "economia": "B",
   "mundo": "E",
   "tecnologia": "C"
+ },
+ "metodo": {
+  "answers": {
+   "economia_01": "C",
+   "moral_04": "DT"
+  }
+ },
+ "distribuicao": {
+  "answers": {
+   "economia_08": "DT",
+   "moral_05": "CT",
+   "moral_08": "DT"
+  }
  }
 }

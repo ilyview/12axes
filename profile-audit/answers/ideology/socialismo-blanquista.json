@@ -58,8 +58,7 @@
     "answers": {
       "economia_05": "CT", "economia_06": "DT", "economia_07": "CT", "economia_13": "CT", "economia_03": "CT",
       "economia_14": "D", "economia_19": "C", "economia_16": "DT", "economia_17": "C", "economia_12": "N",
-      "economia_04": "DT", "economia_11": "C", "economia_18": "DT", "economia_15": "CT", "economia_20": "DT",
-      "economia_01": "CT", "economia_10": "DT", "economia_09": "CT", "economia_02": "DT", "economia_08": "DT"
+      "economia_04": "DT", "economia_11": "C", "economia_18": "DT", "economia_15": "CT", "economia_20": "DT", "economia_10": "DT", "economia_09": "CT", "economia_02": "DT"
     }
   },
   "controle": {
@@ -92,10 +91,9 @@
   "moral": {
     "personaBrief": "Igualitário, laico e revolucionário, rejeita a moral clerical e a família tradicional como modelo, e quer a educação moral nas mãos do Estado, não dos pais. Mas é austero e não tem agenda libertária moderna sobre sexualidade e costumes.",
     "answers": {
-      "moral_07": "N", "moral_04": "DT", "moral_15": "D", "moral_12": "D", "moral_03": "D",
-      "moral_01": "D", "moral_09": "N", "moral_06": "N", "moral_19": "N", "moral_02": "D",
-      "moral_05": "C", "moral_17": "D", "moral_13": "D", "moral_11": "C", "moral_10": "D",
-      "moral_18": "D", "moral_16": "C", "moral_14": "C", "moral_08": "D", "moral_20": "DT"
+      "moral_07": "N", "moral_15": "D", "moral_12": "D", "moral_03": "D",
+      "moral_01": "D", "moral_09": "N", "moral_06": "N", "moral_19": "N", "moral_02": "D", "moral_17": "D", "moral_13": "D", "moral_11": "C", "moral_10": "D",
+      "moral_18": "D", "moral_16": "C", "moral_14": "C", "moral_20": "DT"
     }
   },
   "tecnologia": {
@@ -107,5 +105,7 @@
       "tecnologia_09": "C", "tecnologia_17": "C", "tecnologia_02": "DT", "tecnologia_14": "D", "tecnologia_11": "CT"
     }
   },
-  "archetype": { "sociedade": "D", "poder": "A", "economia": "A", "mundo": "B", "tecnologia": "D" }
+  "archetype": { "sociedade": "D", "poder": "A", "economia": "A", "mundo": "B", "tecnologia": "D" },
+  "metodo": {"answers": {"economia_01": "CT", "moral_04": "DT"}},
+  "distribuicao": {"answers": {"economia_08": "DT", "moral_05": "C", "moral_08": "D"}}
 }

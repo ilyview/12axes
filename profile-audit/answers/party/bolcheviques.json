@@ -32,8 +32,7 @@
   "economia": { "personaBrief": "Programa de expropriação revolucionária: nacionalização de bancos, indústria e terra, abolição da propriedade burguesa e controle operário.", "answers": {
     "economia_05": "CT", "economia_06": "DT", "economia_07": "CT", "economia_13": "CT", "economia_03": "CT",
     "economia_14": "N", "economia_19": "CT", "economia_16": "DT", "economia_17": "CT", "economia_12": "C",
-    "economia_04": "DT", "economia_11": "C", "economia_18": "DT", "economia_15": "CT", "economia_20": "DT",
-    "economia_01": "CT", "economia_10": "DT", "economia_09": "CT", "economia_02": "DT", "economia_08": "DT" } },
+    "economia_04": "DT", "economia_11": "C", "economia_18": "DT", "economia_15": "CT", "economia_20": "DT", "economia_10": "DT", "economia_09": "CT", "economia_02": "DT" } },
   "controle": { "personaBrief": "Defendiam a direção estatal centralizada da economia, comunismo de guerra com requisições e monopólio estatal do comércio exterior.", "answers": {
     "controle_05": "CT", "controle_20": "DT", "controle_19": "C", "controle_14": "DT", "controle_07": "CT",
     "controle_04": "DT", "controle_02": "DT", "controle_17": "CT", "controle_16": "DT", "controle_10": "DT",
@@ -50,14 +49,15 @@
     "religiao_01": "C", "religiao_14": "DT", "religiao_06": "DT", "religiao_16": "DT", "religiao_08": "DT",
     "religiao_07": "CT", "religiao_09": "CT", "religiao_17": "CT", "religiao_20": "DT", "religiao_04": "DT" } },
   "moral": { "personaBrief": "Revolucionários na família: legalizaram o divórcio e o aborto (1920), descriminalizaram a homossexualidade e emanciparam a mulher, mas com moral proletária sóbria e desconfiança da 'decadência burguesa'.", "answers": {
-    "moral_07": "N", "moral_04": "DT", "moral_15": "D", "moral_12": "DT", "moral_03": "N",
-    "moral_01": "D", "moral_09": "C", "moral_06": "D", "moral_19": "N", "moral_02": "DT",
-    "moral_05": "C", "moral_17": "C", "moral_13": "DT", "moral_11": "D", "moral_10": "D",
-    "moral_18": "DT", "moral_16": "C", "moral_14": "D", "moral_08": "D", "moral_20": "DT" } },
+    "moral_07": "N", "moral_15": "D", "moral_12": "DT", "moral_03": "N",
+    "moral_01": "D", "moral_09": "C", "moral_06": "D", "moral_19": "N", "moral_02": "DT", "moral_17": "C", "moral_13": "DT", "moral_11": "D", "moral_10": "D",
+    "moral_18": "DT", "moral_16": "C", "moral_14": "D", "moral_20": "DT" } },
   "tecnologia": { "personaBrief": "Modernizadores industrialistas: 'comunismo é o poder soviético mais a eletrificação', fé no progresso científico e na superação do atraso camponês.", "answers": {
     "tecnologia_01": "CT", "tecnologia_13": "CT", "tecnologia_19": "CT", "tecnologia_12": "DT", "tecnologia_18": "DT",
     "tecnologia_10": "D", "tecnologia_05": "C", "tecnologia_04": "D", "tecnologia_16": "D", "tecnologia_07": "C",
     "tecnologia_08": "DT", "tecnologia_03": "C", "tecnologia_15": "C", "tecnologia_20": "D", "tecnologia_06": "D",
     "tecnologia_09": "C", "tecnologia_17": "C", "tecnologia_02": "DT", "tecnologia_14": "D", "tecnologia_11": "CT" } },
-  "archetype": { "sociedade": "D", "poder": "A", "economia": "A", "mundo": "A", "tecnologia": "D" }
+  "archetype": { "sociedade": "D", "poder": "A", "economia": "A", "mundo": "A", "tecnologia": "D" },
+  "metodo": {"answers": {"economia_01": "CT", "moral_04": "DT"}},
+  "distribuicao": {"answers": {"economia_08": "DT", "moral_05": "C", "moral_08": "D"}}
 }

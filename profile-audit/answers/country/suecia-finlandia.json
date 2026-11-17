@@ -32,8 +32,7 @@
   "economia": { "personaBrief": "Economia de propriedade privada camponesa e nobre, com manufaturas subsidiadas pelos Hattar, bancos do Riksdag e debate liberal de Chydenius; sem coletivismo.", "answers": {
     "economia_05": "DT", "economia_06": "C", "economia_07": "D", "economia_13": "N", "economia_03": "C",
     "economia_14": "C", "economia_19": "C", "economia_16": "C", "economia_17": "C", "economia_12": "D",
-    "economia_04": "C", "economia_11": "D", "economia_18": "CT", "economia_15": "D", "economia_20": "C",
-    "economia_01": "DT", "economia_10": "DT", "economia_09": "D", "economia_02": "C", "economia_08": "CT" } },
+    "economia_04": "C", "economia_11": "D", "economia_18": "CT", "economia_15": "D", "economia_20": "C", "economia_10": "DT", "economia_09": "D", "economia_02": "C" } },
   "controle": { "personaBrief": "Mercantilismo dos Hattar com subsídios fabris, Produktplakatet, regulação de preços e banco estatal sob o Riksdag, temperado pela liberalização de Chydenius e dos Mössor.", "answers": {
     "controle_05": "D", "controle_20": "D", "controle_19": "C", "controle_14": "D", "controle_07": "CT",
     "controle_04": "D", "controle_02": "D", "controle_17": "C", "controle_16": "D", "controle_10": "D",
@@ -50,14 +49,15 @@
     "religiao_01": "DT", "religiao_14": "CT", "religiao_06": "CT", "religiao_16": "C", "religiao_08": "CT",
     "religiao_07": "DT", "religiao_09": "D", "religiao_17": "DT", "religiao_20": "CT", "religiao_04": "CT" } },
   "moral": { "personaBrief": "Sociedade estamental patriarcal e luterana, com leis morais rígidas e apenas leve abertura cultural iluminista na corte gustaviana.", "answers": {
-    "moral_07": "DT", "moral_04": "CT", "moral_15": "D", "moral_12": "C", "moral_03": "DT",
-    "moral_01": "DT", "moral_09": "DT", "moral_06": "CT", "moral_19": "D", "moral_02": "CT",
-    "moral_05": "D", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "CT",
-    "moral_18": "C", "moral_16": "C", "moral_14": "C", "moral_08": "C", "moral_20": "C" } },
+    "moral_07": "DT", "moral_15": "D", "moral_12": "C", "moral_03": "DT",
+    "moral_01": "DT", "moral_09": "DT", "moral_06": "CT", "moral_19": "D", "moral_02": "CT", "moral_17": "DT", "moral_13": "DT", "moral_11": "DT", "moral_10": "CT",
+    "moral_18": "C", "moral_16": "C", "moral_14": "C", "moral_20": "C" } },
   "tecnologia": { "personaBrief": "Era de Lineu, Celsius e da Academia de Ciências: entusiasmo utilitário pela ciência, mineração e manufaturas, numa sociedade ainda majoritariamente rural e camponesa.", "answers": {
     "tecnologia_01": "C", "tecnologia_13": "D", "tecnologia_19": "C", "tecnologia_12": "D", "tecnologia_18": "C",
     "tecnologia_10": "D", "tecnologia_05": "C", "tecnologia_04": "C", "tecnologia_16": "D", "tecnologia_07": "C",
     "tecnologia_08": "D", "tecnologia_03": "C", "tecnologia_15": "D", "tecnologia_20": "C", "tecnologia_06": "D",
     "tecnologia_09": "C", "tecnologia_17": "D", "tecnologia_02": "N", "tecnologia_14": "C", "tecnologia_11": "C" } },
-  "archetype": { "sociedade": "A", "poder": "B", "economia": "E", "mundo": "B", "tecnologia": "C" }
+  "archetype": { "sociedade": "A", "poder": "B", "economia": "E", "mundo": "B", "tecnologia": "C" },
+  "metodo": {"answers": {"economia_01": "DT", "moral_04": "CT"}},
+  "distribuicao": {"answers": {"economia_08": "CT", "moral_05": "D", "moral_08": "C"}}
 }

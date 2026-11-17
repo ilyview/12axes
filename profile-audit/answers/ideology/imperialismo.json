@@ -152,14 +152,12 @@
   "economia": {
     "personaBrief": "O Imperialismo histórico (mercantilista, colonial e neocolonial) combina grandes conglomerados privados e estatais a serviço da expansão econômica da metrópole; a propriedade privada é respeitada quando alinhada aos interesses nacionais/imperiais, mas o Estado dirige a economia estratégica das colônias e da metrópole.",
     "answers": {
-      "economia_01": "DT",
       "economia_02": "C",
       "economia_03": "C",
       "economia_04": "D",
       "economia_05": "DT",
       "economia_06": "DT",
       "economia_07": "N",
-      "economia_08": "C",
       "economia_09": "D",
       "economia_10": "D",
       "economia_11": "DT",
@@ -255,11 +253,8 @@
       "moral_01": "D",
       "moral_02": "C",
       "moral_03": "D",
-      "moral_04": "C",
-      "moral_05": "D",
       "moral_06": "C",
       "moral_07": "D",
-      "moral_08": "C",
       "moral_09": "D",
       "moral_10": "C",
       "moral_11": "D",
@@ -297,6 +292,19 @@
       "tecnologia_18": "D",
       "tecnologia_19": "C",
       "tecnologia_20": "N"
+    }
+  },
+  "metodo": {
+    "answers": {
+      "economia_01": "DT",
+      "moral_04": "C"
+    }
+  },
+  "distribuicao": {
+    "answers": {
+      "economia_08": "C",
+      "moral_05": "D",
+      "moral_08": "C"
     }
   }
 }
