@@ -48,6 +48,8 @@ interface PremiumText {
   timelineBestEra: string;
   seats: Record<GovernmentSeat['seatKey'], string>;
   countriesTitle: string;
+  areasTitle: string;
+  areaLabels: Record<string, string>;
   saveTitle: string;
   saveIntro: string;
   saveField: string;
@@ -132,6 +134,8 @@ const pt: PremiumText = {
     cultura: 'Conselheiro de Cultura'
   },
   countriesTitle: '10 países ou regiões para viver',
+  areasTitle: 'Países mais próximos por área',
+  areaLabels: { politico: 'Sistema político', externa: 'Política externa', territorial: 'Organização territorial', economico: 'Sistema econômico', sociedade: 'Sociedade e cultura', tecnologia: 'Tecnologia e natureza' },
   saveTitle: 'Guarde o seu acesso',
   saveIntro: 'Para abrir este relatório em outro aparelho, ou depois de limpar o navegador, salve o link abaixo. Quem tiver o link abre o relatório deste resultado, então guarde-o com cuidado.',
   saveField: 'Link de acesso ao relatório',
@@ -216,6 +220,8 @@ const en: PremiumText = {
     cultura: 'Cultural Adviser'
   },
   countriesTitle: '10 countries or regions to live in',
+  areasTitle: 'Closest countries by area',
+  areaLabels: { politico: 'Political system', externa: 'Foreign policy', territorial: 'Territorial organization', economico: 'Economic system', sociedade: 'Society and culture', tecnologia: 'Technology and nature' },
   saveTitle: 'Keep your access',
   saveIntro: 'To open this report on another device, or after clearing your browser, save the link below. Anyone with the link opens the report for this result, so keep it safe.',
   saveField: 'Report access link',
@@ -300,6 +306,8 @@ const es: PremiumText = {
     cultura: 'Consejero de Cultura'
   },
   countriesTitle: '10 países o regiones para vivir',
+  areasTitle: 'Países más cercanos por área',
+  areaLabels: { politico: 'Sistema político', externa: 'Política exterior', territorial: 'Organización territorial', economico: 'Sistema económico', sociedade: 'Sociedad y cultura', tecnologia: 'Tecnología y naturaleza' },
   saveTitle: 'Guarda tu acceso',
   saveIntro: 'Para abrir este informe en otro dispositivo, o después de borrar los datos del navegador, guarda el enlace de abajo. Quien tenga el enlace abre el informe de este resultado, así que guárdalo con cuidado.',
   saveField: 'Enlace de acceso al informe',
@@ -385,6 +393,8 @@ const de: PremiumText = {
     cultura: 'Berater für Kultur'
   },
   countriesTitle: '10 Länder oder Regionen zum Leben',
+  areasTitle: 'Nächste Länder nach Bereich',
+  areaLabels: { politico: 'Politisches System', externa: 'Außenpolitik', territorial: 'Territoriale Organisation', economico: 'Wirtschaftssystem', sociedade: 'Gesellschaft und Kultur', tecnologia: 'Technologie und Natur' },
   saveTitle: 'Bewahre deinen Zugang auf',
   saveIntro: 'Um diesen Bericht auf einem anderen Gerät oder nach dem Löschen des Browserspeichers zu öffnen, speichere den Link unten. Wer den Link hat, kann den Bericht zu diesem Ergebnis öffnen, also bewahre ihn sorgfältig auf.',
   saveField: 'Zugangslink zum Bericht',
@@ -469,6 +479,8 @@ const it: PremiumText = {
     cultura: 'Consigliere culturale'
   },
   countriesTitle: '10 paesi o regioni in cui vivere',
+  areasTitle: 'Paesi più vicini per area',
+  areaLabels: { politico: 'Sistema politico', externa: 'Politica estera', territorial: 'Organizzazione territoriale', economico: 'Sistema economico', sociedade: 'Società e cultura', tecnologia: 'Tecnologia e natura' },
   saveTitle: 'Conserva il tuo accesso',
   saveIntro: "Per aprire questo rapporto su un altro dispositivo, o dopo aver cancellato i dati del browser, salva il link qui sotto. Chiunque abbia il link apre il rapporto di questo risultato, quindi conservalo con cura.",
   saveField: 'Link di accesso al rapporto',
@@ -476,4 +488,176 @@ const it: PremiumText = {
   saveCopied: 'Link copiato',
 };
 
-export const P: PremiumText = LANG === 'pt' ? pt : LANG === 'es' ? es : LANG === 'de' ? de : LANG === 'it' ? it : en;
+const ru: PremiumText = {
+  title: 'Полный отчет',
+  devBadge: 'Режим разработки: открыто без оплаты, только на этом компьютере.',
+  loading: 'Готовим ваш полный отчет...',
+  error: 'Не удалось загрузить отчет. Попробуйте снова через несколько мгновений.',
+  retry: 'Попробовать снова',
+  historical: 'историческая',
+  axisTitle: 'Полный анализ, ось за осью',
+  positions: { you: 'Вы', ideology: 'Идеология', personality: 'Фигура', country: 'Страна' },
+  levelLabels: { equilibrado: 'Сбалансированно', inclinado: 'Умеренно', forte: 'Сильно', muito_forte: 'Очень сильно' },
+  disagreeTitle: 'Где вы расходитесь сильнее всего',
+  disagreeKinds: { ideology: 'с вашей идеологией', personality: 'с вашей фигурой', country: 'с вашей страной' },
+  disagreeLegendProfile: 'Профиль',
+  gapRank: (position) => (position === 1 ? 'Наибольшее расхождение' : position === 2 ? '2-е по величине расхождение' : '3-е по величине расхождение'),
+  governmentTitle: 'Ваше идеальное правительство',
+  governmentRolesTitle: 'Роль каждого в вашем правительстве',
+  governmentSwap: {
+    aria: (seat) => `Заменить того, кто занимает пост: ${seat}`,
+    title: (seat) => `Заменить: ${seat}`,
+    lead: (category) => `Фигуры из категории «${category}», наиболее совместимые с вами после нынешней. Выберите одну, чтобы составить свое идеальное правительство.`,
+    current: 'Нынешняя',
+    none: 'В этой категории нет других фигур для замены.',
+    swapped: 'Заменено вами',
+    searchLabel: 'Или найдите любую другую фигуру',
+    holdsNow: (seat) => `Сейчас: ${seat}. Меняется местами.`,
+    searchPlaceholder: 'Введите имя',
+    searchNone: 'По этому имени никого не найдено.',
+    searchError: 'Сейчас не удалось выполнить поиск. Попробуйте снова через несколько мгновений.',
+    searching: 'Ищем…'
+  },
+  governmentRolesLead: 'Каждый пост описан исходя из ваших позиций по осям, которые весят в нем больше всего, чтобы вы видели, почему результат получился именно таким.',
+  roleAxis: {
+    estrutura: 'По устройству государства',
+    representacao: 'Политически',
+    poder: 'В вопросах власти',
+    imigracao: 'В иммиграции',
+    diplomacia: 'В дипломатии',
+    intervencao: 'В вопросах вмешательства',
+    economia: 'В экономике',
+    controle: 'В вопросах контроля',
+    comercio: 'В торговле',
+    religiao: 'В религии',
+    moral: 'В морали',
+    tecnologia: 'В технологиях'
+  },
+  roleSubject: 'этот человек',
+  governmentWhy: (area, pct) => `Занимает пост как ближайшая к вам фигура в категории «${area}»: совместимость ${pct}%.`,
+  governmentWhySwapped: (pct) => `Занимает пост по вашей замене: совместимость ${pct}% с вашим результатом.`,
+  timelineTitle: 'Ваша идеологическая хронология',
+  timelineEraNames: {
+    antiguidade: 'Античность',
+    medieval: 'Средние века',
+    moderna: 'Новое время',
+    xix: 'XIX век',
+    xx: 'XX век',
+    xxi: 'XXI век'
+  },
+  timelineRange: (from, to) => {
+    const year = (value: number) => (value < 0 ? `${-value} г. до н. э.` : String(value));
+    if (from === null && to !== null) return `До ${year(to)}`;
+    if (to === null && from !== null) return `С ${year(from)}`;
+    return `${year(from ?? 0)}–${year(to ?? 0)}`;
+  },
+  timelineCurrent: 'Нынешняя',
+  timelineBestEra: 'Наиболее совместимая эпоха:',
+  seats: {
+    lider: 'Политический лидер',
+    vice: 'Заместитель политического лидера',
+    economia: 'Глава экономики',
+    educacao: 'Глава образования',
+    estrategia: 'Глава политической стратегии',
+    filosofia: 'Философский советник',
+    social: 'Координатор по социальным вопросам',
+    industria: 'Координатор промышленности и инноваций',
+    cultura: 'Советник по культуре'
+  },
+  countriesTitle: '10 стран или регионов для жизни',
+  areasTitle: 'Ближайшие страны по сферам',
+  areaLabels: { politico: 'Политическая система', externa: 'Внешняя политика', territorial: 'Территориальное устройство', economico: 'Экономическая система', sociedade: 'Общество и культура', tecnologia: 'Технологии и природа' },
+  saveTitle: 'Сохраните свой доступ',
+  saveIntro: 'Чтобы открыть этот отчет на другом устройстве или после очистки браузера, сохраните ссылку ниже. Любой, у кого есть ссылка, откроет отчет по этому результату, поэтому храните ее бережно.',
+  saveField: 'Ссылка для доступа к отчету',
+  saveCopy: 'Копировать ссылку',
+  saveCopied: 'Ссылка скопирована',
+};
+
+const fr: PremiumText = {
+  title: 'Rapport complet',
+  devBadge: 'Mode développement : ouvert sans paiement, uniquement sur cette machine.',
+  loading: 'Préparation de votre rapport complet…',
+  error: 'Impossible de charger le rapport. Veuillez réessayer dans un instant.',
+  retry: 'Réessayer',
+  historical: 'historique',
+  axisTitle: 'Analyse complète, axe par axe',
+  positions: { you: 'Vous', ideology: 'Idéologie', personality: 'Figure', country: 'Pays' },
+  levelLabels: { equilibrado: 'Équilibré', inclinado: 'Tendance', forte: 'Fort', muito_forte: 'Très fort' },
+  disagreeTitle: 'Là où vous êtes le plus en désaccord',
+  disagreeKinds: { ideology: 'avec votre idéologie', personality: 'avec votre figure', country: 'avec votre pays' },
+  disagreeLegendProfile: 'Profil',
+  gapRank: (position) => (position === 1 ? 'Plus grand écart' : `${position}e plus grand écart`),
+  governmentTitle: 'Votre gouvernement idéal',
+  governmentRolesTitle: 'Le rôle de chacun dans votre gouvernement',
+  governmentSwap: {
+    aria: (seat) => `Changer qui occupe le poste de ${seat}`,
+    title: (seat) => `Changer : ${seat}`,
+    lead: (category) => `Les figures de la catégorie ${category} les plus proches de vous après l’actuelle. Choisissez-en une pour construire votre gouvernement idéal.`,
+    current: 'Actuel',
+    none: 'Il n’y a pas d’autres figures de cette catégorie à échanger.',
+    swapped: 'Changé par vous',
+    searchLabel: 'Ou cherchez n’importe quelle autre figure',
+    holdsNow: (seat) => `Aujourd’hui : ${seat}. Échange de place.`,
+    searchPlaceholder: 'Saisissez un nom',
+    searchNone: 'Aucune personne trouvée avec ce nom.',
+    searchError: 'Impossible de lancer la recherche pour le moment. Veuillez réessayer dans un instant.',
+    searching: 'Recherche en cours…'
+  },
+  governmentRolesLead: 'Chaque poste est décrit à partir de vos positions sur les axes qui y pèsent le plus, pour que vous voyiez pourquoi le résultat est ainsi.',
+  roleAxis: {
+    estrutura: 'Sur la structure,',
+    representacao: 'Politiquement,',
+    poder: 'Sur le pouvoir,',
+    imigracao: 'Sur l’immigration,',
+    diplomacia: 'Sur la diplomatie,',
+    intervencao: 'Sur l’intervention,',
+    economia: 'Sur l’économie,',
+    controle: 'Sur le contrôle,',
+    comercio: 'Sur le commerce,',
+    religiao: 'Sur la religion,',
+    moral: 'Sur la morale,',
+    tecnologia: 'Sur la technologie,'
+  },
+  roleSubject: 'cette personne',
+  governmentWhy: (area, pct) => `Occupe le poste en tant que figure la plus proche de vous dans la catégorie ${area} : ${pct} % de compatibilité.`,
+  governmentWhySwapped: (pct) => `A obtenu le poste grâce à votre changement : ${pct} % de compatibilité avec votre résultat.`,
+  timelineTitle: 'Votre chronologie idéologique',
+  timelineEraNames: {
+    antiguidade: 'Antiquité',
+    medieval: 'Moyen Âge',
+    moderna: 'Époque moderne',
+    xix: 'XIXe siècle',
+    xx: 'XXe siècle',
+    xxi: 'XXIe siècle'
+  },
+  timelineRange: (from, to) => {
+    const year = (value: number) => (value < 0 ? `${-value} av. J.-C.` : String(value));
+    if (from === null && to !== null) return `Jusqu’en ${year(to)}`;
+    if (to === null && from !== null) return `Depuis ${year(from)}`;
+    return `De ${year(from ?? 0)} à ${year(to ?? 0)}`;
+  },
+  timelineCurrent: 'Actuel',
+  timelineBestEra: 'Époque la plus compatible :',
+  seats: {
+    lider: 'Chef politique',
+    vice: 'Chef politique adjoint',
+    economia: 'Responsable de l’économie',
+    educacao: 'Responsable de l’éducation',
+    estrategia: 'Chef de la stratégie politique',
+    filosofia: 'Conseiller philosophique',
+    social: 'Coordinateur des affaires sociales',
+    industria: 'Coordinateur de l’industrie et de l’innovation',
+    cultura: 'Conseiller culturel'
+  },
+  countriesTitle: '10 pays ou régions où vivre',
+  areasTitle: 'Pays les plus proches par domaine',
+  areaLabels: { politico: 'Système politique', externa: 'Politique étrangère', territorial: 'Organisation territoriale', economico: 'Système économique', sociedade: 'Société et culture', tecnologia: 'Technologie et nature' },
+  saveTitle: 'Conservez votre accès',
+  saveIntro: 'Pour ouvrir ce rapport sur un autre appareil, ou après avoir vidé votre navigateur, enregistrez le lien ci-dessous. Quiconque possède le lien ouvre le rapport de ce résultat : conservez-le donc avec soin.',
+  saveField: 'Lien d’accès au rapport',
+  saveCopy: 'Copier le lien',
+  saveCopied: 'Lien copié',
+};
+
+export const P: PremiumText = LANG === 'pt' ? pt : LANG === 'es' ? es : LANG === 'de' ? de : LANG === 'it' ? it : LANG === 'ru' ? ru : LANG === 'fr' ? fr : en;

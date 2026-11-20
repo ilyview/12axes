@@ -10,6 +10,8 @@ import { dimensionMatches, rank, religionVisibility } from './profile-match.mjs'
 import { ES } from './locales/es.mjs';
 import { DE } from './locales/de.mjs';
 import { IT } from './locales/it.mjs';
+import { RU } from './locales/ru.mjs';
+import { FR } from './locales/fr.mjs';
 
 const STR = {
   pt: {
@@ -110,6 +112,8 @@ const STR = {
 STR.es = { ...STR.en, ...ES.partyPage };
 STR.de = { ...STR.en, ...DE.partyPage };
 STR.it = { ...STR.en, ...IT.partyPage };
+STR.ru = { ...STR.en, ...RU.partyPage };
+STR.fr = { ...STR.en, ...FR.partyPage };
 
 const ARR = '<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
 const pct = (x) => Math.round(x);

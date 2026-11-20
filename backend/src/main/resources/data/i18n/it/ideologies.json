@@ -1923,5 +1923,75 @@
     "description": "Movimento intellettuale europeo del Settecento che difende ragione, scienza e tolleranza contro superstizione e assolutismo, con diritti naturali, separazione dei poteri, istruzione e progresso come fondamento della società.",
     "phrase": "Voglio una società guidata da ragione, scienza e tolleranza, con diritti naturali, poteri separati e la legge posta al di sopra di trono e altare.",
     "category": "Centro"
+  },
+  {
+    "id": "neoliberalismo-conservador",
+    "name": "Neoliberismo conservatore",
+    "description": "Sintesi di libero mercato, privatizzazioni e disciplina di bilancio con valori tradizionali, legge e ordine e orgoglio nazionale, in una democrazia parlamentare. Associata a Thatcher e Aznar, si scontra con i sindacati e lo Stato sociale.",
+    "phrase": "Voglio libero mercato, privatizzazioni e tasse basse, con sindacati indeboliti, legge e ordine, famiglia e orgoglio nazionale sotto un Parlamento sovrano.",
+    "category": "Destra"
+  },
+  {
+    "id": "nacionalismo-gaullista",
+    "name": "Nazionalismo gollista",
+    "description": "Dottrina di Charles de Gaulle che unisce grandezza nazionale, indipendenza dai blocchi, deterrente nucleare autonomo, presidenzialismo forte con plebisciti e dirigismo economico con partecipazione dei lavoratori.",
+    "phrase": "Voglio una nazione grande e indipendente dai blocchi, con un presidente forte, plebisciti, una forza nucleare propria e un’economia diretta dallo Stato.",
+    "category": "Destra"
+  },
+  {
+    "id": "legionarismo",
+    "name": "Legionarismo",
+    "description": "Dottrina della Guardia di Ferro rumena di Codreanu: ultranazionalismo, antisemitismo, misticismo cristiano ortodosso e culto del martirio, alla ricerca di un uomo nuovo e di una comunità contadina sotto un Capitano.",
+    "phrase": "Voglio una comunità contadina rinnovata dalla fede ortodossa e dal sacrificio, senza partiti, guidata da un Capitano, con un’economia cooperativa nazionale.",
+    "category": "Terza posizione"
+  },
+  {
+    "id": "nacionalismo-brasileiro",
+    "name": "Nazionalismo brasiliano",
+    "description": "Corrente che afferma la nazione meticcia e sincretica, l’unità territoriale contro i regionalismi, la sovranità sull’Amazzonia e sulle risorse naturali, l’industria nazionale e una politica estera senza allineamento automatico.",
+    "phrase": "Voglio una nazione meticcia e sovrana, unita contro i regionalismi, padrona delle proprie risorse naturali, con industria nazionale protetta e senza allineamento automatico.",
+    "category": "Centro"
+  },
+  {
+    "id": "socialismo-brasileiro",
+    "name": "Socialismo brasiliano",
+    "description": "Tradizione socialista brasiliana che riunisce laburismo, comunismo, socialismo democratico ed ecosocialismo attorno a riforma agraria, welfare universale, controllo pubblico dei settori strategici, giustizia fiscale e uno Stato promotore dello sviluppo.",
+    "phrase": "Voglio un’economia pianificata al servizio del popolo lavoratore, con settori strategici in mano pubblica, riforma agraria, welfare universale e tasse sui più ricchi.",
+    "category": "Sinistra"
+  },
+  {
+    "id": "nacionalismo-messianico",
+    "name": "Nazionalismo messianico",
+    "description": "Nazionalismo che vede la nazione come popolo eletto, con una missione storica e religiosa di guidare altri popoli, unendo fede, Stato forte, assimilazione culturale, espansione dell’influenza ed economia diretta al destino nazionale.",
+    "phrase": "Voglio una nazione che si senta scelta per una missione storica e di fede, con Stato forte, assimilazione culturale, influenza crescente ed economia diretta.",
+    "category": "Destra"
+  },
+  {
+    "id": "capitalismo-dinastico",
+    "name": "Capitalismo dinastico",
+    "description": "Ordine in cui una casata o dinastia governa con autorità e apre l’economia al mercato e al capitale globale, fondata su tradizione, religione e modernizzazione tecnologica, con stabilità e prosperità come base della lealtà.",
+    "phrase": "Voglio una dinastia al comando, con un’economia aperta al capitale globale, tradizione e fede come fondamento e prosperità in cambio di lealtà.",
+    "category": "Destra"
+  },
+  {
+    "id": "liberalismo-civico",
+    "name": "Liberalismo civico",
+    "description": "Liberalismo che difende la democrazia, il libero mercato, lo Stato laico e le libertà individuali come valori civici comuni, chiedendo all’immigrazione di assimilarvisi, con una nazione definita dalla cittadinanza e non dall’etnia o dalla religione.",
+    "phrase": "Voglio democrazia liberale, mercato libero e Stato laico, con valori civici comuni fatti propri da tutti e cittadinanza al di sopra di etnia e religione.",
+    "category": "Destra"
+  },
+  {
+    "id": "conservadorismo-tecnocratico",
+    "name": "Conservatorismo tecnocratico",
+    "description": "Conservatorismo che affida la gestione dello Stato a esperti e a un’amministrazione meritocratica, preservando ordine, famiglia e fede tradizionale, con mercato regolato, sicurezza forte e modernizzazione tecnica senza rotture.",
+    "phrase": "Voglio uno Stato gestito da esperti e dal merito, che preservi ordine, famiglia e fede, con mercato regolato e modernizzazione senza rotture.",
+    "category": "Destra"
+  },
+  {
+    "id": "dirigismo",
+    "name": "Dirigismo",
+    "description": "Dottrina in cui lo Stato dirige l’economia di mercato attraverso pianificazione, grandi progetti, campioni nazionali e protezione dell’industria, guidato da un’alta burocrazia tecnica al servizio dell’interesse nazionale.",
+    "phrase": "Voglio uno Stato che orienti il mercato con piani, grandi progetti e campioni nazionali, proteggendo l’industria con un’élite tecnica.",
+    "category": "Centro"
   }
 ]

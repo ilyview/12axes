@@ -1929,5 +1929,75 @@
     "category": "Center",
     "description": "Eighteenth-century European intellectual movement that champions reason, science and tolerance against superstition and absolutism, with natural rights, separation of powers, education and progress as the basis of society.",
     "phrase": "I want a society guided by reason, science and tolerance, with natural rights, separated powers and the law placed above throne and altar."
+  },
+  {
+    "id": "neoliberalismo-conservador",
+    "name": "Conservative Neoliberalism",
+    "category": "Right",
+    "description": "Synthesis of free markets, privatization and fiscal discipline with traditional values, law and order and national pride, under parliamentary democracy. Associated with Thatcher and Aznar, it confronts unions and the welfare state.",
+    "phrase": "I want free markets, privatization and low taxes, with weakened unions, law and order, family and national pride under a sovereign Parliament."
+  },
+  {
+    "id": "nacionalismo-gaullista",
+    "name": "Gaullist Nationalism",
+    "category": "Right",
+    "description": "Doctrine of Charles de Gaulle combining national grandeur, independence from the blocs, an independent nuclear deterrent, a strong presidency with plebiscites and state-directed planning with worker participation.",
+    "phrase": "I want a great nation independent of the blocs, with a strong president, plebiscites, its own nuclear force and a state-directed economy."
+  },
+  {
+    "id": "legionarismo",
+    "name": "Legionarism",
+    "category": "Third Position",
+    "description": "Doctrine of Codreanu's Romanian Iron Guard: ultranationalism, antisemitism, Orthodox Christian mysticism and a cult of martyrdom, seeking a new man and a peasant community under a Captain.",
+    "phrase": "I want a peasant community renewed by Orthodox faith and sacrifice, without parties, led by a Captain, with a national cooperative economy."
+  },
+  {
+    "id": "nacionalismo-brasileiro",
+    "name": "Brazilian Nationalism",
+    "category": "Center",
+    "description": "Current that affirms a mixed, syncretic nation, territorial unity against regionalism, sovereignty over the Amazon and natural resources, national industry and a foreign policy of no automatic alignment.",
+    "phrase": "I want a mixed, sovereign nation, united against regionalism, master of its natural resources, with protected national industry and no automatic alignment."
+  },
+  {
+    "id": "socialismo-brasileiro",
+    "name": "Brazilian Socialism",
+    "category": "Left",
+    "description": "Brazilian socialist tradition uniting laborism, communism, democratic socialism and eco-socialism around land reform, universal welfare, public control of strategic sectors, tax justice and a state that drives development.",
+    "phrase": "I want a planned economy serving working people, with strategic sectors in public hands, land reform, universal welfare and taxes on the rich."
+  },
+  {
+    "id": "nacionalismo-messianico",
+    "name": "Messianic Nationalism",
+    "category": "Right",
+    "description": "Nationalism that sees the nation as a chosen people with a historical and religious mission to guide other peoples, uniting faith, a strong state, cultural assimilation, expanding influence and an economy directed to the national destiny.",
+    "phrase": "I want a nation that sees itself as chosen for a historical and faith-based mission, with a strong state, cultural assimilation, growing influence and a directed economy."
+  },
+  {
+    "id": "capitalismo-dinastico",
+    "name": "Dynastic Capitalism",
+    "category": "Right",
+    "description": "Order in which a house or dynasty rules with authority and opens the economy to the market and global capital, grounded in tradition, religion and technological modernization, with stability and prosperity as the basis of loyalty.",
+    "phrase": "I want a dynasty in command, with an economy open to global capital, tradition and faith as foundation, and prosperity in exchange for loyalty."
+  },
+  {
+    "id": "liberalismo-civico",
+    "name": "Civic Liberalism",
+    "category": "Right",
+    "description": "Liberalism that upholds democracy, the free market, a secular state and individual freedoms as shared civic values, requiring immigration to assimilate to them, with a nation defined by citizenship rather than ethnicity or religion.",
+    "phrase": "I want liberal democracy, a free market and a secular state, with shared civic values adopted by all and citizenship above ethnicity and religion."
+  },
+  {
+    "id": "conservadorismo-tecnocratico",
+    "name": "Technocratic Conservatism",
+    "category": "Right",
+    "description": "Conservatism that entrusts the running of the state to experts and a meritocratic administration, preserving order, family and traditional faith, with a regulated market, strong security and technical modernization without rupture.",
+    "phrase": "I want a state run by experts and merit, preserving order, family and faith, with a regulated market and modernization without rupture."
+  },
+  {
+    "id": "dirigismo",
+    "name": "Dirigisme",
+    "category": "Center",
+    "description": "Doctrine in which the state steers the market economy through planning, major projects, national champions and protection of industry, led by a senior technical civil service serving the national interest.",
+    "phrase": "I want a state that steers the market with plans, major projects and national champions, protecting industry with a technical elite."
   }
 ]

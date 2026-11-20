@@ -8,6 +8,8 @@ import com.twelveaxes.model.ArchetypeQuestion;
 import com.twelveaxes.model.AnswerValue;
 import com.twelveaxes.model.Axis;
 import com.twelveaxes.model.Country;
+import com.twelveaxes.model.Election;
+import com.twelveaxes.model.ElectionCandidate;
 import com.twelveaxes.model.CountryProfile;
 import com.twelveaxes.model.Party;
 import com.twelveaxes.model.PartyProfile;
@@ -44,8 +46,10 @@ public class QuizDataService {
     public static final String LANG_ES = "es";
     public static final String LANG_DE = "de";
     public static final String LANG_IT = "it";
+    public static final String LANG_RU = "ru";
+    public static final String LANG_FR = "fr";
     /** Idiomas gerados por i18n-tools/sync.py a partir do inglês: o que faltar neles usa o inglês. */
-    public static final java.util.List<String> GENERATED_LANGS = java.util.List.of(LANG_ES, LANG_DE, LANG_IT);
+    public static final java.util.List<String> GENERATED_LANGS = java.util.List.of(LANG_ES, LANG_DE, LANG_IT, LANG_RU, LANG_FR);
 
     private final ObjectMapper objectMapper;
     private Map<String, LocaleBundle> bundles;
@@ -55,6 +59,7 @@ public class QuizDataService {
     private Map<String, PersonalityProfile> personalityProfiles;
     private Map<String, Book> books;
     private List<ArchetypeQuestion> archetypeQuestions;
+    private List<Election> elections;
 
     // Textos por locale: profiles/vetores são independentes de idioma e ficam fora do bundle.
     private record LocaleBundle(
@@ -155,7 +160,9 @@ public class QuizDataService {
         LocaleBundle es = buildLocaleBundle(en, LANG_ES);
         LocaleBundle de = buildLocaleBundle(en, LANG_DE);
         LocaleBundle it = buildLocaleBundle(en, LANG_IT);
-        bundles = Map.of(LANG_PT, pt, LANG_EN, en, LANG_ES, es, LANG_DE, de, LANG_IT, it);
+        LocaleBundle ru = buildLocaleBundle(en, LANG_RU);
+        LocaleBundle fr = buildLocaleBundle(en, LANG_FR);
+        bundles = Map.of(LANG_PT, pt, LANG_EN, en, LANG_ES, es, LANG_DE, de, LANG_IT, it, LANG_RU, ru, LANG_FR, fr);
 
         List<Book> bookList = readJson("data/books.json", new TypeReference<>() {});
         List<String> unknownBookAuthors = bookList.stream()
@@ -169,6 +176,9 @@ public class QuizDataService {
                 .collect(Collectors.toUnmodifiableMap(Book::personalityId, Function.identity()));
 
         validateCountryProfiles(pt);
+
+        elections = List.copyOf(readOptionalJson("data/elections.json", new TypeReference<List<Election>>() {}));
+        validateElections(elections, pt.personalitiesById().keySet(), pt.partiesById().keySet());
         validateIdeologyProfiles(pt);
         validateIdeologyPersonalityLinks(pt);
         validatePersonalityProfiles(pt);
@@ -249,6 +259,7 @@ public class QuizDataService {
                     country.flagSourceUrl(),
                     country.flagNote(),
                     country.historical(),
+                    country.region(),
                     country.period(),
                     country.vector(),
                     country.religions()
@@ -328,6 +339,12 @@ public class QuizDataService {
         }
         if (normalized.equals(LANG_IT) || normalized.startsWith("it-")) {
             return LANG_IT;
+        }
+        if (normalized.equals(LANG_RU) || normalized.startsWith("ru-")) {
+            return LANG_RU;
+        }
+        if (normalized.equals(LANG_FR) || normalized.startsWith("fr-")) {
+            return LANG_FR;
         }
         return switch (normalized) {
             case LANG_EN, "en-us", "en-gb" -> LANG_EN;
@@ -458,6 +475,8 @@ public class QuizDataService {
         String description = switch (normalizedLang) {
             case LANG_EN -> "A quiz of " + questionCount + " questions to estimate your position on the 12 political axes.";
             case LANG_ES -> "Un cuestionario de " + questionCount + " preguntas para estimar tu posición en los 12 ejes políticos.";
+            case LANG_FR -> "Un test de " + questionCount + " questions pour estimer votre position sur les 12 axes politiques.";
+            case LANG_RU -> "Тест из " + questionCount + " вопросов, который оценивает вашу позицию по 12 политическим осям.";
             case LANG_IT -> "Un test di " + questionCount + " domande per stimare la tua posizione sui 12 assi politici.";
             case LANG_DE -> "Ein Test mit " + questionCount + " Fragen, um deine Position auf den 12 politischen Achsen zu bestimmen.";
             default -> "Um quiz de " + questionCount + " perguntas para estimar sua posição nos 12 eixos políticos.";
@@ -592,6 +611,34 @@ public class QuizDataService {
         return partyProfiles;
     }
 
+    // Eleicoes ativas (elections.json); todos os candidatos e partidos precisam existir no catalogo.
+    public List<Election> getElections() {
+        return elections;
+    }
+
+    // Um id errado em elections.json derruba a subida com o id na mensagem, em vez de sumir em silencio.
+    public static void validateElections(List<Election> elections, java.util.Set<String> personalityIds,
+            java.util.Set<String> partyIds) {
+        List<String> broken = new java.util.ArrayList<>();
+        for (Election election : elections) {
+            if (election.candidates() == null || election.candidates().isEmpty()) {
+                broken.add(election.id() + " sem candidatos");
+                continue;
+            }
+            for (ElectionCandidate candidate : election.candidates()) {
+                if (!personalityIds.contains(candidate.personalityId())) {
+                    broken.add(election.id() + " -> personalityId inexistente: " + candidate.personalityId());
+                }
+                if (!partyIds.contains(candidate.partyId())) {
+                    broken.add(election.id() + " -> partyId inexistente: " + candidate.partyId());
+                }
+            }
+        }
+        if (!broken.isEmpty()) {
+            throw new IllegalStateException("elections.json invalido: " + broken);
+        }
+    }
+
     public Map<String, PersonalityProfile> getPersonalityProfiles() {
         return personalityProfiles;
     }
@@ -604,6 +651,24 @@ public class QuizDataService {
     }
 
     private String labelFor(AnswerValue value, String lang) {
+        if (LANG_FR.equals(lang)) {
+            return switch (value) {
+                case STRONGLY_AGREE -> "Tout à fait d’accord";
+                case AGREE -> "D’accord";
+                case NEUTRAL -> "Neutre ou ça dépend";
+                case DISAGREE -> "Pas d’accord";
+                case STRONGLY_DISAGREE -> "Pas du tout d’accord";
+            };
+        }
+        if (LANG_RU.equals(lang)) {
+            return switch (value) {
+                case STRONGLY_AGREE -> "Полностью согласен(-на)";
+                case AGREE -> "Согласен(-на)";
+                case NEUTRAL -> "Нейтрально или зависит";
+                case DISAGREE -> "Не согласен(-на)";
+                case STRONGLY_DISAGREE -> "Категорически не согласен(-на)";
+            };
+        }
         if (LANG_IT.equals(lang)) {
             return switch (value) {
                 case STRONGLY_AGREE -> "Completamente d'accordo";

@@ -1923,5 +1923,75 @@
     "description": "Europäische Geistesbewegung des 18. Jahrhunderts, die Vernunft, Wissenschaft und Toleranz gegen Aberglauben und Absolutismus verteidigt, mit Naturrechten, Gewaltenteilung, Bildung und Fortschritt als Grundlage der Gesellschaft.",
     "phrase": "Ich will eine von Vernunft, Wissenschaft und Toleranz geleitete Gesellschaft, mit Naturrechten, getrennten Gewalten und dem Gesetz über Thron und Altar.",
     "category": "Mitte"
+  },
+  {
+    "id": "neoliberalismo-conservador",
+    "name": "Konservativer Neoliberalismus",
+    "description": "Synthese aus freiem Markt, Privatisierung und Haushaltsdisziplin mit traditionellen Werten, Recht und Ordnung und Nationalstolz unter parlamentarischer Demokratie. Mit Thatcher und Aznar verbunden, stellt sie sich gegen Gewerkschaften und den Wohlfahrtsstaat.",
+    "phrase": "Ich will freie Märkte, Privatisierung und niedrige Steuern, mit geschwächten Gewerkschaften, Recht und Ordnung, Familie und Nationalstolz unter einem souveränen Parlament.",
+    "category": "Rechte"
+  },
+  {
+    "id": "nacionalismo-gaullista",
+    "name": "Gaullistischer Nationalismus",
+    "description": "Doktrin Charles de Gaulles, die nationale Größe, Unabhängigkeit von den Blöcken, eine eigene nukleare Abschreckung, eine starke Präsidentschaft mit Plebisziten und staatliche Lenkung der Wirtschaft mit Arbeiterbeteiligung verbindet.",
+    "phrase": "Ich will eine große, von den Blöcken unabhängige Nation mit starkem Präsidenten, Plebisziten, eigener Atomstreitmacht und einer vom Staat gelenkten Wirtschaft.",
+    "category": "Rechte"
+  },
+  {
+    "id": "legionarismo",
+    "name": "Legionarismus",
+    "description": "Doktrin der rumänischen Eisernen Garde Codreanus: Ultranationalismus, Antisemitismus, orthodox-christliche Mystik und Märtyrerkult, auf der Suche nach einem neuen Menschen und einer bäuerlichen Gemeinschaft unter einem Hauptmann.",
+    "phrase": "Ich will eine bäuerliche Gemeinschaft, erneuert durch orthodoxen Glauben und Opfer, ohne Parteien, von einem Hauptmann geführt, mit nationaler Genossenschaftswirtschaft.",
+    "category": "Dritte Position"
+  },
+  {
+    "id": "nacionalismo-brasileiro",
+    "name": "Brasilianischer Nationalismus",
+    "description": "Strömung, die die gemischte, synkretische Nation, die territoriale Einheit gegen den Regionalismus, die Souveränität über Amazonien und die natürlichen Ressourcen, die nationale Industrie und eine Außenpolitik ohne automatische Bündnisbindung betont.",
+    "phrase": "Ich will eine gemischte, souveräne Nation, geeint gegen den Regionalismus, Herrin ihrer natürlichen Ressourcen, mit geschützter nationaler Industrie und ohne automatische Bündnisbindung.",
+    "category": "Mitte"
+  },
+  {
+    "id": "socialismo-brasileiro",
+    "name": "Brasilianischer Sozialismus",
+    "description": "Brasilianische sozialistische Tradition, die Laborismus, Kommunismus, demokratischen Sozialismus und Ökosozialismus um Landreform, universelle Wohlfahrt, öffentliche Kontrolle strategischer Sektoren, Steuergerechtigkeit und einen entwicklungsfördernden Staat vereint.",
+    "phrase": "Ich will eine geplante Wirtschaft im Dienst des arbeitenden Volkes, mit strategischen Sektoren in öffentlicher Hand, Landreform, universeller Wohlfahrt und Steuern auf die Reichsten.",
+    "category": "Linke"
+  },
+  {
+    "id": "nacionalismo-messianico",
+    "name": "Messianischer Nationalismus",
+    "description": "Nationalismus, der die Nation als auserwähltes Volk mit einer historischen und religiösen Mission sieht, andere Völker zu führen, und Glauben, starken Staat, kulturelle Assimilation, wachsenden Einfluss und eine auf das nationale Schicksal ausgerichtete Wirtschaft vereint.",
+    "phrase": "Ich will eine Nation, die sich zu einer historischen und gläubigen Mission auserwählt fühlt, mit starkem Staat, kultureller Assimilation, wachsendem Einfluss und gelenkter Wirtschaft.",
+    "category": "Rechte"
+  },
+  {
+    "id": "capitalismo-dinastico",
+    "name": "Dynastischer Kapitalismus",
+    "description": "Ordnung, in der ein Haus oder eine Dynastie mit Autorität regiert und die Wirtschaft für Markt und globales Kapital öffnet, gestützt auf Tradition, Religion und technologische Modernisierung, mit Stabilität und Wohlstand als Grundlage der Loyalität.",
+    "phrase": "Ich will eine Dynastie an der Spitze, mit einer für globales Kapital offenen Wirtschaft, Tradition und Glauben als Fundament und Wohlstand im Austausch für Loyalität.",
+    "category": "Rechte"
+  },
+  {
+    "id": "liberalismo-civico",
+    "name": "Staatsbürgerlicher Liberalismus",
+    "description": "Liberalismus, der Demokratie, freien Markt, laizistischen Staat und individuelle Freiheiten als gemeinsame staatsbürgerliche Werte verteidigt, von der Einwanderung deren Übernahme verlangt und die Nation über Staatsbürgerschaft statt über Ethnie oder Religion definiert.",
+    "phrase": "Ich will liberale Demokratie, freien Markt und einen laizistischen Staat, mit gemeinsamen bürgerlichen Werten, die alle übernehmen, und Staatsbürgerschaft über Ethnie und Religion.",
+    "category": "Rechte"
+  },
+  {
+    "id": "conservadorismo-tecnocratico",
+    "name": "Technokratischer Konservatismus",
+    "description": "Konservatismus, der die Führung des Staates Experten und einer meritokratischen Verwaltung anvertraut und Ordnung, Familie und traditionellen Glauben bewahrt, mit reguliertem Markt, starker Sicherheit und technischer Modernisierung ohne Bruch.",
+    "phrase": "Ich will einen von Experten und Leistung geführten Staat, der Ordnung, Familie und Glauben bewahrt, mit reguliertem Markt und Modernisierung ohne Bruch.",
+    "category": "Rechte"
+  },
+  {
+    "id": "dirigismo",
+    "name": "Dirigismus",
+    "description": "Doktrin, in der der Staat die Marktwirtschaft durch Planung, Großprojekte, nationale Champions und Industrieschutz lenkt, geführt von einer hohen technischen Verwaltung im Dienst des nationalen Interesses.",
+    "phrase": "Ich will einen Staat, der den Markt mit Plänen, Großprojekten und nationalen Champions lenkt und die Industrie mit einer technischen Elite schützt.",
+    "category": "Mitte"
   }
 ]

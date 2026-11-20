@@ -5042,6 +5042,56 @@
       "name": "38f256035a4e",
       "description": "499882546091",
       "phrase": "11c7ddc68387"
+    },
+    "neoliberalismo-conservador": {
+      "name": "3126a8c96f7c",
+      "description": "24056cb628b2",
+      "phrase": "273fc32399f0"
+    },
+    "nacionalismo-gaullista": {
+      "name": "099512f067f5",
+      "description": "5896dfa6cfb6",
+      "phrase": "65230684896e"
+    },
+    "legionarismo": {
+      "name": "03ed0f5cfae7",
+      "description": "06ec98c18bc4",
+      "phrase": "b1e7e54bb2c1"
+    },
+    "nacionalismo-brasileiro": {
+      "name": "8f16ce549290",
+      "description": "ca6ec4aaa605",
+      "phrase": "45600ca628c7"
+    },
+    "socialismo-brasileiro": {
+      "name": "aac70bfceb5d",
+      "description": "52e4d359138b",
+      "phrase": "4cb9777c1c12"
+    },
+    "nacionalismo-messianico": {
+      "name": "a893907d22fe",
+      "description": "4f5085f18381",
+      "phrase": "14653c11c99a"
+    },
+    "liberalismo-civico": {
+      "name": "c6c8c84fdb1b",
+      "description": "4cf672ad3dfc",
+      "phrase": "b9e158e56869"
+    },
+    "capitalismo-dinastico": {
+      "name": "75c49e2897ee",
+      "description": "b7aa09f59408",
+      "phrase": "50f38ad9a478"
+    },
+    "conservadorismo-tecnocratico": {
+      "name": "8d7bda47ef1a",
+      "description": "51ea435452ed",
+      "phrase": "221c79f2f089"
+    },
+    "dirigismo": {
+      "name": "ac33b2453cf1",
+      "description": "782adf23c0f0",
+      "phrase": "749ec8e142ec"
     }
   },
   "countries": {
@@ -5738,7 +5788,7 @@
       "description": "a3b22a7becce"
     },
     "madrid": {
-      "name": "a726f3fc6d4c",
+      "name": "bdeb7d0ffbc2",
       "description": "5da48feb6155"
     },
     "japao-tokugawa": {
@@ -6324,6 +6374,38 @@
     "mocambique-de-samora-machel": {
       "name": "60d48a6a04ee",
       "description": "f0a8da55f2b2"
+    },
+    "andaluzia": {
+      "name": "5b2a6d70e8fe",
+      "description": "5d986efe5cd2"
+    },
+    "comunidade-valenciana": {
+      "name": "a8916f4b9311",
+      "description": "225410edfed7"
+    },
+    "berlim": {
+      "name": "dbcd7652e1db",
+      "description": "bff1d20e7966"
+    },
+    "saxonia": {
+      "name": "a9002961cf27",
+      "description": "60331322d791"
+    },
+    "baden-wurttemberg": {
+      "name": "b96445e12f4d",
+      "description": "149b7b514847"
+    },
+    "londres": {
+      "name": "7a63240516e3",
+      "description": "c5b0c2766f67"
+    },
+    "lombardia": {
+      "name": "3fcbc8193449",
+      "description": "57e481656e6e"
+    },
+    "sicilia": {
+      "name": "4615073a47f4",
+      "description": "9d3e85944107"
     }
   },
   "parties": {
@@ -7138,6 +7220,22 @@
     "partido-federalista-eua": {
       "name": "fd6c314315f1",
       "description": "112c9a26fc90"
+    },
+    "yabloko": {
+      "name": "be9e98546f32",
+      "description": "51d5429dfe64"
+    },
+    "ldpr": {
+      "name": "bbee8088998b",
+      "description": "9ba1464de099"
+    },
+    "russia-justa": {
+      "name": "a0622f3e5b55",
+      "description": "5da08b725390"
+    },
+    "novas-pessoas": {
+      "name": "0da9258ef0cc",
+      "description": "81b6143bbf6c"
     }
   },
   "personalities": {
@@ -11192,6 +11290,16 @@
       "role": "6501d0a5c9f4",
       "lifespan": "156351009a86",
       "description": "58c381c7564b"
+    },
+    "alberto-nunez-feijoo": {
+      "name": "2f7ad79ec42f",
+      "role": "7a0fea78c72e",
+      "description": "991927254298"
+    },
+    "wang-huning": {
+      "name": "1c9117cabcf7",
+      "role": "d212c1cc98bc",
+      "description": "e35b450f2e66"
     }
   }
 }

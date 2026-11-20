@@ -13,13 +13,11 @@ export const es: DeepPartial<Strings> = {
   crashBody: 'La página tuvo un error inesperado. Recárgala para intentarlo de nuevo.',
   crashBodyWithProgress: 'La página tuvo un error inesperado, pero tus respuestas están guardadas. Recarga y elige continuar donde lo dejaste.',
   crashReload: 'Recargar la página',
-  resumeEyebrow: 'Test en curso',
   resumeTitle: 'Retoma donde lo dejaste',
   resumeBody: (answered, total) => `Has respondido ${answered} de ${total} preguntas. Tus respuestas están guardadas en este navegador.`,
   resumeContinue: 'Continuar',
   resumeDiscard: 'Empezar de nuevo',
   resumeUnavailable: 'No se pudo retomar el test anterior. Empieza uno nuevo.',
-  doneEyebrow: 'Test completado',
   doneTitle: 'Ya hiciste el test',
   doneBody: (name) => `Tu resultado fue ${name}. Está guardado en este navegador, solo tienes que abrirlo de nuevo.`,
   doneView: 'Ver resultados',
@@ -68,7 +66,6 @@ export const es: DeepPartial<Strings> = {
   denominationQuestion: '¿Qué tradición cristiana sigues?',
   denominationNames: { catholic: 'Católica', protestant: 'Protestante', orthodox: 'Ortodoxa' },
   restartQuiz: 'Reiniciar el test',
-  heroEyebrow: 'Descubrimiento político',
   h1Pre: '¿Conoces de verdad tu ',
   h1Em: 'ideología política',
   h1Post: '?',
@@ -176,8 +173,7 @@ export const es: DeepPartial<Strings> = {
   compareNoFarLine: (name) => `Ningún eje está lejos de ${name}.`,
   compareValues: (pole, you, them, name) => `${pole}: tú ${you}% · ${name} ${them}%.`,
   compareOptionAria: (name, type) => `${name}, ${type}`,
-  comparePageDocTitle: 'Comparar perfiles — 12 Axes',
-  comparePageEyebrow: 'Comparar perfiles',
+  comparePageDocTitle: 'Comparar perfiles | 12 Axes',
   comparePageTitle: 'Lado a lado, en los 12 ejes',
   comparePageProfilesTitle: 'Perfiles',
   comparePageNeedMore: 'Elige un perfil más para comparar.',
@@ -264,7 +260,7 @@ export const es: DeepPartial<Strings> = {
   peopleNavPersonalities: 'Personalidades',
   peopleNavValues: 'Valores',
   peopleNavSharedValues: 'En común',
-  peoplePageDocTitle: 'Compara con otra persona — 12 Axes',
+  peoplePageDocTitle: 'Compara con otra persona | 12 Axes',
   peoplePageTitle: 'Ustedes dos, en los 12 ejes',
   peoplePagePeopleTitle: 'Personas',
   peoplePageBadLink: 'Este enlace de comparación está incompleto. Abre tu resultado y usa "Compara con otra persona".',
@@ -428,7 +424,6 @@ export const es: DeepPartial<Strings> = {
       answer: 'Hay tres versiones: rápida, con 36 preguntas, completa, con 60, y extrema, con 240. Todas cubren los mismos 12 ejes; cuantas más preguntas, más preciso tiende a ser el resultado.'
     }
   ],
-  howEyebrow: 'Cómo funciona',
   howTitle: 'Cómo funciona el test político 12 Axes',
   howLead:
     'Un test de ideología política simple y visual: respondes a afirmaciones, 12 Axes calcula tus porcentajes y muestra dónde te sitúas en el espectro político en cada dimensión.',
@@ -446,11 +441,9 @@ export const es: DeepPartial<Strings> = {
       text: 'Recibe tu perfil ideológico, las ideologías más compatibles, el país más cercano, la personalidad afín y los resultados por eje.'
     }
   ],
-  axesGuideEyebrow: '12 ejes',
   axesGuideTitle: '¿Qué significa cada eje?',
   axesGuideLead:
     'El test de ideología 12 Axes analiza en dimensiones separadas el federalismo, la representación política, la democracia, las elecciones, la inmigración, el comercio internacional, la religión en la política, la política económica, la moral y la tecnología.',
-  discoveryEyebrow: 'Lo que descubrirás',
   discoveryTitle: 'Un retrato completo de tus convicciones políticas',
   discoveryLead:
     'Más que izquierda o derecha: tu resultado muestra con quién, dónde y con qué intensidad se alinean realmente tus ideas.',
@@ -462,11 +455,9 @@ export const es: DeepPartial<Strings> = {
     { icon: 'profile', title: 'Tu perfil', text: 'Un retrato completo de tus convicciones' },
     { icon: 'compatibility', title: 'Compatibilidad', text: 'Cuánto coincides de verdad con tu propia ideología' }
   ],
-  exampleEyebrow: 'Ejemplo real',
   exampleTitle: 'Así se ve tu resultado',
   exampleCaption: 'Ejemplo ilustrativo con datos reales del catálogo de 12 Axes.',
   exampleCta: 'Quiero ver mi resultado',
-  spectrumEyebrow: 'Espectro político',
   spectrumTitle: 'Descubre tu espectro político',
   spectrumLead:
     'El resultado te ayuda a visualizar tu posición política entre izquierda, derecha y centro, e identifica también formas más radicales, autoritarias o libertarias que quedan fuera de ese eje, como la extrema derecha, la izquierda radical, la tercera posición, el libertarismo y el anarquismo.',
@@ -477,11 +468,9 @@ export const es: DeepPartial<Strings> = {
   menuAria: 'Abrir menú',
   roseAria: 'Rosa de los 12 ejes',
   spectrumBarAria: 'Barra del espectro político con las ocho categorías',
-  versionsEyebrow: 'Versiones',
   versionsTitle: 'Elige la profundidad',
   versionsLead:
     'Empieza con el test rápido o profundiza para obtener un retrato más preciso de tu perfil ideológico. Todas las versiones usan los mismos 12 ejes y devuelven el resultado al instante.',
-  variantEyebrow: 'Elige el formato',
   variantTitlePre: '¿Quieres rapidez o ',
   variantTitleEm: 'precisión?',
   backToStart: 'Volver al inicio',
@@ -505,7 +494,6 @@ export const es: DeepPartial<Strings> = {
   errCalc: 'No se pudo calcular el resultado.',
   errImage: 'No se pudo generar la imagen del resultado.',
   errHttp: (status) => `Error HTTP ${status}`,
-  resultsEyebrow: 'Análisis completo',
   resultsH1Pre: 'Tu ',
   resultsH1Em: 'perfil ideológico',
   resultsLead: (count) =>
@@ -524,12 +512,14 @@ export const es: DeepPartial<Strings> = {
   resultsNavAxisByAxis: 'Eje por eje',
   resultsNavDisagree: 'Discrepancias',
   resultsNavGovernment: 'Gobierno ideal',
+  resultsNavAreaCountries: 'Países por área',
   resultsNavTimeline: 'Línea del tiempo',
   resultsNavLiving: 'Para vivir',
   resultsNavAxes: '12 ejes',
   resultsNavSignature: 'Distinción',
   resultsNavCountries: 'Países',
   resultsNavPersonalities: 'Personalidades',
+  resultsNavElections: 'Elecciones',
   resultsNavAreas: 'Áreas',
   resultsNavBooks: 'Libros',
   resultsNavParties: 'Partidos',
@@ -556,10 +546,6 @@ export const es: DeepPartial<Strings> = {
     socialLead: 'El eje social',
     socialText: 'mide la orientación de tus valores entre el progresismo y el tradicionalismo, y refleja tu posición sobre costumbres, cultura y valores sociales.'
   },
-  compassWith: 'con valores sociales',
-  compassSocialValues: '',
-  compassCenterLeft: 'Centroizquierda',
-  compassCenterRight: 'Centroderecha',
   compassSpectrumLabels: {
     'esq-radical': 'Izquierda radical',
     esquerda: 'Izquierda',
@@ -570,22 +556,43 @@ export const es: DeepPartial<Strings> = {
     libertario: 'Libertario',
     anarquismo: 'Anarquista'
   },
-  compassSocialLabels: {
-    veryProgressive: 'Muy progresistas',
-    progressive: 'Progresistas',
-    moderate: 'Moderados',
-    traditional: 'Tradicionalistas',
-    veryTraditional: 'Muy tradicionalistas'
+  compassEconomicLabels: {
+    left: 'Izquierda',
+    centerLeft: 'Centroizquierda',
+    center: 'Centro',
+    centerRight: 'Centroderecha',
+    right: 'Derecha'
   },
-  compassNote: {
-    label: 'En la brújula:',
-    hints: {
-      terceira: 'La tercera posición une un Estado fuerte con la nación y la tradición. La brújula mide economía y poder; nación, moral y religión quedan fuera.',
-      'ext-direita': 'La extrema derecha se define por la jerarquía y la identidad. La brújula mide economía y poder; moral, religión y nación quedan fuera.',
-      'esq-radical': 'La izquierda radical se define por la revolución y la colectivización. La brújula mide economía y poder; el proyecto revolucionario queda fuera.',
-      libertarian: 'Tu ideología está en el límite entre dos regiones. La brújula mide economía y poder, y una pequeña diferencia en cualquiera de los dos decide de qué lado queda.',
-      generic: 'La brújula mide 5 de los 12 ejes; los otros 7 quedan fuera.'
-    }
+  compassSpectrumDescriptions: {
+    'esq-radical': 'Tiendes a buscar una transformación profunda de la sociedad, con igualdad material, propiedad colectiva y un Estado fuerte al servicio de quienes trabajan, rompiendo con el orden económico actual.',
+    esquerda: 'Tiendes a defender más igualdad y protección social, con un Estado que reduce las desigualdades mediante servicios públicos, derechos laborales y redistribución.',
+    centro: 'Tiendes a buscar el equilibrio entre posiciones opuestas, combinando mercado y Estado, cambio y estabilidad, y a desconfiar de las soluciones que vienen de un solo lado.',
+    direita: 'Tiendes a valorar el orden, la tradición, la responsabilidad individual y la libre iniciativa, con un Estado más limitado en la economía y atento a la seguridad y a los valores de la nación.',
+    'ext-direita': 'Tiendes a priorizar la jerarquía, la identidad nacional y una autoridad fuerte, poniendo la seguridad y el orden por encima del pluralismo y la disidencia.',
+    terceira: 'Tiendes a rechazar tanto el capitalismo liberal como el comunismo, uniendo un Estado fuerte y una economía dirigida a la nación, la comunidad y la tradición.',
+    libertario: 'Tiendes a poner la libertad individual por encima de todo: el mínimo de Estado, mercado libre y respeto a las decisiones de cada persona, en la vida privada y en la economía.',
+    anarquismo: 'Tiendes a desconfiar de toda autoridad centralizada y a defender una sociedad organizada por la cooperación voluntaria y la autogestión, sin Estado ni jerarquías impuestas.'
+  },
+  compassEconomicDescriptions: {
+    left: 'Tiendes a defender la propiedad colectiva o pública de los medios de producción y la planificación de la economía, con el Estado y la sociedad, y no el mercado, en el centro.',
+    centerLeft: 'Tiendes a aceptar el mercado, pero con una fuerte presencia del Estado: amplios servicios públicos, regulación y redistribución para reducir las desigualdades.',
+    center: 'Tiendes a buscar un punto medio económico, con mercado y Estado en papeles equilibrados: regulación donde haga falta y espacio para la iniciativa privada.',
+    centerRight: 'Tiendes a confiar más en el mercado y en la iniciativa privada, con un Estado menor y reglas claras, sin renunciar a cierta protección social.',
+    right: 'Tiendes a defender la propiedad privada y el libre mercado, con poca planificación o regulación estatal y la competencia como motor de la economía.'
+  },
+  compassSocialLabels: {
+    veryProgressive: 'Fuertemente progresista',
+    progressive: 'Progresista',
+    moderate: 'Moderado',
+    traditional: 'Tradicionalista',
+    veryTraditional: 'Fuertemente tradicionalista'
+  },
+  compassSocialDescriptions: {
+    veryProgressive: 'Tiendes a defender con fuerza la libertad de costumbres, la diversidad y el cambio social, viendo las tradiciones como algo que cuestionar y actualizar.',
+    progressive: 'Tiendes a apoyar la libertad de costumbres, la diversidad y la igualdad de derechos, con apertura a nuevas formas de familia, cultura e identidad.',
+    moderate: 'Tiendes a equilibrar tradición y cambio, conservando lo que funciona en las costumbres y aceptando cambios graduales, sin posiciones extremas en temas morales.',
+    traditional: 'Tiendes a valorar la familia, la religión y las costumbres heredadas, prefiriendo cambios graduales y desconfiando de las rupturas rápidas en los valores sociales.',
+    veryTraditional: 'Tiendes a defender con fuerza la familia, la fe y las costumbres tradicionales como base de la sociedad, resistiendo los cambios que las alteren.'
   },
   compassAria: (right, authoritarian, traditional) =>
     `Tu posición: ${right}% hacia la derecha, ${authoritarian}% hacia lo autoritario y ${traditional}% hacia lo tradicionalista.`,
@@ -688,7 +695,6 @@ export const es: DeepPartial<Strings> = {
   areasLockedCta: 'Desbloquear mi informe completo',
   personalitiesDistantTitle: 'Más alejadas de ti',
   ideologyDistantTitle: 'La ideología más alejada de ti',
-  phraseTitle: 'Una frase que te describe',
   aboutIdeology: (ideology) => `Sobre ${ideology}`,
   knowMoreAbout: (name) => `Saber más sobre ${name}`,
   showLess: 'Ver menos',
@@ -742,7 +748,6 @@ export const es: DeepPartial<Strings> = {
   report: {
     fileName: '12axes-informe',
     docLabel: 'Informe completo',
-    profileEyebrow: 'Tu perfil ideológico',
     headerLabel: (ideology) => `Informe de perfil político · ${ideology}`,
     kpiCountry: 'País más cercano',
     kpiPersonality: 'Figura',
@@ -771,9 +776,24 @@ export const es: DeepPartial<Strings> = {
     `👉 Haz el test y descubre el tuyo:\nhttps://12axes.vercel.app/es`,
   shareCountriesCta: 'Compartir países cercanos',
   sharePersonalitiesCta: 'Compartir personalidades cercanas',
+  electionsClosestLabel: 'Candidato más cercano a ti',
+  electionsEnded: 'Finalizada',
+  electionsPickAria: 'Elegir el país de la elección',
+  shareElectionsHeader: 'Elecciones',
+  electionsNotice: 'Afinidad ideológica con las posiciones del candidato, no es una recomendación de voto.',
+  shareElectionsCta: 'Compartir resultado',
+  electionsShareHeadline: (name, party) => `Mi candidato más compatible es ${name}${party ? `, de ${party}` : ''}`,
+  shareElectionsFilePrefix: '12axes-elecciones',
+  shareElectionsTitle: 'El candidato más cercano a mi perfil | 12axes.vercel.app',
+  shareElectionsMessage: (candidate, party, percent) => `${candidate}${party ? `, de ${party}` : ''}: ${percent}% de afinidad conmigo. Haz el test y descubre el tuyo: 12axes.vercel.app`,
   sharePartiesCta: 'Compartir partidos cercanos',
   shareCompassCta: 'Compartir valores y brújula',
   shareGovernmentCta: 'Compartir gobierno ideal',
+  shareAreasCta: 'Compartir países por área',
+  shareAreasHeader: 'Países por área',
+  shareAreasFilePrefix: '12axes-paises-por-area',
+  shareAreasTitle: 'Los países más cercanos a mí por área | 12axes.vercel.app',
+  shareAreasMessage: 'Descubre qué países encajan más contigo en política, economía, sociedad y más, con el test político 12 Axes: 12axes.vercel.app',
   shareTimelineCta: 'Compartir línea del tiempo',
   shareLivingCta: 'Compartir países para vivir',
   shareIdealGovernment: 'GOBIERNO IDEAL',
@@ -865,9 +885,7 @@ export const es: DeepPartial<Strings> = {
   shareNearbyCountries: 'PAÍSES CERCANOS',
   shareFooterCta: 'DESCUBRE TU PERFIL',
   shareFooterUrl: '12AXES.VERCEL.APP',
-  supportEyebrow: 'Apoya el proyecto',
   supportTitle: '',
-  ossEyebrow: 'Código abierto',
   ossTitle: 'Un proyecto independiente y transparente',
   ossLead: 'No tienes que fiarte de nuestra palabra. El código de 12 Axes es público: puedes ver cómo se puntúa cada respuesta, cómo se calcula la compatibilidad y de dónde salen los perfiles.',
   ossCards: [

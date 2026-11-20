@@ -1,8 +1,8 @@
 {
   "_comment": "Estado unico da auditoria pergunta-a-pergunta (240 perguntas / 12 eixos). Um objeto por catalogo. Veja README.md para o processo completo.",
-  "lastUpdated": "2026-11-11T17:58:00Z",
+  "lastUpdated": "2026-11-19T19:50:10Z",
   "personality": {
-    "totalProfiles": 741,
+    "totalProfiles": 743,
     "pending": [],
     "done": [
       "lenin",
@@ -745,14 +745,16 @@
       "ralf-dahrendorf",
       "jurgen-habermas",
       "joseph-ratzinger",
-      "fritz-thyssen"
+      "fritz-thyssen",
+      "alberto-nunez-feijoo",
+      "wang-huning"
     ],
     "lastUpdated": "2026-11-06T13:54:09Z",
     "audited": 509,
     "unanswered": 0
   },
   "ideology": {
-    "totalProfiles": 272,
+    "totalProfiles": 282,
     "pending": [
       "quilombismo",
       "democracia-intervencionista",
@@ -1031,11 +1033,21 @@
       "desenvolvimentismo",
       "social-democracia-conservadora",
       "austrofascismo",
-      "iluminismo"
+      "iluminismo",
+      "neoliberalismo-conservador",
+      "nacionalismo-gaullista",
+      "legionarismo",
+      "nacionalismo-brasileiro",
+      "socialismo-brasileiro",
+      "nacionalismo-messianico",
+      "liberalismo-civico",
+      "capitalismo-dinastico",
+      "conservadorismo-tecnocratico",
+      "dirigismo"
     ]
   },
   "country": {
-    "totalProfiles": 321,
+    "totalProfiles": 329,
     "pending": [],
     "done": [
       "brasil",
@@ -1358,12 +1370,20 @@
       "eua-nevada",
       "brasil-de-fernando-henrique-cardoso",
       "mocambique-de-samora-machel",
-      "polonia-socialista"
+      "polonia-socialista",
+      "andaluzia",
+      "comunidade-valenciana",
+      "berlim",
+      "saxonia",
+      "baden-wurttemberg",
+      "sicilia",
+      "londres",
+      "lombardia"
     ]
   },
-  "totalProfiles": 1196,
+  "totalProfiles": 1205,
   "party": {
-    "totalProfiles": 203,
+    "totalProfiles": 207,
     "pending": [],
     "done": [
       "nsdap",
@@ -1568,7 +1588,11 @@
       "forza-italia",
       "avante",
       "refah-partisi",
-      "partido-federalista-eua"
+      "partido-federalista-eua",
+      "yabloko",
+      "ldpr",
+      "russia-justa",
+      "novas-pessoas"
     ]
   }
 }

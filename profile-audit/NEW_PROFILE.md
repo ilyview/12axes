@@ -98,7 +98,7 @@ ainda reflete a posição mais recente da pessoa; se não refletir, atualize `pe
 |---|---|---|
 | `ideology` | `id`, `name`, `category`, `description`, `phrase`, `countryId`, `personalityId`, `religions` | `phrase` só existe neste catálogo, ver seção própria |
 | `personality` | `id`, `name`, `role`, `lifespan`, `description`, `imagePath`, `imageSourceName`, `imageSourceUrl`, `imageNote`, `religions` | — |
-| `country` | `id`, `name`, `category`, `description`, `flagPath`, `historical`, `period`, `vector` (sempre `null` no arquivo de metadados), `religions` | `period` só é preenchido (e `historical: true`) se o perfil representa um país num momento histórico específico (ex.: "Alemanha Nazista — Terceiro Reich") |
+| `country` | `id`, `name`, `category`, `description`, `flagPath`, `historical`, `period`, `vector` (sempre `null` no arquivo de metadados), `religions` | `period` só é preenchido (e `historical: true`) se o perfil representa um país num momento histórico específico (ex.: "Alemanha Nazista — Terceiro Reich"); `region: true` (logo depois de `historical`, só no PT) quando é uma região de outro país, no padrão "Texas (Estados Unidos)": ela fica de fora de "países mais próximos por área" |
 
 **Nota sobre `ideology.countryId` / `ideology.personalityId`**: toda ideologia do catálogo aponta
 para um país e uma personalidade **já existentes** que a exemplificam bem (ex.: `aceleracionismo-cristao`
@@ -300,8 +300,11 @@ tem nenhuma das selecionáveis (`[]` ou só `["other"]`). Junto de outra religi�
 **`["other", "only"]`** (xintoísmo e afins): o perfil some para quem escolheu qualquer religião
 selecionável e aparece só para quem não escolheu nenhuma (Aristóteles, só `["other"]`, continua
 aparecendo para todos). O usuário também pode escolher **"Outra religião"** (`religion=other`):
-nesse caso some todo perfil ligado a uma religião selecionável (inclusive `["buddhism", "other"]`
-e `["judaism", "only"]`) e ficam os só com `other` (inclusive `["other", "only"]`) e os seculares (`[]`).
+nesse caso some todo perfil ligado a uma religião selecionável (inclusive `["judaism", "only"]`), **exceto os que
+trazem a marca `other`** (`["catholic", "other"]`, `["other", "hinduism", "only"]`, a ideologia neutra com as sete
+religiões e `other`): `other` diz que o perfil inclui religiões fora das selecionáveis ou não depende de nenhuma. Ficam
+também os só com `other` (inclusive `["other", "only"]`) e os seculares (`[]`). Para as outras preferências `other`
+continua só informativo (issue #443: o Nacional-Liberalismo sumia para "Outra religião").
 
 **Texto secular com vetor religioso:** se a descrição diz que o perfil é secular mas o vetor tem
 `religiao` ≤ 35, a marcação não pode sair. Registre o perfil para reauditar o vetor em vez de
@@ -378,8 +381,9 @@ Casos especiais:
 2. Exige fé cristã em geral, mas não uma vertente (Democracia, Socialismo, Anarquismo e Trabalhismo
    Cristãos)? **As três**; mantém `only` se for exclusiva de cristãos.
 3. É doutrina política que funciona sem religião (monarquismo, federalismo, conservadorismo,
-   imperialismo, nacionalismos, militarismo)? **Neutra:** as sete religiões selecionáveis (o
-   validador exige ao menos uma marca quando `religiao` ≤ 35), mantendo `other`/`only`.
+   imperialismo, nacionalismos, militarismo)? **Neutra:** as sete religiões selecionáveis
+   **mais `other`** (o validador exige ao menos uma marca quando `religiao` ≤ 35; sem `other` a ideologia some para quem escolheu
+   "Outra religião", e o `ReligionFilterTest` bloqueia), mantendo `only` quando houver.
 
 Dois testes de apoio: o **teste da troca** (troque o país ou a pessoa de referência por um de outra
 religião; se a doutrina ainda faz sentido, ela é neutra) e **origem não basta** (nascer num
@@ -483,8 +487,8 @@ Regras de tradução (confirmadas comparando os pares PT/EN já existentes nesse
   literalmente — a versão EN é para público internacional. Veja `[[en-content-internationalized]]`
   se essa memória existir; caso não exista mais, aplique o mesmo princípio por bom senso.
 
-Os demais idiomas (`i18n/es/`, `i18n/de/` e `i18n/it/`) são gerados a partir do inglês, nunca à mão: rode
-`python i18n-tools/sync.py status es` (e `status de`, `status it`) depois de mesclar para ver o que falta, e `extract` e `apply`
+Os demais idiomas (`i18n/es/`, `i18n/de/`, `i18n/it/`, `i18n/ru/` e `i18n/fr/`) são gerados a partir do inglês, nunca à mão: rode
+`python i18n-tools/sync.py status es` (e `status de`, `status it`, `status ru`, `status fr`) depois de mesclar para ver o que falta, e `extract` e `apply`
 para traduzir só o novo (detalhes no topo de `i18n-tools/sync.py`). Até lá, o perfil aparece em
 inglês nesses idiomas e nada quebra. Reauditar um perfil existente não gera tradução nenhuma.
 
