@@ -13,13 +13,11 @@ export const de: DeepPartial<Strings> = {
   crashBody: 'Auf der Seite ist ein unerwarteter Fehler aufgetreten. Lade sie neu und versuche es noch einmal.',
   crashBodyWithProgress: 'Auf der Seite ist ein unerwarteter Fehler aufgetreten, aber deine Antworten sind gespeichert. Lade neu und wähle, dort weiterzumachen, wo du aufgehört hast.',
   crashReload: 'Seite neu laden',
-  resumeEyebrow: 'Test läuft',
   resumeTitle: 'Mach dort weiter, wo du aufgehört hast',
   resumeBody: (answered, total) => `Du hast ${answered} von ${total} Fragen beantwortet. Deine Antworten sind in diesem Browser gespeichert.`,
   resumeContinue: 'Weiter',
   resumeDiscard: 'Neu starten',
   resumeUnavailable: 'Der vorherige Test konnte nicht fortgesetzt werden. Starte bitte einen neuen.',
-  doneEyebrow: 'Test abgeschlossen',
   doneTitle: 'Du hast den Test schon gemacht',
   doneBody: (name) => `Dein Ergebnis war ${name}. Es ist in diesem Browser gespeichert, öffne es einfach erneut.`,
   doneView: 'Ergebnisse ansehen',
@@ -68,7 +66,6 @@ export const de: DeepPartial<Strings> = {
   denominationQuestion: 'Welcher christlichen Tradition gehörst du an?',
   denominationNames: { catholic: 'Katholisch', protestant: 'Protestantisch', orthodox: 'Orthodox' },
   restartQuiz: 'Test neu starten',
-  heroEyebrow: 'Politische Entdeckung',
   h1Pre: 'Kennst du deine ',
   h1Em: 'politische Ideologie',
   h1Post: ' wirklich?',
@@ -180,8 +177,7 @@ export const de: DeepPartial<Strings> = {
   compareNoFarLine: (name) => `Keine Achse liegt weit von ${name} entfernt.`,
   compareValues: (pole, you, them, name) => `${pole}: du ${you}% · ${name} ${them}%.`,
   compareOptionAria: (name, type) => `${name}, ${type}`,
-  comparePageDocTitle: 'Profile vergleichen — 12 Axes',
-  comparePageEyebrow: 'Profile vergleichen',
+  comparePageDocTitle: 'Profile vergleichen | 12 Axes',
   comparePageTitle: 'Nebeneinander, auf den 14 Achsen',
   comparePageProfilesTitle: 'Profile',
   comparePageNeedMore: 'Wähle noch ein Profil zum Vergleichen.',
@@ -268,7 +264,7 @@ export const de: DeepPartial<Strings> = {
   peopleNavPersonalities: 'Persönlichkeiten',
   peopleNavValues: 'Werte',
   peopleNavSharedValues: 'Gemeinsam',
-  peoplePageDocTitle: 'Mit jemand anderem vergleichen — 12 Axes',
+  peoplePageDocTitle: 'Mit jemand anderem vergleichen | 12 Axes',
   peoplePageTitle: 'Ihr beide, auf den 14 Achsen',
   peoplePagePeopleTitle: 'Personen',
   peoplePageBadLink: 'Dieser Vergleichslink ist unvollständig. Öffne dein Ergebnis und nutze „Mit jemand anderem vergleichen“.',
@@ -448,7 +444,6 @@ export const de: DeepPartial<Strings> = {
       answer: 'Es gibt drei Versionen: kurz mit 42 Fragen, voll mit 70 und extrem mit 275. Alle decken dieselben 14 Achsen ab; je mehr Fragen, desto genauer wird das Ergebnis in der Regel.'
     }
   ],
-  howEyebrow: 'So funktioniert es',
   howTitle: 'So funktioniert der politische Test von 12 Axes',
   howLead:
     'Ein einfacher, visueller Test zur politischen Ideologie: Du antwortest auf Aussagen, 12 Axes berechnet deine Prozentwerte und zeigt, wo du in jeder Dimension im politischen Spektrum stehst.',
@@ -466,11 +461,9 @@ export const de: DeepPartial<Strings> = {
       text: 'Du erhältst dein ideologisches Profil, die am besten passenden Ideologien, das nächste Land, eine verwandte Persönlichkeit und die Ergebnisse pro Achse.'
     }
   ],
-  axesGuideEyebrow: '14 Achsen',
   axesGuideTitle: 'Was bedeutet jede Achse?',
   axesGuideLead:
     'Der Ideologietest von 12 Axes analysiert Föderalismus, politische Repräsentation, Demokratie, Wahlen, Einwanderung, internationalen Handel, Religion in der Politik, Wirtschaftspolitik, Moral und Technologie in getrennten Dimensionen.',
-  discoveryEyebrow: 'Was du entdeckst',
   discoveryTitle: 'Ein vollständiges Porträt deiner politischen Überzeugungen',
   discoveryLead:
     'Mehr als links oder rechts: Dein Ergebnis zeigt, wer, wo und wie stark deine Ideen tatsächlich übereinstimmen.',
@@ -482,11 +475,9 @@ export const de: DeepPartial<Strings> = {
     { icon: 'profile', title: 'Dein Profil', text: 'Ein vollständiges Porträt deiner Überzeugungen' },
     { icon: 'compatibility', title: 'Übereinstimmung', text: 'Wie sehr du wirklich mit deiner eigenen Ideologie übereinstimmst' }
   ],
-  exampleEyebrow: 'Echtes Beispiel',
   exampleTitle: 'So sieht dein Ergebnis aus',
   exampleCaption: 'Anschauliches Beispiel mit echten Daten aus dem Katalog von 12 Axes.',
   exampleCta: 'Ich will mein Ergebnis sehen',
-  spectrumEyebrow: 'Politisches Spektrum',
   spectrumTitle: 'Entdecke dein politisches Spektrum',
   spectrumLead:
     'Das Ergebnis hilft dir, deine politische Position zwischen links, rechts und Mitte zu sehen, und erkennt auch radikalere, autoritäre oder libertäre Formen außerhalb dieser Achse, etwa die extreme Rechte, die radikale Linke, die Dritte Position, Libertarismus und Anarchismus.',
@@ -497,11 +488,9 @@ export const de: DeepPartial<Strings> = {
   menuAria: 'Menü öffnen',
   roseAria: 'Rose der 14 Achsen',
   spectrumBarAria: 'Leiste des politischen Spektrums mit den acht Kategorien',
-  versionsEyebrow: 'Versionen',
   versionsTitle: 'Wähle die Tiefe',
   versionsLead:
     'Starte mit dem Kurztest oder geh tiefer für ein genaueres Porträt deines ideologischen Profils. Alle Versionen nutzen dieselben 14 Achsen und liefern das Ergebnis sofort.',
-  variantEyebrow: 'Format wählen',
   variantTitlePre: 'Willst du Tempo oder ',
   variantTitleEm: 'Genauigkeit?',
   backToStart: 'Zurück zum Start',
@@ -525,7 +514,6 @@ export const de: DeepPartial<Strings> = {
   errCalc: 'Das Ergebnis konnte nicht berechnet werden.',
   errImage: 'Das Ergebnisbild konnte nicht erstellt werden.',
   errHttp: (status) => `HTTP-Fehler ${status}`,
-  resultsEyebrow: 'Analyse abgeschlossen',
   resultsH1Pre: 'Dein ideologisches ',
   resultsH1Em: 'Profil',
   resultsLead: (count) =>
@@ -556,12 +544,14 @@ export const de: DeepPartial<Strings> = {
   resultsNavAxisByAxis: 'Achse für Achse',
   resultsNavDisagree: 'Unterschiede',
   resultsNavGovernment: 'Idealregierung',
+  resultsNavAreaCountries: 'Länder nach Bereich',
   resultsNavTimeline: 'Zeitleiste',
   resultsNavLiving: 'Wo leben',
   resultsNavAxes: '14 Achsen',
   resultsNavSignature: 'Unterschied',
   resultsNavCountries: 'Länder',
   resultsNavPersonalities: 'Persönlichkeiten',
+  resultsNavElections: 'Wahlen',
   resultsNavAreas: 'Bereiche',
   resultsNavBooks: 'Bücher',
   resultsNavParties: 'Parteien',
@@ -588,10 +578,6 @@ export const de: DeepPartial<Strings> = {
     socialLead: 'Die soziale Achse',
     socialText: 'misst die Ausrichtung deiner Werte zwischen Progressivismus und Traditionalismus und spiegelt deine Haltung zu Sitten, Kultur und gesellschaftlichen Werten wider.'
   },
-  compassWith: 'mit',
-  compassSocialValues: 'gesellschaftlichen Werten',
-  compassCenterLeft: 'Mitte-links',
-  compassCenterRight: 'Mitte-rechts',
   compassSpectrumLabels: {
     'esq-radical': 'Radikale Linke',
     esquerda: 'Linke',
@@ -602,22 +588,44 @@ export const de: DeepPartial<Strings> = {
     libertario: 'Libertär',
     anarquismo: 'Anarchistisch'
   },
+  compassEconomicLabels: {
+    left: 'Links',
+    centerLeft: 'Mitte-links',
+    center: 'Mitte',
+    centerRight: 'Mitte-rechts',
+    right: 'Rechts'
+  },
+  compassSpectrumDescriptions: {
+    'esq-radical': 'Du neigst dazu, eine tiefgreifende Umgestaltung der Gesellschaft anzustreben, mit materieller Gleichheit, kollektivem Eigentum und einem starken Staat im Dienst der Arbeitenden, im Bruch mit der heutigen Wirtschaftsordnung.',
+    esquerda: 'Du neigst dazu, mehr Gleichheit und sozialen Schutz zu befürworten, mit einem Staat, der Ungleichheit durch öffentliche Dienste, Arbeitnehmerrechte und Umverteilung verringert.',
+    centro: 'Du neigst dazu, einen Ausgleich zwischen gegensätzlichen Positionen zu suchen, Markt und Staat, Wandel und Stabilität zu verbinden und Lösungen zu misstrauen, die nur von einer Seite kommen.',
+    direita: 'Du neigst dazu, Ordnung, Tradition, Eigenverantwortung und freies Unternehmertum zu schätzen, mit einem in der Wirtschaft begrenzteren Staat, der auf Sicherheit und die Werte der Nation achtet.',
+    'ext-direita': 'Du neigst dazu, Hierarchie, nationale Identität und starke Autorität zu priorisieren und Sicherheit und Ordnung über Pluralismus und Widerspruch zu stellen.',
+    terceira: 'Du neigst dazu, sowohl den liberalen Kapitalismus als auch den Kommunismus abzulehnen und einen starken Staat und eine gelenkte Wirtschaft mit Nation, Gemeinschaft und Tradition zu verbinden.',
+    libertario: 'Du neigst dazu, die individuelle Freiheit über alles zu stellen: so wenig Staat wie möglich, freier Markt und Respekt vor den Entscheidungen jedes Einzelnen, im Privatleben und in der Wirtschaft.',
+    anarquismo: 'Du neigst dazu, jeder zentralen Autorität zu misstrauen und eine Gesellschaft zu befürworten, die durch freiwillige Zusammenarbeit und Selbstverwaltung organisiert ist, ohne Staat und ohne aufgezwungene Hierarchien.',
+    raw: 'Ein Bereich jenseits der klassischen Landkarte, ohne Entsprechung in den üblichen Kategorien.'
+  },
+  compassEconomicDescriptions: {
+    left: 'Du neigst dazu, kollektives oder öffentliches Eigentum an den Produktionsmitteln und eine Planung der Wirtschaft zu befürworten, mit Staat und Gesellschaft statt dem Markt im Zentrum.',
+    centerLeft: 'Du neigst dazu, den Markt zu akzeptieren, aber mit starker Präsenz des Staates: breite öffentliche Dienste, Regulierung und Umverteilung zum Abbau von Ungleichheit.',
+    center: 'Du neigst dazu, einen wirtschaftlichen Mittelweg zu suchen, mit ausgewogenen Rollen von Markt und Staat: Regulierung, wo nötig, und Raum für private Initiative.',
+    centerRight: 'Du neigst dazu, dem Markt und der privaten Initiative mehr zu vertrauen, mit einem kleineren Staat und klaren Regeln, ohne einen gewissen sozialen Schutz aufzugeben.',
+    right: 'Du neigst dazu, Privateigentum und freien Markt zu befürworten, mit wenig staatlicher Planung oder Regulierung und Wettbewerb als Motor der Wirtschaft.'
+  },
   compassSocialLabels: {
     veryProgressive: 'Stark progressiv',
     progressive: 'Progressiv',
-    moderate: 'Gemäßigt',
+    moderate: 'Moderat',
     traditional: 'Traditionalistisch',
     veryTraditional: 'Stark traditionalistisch'
   },
-  compassNote: {
-    label: 'Zum Kompass:',
-    hints: {
-      terceira: 'Die Dritte Position verbindet einen starken Staat mit Nation und Tradition. Der Kompass misst Wirtschaft und Macht; Nation, Moral und Religion bleiben außen vor.',
-      'ext-direita': 'Die extreme Rechte ist durch Hierarchie und Identität geprägt. Der Kompass misst Wirtschaft und Macht; Moral, Religion und Nation bleiben außen vor.',
-      'esq-radical': 'Die radikale Linke ist durch Revolution und Kollektivierung geprägt. Der Kompass misst Wirtschaft und Macht; das revolutionäre Projekt bleibt außen vor.',
-      libertarian: 'Deine Ideologie liegt an der Grenze zwischen zwei Bereichen. Der Kompass misst Wirtschaft und Macht, und ein kleiner Unterschied bei einem von beiden entscheidet über die Seite.',
-      generic: 'Der Kompass misst 5 der 14 Achsen; die anderen 9 bleiben außen vor.'
-    }
+  compassSocialDescriptions: {
+    veryProgressive: 'Du neigst dazu, Freiheit der Lebensweise, Vielfalt und gesellschaftlichen Wandel entschieden zu verteidigen und Traditionen als etwas zu sehen, das hinterfragt und erneuert werden darf.',
+    progressive: 'Du neigst dazu, Freiheit der Lebensweise, Vielfalt und gleiche Rechte zu unterstützen und offen für neue Formen von Familie, Kultur und Identität zu sein.',
+    moderate: 'Du neigst dazu, Tradition und Wandel auszugleichen, zu bewahren, was sich bewährt, und schrittweise Veränderungen zu akzeptieren, ohne extreme Positionen in moralischen Fragen.',
+    traditional: 'Du neigst dazu, Familie, Religion und überlieferte Bräuche zu schätzen, schrittweise Veränderungen zu bevorzugen und schnellen Brüchen bei gesellschaftlichen Werten zu misstrauen.',
+    veryTraditional: 'Du neigst dazu, Familie, Glauben und traditionelle Bräuche als Fundament der Gesellschaft entschieden zu verteidigen und Veränderungen, die sie antasten, zu widerstehen.'
   },
   compassAria: (right, authoritarian, traditional) =>
     `Deine Position: ${right}% in Richtung rechts, ${authoritarian}% in Richtung autoritär und ${traditional}% in Richtung traditionalistisch.`,
@@ -720,7 +728,6 @@ export const de: DeepPartial<Strings> = {
   areasLockedCta: 'Meinen vollständigen Bericht freischalten',
   personalitiesDistantTitle: 'Am weitesten von dir entfernt',
   ideologyDistantTitle: 'Die Ideologie, die am weitesten von dir entfernt ist',
-  phraseTitle: 'Ein Satz, der dich beschreibt',
   aboutIdeology: (ideology) => `Über ${ideology}`,
   eli5Title: 'Erklär es mir, als wäre ich 5',
   knowMoreAbout: (name) => `Mehr über ${name} erfahren`,
@@ -775,7 +782,6 @@ export const de: DeepPartial<Strings> = {
   report: {
     fileName: '12axes-report',
     docLabel: 'Vollständiger Bericht',
-    profileEyebrow: 'Dein ideologisches Profil',
     headerLabel: (ideology) => `Bericht zum politischen Profil · ${ideology}`,
     kpiCountry: 'Nächstes Land',
     kpiPersonality: 'Persönlichkeit',
@@ -804,9 +810,24 @@ export const de: DeepPartial<Strings> = {
     `👉 Mach den Test und finde deine heraus:\nhttps://12axes.vercel.app/de`,
   shareCountriesCta: 'Nahe Länder teilen',
   sharePersonalitiesCta: 'Nahe Persönlichkeiten teilen',
+  electionsClosestLabel: 'Der Kandidat, der dir am nächsten steht',
+  electionsEnded: 'Beendet',
+  electionsPickAria: 'Land der Wahl auswählen',
+  shareElectionsHeader: 'Wahlen',
+  electionsNotice: 'Ideologische Nähe zu den Positionen des Kandidaten, keine Wahlempfehlung.',
+  shareElectionsCta: 'Ergebnis teilen',
+  electionsShareHeadline: (name, party) => `Mein kompatibelster Kandidat ist ${name}${party ? ` (${party})` : ''}`,
+  shareElectionsFilePrefix: '12axes-wahlen',
+  shareElectionsTitle: 'Der Kandidat, der meinem Profil am nächsten steht | 12axes.vercel.app',
+  shareElectionsMessage: (candidate, party, percent) => `${candidate}${party ? ` (${party})` : ''}: ${percent}% Übereinstimmung mit mir. Mach den Test und finde deinen: 12axes.vercel.app`,
   sharePartiesCta: 'Nahe Parteien teilen',
   shareCompassCta: 'Werte und Kompass teilen',
   shareGovernmentCta: 'Idealregierung teilen',
+  shareAreasCta: 'Länder nach Bereich teilen',
+  shareAreasHeader: 'Länder nach Bereich',
+  shareAreasFilePrefix: '12axes-laender-nach-bereich',
+  shareAreasTitle: 'Die Länder, die mir am nächsten stehen, nach Bereich | 12axes.vercel.app',
+  shareAreasMessage: 'Finde heraus, welche Länder am besten zu dir passen – in Politik, Wirtschaft, Gesellschaft und mehr – mit dem politischen Test 12 Axes: 12axes.vercel.app',
   shareTimelineCta: 'Zeitleiste teilen',
   shareLivingCta: 'Länder zum Leben teilen',
   shareIdealGovernment: 'IDEALREGIERUNG',
@@ -898,9 +919,7 @@ export const de: DeepPartial<Strings> = {
   shareNearbyCountries: 'NAHE LÄNDER',
   shareFooterCta: 'ENTDECKE DEIN PROFIL',
   shareFooterUrl: '12AXES.VERCEL.APP',
-  supportEyebrow: 'Das Projekt unterstützen',
   supportTitle: '',
-  ossEyebrow: 'Open Source',
   ossTitle: 'Ein unabhängiges, transparentes Projekt',
   ossLead: 'Du musst uns nicht einfach glauben. Der Code von 12 Axes ist öffentlich: Du kannst sehen, wie jede Antwort gewertet wird, wie die Übereinstimmung berechnet wird und woher die Profile stammen.',
   ossCards: [

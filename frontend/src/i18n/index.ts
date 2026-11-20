@@ -1,28 +1,28 @@
-// Dicionário de UI (PT, EN, ES, DE e IT; o que faltar nos idiomas gerados usa o EN). O idioma é resolvido uma vez por carga de página
+// Dicionário de UI (PT, EN, ES, DE, IT, RU e FR; o que faltar nos idiomas gerados usa o EN). O idioma é resolvido uma vez por carga de página
 // (?lang → localStorage → navigator) e trocar de idioma recarrega a página,
 // para que quiz e resultados sejam rebuscados já no idioma novo.
 import type { PersonalityCategory, ProfileDimension } from '../types/quiz';
 
-export type Lang = 'pt' | 'en' | 'es' | 'de' | 'it';
+export type Lang = 'pt' | 'en' | 'es' | 'de' | 'it' | 'ru' | 'fr';
 
-/** Prefixo das rotas do idioma: vazio em português, /en, /es, /de e /it nos demais. */
+/** Prefixo das rotas do idioma: vazio em português, /en, /es, /de, /it, /ru e /fr nos demais. */
 export function langPrefix(lang: Lang): string {
   return lang === 'pt' ? '' : `/${lang}`;
 }
 
 /** Locale de datas e números (Intl). */
-export const INTL_LOCALE: Record<Lang, string> = { pt: 'pt-BR', en: 'en-US', es: 'es', de: 'de-DE', it: 'it-IT' };
+export const INTL_LOCALE: Record<Lang, string> = { pt: 'pt-BR', en: 'en-US', es: 'es', de: 'de-DE', it: 'it-IT', ru: 'ru-RU', fr: 'fr-FR' };
 
-/** Idiomas com rota própria (/en, /es, /de, /it); o português fica na raiz. */
-export const PREFIXED_LANGS: Lang[] = ['en', 'es', 'de', 'it'];
+/** Idiomas com rota própria (/en, /es, /de, /it, /ru, /fr); o português fica na raiz. */
+export const PREFIXED_LANGS: Lang[] = ['en', 'es', 'de', 'it', 'ru', 'fr'];
 
-const isLang = (value: string | null): value is Lang => value === 'pt' || value === 'en' || value === 'es' || value === 'de' || value === 'it';
+const isLang = (value: string | null): value is Lang => value === 'pt' || value === 'en' || value === 'es' || value === 'de' || value === 'it' || value === 'ru' || value === 'fr';
 
 const STORAGE_KEY = '12axes-lang';
 
-// Idioma forçado pelo caminho: /en sempre inglês, /es sempre espanhol, /de sempre alemão, /it sempre italiano, /br sempre português,
+// Idioma forçado pelo caminho: /en sempre inglês, /es sempre espanhol, /de sempre alemão, /it sempre italiano, /ru sempre russo, /fr sempre francês, /br sempre português,
 // independente do aparelho ou da preferência salva. A comparação segue o catálogo:
-// /compare em português e /en/compare, /es/compare, /de/compare ou /it/compare nos demais.
+// /compare em português e /en/compare, /es/compare, /de/compare, /it/compare, /ru/compare ou /fr/compare nos demais.
 const normalizePath = (pathname: string): string => pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/';
 
 export function langForcedByPath(pathname: string): Lang | null {
@@ -65,7 +65,9 @@ export function resolveLang(): Lang {
   if (browser.startsWith('pt')) return 'pt';
   if (browser.startsWith('es')) return 'es';
   if (browser.startsWith('de')) return 'de';
-  return browser.startsWith('it') ? 'it' : 'en';
+  if (browser.startsWith('it')) return 'it';
+  if (browser.startsWith('ru')) return 'ru';
+  return browser.startsWith('fr') ? 'fr' : 'en';
 }
 
 export const LANG: Lang = resolveLang();
@@ -74,7 +76,7 @@ export function setLang(lang: Lang) {
   window.localStorage.setItem(STORAGE_KEY, lang);
   const url = new URL(window.location.href);
   url.searchParams.delete('lang');
-  // Em /en, /es, /de, /it, /br e na comparação a URL é o que define o idioma, então o toggle troca de rota
+  // Em /en, /es, /de, /it, /ru, /fr, /br e na comparação a URL é o que define o idioma, então o toggle troca de rota
   // (na comparação, mantendo os perfis escolhidos na query).
   const switched = langSwitchPath(url.pathname, lang);
   if (switched) url.pathname = switched;
@@ -100,13 +102,11 @@ export interface Strings {
   crashBody: string;
   crashBodyWithProgress: string;
   crashReload: string;
-  resumeEyebrow: string;
   resumeTitle: string;
   resumeBody: (answered: number, total: number) => string;
   resumeContinue: string;
   resumeDiscard: string;
   resumeUnavailable: string;
-  doneEyebrow: string;
   doneTitle: string;
   doneBody: (name: string) => string;
   doneView: string;
@@ -148,7 +148,6 @@ export interface Strings {
   denominationQuestion: string;
   denominationNames: Record<'catholic' | 'protestant' | 'orthodox', string>;
   restartQuiz: string;
-  heroEyebrow: string;
   h1Pre: string;
   h1Em: string;
   h1Post: string;
@@ -216,7 +215,6 @@ export interface Strings {
   compareValues: (pole: string, you: number, them: number, name: string) => string;
   compareOptionAria: (name: string, type: string) => string;
   comparePageDocTitle: string;
-  comparePageEyebrow: string;
   comparePageTitle: string;
   comparePageProfilesTitle: string;
   comparePageNeedMore: string;
@@ -306,22 +304,17 @@ export interface Strings {
   homeAxes: Record<string, { label: string; leftPole: string; rightPole: string }>;
   spectrumItems: { id: string; label: string; tone: string; description: string }[];
   faqItems: { question: string; answer: string }[];
-  howEyebrow: string;
   howTitle: string;
   howLead: string;
   steps: { title: string; text: string }[];
-  axesGuideEyebrow: string;
   axesGuideTitle: string;
   axesGuideLead: string;
-  discoveryEyebrow: string;
   discoveryTitle: string;
   discoveryLead: string;
   discoveryItems: { icon: string; title: string; text: string }[];
-  exampleEyebrow: string;
   exampleTitle: string;
   exampleCaption: string;
   exampleCta: string;
-  spectrumEyebrow: string;
   spectrumTitle: string;
   spectrumLead: string;
   faqTitle: string;
@@ -331,10 +324,8 @@ export interface Strings {
   menuAria: string;
   roseAria: string;
   spectrumBarAria: string;
-  versionsEyebrow: string;
   versionsTitle: string;
   versionsLead: string;
-  variantEyebrow: string;
   variantTitlePre: string;
   variantTitleEm: string;
   backToStart: string;
@@ -357,7 +348,6 @@ export interface Strings {
   errCalc: string;
   errImage: string;
   errHttp: (status: number) => string;
-  resultsEyebrow: string;
   resultsH1Pre: string;
   resultsH1Em: string;
   resultsLead: (count: number) => string;
@@ -386,6 +376,7 @@ export interface Strings {
   resultsNavAxisByAxis: string;
   resultsNavDisagree: string;
   resultsNavGovernment: string;
+  resultsNavAreaCountries: string;
   resultsNavTimeline: string;
   resultsNavLiving: string;
   resultsNavAxes: string;
@@ -393,6 +384,7 @@ export interface Strings {
   resultsNavCountries: string;
   resultsNavParties: string;
   resultsNavPersonalities: string;
+  resultsNavElections: string;
   resultsNavAreas: string;
   resultsNavBooks: string;
   resultsNavIdeologies: string;
@@ -408,12 +400,12 @@ export interface Strings {
   compassRight: string;
   compassProgressive: string;
   compassTraditionalist: string;
-  compassWith: string;
-  compassSocialValues: string;
-  compassCenterLeft: string;
-  compassCenterRight: string;
   compassSpectrumLabels: Record<'esq-radical' | 'esquerda' | 'centro' | 'direita' | 'ext-direita' | 'terceira' | 'libertario' | 'anarquismo' | 'raw', string>;
+  compassEconomicLabels: Record<'left' | 'centerLeft' | 'center' | 'centerRight' | 'right', string>;
+  compassSpectrumDescriptions: Record<'esq-radical' | 'esquerda' | 'centro' | 'direita' | 'ext-direita' | 'terceira' | 'libertario' | 'anarquismo' | 'raw', string>;
+  compassEconomicDescriptions: Record<'left' | 'centerLeft' | 'center' | 'centerRight' | 'right', string>;
   compassSocialLabels: Record<'veryProgressive' | 'progressive' | 'moderate' | 'traditional' | 'veryTraditional', string>;
+  compassSocialDescriptions: Record<'veryProgressive' | 'progressive' | 'moderate' | 'traditional' | 'veryTraditional', string>;
   compassInfo: {
     aria: string;
     title: string;
@@ -423,10 +415,6 @@ export interface Strings {
     econText: string;
     socialLead: string;
     socialText: string;
-  };
-  compassNote: {
-    label: string;
-    hints: Record<'terceira' | 'ext-direita' | 'esq-radical' | 'libertarian' | 'generic', string>;
   };
   compassAria: (right: number, authoritarian: number, traditional: number) => string;
   countriesSectionTitle: string;
@@ -501,7 +489,6 @@ export interface Strings {
   areasLockedCta: string;
   personalitiesDistantTitle: string;
   ideologyDistantTitle: string;
-  phraseTitle: string;
   phraseNote: (ideology: string) => string;
   aboutIdeology: (ideology: string) => string;
   eli5Title: string;
@@ -546,7 +533,6 @@ export interface Strings {
   report: {
     fileName: string;
     docLabel: string;
-    profileEyebrow: string;
     headerLabel: (ideology: string) => string;
     kpiCountry: string;
     kpiPersonality: string;
@@ -571,9 +557,24 @@ export interface Strings {
   shareCountriesMessage: (country: string, percent: number) => string;
   shareCountriesCta: string;
   sharePersonalitiesCta: string;
+  electionsClosestLabel: string;
+  electionsEnded: string;
+  electionsPickAria: string;
+  shareElectionsHeader: string;
+  electionsNotice: string;
+  shareElectionsCta: string;
+  electionsShareHeadline: (name: string, party: string) => string;
+  shareElectionsFilePrefix: string;
+  shareElectionsTitle: string;
+  shareElectionsMessage: (candidate: string, party: string, percent: number) => string;
   sharePartiesCta: string;
   shareCompassCta: string;
   shareGovernmentCta: string;
+  shareAreasCta: string;
+  shareAreasHeader: string;
+  shareAreasFilePrefix: string;
+  shareAreasTitle: string;
+  shareAreasMessage: string;
   shareTimelineCta: string;
   shareLivingCta: string;
   shareIdealGovernment: string;
@@ -638,9 +639,7 @@ export interface Strings {
   shareNearbyCountries: string;
   shareFooterCta: string;
   shareFooterUrl: string;
-  supportEyebrow: string;
   supportTitle: string;
-  ossEyebrow: string;
   ossTitle: string;
   ossLead: string;
   ossCards: { title: string; text: string }[];
@@ -681,7 +680,9 @@ async function loadStrings(): Promise<Strings> {
   const partialLoaders = {
     es: () => import('./es').then((module) => module.es),
     de: () => import('./de').then((module) => module.de),
-    it: () => import('./it').then((module) => module.it)
+    it: () => import('./it').then((module) => module.it),
+    ru: () => import('./ru').then((module) => module.ru),
+    fr: () => import('./fr').then((module) => module.fr)
   };
   const [partial, { mergeStrings }] = await Promise.all([partialLoaders[LANG](), import('./mergeStrings')]);
   return mergeStrings<Strings>(en, partial);

@@ -154,6 +154,38 @@ class BookRecommendationTest {
     }
 
     @Test
+    void russianShowsTheRussianTitleButSearchesTheUsStoreWithTheEnglishTitle() throws Exception {
+        var recommendations = result("ru").bookRecommendations();
+        assertThat(recommendations).isNotEmpty().allSatisfy(book -> {
+            var stored = storedFor(book);
+            assertThat(book.title()).isEqualTo(stored.title().get("ru"));
+            assertThat(book.url()).startsWith("https://www.amazon.com/").contains("tag=12axes0d-20");
+        });
+    }
+
+    @Test
+    void frenchShowsTheFrenchTitleButSearchesTheUsStoreWithTheEnglishTitle() throws Exception {
+        var recommendations = result("fr").bookRecommendations();
+        assertThat(recommendations).isNotEmpty().allSatisfy(book -> {
+            var stored = storedFor(book);
+            assertThat(book.title()).isEqualTo(stored.title().get("fr"));
+            assertThat(book.url()).startsWith("https://www.amazon.com/").contains("tag=12axes0d-20");
+        });
+    }
+
+    @Test
+    void everyBookHasAFrenchTitle() {
+        assertThat(allBooks())
+                .allSatisfy(book -> assertThat(book.title().get("fr")).as(book.personalityId()).isNotBlank());
+    }
+
+    @Test
+    void everyBookHasARussianTitle() {
+        assertThat(allBooks())
+                .allSatisfy(book -> assertThat(book.title().get("ru")).as(book.personalityId()).isNotBlank());
+    }
+
+    @Test
     void everyBookHasAnItalianTitle() {
         assertThat(allBooks())
                 .allSatisfy(book -> assertThat(book.title().get("it")).as(book.personalityId()).isNotBlank());

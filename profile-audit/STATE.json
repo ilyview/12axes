@@ -1,8 +1,8 @@
 {
   "_comment": "Estado unico da auditoria pergunta-a-pergunta (240 perguntas / 12 eixos). Um objeto por catalogo. Veja README.md para o processo completo.",
-  "lastUpdated": "2026-11-13T17:43:35Z",
+  "lastUpdated": "2026-11-19T19:50:10Z",
   "personality": {
-    "totalProfiles": 744,
+    "totalProfiles": 746,
     "pending": [],
     "done": [
       "lenin",
@@ -748,14 +748,16 @@
       "fritz-thyssen",
       "sero",
       "lenny",
-      "bisavo-do-lenny"
+      "bisavo-do-lenny",
+      "alberto-nunez-feijoo",
+      "wang-huning"
     ],
     "lastUpdated": "2026-11-13T17:12:51Z",
     "audited": 509,
     "unanswered": 0
   },
   "ideology": {
-    "totalProfiles": 273,
+    "totalProfiles": 283,
     "pending": [
       "quilombismo",
       "democracia-intervencionista",
@@ -1035,12 +1037,22 @@
       "social-democracia-conservadora",
       "austrofascismo",
       "iluminismo",
-      "deltocracia"
+      "deltocracia",
+      "neoliberalismo-conservador",
+      "nacionalismo-gaullista",
+      "legionarismo",
+      "nacionalismo-brasileiro",
+      "socialismo-brasileiro",
+      "nacionalismo-messianico",
+      "liberalismo-civico",
+      "capitalismo-dinastico",
+      "conservadorismo-tecnocratico",
+      "dirigismo"
     ],
     "lastUpdated": "2026-11-13T17:43:35Z"
   },
   "country": {
-    "totalProfiles": 321,
+    "totalProfiles": 329,
     "pending": [],
     "done": [
       "brasil",
@@ -1363,12 +1375,20 @@
       "eua-nevada",
       "brasil-de-fernando-henrique-cardoso",
       "mocambique-de-samora-machel",
-      "polonia-socialista"
+      "polonia-socialista",
+      "andaluzia",
+      "comunidade-valenciana",
+      "berlim",
+      "saxonia",
+      "baden-wurttemberg",
+      "sicilia",
+      "londres",
+      "lombardia"
     ]
   },
-  "totalProfiles": 1196,
+  "totalProfiles": 1205,
   "party": {
-    "totalProfiles": 204,
+    "totalProfiles": 208,
     "pending": [],
     "done": [
       "nsdap",
@@ -1574,7 +1594,11 @@
       "avante",
       "refah-partisi",
       "partido-federalista-eua",
-      "pine-tree-party"
+      "pine-tree-party",
+      "yabloko",
+      "ldpr",
+      "russia-justa",
+      "novas-pessoas"
     ]
   }
 }

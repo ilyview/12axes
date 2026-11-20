@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useMemo, useRef, useState, type CSSProperties, useCallback } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { LANG, t } from '../../i18n';
 import type { Axis, AxisResult, PersonalityMatch, PremiumReport, QuizPayload, QuizResult } from '../../types/quiz';
@@ -11,6 +11,7 @@ import { AxesSection } from '../results/AxesSection';
 import { CompareSection } from '../results/CompareSection';
 import { ComparePersonSection } from '../results/ComparePersonSection';
 import { CountriesSection } from '../results/CountriesSection';
+import { ElectionPicker, ElectionsSection } from '../results/ElectionsSection';
 import { IdeologiesSection } from '../results/IdeologiesSection';
 import { PartiesSection } from '../results/PartiesSection';
 import { PersonalitiesSection } from '../results/PersonalitiesSection';
@@ -106,6 +107,10 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
   const politicalValues = result.politicalValues ?? [];
   const compass = computeCompass(axisResults);
   const [printingPdf, setPrintingPdf] = useState(false);
+  // Eleição mostrada na seção "Eleições" (o seletor de país ao lado do compartilhar escolhe qual).
+  const [electionIndex, setElectionIndex] = useState(0);
+  const elections = result.elections ?? [];
+  const shownElection = elections[electionIndex % Math.max(elections.length, 1)];
   // Cartão de compartilhamento de uma seção (países, personalidades, partidos ou valores e bússola). O módulo do cartão (e o
   // html-to-image) só carrega no clique.
   const [sharingKind, setSharingKind] = useState<ShareKind | null>(null);
@@ -120,10 +125,12 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
       if (kind === 'countries') await (await import('../../utils/countriesShareCard')).exportCountriesShare(result, sharedReligion);
       else if (kind === 'personalities') await (await import('../../utils/personalitiesShareCard')).exportPersonalitiesShare(result, sharedReligion);
       else if (kind === 'parties') await (await import('../../utils/partiesShareCard')).exportPartiesShare(result, sharedReligion);
+      else if (kind === 'elections') await (await import('../../utils/electionsShareCard')).exportElectionsShare(result, shownElection, sharedReligion);
       else if (kind === 'compass') await (await import('../../utils/compassShareCard')).exportCompassShare(result, axes, sharedReligion);
       else if (shownReport) {
         // As seções do relatório pago usam o relatório que já está carregado na página, com as trocas do governo ideal que o usuário fez.
         if (kind === 'government') await (await import('../../utils/governmentShareCard')).exportGovernmentShare(result, shownReport, sharedReligion);
+        else if (kind === 'areas') await (await import('../../utils/areasShareCard')).exportAreasShare(result, shownReport, sharedReligion);
         else if (kind === 'timeline') await (await import('../../utils/timelineShareCard')).exportTimelineShare(result, shownReport, sharedReligion);
         else await (await import('../../utils/livingShareCard')).exportLivingShare(result, shownReport, sharedReligion);
       }
@@ -133,12 +140,13 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
       setSharingKind(null);
     }
   };
-  const shareButton = (kind: ShareKind) => (
+  const shareButton = (kind: ShareKind, extra?: ReactNode) => (
     <SectionShareButton
       kind={kind}
       sharing={sharingKind === kind}
       error={shareError?.kind === kind ? shareError.message : null}
       onShare={() => void shareSection(kind)}
+      extra={extra}
     />
   );
   // Identidade do resultado para o relatório pago: os 12 valores, na ordem dos eixos.
@@ -283,7 +291,6 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
       <div className="e-wrap e-res-grid">
         <div className="e-res-main">
           <header className="e-res-head">
-            <p className="e-eyebrow">{t.resultsEyebrow}</p>
             <h1>
               {t.resultsH1Pre}
               <span>{t.resultsH1Em}</span>
@@ -329,6 +336,18 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
             axes={axes}
             results={axisResults}
           />
+
+          {shownElection && (
+            <ElectionsSection
+              election={shownElection}
+              footer={shareButton(
+                'elections',
+                elections.length > 1 && (
+                  <ElectionPicker elections={elections} index={electionIndex % elections.length} onSelect={setElectionIndex} />
+                )
+              )}
+            />
+          )}
 
           <AreasSection
             generalMatches={effectiveResult.personalityMatches}
@@ -426,7 +445,7 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
         </div>
 
         <aside className="e-side" aria-label={t.resultsSummaryAria}>
-          <ResultsNav premium={hasPremium} premiumTarget={SALES_OPEN ? 'relatorio-completo' : null} hasBooks={(result.bookRecommendations?.length ?? 0) > 0} hasCompass={compass !== null} hasParties={showParties} hasValues={politicalValues.length > 0} />
+          <ResultsNav hasElections={(result.elections?.length ?? 0) > 0} premium={hasPremium} premiumTarget={SALES_OPEN ? 'relatorio-completo' : null} hasBooks={(result.bookRecommendations?.length ?? 0) > 0} hasCompass={compass !== null} hasParties={showParties} hasValues={politicalValues.length > 0} />
         </aside>
       </div>
       {printingPdf && pdfButtonAction(SALES_OPEN, hasPremium) === 'print' &&

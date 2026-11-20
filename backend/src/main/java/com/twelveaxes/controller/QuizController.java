@@ -19,6 +19,7 @@ import com.twelveaxes.service.AxisValuesParser;
 import com.twelveaxes.service.BoundedCache;
 import com.twelveaxes.service.BookRecommendationService;
 import com.twelveaxes.service.DimensionMatcherService;
+import com.twelveaxes.service.ElectionService;
 import com.twelveaxes.service.CountryMatcherService;
 import com.twelveaxes.service.CountryDimensionMatcherService;
 import com.twelveaxes.service.IdeologyMatcherService;
@@ -63,6 +64,7 @@ public class QuizController {
     private final BookRecommendationService bookRecommendationService;
     private final DimensionMatcherService dimensionMatcherService;
     private final PoliticalValuesService politicalValuesService;
+    private final ElectionService electionService;
 
     public QuizController(
             QuizDataService dataService,
@@ -77,7 +79,8 @@ public class QuizController {
             AxisTensionService axisTensionService,
             DimensionMatcherService dimensionMatcherService,
             BookRecommendationService bookRecommendationService,
-            PoliticalValuesService politicalValuesService
+            PoliticalValuesService politicalValuesService,
+            ElectionService electionService
     ) {
         this.dataService = dataService;
         this.scoringService = scoringService;
@@ -92,6 +95,7 @@ public class QuizController {
         this.dimensionMatcherService = dimensionMatcherService;
         this.bookRecommendationService = bookRecommendationService;
         this.politicalValuesService = politicalValuesService;
+        this.electionService = electionService;
     }
 
 
@@ -210,7 +214,8 @@ public class QuizController {
                 topHistoricalParty,
                 partyDimensionMatches,
                 partyMatcherService.findBottomMatches(axes, lang, religion),
-                politicalValuesService.resolve(axes, lang)
+                politicalValuesService.resolve(axes, lang),
+                electionService.findActive(axes, lang)
         );
     }
 

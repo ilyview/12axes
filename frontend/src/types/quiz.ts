@@ -275,6 +275,24 @@ export interface QuizResult {
   bottomPartyMatches?: PartyMatch[];
   /** Um valor político nomeado por categoria, derivado só dos eixos. */
   politicalValues?: PoliticalValue[];
+  /** Eleições ativas para o idioma, com os candidatos do mais ao menos compatível; vazio quando não há nenhuma. */
+  elections?: ElectionResult[];
+}
+
+/** Um candidato de uma eleição: a personalidade (com a compatibilidade) e o partido pelo qual concorre. */
+export interface ElectionCandidateMatch {
+  candidate: PersonalityMatch;
+  party: PartyMatch | null;
+}
+
+export interface ElectionResult {
+  id: string;
+  countryId: string;
+  /** Data da eleição (yyyy-MM-dd), só exibição. */
+  date: string;
+  /** Nome já no idioma do pedido. */
+  name: string;
+  candidates: ElectionCandidateMatch[];
 }
 
 
@@ -438,6 +456,13 @@ export interface TimelineEra {
   highlights: TimelineEntry[];
 }
 
+/** O país atual mais próximo do usuário em uma área do relatório pago; a compatibilidade é a da área. */
+export interface AreaCountryMatch {
+  /** politico, externa, territorial, economico, sociedade ou tecnologia. */
+  area: string;
+  country: CountryMatch;
+}
+
 export interface PremiumReport {
   axisAnalysis: AxisAnalysis[];
   topCountries: CountryMatch[];
@@ -446,4 +471,6 @@ export interface PremiumReport {
   idealGovernment: GovernmentSeat[];
   timeline: TimelineEra[];
   ranking: PremiumRanking;
+  /** O país atual mais próximo em cada área; ausente em relatórios antigos. */
+  countriesByArea?: AreaCountryMatch[];
 }

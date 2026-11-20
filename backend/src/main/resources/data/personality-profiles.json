@@ -1260,18 +1260,18 @@
   {
     "personalityId": "sorel",
     "vector": {
-      "estrutura": 71.3,
-      "representacao": 46.3,
-      "poder": 38.8,
-      "imigracao": 62.5,
-      "diplomacia": 66.3,
-      "intervencao": 46.3,
-      "economia": 75,
-      "controle": 63.7,
-      "comercio": 68.8,
-      "religiao": 46.3,
-      "moral": 35,
-      "tecnologia": 53.8
+      "estrutura": 74.8,
+      "representacao": 60.2,
+      "poder": 38.5,
+      "imigracao": 63.8,
+      "diplomacia": 42.6,
+      "intervencao": 72.9,
+      "economia": 61.5,
+      "controle": 53.2,
+      "comercio": 75.2,
+      "religiao": 50.3,
+      "moral": 26.2,
+      "tecnologia": 30.0
     }
   },
   {
@@ -12730,6 +12730,40 @@
       "religiao": 12.9,
       "moral": 10.4,
       "tecnologia": 59.4
+    }
+  },
+  {
+    "personalityId": "alberto-nunez-feijoo",
+    "vector": {
+      "estrutura": 34.3,
+      "representacao": 83.5,
+      "poder": 59.1,
+      "imigracao": 57.6,
+      "diplomacia": 51.7,
+      "intervencao": 40.0,
+      "economia": 48.4,
+      "controle": 35.4,
+      "comercio": 33.0,
+      "religiao": 56.8,
+      "moral": 43.2,
+      "tecnologia": 54.8
+    }
+  },
+  {
+    "personalityId": "wang-huning",
+    "vector": {
+      "estrutura": 8.0,
+      "representacao": 6.7,
+      "poder": 95.7,
+      "imigracao": 75.7,
+      "diplomacia": 62.4,
+      "intervencao": 48.3,
+      "economia": 70.9,
+      "controle": 81.4,
+      "comercio": 52.6,
+      "religiao": 93.2,
+      "moral": 31.0,
+      "tecnologia": 73.7
     }
   },
   {

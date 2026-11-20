@@ -2790,18 +2790,18 @@
   {
     "ideologyId": "sindicalismo-revolucionario",
     "vector": {
-      "estrutura": 77.5,
-      "representacao": 62.5,
-      "poder": 46.2,
-      "imigracao": 73.8,
-      "diplomacia": 80.0,
-      "intervencao": 47.5,
-      "economia": 70.1,
-      "controle": 82.5,
-      "comercio": 68.2,
-      "religiao": 36.2,
-      "moral": 22.1,
-      "tecnologia": 53.8
+      "estrutura": 78.3,
+      "representacao": 69.8,
+      "poder": 26.6,
+      "imigracao": 28.1,
+      "diplomacia": 29.0,
+      "intervencao": 74.5,
+      "economia": 81.2,
+      "controle": 66.3,
+      "comercio": 71.7,
+      "religiao": 77.7,
+      "moral": 34.7,
+      "tecnologia": 57.0
     }
   },
   {
@@ -4672,6 +4672,176 @@
       "religiao": 81.0,
       "moral": 72.5,
       "tecnologia": 76.0
+    }
+  },
+  {
+    "ideologyId": "neoliberalismo-conservador",
+    "vector": {
+      "estrutura": 26.0,
+      "representacao": 68.0,
+      "poder": 60.3,
+      "imigracao": 71.9,
+      "diplomacia": 74.3,
+      "intervencao": 23.3,
+      "economia": 17.2,
+      "controle": 20.6,
+      "comercio": 20.8,
+      "religiao": 30.6,
+      "moral": 20.6,
+      "tecnologia": 71.3
+    }
+  },
+  {
+    "ideologyId": "nacionalismo-gaullista",
+    "vector": {
+      "estrutura": 12.9,
+      "representacao": 68.0,
+      "poder": 72.2,
+      "imigracao": 75.5,
+      "diplomacia": 68.8,
+      "intervencao": 41.9,
+      "economia": 66.2,
+      "controle": 82.6,
+      "comercio": 78.0,
+      "religiao": 48.4,
+      "moral": 20.6,
+      "tecnologia": 67.7
+    }
+  },
+  {
+    "ideologyId": "legionarismo",
+    "vector": {
+      "estrutura": 12.8,
+      "representacao": 25.7,
+      "poder": 75.5,
+      "imigracao": 96.8,
+      "diplomacia": 75.5,
+      "intervencao": 34.0,
+      "economia": 75.0,
+      "controle": 71.0,
+      "comercio": 87.1,
+      "religiao": 2.1,
+      "moral": 7.7,
+      "tecnologia": 15.7
+    }
+  },
+  {
+    "ideologyId": "nacionalismo-brasileiro",
+    "vector": {
+      "estrutura": 21.2,
+      "representacao": 71.6,
+      "poder": 60.3,
+      "imigracao": 48.1,
+      "diplomacia": 54.5,
+      "intervencao": 44.3,
+      "economia": 72.0,
+      "controle": 76.7,
+      "comercio": 76.4,
+      "religiao": 53.2,
+      "moral": 44.4,
+      "tecnologia": 66.5
+    }
+  },
+  {
+    "ideologyId": "socialismo-brasileiro",
+    "vector": {
+      "estrutura": 27.1,
+      "representacao": 88.2,
+      "poder": 36.5,
+      "imigracao": 15.2,
+      "diplomacia": 34.8,
+      "intervencao": 63.7,
+      "economia": 98.4,
+      "controle": 93.7,
+      "comercio": 76.4,
+      "religiao": 65.5,
+      "moral": 69.3,
+      "tecnologia": 54.6
+    }
+  },
+  {
+    "ideologyId": "nacionalismo-messianico",
+    "vector": {
+      "estrutura": 29.2,
+      "representacao": 31.7,
+      "poder": 62.6,
+      "imigracao": 80.1,
+      "diplomacia": 75.5,
+      "intervencao": 10.2,
+      "economia": 60.1,
+      "controle": 68.3,
+      "comercio": 61.0,
+      "religiao": 24.8,
+      "moral": 29.1,
+      "tecnologia": 63.0
+    }
+  },
+  {
+    "ideologyId": "liberalismo-civico",
+    "vector": {
+      "estrutura": 37.9,
+      "representacao": 88.2,
+      "poder": 34.1,
+      "imigracao": 71.0,
+      "diplomacia": 46.9,
+      "intervencao": 36.4,
+      "economia": 35.3,
+      "controle": 28.3,
+      "comercio": 19.9,
+      "religiao": 81.4,
+      "moral": 68.1,
+      "tecnologia": 77.2
+    }
+  },
+  {
+    "ideologyId": "capitalismo-dinastico",
+    "vector": {
+      "estrutura": 24.7,
+      "representacao": 11.4,
+      "poder": 89.8,
+      "imigracao": 51.5,
+      "diplomacia": 52.1,
+      "intervencao": 45.5,
+      "economia": 38.7,
+      "controle": 42.0,
+      "comercio": 19.6,
+      "religiao": 16.4,
+      "moral": 14.9,
+      "tecnologia": 73.7
+    }
+  },
+  {
+    "ideologyId": "conservadorismo-tecnocratico",
+    "vector": {
+      "estrutura": 22.0,
+      "representacao": 21.0,
+      "poder": 71.0,
+      "imigracao": 68.3,
+      "diplomacia": 52.9,
+      "intervencao": 43.6,
+      "economia": 43.5,
+      "controle": 43.3,
+      "comercio": 39.5,
+      "religiao": 21.0,
+      "moral": 14.6,
+      "tecnologia": 60.6
+    }
+  },
+  {
+    "ideologyId": "dirigismo",
+    "vector": {
+      "estrutura": 22.4,
+      "representacao": 70.4,
+      "poder": 63.9,
+      "imigracao": 63.8,
+      "diplomacia": 56.9,
+      "intervencao": 39.5,
+      "economia": 63.7,
+      "controle": 75.5,
+      "comercio": 69.3,
+      "religiao": 70.7,
+      "moral": 56.2,
+      "tecnologia": 71.3
     }
   },
   {

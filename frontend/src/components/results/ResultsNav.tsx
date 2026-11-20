@@ -7,6 +7,7 @@ const SECTIONS = [
   { id: 'assinatura', label: () => t.resultsNavSignature },
   { id: 'paises', label: () => t.resultsNavCountries },
   { id: 'personalidades', label: () => t.resultsNavPersonalities },
+  { id: 'eleicoes', label: () => t.resultsNavElections },
   { id: 'areas', label: () => t.resultsNavAreas },
   { id: 'livros', label: () => t.resultsNavBooks },
   { id: 'partidos', label: () => t.resultsNavParties },
@@ -20,17 +21,19 @@ const PREMIUM_SECTIONS = [
   { id: 'premium-eixos', label: () => t.resultsNavAxisByAxis },
   { id: 'premium-discorda', label: () => t.resultsNavDisagree },
   { id: 'premium-governo', label: () => t.resultsNavGovernment },
+  { id: 'premium-areas-paises', label: () => t.resultsNavAreaCountries },
   { id: 'premium-linha-do-tempo', label: () => t.resultsNavTimeline },
   { id: 'premium-paises', label: () => t.resultsNavLiving }
 ];
 
-// Sem livros recomendados, sem partidos ou sem os eixos da bússola, a seção não é renderizada: o item some e a numeração se ajusta.
+// Sem livros recomendados, sem partidos, sem eleição ativa ou sem os eixos da bússola, a seção não é renderizada: o item some e a numeração se ajusta.
 interface ResultsNavProps {
+  hasElections?: boolean;
   hasBooks?: boolean;
   hasCompass?: boolean;
   hasParties?: boolean;
   hasValues?: boolean;
-  /** Com acesso ao relatório pago: lista as cinco seções dele (11 a 15) no lugar do item único. */
+  /** Com acesso ao relatório pago: lista as seis seções dele (11 a 15) no lugar do item único. */
   premium?: boolean;
   /** Sem acesso: id do convite à compra. O item "Análise completa" aparece apagado (com um cadeado) e leva até ele; null o esconde. */
   premiumTarget?: string | null;
@@ -38,9 +41,9 @@ interface ResultsNavProps {
 
 type NavItem = { id: string; label: () => string };
 
-export function ResultsNav({ hasBooks = true, hasCompass = true, hasParties = true, hasValues = true, premium = false, premiumTarget = null }: ResultsNavProps) {
+export function ResultsNav({ hasElections = false, hasBooks = true, hasCompass = true, hasParties = true, hasValues = true, premium = false, premiumTarget = null }: ResultsNavProps) {
   const base: NavItem[] = SECTIONS.filter(
-    ({ id }) => (id !== 'livros' || hasBooks) && (id !== 'bussola' || hasCompass) && (id !== 'partidos' || hasParties) && (id !== 'valores' || hasValues)
+    ({ id }) => (id !== 'eleicoes' || hasElections) && (id !== 'livros' || hasBooks) && (id !== 'bussola' || hasCompass) && (id !== 'partidos' || hasParties) && (id !== 'valores' || hasValues)
   );
   const locked: NavItem[] = !premium && premiumTarget !== null ? [{ id: premiumTarget, label: () => t.resultsNavReport }] : [];
   const sections: NavItem[] = [...base, ...(premium ? PREMIUM_SECTIONS : locked)];
@@ -106,7 +109,6 @@ export function ResultsNav({ hasBooks = true, hasCompass = true, hasParties = tr
           <div key={id} className="e-toc-row">
             {index === firstPremium && <p className="e-toc-group">{t.resultsNavPremiumGroup}</p>}
             <a href={`#${id}`} className={[active === id ? 'e-on' : '', isLocked ? 'e-toc-locked' : ''].filter(Boolean).join(' ') || undefined} aria-current={active === id ? 'location' : undefined}>
-              <span>{String(index + 1).padStart(2, '0')}</span>
               {label()}
               {isLocked && <LockIcon className="e-toc-lock" />}
             </a>

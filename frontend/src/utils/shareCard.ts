@@ -22,8 +22,8 @@ import { resultVector } from './peopleCompare';
 export const SHARE_WIDTH = 1080;
 export const SHARE_HEIGHT = 1920;
 
-export const SHARE_FONT_DISPLAY = '"Sora"';
-export const SHARE_FONT_BODY = '"Poppins"';
+export const SHARE_FONT_DISPLAY = '"Sora", "Manrope", sans-serif';
+export const SHARE_FONT_BODY = '"Poppins", "Montserrat", sans-serif';
 const SVG_NS = 'http://www.w3.org/2000/svg';
 
 export const SHARE_COLORS = {
@@ -319,7 +319,7 @@ function fitTitleFontSize(text: string): number {
   if (!ctx) {
     return TITLE_MAX_PX;
   }
-  ctx.font = `600 ${TITLE_MAX_PX}px ${SHARE_FONT_DISPLAY}, sans-serif`;
+  ctx.font = `600 ${TITLE_MAX_PX}px ${SHARE_FONT_DISPLAY}`;
   const width = ctx.measureText(text).width;
   if (!width || width <= TITLE_MAX_WIDTH) {
     return TITLE_MAX_PX;

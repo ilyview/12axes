@@ -62,11 +62,11 @@ const FULL_MODE =
 
 const INITIAL_VARIANT: QuizVariant = FULL_MODE ? 'extreme' : 'short';
 
-// /compare, /en/compare, /es/compare, /de/compare e /it/compare (comparação entre perfis do catálogo) são uma página à parte, carregada sob
+// /compare, /en/compare, /es/compare, /de/compare, /it/compare, /ru/compare e /fr/compare (comparação entre perfis do catálogo) são uma página à parte, carregada sob
 // demanda: o catálogo inteiro só é baixado por quem abre essa rota.
 const COMPARE_MODE =
   typeof window !== 'undefined' &&
-  ['/compare', '/en/compare', '/es/compare', '/de/compare', '/it/compare'].includes(window.location.pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/');
+  ['/compare', '/en/compare', '/es/compare', '/de/compare', '/it/compare', '/ru/compare', '/fr/compare'].includes(window.location.pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/');
 
 // /compare/people: duas pessoas pelo link do resultado de cada uma (vetores na própria URL).
 const COMPARE_PEOPLE_MODE =
@@ -984,7 +984,6 @@ function MainApp() {
               {savedProgress && (
                 <>
                   <div className="e-resume-body">
-                    <p className="e-eyebrow">{t.resumeEyebrow}</p>
                     <h3>{t.resumeTitle}</h3>
                     <p className="e-resume-text">
                       {t.resumeBody(savedAnsweredCount(savedProgress), savedProgress.questionIds.length)}
@@ -1010,7 +1009,6 @@ function MainApp() {
               {!savedProgress && lastResult && (
                 <>
                   <div className="e-resume-body">
-                    <p className="e-eyebrow">{t.doneEyebrow}</p>
                     <h3>{t.doneTitle}</h3>
                     <p className="e-resume-text">{t.doneBody(lastResult.name)}</p>
                     <div className="e-resume-bar" aria-hidden="true">

@@ -13,13 +13,11 @@ export const en: Strings = {
   crashBody: 'The page hit an unexpected error. Reload to try again.',
   crashBodyWithProgress: 'The page hit an unexpected error, but your answers are saved. Reload and choose to continue where you left off.',
   crashReload: 'Reload the page',
-  resumeEyebrow: 'Quiz in progress',
   resumeTitle: 'Pick up where you left off',
   resumeBody: (answered, total) => `You have answered ${answered} of ${total} questions. Your answers are saved in this browser.`,
   resumeContinue: 'Continue',
   resumeDiscard: 'Start over',
   resumeUnavailable: 'The previous quiz could not be resumed. Please start a new one.',
-  doneEyebrow: 'Test completed',
   doneTitle: 'You have already taken the test',
   doneBody: (name) => `Your result was ${name}. It is saved in this browser, just open it again.`,
   doneView: 'View results',
@@ -68,7 +66,6 @@ export const en: Strings = {
   denominationQuestion: 'Which Christian tradition do you follow?',
   denominationNames: { catholic: 'Catholic', protestant: 'Protestant', orthodox: 'Orthodox' },
   restartQuiz: 'Restart quiz',
-  heroEyebrow: 'Political discovery',
   h1Pre: 'Do you really know your ',
   h1Em: 'political ideology',
   h1Post: '?',
@@ -180,8 +177,7 @@ export const en: Strings = {
   compareNoFarLine: (name) => `No axis is far from ${name}.`,
   compareValues: (pole, you, them, name) => `${pole}: you ${you}% · ${name} ${them}%.`,
   compareOptionAria: (name, type) => `${name}, ${type}`,
-  comparePageDocTitle: 'Compare profiles — 12 Axes',
-  comparePageEyebrow: 'Compare profiles',
+  comparePageDocTitle: 'Compare profiles | 12 Axes',
   comparePageTitle: 'Side by side, on the 14 axes',
   comparePageProfilesTitle: 'Profiles',
   comparePageNeedMore: 'Pick one more profile to compare.',
@@ -268,7 +264,7 @@ export const en: Strings = {
   peopleNavPersonalities: 'Personalities',
   peopleNavValues: 'Values',
   peopleNavSharedValues: 'In common',
-  peoplePageDocTitle: 'Compare with someone else — 12 Axes',
+  peoplePageDocTitle: 'Compare with someone else | 12 Axes',
   peoplePageTitle: 'The two of you, on the 14 axes',
   peoplePagePeopleTitle: 'People',
   peoplePageBadLink: 'This comparison link is incomplete. Open your result and use "Compare with someone else".',
@@ -448,7 +444,6 @@ export const en: Strings = {
       answer: 'There are three versions: quick, with 42 questions, full, with 70, and extreme, with 275. All cover the same 14 axes; the more questions, the more precise the result tends to be.'
     }
   ],
-  howEyebrow: 'How it works',
   howTitle: 'How the 12 Axes political quiz works',
   howLead:
     'A simple, visual political ideology test: you respond to statements, 12 Axes calculates your percentages, and shows where you stand on the political spectrum in each dimension.',
@@ -466,11 +461,9 @@ export const en: Strings = {
       text: 'Receive your ideological profile, most compatible ideologies, closest country, related personality, and per-axis results.'
     }
   ],
-  axesGuideEyebrow: '14 axes',
   axesGuideTitle: 'What does each axis mean?',
   axesGuideLead:
     'The 12 Axes ideology test analyzes federalism, political representation, democracy, elections, immigration, international trade, religion in politics, economic policy, morality, and technology in separate dimensions.',
-  discoveryEyebrow: 'What you will discover',
   discoveryTitle: 'A complete portrait of your political convictions',
   discoveryLead:
     'More than left or right: your result shows who, where, and how strongly your ideas actually align.',
@@ -482,11 +475,9 @@ export const en: Strings = {
     { icon: 'profile', title: 'Your profile', text: 'A complete portrait of your convictions' },
     { icon: 'compatibility', title: 'Compatibility', text: 'How much you truly agree with your own ideology' }
   ],
-  exampleEyebrow: 'Real example',
   exampleTitle: "Here's what your result looks like",
   exampleCaption: 'Illustrative example using real data from the 12 Axes catalog.',
   exampleCta: 'I want to see my result',
-  spectrumEyebrow: 'Political spectrum',
   spectrumTitle: 'Discover your political spectrum',
   spectrumLead:
     'The result helps you visualize your political position between left, right, and center, and also identifies more radical, authoritarian, or libertarian forms that fall outside that axis, such as far-right, radical left, third position, libertarianism, and anarchism.',
@@ -497,11 +488,9 @@ export const en: Strings = {
   menuAria: 'Open menu',
   roseAria: 'Rose of the 14 axes',
   spectrumBarAria: 'Political spectrum bar with the eight categories',
-  versionsEyebrow: 'Versions',
   versionsTitle: 'Choose the depth',
   versionsLead:
     'Start with the quick quiz or go deeper for a more precise portrait of your ideological profile. All versions use the same 14 axes and return the result immediately.',
-  variantEyebrow: 'Choose the format',
   variantTitlePre: 'Do you want speed or ',
   variantTitleEm: 'precision?',
   backToStart: 'Back to start',
@@ -525,7 +514,6 @@ export const en: Strings = {
   errCalc: 'Could not calculate the result.',
   errImage: 'Could not generate the result image.',
   errHttp: (status) => `HTTP error ${status}`,
-  resultsEyebrow: 'Analysis complete',
   resultsH1Pre: 'Your ideological ',
   resultsH1Em: 'profile',
   resultsLead: (count) =>
@@ -556,12 +544,14 @@ export const en: Strings = {
   resultsNavAxisByAxis: 'Axis by axis',
   resultsNavDisagree: 'Disagreements',
   resultsNavGovernment: 'Ideal government',
+  resultsNavAreaCountries: 'Countries by area',
   resultsNavTimeline: 'Timeline',
   resultsNavLiving: 'Where to live',
   resultsNavAxes: '14 axes',
   resultsNavSignature: 'Distinction',
   resultsNavCountries: 'Countries',
   resultsNavPersonalities: 'Personalities',
+  resultsNavElections: 'Elections',
   resultsNavAreas: 'Areas',
   resultsNavBooks: 'Books',
   resultsNavParties: 'Parties',
@@ -588,10 +578,6 @@ export const en: Strings = {
     socialLead: 'The social axis',
     socialText: 'measures the orientation of your values between progressivism and traditionalism, reflecting your position on customs, culture and social values.'
   },
-  compassWith: 'with',
-  compassSocialValues: 'social values',
-  compassCenterLeft: 'Center-left',
-  compassCenterRight: 'Center-right',
   compassSpectrumLabels: {
     'esq-radical': 'Radical left',
     esquerda: 'Left',
@@ -603,6 +589,31 @@ export const en: Strings = {
     anarquismo: 'Anarchist',
     raw: 'Raw'
   },
+  compassEconomicLabels: {
+    left: 'Left',
+    centerLeft: 'Center-left',
+    center: 'Center',
+    centerRight: 'Center-right',
+    right: 'Right'
+  },
+  compassSpectrumDescriptions: {
+    'esq-radical': 'You tend to seek a deep transformation of society, with material equality, collective ownership and a strong state serving working people, breaking with the current economic order.',
+    esquerda: 'You tend to favor more equality and social protection, with a state that reduces inequality through public services, labor rights and redistribution.',
+    centro: 'You tend to look for balance between opposing positions, combining market and state, change and stability, and to distrust solutions that come from only one side.',
+    direita: 'You tend to value order, tradition, individual responsibility and free enterprise, with a more limited state in the economy and attention to security and the nation’s values.',
+    'ext-direita': 'You tend to prioritize hierarchy, national identity and strong authority, putting security and order above pluralism and dissent.',
+    terceira: 'You tend to reject both liberal capitalism and communism, joining a strong state and a directed economy to the nation, community and tradition.',
+    libertario: 'You tend to put individual freedom above everything: as little state as possible, a free market and respect for each person’s choices, in private life and in the economy.',
+    anarquismo: 'You tend to distrust all centralized authority and to favor a society organized by voluntary cooperation and self-management, with no state and no imposed hierarchies.',
+    raw: 'A region off the traditional map, with no match among the classic categories.'
+  },
+  compassEconomicDescriptions: {
+    left: 'You tend to favor collective or public ownership of the means of production and economic planning, with the state and society, not the market, at the center.',
+    centerLeft: 'You tend to accept the market, but with a strong state presence: broad public services, regulation and redistribution to reduce inequality.',
+    center: 'You tend to seek an economic middle ground, with market and state in balanced roles: regulation where needed and room for private initiative.',
+    centerRight: 'You tend to trust the market and private initiative more, with a smaller state and clear rules, without giving up some social protection.',
+    right: 'You tend to favor private property and the free market, with little state planning or regulation and competition as the engine of the economy.'
+  },
   compassSocialLabels: {
     veryProgressive: 'Strongly progressive',
     progressive: 'Progressive',
@@ -610,15 +621,12 @@ export const en: Strings = {
     traditional: 'Traditionalist',
     veryTraditional: 'Strongly traditionalist'
   },
-  compassNote: {
-    label: 'On the compass:',
-    hints: {
-      terceira: 'The Third Position joins a strong state to nation and tradition. The compass measures economy and power; nation, morals and religion are left out.',
-      'ext-direita': 'The far right is defined by hierarchy and identity. The compass measures economy and power; morals, religion and nation are left out.',
-      'esq-radical': 'The radical left is defined by revolution and collectivization. The compass measures economy and power; the revolutionary project is left out.',
-      libertarian: 'Your ideology sits on the border between two regions. The compass measures economy and power, and a small difference in either decides the side.',
-      generic: 'The compass measures 5 of the 14 axes; the other 9 are left out.'
-    }
+  compassSocialDescriptions: {
+    veryProgressive: 'You tend to strongly defend freedom of lifestyle, diversity and social change, seeing traditions as something to be questioned and updated.',
+    progressive: 'You tend to support freedom of lifestyle, diversity and equal rights, staying open to new forms of family, culture and identity.',
+    moderate: 'You tend to balance tradition and change, preserving what works in customs and accepting gradual change, without extreme positions on moral issues.',
+    traditional: 'You tend to value family, religion and inherited customs, preferring gradual change and distrusting rapid breaks in social values.',
+    veryTraditional: 'You tend to strongly defend family, faith and traditional customs as the foundation of society, resisting changes that alter them.'
   },
   compassAria: (right, authoritarian, traditional) =>
     `Your position: ${right}% toward the right, ${authoritarian}% toward authoritarian and ${traditional}% toward traditionalist.`,
@@ -721,7 +729,6 @@ export const en: Strings = {
   areasLockedCta: 'Unlock my full report',
   personalitiesDistantTitle: 'Furthest from you',
   ideologyDistantTitle: 'The ideology furthest from you',
-  phraseTitle: 'A sentence that describes you',
   aboutIdeology: (ideology) => `About ${ideology}`,
   eli5Title: "Explain like I'm 5",
   knowMoreAbout: (name) => `Learn more about ${name}`,
@@ -776,7 +783,6 @@ export const en: Strings = {
   report: {
     fileName: '12axes-report',
     docLabel: 'Full report',
-    profileEyebrow: 'Your ideological profile',
     headerLabel: (ideology) => `Political profile report · ${ideology}`,
     kpiCountry: 'Closest country',
     kpiPersonality: 'Figure',
@@ -805,9 +811,24 @@ export const en: Strings = {
     `👉 Take the test and find yours:\nhttps://12axes.vercel.app/en`,
   shareCountriesCta: 'Share nearby countries',
   sharePersonalitiesCta: 'Share nearby personalities',
+  electionsClosestLabel: 'Candidate closest to you',
+  electionsEnded: 'Ended',
+  electionsPickAria: 'Choose the election’s country',
+  shareElectionsHeader: 'Elections',
+  electionsNotice: 'Ideological affinity with the candidate’s positions, not a voting recommendation.',
+  shareElectionsCta: 'Share result',
+  electionsShareHeadline: (name, party) => `My most compatible candidate is ${name}${party ? `, ${party}` : ''}`,
+  shareElectionsFilePrefix: '12axes-elections',
+  shareElectionsTitle: 'The candidate closest to my profile | 12axes.vercel.app',
+  shareElectionsMessage: (candidate, party, percent) => `${candidate}${party ? `, ${party}` : ''}: ${percent}% match with me. Take the quiz and find yours: 12axes.vercel.app`,
   sharePartiesCta: 'Share nearby parties',
   shareCompassCta: 'Share values and compass',
   shareGovernmentCta: 'Share ideal government',
+  shareAreasCta: 'Share countries by area',
+  shareAreasHeader: 'Countries by area',
+  shareAreasFilePrefix: '12axes-countries-by-area',
+  shareAreasTitle: 'The countries closest to me by area | 12axes.vercel.app',
+  shareAreasMessage: 'Find which countries match you most in politics, economy, society and more with the 12 Axes Political Quiz: 12axes.vercel.app',
   shareTimelineCta: 'Share timeline',
   shareLivingCta: 'Share countries to live in',
   shareIdealGovernment: 'IDEAL GOVERNMENT',
@@ -899,9 +920,7 @@ export const en: Strings = {
   shareNearbyCountries: 'NEARBY COUNTRIES',
   shareFooterCta: 'DISCOVER YOUR PROFILE',
   shareFooterUrl: '12AXES.VERCEL.APP',
-  supportEyebrow: 'Support the project',
   supportTitle: '',
-  ossEyebrow: 'Open source',
   ossTitle: 'An independent, transparent project',
   ossLead: "You don't have to take our word for it. The 12 Axes code is public: you can see how every answer is scored, how compatibility is calculated and where the profiles come from.",
   ossCards: [
