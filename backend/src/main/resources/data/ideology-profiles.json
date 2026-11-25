@@ -4998,5 +4998,24 @@
       "moral": 65.6,
       "tecnologia": 91.3
     }
+  },
+  {
+    "ideologyId": "anarco-transumanismo",
+    "vector": {
+      "estrutura": 90.2,
+      "representacao": 94.8,
+      "poder": 5.1,
+      "imigracao": 6.7,
+      "diplomacia": 5.1,
+      "intervencao": 84.0,
+      "economia": 85.1,
+      "controle": 50.8,
+      "comercio": 28.8,
+      "religiao": 88.6,
+      "moral": 94.7,
+      "tecnologia": 87.7,
+      "metodo": 30.0,
+      "distribuicao": 82.5
+    }
   }
 ]

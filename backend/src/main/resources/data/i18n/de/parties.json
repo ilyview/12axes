@@ -1282,5 +1282,11 @@
     "name": "DB Partei Neu",
     "description": "Die Regierungspartei von DB-Staat Mk. II. Identisch mit der ursprünglichen DB-Partei, aber mit neuen Ausreden für Verspätungen.",
     "category": "Partei"
+  },
+  {
+    "id": "partido-transumanista-eua",
+    "name": "Transhumanistische Partei",
+    "description": "US-Partei, 2014 vom Futuristen Zoltan Istvan gegründet, der 2016 für sie im Unsterblichkeitsbus zur Präsidentschaft antrat. Sie tritt für die Verbesserung des Menschen, radikale Lebensverlängerung, Wissenschaft, Rechte verbesserter Wesen und technischen Fortschritt ein.",
+    "category": "Partei"
   }
 ]

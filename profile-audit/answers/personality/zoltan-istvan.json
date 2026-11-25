@@ -1,0 +1,129 @@
+{
+  "estrutura": {
+    "personaBrief": "Ex-libertário que sonha com supercidades e experimentos de autogoverno, Zoltan tende a apoiar autonomia local e federalismo, ainda que aceite coordenação nacional em saúde, longevidade e regras fiscais.",
+    "answers": {
+      "estrutura_06": "D", "estrutura_01": "C", "estrutura_05": "C", "estrutura_16": "D", "estrutura_04": "D",
+      "estrutura_13": "C", "estrutura_20": "D", "estrutura_15": "C", "estrutura_18": "D", "estrutura_17": "C",
+      "estrutura_19": "N", "estrutura_12": "D", "estrutura_09": "C", "estrutura_02": "D", "estrutura_08": "C",
+      "estrutura_07": "C", "estrutura_11": "C", "estrutura_14": "D", "estrutura_03": "C", "estrutura_10": "C"
+    }
+  },
+  "representacao": {
+    "personaBrief": "Candidato eleitoral recorrente em vários partidos, defende democracia, oposição e direitos, embora flerte com tecnocracia ao dizer esperar que uma IA venha a ser presidente.",
+    "answers": {
+      "representacao_01": "C", "representacao_05": "C", "representacao_20": "D", "representacao_11": "C", "representacao_04": "D",
+      "representacao_03": "CT", "representacao_08": "D", "representacao_12": "D", "representacao_17": "D", "representacao_14": "N",
+      "representacao_13": "C", "representacao_09": "C", "representacao_02": "D", "representacao_15": "C", "representacao_19": "CT",
+      "representacao_06": "D", "representacao_16": "D", "representacao_18": "D", "representacao_10": "D", "representacao_07": "C"
+    }
+  },
+  "poder": {
+    "personaBrief": "Defensor da liberdade morfológica e da autonomia corporal, com raízes libertárias (drogas, armas, expressão), mas aceita vigilância avançada 'equilibrada com privacidade'.",
+    "answers": {
+      "poder_03": "D", "poder_15": "D", "poder_13": "D", "poder_02": "CT", "poder_12": "C",
+      "poder_17": "D", "poder_20": "C", "poder_18": "C", "poder_14": "C", "poder_16": "CT",
+      "poder_11": "D", "poder_06": "C", "poder_01": "D", "poder_19": "D", "poder_04": "CT",
+      "poder_10": "C", "poder_05": "N", "poder_07": "D", "poder_09": "D", "poder_08": "C"
+    }
+  },
+  "imigracao": {
+    "personaBrief": "Filho de refugiado húngaro e transumanista de visão global, valoriza cosmopolitismo e diversidade cultural acima de identidades nacionais.",
+    "answers": {
+      "imigracao_09": "D", "imigracao_10": "C", "imigracao_06": "C", "imigracao_19": "D", "imigracao_04": "C",
+      "imigracao_15": "D", "imigracao_07": "D", "imigracao_20": "C", "imigracao_17": "D", "imigracao_13": "N",
+      "imigracao_11": "D", "imigracao_08": "C", "imigracao_02": "C", "imigracao_18": "C", "imigracao_05": "D",
+      "imigracao_03": "DT", "imigracao_01": "D", "imigracao_14": "C", "imigracao_16": "C", "imigracao_12": "C"
+    }
+  },
+  "diplomacia": {
+    "personaBrief": "Quer um complexo científico-educacional em vez de um complexo industrial-militar e menos gasto militar, preferindo diplomacia, embora não seja pacifista absoluto.",
+    "answers": {
+      "diplomacia_02": "CT", "diplomacia_08": "CT", "diplomacia_15": "D", "diplomacia_19": "D", "diplomacia_11": "D",
+      "diplomacia_05": "DT", "diplomacia_12": "C", "diplomacia_10": "C", "diplomacia_17": "D", "diplomacia_03": "D",
+      "diplomacia_07": "D", "diplomacia_06": "C", "diplomacia_14": "C", "diplomacia_20": "C", "diplomacia_16": "C",
+      "diplomacia_01": "N", "diplomacia_04": "C", "diplomacia_13": "C", "diplomacia_09": "D", "diplomacia_18": "D"
+    }
+  },
+  "intervencao": {
+    "personaBrief": "Crítico de guerras e do militarismo, tende ao não-intervencionismo e à resolução multilateral, mantendo defesa pragmática de interesses nacionais pela diplomacia.",
+    "answers": {
+      "intervencao_01": "C", "intervencao_14": "D", "intervencao_20": "C", "intervencao_19": "C", "intervencao_08": "C",
+      "intervencao_13": "C", "intervencao_12": "D", "intervencao_04": "D", "intervencao_18": "C", "intervencao_11": "C",
+      "intervencao_05": "D", "intervencao_02": "N", "intervencao_10": "D", "intervencao_09": "C", "intervencao_16": "D",
+      "intervencao_06": "C", "intervencao_03": "C", "intervencao_07": "D", "intervencao_17": "C", "intervencao_15": "D"
+    }
+  },
+  "economia": {
+    "personaBrief": "Defende renda básica universal contra o desemprego por IA, mas vem de um libertarismo pró-mercado e privatizante; mistura rede de proteção com propriedade privada.",
+    "answers": {
+      "economia_05": "D", "economia_06": "N", "economia_07": "C", "economia_13": "D", "economia_03": "D",
+      "economia_14": "D", "economia_19": "D", "economia_16": "N", "economia_17": "D", "economia_12": "C",
+      "economia_04": "D", "economia_11": "CT", "economia_18": "C", "economia_15": "D", "economia_20": "C",
+      "economia_10": "D", "economia_09": "D", "economia_02": "C"
+    }
+  },
+  "controle": {
+    "personaBrief": "Já 'fiscalmente muito conservador' e entusiasta de cripto, prefere mercado e baixa regulação, mas aceita investimento público em ciência e financiar renda básica com taxação da automação.",
+    "answers": {
+      "controle_05": "N", "controle_20": "C", "controle_19": "D", "controle_14": "C", "controle_07": "C",
+      "controle_04": "C", "controle_02": "C", "controle_17": "D", "controle_16": "C", "controle_10": "C",
+      "controle_06": "C", "controle_08": "C", "controle_13": "D", "controle_01": "N", "controle_11": "D",
+      "controle_03": "D", "controle_15": "C", "controle_12": "CT", "controle_18": "D", "controle_09": "D"
+    }
+  },
+  "comercio": {
+    "personaBrief": "Tecno-otimista globalista, favorece integração econômica mundial e livre comércio como motor de inovação.",
+    "answers": {
+      "comercio_13": "D", "comercio_06": "C", "comercio_12": "C", "comercio_20": "C", "comercio_15": "D",
+      "comercio_19": "D", "comercio_04": "C", "comercio_17": "N", "comercio_07": "D", "comercio_02": "C",
+      "comercio_03": "D", "comercio_10": "C", "comercio_16": "C", "comercio_09": "D", "comercio_05": "DT",
+      "comercio_11": "D", "comercio_01": "D", "comercio_18": "C", "comercio_08": "C", "comercio_14": "C"
+    }
+  },
+  "religiao": {
+    "personaBrief": "Ateu declarado e crítico do fundamentalismo religioso, vê a ciência e não a fé como fonte de sentido e quer Estado estritamente secular.",
+    "answers": {
+      "religiao_02": "DT", "religiao_11": "CT", "religiao_19": "CT", "religiao_03": "CT", "religiao_10": "D",
+      "religiao_13": "C", "religiao_12": "DT", "religiao_15": "C", "religiao_18": "D", "religiao_05": "C",
+      "religiao_01": "CT", "religiao_14": "DT", "religiao_06": "D", "religiao_16": "DT", "religiao_08": "DT",
+      "religiao_07": "C", "religiao_09": "CT", "religiao_17": "C", "religiao_20": "DT", "religiao_04": "DT"
+    }
+  },
+  "moral": {
+    "personaBrief": "Defensor da liberdade morfológica e da autonomia individual, é socialmente progressista e liberal em sexualidade, gênero e escolhas reprodutivas.",
+    "answers": {
+      "moral_07": "CT", "moral_15": "N", "moral_12": "D", "moral_03": "C", "moral_01": "CT",
+      "moral_09": "C", "moral_06": "DT", "moral_19": "C", "moral_02": "D", "moral_17": "C",
+      "moral_13": "C", "moral_11": "C", "moral_10": "D", "moral_18": "DT", "moral_16": "D",
+      "moral_14": "D", "moral_20": "D"
+    }
+  },
+  "tecnologia": {
+    "personaBrief": "Transumanista que trata o envelhecimento como doença, quer robô humanoide em cada lar, edição genética, implantes e exploração espacial: abraça a tecnologia sem freios biológicos.",
+    "answers": {
+      "tecnologia_01": "CT", "tecnologia_13": "C", "tecnologia_19": "CT", "tecnologia_12": "D", "tecnologia_18": "D",
+      "tecnologia_10": "D", "tecnologia_05": "CT", "tecnologia_04": "DT", "tecnologia_16": "DT", "tecnologia_07": "N",
+      "tecnologia_08": "D", "tecnologia_03": "CT", "tecnologia_15": "CT", "tecnologia_20": "DT", "tecnologia_06": "D",
+      "tecnologia_09": "CT", "tecnologia_17": "CT", "tecnologia_02": "DT", "tecnologia_14": "DT", "tecnologia_11": "CT"
+    }
+  },
+  "metodo": {
+    "personaBrief": "Busca mudanças radicais e rápidas, mas pela via eleitoral, campanhas e ativismo pacífico (Ônibus da Imortalidade, Bill of Rights), trocando de partido de forma pragmática.",
+    "answers": {
+      "metodo_11": "D", "metodo_14": "C", "metodo_17": "C", "metodo_08": "D", "moral_04": "D",
+      "metodo_04": "D", "metodo_13": "C", "economia_01": "D", "metodo_12": "D", "metodo_09": "C",
+      "metodo_05": "C", "metodo_15": "C", "metodo_01": "D", "metodo_03": "C", "metodo_07": "C",
+      "metodo_16": "C", "metodo_02": "D", "metodo_18": "C", "metodo_10": "D", "metodo_06": "D"
+    }
+  },
+  "distribuicao": {
+    "personaBrief": "Quer piso universal via renda básica, mas, com passado fiscalmente conservador, aceita desigualdade fruto de mérito e inovação e não busca igualdade de resultados.",
+    "answers": {
+      "distribuicao_15": "N", "distribuicao_04": "D", "distribuicao_10": "C", "economia_08": "C", "moral_08": "N",
+      "distribuicao_17": "D", "distribuicao_02": "C", "distribuicao_11": "C", "distribuicao_05": "D", "distribuicao_08": "C",
+      "distribuicao_12": "D", "distribuicao_09": "D", "distribuicao_16": "N", "distribuicao_14": "C", "distribuicao_03": "D",
+      "moral_05": "D", "distribuicao_07": "D", "distribuicao_01": "D", "distribuicao_13": "D", "distribuicao_06": "CT"
+    }
+  },
+  "archetype": { "sociedade": "C", "poder": "C", "economia": "C", "mundo": "C", "tecnologia": "E" }
+}

@@ -5092,6 +5092,12 @@
       "name": "ac33b2453cf1",
       "description": "782adf23c0f0",
       "phrase": "749ec8e142ec"
+    },
+    "anarco-transumanismo": {
+      "name": "58329eef30a0",
+      "description": "10364c2466a3",
+      "phrase": "310c0bad367c",
+      "eli5": "e260a89daf0e"
     }
   },
   "countries": {
@@ -7236,6 +7242,10 @@
     "novas-pessoas": {
       "name": "0da9258ef0cc",
       "description": "81b6143bbf6c"
+    },
+    "partido-transumanista-eua": {
+      "name": "332381c9a54d",
+      "description": "ebe84681a779"
     }
   },
   "personalities": {
@@ -11300,6 +11310,24 @@
       "name": "1c9117cabcf7",
       "role": "d212c1cc98bc",
       "description": "e35b450f2e66"
+    },
+    "robert-anton-wilson": {
+      "name": "c3d0279394f4",
+      "role": "54f32825968f",
+      "lifespan": "7670d970ef10",
+      "description": "c980b61ffc64"
+    },
+    "timothy-leary": {
+      "name": "f2a517bd0dbf",
+      "role": "f0a985d64438",
+      "lifespan": "eaf6deaacc22",
+      "description": "42d659fc6fac"
+    },
+    "zoltan-istvan": {
+      "name": "9e8bdbd33eda",
+      "role": "4fe5a1daf521",
+      "lifespan": "fba59bd0f55a",
+      "description": "f54aa67be1a0"
     }
   }
 }

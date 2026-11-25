@@ -4811,5 +4811,26 @@
     "name": "Wang Huning",
     "role": "Idéologue en chef du PCC",
     "description": "Ancien professeur de politique internationale à Fudan, conseiller de Jiang, Hu et Xi, membre du Comité permanent du Bureau politique depuis 2017. Il a défendu le néo-autoritarisme, critiqué l'individualisme américain dans America Against America et préside la CCPPC depuis 2023."
+  },
+  {
+    "id": "robert-anton-wilson",
+    "name": "Robert Anton Wilson",
+    "role": "Coauteur d'Illuminatus!",
+    "lifespan": "1932–2007",
+    "description": "Écrivain et futuriste américain, coauteur de la trilogie Illuminatus! et figure du discordianisme. Anarchiste individualiste méfiant envers tout dogme, il promut avec Timothy Leary le programme SMI²LE : espace, intelligence accrue et vie prolongée."
+  },
+  {
+    "id": "timothy-leary",
+    "name": "Timothy Leary",
+    "role": "Gourou psychédélique",
+    "lifespan": "1920–1996",
+    "description": "Psychologue américain renvoyé de Harvard, icône de la contre-culture (« turn on, tune in, drop out ») arrêté des dizaines de fois. Il prônait de défier l'autorité et créa le programme SMI²LE : migration spatiale, intelligence accrue, vie prolongée."
+  },
+  {
+    "id": "zoltan-istvan",
+    "name": "Zoltan Istvan",
+    "role": "Candidat transhumaniste",
+    "lifespan": "1973–",
+    "description": "Écrivain américain, auteur de The Transhumanist Wager et fondateur du Parti transhumaniste (2014). Il veut traiter le vieillissement comme une maladie, un revenu de base face au chômage dû à l'IA et moins de dépenses militaires ; candidat démocrate en Californie."
   }
 ]

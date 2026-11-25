@@ -3636,5 +3636,24 @@
       "moral": 20,
       "tecnologia": 70
     }
+  },
+  {
+    "partyId": "partido-transumanista-eua",
+    "vector": {
+      "estrutura": 66.4,
+      "representacao": 81.1,
+      "poder": 21.0,
+      "imigracao": 21.0,
+      "diplomacia": 21.7,
+      "intervencao": 63.7,
+      "economia": 52.2,
+      "controle": 45.0,
+      "comercio": 22.2,
+      "religiao": 87.4,
+      "moral": 79.4,
+      "tecnologia": 90.1,
+      "metodo": 63.7,
+      "distribuicao": 47.5
+    }
   }
 ]

@@ -1240,5 +1240,11 @@
     "name": "Nouvelles personnes",
     "description": "Parti libéral de centre droit fondé en 2020 par le propriétaire de Faberlic, Alexeï Netchaïev ; opposition systémique qui soutient la guerre en Ukraine, défendant les petites entreprises, le régionalisme et les maires élus, et un contrôle migratoire plus strict.",
     "category": "Parti"
+  },
+  {
+    "id": "partido-transumanista-eua",
+    "name": "Parti transhumaniste",
+    "description": "Parti américain fondé en 2014 par le futuriste Zoltan Istvan, qui s'est présenté sous ses couleurs à la présidentielle de 2016 à bord du Bus de l'immortalité. Il défend l'amélioration humaine, l'allongement radical de la vie, la science, les droits des êtres améliorés et le progrès technologique.",
+    "category": "Parti"
   }
 ]

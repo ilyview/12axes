@@ -12954,5 +12954,62 @@
       "moral": 3.4,
       "tecnologia": 45.2
     }
+  },
+  {
+    "personalityId": "robert-anton-wilson",
+    "vector": {
+      "estrutura": 90.2,
+      "representacao": 88.8,
+      "poder": 6.3,
+      "imigracao": 15.0,
+      "diplomacia": 13.5,
+      "intervencao": 84.0,
+      "economia": 59.3,
+      "controle": 27.0,
+      "comercio": 24.0,
+      "religiao": 85.0,
+      "moral": 80.8,
+      "tecnologia": 84.1,
+      "metodo": 47.5,
+      "distribuicao": 56.2
+    }
+  },
+  {
+    "personalityId": "timothy-leary",
+    "vector": {
+      "estrutura": 84.0,
+      "representacao": 83.1,
+      "poder": 6.5,
+      "imigracao": 21.0,
+      "diplomacia": 19.4,
+      "intervencao": 75.7,
+      "economia": 29.6,
+      "controle": 21.8,
+      "comercio": 23.2,
+      "religiao": 68.3,
+      "moral": 82.2,
+      "tecnologia": 81.8,
+      "metodo": 26.2,
+      "distribuicao": 30.0
+    }
+  },
+  {
+    "personalityId": "zoltan-istvan",
+    "vector": {
+      "estrutura": 67.6,
+      "representacao": 74.0,
+      "poder": 23.4,
+      "imigracao": 25.7,
+      "diplomacia": 27.6,
+      "intervencao": 56.5,
+      "economia": 43.0,
+      "controle": 34.2,
+      "comercio": 25.8,
+      "religiao": 88.6,
+      "moral": 78.1,
+      "tecnologia": 90.1,
+      "metodo": 60.0,
+      "distribuicao": 35.0
+    }
   }
 ]

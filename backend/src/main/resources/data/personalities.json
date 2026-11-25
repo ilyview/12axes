@@ -10645,7 +10645,9 @@
     "imageSourceName": "Wikimedia Commons / Wikipédia",
     "imageSourceUrl": "https://en.wikipedia.org/wiki/Robert_Anton_Wilson",
     "imageNote": "Retrato de Robert Anton Wilson via Wikipédia/Wikimedia Commons.",
-    "religions": []
+    "religions": [
+      "other"
+    ]
   },
   {
     "id": "timothy-leary",
@@ -10658,7 +10660,9 @@
     "imageSourceName": "Wikimedia Commons / Wikipédia",
     "imageSourceUrl": "https://en.wikipedia.org/wiki/Timothy_Leary",
     "imageNote": "Retrato de Timothy Leary via Wikipédia/Wikimedia Commons.",
-    "religions": []
+    "religions": [
+      "other"
+    ]
   },
   {
     "id": "zoltan-istvan",

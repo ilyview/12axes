@@ -4880,5 +4880,26 @@
     "role": "Falangistischer Kriegsheld",
     "lifespan": "1912–1999",
     "description": "Fiktive Figur, Lennys Urgroßvater. Falangist der ersten Stunde, im Spanischen Bürgerkrieg ausgezeichnet, strenggläubiger Katholik und dem nationalen Syndikalismus José Antonios treu: Gott, Vaterland und Brot, gegen Kommunismus und Liberalismus."
+  },
+  {
+    "id": "robert-anton-wilson",
+    "name": "Robert Anton Wilson",
+    "role": "Mitautor von Illuminatus!",
+    "lifespan": "1932–2007",
+    "description": "US-Schriftsteller und Futurist, Mitautor der Illuminatus!-Trilogie und prägende Figur des Diskordianismus. Der individualistische Anarchist und Dogmenskeptiker warb mit Timothy Leary für SMI²LE: Weltraumbesiedlung, Intelligenzsteigerung, Lebensverlängerung."
+  },
+  {
+    "id": "timothy-leary",
+    "name": "Timothy Leary",
+    "role": "Psychedelischer Guru",
+    "lifespan": "1920–1996",
+    "description": "US-Psychologe, von Harvard entlassen, Ikone der Gegenkultur mit dem Motto „turn on, tune in, drop out“, Dutzende Male verhaftet. Er predigte, Autoritäten zu hinterfragen, und schuf das SMI²LE-Programm aus Weltraumbesiedlung, Intelligenzsteigerung und Lebensverlängerung."
+  },
+  {
+    "id": "zoltan-istvan",
+    "name": "Zoltan Istvan",
+    "role": "Transhumanistischer Kandidat",
+    "lifespan": "1973–",
+    "description": "US-Schriftsteller, Autor von The Transhumanist Wager und Gründer der Transhumanistischen Partei (2014). Er will Altern als Krankheit behandeln, ein Grundeinkommen gegen Jobverlust durch KI und weniger Militärausgaben; Kandidat der Demokraten in Kalifornien."
   }
 ]

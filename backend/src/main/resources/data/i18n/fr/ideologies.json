@@ -1993,5 +1993,13 @@
     "description": "Doctrine selon laquelle l’État dirige l’économie de marché par la planification, les grands projets, les champions nationaux et la protection de l’industrie, sous la conduite d’une haute administration technique au service de l’intérêt national.",
     "phrase": "Je veux un État qui oriente le marché par des plans, de grands projets et des champions nationaux, en protégeant l’industrie grâce à une élite technique.",
     "category": "Centre"
+  },
+  {
+    "id": "anarco-transumanismo",
+    "name": "Anarcho-transhumanisme",
+    "description": "Synthèse de l'anarchisme et du transhumanisme qui étend la liberté sociale à la liberté physique : biohacking, liberté morphologique, allongement de la vie et accès égal à l'amélioration humaine, sans État ni capital concentré. Né en réaction à l'anarcho-primitivisme.",
+    "phrase": "Je veux libérer le corps et l'esprit comme on libère la société : sans État ni patrons, avec le biohacking, des vies longues et une technologie ouverte à tous.",
+    "eli5": "C'est l'idée que personne ne doit commander personne et que chacun peut utiliser la technologie pour changer son propre corps et vivre bien plus longtemps. Tout le monde doit avoir ces technologies, pas seulement les riches.",
+    "category": "Anarchiste"
   }
 ]

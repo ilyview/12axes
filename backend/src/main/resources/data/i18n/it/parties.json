@@ -1282,5 +1282,11 @@
     "name": "DB Partei Neu",
     "description": "Partito di governo del DB-Staat Mk. II. Identico all'originale DB-Partei, ma con nuove scuse per i ritardi.",
     "category": "Partito"
+  },
+  {
+    "id": "partido-transumanista-eua",
+    "name": "Partito Transumanista",
+    "description": "Partito statunitense fondato nel 2014 dal futurista Zoltan Istvan, suo candidato presidente nel 2016 a bordo del Bus dell'Immortalità. Sostiene il potenziamento umano, l'estensione radicale della vita, la scienza e i diritti degli esseri potenziati.",
+    "category": "Partito"
   }
 ]

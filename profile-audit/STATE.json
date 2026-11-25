@@ -1,8 +1,8 @@
 {
   "_comment": "Estado unico da auditoria pergunta-a-pergunta (240 perguntas / 12 eixos). Um objeto por catalogo. Veja README.md para o processo completo.",
-  "lastUpdated": "2026-11-19T19:50:10Z",
+  "lastUpdated": "2026-11-25T14:44:54Z",
   "personality": {
-    "totalProfiles": 746,
+    "totalProfiles": 749,
     "pending": [],
     "done": [
       "lenin",
@@ -750,14 +750,17 @@
       "lenny",
       "bisavo-do-lenny",
       "alberto-nunez-feijoo",
-      "wang-huning"
+      "wang-huning",
+      "robert-anton-wilson",
+      "timothy-leary",
+      "zoltan-istvan"
     ],
     "lastUpdated": "2026-11-13T17:12:51Z",
     "audited": 509,
     "unanswered": 0
   },
   "ideology": {
-    "totalProfiles": 283,
+    "totalProfiles": 284,
     "pending": [
       "quilombismo",
       "democracia-intervencionista",
@@ -1047,7 +1050,8 @@
       "liberalismo-civico",
       "capitalismo-dinastico",
       "conservadorismo-tecnocratico",
-      "dirigismo"
+      "dirigismo",
+      "anarco-transumanismo"
     ],
     "lastUpdated": "2026-11-13T17:43:35Z"
   },
@@ -1388,7 +1392,7 @@
   },
   "totalProfiles": 1205,
   "party": {
-    "totalProfiles": 208,
+    "totalProfiles": 209,
     "pending": [],
     "done": [
       "nsdap",
@@ -1598,7 +1602,8 @@
       "yabloko",
       "ldpr",
       "russia-justa",
-      "novas-pessoas"
+      "novas-pessoas",
+      "partido-transumanista-eua"
     ]
   }
 }

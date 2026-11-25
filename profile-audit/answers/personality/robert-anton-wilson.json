@@ -1,0 +1,129 @@
+{
+  "estrutura": {
+    "personaBrief": "Como anarquista individualista que desconfiava de toda autoridade central, Wilson favorecia a máxima descentralização, a autonomia local e o direito de qualquer comunidade se separar.",
+    "answers": {
+      "estrutura_06": "DT", "estrutura_01": "CT", "estrutura_05": "CT", "estrutura_16": "DT", "estrutura_04": "DT",
+      "estrutura_13": "CT", "estrutura_20": "D", "estrutura_15": "CT", "estrutura_18": "DT", "estrutura_17": "C",
+      "estrutura_19": "C", "estrutura_12": "D", "estrutura_09": "CT", "estrutura_02": "DT", "estrutura_08": "D",
+      "estrutura_07": "C", "estrutura_11": "CT", "estrutura_14": "D", "estrutura_03": "CT", "estrutura_10": "D"
+    }
+  },
+  "representacao": {
+    "personaBrief": "Cético de todo dogma e de toda hierarquia, Wilson rejeitava qualquer poder não consentido, de líderes fortes a tecnocratas, e defendia a dissidência e a livre crítica como valores supremos.",
+    "answers": {
+      "representacao_01": "CT", "representacao_05": "C", "representacao_20": "DT", "representacao_11": "C", "representacao_04": "DT",
+      "representacao_03": "CT", "representacao_08": "DT", "representacao_12": "DT", "representacao_17": "C", "representacao_14": "D",
+      "representacao_13": "C", "representacao_09": "C", "representacao_02": "DT", "representacao_15": "CT", "representacao_19": "CT",
+      "representacao_06": "D", "representacao_16": "D", "representacao_18": "DT", "representacao_10": "DT", "representacao_07": "C"
+    }
+  },
+  "poder": {
+    "personaBrief": "Anarquista cuja maior objeção ao Estado era a violência que ele exerce, Wilson combatia a guerra às drogas, a censura e a vigilância, e defendia a liberdade individual em tudo o que é consensual.",
+    "answers": {
+      "poder_03": "DT", "poder_15": "DT", "poder_13": "D", "poder_02": "CT", "poder_12": "CT",
+      "poder_17": "DT", "poder_20": "CT", "poder_18": "CT", "poder_14": "CT", "poder_16": "CT",
+      "poder_11": "D", "poder_06": "CT", "poder_01": "D", "poder_19": "DT", "poder_04": "CT",
+      "poder_10": "C", "poder_05": "DT", "poder_07": "DT", "poder_09": "D", "poder_08": "CT"
+    }
+  },
+  "imigracao": {
+    "personaBrief": "Cosmopolita que viveu fora dos EUA e tratava as identidades nacionais como 'túneis de realidade' arbitrários, Wilson celebrava a pluralidade cultural e rejeitava exigências de assimilação.",
+    "answers": {
+      "imigracao_09": "DT", "imigracao_10": "C", "imigracao_06": "CT", "imigracao_19": "DT", "imigracao_04": "CT",
+      "imigracao_15": "D", "imigracao_07": "D", "imigracao_20": "CT", "imigracao_17": "DT", "imigracao_13": "D",
+      "imigracao_11": "D", "imigracao_08": "C", "imigracao_02": "C", "imigracao_18": "CT", "imigracao_05": "D",
+      "imigracao_03": "DT", "imigracao_01": "D", "imigracao_14": "CT", "imigracao_16": "C", "imigracao_12": "C"
+    }
+  },
+  "diplomacia": {
+    "personaBrief": "Antimilitarista convicto, Wilson via a guerra como o maior crime do Estado e preferia sempre o diálogo e o desarmamento à força.",
+    "answers": {
+      "diplomacia_02": "CT", "diplomacia_08": "CT", "diplomacia_15": "DT", "diplomacia_19": "D", "diplomacia_11": "D",
+      "diplomacia_05": "DT", "diplomacia_12": "C", "diplomacia_10": "C", "diplomacia_17": "DT", "diplomacia_03": "D",
+      "diplomacia_07": "DT", "diplomacia_06": "C", "diplomacia_14": "C", "diplomacia_20": "C", "diplomacia_16": "CT",
+      "diplomacia_01": "D", "diplomacia_04": "CT", "diplomacia_13": "D", "diplomacia_09": "DT", "diplomacia_18": "C"
+    }
+  },
+  "intervencao": {
+    "personaBrief": "Hostil ao imperialismo e ao nacionalismo, Wilson rejeitava que um Estado impusesse sua vontade a outros povos e preferia neutralidade e não intervenção.",
+    "answers": {
+      "intervencao_01": "C", "intervencao_14": "DT", "intervencao_20": "D", "intervencao_19": "CT", "intervencao_08": "D",
+      "intervencao_13": "C", "intervencao_12": "D", "intervencao_04": "DT", "intervencao_18": "D", "intervencao_11": "CT",
+      "intervencao_05": "C", "intervencao_02": "D", "intervencao_10": "DT", "intervencao_09": "C", "intervencao_16": "D",
+      "intervencao_06": "D", "intervencao_03": "CT", "intervencao_07": "C", "intervencao_17": "CT", "intervencao_15": "C"
+    }
+  },
+  "economia": {
+    "personaBrief": "Anarquista individualista de linhagem Tucker/Proudhon, Wilson via o anarquismo como alternativa ao capitalismo, simpatizava com propriedade dos trabalhadores e defendia uma renda garantida (a 'RICH economy'), mas recusava a estatização.",
+    "answers": {
+      "economia_05": "C", "economia_06": "D", "economia_07": "N", "economia_13": "C", "economia_03": "D",
+      "economia_14": "DT", "economia_19": "D", "economia_16": "D", "economia_17": "D", "economia_12": "C",
+      "economia_04": "N", "economia_11": "CT", "economia_18": "D", "economia_15": "C", "economia_20": "D",
+      "economia_10": "CT", "economia_09": "C", "economia_02": "N"
+    }
+  },
+  "controle": {
+    "personaBrief": "Contra monopólios estatais sobre dinheiro e crédito, Wilson favorecia moedas concorrentes e banca livre ao estilo de Tucker e Gesell, rejeitando o planejamento central, embora preocupado com a plutocracia.",
+    "answers": {
+      "controle_05": "C", "controle_20": "C", "controle_19": "N", "controle_14": "C", "controle_07": "D",
+      "controle_04": "C", "controle_02": "C", "controle_17": "DT", "controle_16": "D", "controle_10": "C",
+      "controle_06": "CT", "controle_08": "N", "controle_13": "DT", "controle_01": "D", "controle_11": "DT",
+      "controle_03": "D", "controle_15": "D", "controle_12": "CT", "controle_18": "CT", "controle_09": "D"
+    }
+  },
+  "comercio": {
+    "personaBrief": "Cosmopolita e antinacionalista, Wilson via fronteiras econômicas e tarifas como mais uma imposição estatal e favorecia trocas livres entre povos.",
+    "answers": {
+      "comercio_13": "D", "comercio_06": "C", "comercio_12": "C", "comercio_20": "C", "comercio_15": "D",
+      "comercio_19": "D", "comercio_04": "C", "comercio_17": "D", "comercio_07": "D", "comercio_02": "C",
+      "comercio_03": "D", "comercio_10": "C", "comercio_16": "C", "comercio_09": "D", "comercio_05": "DT",
+      "comercio_11": "D", "comercio_01": "D", "comercio_18": "C", "comercio_08": "CT", "comercio_14": "C"
+    }
+  },
+  "religiao": {
+    "personaBrief": "'Místico agnóstico' e papa discordiano, Wilson zombava de todas as igrejas e ortodoxias e queria leis e moral pública inteiramente livres de dogma religioso.",
+    "answers": {
+      "religiao_02": "DT", "religiao_11": "C", "religiao_19": "CT", "religiao_03": "CT", "religiao_10": "D",
+      "religiao_13": "C", "religiao_12": "DT", "religiao_15": "C", "religiao_18": "N", "religiao_05": "C",
+      "religiao_01": "CT", "religiao_14": "DT", "religiao_06": "D", "religiao_16": "D", "religiao_08": "DT",
+      "religiao_07": "C", "religiao_09": "CT", "religiao_17": "C", "religiao_20": "DT", "religiao_04": "DT"
+    }
+  },
+  "moral": {
+    "personaBrief": "Libertário da contracultura e inimigo de todo moralismo, Wilson defendia a liberdade sexual, o pluralismo de estilos de vida e a rejeição dos modelos tradicionais de família e gênero.",
+    "answers": {
+      "moral_07": "CT", "moral_15": "D", "moral_12": "N", "moral_03": "C", "moral_01": "CT",
+      "moral_09": "C", "moral_06": "DT", "moral_19": "CT", "moral_02": "DT", "moral_17": "CT",
+      "moral_13": "CT", "moral_11": "C", "moral_10": "D", "moral_18": "DT", "moral_16": "DT",
+      "moral_14": "D", "moral_20": "N"
+    }
+  },
+  "tecnologia": {
+    "personaBrief": "Promotor do SMI²LE com Leary (migração espacial, aumento da inteligência, extensão da vida), Wilson era um futurista entusiasta de tecnologia, aprimoramento humano e exploração do espaço.",
+    "answers": {
+      "tecnologia_01": "C", "tecnologia_13": "C", "tecnologia_19": "CT", "tecnologia_12": "D", "tecnologia_18": "D",
+      "tecnologia_10": "D", "tecnologia_05": "C", "tecnologia_04": "DT", "tecnologia_16": "DT", "tecnologia_07": "D",
+      "tecnologia_08": "D", "tecnologia_03": "CT", "tecnologia_15": "CT", "tecnologia_20": "DT", "tecnologia_06": "N",
+      "tecnologia_09": "CT", "tecnologia_17": "C", "tecnologia_02": "DT", "tecnologia_14": "DT", "tecnologia_11": "CT"
+    }
+  },
+  "metodo": {
+    "personaBrief": "Desconfiando tanto da política eleitoral quanto da revolução violenta, Wilson apostava na mudança de consciência, na sátira e na desobediência não violenta em vez de reformas institucionais.",
+    "answers": {
+      "metodo_11": "D", "metodo_14": "C", "metodo_17": "C", "metodo_08": "D", "moral_04": "D",
+      "metodo_04": "D", "metodo_13": "C", "economia_01": "D", "metodo_12": "N", "metodo_09": "D",
+      "metodo_05": "D", "metodo_15": "D", "metodo_01": "D", "metodo_03": "C", "metodo_07": "C",
+      "metodo_16": "C", "metodo_02": "C", "metodo_18": "C", "metodo_10": "DT", "metodo_06": "C"
+    }
+  },
+  "distribuicao": {
+    "personaBrief": "Crítico da plutocracia e defensor de uma renda básica incondicional, mas individualista e avesso à tributação estatal, Wilson ocupava uma posição intermediária, moderadamente igualitária.",
+    "answers": {
+      "distribuicao_15": "C", "distribuicao_04": "D", "distribuicao_10": "N", "economia_08": "D", "moral_08": "N",
+      "distribuicao_17": "C", "distribuicao_02": "C", "distribuicao_11": "C", "distribuicao_05": "D", "distribuicao_08": "C",
+      "distribuicao_12": "DT", "distribuicao_09": "C", "distribuicao_16": "D", "distribuicao_14": "D", "distribuicao_03": "D",
+      "moral_05": "C", "distribuicao_07": "D", "distribuicao_01": "C", "distribuicao_13": "D", "distribuicao_06": "C"
+    }
+  },
+  "archetype": { "sociedade": "C", "poder": "E", "economia": "B", "mundo": "E", "tecnologia": "E" }
+}

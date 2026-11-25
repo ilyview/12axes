@@ -2340,5 +2340,13 @@
     "phrase": "Quiero ciudades-gimnasio soberanas en un mercado sin límites, donde los esteroides y los genes editados son sagrados y solo votan quienes tienen deltoides y CI.",
     "category": "Libertario",
     "eli5": "Es una ideología de broma. Cuanto más grandes sean los músculos de tus hombros y más listo seas, más mandas. Las ciudades son gimnasios que compiten entre sí, y todo es libre mercado. Miau."
+  },
+  {
+    "id": "anarco-transumanismo",
+    "name": "Anarcotranshumanismo",
+    "description": "Síntesis de anarquismo y transhumanismo que extiende la libertad social a la libertad física: biohacking, libertad morfológica, extensión de la vida y acceso igual a la mejora humana, sin Estado ni capital concentrado. Nació contra el anarcoprimitivismo.",
+    "phrase": "Quiero liberar el cuerpo y la mente como liberamos la sociedad: sin Estado ni patrones, con biohacking, vidas largas y tecnología abierta para todos.",
+    "eli5": "Es la idea de que nadie debe mandar sobre nadie y de que cada persona puede usar la tecnología para cambiar su propio cuerpo y vivir mucho más. Todos deben tener estas tecnologías, no solo los ricos.",
+    "category": "Anarquista"
   }
 ]

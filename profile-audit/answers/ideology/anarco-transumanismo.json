@@ -1,0 +1,129 @@
+{
+  "estrutura": {
+    "personaBrief": "Sem Estado, o anarcotransumanismo quer poder disperso em comunas, redes e indivíduos livres; rejeita qualquer autoridade central que imponha regras uniformes, apoiando autonomia local e secessão.",
+    "answers": {
+      "estrutura_06": "DT", "estrutura_01": "CT", "estrutura_05": "CT", "estrutura_16": "DT", "estrutura_04": "D",
+      "estrutura_13": "CT", "estrutura_20": "DT", "estrutura_15": "C", "estrutura_18": "DT", "estrutura_17": "C",
+      "estrutura_19": "C", "estrutura_12": "D", "estrutura_09": "CT", "estrutura_02": "DT", "estrutura_08": "D",
+      "estrutura_07": "C", "estrutura_11": "CT", "estrutura_14": "DT", "estrutura_03": "CT", "estrutura_10": "D"
+    }
+  },
+  "representacao": {
+    "personaBrief": "Buscando a 'singularidade social' (fim da coerção), rejeita líderes fortes, tecnocracias e autocracias, preferindo consentimento, assembleias e participação direta.",
+    "answers": {
+      "representacao_01": "C", "representacao_05": "C", "representacao_20": "DT", "representacao_11": "CT", "representacao_04": "DT",
+      "representacao_03": "CT", "representacao_08": "DT", "representacao_12": "DT", "representacao_17": "CT", "representacao_14": "DT",
+      "representacao_13": "C", "representacao_09": "CT", "representacao_02": "DT", "representacao_15": "CT", "representacao_19": "CT",
+      "representacao_06": "DT", "representacao_16": "DT", "representacao_18": "DT", "representacao_10": "DT", "representacao_07": "C"
+    }
+  },
+  "poder": {
+    "personaBrief": "A liberdade morfológica e cognitiva estende a liberdade civil ao próprio corpo e mente: soberania sobre drogas, eutanásia, privacidade digital (criptografia) e oposição total à vigilância e punição estatais.",
+    "answers": {
+      "poder_03": "DT", "poder_15": "DT", "poder_13": "D", "poder_02": "CT", "poder_12": "CT",
+      "poder_17": "DT", "poder_20": "CT", "poder_18": "CT", "poder_14": "CT", "poder_16": "CT",
+      "poder_11": "D", "poder_06": "CT", "poder_01": "DT", "poder_19": "DT", "poder_04": "CT",
+      "poder_10": "C", "poder_05": "DT", "poder_07": "DT", "poder_09": "D", "poder_08": "CT"
+    }
+  },
+  "imigracao": {
+    "personaBrief": "Cosmopolita e anti-nação, vê fronteiras como coerção estatal e celebra a diversidade de culturas, corpos e identidades, sem exigir assimilação.",
+    "answers": {
+      "imigracao_09": "DT", "imigracao_10": "CT", "imigracao_06": "CT", "imigracao_19": "DT", "imigracao_04": "CT",
+      "imigracao_15": "D", "imigracao_07": "DT", "imigracao_20": "CT", "imigracao_17": "DT", "imigracao_13": "D",
+      "imigracao_11": "DT", "imigracao_08": "CT", "imigracao_02": "C", "imigracao_18": "CT", "imigracao_05": "DT",
+      "imigracao_03": "DT", "imigracao_01": "D", "imigracao_14": "CT", "imigracao_16": "CT", "imigracao_12": "CT"
+    }
+  },
+  "diplomacia": {
+    "personaBrief": "Como anarquismo, rejeita exércitos estatais, armas de destruição em massa e militarismo; a tecnologia deve servir à libertação humana, não à guerra entre Estados.",
+    "answers": {
+      "diplomacia_02": "CT", "diplomacia_08": "CT", "diplomacia_15": "DT", "diplomacia_19": "DT", "diplomacia_11": "DT",
+      "diplomacia_05": "DT", "diplomacia_12": "C", "diplomacia_10": "CT", "diplomacia_17": "DT", "diplomacia_03": "DT",
+      "diplomacia_07": "DT", "diplomacia_06": "C", "diplomacia_14": "C", "diplomacia_20": "C", "diplomacia_16": "CT",
+      "diplomacia_01": "DT", "diplomacia_04": "CT", "diplomacia_13": "DT", "diplomacia_09": "DT", "diplomacia_18": "CT"
+    }
+  },
+  "intervencao": {
+    "personaBrief": "Sem interesse nacional a defender, opõe-se a projeção de poder, sanções e alianças militares de Estados, preferindo solidariedade entre povos à influência estatal.",
+    "answers": {
+      "intervencao_01": "C", "intervencao_14": "DT", "intervencao_20": "D", "intervencao_19": "CT", "intervencao_08": "D",
+      "intervencao_13": "C", "intervencao_12": "DT", "intervencao_04": "DT", "intervencao_18": "DT", "intervencao_11": "CT",
+      "intervencao_05": "C", "intervencao_02": "DT", "intervencao_10": "DT", "intervencao_09": "C", "intervencao_16": "D",
+      "intervencao_06": "D", "intervencao_03": "CT", "intervencao_07": "D", "intervencao_17": "C", "intervencao_15": "C"
+    }
+  },
+  "economia": {
+    "personaBrief": "Rejeita capital concentrado (acúmulo de capital + transumanismo = distopia) e defende acesso igual ao melhoramento via comuns, cooperativas e software/hardware livre, sem confiar no Estado como proprietário.",
+    "answers": {
+      "economia_05": "CT", "economia_06": "DT", "economia_07": "C", "economia_13": "C", "economia_03": "C",
+      "economia_14": "DT", "economia_19": "C", "economia_16": "DT", "economia_17": "N", "economia_12": "D",
+      "economia_04": "DT", "economia_11": "CT", "economia_18": "DT", "economia_15": "CT", "economia_20": "DT",
+      "economia_10": "C", "economia_09": "CT", "economia_02": "D"
+    }
+  },
+  "controle": {
+    "personaBrief": "Posição intermediária: contra o mercado capitalista sem freio, mas também contra planejamento estatal e nacionalismo econômico; prefere coordenação descentralizada, cripto e ferramentas que escapem ao controle do Estado.",
+    "answers": {
+      "controle_05": "C", "controle_20": "C", "controle_19": "C", "controle_14": "D", "controle_07": "D",
+      "controle_04": "D", "controle_02": "D", "controle_17": "D", "controle_16": "D", "controle_10": "N",
+      "controle_06": "C", "controle_08": "D", "controle_13": "D", "controle_01": "C", "controle_11": "DT",
+      "controle_03": "D", "controle_15": "C", "controle_12": "CT", "controle_18": "C", "controle_09": "C"
+    }
+  },
+  "comercio": {
+    "personaBrief": "Internacionalista e sem lealdade nacional, rejeita o protecionismo e a soberania econômica, favorecendo circulação livre de tecnologia e bens, embora desconfie de multinacionais concentradoras.",
+    "answers": {
+      "comercio_13": "D", "comercio_06": "C", "comercio_12": "N", "comercio_20": "C", "comercio_15": "D",
+      "comercio_19": "D", "comercio_04": "C", "comercio_17": "D", "comercio_07": "D", "comercio_02": "C",
+      "comercio_03": "D", "comercio_10": "C", "comercio_16": "C", "comercio_09": "D", "comercio_05": "DT",
+      "comercio_11": "D", "comercio_01": "D", "comercio_18": "N", "comercio_08": "C", "comercio_14": "C"
+    }
+  },
+  "religiao": {
+    "personaBrief": "Racionalista e secular, herdeiro de Godwin, Stirner e do SMI²LE de Leary/Wilson, busca sentido na expansão da mente e da vida por meios científicos, não na fé religiosa.",
+    "answers": {
+      "religiao_02": "DT", "religiao_11": "C", "religiao_19": "CT", "religiao_03": "CT", "religiao_10": "D",
+      "religiao_13": "C", "religiao_12": "DT", "religiao_15": "CT", "religiao_18": "D", "religiao_05": "C",
+      "religiao_01": "CT", "religiao_14": "DT", "religiao_06": "D", "religiao_16": "DT", "religiao_08": "DT",
+      "religiao_07": "C", "religiao_09": "CT", "religiao_17": "C", "religiao_20": "DT", "religiao_04": "DT"
+    }
+  },
+  "moral": {
+    "personaBrief": "Trata gênero, sexualidade, deficiência e corpo como campos de liberdade (queer, anti-capacitismo), rejeitando a família tradicional como modelo e a autoridade moral imposta.",
+    "answers": {
+      "moral_07": "CT", "moral_15": "C", "moral_12": "DT", "moral_03": "CT", "moral_01": "CT",
+      "moral_09": "CT", "moral_06": "DT", "moral_19": "CT", "moral_02": "DT", "moral_17": "CT",
+      "moral_13": "CT", "moral_11": "CT", "moral_10": "DT", "moral_18": "DT", "moral_16": "DT",
+      "moral_14": "DT", "moral_20": "D"
+    }
+  },
+  "tecnologia": {
+    "personaBrief": "Radicalmente pró-tecnologia e oposto ao anarcoprimitivismo: biohacking, edição genética, implantes, aumento da inteligência, extensão radical da vida e migração espacial.",
+    "answers": {
+      "tecnologia_01": "CT", "tecnologia_13": "C", "tecnologia_19": "CT", "tecnologia_12": "N", "tecnologia_18": "D",
+      "tecnologia_10": "D", "tecnologia_05": "CT", "tecnologia_04": "DT", "tecnologia_16": "DT", "tecnologia_07": "D",
+      "tecnologia_08": "D", "tecnologia_03": "CT", "tecnologia_15": "CT", "tecnologia_20": "DT", "tecnologia_06": "D",
+      "tecnologia_09": "CT", "tecnologia_17": "CT", "tecnologia_02": "DT", "tecnologia_14": "DT", "tecnologia_11": "CT"
+    }
+  },
+  "metodo": {
+    "personaBrief": "Prefere ação direta e prefigurativa (hacking, impressão 3D, biohacking de garagem, desobediência) ao reformismo institucional, mas rejeita vanguardas que imponham mudança à maioria.",
+    "answers": {
+      "metodo_11": "DT", "metodo_14": "CT", "metodo_17": "C", "metodo_08": "D", "moral_04": "D",
+      "metodo_04": "C", "metodo_13": "C", "economia_01": "C", "metodo_12": "C", "metodo_09": "DT",
+      "metodo_05": "D", "metodo_15": "DT", "metodo_01": "D", "metodo_03": "D", "metodo_07": "D",
+      "metodo_16": "C", "metodo_02": "C", "metodo_18": "C", "metodo_10": "DT", "metodo_06": "CT"
+    }
+  },
+  "distribuicao": {
+    "personaBrief": "Defende acesso igual ao melhoramento humano e teme uma casta pós-humana de ricos; por isso é fortemente igualitário e rejeita a desigualdade herdada ou concentrada.",
+    "answers": {
+      "distribuicao_15": "C", "distribuicao_04": "D", "distribuicao_10": "DT", "economia_08": "DT", "moral_08": "D",
+      "distribuicao_17": "CT", "distribuicao_02": "D", "distribuicao_11": "C", "distribuicao_05": "C", "distribuicao_08": "DT",
+      "distribuicao_12": "D", "distribuicao_09": "CT", "distribuicao_16": "DT", "distribuicao_14": "D", "distribuicao_03": "C",
+      "moral_05": "C", "distribuicao_07": "C", "distribuicao_01": "C", "distribuicao_13": "C", "distribuicao_06": "D"
+    }
+  },
+  "archetype": { "sociedade": "C", "poder": "E", "economia": "A", "mundo": "E", "tecnologia": "E" }
+}
