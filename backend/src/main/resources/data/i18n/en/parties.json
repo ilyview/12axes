@@ -1282,5 +1282,11 @@
     "name": "DB Partei Neu",
     "category": "Party",
     "description": "The ruling party of DB-Staat Mk. II. Identical to the original DB-Partei but with new excuses for delays."
+  },
+  {
+    "id": "partido-transumanista-eua",
+    "name": "Transhumanist Party",
+    "category": "Party",
+    "description": "American party founded in 2014 by futurist Zoltan Istvan, who ran for president under it in 2016 aboard the Immortality Bus. It champions human enhancement, radical life extension, science, rights for enhanced beings and technological progress."
   }
 ]

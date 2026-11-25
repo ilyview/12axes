@@ -10633,5 +10633,44 @@
     "religions": [
       "catholic"
     ]
+  },
+  {
+    "id": "robert-anton-wilson",
+    "name": "Robert Anton Wilson",
+    "role": "Coautor de Illuminatus!",
+    "category": "intelectual",
+    "lifespan": "1932–2007",
+    "description": "Escritor e futurista americano, coautor da trilogia Illuminatus! e nome do discordianismo. Anarquista individualista e cético de todo dogma, promoveu com Timothy Leary o programa SMI²LE: migração espacial, aumento da inteligência e extensão da vida.",
+    "imagePath": "/personalities/portraits/robert-anton-wilson.jpg",
+    "imageSourceName": "Wikimedia Commons / Wikipédia",
+    "imageSourceUrl": "https://en.wikipedia.org/wiki/Robert_Anton_Wilson",
+    "imageNote": "Retrato de Robert Anton Wilson via Wikipédia/Wikimedia Commons.",
+    "religions": []
+  },
+  {
+    "id": "timothy-leary",
+    "name": "Timothy Leary",
+    "role": "Guru psicodélico",
+    "category": "intelectual",
+    "lifespan": "1920–1996",
+    "description": "Psicólogo americano demitido de Harvard e ícone da contracultura com o lema \"turn on, tune in, drop out\", preso dezenas de vezes. Pregava questionar a autoridade e criou o programa SMI²LE de migração espacial, aumento da inteligência e extensão da vida.",
+    "imagePath": "/personalities/portraits/timothy-leary.jpg",
+    "imageSourceName": "Wikimedia Commons / Wikipédia",
+    "imageSourceUrl": "https://en.wikipedia.org/wiki/Timothy_Leary",
+    "imageNote": "Retrato de Timothy Leary via Wikipédia/Wikimedia Commons.",
+    "religions": []
+  },
+  {
+    "id": "zoltan-istvan",
+    "name": "Zoltan Istvan",
+    "role": "Candidato transumanista",
+    "category": "ativista",
+    "lifespan": "1973–",
+    "description": "Escritor americano, autor de The Transhumanist Wager e fundador do Partido Transumanista (2014). Quer o envelhecimento tratado como doença, renda básica contra o desemprego por IA e menos gasto militar; concorre ao governo da Califórnia como democrata.",
+    "imagePath": "/personalities/portraits/zoltan-istvan.jpg",
+    "imageSourceName": "Wikimedia Commons / Wikipédia",
+    "imageSourceUrl": "https://en.wikipedia.org/wiki/Zoltan_Istvan",
+    "imageNote": "Retrato de Zoltan Istvan via Wikipédia/Wikimedia Commons.",
+    "religions": []
   }
 ]

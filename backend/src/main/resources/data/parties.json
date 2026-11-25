@@ -3195,5 +3195,19 @@
     "historical": false,
     "period": "presente",
     "religions": []
+  },
+  {
+    "id": "partido-transumanista-eua",
+    "name": "Partido Transumanista",
+    "category": "Partido",
+    "description": "Partido americano fundado em 2014 pelo futurista Zoltan Istvan, que o lançou à Presidência em 2016 a bordo do Ônibus da Imortalidade. Defende melhoramento humano, extensão radical da vida, ciência, direitos de seres aprimorados e progresso tecnológico.",
+    "logoPath": "/parties/logos/partido-transumanista-eua.png",
+    "logoSourceName": "Wikimedia Commons / Wikipédia",
+    "logoSourceUrl": "https://commons.wikimedia.org/wiki/File:Most_Recent_US_Transhumanist_Party_logo.png",
+    "logoNote": "Símbolo oficial do Partido Transumanista via Wikipédia/Wikimedia Commons, em formato quadrado 1:1.",
+    "countryId": "estados-unidos",
+    "historical": false,
+    "period": "",
+    "religions": []
   }
 ]

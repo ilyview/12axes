@@ -4912,5 +4912,26 @@
     "role": "Falangist war hero",
     "lifespan": "1912–1999",
     "description": "Fictional character, Lenny's great-grandfather. An old-shirt Falangist decorated in the Spanish Civil War, a devout Catholic loyal to José Antonio's national syndicalism: God, fatherland and bread, against communism and liberalism."
+  },
+  {
+    "id": "robert-anton-wilson",
+    "name": "Robert Anton Wilson",
+    "role": "Co-author of Illuminatus!",
+    "lifespan": "1932–2007",
+    "description": "American writer and futurist, co-author of the Illuminatus! trilogy and a leading name of Discordianism. An individualist anarchist sceptical of every dogma, he promoted with Timothy Leary the SMI²LE program: space migration, intelligence increase and life extension."
+  },
+  {
+    "id": "timothy-leary",
+    "name": "Timothy Leary",
+    "role": "Psychedelic guru",
+    "lifespan": "1920–1996",
+    "description": "American psychologist fired from Harvard and counterculture icon behind \"turn on, tune in, drop out\", arrested dozens of times. He preached questioning authority and created the SMI²LE program of space migration, intelligence increase and life extension."
+  },
+  {
+    "id": "zoltan-istvan",
+    "name": "Zoltan Istvan",
+    "role": "Transhumanist candidate",
+    "lifespan": "1973–",
+    "description": "American writer, author of The Transhumanist Wager and founder of the Transhumanist Party (2014). He wants aging treated as a disease, a basic income against AI job loss and less military spending, and is running for governor of California as a Democrat."
   }
 ]
