@@ -1,14 +1,16 @@
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { VALUE_COINS } from '../components/results/valueCoins';
+import { CompassBlend } from '../components/results/CompassBlend';
 import { COMPASS_COINS } from '../components/results/compassCoins';
-import { COMPASS_GRID_CELLS, compassClamp, compassView } from '../components/results/PoliticalCompassSection';
+import { compassClamp, compassView } from '../components/results/PoliticalCompassSection';
+import { COMPASS_QUADRANTS, COMPASS_QUADRANT_ORDER } from './compassQuadrants';
 import { FILLED_POLE_ICONS } from '../data/filledPoleIcons';
 import { religiousPoleIcon } from '../data/religionIcons';
 import { LANG, t } from '../i18n';
 import type { Axis, AxisResult, PoliticalValue, QuizResult } from '../types/quiz';
 import { resolveIdeologyColor } from './ideologyColors';
-import { computeCompass, type CompassPosition } from './politicalCompass';
+import { computeCompass, economicName, type CompassPosition } from './politicalCompass';
 import { valueCoinMonogram } from './politicalValues';
 import type { Religion } from './religion';
 import { buildShareFooter, buildShareHeader, buildShareIdentity, SHARE_COLORS } from './shareCard';
@@ -46,15 +48,19 @@ const CHART_GAP = 36;
 const READ_WIDTH = BOX_INNER - CHART_WIDTH - CHART_GAP;
 // A grade 9x9: o lado é a largura da caixa do gráfico menos os dois rótulos laterais (22px) e os espaços (12px).
 const GRID_SIDE = CHART_WIDTH - 22 * 2 - 12 * 2;
-const GRID_GAP = 4;
 const MARKER_SIDE = 40;
-const VALUE_COLUMNS = 3;
-const VALUE_GAP = 16;
-const VALUE_TILE_PAD_X = 22;
-const VALUE_NAME_HEIGHT = 70;
-const VALUE_TILE_HEIGHT = 262;
-const MAX_VALUES = 6;
-const VALUE_TEXT_WIDTH = (BOX_INNER - VALUE_GAP * (VALUE_COLUMNS - 1)) / VALUE_COLUMNS - VALUE_TILE_PAD_X * 2;
+// Um cartão por categoria (8), numa grade de 2 colunas por 4 linhas: a moeda à esquerda e, à direita, o rótulo da categoria
+// e o nome do valor (até 2 linhas). A altura do cartão é fixa, para a grade não crescer com um nome comprido.
+const VALUE_COLUMNS = 2;
+const VALUE_GAP = 14;
+const VALUE_TILE_PAD_X = 20;
+const VALUE_COIN = 76;
+const VALUE_COIN_GAP = 18;
+const VALUE_TILE_HEIGHT = 126;
+const VALUE_NAME_LINE = 1.2;
+const VALUE_NAME_MAX_PX = 26;
+const VALUE_NAME_HEIGHT = Math.round(VALUE_NAME_MAX_PX * VALUE_NAME_LINE * 2);
+const VALUE_TEXT_WIDTH = (BOX_INNER - VALUE_GAP * (VALUE_COLUMNS - 1)) / VALUE_COLUMNS - VALUE_TILE_PAD_X * 2 - VALUE_COIN - VALUE_COIN_GAP;
 
 const X_MARK =
   '<svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" width="55%" height="55%" style="display:block"><path d="M6 6l12 12M18 6 6 18"/></svg>';
@@ -128,14 +134,47 @@ function compassChart(position: CompassPosition, markerColor: string): HTMLEleme
     width: `${GRID_SIDE}px`,
     height: `${GRID_SIDE}px`,
     display: 'grid',
-    gridTemplateColumns: 'repeat(9, 1fr)',
-    gridAutoRows: '1fr',
-    gap: `${GRID_GAP}px`
+    gridTemplateColumns: '1fr 1fr',
+    gridTemplateRows: '1fr 1fr'
   });
-  COMPASS_GRID_CELLS.forEach((color) => grid.append(el('span', { borderRadius: '5px', background: color })));
+  COMPASS_QUADRANT_ORDER.forEach((key) => {
+    const quad = el('div', {
+      display: 'grid',
+      placeItems: 'center',
+      padding: '8%',
+      textAlign: 'center',
+      fontFamily: SHARE_FONT_BODY,
+      fontWeight: '500',
+      fontSize: '20px',
+      lineHeight: '1.25',
+      background: COMPASS_QUADRANTS[key].bg,
+      color: COMPASS_QUADRANTS[key].ink
+    });
+    grid.append(quad);
+  });
+  const blend = el('div', { position: 'absolute', inset: '0' });
+  blend.innerHTML = renderToStaticMarkup(createElement(CompassBlend, { style: { display: 'block', width: '100%', height: '100%' } }));
+  grid.append(blend);
+  // Grade do Political Compass (20×20 células, 10×10 por quadrante), por cima das cores e por baixo dos eixos e do "X".
+  const gridLine = 'rgba(90, 90, 90, 0.22)';
   grid.append(
-    el('i', { position: 'absolute', left: '0', right: '0', top: '50%', height: '2px', background: 'rgba(16, 16, 16, 0.45)' }),
-    el('i', { position: 'absolute', top: '0', bottom: '0', left: '50%', width: '2px', background: 'rgba(16, 16, 16, 0.45)' }),
+    el('i', {
+      position: 'absolute',
+      inset: '0',
+      backgroundImage: `linear-gradient(to right, ${gridLine} 2px, transparent 2px), linear-gradient(to bottom, ${gridLine} 2px, transparent 2px)`,
+      backgroundSize: '5% 5%',
+      boxShadow: `inset 0 0 0 2px ${gridLine}`
+    })
+  );
+  const axisLine = (style: Partial<CSSStyleDeclaration>) => el('i', { position: 'absolute', background: '#101010', ...style });
+  const arrow = (style: Partial<CSSStyleDeclaration>) => el('i', { position: 'absolute', width: '0', height: '0', borderStyle: 'solid', borderColor: 'transparent', ...style });
+  grid.append(
+    axisLine({ left: '-2%', right: '-2%', top: '50%', height: '2px', transform: 'translateY(-1px)' }),
+    axisLine({ top: '-2%', bottom: '-2%', left: '50%', width: '2px', transform: 'translateX(-1px)' }),
+    arrow({ left: '-3%', top: '50%', transform: 'translateY(-50%)', borderWidth: '7px 12px 7px 0', borderRightColor: '#101010' }),
+    arrow({ right: '-3%', top: '50%', transform: 'translateY(-50%)', borderWidth: '7px 0 7px 12px', borderLeftColor: '#101010' }),
+    arrow({ top: '-3%', left: '50%', transform: 'translateX(-50%)', borderWidth: '0 7px 12px 7px', borderBottomColor: '#101010' }),
+    arrow({ bottom: '-3%', left: '50%', transform: 'translateX(-50%)', borderWidth: '12px 7px 0 7px', borderTopColor: '#101010' }),
     marker(
       { left: `${compassClamp(position.right)}%`, top: `${compassClamp(100 - position.authoritarian)}%`, width: `${MARKER_SIDE}px`, height: `${MARKER_SIDE}px` },
       markerColor,
@@ -182,16 +221,19 @@ function compassTile(coinKey: string, label: string, name: string, base: string,
   }
   const upper = label.toLocaleUpperCase(LANG);
   const labelSize = fitFontSize(upper, 600, SHARE_FONT_BODY, COMPASS_TEXT_WIDTH * SAFETY, 1, 19, 11, 0.16);
-  const nameSize = fitBlock(name, {
+  // Nome com quebra forçada (nível, e embaixo o método): cada linha precisa caber em uma linha só.
+  const nameLines = name.split('\n');
+  const nameFit = {
     weight: 600,
     family: SHARE_FONT_DISPLAY,
     width: COMPASS_TEXT_WIDTH * SAFETY,
-    height: 2 * 26 * 1.25,
+    height: (nameLines.length > 1 ? 1 : 2) * 26 * 1.25,
     lineHeight: 1.25,
     max: 28,
     min: 14,
     tracking: -0.0192
-  });
+  };
+  const nameSize = Math.min(...nameLines.map((line) => fitBlock(line, nameFit)));
   const text = el('div', { minWidth: '0', flex: '1 1 0' });
   text.append(
     el('div', { fontFamily: SHARE_FONT_BODY, fontWeight: '600', fontSize: `${labelSize}px`, letterSpacing: '0.16em', lineHeight: '1.2', whiteSpace: 'nowrap', color: base }, upper),
@@ -203,6 +245,7 @@ function compassTile(coinKey: string, label: string, name: string, base: string,
       lineHeight: '1.25',
       letterSpacing: '-0.0192em',
       overflowWrap: 'break-word',
+      whiteSpace: 'pre-line',
       color: base
     }, name)
   );
@@ -220,14 +263,14 @@ function compassTiles(view: ReturnType<typeof compassView>): HTMLElement {
   });
   wrap.append(
     compassTile(`political:${view.spectrum.key}`, t.dimensionLabels.political, t.compassSpectrumLabels[view.spectrum.key], view.spectrum.base, view.spectrum.bg),
-    compassTile(`economic:${view.economic}`, t.dimensionLabels.economic, t.compassEconomicLabels[view.economic], view.economicColor, view.economicBg),
+    compassTile(`economic:${view.economic}`, t.dimensionLabels.economic, economicName(t, view.economic, view.method), view.economicColor, view.economicBg),
     compassTile(`social:${view.social}`, t.dimensionLabels.social, t.compassSocialLabels[view.social], view.socialBase, view.socialBg)
   );
   return wrap;
 }
 
-function compassBox(position: CompassPosition, color: Palette, category: string, moralAxis: Axis | undefined): HTMLElement {
-  const view = compassView(position, category, moralAxis);
+function compassBox(position: CompassPosition, color: Palette, category: string, moralAxis: Axis | undefined, ideologyId?: string): HTMLElement {
+  const view = compassView(position, category, moralAxis, ideologyId);
   const wrap = box({ padding: `34px ${BOX_PADDING_X}px` }, true);
   const body = el('div', { display: 'flex', alignItems: 'center', gap: `${CHART_GAP}px`, marginTop: '30px' });
   const read = compassTiles(view);
@@ -243,14 +286,14 @@ function valueCoin(value: PoliticalValue, color: Palette, religion: Religion | n
     flex: '0 0 auto',
     display: 'grid',
     placeItems: 'center',
-    width: '84px',
-    height: '84px',
+    width: `${VALUE_COIN}px`,
+    height: `${VALUE_COIN}px`,
     borderRadius: '50%',
     background: color.base
   });
   const coin = VALUE_COINS[value.valueId];
   const faith = coin?.religious ? (religiousPoleIcon(religion) ?? FILLED_POLE_ICONS.religiao.right) : null;
-  const common = { width: 46, height: 46, fill: color.bg, style: { display: 'block' } };
+  const common = { width: 42, height: 42, fill: color.bg, style: { display: 'block' } };
   if (faith) {
     circle.innerHTML = renderToStaticMarkup(
       createElement(
@@ -273,49 +316,53 @@ function valueTile(value: PoliticalValue, color: Palette, religion: Religion | n
     height: `${VALUE_TILE_HEIGHT}px`,
     borderRadius: '28px',
     background: color.bg,
-    padding: `26px ${VALUE_TILE_PAD_X}px 24px`,
+    padding: `0 ${VALUE_TILE_PAD_X}px`,
     display: 'flex',
-    flexDirection: 'column'
+    alignItems: 'center',
+    gap: `${VALUE_COIN_GAP}px`,
+    overflow: 'hidden'
   });
   const label = value.categoryLabel.toLocaleUpperCase(LANG);
-  const labelSize = fitFontSize(label, 600, SHARE_FONT_BODY, VALUE_TEXT_WIDTH * SAFETY, 1, 19, 11, 0.16);
-  const nameSize = fitBlock(value.name, {
+  const labelSize = fitFontSize(label, 600, SHARE_FONT_BODY, VALUE_TEXT_WIDTH * SAFETY, 1, 17, 10, 0.14);
+  const name = value.name;
+  // O nome cabe em até 2 linhas: a fonte diminui (até 13px) se uma palavra ou o texto não couberem.
+  const nameSize = fitBlock(name, {
     weight: 600,
     family: SHARE_FONT_DISPLAY,
     width: VALUE_TEXT_WIDTH * SAFETY,
     height: VALUE_NAME_HEIGHT,
-    lineHeight: 1.25,
-    max: 26,
-    min: 12,
+    lineHeight: VALUE_NAME_LINE,
+    max: VALUE_NAME_MAX_PX,
+    min: 13,
     tracking: -0.0192
   });
-  tile.append(
-    valueCoin(value, color, religion),
-    // O ícone sobe e o texto desce para o pé do cartão: o espaço que sobra fica entre os dois.
-    el('div', { marginTop: 'auto' }),
+  const text = el('div', { minWidth: '0', flex: '1 1 0' });
+  text.append(
     el('div', {
-      marginTop: '22px',
       fontFamily: SHARE_FONT_BODY,
       fontWeight: '600',
       fontSize: `${labelSize}px`,
-      letterSpacing: '0.16em',
+      letterSpacing: '0.14em',
       lineHeight: '1.2',
       whiteSpace: 'nowrap',
+      overflow: 'hidden',
       color: color.base
     }, label),
     el('div', {
       marginTop: '6px',
-      height: `${VALUE_NAME_HEIGHT}px`,
+      maxHeight: `${VALUE_NAME_HEIGHT}px`,
       overflow: 'hidden',
       fontFamily: SHARE_FONT_DISPLAY,
       fontWeight: '600',
       fontSize: `${nameSize}px`,
-      lineHeight: '1.25',
+      lineHeight: String(VALUE_NAME_LINE),
       letterSpacing: '-0.0192em',
       overflowWrap: 'break-word',
+      whiteSpace: 'pre-line',
       color: color.base
-    }, value.name)
+    }, name)
   );
+  tile.append(valueCoin(value, color, religion), text);
   return tile;
 }
 
@@ -327,7 +374,7 @@ function valuesBox(values: PoliticalValue[], color: Palette, religion: Religion 
     gap: `${VALUE_GAP}px`,
     marginTop: '28px'
   });
-  values.slice(0, MAX_VALUES).forEach((value) => grid.append(valueTile(value, color, religion)));
+  values.forEach((value) => grid.append(valueTile(value, color, religion)));
   wrap.append(boxLabel(t.valuesSectionTitle, INK, BOX_INNER), grid);
   return wrap;
 }
@@ -337,7 +384,7 @@ export function buildCompassShareCard(
   axes: Axis[],
   religion: Religion | null
 ): { stage: HTMLDivElement; target: HTMLDivElement } {
-  const color = resolveIdeologyColor(result.topMatch.category);
+  const color = resolveIdeologyColor(result.topMatch.category, result.topMatch.ideologyId);
   const { stage, target } = lightShell(color);
   // Os ícones dos valores usam --cat e --cat-bg (a cor da ideologia), como na página.
   target.style.setProperty('--cat', color.base);
@@ -351,7 +398,7 @@ export function buildCompassShareCard(
     buildShareHeader(t.shareValuesCompass, { ink: INK, label: color.base, rule: rgba(INK, 0.2) }),
     buildShareIdentity(result, color.base, color.base)
   );
-  if (position) target.append(compassBox(position, color, result.topMatch.category, moralAxis));
+  if (position) target.append(compassBox(position, color, result.topMatch.category, moralAxis, result.topMatch.ideologyId));
   const values = result.politicalValues ?? [];
   if (values.length > 0) target.append(valuesBox(values, color, religion));
   target.append(

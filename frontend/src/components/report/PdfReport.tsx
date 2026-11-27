@@ -26,11 +26,14 @@ import { PremiumPdfPages } from './PremiumPdfPages';
 import { pct } from '../editorial/primitives';
 import { axisLeaning, displayRank } from '../results/AxesSection';
 import { AmazonIcon } from '../results/BooksSection';
+import { CompassBlend } from '../results/CompassBlend';
 import { COMPASS_COINS } from '../results/compassCoins';
-import { COMPASS_GRID_CELLS, compassClamp, compassView } from '../results/PoliticalCompassSection';
+import { valueCardName } from '../../utils/politicalValues';
+import { compassClamp, compassView } from '../results/PoliticalCompassSection';
+import { COMPASS_QUADRANTS, COMPASS_QUADRANT_ORDER } from '../../utils/compassQuadrants';
 import { commonNote, unusualLead } from '../results/SignatureSection';
 import { ValueCoin } from '../results/ValueCoin';
-import { computeCompass, type CompassPosition } from '../../utils/politicalCompass';
+import { computeCompass, economicName, type CompassPosition } from '../../utils/politicalCompass';
 
 interface PdfReportProps {
   result: QuizResult;
@@ -91,7 +94,7 @@ export function PdfReport({ result, axes, axisResults, answeredCount, religion, 
   );
 
   return (
-    <div className="rp" style={catStyle(top.category) as CSSProperties}>
+    <div className="rp" style={catStyle(top.category, top.ideologyId) as CSSProperties}>
       <section className="rp-cover">
         <div className="cv-top">
           <div className="cv-bar">
@@ -363,14 +366,14 @@ export function PdfReport({ result, axes, axisResults, answeredCount, religion, 
 
             <section className="rp-sec">
               <SectionHead title={t.valuesSectionTitle} />
-              <ul className="dims">
+              <ul className="dims v4">
                 {values.map((value) => (
                   <li className="dc" key={value.categoryId}>
                     <span className="v-wrap">
                       <ValueCoin valueId={value.valueId} name={value.name} size={44} religion={religion} />
                     </span>
                     <span className="dim">{value.categoryLabel}</span>
-                    <b>{value.name}</b>
+                    <b>{valueCardName(value.name)}</b>
                   </li>
                 ))}
               </ul>
@@ -386,14 +389,14 @@ export function PdfReport({ result, axes, axisResults, answeredCount, religion, 
             <SectionHead title={t.otherMatches} />
             <ul className="others">
               {others.map((match) => (
-                <li className="oc" key={match.ideologyId} style={localCatStyle(match.category) as CSSProperties}>
+                <li className="oc" key={match.ideologyId} style={localCatStyle(match.category, match.ideologyId) as CSSProperties}>
                   <span className="tag osol">{match.category}</span>
                   <h3>{match.name}</h3>
                   <p>{match.longDescription || match.description}</p>
                 </li>
               ))}
             </ul>
-            <div className="far-i" style={localCatStyle(result.bottomIdeologyMatch.category) as CSSProperties}>
+            <div className="far-i" style={localCatStyle(result.bottomIdeologyMatch.category, result.bottomIdeologyMatch.ideologyId) as CSSProperties}>
               <span className="lab">{t.ideologyDistantTitle}</span>
               <b>{result.bottomIdeologyMatch.name}</b>
               <span className="tag osol-l">{result.bottomIdeologyMatch.category}</span>
@@ -404,7 +407,7 @@ export function PdfReport({ result, axes, axisResults, answeredCount, religion, 
           {compass && (
             <section className="rp-sec">
               <SectionHead title={t.compassTitle} />
-              <Compass position={compass} category={top.category} moralAxis={axes.find((axis) => axis.id === 'moral')} />
+              <Compass position={compass} category={top.category} ideologyId={top.ideologyId} moralAxis={axes.find((axis) => axis.id === 'moral')} />
             </section>
           )}
 
@@ -418,13 +421,13 @@ export function PdfReport({ result, axes, axisResults, answeredCount, religion, 
   );
 }
 
-function Compass({ position, category, moralAxis }: { position: CompassPosition; category: string; moralAxis?: Axis }) {
+function Compass({ position, category, ideologyId, moralAxis }: { position: CompassPosition; category: string; ideologyId?: string; moralAxis?: Axis }) {
   const { right, authoritarian } = position;
-  const view = compassView(position, category, moralAxis);
+  const view = compassView(position, category, moralAxis, ideologyId);
   const { markerColor } = view;
   const tiles = [
     { key: `political:${view.spectrum.key}`, label: t.dimensionLabels.political, name: t.compassSpectrumLabels[view.spectrum.key], base: view.spectrum.base, bg: view.spectrum.bg },
-    { key: `economic:${view.economic}`, label: t.dimensionLabels.economic, name: t.compassEconomicLabels[view.economic], base: view.economicColor, bg: view.economicBg },
+    { key: `economic:${view.economic}`, label: t.dimensionLabels.economic, name: economicName(t, view.economic, view.method), base: view.economicColor, bg: view.economicBg },
     { key: `social:${view.social}`, label: t.dimensionLabels.social, name: t.compassSocialLabels[view.social], base: view.socialBase, bg: view.socialBg }
   ];
   return (
@@ -432,10 +435,12 @@ function Compass({ position, category, moralAxis }: { position: CompassPosition;
       <div className="cmp-chart">
         <span className="cmp-lbl cmp-top">{t.compassAuthoritarian}</span>
         <span className="cmp-lbl cmp-left">{t.compassLeft}</span>
-        <div className="cmp-grid">
-          {COMPASS_GRID_CELLS.map((color, index) => (
-            <span key={index} style={{ background: color }} />
+        <div className="cmp-plot">
+          {COMPASS_QUADRANT_ORDER.map((key) => (
+            <div key={key} className="cmp-quad" style={{ background: COMPASS_QUADRANTS[key].bg }} />
           ))}
+          <CompassBlend className="cmp-blend" />
+          <i className="cmp-grid" />
           <i className="cmp-axis cmp-x" />
           <i className="cmp-axis cmp-y" />
           <CompassX left={right} top={100 - authoritarian} color={markerColor ?? 'var(--cat)'} />

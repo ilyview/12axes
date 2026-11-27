@@ -11,6 +11,8 @@ interface PoliticalValuesSectionProps {
   values: PoliticalValue[];
   /** Categoria da ideologia principal do usuário: define a cor das moedas. */
   category: string;
+  /** Id da ideologia principal: algumas têm conjunto de cores próprio (ideologyColors.ts). */
+  ideologyId?: string;
   /** Religião escolhida pelo usuário, para o ícone dos valores religiosos. */
   religion?: Religion | null;
   /** Para reusar a seção fora dos resultados (página de comparação entre pessoas). */
@@ -22,21 +24,26 @@ interface PoliticalValuesSectionProps {
 }
 
 const MIN_NAME_FONT = 9;
+// Folga que o cartão tem à direita do texto (o respiro interno): sobra até esse tanto não conta como estouro.
+const OVERFLOW_SLACK = 8;
 
-// O nome do valor nunca quebra no meio da palavra: se a maior palavra não couber na largura do cartão,
-// a fonte diminui (em passos de 0,5px, até um mínimo) em vez de a palavra ser cortada.
+// O nome do valor (e o da categoria) não quebra no meio da palavra: se a maior palavra não couber na largura do cartão,
+// a fonte diminui (em passos de 0,5px, até um mínimo). Só se mesmo no mínimo ela não couber (palavra enorme num celular
+// estreito) a palavra pode ser quebrada, em vez de passar da borda do cartão.
 function fitNames(list: HTMLElement) {
-  list.querySelectorAll<HTMLElement>('.e-dim-row strong').forEach((name) => {
+  list.querySelectorAll<HTMLElement>('.e-dim-row strong, .e-dim-row .e-dim').forEach((name) => {
     name.style.fontSize = '';
+    name.style.overflowWrap = '';
     let size = parseFloat(getComputedStyle(name).fontSize);
     while (name.scrollWidth > name.clientWidth + 0.5 && size > MIN_NAME_FONT) {
       size -= 0.5;
       name.style.fontSize = `${size}px`;
     }
+    if (name.scrollWidth > name.clientWidth + OVERFLOW_SLACK) name.style.overflowWrap = 'anywhere';
   });
 }
 
-export function PoliticalValuesSection({ values, category, religion, title, id, header, footer }: PoliticalValuesSectionProps) {
+export function PoliticalValuesSection({ values, category, ideologyId, religion, title, id, header, footer }: PoliticalValuesSectionProps) {
   const [selected, setSelected] = useState<PoliticalValue | null>(null);
   const listRef = useRef<HTMLUListElement>(null);
 
@@ -61,7 +68,7 @@ export function PoliticalValuesSection({ values, category, religion, title, id, 
       <h2>{title ?? t.valuesSectionTitle}</h2>
       {header}
 
-      <ul ref={listRef} className="e-dims e-values-grid">
+      <ul ref={listRef} className="e-dims e-values-grid e-values-2x4">
         {values.map((value) => (
           <DimRow
             key={value.categoryId}
@@ -77,7 +84,7 @@ export function PoliticalValuesSection({ values, category, religion, title, id, 
       {footer}
 
       {selected && (
-        <InfoSheet titleId="value-sheet-title" style={catStyle(category) as CSSProperties} onClose={() => setSelected(null)}>
+        <InfoSheet titleId="value-sheet-title" style={catStyle(category, ideologyId) as CSSProperties} onClose={() => setSelected(null)}>
           <div className="e-value-sheet">
             <ValueCoin valueId={selected.valueId} name={selected.name} size={120} religion={religion} />
             <span className="e-dim">{selected.categoryLabel}</span>

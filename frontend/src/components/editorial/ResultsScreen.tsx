@@ -283,7 +283,7 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
   );
 
   const screen = (
-    <main className="ed e-res" id="resultados" style={catStyle(top.category) as CSSProperties}>
+    <main className="ed e-res" id="resultados" style={catStyle(top.category, top.ideologyId) as CSSProperties}>
       <div className="e-wrap e-res-grid">
         <div className="e-res-main">
           <header className="e-res-head">
@@ -375,7 +375,7 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
             />
           )}
 
-          <PoliticalValuesSection values={politicalValues} category={top.category} religion={religion} footer={shareButton('compass')} />
+          <PoliticalValuesSection values={politicalValues} category={top.category} ideologyId={top.ideologyId} religion={religion} footer={shareButton('compass')} />
 
           <IdeologiesSection others={result.matches.slice(1, 4)} distant={result.bottomIdeologyMatch} />
 
@@ -383,6 +383,7 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
             <PoliticalCompassSection
               position={compass}
               category={top.category}
+              ideologyId={top.ideologyId}
               moralAxis={axes.find((axis) => axis.id === 'moral')}
               footer={shareButton('compass')}
             />

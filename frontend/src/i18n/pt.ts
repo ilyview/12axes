@@ -537,15 +537,14 @@ export const pt: Strings = {
   compassRight: 'Direita',
   compassProgressive: 'Progressista',
   compassTraditionalist: 'Tradicionalista',
+  compassQuadrants: {
+    authLeft: 'Esquerda autoritária',
+    authRight: 'Direita autoritária',
+    libLeft: 'Esquerda libertária',
+    libRight: 'Direita libertária'
+  },
   compassInfo: {
-    aria: 'Como a bússola política é feita',
-    title: 'Como a bússola é feita',
-    authLead: 'O eixo autoritário × libertário',
-    authText: 'mede o grau de concentração do poder político e de intervenção do Estado sobre a vida dos indivíduos. Considera três dimensões principais: liberdades individuais, representação política e estrutura do Estado.',
-    econLead: 'O eixo esquerda × direita',
-    econText: 'mede o quanto sua posição é de esquerda ou de direita pela organização da economia: de propriedade coletiva e planejamento estatal, de um lado, a propriedade privada e livre mercado, do outro. Considera as dimensões fundamentais de economia (propriedade dos meios de produção) e controle (mercado contra regulação e planejamento).',
-    socialLead: 'O eixo social',
-    socialText: 'mede a orientação dos seus valores entre progressismo e tradicionalismo, refletindo sua posição em questões de costumes, cultura e valores sociais.'
+    aria: 'Ver o que sua posição na bússola significa'
   },
   compassSpectrumLabels: {
     'esq-radical': 'Esquerda radical',
@@ -558,11 +557,17 @@ export const pt: Strings = {
     anarquismo: 'Anarquista'
   },
   compassEconomicLabels: {
+    socialism: 'Socialismo',
     left: 'Esquerda',
     centerLeft: 'Centro-esquerda',
     center: 'Centro',
     centerRight: 'Centro-direita',
-    right: 'Direita'
+    right: 'Direita',
+    capitalism: 'Capitalismo'
+  },
+  compassEconomicMethodLabels: {
+    planned: 'economia planejada',
+    market: 'economia de mercado'
   },
   compassSpectrumDescriptions: {
     'esq-radical': 'Você tende a buscar uma transformação profunda da sociedade, com igualdade material, propriedade coletiva e um Estado forte a serviço de quem trabalha, rompendo com a ordem econômica atual.',
@@ -575,11 +580,13 @@ export const pt: Strings = {
     anarquismo: 'Você tende a desconfiar de toda autoridade centralizada e a defender uma sociedade organizada pela cooperação voluntária e pela autogestão, sem Estado nem hierarquias impostas.'
   },
   compassEconomicDescriptions: {
-    left: 'Você tende a defender a propriedade coletiva ou pública dos meios de produção e o planejamento da economia, com o Estado e a sociedade, e não o mercado, no centro.',
-    centerLeft: 'Você tende a aceitar o mercado, mas com forte presença do Estado: serviços públicos amplos, regulação e redistribuição para reduzir desigualdades.',
-    center: 'Você tende a buscar um meio-termo econômico, com mercado e Estado em papéis equilibrados: regulação onde for preciso e espaço para a iniciativa privada.',
+    socialism: 'Você tende a defender a propriedade coletiva ou pública dos meios de produção, com o Estado e a sociedade, e não o mercado, no centro da economia.',
+    left: 'Você tende a defender uma economia com forte papel do Estado: grandes serviços e empresas públicas, planejamento e ampla redistribuição, com o mercado em segundo plano.',
+    centerLeft: 'Você tende a aceitar o mercado, mas com forte presença do Estado: serviços públicos amplos, empresas públicas em setores-chave e redistribuição para reduzir desigualdades.',
+    center: 'Você tende a buscar um meio-termo econômico, com mercado e Estado em papéis equilibrados: empresas públicas onde forem estratégicas e espaço para a iniciativa privada.',
     centerRight: 'Você tende a confiar mais no mercado e na iniciativa privada, com um Estado menor e regras claras, sem abrir mão de alguma proteção social.',
-    right: 'Você tende a defender a propriedade privada e o livre mercado, com pouco planejamento ou regulação estatal e a concorrência como motor da economia.'
+    right: 'Você tende a defender o mercado e a propriedade privada, com poucas empresas estatais, concorrência como motor da economia e intervenção do Estado só onde for necessária.',
+    capitalism: 'Você tende a defender a propriedade privada dos meios de produção e o livre mercado com poucas restrições, com o Estado reduzido ao mínimo e a concorrência como motor da economia.'
   },
   compassSocialLabels: {
     veryProgressive: 'Fortemente progressista',
@@ -908,6 +915,9 @@ export const pt: Strings = {
   footerPrivacy: 'Privacidade',
   footerRefund: 'Reembolso',
   footerReport: 'Reportar',
+  feedbackTitle: 'Encontrou um problema ou tem uma ideia?',
+  feedbackReport: 'Reportar um problema',
+  feedbackSuggest: 'Sugerir melhoria',
   supportTitleEm: 'Apoie',
   supportLead:
     'O 12 Axes é independente e gratuito. Se o teste te ajudou a entender melhor sua ideologia política, considere fazer uma doação via Pix ou criptomoedas para manter o projeto no ar.',

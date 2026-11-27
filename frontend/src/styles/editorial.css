@@ -233,6 +233,10 @@ html{scroll-behavior:smooth;scroll-padding-top:88px}
 .e-foot .e-logo b{color:var(--papel)}
 .e-foot-brand{display:flex;flex-direction:column;gap:14px}
 .e-foot-brand p{font-size:13.5px;color:#9A968C}
+.e-foot-side{display:flex;flex-direction:column;align-items:flex-end;gap:40px}
+.e-foot-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px}
+.e-foot .e-btn-ghost{border-color:rgba(244,241,232,.38);color:var(--papel)}
+.e-foot .e-btn-ghost:hover{border-color:var(--papel);background:rgba(244,241,232,.08)}
 .e-foot-cols{display:flex;gap:clamp(48px,8vw,120px);text-align:right}
 .e-foot-col h3{font:600 11.5px var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:#9A968C;margin:0 0 18px}
 .e-foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
@@ -780,6 +784,8 @@ html{scroll-behavior:smooth;scroll-padding-top:88px}
   .e-foot{padding:48px 0 56px}
   .e-foot .e-wrap{flex-direction:column;align-items:stretch;gap:36px}
   .e-foot .e-logo{font-size:26px}
+  .e-foot-side{align-items:stretch;gap:28px}
+  .e-foot-links{justify-content:flex-start}
   .e-foot-cols{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:32px;text-align:left}
   .e-foot-col h3{margin-bottom:14px}
 }
@@ -854,9 +860,13 @@ html{scroll-behavior:smooth;scroll-padding-top:88px}
 .e-compass{position:relative}
 .e-compass h2{margin-bottom:22px}
 .e-compass-sheet{width:min(640px,100%)}
-.e-compass-how{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px}
-.e-compass-how li{padding:14px 18px;border-radius:14px;background:var(--neutro);font-size:14.5px;line-height:1.6;color:var(--texto-suave)}
-.e-compass-how strong{font-family:var(--font-display);font-size:15px;color:var(--tinta)}
+.e-compass-sheet:has(.e-compass-read-axes){width:min(720px,100%)}
+.e-compass-read-axes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+.e-compass-read-axes .e-value-sheet{justify-content:flex-start;padding:30px 24px 28px;border-radius:24px;background:var(--cat-bg);gap:6px}
+.e-compass-read-axes .e-value-sheet .e-dim{margin-top:10px;color:var(--cat)}
+.e-compass-read-axes .e-value-sheet h3{color:var(--cat);font-size:23px;line-height:1.2}
+.e-compass-read-axes .e-value-sheet p{margin-top:8px;font-size:14.5px;line-height:1.6;color:var(--tinta)}
+@media (max-width:640px){.e-compass-read-axes{grid-template-columns:1fr;gap:12px}.e-compass-read-axes .e-value-sheet{padding:24px 20px}}
 .e-compass-body{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:28px 44px;align-items:center}
 .e-compass-chart{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:auto auto auto;gap:8px 8px;align-items:center}
 .e-compass-lbl{font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta);line-height:1.2}
@@ -864,11 +874,20 @@ html{scroll-behavior:smooth;scroll-padding-top:88px}
 .e-compass-lbl.is-bottom{grid-column:2;grid-row:3;text-align:center}
 .e-compass-lbl.is-left{grid-column:1;grid-row:2;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center}
 .e-compass-lbl.is-right{grid-column:3;grid-row:2;writing-mode:vertical-rl;text-align:center}
-.e-compass-grid{grid-column:2;grid-row:2;position:relative;aspect-ratio:1;display:grid;grid-template-columns:repeat(9,1fr);grid-auto-rows:1fr;gap:2px}
-.e-compass-grid>span{border-radius:2px}
-.e-compass-axis{position:absolute;background:rgba(16,16,16,.4);pointer-events:none}
-.e-compass-axis.is-x{left:0;right:0;top:50%;height:1px}
-.e-compass-axis.is-y{top:0;bottom:0;left:50%;width:1px}
+.e-compass-plot{grid-column:2;grid-row:2;position:relative;aspect-ratio:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.e-compass-quad{display:grid;place-items:center;padding:8%;text-align:center;white-space:pre-line;font-size:11.5px;font-weight:500;line-height:1.25}
+/* Degradê quadradinho a quadradinho entre os quadrantes (compassBlendCells), por baixo das linhas. */
+.e-compass-blend{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+/* Grade do Political Compass: 20×20 células (10×10 por quadrante), linhas finas por cima das cores e por baixo dos eixos e do "X". */
+.e-compass-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(to right,rgba(90,90,90,.2) 1px,transparent 1px),linear-gradient(to bottom,rgba(90,90,90,.2) 1px,transparent 1px);background-size:5% 5%;box-shadow:inset 0 0 0 1px rgba(90,90,90,.2)}
+.e-compass-axis{position:absolute;background:#101010;pointer-events:none}
+.e-compass-axis.is-x{left:-2%;right:-2%;top:50%;height:1px;transform:translateY(-.5px)}
+.e-compass-axis.is-y{top:-2%;bottom:-2%;left:50%;width:1px;transform:translateX(-.5px)}
+.e-compass-axis::before,.e-compass-axis::after{content:"";position:absolute;border:4px solid transparent}
+.e-compass-axis.is-x::before{left:-3px;top:50%;transform:translateY(-50%);border-left-width:0;border-right-color:#101010}
+.e-compass-axis.is-x::after{right:-3px;top:50%;transform:translateY(-50%);border-right-width:0;border-left-color:#101010}
+.e-compass-axis.is-y::before{top:-3px;left:50%;transform:translateX(-50%);border-top-width:0;border-bottom-color:#101010}
+.e-compass-axis.is-y::after{bottom:-3px;left:50%;transform:translateX(-50%);border-bottom-width:0;border-top-color:#101010}
 .e-compass-x{position:absolute;z-index:2;width:calc(100%/9 - 2px);aspect-ratio:1;transform:translate(-50%,-50%);display:grid;place-items:center;border-radius:4px;background:var(--cat,var(--floresta));color:#fff;box-shadow:0 6px 14px -6px rgba(16,16,16,.45)}
 .e-compass-x svg{width:55%;height:55%;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round}
 .e-compass-hit{min-width:0;width:100%;max-width:340px;border-radius:12px}
@@ -876,6 +895,7 @@ html{scroll-behavior:smooth;scroll-padding-top:88px}
 .e-dims.e-values-grid.e-compass-tiles{grid-template-columns:1fr;margin-top:0;gap:10px}
 .e-dims.e-compass-tiles .e-dim-row{grid-template-columns:auto minmax(0,1fr);grid-template-areas:"v t";align-items:center;gap:0 18px;padding:14px 22px;border-radius:22px}
 .e-dims.e-compass-tiles .e-dim-row>div:not(.e-dim-visual){grid-area:t;align-self:center}
+.e-dims.e-compass-tiles .e-dim-row strong{white-space:pre-line}
 .e-compass-bar{margin-top:26px;max-width:420px}
 .e-compass-bar-lbls{display:flex;justify-content:space-between;gap:12px;margin-bottom:8px;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta)}
 .e-compass-strip{position:relative;display:grid;grid-template-columns:repeat(9,1fr);gap:2px}
@@ -1152,20 +1172,32 @@ html{scroll-behavior:smooth;scroll-padding-top:88px}
   .e-deck-edit{min-height:420px}
 }
 
-/* ── Seus valores: cartões no padrão dos perfis (moeda, categoria, nome e botão de informação), 3x2 no desktop e 2x3 no mobile ── */
-.e-dims.e-values-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:22px}
+/* ── Seus valores: cartões no padrão dos perfis (moeda, categoria, nome e botão de informação), 4x2 no desktop e 2x4 no mobile ── */
+.e-dims.e-values-grid{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:22px}
 .e-values-grid .e-dim-row>.e-pctc{display:none}
 /* mesmo acabamento dos cartões de "Outras ideologias": fundo pastel da ideologia, sem borda */
-.e-values-grid .e-dim-row{grid-template-columns:1fr;grid-template-areas:"v" "t";gap:18px;border:0;border-radius:24px;padding:22px;background:var(--cat-bg)}
-.e-values-grid .e-dim-row strong{color:var(--cat);overflow-wrap:normal;word-break:normal;hyphens:manual}
+.e-values-grid .e-dim-row{grid-template-columns:1fr;grid-template-areas:"v" "t";gap:18px;border:0;border-radius:24px;padding:18px 14px;background:var(--cat-bg);min-width:0}
+.e-values-grid .e-dim-row>*{min-width:0;max-width:100%}
+.e-values-grid .e-dim-row strong{white-space:pre-line;color:var(--cat);overflow-wrap:normal;word-break:normal;hyphens:manual}
 @media (max-width:720px){.e-values-grid .e-dim-row{padding:16px;gap:14px}}
 .e-vcoin{display:block}
 .e-value-sheet{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:8px 4px 4px}
 .e-value-sheet .e-dim{margin-top:4px}
 .e-value-sheet h3{margin:0}
 .e-value-sheet p{margin:6px 0 0;font-size:15px;line-height:1.55}
-@media (max-width:860px){.e-dims.e-values-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:720px){.e-dims.e-values-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* Seus valores: grade 2x4 (2 colunas por 4 linhas) com a moeda ao lado do texto, igual ao cartão de compartilhamento, no desktop e no mobile */
+.e-dims.e-values-grid.e-values-2x4{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.e-values-grid.e-values-2x4 .e-dim-row{grid-template-columns:auto minmax(0,1fr);grid-template-areas:"v t";align-items:center;gap:0 16px;padding:14px 18px;border-radius:24px}
+.e-values-grid.e-values-2x4 .e-dim-row>div:not(.e-dim-visual){align-self:center}
+.e-values-grid.e-values-2x4 .e-dim-row strong{margin-top:4px}
+@media (max-width:720px){
+  .e-dims.e-values-grid.e-values-2x4{gap:8px}
+  .e-values-grid.e-values-2x4 .e-dim-row{gap:0 8px;padding:11px 10px;border-radius:18px}
+  .e-values-grid.e-values-2x4 .e-vcoin{width:34px;height:34px}
+  .e-values-grid.e-values-2x4 .e-dim{font-size:9px;letter-spacing:.08em}
+  .e-values-grid.e-values-2x4 .e-dim-row strong{font-size:13px;line-height:1.25}
+}
 /* mobile: logo do partido com a MESMA ALTURA da bandeira do país (3:2, até 300px de largura), sem a mesma largura */
 @media (max-width:720px){
   .e-match{--e-flag-h:min(200px,calc((100vw - 100px) * 2 / 3))}

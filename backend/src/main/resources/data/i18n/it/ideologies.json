@@ -92,8 +92,8 @@
   },
   {
     "id": "nacional-bolchevismo",
-    "name": "Nazionalbolscevismo (NazBol)",
-    "description": "Ideologia sincretica, detta anche NazBol, che fonde socialismo rivoluzionario e nazionalismo radicale, combinando economia collettivista, autoritarismo di Stato e rifiuto di liberalismo, Occidente e individualismo borghese.",
+    "name": "Nazionalbolscevismo",
+    "description": "Corrente sincretica (NazBol) nata nella Germania degli anni Venti, con Niekisch e i fratelli Strasser, che fonde ultranazionalismo e bolscevismo: uno Stato forte, un'economia collettivista e un'alleanza con l'Est contro liberalismo, capitalismo ed egemonia anglosassone.",
     "phrase": "Voglio una società che fonde soviet e nazione, collettivista e autoritaria, contro il liberalismo, l'Occidente e l'individualismo borghese.",
     "category": "Terza posizione"
   },
@@ -802,7 +802,7 @@
     "name": "Sviluppismo di Stato",
     "description": "Modello in cui lo Stato dirige industrializzazione e crescita economica tramite pianificazione, investimenti pubblici e protezione industriale, cercando di superare l'arretratezza della nazione e la dipendenza dall'estero.",
     "phrase": "Voglio uno Stato che guidi l'industrializzazione con piani e investimenti pubblici, proteggendo l'industria dalla dipendenza esterna.",
-    "category": "Sinistra"
+    "category": "Terza posizione"
   },
   {
     "id": "atlantismo",
@@ -893,7 +893,7 @@
     "name": "Teocratismo cristiano",
     "description": "Dottrina teocratica cristiana che subordina il potere politico all'autorità religiosa, sostenendo che la legge divina e la Chiesa debbano governare lo Stato e i costumi, dall'ultramontanismo medievale e papale ai moderni progetti ricostruzionisti.",
     "phrase": "Voglio una società governata dalla legge divina, con la Chiesa sopra lo Stato e i costumi subordinati all'autorità religiosa.",
-    "category": "Estrema destra"
+    "category": "Terza posizione"
   },
   {
     "id": "socialismo-titoista",
@@ -1152,7 +1152,7 @@
     "name": "Sindacalismo rivoluzionario",
     "description": "Corrente che rifiuta la via parlamentare e riformista, scommettendo sullo sciopero generale e sul mito mobilitante: l'azione sindacale diretta e la violenza proletaria dovrebbero distruggere lo Stato e la borghesia decadente.",
     "phrase": "Voglio sciopero generale e azione sindacale diretta per distruggere lo Stato e la borghesia, senza parlamento né riformismo.",
-    "category": "Sinistra radicale"
+    "category": "Sinistra"
   },
   {
     "id": "confucionismo",
@@ -1236,7 +1236,7 @@
     "name": "Platonismo",
     "description": "Filosofia politica di Platone, che affida il governo della città a un'élite filosofica formata da virtù e conoscenza, con forte controllo su istruzione, proprietà e costumi in nome di giustizia e armonia sociale.",
     "phrase": "Voglio una città governata da re-filosofi, con custodi educati alla virtù e un rigido controllo su proprietà e costumi.",
-    "category": "Destra"
+    "category": "Terza posizione"
   },
   {
     "id": "democracia-ateniense",
@@ -1481,7 +1481,7 @@
     "name": "Cesarismo",
     "description": "Tradizione imperiale romana che, da Giulio Cesare attraverso Augusto, Nerone, Marco Aurelio e Giustiniano, concentra esercito, legge e amministrazione nel sovrano preservando le istituzioni, l'approvvigionamento popolare e la sovranità su un impero diversificato.",
     "phrase": "Voglio un impero sotto un solo comando, sostenuto da esercito, legge e dèi della città, con pane per il popolo e confini difesi.",
-    "category": "Destra"
+    "category": "Terza posizione"
   },
   {
     "id": "capitalismo-industrial",
@@ -1635,7 +1635,7 @@
     "name": "Teocratismo islamico",
     "description": "Dottrina che affida lo Stato al clero islamico e fa della sharia la legge suprema, al di sopra della sovranità popolare, come nella tutela del giurista (velayat-e faqih) di Khomeini in Iran e nell'emirato dei talebani in Afghanistan.",
     "phrase": "Voglio la sovranità di Dio al di sopra del voto, con il giurista religioso al comando, la sharia come unica legge e un'economia libera dall'usura.",
-    "category": "Estrema destra"
+    "category": "Terza posizione"
   },
   {
     "id": "socialismo-blanquista",
@@ -1993,5 +1993,75 @@
     "description": "Dottrina in cui lo Stato dirige l’economia di mercato attraverso pianificazione, grandi progetti, campioni nazionali e protezione dell’industria, guidato da un’alta burocrazia tecnica al servizio dell’interesse nazionale.",
     "phrase": "Voglio uno Stato che orienti il mercato con piani, grandi progetti e campioni nazionali, proteggendo l’industria con un’élite tecnica.",
     "category": "Centro"
+  },
+  {
+    "id": "neofascismo",
+    "name": "Neofascismo",
+    "description": "Erede del fascismo adattato alle democrazie: ultranazionalismo rigeneratore, etnopluralismo e xenofobia, antiglobalismo, capo forte e battaglia culturale, con protezionismo e welfare solo per i nativi.",
+    "phrase": "Voglio la nazione rigenerata sotto un capo forte, ogni popolo nella sua terra, fuori il globalismo, con protezionismo e welfare solo per i nativi.",
+    "category": "Terza posizione"
+  },
+  {
+    "id": "neonazismo",
+    "name": "Neonazismo",
+    "description": "Movimenti e cellule nati dopo il 1945 per far rivivere il nazionalsocialismo, con razzismo biologico e antisemitismo cospirativo, etnonazionalismo bianco transnazionale, rifiuto della democrazia liberale e, in parte, azione senza capo.",
+    "phrase": "Voglio etnostati bianchi di purezza razziale, sotto un capo assoluto e uno Stato totalitario, senza democrazia, con autarchia e welfare solo per la razza.",
+    "category": "Terza posizione"
+  },
+  {
+    "id": "tecno-neoliberalismo",
+    "name": "Tecno-neoliberalismo",
+    "description": "Combina governo di esperti, libero mercato senza interventi, commercio e frontiere aperti e cosmopolitismo, con un’economia postindustriale guidata da software e piattaforme e diffidenza verso le passioni delle masse.",
+    "phrase": "Voglio un governo di esperti, con libero mercato, frontiere aperte e commercio globale, in un’economia guidata da software e piattaforme.",
+    "category": "Destra"
+  },
+  {
+    "id": "nacional-distributismo",
+    "name": "Distributismo nazionale",
+    "description": "Fusione di distributismo e nazionalismo che difende piccola proprietà familiare e cooperative di lavoratori, riunite in corporazioni che regolano il mercato e bloccano i monopoli, contro capitalismo finanziario e comunismo, con identità nazionale e fede cristiana.",
+    "phrase": "Voglio una nazione di famiglie proprietarie e comunità radicate, di fede cristiana e ordine corporativo, contro il grande capitale e il comunismo.",
+    "category": "Terza posizione"
+  },
+  {
+    "id": "social-distributismo",
+    "name": "Distributismo sociale",
+    "description": "Corrente di sinistra del distributismo, ispirata alla dottrina sociale cattolica, che propone la proprietà distribuita tra cooperative di lavoratori, sindacati e comunità, con democrazia, stato sociale e limiti ai monopoli.",
+    "phrase": "Voglio che botteghe, terra e cooperative siano in mano a chi lavora, con sindacati, democrazia locale e protezione sociale contro monopoli e latifondi.",
+    "category": "Centro"
+  },
+  {
+    "id": "monarco-distributismo",
+    "name": "Monarco-distributismo",
+    "description": "Sintesi di monarchismo e distributismo che difende un re cristiano come protettore di famiglie proprietarie, corporazioni e comunità autonome, unendo regalità sociale e sussidiarietà a una proprietà diffusa contro il grande capitale e lo Stato socialista.",
+    "phrase": "Voglio un re cristiano, padre del suo popolo, che protegga famiglie proprietarie, corporazioni e comunità autogovernate dal grande capitale e dallo Stato burocratico.",
+    "category": "Destra"
+  },
+  {
+    "id": "comunismo-tan-malakista",
+    "name": "Comunismo tan malakista",
+    "description": "Comunismo nazionale dell'indonesiano Tan Malaka: marxismo e materialismo razionale (Madilog) al servizio dell'indipendenza totale e di una repubblica di operai e contadini, libera dalla tutela di Mosca, con un'alleanza tattica con l'islam anticoloniale.",
+    "phrase": "Voglio una repubblica di operai e contadini indipendente al 100% da imperialismo e Mosca, con materialismo contro la superstizione e alleanza con l'islam anticoloniale.",
+    "category": "Sinistra radicale"
+  },
+  {
+    "id": "pancasila",
+    "name": "Pancasila",
+    "description": "Filosofia ufficiale dello Stato indonesiano (1945), fondata su cinque principi: fede in un solo Dio, umanità giusta, unità nazionale, democrazia deliberativa e giustizia sociale, una via di mezzo tra capitalismo liberale e comunismo ateo.",
+    "phrase": "Voglio una nazione unita nella diversità, con la fede in un solo Dio, democrazia del consenso e giustizia sociale, né capitalismo liberale né comunismo ateo.",
+    "category": "Centro"
+  },
+  {
+    "id": "nasakomismo",
+    "name": "Nasakomismo",
+    "description": "Dottrina della Democrazia Guidata di Sukarno (anni '60) che unisce nazionalismo, religione e comunismo in un fronte antimperialista sotto un presidente a vita, con economia statale e scontro con l'Occidente liberale.",
+    "phrase": "Voglio unire nazionalisti, religiosi e comunisti sotto un leader rivoluzionario, in uno Stato antimperialista che espelle il capitale straniero e sfida l'Occidente.",
+    "category": "Terza posizione"
+  },
+  {
+    "id": "nacionalismo-putinista",
+    "name": "Nazionalismo putinista",
+    "description": "Corrente legata a Vladimir Putin che unisce potere centralizzato e opposizione contenuta, capitalismo diretto dallo Stato, valori tradizionali con la Chiesa ortodossa, sovranità contro l'Occidente e influenza sull'antico spazio imperiale.",
+    "phrase": "Voglio uno Stato-civiltà forte sotto un solo leader, fedele alla tradizione ortodossa, con capitalismo diretto dallo Stato e sovranità contro l'Occidente.",
+    "category": "Estrema destra"
   }
 ]
