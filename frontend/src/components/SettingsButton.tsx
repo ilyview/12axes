@@ -4,6 +4,9 @@ import { HOME_AXES } from '../data/homeAxes';
 import { PoleIcon } from './AxisIcon';
 import { InfoSheet } from './results/InfoSheet';
 import { saveSettings, useSettings, type UserSettings } from '../utils/settings';
+import { useCustomIdeologies, type CustomIdeology } from '../utils/customIdeologies';
+import { ideologyColorByKey } from '../utils/ideologyColors';
+import { CustomIdeologyEditor } from './CustomIdeologyEditor';
 
 function Switch({ checked, onChange, label, hint }: { checked: boolean; onChange: (next: boolean) => void; label: string; hint?: string }) {
   return (
@@ -20,7 +23,15 @@ function Switch({ checked, onChange, label, hint }: { checked: boolean; onChange
 /** Engrenagem do cabeçalho: abre as configurações (botão rosa, perfis de brincadeira e eixos do teste). */
 export function SettingsButton({ onAxesChanged }: { onAxesChanged?: () => void }) {
   const [open, setOpen] = useState(false);
+  const [editing, setEditing] = useState<CustomIdeology | 'new' | null>(null);
   const settings = useSettings();
+  const customs = useCustomIdeologies();
+  const c = t.customIdeology;
+  // O editor abre no lugar das configurações (duas abas abertas fechariam juntas no Esc).
+  const edit = (target: CustomIdeology | 'new') => {
+    setOpen(false);
+    setEditing(target);
+  };
   const s = t.settings;
   const axes = HOME_AXES.map((axis) => ({ ...axis, ...(t.homeAxes[axis.id] ?? {}) }));
   const update = (patch: Partial<UserSettings>) => saveSettings({ ...settings, ...patch });
@@ -75,8 +86,30 @@ export function SettingsButton({ onAxesChanged }: { onAxesChanged?: () => void }
               {s.allAxesOn}
             </button>
           )}
+
+          <p className="e-set-section">{c.sectionTitle}</p>
+          <p className="e-set-note">{c.privacyNote}</p>
+          {customs.map((item) => {
+            const color = ideologyColorByKey(item.category);
+            return (
+              <button key={item.id} className="e-set-row" type="button" onClick={() => edit(item)}>
+                <span className="e-set-axis-icon" aria-hidden="true">
+                  <span className="e-custom-dot" style={{ background: color.base }} />
+                </span>
+                <span className="e-set-text">
+                  <span className="e-set-label">{item.name}</span>
+                  <span className="e-set-hint">{t.compassSpectrumLabels[item.category as keyof typeof t.compassSpectrumLabels] ?? item.category}</span>
+                </span>
+                <span className="e-set-hint">{c.edit}</span>
+              </button>
+            );
+          })}
+          <button className="e-btn e-btn-primary e-btn-sm e-set-reset" type="button" onClick={() => edit('new')}>
+            + {c.addButton}
+          </button>
         </InfoSheet>
       )}
+      {editing && <CustomIdeologyEditor initial={editing === 'new' ? null : editing} onClose={() => setEditing(null)} />}
     </>
   );
 }

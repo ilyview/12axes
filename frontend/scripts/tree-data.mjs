@@ -190,7 +190,8 @@ export function buildTreeData(dataDir) {
         worldX: round(worldX, 1),
         worldY: round(worldY, 1),
         scale: round(scale, 3),
-        axes: axesByLocale[locale].map(({ id, label, leftPole, rightPole, leftColor, rightColor }) => ({
+        // Só os eixos dos vetores (os que todos os perfis do catálogo têm), na mesma ordem de `vec`.
+        axes: axesByLocale[locale].filter(({ id }) => kindAxisIds.includes(id)).map(({ id, label, leftPole, rightPole, leftColor, rightColor }) => ({
           id,
           label,
           leftPole,

@@ -41,6 +41,7 @@ import { paywallEnabled, paywallMode, salesOpen } from '../../utils/paywallFlag'
 import { downloadRankingXlsx } from '../../utils/rankingXlsx';
 import { applyGoatMode } from '../../utils/goatism';
 import { resultVector } from '../../utils/peopleCompare';
+import { CustomIdeologiesSection } from '../results/CustomIdeologiesSection';
 
 // Modo de desenvolvimento local do Relatório Completo: abre sem pagamento (o backend também precisa de PREMIUM_DEV_OPEN).
 // Fica fora do build de produção porque a variável só existe em frontend/.env.local.
@@ -382,6 +383,8 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
           <PoliticalValuesSection values={politicalValues} category={top.category} ideologyId={top.ideologyId} religion={religion} footer={shareButton('compass')} />
 
           <IdeologiesSection others={result.matches.slice(1, 4)} distant={result.bottomIdeologyMatch} />
+
+          <CustomIdeologiesSection axes={result.axes} />
 
           {compass && (
             <PoliticalCompassSection

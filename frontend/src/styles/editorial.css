@@ -1925,3 +1925,33 @@ button.e-ppl-dimrow:hover{filter:brightness(.97)}
 @media (max-width:760px){.e-nav .e-wrap>.e-nav-actions+.e-menu-btn{margin-left:4px}}
 /* Com uma aba aberta, a patinha rosa (z-index máximo) não cobre o botão de fechar. */
 body:has(.e-axis-sheet-backdrop) .nya-btn{visibility:hidden}
+
+/* ── Ideologias próprias (só neste navegador) ── */
+.e-custom-sheet{max-width:620px}
+.e-custom-field{display:flex;flex-direction:column;gap:6px;margin-top:14px}
+.e-custom-field input,.e-custom-field textarea,.e-custom-field select{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid var(--borda,#E2DDCF);border-radius:12px;background:var(--surface,#FBF9F3);font:inherit;font-size:15px;color:inherit}
+.e-custom-field textarea{resize:vertical;min-height:70px}
+.e-custom-field input:focus-visible,.e-custom-field textarea:focus-visible,.e-custom-field select:focus-visible{outline:3px solid var(--carmim);outline-offset:1px}
+.e-custom-select{display:block;border-left:6px solid var(--c);border-radius:12px}
+.e-custom-axes-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:6px}
+.e-custom-axes{max-height:44vh;overflow-y:auto;margin:0 -4px;padding:0 4px}
+.e-custom-axis{padding:10px 0;border-bottom:1px solid var(--borda,#E2DDCF)}
+.e-custom-axis-top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.e-custom-axis-row{display:flex;align-items:center;gap:10px;margin-top:6px}
+.e-custom-axis-row input[type=range]{flex:1 1 auto;accent-color:var(--tinta,#1A1A18)}
+.e-custom-pole{display:grid;place-items:center;width:24px;height:24px;flex:none}
+.e-custom-pole svg{width:20px;height:20px}
+.e-custom-axis-poles{display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted,#5B5A55);padding:0 34px}
+.e-custom-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:16px;flex-wrap:wrap}
+.e-custom-delete{margin-right:auto;color:var(--carmim,#880912)}
+.e-custom-dot{display:block;width:14px;height:14px;border-radius:50%}
+.e-custom-panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.e-custom-list{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}
+.e-custom-card{display:flex;align-items:center;gap:14px;width:100%;padding:14px 16px;border:1px solid var(--borda,#E2DDCF);border-left:6px solid var(--c);border-radius:16px;background:var(--cb);text-align:left;font:inherit;color:inherit;cursor:pointer}
+.e-custom-card:focus-visible{outline:3px solid var(--carmim);outline-offset:2px}
+.e-custom-card-main{display:flex;flex-direction:column;gap:3px;flex:1 1 auto;min-width:0}
+.e-custom-card-cat{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--c)}
+.e-custom-card-name{font-size:18px;font-weight:700}
+.e-custom-card-rank{font-size:13px;font-weight:600}
+.e-custom-card-pct{display:flex;flex-direction:column;align-items:flex-end;font-size:26px;font-weight:700;color:var(--c);flex:none}
+.e-custom-card-pct small{font-size:12px;font-weight:500;color:var(--text-muted,#5B5A55)}

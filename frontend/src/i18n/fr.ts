@@ -38,7 +38,7 @@ export const fr: DeepPartial<Strings> = {
   backToStartAria: 'Retour au début',
   mainNavAria: 'Navigation principale',
   navHow: 'Comment ça marche',
-  navAxes: '12 axes',
+  navAxes: '14 axes',
   navSpectrum: 'Spectre',
   navFaq: 'FAQ',
   navBooks: 'Livres',
@@ -72,7 +72,7 @@ export const fr: DeepPartial<Strings> = {
   introLead:
     'Vous vous étiquetez peut-être à tort. En quelques minutes, découvrez votre véritable idéologie, le pays qui pense le plus comme vous et le dirigeant politique le plus proche de vos idées.',
   startQuiz: 'Découvrir mon profil',
-  seeAxes: 'Voir les 12 axes',
+  seeAxes: 'Voir les 14 axes',
   heroLabels: ['Gratuit', 'Anonyme', 'Rapide', 'Résultat immédiat'],
   heroTeaserLabel: 'affinité',
   heroTeaserTag: 'Exemple de résultat',
@@ -81,21 +81,21 @@ export const fr: DeepPartial<Strings> = {
   formats: {
     short: {
       label: 'Court',
-      questionCount: '36 questions',
+      questionCount: '42 questions',
       description: 'Un résultat rapide, idéal pour une première lecture de votre profil',
       duration: 'Environ 5 min',
       action: 'Commencer la version courte'
     },
     extended: {
       label: 'Complet',
-      questionCount: '60 questions',
+      questionCount: '70 questions',
       description: 'Plus de précision pour rapprocher votre résultat des profils idéologiques.',
       duration: 'Environ 9 min',
       action: 'Commencer la version complète'
     },
     extreme: {
       label: 'Extrême',
-      questionCount: '240 questions',
+      questionCount: '275 questions',
       description: 'Connaissez la synthèse exacte de votre pensée avec une précision de 100 %.',
       duration: 'Environ 30 min',
       action: 'Commencer la version extrême'
@@ -152,7 +152,7 @@ export const fr: DeepPartial<Strings> = {
   compareFieldCaption: 'Personnalité, pays ou idéologie',
   compareFullView: 'Voir la comparaison complète',
   compareExamplePlaceholder: 'Ex. : Donald Trump',
-  compareAxesTitle: 'Vos 12 axes',
+  compareAxesTitle: 'Vos 14 axes',
   compareNoResults: 'Aucun profil trouvé.',
   compareLoading: 'Comparaison en cours…',
   compareLoadError: 'Impossible de charger la comparaison. Veuillez réessayer.',
@@ -174,7 +174,7 @@ export const fr: DeepPartial<Strings> = {
   compareValues: (pole, you, them, name) => `${pole} : vous ${you} % · ${name} ${them} %.`,
   compareOptionAria: (name, type) => `${name}, ${type}`,
   comparePageDocTitle: 'Comparer des profils | 12 Axes',
-  comparePageTitle: 'Côte à côte, sur les 12 axes',
+  comparePageTitle: 'Côte à côte, sur les 14 axes',
   comparePageProfilesTitle: 'Profils',
   comparePageNeedMore: 'Choisissez un autre profil à comparer.',
   comparePageFull: 'Jusqu’à 3 profils. Retirez-en un pour en choisir un autre.',
@@ -182,7 +182,7 @@ export const fr: DeepPartial<Strings> = {
   comparePageRemoveAria: (name) => `Retirer ${name} de la comparaison`,
   comparePageUnknown: 'Profil introuvable',
   comparePageNotFound: 'Un des profils de ce lien n’existe pas. Retirez-le et choisissez-en un autre.',
-  comparePageAxesTitle: 'Les 12 axes',
+  comparePageAxesTitle: 'Les 14 axes',
   comparePageAxisAria: (axis, values) => `${axis} : ${values}`,
   comparePageCompassAria: (points) => `Boussole politique : ${points}`,
   comparePagePointAria: (name, right, authoritarian, traditional) =>
@@ -192,7 +192,7 @@ export const fr: DeepPartial<Strings> = {
   comparePageSignatureTitle: 'Ce qui les distingue',
   comparePageIdeologyTitle: 'Idéologie la plus proche',
   comparePageNavIdeologies: 'Idéologies',
-  comparePageNavAxes: '12 axes',
+  comparePageNavAxes: '14 axes',
   comparePageNavSignature: 'Distinction',
   comparePageNavCountries: 'Pays',
   comparePageNavParties: 'Partis',
@@ -261,7 +261,7 @@ export const fr: DeepPartial<Strings> = {
   peopleNavValues: 'Valeurs',
   peopleNavSharedValues: 'En commun',
   peoplePageDocTitle: 'Comparer avec quelqu’un d’autre | 12 Axes',
-  peoplePageTitle: 'Vous deux, sur les 12 axes',
+  peoplePageTitle: 'Vous deux, sur les 14 axes',
   peoplePagePeopleTitle: 'Personnes',
   peoplePageBadLink: 'Ce lien de comparaison est incomplet. Ouvrez votre résultat et utilisez « Comparer avec quelqu’un d’autre ».',
   peoplePageLoadError: 'Impossible de charger la comparaison. Veuillez réessayer.',
@@ -368,12 +368,12 @@ export const fr: DeepPartial<Strings> = {
     {
       question: 'Le test est-il fiable ?',
       answer:
-        'Le test politique 12 Axes est fiable en tant qu’outil de lecture et de comparaison des positions politiques. Il utilise des questions réparties sur 12 axes pour réduire le biais d’un seul sujet, mais il ne remplace ni l’étude, ni le débat, ni l’analyse universitaire.'
+        'Le test politique 12 Axes est fiable en tant qu’outil de lecture et de comparaison des positions politiques. Il utilise des questions réparties sur 14 axes pour réduire le biais d’un seul sujet, mais il ne remplace ni l’étude, ni le débat, ni l’analyse universitaire.'
     },
     {
       question: 'Combien de temps dure-t-il ?',
       answer:
-        'La version courte prend environ 5 minutes. La version complète prend environ 9 minutes. La version extrême, avec 240 questions, peut prendre environ 30 minutes.'
+        'La version courte prend environ 5 minutes. La version complète prend environ 9 minutes. La version extrême, avec 275 questions, peut prendre environ 30 minutes.'
     },
     {
       question: 'Puis-je le repasser ?',
@@ -403,7 +403,7 @@ export const fr: DeepPartial<Strings> = {
     {
       question: 'Puis-je le partager ?',
       answer:
-        'Oui. Une fois terminé, vous pouvez partager votre résultat pour discuter d’idéologie politique, de spectre politique, de gauche, de droite, de centre et des 12 axes avec d’autres personnes.'
+        'Oui. Une fois terminé, vous pouvez partager votre résultat pour discuter d’idéologie politique, de spectre politique, de gauche, de droite, de centre et des 14 axes avec d’autres personnes.'
     },
     {
       question: 'Le test collecte-t-il des données ?',
@@ -417,15 +417,15 @@ export const fr: DeepPartial<Strings> = {
     },
     {
       question: 'Qu’est-ce que 12 Axes ?',
-      answer: '12 Axes est un test politique gratuit qui mesure votre position sur 12 axes (structure de l’État, représentation, libertés, immigration, diplomatie, intervention, économie, contrôle économique, commerce, religion, morale et technologie) et vous montre l’idéologie politique, le pays et la figure politique qui vous correspondent.'
+      answer: '12 Axes est un test politique gratuit qui mesure votre position sur 14 axes (structure de l’État, représentation, libertés, immigration, diplomatie, intervention, économie, contrôle économique, commerce, religion, morale et technologie) et vous montre l’idéologie politique, le pays et la figure politique qui vous correspondent.'
     },
     {
       question: '12 Axes propose-t-il une boussole politique ?',
-      answer: 'Oui. À la fin du résultat, une boussole politique à deux axes, gauche × droite et autoritaire × libertaire, est accompagnée d’une barre progressiste × traditionaliste. Elle résume visuellement vos 12 axes, mais ne remplace pas l’analyse complète.'
+      answer: 'Oui. À la fin du résultat, une boussole politique à deux axes, gauche × droite et autoritaire × libertaire, est accompagnée d’une barre progressiste × traditionaliste. Elle résume visuellement vos 14 axes, mais ne remplace pas l’analyse complète.'
     },
     {
       question: 'Comment trouver l’idéologie politique qui me correspond ?',
-      answer: 'Passez le test politique, avec 36, 60 ou 240 questions. Le résultat montre les idéologies les plus compatibles avec vos réponses, avec le pourcentage de compatibilité et la position de chacune sur les 12 axes.'
+      answer: 'Passez le test politique, avec 42, 70 ou 275 questions. Le résultat montre les idéologies les plus compatibles avec vos réponses, avec le pourcentage de compatibilité et la position de chacune sur les 14 axes.'
     },
     {
       question: 'Puis-je savoir quel pays ou quelle figure politique me correspond ?',
@@ -433,7 +433,7 @@ export const fr: DeepPartial<Strings> = {
     },
     {
       question: 'Combien de questions compte le test politique ?',
-      answer: 'Il existe trois versions : rapide, avec 36 questions, complète, avec 60, et extrême, avec 240. Toutes couvrent les mêmes 12 axes ; plus il y a de questions, plus le résultat tend à être précis.'
+      answer: 'Il existe trois versions : rapide, avec 42 questions, complète, avec 70, et extrême, avec 275. Toutes couvrent les mêmes 14 axes ; plus il y a de questions, plus le résultat tend à être précis.'
     }
   ],
   howTitle: 'Comment fonctionne le test politique 12 Axes',
@@ -445,8 +445,8 @@ export const fr: DeepPartial<Strings> = {
       text: 'Soyez d’accord ou non avec des affirmations sur l’économie, l’État, les libertés civiles, les valeurs, la religion, la politique étrangère et la technologie.'
     },
     {
-      title: 'Analyse sur 12 axes',
-      text: 'Chaque réponse vous place sur 12 axes idéologiques indépendants, du libre marché à la planification, du nationalisme au mondialisme.'
+      title: 'Analyse sur 14 axes',
+      text: 'Chaque réponse vous place sur 14 axes idéologiques indépendants, du libre marché à la planification, du nationalisme au mondialisme.'
     },
     {
       title: 'Découvrez votre profil',
@@ -478,18 +478,18 @@ export const fr: DeepPartial<Strings> = {
   navStart: 'Accueil',
   navTakeTest: 'Passer le test',
   menuAria: 'Ouvrir le menu',
-  roseAria: 'Rose des 12 axes',
+  roseAria: 'Rose des 14 axes',
   spectrumBarAria: 'Barre du spectre politique avec les huit catégories',
   versionsTitle: 'Choisissez la profondeur',
   versionsLead:
-    'Commencez par le test rapide ou allez plus loin pour un portrait plus précis de votre profil idéologique. Toutes les versions utilisent les mêmes 12 axes et renvoient le résultat immédiatement.',
+    'Commencez par le test rapide ou allez plus loin pour un portrait plus précis de votre profil idéologique. Toutes les versions utilisent les mêmes 14 axes et renvoient le résultat immédiatement.',
   variantTitlePre: 'Voulez-vous de la vitesse ou de la ',
   variantTitleEm: 'précision ?',
   backToStart: 'Retour au début',
   depthLabel: 'Profondeur',
   depthAria: (level) => `Profondeur ${level} sur 3`,
   recommended: 'Recommandé',
-  formatNotes: ['Toutes les versions utilisent les mêmes 12 axes', 'Anonyme, sans inscription', 'Résultat immédiat'],
+  formatNotes: ['Toutes les versions utilisent les mêmes 14 axes', 'Anonyme, sans inscription', 'Résultat immédiat'],
   variantLead:
     'La version courte révèle rapidement le résultat. La version complète augmente la précision pour rapprocher votre résultat des profils idéologiques.',
   quizNavAria: 'Navigation du test',
@@ -511,11 +511,34 @@ export const fr: DeepPartial<Strings> = {
   resultsLead: (count) =>
     `Analyse fondée sur ${count} réponses réparties sur 12 dimensions fondamentales de l’idéologie politique. Consultez votre position sur chaque axe et vos correspondances idéologiques.`,
   resultsLeadShared:
-    'Résultat partagé : la position sur chacun des 12 axes politiques et les correspondances idéologiques calculées à partir de celle-ci. Passez le test pour découvrir les vôtres.',
+    'Résultat partagé : la position sur chacun des 14 axes politiques et les correspondances idéologiques calculées à partir de celle-ci. Passez le test pour découvrir les vôtres.',
   resultsSummaryAria: 'Résumé de l’analyse',
   metaTop: 'Meilleure correspondance',
   axesSectionEyebrow: 'Axes politiques',
-  axesSectionTitle: 'Vos 12 axes',
+  customIdeology: {
+    addButton: "Ajouter une idéologie",
+    sectionTitle: "Vos idéologies",
+    privacyNote: "Enregistrées seulement dans ce navigateur : personne d’autre ne les voit.",
+    newTitle: "Nouvelle idéologie",
+    editTitle: "Modifier l'idéologie",
+    nameLabel: "Nom",
+    namePlaceholder: "Ex. : Mon idéologie",
+    categoryLabel: "Catégorie",
+    descriptionLabel: "Description (facultative)",
+    descriptionPlaceholder: "Que défend-elle ?",
+    axesLabel: "Position sur les axes",
+    fromResult: "Utiliser mon résultat",
+    balanced: "Équilibré",
+    save: "Enregistrer",
+    cancel: "Annuler",
+    delete: "Supprimer",
+    edit: "Modifier",
+    empty: "Vous n'avez encore créé aucune idéologie.",
+    compatibility: "compatible",
+    bestMatch: "Serait votre idéologie la plus compatible",
+    rank: (rank, total) => `Rang ${rank} sur ${total} idéologies`
+  },
+  axesSectionTitle: 'Vos 14 axes',
   proximityEyebrow: 'Proximité idéologique',
   otherMatches: 'Autres idéologies',
   navOnThisPage: 'Sur cette page',
@@ -527,7 +550,7 @@ export const fr: DeepPartial<Strings> = {
   resultsNavAreaCountries: 'Pays par domaine',
   resultsNavTimeline: 'Chronologie',
   resultsNavLiving: 'Où vivre',
-  resultsNavAxes: '12 axes',
+  resultsNavAxes: '14 axes',
   resultsNavSignature: 'Distinction',
   resultsNavCountries: 'Pays',
   resultsNavPersonalities: 'Personnalités',
@@ -662,13 +685,13 @@ export const fr: DeepPartial<Strings> = {
   paywallModalTitle: 'Accédez au résultat complet de vos opinions politiques',
   paywallModalLead: 'Comprenez comment vous voyez le monde axe par axe, découvrez quel pays ou quelle région actuelle vous ressemble le plus, et bien plus encore.',
   paywallPdfTitle: 'Emportez votre rapport complet en PDF',
-  paywallPdfLead: 'L’analyse des 12 axes, votre gouvernement idéal et les pays où vivre, dans un PDF à conserver et à relire quand vous voulez.',
+  paywallPdfLead: 'L’analyse des 14 axes, votre gouvernement idéal et les pays où vivre, dans un PDF à conserver et à relire quand vous voulez.',
   paywallIncludesTitle: 'Ce que vous débloquez :',
   paywallIncludes: [
     { lead: 'Votre gouvernement idéal :', text: 'neuf postes occupés par des personnes qui pensent comme vous.' },
     { lead: 'Dans quel pays déménager :', text: 'les 10 pays les plus proches de vos idéaux.' },
     { lead: 'Là où vous êtes le plus en désaccord :', text: 'avec l’idéologie, la figure et le pays les plus proches de vous.' },
-    { lead: 'Les 12 axes, un par un :', text: 'ce que révèle chacune de vos positions, pourquoi elle est louée et pourquoi elle est critiquée.' },
+    { lead: 'Les 14 axes, un par un :', text: 'ce que révèle chacune de vos positions, pourquoi elle est louée et pourquoi elle est critiquée.' },
     { lead: 'Votre chronologie :', text: 'qui pensait comme vous, de l’Antiquité au XXIe siècle.' },
     { lead: 'Votre dirigeant idéal par domaine :', text: 'politique, économie, philosophie et plus encore.' },
     { lead: 'Classement complet et PDF :', text: 'tout le catalogue dans un tableur, et le rapport à conserver.' }
@@ -741,7 +764,7 @@ export const fr: DeepPartial<Strings> = {
   signatureUnusualLeadMax: (pole) => `Aucune idéologie du catalogue ne penche aussi loin vers ${pole.toLowerCase()} que vous.`,
   signatureUnusualLeadBalanced: (axis, pole, percent) =>
     `Votre position sur ${axis} est plutôt centrale. Elle vous place néanmoins plus près de ${pole.toLowerCase()} que ${Math.round(percent)} % des idéologies du catalogue.`,
-  signatureUnusualNote: (axis) => `Sur l’ensemble des 12 axes, ${axis} est celui où vous vous écartez le plus du lot. C’est le trait qui vous distingue.`,
+  signatureUnusualNote: (axis) => `Sur l’ensemble des 14 axes, ${axis} est celui où vous vous écartez le plus du lot. C’est le trait qui vous distingue.`,
   signatureCommonLead: (axis) => `Votre position sur ${axis} se situe presque exactement à la médiane du catalogue.`,
   signatureCommonNote: (pole) => `C’est un terrain commun. Vous ne penchez ni vers ${pole.toLowerCase()} ni vers le pôle opposé.`,
   signatureCommonNoteBalanced: (axis) => `Vous êtes au centre sur ${axis}, tout comme le catalogue. C’est là que votre profil se démarque le moins.`,
@@ -788,15 +811,15 @@ export const fr: DeepPartial<Strings> = {
     kpiAnswered: (count) => `${count} questions répondues`,
     tocTitle: 'Dans ce rapport',
     generatedOn: (date) => `Généré le ${date}`,
-    axesIntro: 'Votre position sur chacun des 12 axes. La barre part du centre (50 %) et s’étend vers le pôle vers lequel vous penchez ; le badge indique l’intensité.',
+    axesIntro: 'Votre position sur chacun des 14 axes. La barre part du centre (50 %) et s’étend vers le pôle vers lequel vous penchez ; le badge indique l’intensité.',
     intensityLegend: 'Intensité',
     intensityLevels: ['Équilibré · jusqu’à 57 %', 'Tendance · de 58 à 72 %', 'Fort · de 73 à 87 %', 'Très fort · 88 % ou plus'],
     alsoClose: 'Aussi proches, par dimension de votre profil',
     continued: 'suite',
-    areasIntro: 'Les figures du catalogue dont le profil sur les 12 axes ressemble le plus au vôtre.',
+    areasIntro: 'Les figures du catalogue dont le profil sur les 14 axes ressemble le plus au vôtre.',
     booksIntro: 'Une œuvre de chacune des figures les plus proches de vos résultats.',
     aboutTitle: 'À propos de ce rapport',
-    aboutText: '12 Axes compare vos réponses aux profils d’idéologies, de pays et de figures sur les mêmes 12 axes. La compatibilité mesure la proximité entre profils ; ce n’est ni un diagnostic scientifique ni une étiquette définitive. Vos réponses ne sont pas conservées.',
+    aboutText: '12 Axes compare vos réponses aux profils d’idéologies, de pays et de figures sur les mêmes 14 axes. La compatibilité mesure la proximité entre profils ; ce n’est ni un diagnostic scientifique ni une étiquette définitive. Vos réponses ne sont pas conservées.',
     ctaTitle: 'Repassez le test ou partagez-le'
   },
   shareFilePrefix: '12axes-profil',
