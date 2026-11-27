@@ -206,18 +206,18 @@
   {
     "ideologyId": "nacional-bolchevismo",
     "vector": {
-      "estrutura": 10.4,
-      "representacao": 23.3,
-      "poder": 73.1,
-      "imigracao": 74.5,
-      "diplomacia": 88.6,
-      "intervencao": 15.0,
-      "economia": 87.7,
+      "estrutura": 15.1,
+      "representacao": 24.5,
+      "poder": 89.8,
+      "imigracao": 86.4,
+      "diplomacia": 92.1,
+      "intervencao": 9.0,
+      "economia": 95.6,
       "controle": 92.5,
-      "comercio": 87.1,
-      "religiao": 71.8,
-      "moral": 37.5,
-      "tecnologia": 76.0
+      "comercio": 94.3,
+      "religiao": 52.7,
+      "moral": 26.4,
+      "tecnologia": 68.9
     }
   },
   {
@@ -4099,18 +4099,18 @@
   {
     "ideologyId": "aceleracionismo-efetivo",
     "vector": {
-      "estrutura": 74.4,
-      "representacao": 73.6,
-      "poder": 22.0,
-      "imigracao": 28.1,
-      "diplomacia": 56.4,
-      "intervencao": 36.4,
-      "economia": 27.0,
+      "estrutura": 73.2,
+      "representacao": 67.6,
+      "poder": 19.6,
+      "imigracao": 26.9,
+      "diplomacia": 54.0,
+      "intervencao": 40.0,
+      "economia": 25.7,
       "controle": 21.8,
-      "comercio": 23.2,
-      "religiao": 69.5,
+      "comercio": 22.0,
+      "religiao": 71.9,
       "moral": 60.0,
-      "tecnologia": 91.3
+      "tecnologia": 92.5
     }
   },
   {
@@ -5016,6 +5016,176 @@
       "tecnologia": 87.7,
       "metodo": 30.0,
       "distribuicao": 82.5
+    }
+  },
+  {
+    "ideologyId": "neofascismo",
+    "vector": {
+      "estrutura": 21.1,
+      "representacao": 28.1,
+      "poder": 68.3,
+      "imigracao": 95.6,
+      "diplomacia": 88.6,
+      "intervencao": 35.2,
+      "economia": 66.4,
+      "controle": 73.1,
+      "comercio": 91.9,
+      "religiao": 30.7,
+      "moral": 6.2,
+      "tecnologia": 48.7
+    }
+  },
+  {
+    "ideologyId": "neonazismo",
+    "vector": {
+      "estrutura": 8.0,
+      "representacao": 9.0,
+      "poder": 79.0,
+      "imigracao": 95.6,
+      "diplomacia": 93.3,
+      "intervencao": 34.0,
+      "economia": 67.8,
+      "controle": 80.2,
+      "comercio": 95.5,
+      "religiao": 51.0,
+      "moral": 15.9,
+      "tecnologia": 52.2
+    }
+  },
+  {
+    "ideologyId": "tecno-neoliberalismo",
+    "vector": {
+      "estrutura": 53.0,
+      "representacao": 63.8,
+      "poder": 30.5,
+      "imigracao": 11.4,
+      "diplomacia": 24.0,
+      "intervencao": 57.7,
+      "economia": 19.0,
+      "controle": 11.1,
+      "comercio": 4.1,
+      "religiao": 83.8,
+      "moral": 78.1,
+      "tecnologia": 84.4
+    }
+  },
+  {
+    "ideologyId": "nacional-distributismo",
+    "vector": {
+      "estrutura": 45.9,
+      "representacao": 29.3,
+      "poder": 68.6,
+      "imigracao": 83.7,
+      "diplomacia": 60.5,
+      "intervencao": 50.2,
+      "economia": 72.4,
+      "controle": 72.2,
+      "comercio": 86.0,
+      "religiao": 8.1,
+      "moral": 7.6,
+      "tecnologia": 16.9
+    }
+  },
+  {
+    "ideologyId": "social-distributismo",
+    "vector": {
+      "estrutura": 78.3,
+      "representacao": 85.9,
+      "poder": 44.9,
+      "imigracao": 27.6,
+      "diplomacia": 20.5,
+      "intervencao": 69.6,
+      "economia": 80.3,
+      "controle": 69.8,
+      "comercio": 72.9,
+      "religiao": 10.7,
+      "moral": 10.9,
+      "tecnologia": 14.5
+    }
+  },
+  {
+    "ideologyId": "monarco-distributismo",
+    "vector": {
+      "estrutura": 72.0,
+      "representacao": 46.0,
+      "poder": 54.3,
+      "imigracao": 68.2,
+      "diplomacia": 33.6,
+      "intervencao": 58.9,
+      "economia": 60.6,
+      "controle": 56.7,
+      "comercio": 77.6,
+      "religiao": 2.1,
+      "moral": 7.6,
+      "tecnologia": 16.9
+    }
+  },
+  {
+    "ideologyId": "comunismo-tan-malakista",
+    "vector": {
+      "estrutura": 19.9,
+      "representacao": 67.4,
+      "poder": 45.7,
+      "imigracao": 31.9,
+      "diplomacia": 70.0,
+      "intervencao": 57.4,
+      "economia": 89.0,
+      "controle": 85.3,
+      "comercio": 77.6,
+      "religiao": 84.5,
+      "moral": 62.8,
+      "tecnologia": 73.7
+    }
+  },
+  {
+    "ideologyId": "pancasila",
+    "vector": {
+      "estrutura": 24.8,
+      "representacao": 66.8,
+      "poder": 67.5,
+      "imigracao": 50.2,
+      "diplomacia": 49.0,
+      "intervencao": 53.0,
+      "economia": 73.8,
+      "controle": 77.0,
+      "comercio": 71.7,
+      "religiao": 23.8,
+      "moral": 16.5,
+      "tecnologia": 53.4
+    }
+  },
+  {
+    "ideologyId": "nasakomismo",
+    "vector": {
+      "estrutura": 19.9,
+      "representacao": 36.4,
+      "poder": 79.0,
+      "imigracao": 61.0,
+      "diplomacia": 80.2,
+      "intervencao": 37.6,
+      "economia": 79.9,
+      "controle": 81.8,
+      "comercio": 84.8,
+      "religiao": 31.0,
+      "moral": 34.5,
+      "tecnologia": 70.1
+    }
+  },
+  {
+    "ideologyId": "nacionalismo-putinista",
+    "vector": {
+      "estrutura": 16.3,
+      "representacao": 25.7,
+      "poder": 87.4,
+      "imigracao": 81.3,
+      "diplomacia": 88.6,
+      "intervencao": 10.2,
+      "economia": 61.2,
+      "controle": 66.0,
+      "comercio": 76.4,
+      "religiao": 26.0,
+      "moral": 10.4,
+      "tecnologia": 64.1
     }
   }
 ]

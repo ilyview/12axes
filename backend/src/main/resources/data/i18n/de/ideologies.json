@@ -105,8 +105,8 @@
   },
   {
     "id": "nacional-bolchevismo",
-    "name": "Nationalbolschewismus (NazBol)",
-    "description": "Synkretistische Ideologie, auch NazBol genannt, die revolutionären Sozialismus und radikalen Nationalismus verschmilzt: kollektivistische Wirtschaft, staatlicher Autoritarismus und Ablehnung von Liberalismus, Westen und bürgerlichem Individualismus.",
+    "name": "Nationalbolschewismus",
+    "description": "Synkretistische Strömung (NazBol) aus dem Deutschland der 1920er (Niekisch, Brüder Strasser): Ultranationalismus trifft Bolschewismus – starker Staat, kollektivistische Wirtschaft, Bündnis mit dem Osten gegen Liberalismus, Kapitalismus und angelsächsische Hegemonie.",
     "phrase": "Ich will eine Gesellschaft, die Sowjet und Nation verschmilzt, kollektivistisch und autoritär, gegen Liberalismus, den Westen und bürgerlichen Individualismus.",
     "category": "Dritte Position",
     "eli5": "Stell dir vor, du bringst zwei Gruppen zusammen, die sich ständig streiten: die Kinder, die alle Spielsachen gerecht teilen wollen, und die, die ihr Land für das allerbeste halten. Der Nationalbolschewismus will beides zugleich: Die Regierung bestimmt alles, teilt alles auf, und alle müssen ihr Land sehr lieben."
@@ -916,7 +916,7 @@
     "name": "Staatlicher Entwicklungsansatz",
     "description": "Modell, in dem der Staat Industrialisierung und Wirtschaftswachstum durch Planung, öffentliche Investitionen und Industrieschutz lenkt, um die Rückständigkeit und äußere Abhängigkeit der Nation zu überwinden.",
     "phrase": "Ich will einen Staat, der die Industrialisierung durch Pläne und öffentliche Investitionen vorantreibt und die Industrie vor äußerer Abhängigkeit schützt.",
-    "category": "Linke",
+    "category": "Dritte Position",
     "eli5": "Der Staat treibt das Wachstum des Landes an: Er plant, baut Fabriken und Straßen und gründet eigene Firmen, damit das Land reich und modern wird."
   },
   {
@@ -1020,7 +1020,7 @@
     "name": "Christlicher Theokratismus",
     "description": "Christliche theokratische Doktrin, die politische Macht der religiösen Autorität unterordnet und meint, göttliches Recht und Kirche sollten Staat und Sitten regieren, vom mittelalterlichen und päpstlichen Ultramontanismus bis zu modernen rekonstruktionistischen Projekten.",
     "phrase": "Ich will eine Gesellschaft unter göttlichem Recht, mit der Kirche über dem Staat und Sitten, die der religiösen Autorität untergeordnet sind.",
-    "category": "Extreme Rechte",
+    "category": "Dritte Position",
     "eli5": "Das ist ein Land, in dem die Regeln aus der Bibel kommen und die Kirche beim Regieren hilft. Die Gesetze folgen dem, was christliche Anführer als Gottes Willen bezeichnen, für alle."
   },
   {
@@ -1316,7 +1316,7 @@
     "name": "Revolutionärer Syndikalismus",
     "description": "Strömung, die den parlamentarischen und reformistischen Weg ablehnt und auf den Generalstreik und den mobilisierenden Mythos setzt: direkte Gewerkschaftsaktion und proletarische Gewalt sollen den Staat und die dekadente Bourgeoisie zerstören.",
     "phrase": "Ich will den Generalstreik und die direkte Gewerkschaftsaktion, um Staat und Bourgeoisie zu zerstören, ohne Parlament und Reformismus.",
-    "category": "Radikale Linke",
+    "category": "Linke",
     "eli5": "Die Arbeiter wollen keine Wahlen und keine Politiker. Sie glauben: Wenn alle gleichzeitig in einem riesigen Streik die Arbeit niederlegen, verlieren die Chefs, und die Arbeiter übernehmen."
   },
   {
@@ -1412,7 +1412,7 @@
     "name": "Platonismus",
     "description": "Politische Philosophie Platons: Sie vertraut die Regierung der Stadt einer durch Tugend und Wissen gebildeten philosophischen Elite an, mit strenger Kontrolle von Bildung, Eigentum und Sitten im Namen von Gerechtigkeit und gesellschaftlicher Harmonie.",
     "phrase": "Ich will eine Stadt, die von Philosophenkönigen regiert wird, mit in Tugend erzogenen Wächtern und strenger Kontrolle über Eigentum und Sitten.",
-    "category": "Rechte",
+    "category": "Dritte Position",
     "eli5": "Platon fand, Philosophen sollten regieren: die weisesten, gerechtesten Menschen, die dafür lange gelernt haben. Jeder hat seine Rolle, wie die Teile einer Maschine."
   },
   {
@@ -1692,7 +1692,7 @@
     "name": "Cäsarismus",
     "description": "Römische Kaisertradition, die von Julius Caesar über Augustus, Nero, Mark Aurel und Justinian Heer, Recht und Verwaltung beim Herrscher bündelt und dabei Institutionen, Versorgung des Volkes und Souveränität über ein vielfältiges Reich bewahrt.",
     "phrase": "Ich will ein Reich unter einem Oberbefehl, getragen von Heer, Recht und den Göttern der Stadt, mit Brot für das Volk und verteidigten Grenzen.",
-    "category": "Rechte",
+    "category": "Dritte Position",
     "eli5": "Wie im alten Rom: Ein starker Kaiser wie Julius Caesar oder Augustus vereint alle Macht in seinen Händen, um im Reich Ordnung zu schaffen."
   },
   {
@@ -1868,7 +1868,7 @@
     "name": "Islamischer Theokratismus",
     "description": "Doktrin, die den Staat dem islamischen Klerus übergibt und die Scharia über die Volkssouveränität stellt, wie in Khomeinis Herrschaft des Rechtsgelehrten (Welajat-e Faqih) im Iran und im Taliban-Emirat in Afghanistan.",
     "phrase": "Ich will die Souveränität Gottes über der Wahl, den religiösen Rechtsgelehrten an der Spitze, die Scharia als einziges Gesetz und eine Wirtschaft ohne Wucher.",
-    "category": "Extreme Rechte",
+    "category": "Dritte Position",
     "eli5": "Das ist ein Land, in dem islamische Geistliche die Regierung führen und die Gesetze aus den religiösen Regeln, der Scharia, stammen. Iran ist das bekannteste Beispiel."
   },
   {
@@ -2348,5 +2348,75 @@
     "phrase": "Ich will Körper und Geist befreien wie die Gesellschaft: ohne Staat und Chefs, mit Biohacking, langem Leben und offener Technik für alle.",
     "eli5": "Die Idee ist, dass niemand über andere herrschen soll und jeder Technik nutzen darf, um den eigenen Körper zu verändern und viel länger zu leben. Alle sollen diese Technik bekommen, nicht nur die Reichen.",
     "category": "Anarchistisch"
+  },
+  {
+    "id": "neofascismo",
+    "name": "Neofaschismus",
+    "description": "Erbe des Faschismus, angepasst an Demokratien: regenerativer Ultranationalismus, Ethnopluralismus und Xenophobie, Antiglobalismus, starker Führer und Kulturkampf, mit Protektionismus und Sozialleistungen nur für Einheimische.",
+    "phrase": "Ich will die Nation unter einem starken Führer erneuert, jedes Volk in seinem eigenen Land, ohne Globalismus, mit Protektionismus und Sozialleistungen nur für Einheimische.",
+    "category": "Dritte Position"
+  },
+  {
+    "id": "neonazismo",
+    "name": "Neonazismus",
+    "description": "Bewegungen und Zellen, die nach 1945 entstanden, um den Nationalsozialismus wiederzubeleben, mit biologischem Rassismus und verschwörerischem Antisemitismus, transnationalem weißem Ethnonationalismus, Ablehnung der liberalen Demokratie und teils führerloser Aktion.",
+    "phrase": "Ich will weiße Ethnostaaten rassischer Reinheit unter einem absoluten Führer und einem totalitären Staat, ohne Demokratie, mit Autarkie und Sozialleistungen nur für die Rasse.",
+    "category": "Dritte Position"
+  },
+  {
+    "id": "tecno-neoliberalismo",
+    "name": "Techno-Neoliberalismus",
+    "description": "Verbindet Expertenherrschaft, freie Märkte ohne Eingriffe, offenen Handel und offene Grenzen sowie Kosmopolitismus mit einer postindustriellen, von Software und Plattformen getriebenen Wirtschaft und Misstrauen gegenüber Massenleidenschaften.",
+    "phrase": "Ich will eine Regierung von Experten, mit freien Märkten, offenen Grenzen und globalem Handel, in einer von Software und Plattformen getriebenen Wirtschaft.",
+    "category": "Rechte"
+  },
+  {
+    "id": "nacional-distributismo",
+    "name": "Nationaler Distributismus",
+    "description": "Verbindung aus Distributismus und Nationalismus: verteidigt kleines Familieneigentum und Arbeitergenossenschaften, in Zünften organisiert, die den Markt regulieren und Monopole bremsen, gegen Finanzkapitalismus und Kommunismus, mit nationaler Identität und christlichem Glauben.",
+    "phrase": "Ich will eine Nation von Familien mit Eigentum und verwurzelten Gemeinschaften, mit christlichem Glauben und korporativer Ordnung, gegen Großkapital und Kommunismus.",
+    "category": "Dritte Position"
+  },
+  {
+    "id": "social-distributismo",
+    "name": "Sozialer Distributismus",
+    "description": "Linke Strömung des Distributismus, inspiriert von der katholischen Soziallehre. Sie fordert Eigentum in der Hand von Arbeitergenossenschaften, Gewerkschaften und Gemeinschaften, mit Demokratie, Sozialstaat und Kontrolle von Monopolen.",
+    "phrase": "Ich will Werkstätten, Land und Genossenschaften in den Händen derer, die arbeiten, mit Gewerkschaften, lokaler Demokratie und sozialem Schutz vor Monopolen und Großgrundbesitz.",
+    "category": "Mitte"
+  },
+  {
+    "id": "monarco-distributismo",
+    "name": "Monarcho-Distributismus",
+    "description": "Synthese aus Monarchismus und Distributismus: Ein christlicher König schützt Familien mit Eigentum, Zünfte und autonome Gemeinschaften. Soziales Königtum und Subsidiarität verbinden sich mit breit gestreutem Eigentum, gegen Großkapital und sozialistischen Staat.",
+    "phrase": "Ich will einen christlichen König als Vater seines Volkes, der Familien mit Eigentum, Zünfte und selbstverwaltete Gemeinschaften vor Großkapital und bürokratischem Staat schützt.",
+    "category": "Rechte"
+  },
+  {
+    "id": "comunismo-tan-malakista",
+    "name": "Tan-Malakistischer Kommunismus",
+    "description": "Nationaler Kommunismus des Indonesiers Tan Malaka: Marxismus und rationaler Materialismus (Madilog) im Dienst völliger Unabhängigkeit und einer Republik der Arbeiter und Bauern, frei von Moskaus Bevormundung, mit taktischem Bündnis mit dem antikolonialen Islam.",
+    "phrase": "Ich will eine Arbeiter- und Bauernrepublik, völlig unabhängig von Imperialismus und Moskau, mit Materialismus gegen Aberglauben und Bündnis mit antikolonialem Islam.",
+    "category": "Radikale Linke"
+  },
+  {
+    "id": "pancasila",
+    "name": "Pancasila",
+    "description": "Offizielle Staatsphilosophie Indonesiens (1945) mit fünf Prinzipien: Glaube an einen Gott, gerechte Menschlichkeit, nationale Einheit, deliberative Demokratie und soziale Gerechtigkeit, ein Mittelweg zwischen liberalem Kapitalismus und atheistischem Kommunismus.",
+    "phrase": "Ich will Einheit in Vielfalt, mit Glauben an einen Gott, Konsensdemokratie und sozialer Gerechtigkeit, weder liberalen Kapitalismus noch atheistischen Kommunismus.",
+    "category": "Mitte"
+  },
+  {
+    "id": "nasakomismo",
+    "name": "Nasakomismus",
+    "description": "Sukarnos Doktrin der Gelenkten Demokratie (1960er): Nationalismus, Religion und Kommunismus vereint in einer antiimperialistischen Front unter einem Präsidenten auf Lebenszeit, mit Staatswirtschaft und Konfrontation mit dem liberalen Westen.",
+    "phrase": "Ich will Nationalisten, Religiöse und Kommunisten unter einem Revolutionsführer vereinen: antiimperialistisch, ohne ausländisches Kapital, im Konflikt mit dem Westen.",
+    "category": "Dritte Position"
+  },
+  {
+    "id": "nacionalismo-putinista",
+    "name": "Putinistischer Nationalismus",
+    "description": "Mit Wladimir Putin verbundene Strömung, die zentralisierte Macht und eingedämmte Opposition, staatlich gelenkten Kapitalismus, traditionelle Werte mit der orthodoxen Kirche, Souveränität gegenüber dem Westen und Einfluss auf den früheren imperialen Raum verbindet.",
+    "phrase": "Ich will einen starken Zivilisationsstaat unter einem Führer, der orthodoxen Tradition treu, mit staatlich gelenktem Kapitalismus und Souveränität gegenüber dem Westen.",
+    "category": "Extreme Rechte"
   }
 ]

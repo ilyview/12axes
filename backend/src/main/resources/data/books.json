@@ -6371,5 +6371,56 @@
       "pt": "",
       "en": ""
     }
+  },
+  {
+    "personalityId": "alija-izetbegovic",
+    "title": {
+      "pt": "Islam Between East and West",
+      "en": "Islam Between East and West",
+      "es": "Islam Between East and West",
+      "de": "Islam Between East and West",
+      "it": "Islam Between East and West",
+      "ru": "Islam Between East and West",
+      "fr": "Islam Between East and West"
+    },
+    "year": 1984,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "franjo-tudjman",
+    "title": {
+      "pt": "Nationalism in Contemporary Europe",
+      "en": "Nationalism in Contemporary Europe",
+      "es": "Nationalism in Contemporary Europe",
+      "de": "Nationalism in Contemporary Europe",
+      "it": "Nationalism in Contemporary Europe",
+      "ru": "Nationalism in Contemporary Europe",
+      "fr": "Nationalism in Contemporary Europe"
+    },
+    "year": 1981,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
+  },
+  {
+    "personalityId": "tan-malaka",
+    "title": {
+      "pt": "Naar de Republiek Indonesia",
+      "en": "Naar de Republiek Indonesia",
+      "es": "Naar de Republiek Indonesia",
+      "de": "Naar de Republiek Indonesia",
+      "it": "Naar de Republiek Indonesia",
+      "ru": "Naar de Republiek Indonesia",
+      "fr": "Naar de Republiek Indonesia"
+    },
+    "year": 1925,
+    "url": {
+      "pt": "",
+      "en": ""
+    }
   }
 ]

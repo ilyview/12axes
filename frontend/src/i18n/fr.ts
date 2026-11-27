@@ -548,15 +548,14 @@ export const fr: DeepPartial<Strings> = {
   compassRight: 'Droite',
   compassProgressive: 'Progressiste',
   compassTraditionalist: 'Traditionaliste',
+  compassQuadrants: {
+    authLeft: 'Gauche autoritaire',
+    authRight: 'Droite autoritaire',
+    libLeft: 'Gauche libertaire',
+    libRight: 'Droite libertaire'
+  },
   compassInfo: {
-    aria: 'Comment la boussole politique est construite',
-    title: 'Comment la boussole est construite',
-    authLead: 'L’axe autoritaire × libertaire',
-    authText: 'mesure le degré de concentration du pouvoir politique et de l’intervention de l’État dans la vie des individus. Il prend en compte trois dimensions principales : les libertés individuelles, la représentation politique et la structure de l’État.',
-    econLead: 'L’axe gauche × droite',
-    econText: 'mesure votre position à gauche ou à droite selon l’organisation économique : de la propriété collective et de la planification étatique d’un côté à la propriété privée et aux marchés libres de l’autre. Il prend en compte les dimensions fondamentales de l’économie (propriété des moyens de production) et du contrôle (marché contre planification et régulation).',
-    socialLead: 'L’axe social',
-    socialText: 'mesure l’orientation de vos valeurs entre progressisme et traditionalisme, reflétant votre position sur les mœurs, la culture et les valeurs sociales.'
+    aria: 'Voir ce que signifie votre position sur la boussole'
   },
   compassSpectrumLabels: {
     'esq-radical': 'Gauche radicale',
@@ -569,11 +568,17 @@ export const fr: DeepPartial<Strings> = {
     anarquismo: 'Anarchiste'
   },
   compassEconomicLabels: {
+    socialism: 'Socialisme',
     left: 'Gauche',
     centerLeft: 'Centre gauche',
     center: 'Centre',
     centerRight: 'Centre droit',
-    right: 'Droite'
+    right: 'Droite',
+    capitalism: 'Capitalisme'
+  },
+  compassEconomicMethodLabels: {
+    planned: 'économie planifiée',
+    market: 'économie de marché'
   },
   compassSpectrumDescriptions: {
     'esq-radical': 'Vous tendez à chercher une transformation profonde de la société, avec l’égalité matérielle, la propriété collective et un État fort au service de ceux qui travaillent, en rupture avec l’ordre économique actuel.',
@@ -587,11 +592,13 @@ export const fr: DeepPartial<Strings> = {
     raw: 'Une région hors de la carte traditionnelle, sans équivalent dans les catégories classiques.'
   },
   compassEconomicDescriptions: {
-    left: 'Vous tendez à défendre la propriété collective ou publique des moyens de production et la planification de l’économie, avec l’État et la société, et non le marché, au centre.',
-    centerLeft: 'Vous tendez à accepter le marché, mais avec une forte présence de l’État : de larges services publics, de la régulation et de la redistribution pour réduire les inégalités.',
-    center: 'Vous tendez à chercher un juste milieu économique, avec des rôles équilibrés pour le marché et l’État : de la régulation là où il le faut et de la place pour l’initiative privée.',
+    socialism: 'Vous tendez à défendre la propriété collective ou publique des moyens de production, avec l’État et la société, et non le marché, au centre de l’économie.',
+    left: 'Vous tendez à défendre une économie où l’État joue un rôle important : de grands services et entreprises publics, de la planification et une large redistribution, avec le marché au second plan.',
+    centerLeft: 'Vous tendez à accepter le marché, mais avec une forte présence de l’État : de larges services publics, des entreprises publiques dans les secteurs clés et de la redistribution pour réduire les inégalités.',
+    center: 'Vous tendez à chercher un juste milieu économique, avec des rôles équilibrés pour le marché et l’État : des entreprises publiques là où elles sont stratégiques et de la place pour l’initiative privée.',
     centerRight: 'Vous tendez à faire davantage confiance au marché et à l’initiative privée, avec un État plus petit et des règles claires, sans renoncer à une certaine protection sociale.',
-    right: 'Vous tendez à défendre la propriété privée et le libre marché, avec peu de planification ou de régulation de l’État et la concurrence comme moteur de l’économie.'
+    right: 'Vous tendez à défendre le marché et la propriété privée, avec peu d’entreprises d’État, la concurrence comme moteur de l’économie et une intervention de l’État seulement là où elle est nécessaire.',
+    capitalism: 'Vous tendez à défendre la propriété privée des moyens de production et le libre marché avec peu de restrictions, avec un État réduit au minimum et la concurrence comme moteur de l’économie.'
   },
   compassSocialLabels: {
     veryProgressive: 'Très progressiste',
@@ -933,6 +940,9 @@ export const fr: DeepPartial<Strings> = {
   footerPrivacy: 'Confidentialité',
   footerRefund: 'Remboursement',
   footerReport: 'Signaler',
+  feedbackTitle: 'Un problème ou une idée ?',
+  feedbackReport: 'Signaler un problème',
+  feedbackSuggest: 'Suggérer une amélioration',
   supportTitleEm: 'Soutenir',
   supportLead:
     '12 Axes est indépendant et gratuit. Si le test vous a aidé à mieux comprendre votre idéologie politique, pensez à faire un don par Pix ou en cryptomonnaie pour aider à faire vivre le projet.',

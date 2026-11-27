@@ -4832,5 +4832,47 @@
     "role": "Candidat transhumaniste",
     "lifespan": "1973–",
     "description": "Écrivain américain, auteur de The Transhumanist Wager et fondateur du Parti transhumaniste (2014). Il veut traiter le vieillissement comme une maladie, un revenu de base face au chômage dû à l'IA et moins de dépenses militaires ; candidat démocrate en Californie."
+  },
+  {
+    "id": "slobodan-milosevic",
+    "name": "Slobodan Milošević",
+    "role": "Président de la Yougoslavie",
+    "description": "Dirigeant communiste, ascendant grâce au nationalisme serbe, il a présidé la Serbie puis la Yougoslavie dans les années 1990. Il a mené le pays pendant les guerres de sécession et est mort à La Haye, en plein procès pour crimes de guerre."
+  },
+  {
+    "id": "nicolae-ceausescu",
+    "name": "Nicolae Ceaușescu",
+    "role": "Dictateur communiste roumain",
+    "description": "Secrétaire général du Parti communiste et chef de l’État roumain de 1965 à 1989. Il a combiné communisme nationaliste, distance envers Moscou, culte de la personnalité et répression de la Securitate ; renversé, il a été exécuté en 1989."
+  },
+  {
+    "id": "palmiro-togliatti",
+    "name": "Palmiro Togliatti",
+    "role": "Chef du PCI italien",
+    "description": "Il a dirigé le Parti communiste italien de 1927 à sa mort, fut ministre de la Justice après-guerre et fit du PCI un parti de masse. Il défendit une voie italienne vers le socialisme par la démocratie parlementaire, sans rompre avec Moscou."
+  },
+  {
+    "id": "franjo-tudjman",
+    "name": "Franjo Tuđman",
+    "role": "1er président de la Croatie",
+    "description": "Général yougoslave et historien, il a fondé l’Union démocratique croate, mené la Croatie à l’indépendance en 1991 et l’a présidée jusqu’à sa mort. Il a combiné nationalisme croate, alliance avec l’Église catholique et privatisations pilotées par l’État."
+  },
+  {
+    "id": "alija-izetbegovic",
+    "name": "Alija Izetbegović",
+    "role": "Chef de la Bosnie indépendante",
+    "description": "Juriste emprisonné pour son militantisme islamique, auteur de la Déclaration islamique et fondateur du SDA. Il a présidé la Bosnie-Herzégovine durant l’indépendance et la guerre de 1992–1995, et signé les accords de Dayton."
+  },
+  {
+    "id": "tan-malaka",
+    "name": "Tan Malaka",
+    "role": "Auteur de Madilog",
+    "description": "Révolutionnaire marxiste indonésien, président du PKI dans les années 1920 et agent du Komintern, il rompit avec Moscou pour l’indépendance totale, prôna une alliance avec le panislamisme et fonda le parti Murba avant d’être fusillé en 1949."
+  },
+  {
+    "id": "franco-freda",
+    "name": "Franco Freda",
+    "role": "Théoricien du nazi-maoïsme",
+    "description": "Éditeur néonazi italien, il proposa en 1969 d’unir les deux extrêmes contre l’État bourgeois. Condamné pour association subversive et incitation raciale ; acquitté pour la piazza Fontana, bien que la Cour de cassation l’ait ensuite jugé responsable."
   }
 ]

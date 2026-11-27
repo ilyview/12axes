@@ -157,9 +157,9 @@
   },
   {
     "id": "nacional-bolchevismo",
-    "name": "Nacional-Bolchevismo (NazBol)",
+    "name": "Nacional-Bolchevismo",
     "category": "Terceira Posição",
-    "description": "Ideologia sincrética, também chamada NazBol, que funde socialismo revolucionário e nacionalismo radical, combinando economia coletivista, autoritarismo estatal e rejeição ao liberalismo, ao Ocidente e ao individualismo burguês.",
+    "description": "Corrente sincrética (NazBol) surgida na Alemanha dos anos 1920, com Niekisch e os irmãos Strasser, que une ultranacionalismo e bolchevismo: Estado forte, economia coletivista e aliança com o Leste contra o liberalismo, o capitalismo e a hegemonia anglo-saxã.",
     "phrase": "Quero uma sociedade que funda soviete e nação, coletivista e autoritária, contra o liberalismo, o Ocidente e o individualismo burguês.",
     "eli5": "Imagine juntar duas turmas que vivem brigando: a que quer dividir todos os brinquedos igualmente e a que acha que o seu país é o melhor de todos. O nacional-bolchevismo quer as duas coisas ao mesmo tempo: o governo manda em tudo, divide as coisas e todo mundo tem que amar muito a pátria.",
     "vector": null,
@@ -1623,7 +1623,7 @@
   {
     "id": "desenvolvimentismo-de-estado",
     "name": "Desenvolvimentismo de Estado",
-    "category": "Esquerda",
+    "category": "Terceira Posição",
     "description": "Modelo em que o Estado dirige a industrialização e o crescimento econômico por meio de planejamento, investimento público e proteção da indústria, buscando superar o atraso e a dependência externa da nação.",
     "phrase": "Quero um Estado que dirija a industrialização por planos e investimento público, protegendo a indústria contra a dependência externa.",
     "eli5": "O governo comanda o crescimento do país: planeja, constrói fábricas e estradas e cria empresas próprias para fazer o país ficar rico e moderno.",
@@ -1780,7 +1780,7 @@
   {
     "id": "teocratismo-cristao",
     "name": "Teocratismo Cristão",
-    "category": "Extrema Direita",
+    "category": "Terceira Posição",
     "description": "Doutrina teocratista cristã que subordina o poder político à autoridade religiosa, defendendo que a lei divina e a Igreja devem reger o Estado e os costumes, do ultramontanismo medieval e papal aos projetos reconstrucionistas modernos.",
     "phrase": "Quero uma sociedade regida pela lei divina, com a Igreja acima do Estado e os costumes submetidos à autoridade religiosa.",
     "eli5": "É um país onde as regras vêm da Bíblia e a igreja ajuda a mandar. As leis seguem o que os líderes cristãos dizem que Deus quer, para todo mundo.",
@@ -2308,7 +2308,7 @@
   {
     "id": "sindicalismo-revolucionario",
     "name": "Sindicalismo Revolucionário",
-    "category": "Esquerda Radical",
+    "category": "Esquerda",
     "description": "Corrente que rejeita a via parlamentar e reformista, apostando na greve geral e no mito mobilizador: a ação direta dos sindicatos e a violência proletária devem destruir o Estado e a burguesia decadente.",
     "phrase": "Quero que a greve geral e a ação direta dos sindicatos destruam o Estado e a burguesia, sem parlamento nem reformismo.",
     "eli5": "Os trabalhadores não querem eleições nem políticos. Eles acham que, se todos pararem de trabalhar ao mesmo tempo numa grande greve, os patrões perdem e os trabalhadores passam a mandar.",
@@ -2466,7 +2466,7 @@
   {
     "id": "platonismo",
     "name": "Platonismo",
-    "category": "Direita",
+    "category": "Terceira Posição",
     "description": "Filosofia política de Platão, que confia o governo da cidade a uma elite filosófica formada pela virtude e pelo conhecimento, com forte controle sobre educação, propriedade e costumes em nome da justiça e da harmonia social.",
     "phrase": "Quero uma cidade governada por filósofos-reis, com guardiões educados na virtude e controle rígido sobre propriedade e costumes.",
     "eli5": "Platão achava que quem deve governar são os filósofos, as pessoas mais sábias e justas, que estudaram muito para isso. Cada pessoa tem seu papel, como peças de uma máquina.",
@@ -2954,7 +2954,7 @@
   {
     "id": "cesarismo",
     "name": "Cesarismo",
-    "category": "Direita",
+    "category": "Terceira Posição",
     "description": "Tradição de poder imperial romano que, de Júlio César a Augusto, Nero, Marco Aurélio e Justiniano, concentra exército, lei e administração no governante, preservando instituições, abastecimento popular e soberania sobre império diverso.",
     "phrase": "Quero um império sob um só comando, sustentado pelo exército, pela lei e pelos deuses da cidade, com pão para o povo e fronteiras defendidas.",
     "eli5": "Como em Roma antiga: um imperador forte, como Júlio César ou Augusto, junta todo o poder nas mãos dele para colocar ordem no império.",
@@ -3283,7 +3283,7 @@
   {
     "id": "teocratismo-islamico",
     "name": "Teocratismo Islâmico",
-    "category": "Extrema Direita",
+    "category": "Terceira Posição",
     "description": "Doutrina que entrega o Estado ao clero islâmico e faz da sharia a lei suprema, acima da soberania popular, como no governo do jurista (velayat-e faqih) de Khomeini no Irã e no emirado talibã do Afeganistão.",
     "phrase": "Quero a soberania de Deus acima do voto, com o jurista religioso no comando, a sharia como única lei e uma economia livre da usura.",
     "eli5": "É um país onde os líderes religiosos do Islã mandam no governo, e as leis vêm das regras religiosas, chamadas sharia. O Irã é o exemplo mais conhecido.",
@@ -4089,5 +4089,138 @@
     "countryId": "eua-california",
     "personalityId": "robert-anton-wilson",
     "religions": []
+  },
+  {
+    "id": "neofascismo",
+    "name": "Neofascismo",
+    "category": "Terceira Posição",
+    "description": "Herdeiro do fascismo adaptado às democracias: ultranacionalismo regenerador, etnopluralismo e xenofobia, antiglobalismo, líder forte e disputa cultural, com protecionismo e bem-estar só para nativos.",
+    "phrase": "Quero a nação regenerada sob um líder forte, cada povo em sua terra, fora o globalismo, com protecionismo e bem-estar só para nativos.",
+    "countryId": "italia",
+    "personalityId": "julius-evola",
+    "religions": [
+      "catholic",
+      "protestant",
+      "orthodox",
+      "judaism",
+      "islam",
+      "buddhism",
+      "hinduism",
+      "other"
+    ]
+  },
+  {
+    "id": "neonazismo",
+    "name": "Neonazismo",
+    "category": "Terceira Posição",
+    "description": "Movimentos e células surgidos após 1945 para reviver o nacional-socialismo, com racismo biológico e antissemitismo conspiratório, etnonacionalismo branco transnacional, rejeição da democracia liberal e, em parte, ação sem líder.",
+    "phrase": "Quero etnoestados brancos de pureza racial, sob um líder absoluto e um Estado totalitário, sem democracia, com autarquia e bem-estar só para a raça.",
+    "countryId": "alemanha",
+    "personalityId": "hitler",
+    "religions": []
+  },
+  {
+    "id": "tecno-neoliberalismo",
+    "name": "Tecno-Neoliberalismo",
+    "category": "Direita",
+    "description": "Combina governo de especialistas, livre mercado sem intervenção, comércio e fronteiras abertos e cosmopolitismo, com uma economia pós-industrial movida por software e plataformas e desconfiança das paixões das massas.",
+    "phrase": "Quero um governo de especialistas, com mercado livre, fronteiras abertas e comércio global, numa economia movida por software e plataformas.",
+    "countryId": "eua-california",
+    "personalityId": "ray-kurzweil",
+    "religions": []
+  },
+  {
+    "id": "nacional-distributismo",
+    "name": "Nacional Distributismo",
+    "category": "Terceira Posição",
+    "description": "Fusão de distributismo e nacionalismo que defende pequenas propriedades familiares e cooperativas de trabalhadores, reunidas em corporações de ofício que regulam o mercado e barram monopólios, contra o capitalismo financeiro e o comunismo, com identidade nacional e fé cristã.",
+    "phrase": "Quero uma nação de famílias proprietárias e comunidades enraizadas, de fé cristã e ordem corporativa, contra o grande capital e o comunismo.",
+    "countryId": "austria-corporativista",
+    "personalityId": "engelbert-dollfuss",
+    "religions": [
+      "catholic",
+      "protestant",
+      "orthodox"
+    ]
+  },
+  {
+    "id": "social-distributismo",
+    "name": "Social Distributismo",
+    "category": "Centro",
+    "description": "Vertente de esquerda do distributismo, inspirada na doutrina social da Igreja, que defende a propriedade distribuída entre cooperativas de trabalhadores, sindicatos e comunidades, com democracia, Estado de bem-estar e freio aos monopólios.",
+    "phrase": "Quero oficinas, terras e cooperativas nas mãos de quem trabalha, com sindicatos, democracia local e proteção social contra monopólios e latifúndios.",
+    "countryId": "pais-basco",
+    "personalityId": "peter-maurin",
+    "religions": [
+      "catholic",
+      "protestant",
+      "orthodox"
+    ]
+  },
+  {
+    "id": "monarco-distributismo",
+    "name": "Monarco-Distributismo",
+    "category": "Direita",
+    "description": "Síntese de monarquismo e distributismo que defende um rei cristão como protetor de famílias proprietárias, guildas e comunidades autônomas, unindo realeza social e subsidiariedade à ampla distribuição da propriedade contra o grande capital e o Estado socialista.",
+    "phrase": "Quero um rei cristão, pai do povo, protegendo famílias proprietárias, guildas e comunidades autônomas contra o grande capital e a burocracia do Estado.",
+    "countryId": "sacro-imperio-romano-germanico",
+    "personalityId": "gk-chesterton",
+    "religions": [
+      "catholic",
+      "protestant",
+      "orthodox",
+      "only"
+    ]
+  },
+  {
+    "id": "comunismo-tan-malakista",
+    "name": "Comunismo Tan Malakista",
+    "category": "Esquerda Radical",
+    "description": "Comunismo nacional do indonésio Tan Malaka: marxismo e materialismo racional (Madilog) a serviço da independência total e de uma república de operários e camponeses, sem tutela de Moscou e com aliança tática com o islã anticolonial.",
+    "phrase": "Quero uma república de operários e camponeses 100% independente do imperialismo e de Moscou, com materialismo contra a superstição e aliança com o islã anticolonial.",
+    "countryId": "indonesia",
+    "personalityId": "tan-malaka",
+    "religions": []
+  },
+  {
+    "id": "pancasila",
+    "name": "Pancasila",
+    "category": "Centro",
+    "description": "Filosofia oficial do Estado indonésio (1945), de cinco princípios: crença em um só Deus, humanidade justa, unidade nacional, democracia deliberativa e justiça social, como caminho do meio entre o capitalismo liberal e o comunismo ateu.",
+    "phrase": "Quero uma nação unida na diversidade, de fé em um só Deus, democracia por consenso e justiça social, nem capitalismo liberal nem comunismo ateu.",
+    "countryId": "indonesia",
+    "personalityId": "sukarno",
+    "religions": [
+      "catholic",
+      "protestant",
+      "islam",
+      "buddhism",
+      "hinduism",
+      "other"
+    ]
+  },
+  {
+    "id": "nasakomismo",
+    "name": "Nasakomismo",
+    "category": "Terceira Posição",
+    "description": "Doutrina de Sukarno na Democracia Guiada (anos 1960) que une nacionalismo, religião e comunismo numa frente antiimperialista sob um presidente vitalício, com economia estatizada e confronto com o Ocidente liberal.",
+    "phrase": "Quero unir nacionalistas, religiosos e comunistas sob um líder revolucionário, num Estado antiimperialista que expulsa o capital estrangeiro e enfrenta o Ocidente.",
+    "countryId": "indonesia",
+    "personalityId": "sukarno",
+    "religions": [
+      "islam"
+    ]
+  },
+  {
+    "id": "nacionalismo-putinista",
+    "name": "Nacionalismo Putinista",
+    "category": "Extrema Direita",
+    "description": "Corrente ligada a Vladimir Putin que une poder centralizado e oposição contida, capitalismo dirigido pelo Estado, valores tradicionais com a Igreja Ortodoxa, soberania contra o Ocidente e influência sobre o antigo espaço imperial.",
+    "phrase": "Quero uma civilização-Estado forte sob um líder, fiel à tradição ortodoxa, com capitalismo dirigido pelo Estado e soberana contra o Ocidente.",
+    "countryId": "russia",
+    "personalityId": "putin",
+    "religions": [
+      "orthodox"
+    ]
   }
 ]

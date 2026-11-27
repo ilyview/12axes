@@ -400,21 +400,16 @@ export interface Strings {
   compassRight: string;
   compassProgressive: string;
   compassTraditionalist: string;
+  compassQuadrants: Record<'authLeft' | 'authRight' | 'libLeft' | 'libRight', string>;
   compassSpectrumLabels: Record<'esq-radical' | 'esquerda' | 'centro' | 'direita' | 'ext-direita' | 'terceira' | 'libertario' | 'anarquismo' | 'raw', string>;
-  compassEconomicLabels: Record<'left' | 'centerLeft' | 'center' | 'centerRight' | 'right', string>;
+  compassEconomicLabels: Record<'socialism' | 'left' | 'centerLeft' | 'center' | 'centerRight' | 'right' | 'capitalism', string>;
+  compassEconomicMethodLabels: Record<'planned' | 'market', string>;
   compassSpectrumDescriptions: Record<'esq-radical' | 'esquerda' | 'centro' | 'direita' | 'ext-direita' | 'terceira' | 'libertario' | 'anarquismo' | 'raw', string>;
-  compassEconomicDescriptions: Record<'left' | 'centerLeft' | 'center' | 'centerRight' | 'right', string>;
+  compassEconomicDescriptions: Record<'socialism' | 'left' | 'centerLeft' | 'center' | 'centerRight' | 'right' | 'capitalism', string>;
   compassSocialLabels: Record<'veryProgressive' | 'progressive' | 'moderate' | 'traditional' | 'veryTraditional', string>;
   compassSocialDescriptions: Record<'veryProgressive' | 'progressive' | 'moderate' | 'traditional' | 'veryTraditional', string>;
   compassInfo: {
     aria: string;
-    title: string;
-    authLead: string;
-    authText: string;
-    econLead: string;
-    econText: string;
-    socialLead: string;
-    socialText: string;
   };
   compassAria: (right: number, authoritarian: number, traditional: number) => string;
   countriesSectionTitle: string;
@@ -652,6 +647,9 @@ export interface Strings {
   footerContribute: string;
   footerLicense: string;
   footerReport: string;
+  feedbackTitle: string;
+  feedbackReport: string;
+  feedbackSuggest: string;
   footerFullReport: string;
   footerTerms: string;
   footerPrivacy: string;

@@ -105,8 +105,8 @@
   },
   {
     "id": "nacional-bolchevismo",
-    "name": "Nacionalbolchevismo (NazBol)",
-    "description": "Ideología sincrética, también llamada NazBol, que fusiona el socialismo revolucionario y el nacionalismo radical, combinando economía colectivista, autoritarismo estatal y rechazo al liberalismo, a Occidente y al individualismo burgués.",
+    "name": "Nacionalbolchevismo",
+    "description": "Corriente sincrética (NazBol) nacida en la Alemania de los años 1920, con Niekisch y los hermanos Strasser, que fusiona ultranacionalismo y bolchevismo: Estado fuerte, economía colectivista y alianza con el Este contra el liberalismo, el capitalismo y la hegemonía anglosajona.",
     "phrase": "Quiero una sociedad que fusione soviet y nación, colectivista y autoritaria, contra el liberalismo, Occidente y el individualismo burgués.",
     "category": "Tercera posición",
     "eli5": "Imagina juntar dos grupos que siempre se pelean: los niños que quieren compartir todos los juguetes por igual y los que creen que su país es el mejor de todos. El nacionalbolchevismo quiere las dos cosas a la vez: el gobierno manda en todo, reparte las cosas y todos tienen que amar mucho a su país."
@@ -916,7 +916,7 @@
     "name": "Desarrollismo estatal",
     "description": "Modelo en el que el Estado dirige la industrialización y el crecimiento económico mediante planes, inversión pública y protección industrial, para superar el atraso de la nación y la dependencia externa.",
     "phrase": "Quiero un Estado que impulse la industrialización con planes e inversión pública, protegiendo la industria frente a la dependencia externa.",
-    "category": "Izquierda",
+    "category": "Tercera posición",
     "eli5": "El gobierno impulsa el crecimiento del país: planifica, construye fábricas y carreteras y crea sus propias empresas para que el país sea rico y moderno."
   },
   {
@@ -1020,7 +1020,7 @@
     "name": "Teocratismo cristiano",
     "description": "Doctrina teocratista cristiana que subordina el poder político a la autoridad religiosa y sostiene que la ley divina y la Iglesia deben gobernar el Estado y las costumbres, desde el ultramontanismo medieval y papal hasta los proyectos reconstruccionistas modernos.",
     "phrase": "Quiero una sociedad regida por la ley divina, con la Iglesia por encima del Estado y las costumbres subordinadas a la autoridad religiosa.",
-    "category": "Extrema derecha",
+    "category": "Tercera posición",
     "eli5": "Es un país donde las reglas vienen de la Biblia y la Iglesia ayuda a gobernar. Las leyes siguen lo que los líderes cristianos dicen que Dios quiere, para todos."
   },
   {
@@ -1316,7 +1316,7 @@
     "name": "Sindicalismo revolucionario",
     "description": "Corriente que rechaza la vía parlamentaria y reformista y apuesta por la huelga general y el mito movilizador: la acción sindical directa y la violencia proletaria deben destruir el Estado y a la burguesía decadente.",
     "phrase": "Quiero la huelga general y la acción sindical directa para destruir el Estado y la burguesía, sin parlamento ni reformismo.",
-    "category": "Izquierda radical",
+    "category": "Izquierda",
     "eli5": "Los trabajadores no quieren elecciones ni políticos. Creen que, si todos dejan de trabajar a la vez en una huelga gigante, los jefes pierden y los trabajadores toman el control."
   },
   {
@@ -1412,7 +1412,7 @@
     "name": "Platonismo",
     "description": "Filosofía política de Platón, que confía el gobierno de la ciudad a una élite filosófica formada en la virtud y el conocimiento, con fuerte control de la educación, la propiedad y las costumbres en nombre de la justicia y la armonía social.",
     "phrase": "Quiero una ciudad gobernada por reyes filósofos, con guardianes educados en la virtud y un control estricto de la propiedad y las costumbres.",
-    "category": "Derecha",
+    "category": "Tercera posición",
     "eli5": "Platón pensaba que deben gobernar los filósofos: las personas más sabias y justas, que estudiaron mucho para ello. Cada uno tiene su papel, como las piezas de una máquina."
   },
   {
@@ -1692,7 +1692,7 @@
     "name": "Cesarismo",
     "description": "Tradición imperial romana que, desde Julio César hasta Augusto, Nerón, Marco Aurelio y Justiniano, concentra ejército, ley y administración en el gobernante, preservando las instituciones, el abastecimiento popular y la soberanía sobre un imperio diverso.",
     "phrase": "Quiero un imperio bajo un solo mando, sostenido por el ejército, la ley y los dioses de la ciudad, con pan para el pueblo y fronteras defendidas.",
-    "category": "Derecha",
+    "category": "Tercera posición",
     "eli5": "Como en la antigua Roma: un emperador fuerte, como Julio César o Augusto, reúne todo el poder en sus manos para poner orden en el imperio."
   },
   {
@@ -1868,7 +1868,7 @@
     "name": "Teocratismo islámico",
     "description": "Doctrina que entrega el Estado al clero islámico y convierte la sharía en ley suprema, por encima de la soberanía popular, como en la tutela del jurista (velayat-e faqih) de Jomeini en Irán y el emirato talibán en Afganistán.",
     "phrase": "Quiero la soberanía de Dios por encima del voto, con el jurista religioso al mando, la sharía como única ley y una economía libre de usura.",
-    "category": "Extrema derecha",
+    "category": "Tercera posición",
     "eli5": "Es un país donde los líderes religiosos islámicos dirigen el gobierno, y las leyes vienen de las reglas religiosas llamadas sharía. Irán es el ejemplo más conocido."
   },
   {
@@ -2348,5 +2348,75 @@
     "phrase": "Quiero liberar el cuerpo y la mente como liberamos la sociedad: sin Estado ni patrones, con biohacking, vidas largas y tecnología abierta para todos.",
     "eli5": "Es la idea de que nadie debe mandar sobre nadie y de que cada persona puede usar la tecnología para cambiar su propio cuerpo y vivir mucho más. Todos deben tener estas tecnologías, no solo los ricos.",
     "category": "Anarquista"
+  },
+  {
+    "id": "neofascismo",
+    "name": "Neofascismo",
+    "description": "Heredero del fascismo adaptado a las democracias: ultranacionalismo regenerador, etnopluralismo y xenofobia, antiglobalismo, líder fuerte y batalla cultural, con proteccionismo y bienestar solo para los nativos.",
+    "phrase": "Quiero la nación regenerada bajo un líder fuerte, cada pueblo en su tierra, fuera el globalismo, con proteccionismo y bienestar solo para los nativos.",
+    "category": "Tercera posición"
+  },
+  {
+    "id": "neonazismo",
+    "name": "Neonazismo",
+    "description": "Movimientos y células surgidos tras 1945 para revivir el nacionalsocialismo, con racismo biológico y antisemitismo conspirativo, etnonacionalismo blanco transnacional, rechazo de la democracia liberal y, en parte, acción sin líder.",
+    "phrase": "Quiero etnoestados blancos de pureza racial, bajo un líder absoluto y un Estado totalitario, sin democracia, con autarquía y bienestar solo para la raza.",
+    "category": "Tercera posición"
+  },
+  {
+    "id": "tecno-neoliberalismo",
+    "name": "Tecnoneoliberalismo",
+    "description": "Combina gobierno de especialistas, libre mercado sin intervención, comercio y fronteras abiertos y cosmopolitismo, con una economía posindustrial impulsada por software y plataformas y desconfianza hacia las pasiones de las masas.",
+    "phrase": "Quiero un gobierno de especialistas, con libre mercado, fronteras abiertas y comercio global, en una economía impulsada por software y plataformas.",
+    "category": "Derecha"
+  },
+  {
+    "id": "nacional-distributismo",
+    "name": "Distributismo Nacional",
+    "description": "Fusión de distributismo y nacionalismo que defiende la pequeña propiedad familiar y las cooperativas obreras, agrupadas en gremios que regulan el mercado y frenan los monopolios, contra el capitalismo financiero y el comunismo, con identidad nacional y fe cristiana.",
+    "phrase": "Quiero una nación de familias propietarias y comunidades arraigadas, de fe cristiana y orden corporativo, contra el gran capital y el comunismo.",
+    "category": "Tercera posición"
+  },
+  {
+    "id": "social-distributismo",
+    "name": "Distributismo social",
+    "description": "Vertiente de izquierda del distributismo, inspirada en la doctrina social católica, que defiende la propiedad distribuida entre cooperativas de trabajadores, sindicatos y comunidades, con democracia, Estado de bienestar y control de los monopolios.",
+    "phrase": "Quiero talleres, tierra y cooperativas en manos de quienes trabajan, con sindicatos, democracia local y protección social frente a monopolios y latifundios.",
+    "category": "Centro"
+  },
+  {
+    "id": "monarco-distributismo",
+    "name": "Monarco-distributismo",
+    "description": "Síntesis de monarquismo y distributismo que defiende a un rey cristiano como protector de familias propietarias, gremios y comunidades autónomas, uniendo realeza social y subsidiariedad con propiedad ampliamente distribuida frente al gran capital y el Estado socialista.",
+    "phrase": "Quiero un rey cristiano, padre de su pueblo, que proteja a familias propietarias, gremios y comunidades autogobernadas frente al gran capital y el Estado burocrático.",
+    "category": "Derecha"
+  },
+  {
+    "id": "comunismo-tan-malakista",
+    "name": "Comunismo tan malakista",
+    "description": "Comunismo nacional del indonesio Tan Malaka: marxismo y materialismo racional (Madilog) al servicio de la independencia total y de una república de obreros y campesinos, sin tutela de Moscú, con alianza táctica con el islam anticolonial.",
+    "phrase": "Quiero una república obrera y campesina 100% independiente del imperialismo y de Moscú, con materialismo contra la superstición y alianza con el islam anticolonial.",
+    "category": "Izquierda radical"
+  },
+  {
+    "id": "pancasila",
+    "name": "Pancasila",
+    "description": "Filosofía oficial del Estado indonesio (1945), basada en cinco principios: creencia en un solo Dios, humanidad justa, unidad nacional, democracia deliberativa y justicia social, una vía media entre el capitalismo liberal y el comunismo ateo.",
+    "phrase": "Quiero una nación unida en la diversidad, con fe en un solo Dios, democracia por consenso y justicia social, ni capitalismo liberal ni comunismo ateo.",
+    "category": "Centro"
+  },
+  {
+    "id": "nasakomismo",
+    "name": "Nasakomismo",
+    "description": "Doctrina de la Democracia Dirigida de Sukarno (años 60) que unía nacionalismo, religión y comunismo en un frente antiimperialista bajo un presidente vitalicio, con economía estatal y enfrentamiento con el Occidente liberal.",
+    "phrase": "Quiero unir nacionalistas, religiosos y comunistas bajo un líder revolucionario, en un Estado antiimperialista que expulse el capital extranjero y desafíe a Occidente.",
+    "category": "Tercera posición"
+  },
+  {
+    "id": "nacionalismo-putinista",
+    "name": "Nacionalismo putinista",
+    "description": "Corriente ligada a Vladímir Putin que une poder centralizado y oposición contenida, capitalismo dirigido por el Estado, valores tradicionales con la Iglesia ortodoxa, soberanía frente a Occidente e influencia sobre el antiguo espacio imperial.",
+    "phrase": "Quiero un Estado-civilización fuerte bajo un solo líder, fiel a la tradición ortodoxa, con capitalismo dirigido por el Estado y soberanía frente a Occidente.",
+    "category": "Extrema derecha"
   }
 ]

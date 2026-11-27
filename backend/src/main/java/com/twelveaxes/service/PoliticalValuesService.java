@@ -25,9 +25,11 @@ import org.springframework.stereotype.Service;
  * a mesma escala dos vetores do catalogo), e pode definir eixos EXTRAS alem
  * deles (por exemplo, a ditadura do proletariado exige economia publica, para
  * um autoritario capitalista nao cair nela). O usuario recebe o valor de perfil
- * mais proximo, como nos arquetipos; a distancia e a media dos quadrados sobre
- * os eixos que o valor define, para valores com mais eixos nao sairem em
- * desvantagem. Quem esta perto do centro em TODOS os eixos da categoria (so os
+ * mais proximo, como nos arquetipos; a distancia e a media ponderada dos
+ * quadrados sobre os eixos que o valor define, para valores com mais eixos nao
+ * sairem em desvantagem. Os eixos extras pesam um terco dos eixos base: eles
+ * desempatam, mas nao podem entregar um valor distante no eixo da categoria.
+ * Categoria sem eixos base: todos pesam igual. Quem esta perto do centro em TODOS os eixos da categoria (so os
  * eixos base) recebe o valor neutro dela, para o centro nunca ganhar um rotulo
  * forte e enganoso.
  *
@@ -39,6 +41,8 @@ public class PoliticalValuesService {
     private static final double CENTER = 50.0;
     /** Mesmo limiar do "equilibrado" do ScoringService: distancia do centro abaixo dele nao pende para lado nenhum. */
     static final double NEUTRAL_BAND = 7.5;
+    /** Peso de um eixo extra na distancia, em relacao a um eixo base da categoria. */
+    static final double EXTRA_AXIS_WEIGHT = 1.0 / 3;
 
     private final List<Category> categories;
     private final Map<String, Map<String, String>> englishText;
@@ -65,8 +69,16 @@ public class PoliticalValuesService {
         }
     }
 
-    /** Um valor por categoria, na ordem do JSON. */
+    /** Um valor por categoria, na ordem do JSON, sem preferencia de religiao (valores restritos a uma religiao nao entram). */
     public List<PoliticalValue> resolve(List<AxisResult> axes, String lang) {
+        return resolve(axes, lang, null);
+    }
+
+    /**
+     * Um valor por categoria, na ordem do JSON. {@code religion} e a preferencia do usuario (a mesma do filtro das
+     * recomendacoes, ou null): um valor que declara {@code religions} (ex.: ["islam", "only"]) so e candidato a quem a atende.
+     */
+    public List<PoliticalValue> resolve(List<AxisResult> axes, String lang, String religion) {
         String normalizedLang = QuizDataService.normalizeLang(lang);
         boolean translated = !QuizDataService.LANG_PT.equals(normalizedLang);
         // Idioma gerado: campo sem tradução usa o inglês.
@@ -76,7 +88,7 @@ public class PoliticalValuesService {
 
         List<PoliticalValue> result = new ArrayList<>();
         for (Category category : categories) {
-            Value chosen = choose(category, user);
+            Value chosen = choose(category, user, religion);
             String label = category.label();
             String name = chosen.name();
             String description = chosen.description();
@@ -96,8 +108,10 @@ public class PoliticalValuesService {
         return isBlank(value) ? englishText.get(id).get(field) : value;
     }
 
-    private static Value choose(Category category, Map<String, Double> user) {
-        boolean nearCenter = category.axes().stream()
+    private static Value choose(Category category, Map<String, Double> user, String religion) {
+        // Categoria com eixos base: perto do centro em todos eles vale o valor neutro. Sem eixos base (cada valor define os seus,
+        // como a Nacao) nao ha centro: vence o valor de perfil mais proximo.
+        boolean nearCenter = !category.freeAxes() && category.axes().stream()
                 .allMatch(axis -> Math.abs(user.getOrDefault(axis, CENTER) - CENTER) <= NEUTRAL_BAND);
         if (nearCenter) {
             return category.values().stream().filter(Value::neutral).findFirst().orElseThrow();
@@ -105,12 +119,18 @@ public class PoliticalValuesService {
         Value best = null;
         double bestDistance = Double.MAX_VALUE;
         for (Value value : category.values()) {
-            double distance = 0;
-            for (Map.Entry<String, Double> target : value.profile().entrySet()) {
-                double delta = user.getOrDefault(target.getKey(), CENTER) - target.getValue();
-                distance += delta * delta;
+            if (!ReligionFilter.allows(value.religions(), religion)) {
+                continue;
             }
-            distance /= value.profile().size();
+            double distance = 0;
+            double totalWeight = 0;
+            for (Map.Entry<String, Double> target : value.profile().entrySet()) {
+                double weight = category.freeAxes() || category.axes().contains(target.getKey()) ? 1 : EXTRA_AXIS_WEIGHT;
+                double delta = user.getOrDefault(target.getKey(), CENTER) - target.getValue();
+                distance += weight * delta * delta;
+                totalWeight += weight;
+            }
+            distance /= totalWeight;
             if (distance < bestDistance) {
                 bestDistance = distance;
                 best = value;
@@ -162,18 +182,22 @@ public class PoliticalValuesService {
 
     private static void validate(Category category, Set<String> knownAxes, Map<String, Map<String, String>> english) {
         String where = "Valores politicos, categoria " + category.id() + ": ";
-        if (category.axes() == null || category.axes().isEmpty() || !knownAxes.containsAll(category.axes())) {
-            throw new IllegalStateException(where + "eixos ausentes ou desconhecidos " + category.axes());
+        if (!category.freeAxes() && !knownAxes.containsAll(category.axes())) {
+            throw new IllegalStateException(where + "eixos desconhecidos " + category.axes());
         }
         if (english.get(category.id()) == null || isBlank(english.get(category.id()).get("label"))) {
             throw new IllegalStateException(where + "sem label em ingles");
         }
         long neutrals = category.values().stream().filter(Value::neutral).count();
-        if (neutrals != 1) {
-            throw new IllegalStateException(where + "precisa de exatamente 1 valor neutro, tem " + neutrals);
+        if (category.freeAxes() ? neutrals > 1 : neutrals != 1) {
+            throw new IllegalStateException(where + "precisa de exatamente 1 valor neutro (no maximo 1 sem eixos base), tem " + neutrals);
+        }
+        if (category.values().stream().noneMatch(value -> value.religions() == null || value.religions().isEmpty())) {
+            throw new IllegalStateException(where + "precisa de ao menos um valor sem restricao de religiao");
         }
         for (Value value : category.values()) {
-            if (value.profile() == null || !value.profile().keySet().containsAll(category.axes())
+            if (value.profile() == null || value.profile().isEmpty()
+                    || !value.profile().keySet().containsAll(category.freeAxes() ? java.util.Set.of() : category.axes())
                     || !knownAxes.containsAll(value.profile().keySet())) {
                 throw new IllegalStateException(where + "perfil de " + value.id()
                         + " deve ter todos os eixos da categoria e so eixos conhecidos (extras sao opcionais)");
@@ -194,9 +218,14 @@ public class PoliticalValuesService {
             Map<String, Map<String, Map<String, String>>> generatedText) {
     }
 
+    /** {@code axes} vazio ou ausente = categoria sem eixos base: cada valor define os seus. */
     private record Category(String id, String label, List<String> axes, List<Value> values) {
+        boolean freeAxes() {
+            return axes == null || axes.isEmpty();
+        }
     }
 
-    private record Value(String id, String name, String description, boolean neutral, Map<String, Double> profile) {
+    private record Value(String id, String name, String description, boolean neutral, Map<String, Double> profile,
+            List<String> religions) {
     }
 }

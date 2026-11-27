@@ -168,7 +168,7 @@ export function buildShareCard(
   quiz: QuizPayload,
   religion: Religion | null = null
 ): { stage: HTMLDivElement; target: HTMLDivElement; backgroundColor: string } {
-  const color = resolveIdeologyColor(result.topMatch.category);
+  const color = resolveIdeologyColor(result.topMatch.category, result.topMatch.ideologyId);
   const hatred = result.topMatch.ideologyId === 'hatred';
   const base = hatred ? SHARE_COLORS.tinta : color.base;
   const circle = hatred

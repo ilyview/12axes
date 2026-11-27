@@ -568,15 +568,14 @@ export const en: Strings = {
   compassRight: 'Right',
   compassProgressive: 'Progressive',
   compassTraditionalist: 'Traditionalist',
+  compassQuadrants: {
+    authLeft: 'Authoritarian left',
+    authRight: 'Authoritarian right',
+    libLeft: 'Libertarian left',
+    libRight: 'Libertarian right'
+  },
   compassInfo: {
-    aria: 'How the political compass is made',
-    title: 'How the compass is made',
-    authLead: 'The authoritarian × libertarian axis',
-    authText: 'measures the degree of concentration of political power and of state intervention in the lives of individuals. It considers three main dimensions: individual liberties, political representation and state structure.',
-    econLead: 'The left × right axis',
-    econText: 'measures how far left or right you sit based on economic organization: from collective ownership and state planning on one side to private property and free markets on the other. It considers the fundamental dimensions of economy (ownership of the means of production) and control (market versus planning and regulation).',
-    socialLead: 'The social axis',
-    socialText: 'measures the orientation of your values between progressivism and traditionalism, reflecting your position on customs, culture and social values.'
+    aria: 'See what your compass position means'
   },
   compassSpectrumLabels: {
     'esq-radical': 'Radical left',
@@ -590,11 +589,17 @@ export const en: Strings = {
     raw: 'Raw'
   },
   compassEconomicLabels: {
+    socialism: 'Socialism',
     left: 'Left',
     centerLeft: 'Center-left',
     center: 'Center',
     centerRight: 'Center-right',
-    right: 'Right'
+    right: 'Right',
+    capitalism: 'Capitalism'
+  },
+  compassEconomicMethodLabels: {
+    planned: 'planned economy',
+    market: 'market economy'
   },
   compassSpectrumDescriptions: {
     'esq-radical': 'You tend to seek a deep transformation of society, with material equality, collective ownership and a strong state serving working people, breaking with the current economic order.',
@@ -608,11 +613,13 @@ export const en: Strings = {
     raw: 'A region off the traditional map, with no match among the classic categories.'
   },
   compassEconomicDescriptions: {
-    left: 'You tend to favor collective or public ownership of the means of production and economic planning, with the state and society, not the market, at the center.',
-    centerLeft: 'You tend to accept the market, but with a strong state presence: broad public services, regulation and redistribution to reduce inequality.',
-    center: 'You tend to seek an economic middle ground, with market and state in balanced roles: regulation where needed and room for private initiative.',
+    socialism: 'You tend to favor collective or public ownership of the means of production, with the state and society, not the market, at the center of the economy.',
+    left: 'You tend to favor an economy with a strong state role: large public services and enterprises, planning and broad redistribution, with the market in second place.',
+    centerLeft: 'You tend to accept the market, but with a strong state presence: broad public services, public enterprises in key sectors and redistribution to reduce inequality.',
+    center: 'You tend to seek an economic middle ground, with market and state in balanced roles: public enterprises where they are strategic and room for private initiative.',
     centerRight: 'You tend to trust the market and private initiative more, with a smaller state and clear rules, without giving up some social protection.',
-    right: 'You tend to favor private property and the free market, with little state planning or regulation and competition as the engine of the economy.'
+    right: 'You tend to favor the market and private property, with few state-owned enterprises, competition as the engine of the economy and state intervention only where needed.',
+    capitalism: 'You tend to favor private ownership of the means of production and the free market with few restrictions, with the state reduced to a minimum and competition as the engine of the economy.'
   },
   compassSocialLabels: {
     veryProgressive: 'Strongly progressive',
@@ -942,6 +949,9 @@ export const en: Strings = {
   footerPrivacy: 'Privacy',
   footerRefund: 'Refund',
   footerReport: 'Report',
+  feedbackTitle: 'Found a problem or have an idea?',
+  feedbackReport: 'Report a problem',
+  feedbackSuggest: 'Suggest an improvement',
   supportTitleEm: 'Support',
   supportLead:
     '12 Axes is independent and free. If the quiz helped you better understand your political ideology, consider donating via Pix or crypto to help keep the project running.',
