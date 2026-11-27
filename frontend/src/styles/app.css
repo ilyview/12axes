@@ -12437,3 +12437,8 @@ html[data-quiz-theme="dark"] .glossary-tooltip strong {
 @media (prefers-reduced-motion: reduce) {
   .question-help-btn { transition: none; }
 }
+
+/* Detalhe técnico da tela de erro (para reportar o problema). */
+.error-details{margin-top:16px;font-size:13px;color:var(--text-muted,#5B5A55);text-align:left}
+.error-details summary{cursor:pointer;text-align:center}
+.error-details code{display:block;margin-top:8px;padding:10px;border-radius:10px;background:rgba(0,0,0,.05);white-space:pre-wrap;word-break:break-word}

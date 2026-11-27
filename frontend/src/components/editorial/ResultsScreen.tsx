@@ -42,6 +42,7 @@ import { downloadRankingXlsx } from '../../utils/rankingXlsx';
 import { applyGoatMode } from '../../utils/goatism';
 import { resultVector } from '../../utils/peopleCompare';
 import { CustomIdeologiesSection } from '../results/CustomIdeologiesSection';
+import { SafeSection } from '../SafeSection';
 
 // Modo de desenvolvimento local do Relatório Completo: abre sem pagamento (o backend também precisa de PREMIUM_DEV_OPEN).
 // Fica fora do build de produção porque a variável só existe em frontend/.env.local.
@@ -306,19 +307,28 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
               </div>
               <Ring pct={top.compatibility} size={120} stroke={6} />
             </div>
-            <PhraseSection match={top} />
+            <SafeSection name="PhraseSection">
+              <PhraseSection match={top} />
+            </SafeSection>
           </article>
 
+          <SafeSection name="AxesSection">
           <AxesSection axes={axes} results={axisResults} religion={religion} onEditAnswers={onEditAnswers} />
+          </SafeSection>
 
+          <SafeSection name="div">
           <div className="e-actions">
             <button className="e-btn e-btn-ghost" type="button" onClick={onShare} disabled={isSharing}>
               {isSharing ? t.generatingPng : t.saveOrShare} <ShareImageIcon />
             </button>
           </div>
+          </SafeSection>
 
+          <SafeSection name="SignatureSection">
           <SignatureSection unusual={result.mostUnusualAxis} common={result.mostCommonAxis} tension={result.axisTension} axes={axes} results={axisResults} />
+          </SafeSection>
 
+          <SafeSection name="CountriesSection">
           <CountriesSection
             current={effectiveResult.topCountryMatch}
             historical={result.topHistoricalCountryMatch}
@@ -328,7 +338,9 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
             results={axisResults}
             footer={shareButton('countries')}
           />
+          </SafeSection>
 
+          <SafeSection name="PersonalitiesSection">
           <PersonalitiesSection
             footer={shareButton('personalities')}
             top={result.topPersonalityMatch}
@@ -337,7 +349,9 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
             axes={axes}
             results={axisResults}
           />
+          </SafeSection>
 
+          <SafeSection name="shownElection">
           {shownElection && (
             <ElectionsSection
               election={shownElection}
@@ -349,7 +363,9 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
               )}
             />
           )}
+          </SafeSection>
 
+          <SafeSection name="AreasSection">
           <AreasSection
             generalMatches={effectiveResult.personalityMatches}
             areaMatches={shownReport?.personalitiesByArea ?? []}
@@ -358,15 +374,25 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
             areaLocked={!hasPremium}
             onUnlock={SALES_OPEN ? () => openPaywall('areas') : undefined}
           />
+          </SafeSection>
 
+          <SafeSection name="BooksSection">
           <BooksSection books={result.bookRecommendations} />
+          </SafeSection>
 
           {/* Cartão do resultado e as ações (compartilhar, PDF, planilha): logo depois dos livros. */}
+          <SafeSection name="SharePreviewSection">
           <SharePreviewSection result={effectiveResult} quiz={quiz} axes={axes} religion={religion} isSharing={isSharing} onShare={onShare} />
+          </SafeSection>
 
+          <SafeSection name="actions">
           {actions}
+          </SafeSection>
+          <SafeSection name="error-p-className-inline">
           {error && <p className="inline-error" role="alert">{error}</p>}
+          </SafeSection>
 
+          <SafeSection name="showParties">
           {showParties && (
             <PartiesSection
               footer={shareButton('parties')}
@@ -379,13 +405,21 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
               results={axisResults}
             />
           )}
+          </SafeSection>
 
+          <SafeSection name="PoliticalValuesSection">
           <PoliticalValuesSection values={politicalValues} category={top.category} ideologyId={top.ideologyId} religion={religion} footer={shareButton('compass')} />
+          </SafeSection>
 
+          <SafeSection name="IdeologiesSection">
           <IdeologiesSection others={result.matches.slice(1, 4)} distant={result.bottomIdeologyMatch} />
+          </SafeSection>
 
+          <SafeSection name="CustomIdeologiesSection">
           <CustomIdeologiesSection axes={result.axes} />
+          </SafeSection>
 
+          <SafeSection name="compass">
           {compass && (
             <PoliticalCompassSection
               position={compass}
@@ -395,7 +429,9 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
               footer={shareButton('compass')}
             />
           )}
+          </SafeSection>
 
+          <SafeSection name="hasPremium">
           {hasPremium ? (
             <Suspense fallback={null}>
               <PremiumReportSection
@@ -420,11 +456,17 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
           ) : (
             SALES_OPEN && <PaywallSection access={access} onOpen={openPaywall} result={result} axes={axes} results={axisResults} religion={religion ?? null} />
           )}
+          </SafeSection>
 
+          <SafeSection name="hasPremium-actions">
           {hasPremium && actions}
+          </SafeSection>
 
+          <SafeSection name="celebrating-UnlockCelebra">
           {celebrating && <UnlockCelebration name={top.name} category={top.category} token={premiumToken ?? (devCelebrate ? 'token-de-teste' : null)} onClose={() => setCelebrationClosed(true)} />}
+          </SafeSection>
 
+          <SafeSection name="paywallOpen-hasPremium">
           {paywallOpen && !hasPremium && SALES_OPEN && (
             <PaywallModal
               access={access}
@@ -433,11 +475,17 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
               onClose={closePaywall}
             />
           )}
+          </SafeSection>
 
+          <SafeSection name="PREMIUM_DEV_OPEN-PreviewS">
           {PREMIUM_DEV_OPEN && <PreviewSwitch value={preview} onChange={setPreview} />}
+          </SafeSection>
 
+          <SafeSection name="ComparePersonSection">
           <ComparePersonSection axes={axes} results={axisResults} religion={religion} />
+          </SafeSection>
 
+          <SafeSection name="CompareSection">
           <CompareSection
             axes={axes}
             results={axisResults}
@@ -446,10 +494,13 @@ export function ResultsScreen({ result, quiz, axes, axisResults, isSharing, erro
             closest={effectiveResult.topPersonalityMatch}
             farthest={result.bottomPersonalityMatches?.[0] ?? null}
           />
+          </SafeSection>
         </div>
 
         <aside className="e-side" aria-label={t.resultsSummaryAria}>
+          <SafeSection name="ResultsNav">
           <ResultsNav hasElections={(result.elections?.length ?? 0) > 0} premium={hasPremium} premiumTarget={SALES_OPEN ? 'relatorio-completo' : null} hasBooks={(result.bookRecommendations?.length ?? 0) > 0} hasCompass={compass !== null} hasParties={showParties} hasValues={politicalValues.length > 0} />
+          </SafeSection>
         </aside>
       </div>
       {printingPdf && pdfButtonAction(SALES_OPEN, hasPremium) === 'print' &&

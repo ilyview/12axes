@@ -4,6 +4,8 @@ import { loadProgress } from '../utils/quizProgress';
 
 interface ErrorBoundaryState {
   failed: boolean;
+  /** Mensagem do erro, mostrada em "Details" para quem for reportar o problema. */
+  message?: string;
 }
 
 // Sem isso, qualquer erro de renderização desmonta a aplicação inteira e a
@@ -12,8 +14,9 @@ interface ErrorBoundaryState {
 export class ErrorBoundary extends Component<{ children: ReactNode }, ErrorBoundaryState> {
   state: ErrorBoundaryState = { failed: false };
 
-  static getDerivedStateFromError(): ErrorBoundaryState {
-    return { failed: true };
+  static getDerivedStateFromError(error: unknown): ErrorBoundaryState {
+    const message = error instanceof Error ? `${error.name}: ${error.message}` : String(error);
+    return { failed: true, message: message.slice(0, 500) };
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
@@ -34,6 +37,12 @@ export class ErrorBoundary extends Component<{ children: ReactNode }, ErrorBound
           <button className="secondary-button" type="button" onClick={() => window.location.reload()}>
             {t.crashReload}
           </button>
+          {this.state.message && (
+            <details className="error-details">
+              <summary>Details</summary>
+              <code>{this.state.message}</code>
+            </details>
+          )}
         </div>
       </main>
     );
